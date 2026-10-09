@@ -1,0 +1,21 @@
+{
+  "develops_from": [
+    [
+      "CL:0008002",
+      "CL:0000056"
+    ],
+    [
+      "CL:0000056",
+      "CL:0000594"
+    ]
+  ],
+  "is_a": [],
+  "interacts_with": [
+    {
+      "from": "CL:0000100",
+      "to": "CL:0008002",
+      "th": "เซลล์ประสาทสั่งการปล่อย acetylcholine ที่ neuromuscular junction (synapse) กระตุ้นให้เส้นใยกล้ามเนื้อลายหดตัว",
+      "mode": "synapse"
+    }
+  ]
+}

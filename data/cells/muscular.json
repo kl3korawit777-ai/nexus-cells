@@ -1,0 +1,153 @@
+[
+  {
+    "id": "CL:0008002",
+    "slug": "skeletal-muscle-fiber",
+    "kind": "cell",
+    "en": "skeletal muscle fiber",
+    "th": "เส้นใยกล้ามเนื้อลาย",
+    "systems": [
+      "muscular"
+    ],
+    "tissue": "muscle",
+    "tissue_subtype": "skeletal-muscle",
+    "location": "กล้ามเนื้อลายที่ยึดกับกระดูกผ่านเอ็น",
+    "morphology": "เซลล์ยาวรูปทรงกระบอก มีหลายนิวเคลียสอยู่ชิดใต้เยื่อหุ้มเซลล์ (sarcolemma) มีลายตามขวาง (striation) จากการเรียงตัวของ sarcomere",
+    "function": "หดตัวตามอำนาจจิตใจ (voluntary) เพื่อเคลื่อนไหวร่างกาย รักษาท่าทาง และสร้างความร้อน",
+    "secretes": [],
+    "markers": [
+      "desmin",
+      "myosin heavy chain"
+    ],
+    "lifespan": "",
+    "exam": "หลายนิวเคลียสเพราะเกิดจาก myoblast หลายเซลล์รวมกัน (fusion) ต่างจากกล้ามเนื้อหัวใจที่มีนิวเคลียสเดียวอยู่กลางเซลล์ T-tubule สองข้างของ sarcoplasmic reticulum เรียกว่า triad ได้รับสัญญาณจากเซลล์ประสาทสั่งการที่ neuromuscular junction",
+    "diseases": [
+      "กล้ามเนื้อเสื่อมชนิด Duchenne (ขาด dystrophin)",
+      "myasthenia gravis"
+    ],
+    "confused_with": [
+      "CL:0000192"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000594",
+    "slug": "skeletal-muscle-satellite-cell",
+    "kind": "cell",
+    "en": "skeletal muscle satellite cell",
+    "th": "เซลล์ดาวเทียมของกล้ามเนื้อลาย (satellite cell)",
+    "systems": [
+      "muscular"
+    ],
+    "tissue": "muscle",
+    "tissue_subtype": "skeletal-muscle",
+    "location": "แทรกอยู่ระหว่างเยื่อหุ้มเซลล์ (sarcolemma) ของเส้นใยกล้ามเนื้อลายกับ basal lamina",
+    "morphology": "เซลล์เล็กแบน นิวเคลียสเล็กและติดสีเข้ม อยู่ติดผิวเส้นใยกล้ามเนื้อ",
+    "function": "สเต็มเซลล์ของกล้ามเนื้อลาย เมื่อกล้ามเนื้อบาดเจ็บจะถูกกระตุ้นให้แบ่งตัว แล้วรวมเข้ากับเส้นใยเดิมหรือสร้างเส้นใยใหม่",
+    "secretes": [],
+    "markers": [
+      "PAX7"
+    ],
+    "lifespan": "",
+    "exam": "ช่วยซ่อมแซมและสร้างกล้ามเนื้อลายใหม่ กล้ามเนื้อหัวใจไม่มีเซลล์ชนิดนี้ จึงซ่อมแซมตัวเองได้น้อยมาก อย่าสับสนกับ satellite cell ของปมประสาท ซึ่งเป็นเซลล์เกลีย",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000056"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000056",
+    "slug": "myoblast",
+    "kind": "cell",
+    "en": "myoblast",
+    "th": "ไมโอบลาสต์ (myoblast)",
+    "systems": [
+      "muscular"
+    ],
+    "tissue": "other",
+    "tissue_subtype": "stem-progenitor",
+    "location": "กล้ามเนื้อในระยะตัวอ่อน และในกล้ามเนื้อที่กำลังซ่อมแซม",
+    "morphology": "เซลล์รูปกระสวย มีนิวเคลียสเดียว",
+    "function": "เซลล์ตั้งต้นของเส้นใยกล้ามเนื้อลาย แบ่งตัวแล้วหลอมรวมกันเป็น myotube ซึ่งเจริญเป็น skeletal muscle fiber",
+    "secretes": [],
+    "markers": [
+      "MyoD",
+      "myogenin"
+    ],
+    "lifespan": "",
+    "exam": "การหลอมรวม (fusion) ของ myoblast ทำให้เส้นใยกล้ามเนื้อลายมีหลายนิวเคลียส",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000594"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000192",
+    "slug": "smooth-muscle-cell",
+    "kind": "cell",
+    "en": "smooth muscle cell",
+    "th": "เซลล์กล้ามเนื้อเรียบ",
+    "systems": [
+      "muscular"
+    ],
+    "tissue": "muscle",
+    "tissue_subtype": "smooth-muscle",
+    "location": "ผนังอวัยวะกลวง เช่น ทางเดินอาหาร หลอดเลือด ทางเดินหายใจ กระเพาะปัสสาวะ และมดลูก",
+    "morphology": "รูปกระสวยปลายแหลม มีนิวเคลียสเดียวอยู่กลางเซลล์ ไม่มีลายตามขวาง",
+    "function": "หดตัวโดยไม่อยู่ใต้อำนาจจิตใจ (involuntary) ควบคุมด้วยระบบประสาทอัตโนมัติและฮอร์โมน",
+    "secretes": [],
+    "markers": [
+      "α-smooth muscle actin (α-SMA)",
+      "calponin"
+    ],
+    "lifespan": "",
+    "exam": "ไม่มี troponin การหดตัวควบคุมผ่าน Ca2+–calmodulin และเอนไซม์ myosin light chain kinase ต่างจากกล้ามเนื้อลายที่ใช้ troponin",
+    "diseases": [
+      "หอบหืด (asthma) ซึ่งมีการหดเกร็งของกล้ามเนื้อเรียบหลอดลม"
+    ],
+    "confused_with": [
+      "CL:0008002"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000388",
+    "slug": "tendon-cell",
+    "kind": "cell",
+    "en": "tendon cell",
+    "th": "เซลล์เอ็น (tenocyte)",
+    "systems": [
+      "muscular"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "dense",
+    "location": "เอ็นกล้ามเนื้อ แทรกอยู่ระหว่างมัดคอลลาเจนที่ขนานกัน",
+    "morphology": "เซลล์ยาวแบน นิวเคลียสยาว เรียงเป็นแถวระหว่างมัดเส้นใยคอลลาเจน",
+    "function": "สร้างและดูแลเมทริกซ์ของเอ็น โดยเฉพาะคอลลาเจนชนิด I",
+    "secretes": [
+      "คอลลาเจนชนิด I"
+    ],
+    "markers": [
+      "scleraxis (SCX)",
+      "tenomodulin (TNMD)"
+    ],
+    "lifespan": "",
+    "exam": "เอ็นเป็นเนื้อเยื่อเกี่ยวพันเส้นใยหนาแน่นชนิดเรียงตัวเป็นระเบียบ (dense regular connective tissue) เซลล์ที่พบมีน้อยและมีหลอดเลือดมาเลี้ยงน้อย จึงหายช้า",
+    "diseases": [
+      "เอ็นอักเสบ (tendinitis/tendinopathy)"
+    ],
+    "confused_with": [],
+    "image": null,
+    "verified": false,
+    "refs": []
+  }
+]

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T11:13:38+00:00",
+  "fetched_at": "2026-10-09T16:23:39+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -8399,6 +8399,404 @@
         {
           "id": "UBERON:0002198",
           "label": "neurohypophysis"
+        }
+      ]
+    },
+    "CL:0008002": {
+      "id": "CL:0008002",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0008002",
+      "label": "skeletal muscle fiber",
+      "definition": "A transversely striated, synctial cell of skeletal muscle. It is formed when proliferating myoblasts exit the cell cycle, differentiate and fuse.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000188",
+          "label": "cell of skeletal muscle"
+        },
+        {
+          "id": "CL:0002372",
+          "label": "myotube"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0000187",
+          "label": "muscle cell"
+        },
+        {
+          "id": "CL:0000188",
+          "label": "cell of skeletal muscle"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000228",
+          "label": "multinucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000737",
+          "label": "striated muscle cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "CL:0002372",
+          "label": "myotube"
+        },
+        {
+          "id": "CL:4052002",
+          "label": "syncytial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000515",
+          "label": "skeletal muscle myoblast"
+        }
+      ]
+    },
+    "CL:0000594": {
+      "id": "CL:0000594",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000594",
+      "label": "skeletal muscle satellite cell",
+      "definition": "An elongated, spindle-shaped, cell that is located between the basal lamina and the plasmalemma of a muscle fiber. These cells are mostly quiescent, but upon activation they divide to produce cells that generate new muscle fibers.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000188",
+          "label": "cell of skeletal muscle"
+        },
+        {
+          "id": "CL:0000680",
+          "label": "muscle precursor cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000188",
+          "label": "cell of skeletal muscle"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000680",
+          "label": "muscle precursor cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        },
+        {
+          "id": "CL:0011115",
+          "label": "precursor cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000056": {
+      "id": "CL:0000056",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000056",
+      "label": "myoblast",
+      "definition": "A cell that is committed to differentiating into a muscle cell.  Embryonic myoblasts develop from the mesoderm. They undergo proliferation, migrate to their various sites, and then differentiate into the appropriate form of myocytes.  Myoblasts also occur as transient populations of cells in muscles undergoing repair.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000680",
+          "label": "muscle precursor cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000680",
+          "label": "muscle precursor cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        },
+        {
+          "id": "CL:0011115",
+          "label": "precursor cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000192": {
+      "id": "CL:0000192",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000192",
+      "label": "smooth muscle cell",
+      "definition": "A non-striated, elongated, spindle-shaped cell found lining the digestive tract, uterus, and blood vessels. They develop from specialized myoblasts (smooth muscle myoblast).",
+      "synonyms": [
+        "non-striated muscle cell",
+        "smooth muscle fiber",
+        "SMCs",
+        "myocytes, smooth muscle"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0008000",
+          "label": "non-striated muscle cell"
+        },
+        {
+          "id": "CL:0008007",
+          "label": "visceral muscle cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0000187",
+          "label": "muscle cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0008000",
+          "label": "non-striated muscle cell"
+        },
+        {
+          "id": "CL:0008007",
+          "label": "visceral muscle cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000514",
+          "label": "smooth muscle myoblast"
+        }
+      ]
+    },
+    "CL:0000388": {
+      "id": "CL:0000388",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000388",
+      "label": "tendon cell",
+      "definition": "An elongated fibroblast that is part of a tendon. Its cytoplasm is stretched between the collagen fibres of the tendon, and it possesses a central nucleus with a prominent nucleolus. Tendon cell has a well-developed rough endoplasmic reticulum, and it is responsible for the synthesis and turnover of tendon fibres and ground substance.",
+      "synonyms": [
+        "muscle attachment cell",
+        "tenocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:1000307",
+          "label": "fibroblast of dense regular elastic tissue"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000057",
+          "label": "fibroblast"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000499",
+          "label": "stromal cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "CL:1000307",
+          "label": "fibroblast of dense regular elastic tissue"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0000043",
+          "label": "tendon"
         }
       ]
     },

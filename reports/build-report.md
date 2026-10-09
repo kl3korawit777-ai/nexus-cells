@@ -1,6 +1,6 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-09 18:56
+สร้างเมื่อ: 2026-10-09 23:24
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
@@ -68,17 +68,18 @@
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
 - ตรงกัน: 4 เส้น
-- คัดเองมี แต่ CL ไม่มี: 24 เส้น
+- คัดเองมี แต่ CL ไม่มี: 26 เส้น
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 2 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 25 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 27 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 228 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 229 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
 - CL:0000049 common myeloid progenitor → CL:0000037 hematopoietic stem cell
 - CL:0000050 megakaryocyte-erythroid progenitor cell → CL:0000049 common myeloid progenitor
 - CL:0000051 common lymphoid progenitor → CL:0000037 hematopoietic stem cell
+- CL:0000056 myoblast → CL:0000594 skeletal muscle satellite cell
 - CL:0000084 T cell → CL:0000051 common lymphoid progenitor
 - CL:0000097 mast cell → CL:0000557 granulocyte monocyte progenitor cell
 - CL:0000160 goblet cell → CL:0002250 intestinal crypt stem cell
@@ -100,6 +101,7 @@
 - CL:0000786 plasma cell → CL:0000236 B cell
 - CL:0000787 memory B cell → CL:0000236 B cell
 - CL:0000813 memory T cell → CL:0000084 T cell
+- CL:0008002 skeletal muscle fiber → CL:0000056 myoblast
 
 ### develops_from ที่ CL มีแต่ไม่ได้คัดไว้
 
@@ -119,6 +121,7 @@
 - CL:0000171 pancreatic A cell ← CL:0002351 progenitor cell of endocrine pancreas
 - CL:0000173 pancreatic D cell ← CL:0002351 progenitor cell of endocrine pancreas
 - CL:0000182 hepatocyte ← CL:0005026 hepatoblast
+- CL:0000192 smooth muscle cell ← CL:0000514 smooth muscle myoblast
 - CL:0000336 adrenal medulla chromaffin cell ← CL:0000011 migratory trunk neural crest cell
 - CL:0000510 paneth cell ← CL:4047017 transit amplifying cell of gut
 - CL:0000542 lymphocyte ← CL:0017500 neutrophillic cytoplasm
@@ -132,9 +135,10 @@
 - CL:0000765 erythroblast ← CL:0000547 proerythroblast
 - CL:0000786 plasma cell ← CL:0000980 plasmablast
 - CL:0000786 plasma cell ← CL:0017508 cartwheel heterochromatin
+- CL:0008002 skeletal muscle fiber ← CL:0000515 skeletal muscle myoblast
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 
-## คำเตือนจาก validate (102)
+## คำเตือนจาก validate (107)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -214,6 +218,11 @@
 - CL:0000437 (gonadotroph): ช่องว่าง: lifespan, diseases, confused_with; ยังไม่มีรูป
 - CL:0000652 (pinealocyte): ช่องว่าง: markers, lifespan, diseases, confused_with; ยังไม่มีรูป
 - CL:0000645 (pituicyte): ช่องว่าง: markers, lifespan, diseases, confused_with; ยังไม่มีรูป
+- CL:0008002 (skeletal muscle fiber): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000594 (skeletal muscle satellite cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000056 (myoblast): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000192 (smooth muscle cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000388 (tendon cell): ช่องว่าง: lifespan, confused_with; ยังไม่มีรูป
 - CL:0000540 (neuron): ยังไม่มีรูป
 - CL:0000125 (glial cell): ยังไม่มีรูป
 - CL:0000210 (photoreceptor cell): ยังไม่มีรูป
