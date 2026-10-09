@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T10:41:57+00:00",
+  "fetched_at": "2026-10-09T11:01:46+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -3938,6 +3938,1996 @@
         {
           "id": "PR:000001889",
           "label": "CD14 molecule"
+        }
+      ]
+    },
+    "CL:0002563": {
+      "id": "CL:0002563",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002563",
+      "label": "intestinal epithelial cell",
+      "definition": "An epithelial cell of the lining of the intestine.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0001277",
+          "label": "intestinal epithelium"
+        }
+      ]
+    },
+    "CL:0002178": {
+      "id": "CL:0002178",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002178",
+      "label": "epithelial cell of stomach",
+      "definition": "An epithelial cell found in the lining of the stomach.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0001276",
+          "label": "epithelium of stomach"
+        }
+      ]
+    },
+    "CL:1001433": {
+      "id": "CL:1001433",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_1001433",
+      "label": "epithelial cell of exocrine pancreas",
+      "definition": "An epithelial cell of the exocrine pancreas.",
+      "synonyms": [
+        "exocrine pancreas cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000083",
+          "label": "epithelial cell of pancreas"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000083",
+          "label": "epithelial cell of pancreas"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0000017",
+          "label": "exocrine pancreas"
+        }
+      ]
+    },
+    "CL:4052065": {
+      "id": "CL:4052065",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_4052065",
+      "label": "serous acinar cell of salivary gland",
+      "definition": "An acinar cell of the salivary gland, characterized by a pyramidal or triangular shape with a spherical nucleus and abundant eosinophilic zymogen granules. This cell secretes watery, enzyme‐rich fluid containing α-amylase, proline-rich proteins, and secretory immunoglobulins for starch digestion and antimicrobial defence. In humans and mice, serous acinar cell predominates in the parotid gland and to a lesser extent in the submandibular gland, where it exists alongside mucous acinar cells (Maruyama et al., 2019).",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002623",
+          "label": "acinar cell of salivary gland"
+        },
+        {
+          "id": "CL:0020059",
+          "label": "serous demilune cell of salivary gland"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0000154",
+          "label": "protein secreting cell"
+        },
+        {
+          "id": "CL:0000159",
+          "label": "seromucus secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000313",
+          "label": "serous secreting cell"
+        },
+        {
+          "id": "CL:0000622",
+          "label": "acinar cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002623",
+          "label": "acinar cell of salivary gland"
+        },
+        {
+          "id": "CL:0009005",
+          "label": "salivary gland cell"
+        },
+        {
+          "id": "CL:0020059",
+          "label": "serous demilune cell of salivary gland"
+        },
+        {
+          "id": "CL:1001596",
+          "label": "salivary gland glandular cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0005983",
+          "label": "starch catabolic process"
+        },
+        {
+          "id": "GO:0042588",
+          "label": "zymogen granule"
+        },
+        {
+          "id": "UBERON:0013232",
+          "label": "serous acinus"
+        }
+      ]
+    },
+    "CL:4052066": {
+      "id": "CL:4052066",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_4052066",
+      "label": "mucous acinar cell of salivary gland",
+      "definition": "An acinar cell of the salivary gland, responsible for producing a viscous, mucin‐rich solution, thereby facilitating lubrication and protection of the oral mucosa. This cell is characterized by an elongated shape, clear cytoplasm filled with mucin granules, and a basally compressed nucleus (Barrows et al., 2020). In humans and mice, the mucous acinar cell predominates in the sublingual gland and minor salivary glands, while also being present in mixed glands such as the submandibular gland, where it coexists with serous acinar cells (Maruyama et al., 2019).",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000319",
+          "label": "mucus secreting cell"
+        },
+        {
+          "id": "CL:0002623",
+          "label": "acinar cell of salivary gland"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0000154",
+          "label": "protein secreting cell"
+        },
+        {
+          "id": "CL:0000159",
+          "label": "seromucus secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000319",
+          "label": "mucus secreting cell"
+        },
+        {
+          "id": "CL:0000622",
+          "label": "acinar cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002623",
+          "label": "acinar cell of salivary gland"
+        },
+        {
+          "id": "CL:0009005",
+          "label": "salivary gland cell"
+        },
+        {
+          "id": "CL:1001596",
+          "label": "salivary gland glandular cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0098594",
+          "label": "mucin granule"
+        },
+        {
+          "id": "UBERON:0014717",
+          "label": "mucous acinus"
+        }
+      ]
+    },
+    "CL:0000162": {
+      "id": "CL:0000162",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000162",
+      "label": "parietal cell",
+      "definition": "An epithelial cell of the stomach that is part of the fundic gastric gland. This cell is characterized by its pyramidal shape, abundant mitochondria, and a complex network of secretory canaliculi lined with microvilli. It secretes hydrochloric acid into the stomach lumen and produces intrinsic factor, essential for vitamin B12 absorption.",
+      "synonyms": [
+        "gastric parietal cell",
+        "oxyntic cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0002659",
+          "label": "glandular epithelial cell of stomach"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002178",
+          "label": "epithelial cell of stomach"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002659",
+          "label": "glandular epithelial cell of stomach"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0001696",
+          "label": "gastric acid secretion"
+        },
+        {
+          "id": "GO:0005902",
+          "label": "microvillus"
+        },
+        {
+          "id": "UBERON:0010038",
+          "label": "fundic gastric gland"
+        }
+      ]
+    },
+    "CL:0000155": {
+      "id": "CL:0000155",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000155",
+      "label": "peptic cell",
+      "definition": "An epithelial cell of the stomach that is part of the fundic gastric gland. This cell is characterized by a basally located nucleus, abundant rough endoplasmic reticulum, and large apical secretory granules. It produces and secretes pepsinogen, the inactive precursor of the digestive enzyme pepsin.",
+      "synonyms": [
+        "chief cell of stomach",
+        "pepsinogen secreting cell",
+        "gastric chief cell",
+        "zymogenic cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0000154",
+          "label": "protein secreting cell"
+        },
+        {
+          "id": "CL:0002659",
+          "label": "glandular epithelial cell of stomach"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0000154",
+          "label": "protein secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002178",
+          "label": "epithelial cell of stomach"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002659",
+          "label": "glandular epithelial cell of stomach"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0010038",
+          "label": "fundic gastric gland"
+        }
+      ]
+    },
+    "CL:0002181": {
+      "id": "CL:0002181",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002181",
+      "label": "mucous neck cell of gastric gland",
+      "definition": "A columnar epithelial mucous secreting cell located in the neck of the gastric glands. These cells have numerous apical secretory vesicles containing mucins and a basally displaced nucleus. The mucous they secrete is distinct histochemically from that of the surface mucous cells of stomach.",
+      "synonyms": [
+        "mucous neck cell",
+        "neck cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0002180",
+          "label": "mucous cell of stomach"
+        },
+        {
+          "id": "CL:0002659",
+          "label": "glandular epithelial cell of stomach"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0000159",
+          "label": "seromucus secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000319",
+          "label": "mucus secreting cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002178",
+          "label": "epithelial cell of stomach"
+        },
+        {
+          "id": "CL:0002180",
+          "label": "mucous cell of stomach"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002659",
+          "label": "glandular epithelial cell of stomach"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0098594",
+          "label": "mucin granule"
+        },
+        {
+          "id": "UBERON:0000325",
+          "label": "gastric gland"
+        }
+      ]
+    },
+    "CL:0002179": {
+      "id": "CL:0002179",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002179",
+      "label": "foveolar cell of stomach",
+      "definition": "A simple columnar cell that populates the entire luminal surface including the gastric pits. This cell types secrete mucus to form a thick protective, lubricant layer over the gastric wall.",
+      "synonyms": [
+        "surface mucosal cell of stomach"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0002180",
+          "label": "mucous cell of stomach"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000159",
+          "label": "seromucus secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000319",
+          "label": "mucus secreting cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002178",
+          "label": "epithelial cell of stomach"
+        },
+        {
+          "id": "CL:0002180",
+          "label": "mucous cell of stomach"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000509": {
+      "id": "CL:0000509",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000509",
+      "label": "gastrin secreting cell",
+      "definition": "A peptide hormone secreting cell that secretes gastrin.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000584": {
+      "id": "CL:0000584",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000584",
+      "label": "enterocyte",
+      "definition": "An epithelial cell that has its apical plasma membrane folded into microvilli to provide ample surface for the absorption of nutrients from the intestinal lumen.",
+      "synonyms": [
+        "differentiated enterocyte",
+        "mature enterocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000239",
+          "label": "brush border epithelial cell"
+        },
+        {
+          "id": "CL:0000677",
+          "label": "gut absorptive cell"
+        },
+        {
+          "id": "CL:0002563",
+          "label": "intestinal epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000239",
+          "label": "brush border epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000677",
+          "label": "gut absorptive cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002563",
+          "label": "intestinal epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000160": {
+      "id": "CL:0000160",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000160",
+      "label": "goblet cell",
+      "definition": "A specialized, columnar, mucus secreting epithelial cell shaped like a flask or goblet. A narrow basal end contains the nucleus while the apical end is swollen by the accumulation of mucus laden secretory granules.  Short microvilli project from the apical plasma membrane.",
+      "synonyms": [
+        "chalice cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000319",
+          "label": "mucus secreting cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000159",
+          "label": "seromucus secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000319",
+          "label": "mucus secreting cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0005902",
+          "label": "microvillus"
+        },
+        {
+          "id": "GO:0098594",
+          "label": "mucin granule"
+        }
+      ]
+    },
+    "CL:0000510": {
+      "id": "CL:0000510",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000510",
+      "label": "paneth cell",
+      "definition": "An epithelial cell found in the basal part of the intestinal glands (crypts of Lieberkuhn) including the appendix. Paneth cells synthesize and secrete lysozyme and cryptdins. Numerous in the deeper parts of the intestinal crypts, particularly in the duodenum, rich in zinc, contain large acidophilic granules, with irregular apical microvilli and prominent membrane-bound vacuoles containing matrix.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000323",
+          "label": "lysozyme secreting cell"
+        },
+        {
+          "id": "CL:0002563",
+          "label": "intestinal epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000154",
+          "label": "protein secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000323",
+          "label": "lysozyme secreting cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002563",
+          "label": "intestinal epithelial cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:4047017",
+          "label": "transit amplifying cell of gut"
+        },
+        {
+          "id": "GO:0005773",
+          "label": "vacuole"
+        },
+        {
+          "id": "GO:0005902",
+          "label": "microvillus"
+        },
+        {
+          "id": "UBERON:0011184",
+          "label": "epithelium of crypt of Lieberkuhn"
+        }
+      ]
+    },
+    "CL:0000164": {
+      "id": "CL:0000164",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000164",
+      "label": "enteroendocrine cell",
+      "definition": "An endocrine cell that is located in the epithelium of the gastrointestinal tract or in the pancreas.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0002250": {
+      "id": "CL:0002250",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002250",
+      "label": "intestinal crypt stem cell",
+      "definition": "A stem cell located in epithelium the based of the crypt of Lieberkuhn. Division of these cells serve both to maintain the stem cell population and produce the transit amplifying cells that are all precursors of all cell types that populate the intestinal epithelium.",
+      "synonyms": [
+        "stem cell of intestinal crypt of Lieberkuhn"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000048",
+          "label": "multi fate stem cell"
+        },
+        {
+          "id": "CL:0002563",
+          "label": "intestinal epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000034",
+          "label": "stem cell"
+        },
+        {
+          "id": "CL:0000048",
+          "label": "multi fate stem cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002563",
+          "label": "intestinal epithelial cell"
+        },
+        {
+          "id": "CL:0011115",
+          "label": "precursor cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0001983",
+          "label": "crypt of Lieberkuhn"
+        }
+      ]
+    },
+    "CL:0000682": {
+      "id": "CL:0000682",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000682",
+      "label": "M cell of gut",
+      "definition": "An absorptive cell of the gut epithelium that endocytoses microorganisms and intact macromolecules from the gut lumen and transports them to the subepithelial space where they are presented to antigen-presenting cells and lymphocytes.",
+      "synonyms": [
+        "M cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002563",
+          "label": "intestinal epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002563",
+          "label": "intestinal epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0004693",
+          "label": "Peyer's patch epithelium"
+        }
+      ]
+    },
+    "CL:0002088": {
+      "id": "CL:0002088",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002088",
+      "label": "interstitial cell of Cajal",
+      "definition": "Interstitial cells of Cajal are unique cells located in the gastrointestinal tract, specifically within the muscle layers of the entire digestive system. They have a distinctive stellate or spindle-like shape and were named after the Spanish histologist, Ramón y Cajal, who first discovered them.\nThe intricate interplay of interstitial cells of Cajal with smooth muscle cells and enteric neurons orchestrates the rhythmic contractions (known as peristalsis) in the gastrointestinal tract. They generate and propagate the slow waves of electrical activity, providing the fundamental pacing signal. Interstitial cells of Cajal are capable of responding to stretch and other mechanical stimuli, which helps in adapting the frequency and strength of peristalsis as needed. They also play an essential role in relaxations of gastrointestinal tract sphincters, ensuring proper control over the passage of material.\nMoreover, disruption or loss of ICCs contribute to several gastrointestinal motility disorders, underscoring their vital role in digestive health. Lack of or reduced ICCs are reported in various conditions such as achalasia, slow transit constipation, and diabetic gastroparesis.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)",
+      "synonyms": [
+        "ICC",
+        "intestinal pacemaker cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0043134",
+          "label": "regulation of hindgut contraction"
+        }
+      ]
+    },
+    "CL:0000182": {
+      "id": "CL:0000182",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000182",
+      "label": "hepatocyte",
+      "definition": "Hepatocytes are the major cell type constituting 70-80% of the liver's cytoplasmic mass, playing crucial roles in maintaining the body's metabolic homeostasis. Dimensions of mature hepatocytes typically range from 20 to 30 μm in humans, but size may vary depending on their location within the liver lobule. Hepatocytes are characterized by high biosynthetic, enzymatic, and endocytic activity. They contain abundant mitochondria, smooth and rough endoplasmic reticulum, peroxisomes, lysosomes, and a large nucleus that is often binucleate. \nThe liver consists of three zones - the periportal Zone 1, midzone 2, and pericentral Zone 3 - which have differential nutrient and oxygen status, and damage susceptibility; hepatocytes in the different zones show signifcant functional heterogeneity ('hepatocyte functional zonation'). Hepatocytes are involved in a multitude of critical functions including the metabolism of lipids, carbohydrates, and proteins, the synthesis of serum proteins (e.g., albumin, transferrin, and lipoproteins), the detoxification and excretion of endogenous and exogenous substances, the storage of vitamins and minerals, and the production and secretion of bile. \nHeterocytes demonstrate a remarkable regenerative capacity, which enables the liver to recover from injury and loss of tissue mass. Notably, hepatocytes perform biotransformation with both phase I and phase II enzymes, which modify drugs, xenobiotics, and various substances for elimination from the body. Phase I enzymes, such as cytochrome P450, catalyze both oxidative and reductive reactions of many xenobiotics; many of the products of phase I enzymes are substrates for the phase II enzymes, which catalyze conjugation reactions. \nAlterations in hepatocyte function have significant implications for overall human health and disease. Certain conditions, such as hepatitis, cirrhosis, and liver cancer, can profoundly affect hepatocyte structure and function, thereby disrupting the liver's ability to perform its vital roles within the body. As the primary site for drug metabolism, changes in hepatocyte function can also impact the effectiveness and toxicity of pharmaceuticals. The regenerative ability of hepatocytes makes them valuable cells for liver regenerative medicine and bioartificial liver support systems, and their study has provided significant insights into liver biology and disease.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000417",
+          "label": "endopolyploid cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000412",
+          "label": "polyploid cell"
+        },
+        {
+          "id": "CL:0000417",
+          "label": "endopolyploid cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0005026",
+          "label": "hepatoblast"
+        },
+        {
+          "id": "GO:0006699",
+          "label": "bile acid biosynthetic process"
+        },
+        {
+          "id": "GO:0098754",
+          "label": "detoxification"
+        },
+        {
+          "id": "UBERON:0002107",
+          "label": "liver"
+        }
+      ]
+    },
+    "CL:0000632": {
+      "id": "CL:0000632",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000632",
+      "label": "hepatic stellate cell",
+      "definition": "A cell that is found in the perisinusoidal space of the liver that is capable of multiple roles including storage of retinol, presentation of antigen to T cells (including CD1d-restricted NKT cells), and upon activation, production of extracellular matrix components that can contribute to liver fibrosis. This activated state has a myofibroblast-like phenotype, though it's not clear in the literature if this is terminally differentiated. This cell type comprises approximately 8-15% of total cells in the liver.",
+      "synonyms": [
+        "Ito cell",
+        "fat-storing cell",
+        "hepatic perisinusoidal cell",
+        "lipocyte",
+        "perisinusoidal cell",
+        "vitamin A-storing cells"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000057",
+          "label": "fibroblast"
+        },
+        {
+          "id": "CL:0000327",
+          "label": "extracellular matrix secreting cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000057",
+          "label": "fibroblast"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000327",
+          "label": "extracellular matrix secreting cell"
+        },
+        {
+          "id": "CL:0000499",
+          "label": "stromal cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "PR:000007939",
+          "label": "glial fibrillary acidic protein"
+        },
+        {
+          "id": "UBERON:0002107",
+          "label": "liver"
+        }
+      ]
+    },
+    "CL:1000488": {
+      "id": "CL:1000488",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_1000488",
+      "label": "cholangiocyte",
+      "definition": "An epithelial cell that is part of the bile duct. Cholangiocytes contribute to bile secretion via net release of bicarbonate and water. They are cuboidal epithelium in the small interlobular bile ducts, but become columnar and mucus secreting in larger bile ducts approaching the porta hepatis and the extrahepatic ducts.",
+      "synonyms": [
+        "epithelial cell of bile duct"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "CL:0000069",
+          "label": "branched duct epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000068",
+          "label": "duct epithelial cell"
+        },
+        {
+          "id": "CL:0000069",
+          "label": "branched duct epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0005026",
+          "label": "hepatoblast"
+        },
+        {
+          "id": "GO:0015106",
+          "label": "bicarbonate transmembrane transporter activity"
+        },
+        {
+          "id": "UBERON:0002394",
+          "label": "bile duct"
+        }
+      ]
+    },
+    "CL:0002064": {
+      "id": "CL:0002064",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002064",
+      "label": "pancreatic acinar cell",
+      "definition": "A secretory cell found in pancreatic acini that secretes digestive enzymes and mucins. This cell is a typical zymogenic cell, have a basal nucleus and basophilic cytoplasm consisting of regular arrays of granular endoplasmic reticulum with mitochondria and dense secretory granules.",
+      "synonyms": [
+        "acinar cell of pancreas"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000622",
+          "label": "acinar cell"
+        },
+        {
+          "id": "CL:1001599",
+          "label": "pancreas exocrine glandular cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000083",
+          "label": "epithelial cell of pancreas"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0000154",
+          "label": "protein secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000622",
+          "label": "acinar cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:1001433",
+          "label": "epithelial cell of exocrine pancreas"
+        },
+        {
+          "id": "CL:1001599",
+          "label": "pancreas exocrine glandular cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0042589",
+          "label": "zymogen granule membrane"
+        },
+        {
+          "id": "UBERON:0001263",
+          "label": "pancreatic acinus"
+        }
+      ]
+    },
+    "CL:0002079": {
+      "id": "CL:0002079",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002079",
+      "label": "pancreatic ductal cell",
+      "definition": "Epithelial cell found in the ducts of the pancreas. This cell type contributes to the high luminal pH.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000069",
+          "label": "branched duct epithelial cell"
+        },
+        {
+          "id": "CL:1001433",
+          "label": "epithelial cell of exocrine pancreas"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000068",
+          "label": "duct epithelial cell"
+        },
+        {
+          "id": "CL:0000069",
+          "label": "branched duct epithelial cell"
+        },
+        {
+          "id": "CL:0000083",
+          "label": "epithelial cell of pancreas"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:1001433",
+          "label": "epithelial cell of exocrine pancreas"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0015106",
+          "label": "bicarbonate transmembrane transporter activity"
+        },
+        {
+          "id": "UBERON:0001064",
+          "label": "ventral pancreatic duct"
         }
       ]
     }

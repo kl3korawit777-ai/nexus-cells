@@ -173,11 +173,13 @@ function toElements(cells, edges, ownSystem, ghosts = []) {
 
 function layoutSystem(cy) {
   ensureFcose();
-  const dev = cy.edges('.e-dev');
-  // แม่ของ develops_from คือ source ลูกคือ target
+  // จุดที่ไม่มีเส้นเลยจะไม่เข้า layout แรงผลัก แต่วางเรียงเป็นตารางใต้ใยหลัก (ตายตัว ไม่สุ่ม)
+  const isolated = cy.nodes().filter((n) => n.degree(false) === 0);
+  const main = cy.elements().not(isolated);
+  const dev = main.edges('.e-dev');
   const hasParent = (n) => n.incomers('edge.e-dev').length > 0;
   const hasChild = (n) => n.outgoers('edge.e-dev').length > 0;
-  let roots = cy.nodes().filter((n) => hasChild(n) && !hasParent(n));
+  let roots = main.nodes().filter((n) => hasChild(n) && !hasParent(n));
   // เริ่มจาก hematopoietic stem cell ก่อน ถ้ามี
   const hsc = cy.getElementById('CL:0000037');
   if (hsc.nonempty()) roots = hsc;
@@ -193,27 +195,37 @@ function layoutSystem(cy) {
   // จุดที่ไม่อยู่ในสายพัฒนา ให้เริ่มใกล้เพื่อนบ้านที่มีตำแหน่งแล้ว (กำหนดตายตัวไม่สุ่ม)
   const bb = lineage.nonempty() ? lineage.boundingBox() : { x1: 0, x2: 300, y1: 0, y2: 300 };
   let k = 0;
-  cy.nodes().not(lineage).forEach((n) => {
+  main.nodes().not(lineage).forEach((n) => {
     const nb = n.neighborhood('node').intersection(lineage);
     if (nb.nonempty()) {
       let x = 0, y = 0;
       nb.forEach((m) => { x += m.position('x'); y += m.position('y'); });
       n.position({ x: x / nb.length - 90, y: y / nb.length - 70 });
     } else {
-      n.position({ x: bb.x2 + 120, y: bb.y1 + 90 * k++ });
+      n.position({ x: bb.x2 + 120 * (k % 3), y: bb.y1 + 90 * Math.floor(k++ / 3) });
     }
   });
 
   // ให้แม่อยู่เหนือลูกเสมอ ด้วยข้อจำกัดตำแหน่งสัมพัทธ์
   const constraints = dev.map((e) => ({ top: e.data('source'), bottom: e.data('target'), gap: 95 }));
-  cy.layout({
-    name: 'fcose', quality: 'proof', randomize: false, animate: false, fit: true, padding: 30,
+  main.layout({
+    name: 'fcose', quality: 'proof', randomize: false, animate: false, fit: false, padding: 30,
     nodeDimensionsIncludeLabels: true, uniformNodeDimensions: false,
     nodeRepulsion: () => 14000,
     idealEdgeLength: (e) => (e.hasClass('e-dev') ? 90 : 120),
     edgeElasticity: (e) => (e.hasClass('e-dev') ? 0.45 : 0.12),
     gravity: 0.25, numIter: 4000, packComponents: false, relativePlacementConstraint: constraints,
   }).run();
+
+  if (isolated.nonempty()) {
+    const box = main.nonempty() ? main.boundingBox() : { x1: 0, x2: 480, y1: 0, y2: 0 };
+    const cols = 5, dx = 115, dy = 85;
+    const x0 = (box.x1 + box.x2) / 2 - ((Math.min(cols, isolated.length) - 1) * dx) / 2;
+    const y0 = (main.nonempty() ? box.y2 + 110 : 0);
+    isolated.sort((a, b) => a.data('label').localeCompare(b.data('label')));
+    isolated.forEach((n, i) => n.position({ x: x0 + (i % cols) * dx, y: y0 + Math.floor(i / cols) * dy }));
+  }
+  cy.fit(cy.elements(), 30);
 }
 
 // ---------------------------------------------------------------- ใยรายระบบ
@@ -237,6 +249,7 @@ export function createSystemGraph(container, systemId, handlers = {}) {
     autoungrabify: false,
   });
   layoutSystem(cy);
+  container.__cy = cy; // ใช้ตรวจสอบ/ดีบักจาก console
 
   const visible = { develops_from: true, is_a: true };
   MODES.forEach((m) => { visible['mode:' + m.id] = true; });

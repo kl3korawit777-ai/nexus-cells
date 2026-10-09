@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-10-09T10:55:54+00:00",
+  "generated_at": "2026-10-09T11:03:37+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "edge_direction": "develops_from/is_a: from=ลูก to=แม่; interacts_with: from=ผู้กระทำ to=ผู้ถูกกระทำ"
  },
@@ -1779,6 +1779,830 @@
     ],
     "obsolete": false
    }
+  },
+  {
+   "id": "CL:0002563",
+   "slug": "intestinal-epithelial-cell",
+   "kind": "class",
+   "en": "intestinal epithelial cell",
+   "th": "เซลล์เยื่อบุผิวลำไส้",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-columnar",
+   "function": "กลุ่มเซลล์ที่เรียงตัวเป็นเยื่อบุผิวชั้นเดียวของลำไส้ ได้แก่ เซลล์ต้นกำเนิด เซลล์ดูดซึม เซลล์หลั่ง และเซลล์ M",
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002563",
+   "cl": {
+    "label": "intestinal epithelial cell",
+    "definition": "An epithelial cell of the lining of the intestine.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002178",
+   "slug": "epithelial-cell-of-stomach",
+   "kind": "class",
+   "en": "epithelial cell of stomach",
+   "th": "เซลล์เยื่อบุผิวกระเพาะอาหาร",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-columnar",
+   "function": "กลุ่มเซลล์เยื่อบุผิวของกระเพาะอาหาร ทั้งเซลล์ผิวและเซลล์ในต่อมกระเพาะ",
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002178",
+   "cl": {
+    "label": "epithelial cell of stomach",
+    "definition": "An epithelial cell found in the lining of the stomach.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:1001433",
+   "slug": "epithelial-cell-of-exocrine-pancreas",
+   "kind": "class",
+   "en": "epithelial cell of exocrine pancreas",
+   "th": "เซลล์เยื่อบุผิวตับอ่อนส่วนมีท่อ",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "glandular",
+   "function": "กลุ่มเซลล์ของตับอ่อนส่วนที่หลั่งสารผ่านท่อเข้าลำไส้เล็ก ได้แก่ เซลล์อะซินาร์และเซลล์ท่อ",
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_1001433",
+   "cl": {
+    "label": "epithelial cell of exocrine pancreas",
+    "definition": "An epithelial cell of the exocrine pancreas.",
+    "synonyms": [
+     "exocrine pancreas cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:4052065",
+   "slug": "serous-acinar-cell-of-salivary-gland",
+   "kind": "cell",
+   "en": "serous acinar cell of salivary gland",
+   "th": "เซลล์เซรัสของต่อมน้ำลาย",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "glandular",
+   "location": "อะซินัสของต่อมน้ำลาย พบมากในต่อมพาโรทิด",
+   "morphology": "เซลล์รูปพีระมิด นิวเคลียสกลมอยู่ใกล้ฐาน ไซโทพลาซึมด้านฐานติดสีเบส ด้านปลายมีแกรนูลสะสมเอนไซม์ (zymogen granule)",
+   "function": "หลั่งน้ำลายชนิดใสที่มีเอนไซม์อะไมเลสย่อยแป้ง",
+   "secretes": [
+    "α-amylase"
+   ],
+   "markers": [],
+   "lifespan": "",
+   "exam": "ต่อมพาโรทิดเป็นต่อมเซรัสเป็นหลัก ต่อมใต้ลิ้นเป็นต่อมเมือกเป็นหลัก ต่อมใต้ขากรรไกรเป็นต่อมผสม",
+   "diseases": [
+    "โรค Sjögren (ต่อมน้ำลายถูกทำลาย ปากแห้ง)",
+    "คางทูม (พาโรทิดอักเสบ)"
+   ],
+   "confused_with": [
+    "CL:4052066"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_4052065",
+   "cl": {
+    "label": "serous acinar cell of salivary gland",
+    "definition": "An acinar cell of the salivary gland, characterized by a pyramidal or triangular shape with a spherical nucleus and abundant eosinophilic zymogen granules. This cell secretes watery, enzyme‐rich fluid containing α-amylase, proline-rich proteins, and secretory immunoglobulins for starch digestion and antimicrobial defence. In humans and mice, serous acinar cell predominates in the parotid gland and to a lesser extent in the submandibular gland, where it exists alongside mucous acinar cells (Maruyama et al., 2019).",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:4052066",
+   "slug": "mucous-acinar-cell-of-salivary-gland",
+   "kind": "cell",
+   "en": "mucous acinar cell of salivary gland",
+   "th": "เซลล์เมือกของต่อมน้ำลาย",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "glandular",
+   "location": "อะซินัสของต่อมน้ำลาย พบมากในต่อมใต้ลิ้น",
+   "morphology": "นิวเคลียสแบนถูกดันไปอยู่ที่ฐานเซลล์ ไซโทพลาซึมสีจางและโปร่งเพราะมีเมือกสะสม",
+   "function": "หลั่งเมือก (mucin) ทำให้น้ำลายเหนียวและช่วยหล่อลื่น",
+   "secretes": [
+    "mucin"
+   ],
+   "markers": [],
+   "lifespan": "",
+   "exam": "ติดสี H&E จางกว่าเซลล์เซรัส",
+   "diseases": [],
+   "confused_with": [
+    "CL:4052065"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_4052066",
+   "cl": {
+    "label": "mucous acinar cell of salivary gland",
+    "definition": "An acinar cell of the salivary gland, responsible for producing a viscous, mucin‐rich solution, thereby facilitating lubrication and protection of the oral mucosa. This cell is characterized by an elongated shape, clear cytoplasm filled with mucin granules, and a basally compressed nucleus (Barrows et al., 2020). In humans and mice, the mucous acinar cell predominates in the sublingual gland and minor salivary glands, while also being present in mixed glands such as the submandibular gland, where it coexists with serous acinar cells (Maruyama et al., 2019).",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000162",
+   "slug": "parietal-cell",
+   "kind": "cell",
+   "en": "parietal cell",
+   "th": "เซลล์พาไรเอทัล (เซลล์สร้างกรด)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "glandular",
+   "location": "ต่อมกระเพาะอาหารบริเวณฟันดัสและตัวกระเพาะ พบมากบริเวณคอและส่วนกลางของต่อม",
+   "morphology": "เซลล์ขนาดใหญ่ รูปกลมหรือพีระมิด ไซโทพลาซึมติดสีแดงชมพูเพราะมีไมโทคอนเดรียมาก มีช่องเล็ก ๆ ในเซลล์ (intracellular canaliculi) นิวเคลียสกลมอยู่กลางเซลล์",
+   "function": "หลั่งกรดไฮโดรคลอริกและ intrinsic factor",
+   "secretes": [
+    "HCl",
+    "intrinsic factor"
+   ],
+   "markers": [
+    "H+/K+ ATPase"
+   ],
+   "lifespan": "",
+   "exam": "Intrinsic factor จำเป็นต่อการดูดซึมวิตามิน B12 ที่ลำไส้เล็กส่วนปลาย (ileum) ถ้าขาดจะเกิดโลหิตจางชนิด pernicious anemia การหลั่งกรดถูกกระตุ้นด้วย gastrin, histamine และ acetylcholine ยากลุ่ม PPI ยับยั้ง H+/K+ ATPase",
+   "diseases": [
+    "โลหิตจางชนิด pernicious anemia",
+    "แผลในกระเพาะอาหาร"
+   ],
+   "confused_with": [
+    "CL:0000155"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000162",
+   "cl": {
+    "label": "parietal cell",
+    "definition": "An epithelial cell of the stomach that is part of the fundic gastric gland. This cell is characterized by its pyramidal shape, abundant mitochondria, and a complex network of secretory canaliculi lined with microvilli. It secretes hydrochloric acid into the stomach lumen and produces intrinsic factor, essential for vitamin B12 absorption.",
+    "synonyms": [
+     "gastric parietal cell",
+     "oxyntic cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000155",
+   "slug": "chief-cell-of-stomach",
+   "kind": "cell",
+   "en": "chief cell of stomach",
+   "th": "เซลล์ชีฟของกระเพาะอาหาร (เซลล์สร้างเปปซิโนเจน)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "glandular",
+   "location": "ส่วนฐานของต่อมกระเพาะอาหาร",
+   "morphology": "ไซโทพลาซึมด้านฐานติดสีเบสเพราะมีร่างแหเอนโดพลาซึมชนิดขรุขระมาก ด้านปลายมีแกรนูลเอนไซม์",
+   "function": "หลั่งเปปซิโนเจนและไลเปสของกระเพาะอาหาร",
+   "secretes": [
+    "pepsinogen",
+    "gastric lipase"
+   ],
+   "markers": [],
+   "lifespan": "",
+   "exam": "เปปซิโนเจนถูกกรดไฮโดรคลอริกเปลี่ยนเป็นเปปซิน (pepsin)",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000162"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000155",
+   "cl": {
+    "label": "peptic cell",
+    "definition": "An epithelial cell of the stomach that is part of the fundic gastric gland. This cell is characterized by a basally located nucleus, abundant rough endoplasmic reticulum, and large apical secretory granules. It produces and secretes pepsinogen, the inactive precursor of the digestive enzyme pepsin.",
+    "synonyms": [
+     "chief cell of stomach",
+     "pepsinogen secreting cell",
+     "gastric chief cell",
+     "zymogenic cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002181",
+   "slug": "mucous-neck-cell",
+   "kind": "cell",
+   "en": "mucous neck cell of gastric gland",
+   "th": "เซลล์เมือกบริเวณคอต่อมกระเพาะ",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "glandular",
+   "location": "บริเวณคอของต่อมกระเพาะอาหาร แทรกอยู่ระหว่างเซลล์พาไรเอทัล",
+   "morphology": "เซลล์รูปทรงสูงถึงลูกบาศก์ นิวเคลียสอยู่ใกล้ฐานเซลล์ ไซโทพลาซึมมีเมือกด้านปลาย",
+   "function": "หลั่งเมือกเพื่อปกป้องเยื่อบุกระเพาะอาหาร",
+   "secretes": [
+    "เมือก (mucin)"
+   ],
+   "markers": [],
+   "lifespan": "",
+   "exam": "ต่างจากเซลล์ผิวเมือก (foveolar cell) ที่อยู่ที่ผิวเยื่อบุและหลุมกระเพาะ",
+   "diseases": [],
+   "confused_with": [
+    "CL:0002179"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002181",
+   "cl": {
+    "label": "mucous neck cell of gastric gland",
+    "definition": "A columnar epithelial mucous secreting cell located in the neck of the gastric glands. These cells have numerous apical secretory vesicles containing mucins and a basally displaced nucleus. The mucous they secrete is distinct histochemically from that of the surface mucous cells of stomach.",
+    "synonyms": [
+     "mucous neck cell",
+     "neck cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002179",
+   "slug": "foveolar-cell-of-stomach",
+   "kind": "cell",
+   "en": "foveolar cell of stomach",
+   "th": "เซลล์ผิวเมือกของกระเพาะอาหาร (foveolar cell)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-columnar",
+   "location": "ผิวเยื่อบุกระเพาะอาหารและหลุมกระเพาะ (gastric pit)",
+   "morphology": "เซลล์ทรงสูงชั้นเดียว ปลายเซลล์เต็มด้วยแกรนูลเมือก นิวเคลียสอยู่ที่ฐานเซลล์",
+   "function": "หลั่งเมือกชนิดไม่ละลายน้ำและไบคาร์บอเนต เคลือบผิวเพื่อป้องกันเยื่อบุจากกรดและเปปซิน",
+   "secretes": [
+    "เมือก (mucin)",
+    "ไบคาร์บอเนต"
+   ],
+   "markers": [],
+   "lifespan": "ประมาณ 3–5 วัน",
+   "exam": "เซลล์ผิวเมือกถูกเปลี่ยนใหม่เร็วมาก ชั้นเมือกร่วมกับไบคาร์บอเนตเป็นด่านป้องกันกรดของกระเพาะอาหาร",
+   "diseases": [
+    "การติดเชื้อ Helicobacter pylori",
+    "แผลในกระเพาะอาหาร"
+   ],
+   "confused_with": [
+    "CL:0002181"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002179",
+   "cl": {
+    "label": "foveolar cell of stomach",
+    "definition": "A simple columnar cell that populates the entire luminal surface including the gastric pits. This cell types secrete mucus to form a thick protective, lubricant layer over the gastric wall.",
+    "synonyms": [
+     "surface mucosal cell of stomach"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000509",
+   "slug": "g-cell",
+   "kind": "cell",
+   "en": "gastrin secreting cell",
+   "th": "เซลล์จี (G cell) เซลล์สร้างแกสทริน",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "glandular",
+   "location": "ต่อมกระเพาะอาหารส่วนไพโลรัส (antrum) และลำไส้เล็กส่วนต้น",
+   "morphology": "",
+   "function": "หลั่งฮอร์โมนแกสทริน (gastrin) กระตุ้นเซลล์พาไรเอทัลให้หลั่งกรด",
+   "secretes": [
+    "gastrin"
+   ],
+   "markers": [],
+   "lifespan": "",
+   "exam": "ถูกกระตุ้นด้วยโปรตีนที่ย่อยแล้วและสัญญาณจากเส้นประสาทเวกัส ถูกยับยั้งเมื่อกรดในกระเพาะมากเกินไป เป็นเซลล์ต่อมไร้ท่อชนิดหนึ่งในเยื่อบุทางเดินอาหาร",
+   "diseases": [
+    "Zollinger-Ellison syndrome (เนื้องอกสร้างแกสทริน)"
+   ],
+   "confused_with": [],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000509",
+   "cl": {
+    "label": "gastrin secreting cell",
+    "definition": "A peptide hormone secreting cell that secretes gastrin.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000584",
+   "slug": "enterocyte",
+   "kind": "cell",
+   "en": "enterocyte",
+   "th": "เอนเทอโรไซต์ (เซลล์ดูดซึมของลำไส้)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-columnar",
+   "location": "เยื่อบุผิวลำไส้เล็กและลำไส้ใหญ่ บนวิลลัส",
+   "morphology": "เซลล์ทรงสูงชั้นเดียว ด้านปลายมีไมโครวิลลัสเรียงชิดกัน (brush border) เซลล์ข้างเคียงยึดกันด้วย tight junction",
+   "function": "ดูดซึมสารอาหาร น้ำ และไอออน และมีเอนไซม์ที่ผิว brush border ย่อยอาหารขั้นสุดท้าย",
+   "secretes": [],
+   "markers": [
+    "villin",
+    "alkaline phosphatase"
+   ],
+   "lifespan": "ประมาณ 3–5 วัน",
+   "exam": "ไมโครวิลลัสเพิ่มพื้นที่ผิวดูดซึม ขาดเอนไซม์แลคเตสทำให้ไม่ทนน้ำตาลแลคโตส โรคซีลิแอคทำให้วิลลัสฝ่อ",
+   "diseases": [
+    "ภาวะไม่ทนน้ำตาลแลคโตส",
+    "โรคซีลิแอค (celiac disease)"
+   ],
+   "confused_with": [
+    "CL:0000160"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000584",
+   "cl": {
+    "label": "enterocyte",
+    "definition": "An epithelial cell that has its apical plasma membrane folded into microvilli to provide ample surface for the absorption of nutrients from the intestinal lumen.",
+    "synonyms": [
+     "differentiated enterocyte",
+     "mature enterocyte"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000160",
+   "slug": "goblet-cell",
+   "kind": "cell",
+   "en": "goblet cell",
+   "th": "กอเบลตเซลล์ (เซลล์รูปถ้วย)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "glandular",
+   "location": "แทรกอยู่ในเยื่อบุผิวลำไส้ จำนวนเพิ่มขึ้นจากลำไส้เล็กไปยังลำไส้ใหญ่",
+   "morphology": "รูปแก้วไวน์ ส่วนปลายอัดแน่นด้วยแกรนูลเมือก ส่วนฐานเรียวมีนิวเคลียสอยู่ที่ฐาน ย้อมติดสี PAS",
+   "function": "หลั่งเมือกหล่อลื่นและปกป้องเยื่อบุลำไส้",
+   "secretes": [
+    "mucin"
+   ],
+   "markers": [
+    "MUC2"
+   ],
+   "lifespan": "",
+   "exam": "เป็นต่อมเซลล์เดียว (unicellular gland) ตัวอย่างสำคัญในเนื้อเยื่อบุผิว",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000584"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000160",
+   "cl": {
+    "label": "goblet cell",
+    "definition": "A specialized, columnar, mucus secreting epithelial cell shaped like a flask or goblet. A narrow basal end contains the nucleus while the apical end is swollen by the accumulation of mucus laden secretory granules.  Short microvilli project from the apical plasma membrane.",
+    "synonyms": [
+     "chalice cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000510",
+   "slug": "paneth-cell",
+   "kind": "cell",
+   "en": "paneth cell",
+   "th": "เซลล์พาเนธ (Paneth cell)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "glandular",
+   "location": "ก้นต่อม (crypt of Lieberkühn) ของลำไส้เล็ก พบมากที่ ileum",
+   "morphology": "เซลล์พีระมิด ด้านปลายมีแกรนูลขนาดใหญ่ติดสีแดงของ eosin",
+   "function": "หลั่งสารต้านจุลชีพ และเป็นส่วนหนึ่งของ niche ที่สนับสนุนเซลล์ต้นกำเนิดในต่อม",
+   "secretes": [
+    "lysozyme",
+    "defensin"
+   ],
+   "markers": [
+    "lysozyme"
+   ],
+   "lifespan": "",
+   "exam": "หลั่ง lysozyme และ defensin อยู่ที่ก้นต่อมลำไส้เล็กใกล้เซลล์ต้นกำเนิด",
+   "diseases": [
+    "โรค Crohn (พบความผิดปกติของ Paneth cell ที่เกี่ยวข้อง)"
+   ],
+   "confused_with": [],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000510",
+   "cl": {
+    "label": "paneth cell",
+    "definition": "An epithelial cell found in the basal part of the intestinal glands (crypts of Lieberkuhn) including the appendix. Paneth cells synthesize and secrete lysozyme and cryptdins. Numerous in the deeper parts of the intestinal crypts, particularly in the duodenum, rich in zinc, contain large acidophilic granules, with irregular apical microvilli and prominent membrane-bound vacuoles containing matrix.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000164",
+   "slug": "enteroendocrine-cell",
+   "kind": "cell",
+   "en": "enteroendocrine cell",
+   "th": "เซลล์ต่อมไร้ท่อในทางเดินอาหาร (enteroendocrine cell)",
+   "systems": [
+    "digestive",
+    "endocrine"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "glandular",
+   "location": "แทรกอยู่ในเยื่อบุผิวกระเพาะอาหารและลำไส้",
+   "morphology": "มีแกรนูลสะสมฮอร์โมนอยู่ที่ฐานเซลล์",
+   "function": "รับรู้สิ่งที่อยู่ในลูเมนของทางเดินอาหาร แล้วหลั่งฮอร์โมนเข้ากระแสเลือดหรือออกฤทธิ์ในบริเวณใกล้เคียง",
+   "secretes": [
+    "gastrin",
+    "CCK",
+    "secretin",
+    "GIP",
+    "GLP-1"
+   ],
+   "markers": [
+    "chromogranin A",
+    "synaptophysin"
+   ],
+   "lifespan": "",
+   "exam": "ทางเดินอาหารจัดเป็นอวัยวะต่อมไร้ท่อที่ใหญ่ที่สุดของร่างกาย CCK กระตุ้นการหลั่งเอนไซม์ตับอ่อนและการหดตัวของถุงน้ำดี secretin กระตุ้นการหลั่งไบคาร์บอเนต",
+   "diseases": [
+    "เนื้องอกคาร์ซินอยด์ (carcinoid tumor)"
+   ],
+   "confused_with": [],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000164",
+   "cl": {
+    "label": "enteroendocrine cell",
+    "definition": "An endocrine cell that is located in the epithelium of the gastrointestinal tract or in the pancreas.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002250",
+   "slug": "intestinal-crypt-stem-cell",
+   "kind": "cell",
+   "en": "intestinal crypt stem cell",
+   "th": "เซลล์ต้นกำเนิดของต่อมลำไส้ (crypt base columnar cell)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-columnar",
+   "location": "ก้นต่อม (crypt) ของลำไส้ แทรกอยู่ระหว่างเซลล์พาเนธ",
+   "morphology": "เซลล์ทรงสูงรูปเรียว นิวเคลียสรูปรี",
+   "function": "แบ่งตัวและเปลี่ยนสภาพเป็นเซลล์เยื่อบุลำไส้ทุกชนิด ทดแทนเซลล์ที่หลุดลอกอย่างต่อเนื่อง",
+   "secretes": [],
+   "markers": [
+    "LGR5"
+   ],
+   "lifespan": "",
+   "exam": "เซลล์ลูกเคลื่อนขึ้นสู่ปลายวิลลัสภายในไม่กี่วัน การส่งสัญญาณ Wnt จำเป็นต่อการคงสภาพเซลล์ต้นกำเนิด",
+   "diseases": [
+    "มะเร็งลำไส้ใหญ่ (เกี่ยวข้องกับสัญญาณ Wnt/APC)"
+   ],
+   "confused_with": [],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002250",
+   "cl": {
+    "label": "intestinal crypt stem cell",
+    "definition": "A stem cell located in epithelium the based of the crypt of Lieberkuhn. Division of these cells serve both to maintain the stem cell population and produce the transit amplifying cells that are all precursors of all cell types that populate the intestinal epithelium.",
+    "synonyms": [
+     "stem cell of intestinal crypt of Lieberkuhn"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000682",
+   "slug": "m-cell",
+   "kind": "cell",
+   "en": "M cell of gut",
+   "th": "เซลล์เอ็ม (M cell, microfold cell)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-columnar",
+   "location": "เยื่อบุผิวที่คลุม Peyer's patch ในลำไส้เล็กส่วนปลาย",
+   "morphology": "ด้านปลายมีไมโครวิลลัสสั้นหรือพับเป็นรอยพับ (microfold) ด้านฐานเป็นช่องลึกที่มีลิมโฟไซต์และแมโครฟาจอยู่",
+   "function": "รับแอนติเจนจากลูเมนด้วยกระบวนการ transcytosis ส่งต่อให้เซลล์ภูมิคุ้มกันใต้เยื่อบุ",
+   "secretes": [],
+   "markers": [],
+   "lifespan": "",
+   "exam": "เป็นประตูรับแอนติเจนเข้าสู่ Peyer's patch เชื้อบางชนิด เช่น Salmonella และโปลิโอไวรัส ใช้เซลล์ M เป็นทางผ่านเข้าร่างกาย",
+   "diseases": [],
+   "confused_with": [],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000682",
+   "cl": {
+    "label": "M cell of gut",
+    "definition": "An absorptive cell of the gut epithelium that endocytoses microorganisms and intact macromolecules from the gut lumen and transports them to the subepithelial space where they are presented to antigen-presenting cells and lymphocytes.",
+    "synonyms": [
+     "M cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002088",
+   "slug": "interstitial-cell-of-cajal",
+   "kind": "cell",
+   "en": "interstitial cell of Cajal",
+   "th": "เซลล์คาฮาล (interstitial cell of Cajal)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": null,
+   "location": "ผนังทางเดินอาหาร ระหว่างและรอบชั้นกล้ามเนื้อเรียบ ใกล้ข่ายประสาท myenteric",
+   "morphology": "เซลล์มีแขนงยื่นไปสัมผัสเซลล์กล้ามเนื้อเรียบและปลายประสาท",
+   "function": "เป็นเซลล์ผู้นำจังหวะ (pacemaker) สร้างคลื่นไฟฟ้าช้า (slow wave) ที่กำหนดจังหวะการบีบตัวของทางเดินอาหาร",
+   "secretes": [],
+   "markers": [
+    "c-Kit (CD117)"
+   ],
+   "lifespan": "",
+   "exam": "เป็นเซลล์กำเนิดจังหวะการบีบตัวของทางเดินอาหาร และเชื่อมโยงกับเนื้องอก GIST ที่มีการกลายพันธุ์ของยีน KIT",
+   "diseases": [
+    "เนื้องอก GIST (gastrointestinal stromal tumor)"
+   ],
+   "confused_with": [],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002088",
+   "cl": {
+    "label": "interstitial cell of Cajal",
+    "definition": "Interstitial cells of Cajal are unique cells located in the gastrointestinal tract, specifically within the muscle layers of the entire digestive system. They have a distinctive stellate or spindle-like shape and were named after the Spanish histologist, Ramón y Cajal, who first discovered them.\nThe intricate interplay of interstitial cells of Cajal with smooth muscle cells and enteric neurons orchestrates the rhythmic contractions (known as peristalsis) in the gastrointestinal tract. They generate and propagate the slow waves of electrical activity, providing the fundamental pacing signal. Interstitial cells of Cajal are capable of responding to stretch and other mechanical stimuli, which helps in adapting the frequency and strength of peristalsis as needed. They also play an essential role in relaxations of gastrointestinal tract sphincters, ensuring proper control over the passage of material.\nMoreover, disruption or loss of ICCs contribute to several gastrointestinal motility disorders, underscoring their vital role in digestive health. Lack of or reduced ICCs are reported in various conditions such as achalasia, slow transit constipation, and diabetic gastroparesis.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)",
+    "synonyms": [
+     "ICC",
+     "intestinal pacemaker cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000182",
+   "slug": "hepatocyte",
+   "kind": "cell",
+   "en": "hepatocyte",
+   "th": "เซลล์ตับ (hepatocyte)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "glandular",
+   "location": "เนื้อตับ เรียงเป็นแผ่นระหว่างไซนูซอยด์",
+   "morphology": "เซลล์หลายเหลี่ยมขนาดใหญ่ นิวเคลียสกลม 1–2 นิวเคลียส ไซโทพลาซึมติดสีแดงชมพูและมีไกลโคเจนสะสม",
+   "function": "เมแทบอลิซึมของคาร์โบไฮเดรต ไขมัน และโปรตีน สร้างน้ำดีและโปรตีนในพลาสมา สะสมไกลโคเจน และกำจัดสารพิษ",
+   "secretes": [
+    "น้ำดี",
+    "albumin",
+    "ปัจจัยการแข็งตัวของเลือด"
+   ],
+   "markers": [
+    "albumin"
+   ],
+   "lifespan": "",
+   "exam": "ทำหน้าที่ทั้งแบบต่อมมีท่อ (น้ำดี) และต่อมไร้ท่อ (หลั่งโปรตีนเข้ากระแสเลือด) ตอบสนองต่ออินซูลินและกลูคากอนในการควบคุมน้ำตาลในเลือด",
+   "diseases": [
+    "ไวรัสตับอักเสบ",
+    "ตับแข็ง",
+    "ไขมันพอกตับ"
+   ],
+   "confused_with": [],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000182",
+   "cl": {
+    "label": "hepatocyte",
+    "definition": "Hepatocytes are the major cell type constituting 70-80% of the liver's cytoplasmic mass, playing crucial roles in maintaining the body's metabolic homeostasis. Dimensions of mature hepatocytes typically range from 20 to 30 μm in humans, but size may vary depending on their location within the liver lobule. Hepatocytes are characterized by high biosynthetic, enzymatic, and endocytic activity. They contain abundant mitochondria, smooth and rough endoplasmic reticulum, peroxisomes, lysosomes, and a large nucleus that is often binucleate. \nThe liver consists of three zones - the periportal Zone 1, midzone 2, and pericentral Zone 3 - which have differential nutrient and oxygen status, and damage susceptibility; hepatocytes in the different zones show signifcant functional heterogeneity ('hepatocyte functional zonation'). Hepatocytes are involved in a multitude of critical functions including the metabolism of lipids, carbohydrates, and proteins, the synthesis of serum proteins (e.g., albumin, transferrin, and lipoproteins), the detoxification and excretion of endogenous and exogenous substances, the storage of vitamins and minerals, and the production and secretion of bile. \nHeterocytes demonstrate a remarkable regenerative capacity, which enables the liver to recover from injury and loss of tissue mass. Notably, hepatocytes perform biotransformation with both phase I and phase II enzymes, which modify drugs, xenobiotics, and various substances for elimination from the body. Phase I enzymes, such as cytochrome P450, catalyze both oxidative and reductive reactions of many xenobiotics; many of the products of phase I enzymes are substrates for the phase II enzymes, which catalyze conjugation reactions. \nAlterations in hepatocyte function have significant implications for overall human health and disease. Certain conditions, such as hepatitis, cirrhosis, and liver cancer, can profoundly affect hepatocyte structure and function, thereby disrupting the liver's ability to perform its vital roles within the body. As the primary site for drug metabolism, changes in hepatocyte function can also impact the effectiveness and toxicity of pharmaceuticals. The regenerative ability of hepatocytes makes them valuable cells for liver regenerative medicine and bioartificial liver support systems, and their study has provided significant insights into liver biology and disease.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000632",
+   "slug": "hepatic-stellate-cell",
+   "kind": "cell",
+   "en": "hepatic stellate cell",
+   "th": "เซลล์สเตลเลตของตับ (hepatic stellate cell)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "loose",
+   "location": "ช่องดิสเซ (space of Disse) ระหว่างเซลล์ตับกับเซลล์บุผนังไซนูซอยด์",
+   "morphology": "เซลล์มีแขนง ไซโทพลาซึมมีหยดไขมันที่เก็บวิตามินเอ",
+   "function": "เก็บวิตามินเอ เมื่อตับบาดเจ็บจะถูกกระตุ้นให้สร้างคอลลาเจนจนเกิดพังผืด",
+   "secretes": [
+    "คอลลาเจน (เมื่อถูกกระตุ้น)"
+   ],
+   "markers": [
+    "desmin"
+   ],
+   "lifespan": "",
+   "exam": "ชื่อเดิม Ito cell หรือ fat-storing cell ต้นเหตุสำคัญของตับแข็งเมื่อถูกกระตุ้นเรื้อรัง",
+   "diseases": [
+    "พังผืดในตับ",
+    "ตับแข็ง"
+   ],
+   "confused_with": [
+    "CL:0000091"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000632",
+   "cl": {
+    "label": "hepatic stellate cell",
+    "definition": "A cell that is found in the perisinusoidal space of the liver that is capable of multiple roles including storage of retinol, presentation of antigen to T cells (including CD1d-restricted NKT cells), and upon activation, production of extracellular matrix components that can contribute to liver fibrosis. This activated state has a myofibroblast-like phenotype, though it's not clear in the literature if this is terminally differentiated. This cell type comprises approximately 8-15% of total cells in the liver.",
+    "synonyms": [
+     "Ito cell",
+     "fat-storing cell",
+     "hepatic perisinusoidal cell",
+     "lipocyte",
+     "perisinusoidal cell",
+     "vitamin A-storing cells"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:1000488",
+   "slug": "cholangiocyte",
+   "kind": "cell",
+   "en": "cholangiocyte",
+   "th": "เซลล์เยื่อบุท่อน้ำดี (cholangiocyte)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-cuboidal",
+   "location": "ท่อน้ำดีทั้งในตับและนอกตับ",
+   "morphology": "เซลล์เยื่อบุผิวชั้นเดียว รูปลูกบาศก์ในท่อเล็กและทรงสูงในท่อใหญ่",
+   "function": "ปรับแต่งน้ำดีด้วยการหลั่งน้ำและไบคาร์บอเนต",
+   "secretes": [
+    "ไบคาร์บอเนต",
+    "น้ำ"
+   ],
+   "markers": [],
+   "lifespan": "",
+   "exam": "Secretin กระตุ้นการหลั่งของเซลล์ท่อน้ำดีเช่นเดียวกับเซลล์ท่อของตับอ่อน",
+   "diseases": [
+    "primary biliary cholangitis",
+    "primary sclerosing cholangitis",
+    "มะเร็งท่อน้ำดี (cholangiocarcinoma)"
+   ],
+   "confused_with": [
+    "CL:0000182"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_1000488",
+   "cl": {
+    "label": "cholangiocyte",
+    "definition": "An epithelial cell that is part of the bile duct. Cholangiocytes contribute to bile secretion via net release of bicarbonate and water. They are cuboidal epithelium in the small interlobular bile ducts, but become columnar and mucus secreting in larger bile ducts approaching the porta hepatis and the extrahepatic ducts.",
+    "synonyms": [
+     "epithelial cell of bile duct"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002064",
+   "slug": "pancreatic-acinar-cell",
+   "kind": "cell",
+   "en": "pancreatic acinar cell",
+   "th": "เซลล์อะซินาร์ของตับอ่อน",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "glandular",
+   "location": "ตับอ่อนส่วนที่มีท่อ เรียงตัวเป็นอะซินัส",
+   "morphology": "เซลล์พีระมิด ฐานเซลล์ติดสีเบสเข้มเพราะมีร่างแหเอนโดพลาซึมชนิดขรุขระมาก ปลายเซลล์มีแกรนูล zymogen สีแดง",
+   "function": "สร้างและหลั่งเอนไซม์ย่อยอาหารในรูป zymogen",
+   "secretes": [
+    "trypsinogen",
+    "chymotrypsinogen",
+    "pancreatic lipase",
+    "pancreatic amylase"
+   ],
+   "markers": [],
+   "lifespan": "",
+   "exam": "ถูกกระตุ้นด้วย CCK และ acetylcholine เอนไซม์ย่อยโปรตีนถูกกระตุ้นที่ลำไส้เล็กโดย enteropeptidase ถ้าถูกกระตุ้นก่อนเวลาเกิดตับอ่อนอักเสบ",
+   "diseases": [
+    "ตับอ่อนอักเสบ (pancreatitis)"
+   ],
+   "confused_with": [
+    "CL:0002079"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002064",
+   "cl": {
+    "label": "pancreatic acinar cell",
+    "definition": "A secretory cell found in pancreatic acini that secretes digestive enzymes and mucins. This cell is a typical zymogenic cell, have a basal nucleus and basophilic cytoplasm consisting of regular arrays of granular endoplasmic reticulum with mitochondria and dense secretory granules.",
+    "synonyms": [
+     "acinar cell of pancreas"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002079",
+   "slug": "pancreatic-ductal-cell",
+   "kind": "cell",
+   "en": "pancreatic ductal cell",
+   "th": "เซลล์ท่อของตับอ่อน",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-cuboidal",
+   "location": "ท่อของตับอ่อนส่วนที่มีท่อ",
+   "morphology": "เซลล์เยื่อบุผิวชั้นเดียว รูปลูกบาศก์ถึงทรงสูงตามขนาดท่อ",
+   "function": "หลั่งของเหลวที่มีไบคาร์บอเนตสูงเพื่อทำให้อาหารที่ออกจากกระเพาะเป็นกลาง",
+   "secretes": [
+    "ไบคาร์บอเนต",
+    "น้ำ"
+   ],
+   "markers": [],
+   "lifespan": "",
+   "exam": "ถูกกระตุ้นด้วย secretin ช่อง CFTR ในเซลล์ท่อบกพร่องใน cystic fibrosis",
+   "diseases": [
+    "ซิสติกไฟโบรซิส (cystic fibrosis)",
+    "มะเร็งตับอ่อน (pancreatic ductal adenocarcinoma)"
+   ],
+   "confused_with": [
+    "CL:0002064"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002079",
+   "cl": {
+    "label": "pancreatic ductal cell",
+    "definition": "Epithelial cell found in the ducts of the pancreas. This cell type contributes to the high luminal pH.",
+    "synonyms": [],
+    "obsolete": false
+   }
   }
  ],
  "edges": [
@@ -2134,6 +2958,174 @@
    "mode": "immune",
    "source": "curated",
    "file": "blood-immune"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000584",
+   "to": "CL:0002250",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000160",
+   "to": "CL:0002250",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000510",
+   "to": "CL:0002250",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000164",
+   "to": "CL:0002250",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000682",
+   "to": "CL:0002250",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002250",
+   "to": "CL:0002563",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000584",
+   "to": "CL:0002563",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000682",
+   "to": "CL:0002563",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000162",
+   "to": "CL:0002178",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000155",
+   "to": "CL:0002178",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002181",
+   "to": "CL:0002178",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002179",
+   "to": "CL:0002178",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000509",
+   "to": "CL:0002178",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002064",
+   "to": "CL:1001433",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002079",
+   "to": "CL:1001433",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000509",
+   "to": "CL:0000162",
+   "th": "แกสทริน (gastrin) กระตุ้นการหลั่งกรด",
+   "mode": "hormone",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000164",
+   "to": "CL:0002064",
+   "th": "CCK กระตุ้นการหลั่งเอนไซม์ย่อยอาหาร",
+   "mode": "hormone",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000164",
+   "to": "CL:0002079",
+   "th": "secretin กระตุ้นการหลั่งไบคาร์บอเนต",
+   "mode": "hormone",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000164",
+   "to": "CL:1000488",
+   "th": "secretin กระตุ้นการหลั่งไบคาร์บอเนตของท่อน้ำดี",
+   "mode": "hormone",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000682",
+   "to": "CL:0000451",
+   "th": "ส่งแอนติเจนจากลูเมนให้เดนไดรต์เซลล์",
+   "mode": "immune",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000510",
+   "to": "CL:0002250",
+   "th": "เป็น niche สนับสนุนเซลล์ต้นกำเนิด",
+   "mode": "support",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000091",
+   "to": "CL:0000632",
+   "th": "ไซโตไคน์จากคัฟเฟอร์เซลล์กระตุ้นเซลล์สเตลเลตเมื่อตับบาดเจ็บ",
+   "mode": "paracrine",
+   "source": "curated",
+   "file": "digestive"
   }
  ]
 }
