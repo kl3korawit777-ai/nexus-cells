@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex">
+  <title>404 · Nexus · ใยเซลล์</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #f6f2fb; --ink: #2a2140; --muted: #62597c; --accent: #5b3fa0; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #14101f; --ink: #eee9f8; --muted: #b3a9cc; --accent: #a98bf0; } }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px 16px; box-sizing: border-box;
+      background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans Thai", "Noto Sans Thai", system-ui, sans-serif; line-height: 1.6; text-align: center; }
+    main { max-width: 440px; }
+    h1 { font-size: 3.2rem; margin: 0; color: var(--accent); }
+    p { color: var(--muted); margin: 6px 0; }
+    a { display: inline-block; margin-top: 18px; padding: 10px 22px; border-radius: 12px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+    @media (prefers-color-scheme: dark) { a { color: #1a1230; } }
+    a:focus-visible { outline: 3px solid #1b64d8; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>404</h1>
+    <p>ไม่พบหน้านี้ กำลังพากลับหน้าแรก</p>
+    <p lang="en">Page not found. Taking you back to the home page.</p>
+    <a id="home" href="./">หน้าแรก · Home</a>
+  </main>
+  <script>
+    // GitHub Pages (โปรเจกต์): ที่อยู่คือ /<repo>/... จึงใช้ส่วนแรกของ path เป็นฐาน ส่วนโดเมนของตัวเองใช้ราก /
+    (function () {
+      var base = '/';
+      if (/\.github\.io$/.test(location.hostname)) {
+        var seg = location.pathname.split('/')[1];
+        if (seg) base = '/' + seg + '/';
+      }
+      document.getElementById('home').href = base;
+      setTimeout(function () { location.replace(base); }, 3000);
+    })();
+  </script>
+</body>
+</html>

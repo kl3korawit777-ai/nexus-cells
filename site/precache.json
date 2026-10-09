@@ -1,4 +1,5 @@
 [
+"404.html",
 "css/style.css",
 "data/layout-overview.json",
 "data/nexus.json",
@@ -15,6 +16,7 @@
 "icons/og-image.png",
 "icons/og.svg",
 "index.html",
+"js/about.js",
 "js/card.js",
 "js/compare.js",
 "js/content.js",

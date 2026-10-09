@@ -532,3 +532,13 @@ a.tissue-card:hover { border-color: var(--accent); color: var(--ink); }
   padding: 10px 14px; border-radius: 14px; background: var(--surface); color: var(--ink);
   border: 1.5px solid var(--accent); box-shadow: var(--shadow);
 }
+
+/* ---------- หน้าเกี่ยวกับ ---------- */
+.about { display: grid; gap: 14px; max-width: 860px; margin: 0 auto; }
+.about h2 { font-size: 1.15rem; margin-bottom: 6px; }
+.about h3 { font-size: 1rem; margin: 12px 0 6px; }
+.stats { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+.stat { background: var(--surface-2); border-radius: 12px; padding: 6px 12px; line-height: 1.25; }
+.stat b { display: block; font-size: 1.3rem; }
+.stat span { font-size: .8rem; color: var(--muted); }
+.about-disclaimer h2::before { content: ""; }
