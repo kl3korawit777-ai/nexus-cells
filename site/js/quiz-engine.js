@@ -25,10 +25,13 @@ function shuffle(arr, rng) {
 
 const norm = (s) => String(s || '').toLowerCase().replace(/\s+/g, ' ').trim();
 
+// ตัวแยกคำ: เครื่องหมายวรรคตอน "และ" (ภาษาไทย) และ "and" ประกอบด้วยรหัสอักขระเพื่อไม่ให้มีอักษรไทยในโค้ด
+const SPLIT_RE = new RegExp('[()/,;]|\\s' + String.fromCharCode(0x0e41, 0x0e25, 0x0e30) + '\\s|\\sand\\s');
+
 // แยกรายการ เช่น "ADH (vasopressin)" เป็นคำสำคัญ ["adh", "vasopressin"]
 export function tokensOf(item) {
   return norm(item)
-    .split(/[()/,;]| และ | and /)
+    .split(SPLIT_RE)
     .map((x) => x.trim())
     .filter((x) => x.length >= 2);
 }

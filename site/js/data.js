@@ -39,7 +39,7 @@ export const store = {
 
 export async function loadData() {
   const res = await fetch('data/nexus.json', { cache: 'no-cache' });
-  if (!res.ok) throw new Error('โหลด data/nexus.json ไม่สำเร็จ (HTTP ' + res.status + ')');
+  if (!res.ok) throw new Error(t('app.dataLoadFailed', { status: res.status }));
   const d = await res.json();
   store.meta = d.meta;
   store.systems = d.systems;

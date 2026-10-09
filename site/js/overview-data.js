@@ -4,6 +4,7 @@
 import { store } from './data.js';
 import { computeAll, layoutHash, LAYOUT_VERSION } from './overview-layout.js';
 import { ensureFcose } from './graph.js';
+import { t } from './i18n.js';
 
 let pending = null;
 
@@ -25,17 +26,17 @@ async function load() {
     if (res.ok) {
       const json = await res.json();
       if (json.version === LAYOUT_VERSION && json.hash === expected) return { ...json, source: 'precomputed' };
-      reason = `แฮชไม่ตรงกับข้อมูลปัจจุบัน (ไฟล์: ${json.hash}, ข้อมูล: ${expected})`;
+      reason = t('layout.hashMismatch', { file: json.hash, data: expected });
     } else {
-      reason = `ไม่พบไฟล์ (HTTP ${res.status})`;
+      reason = t('layout.notFound', { status: res.status });
     }
   } catch (e) {
-    reason = 'อ่านไฟล์ไม่ได้: ' + e.message;
+    reason = t('layout.unreadable', { msg: e.message });
   }
-  console.warn(`[Nexus] ใช้ตำแหน่งใยภาพรวมที่คำนวณล่วงหน้าไม่ได้ — ${reason} จึงคำนวณในเบราว์เซอร์แทน (รัน python scripts/nexus.py build เพื่อสร้างไฟล์ใหม่)`);
+  console.warn('[Nexus] ' + t('layout.fallbackWarn', { reason }));
   ensureFcose();
   const t0 = performance.now();
   const out = computeAll(window.cytoscape, data);
-  console.info(`[Nexus] คำนวณตำแหน่งในเบราว์เซอร์ใช้เวลา ${Math.round(performance.now() - t0)} ms`);
+  console.info('[Nexus] ' + t('layout.fallbackTime', { ms: Math.round(performance.now() - t0) }));
   return { ...out, source: 'browser' };
 }

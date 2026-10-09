@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-10-09T11:38:30+00:00",
+  "generated_at": "2026-10-09T11:50:22+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "edge_direction": "develops_from/is_a: from=ลูก to=แม่; interacts_with: from=ผู้กระทำ to=ผู้ถูกกระทำ"
  },
@@ -11,6 +11,7 @@
    "en": "Integumentary system",
    "color": "#E8A87C",
    "summary": "ปกป้องร่างกายจากสิ่งแวดล้อม ช่วยควบคุมอุณหภูมิ และรับความรู้สึกสัมผัส",
+   "en_summary": "Protects the body from the environment, helps regulate temperature, and senses touch.",
    "organs": [
     "ผิวหนัง",
     "ผม",
@@ -26,6 +27,7 @@
    "en": "Skeletal system",
    "color": "#C9B79C",
    "summary": "ค้ำจุนร่างกาย ปกป้องอวัยวะภายใน เป็นที่เก็บแคลเซียม และเป็นแหล่งสร้างเซลล์เม็ดเลือดในไขกระดูก",
+   "en_summary": "Supports the body, protects internal organs, stores calcium, and houses the bone marrow where blood cells are made.",
    "organs": [
     "กระดูก",
     "กระดูกอ่อน",
@@ -40,6 +42,7 @@
    "en": "Muscular system",
    "color": "#D9534F",
    "summary": "สร้างการเคลื่อนไหวของร่างกาย การบีบตัวของอวัยวะภายใน และการหดตัวของหัวใจ",
+   "en_summary": "Produces body movement, moves substances through internal organs, and makes the heart contract.",
    "organs": [
     "กล้ามเนื้อลาย",
     "กล้ามเนื้อเรียบ",
@@ -53,6 +56,7 @@
    "en": "Nervous system",
    "color": "#8E6FD8",
    "summary": "รับรู้ ประมวลผล และสั่งการตอบสนองด้วยสัญญาณไฟฟ้าและสารสื่อประสาท",
+   "en_summary": "Senses, processes and commands responses using electrical signals and neurotransmitters.",
    "organs": [
     "สมอง",
     "ไขสันหลัง",
@@ -66,6 +70,7 @@
    "en": "Endocrine system",
    "color": "#F0A030",
    "summary": "ควบคุมการทำงานของร่างกายด้วยฮอร์โมนที่หลั่งเข้ากระแสเลือด",
+   "en_summary": "Controls body functions with hormones released into the bloodstream.",
    "organs": [
     "ไฮโพทาลามัส",
     "ต่อมใต้สมอง",
@@ -82,6 +87,7 @@
    "en": "Blood and immune system",
    "color": "#E0457B",
    "summary": "ลำเลียงก๊าซและสารต่าง ๆ ในเลือด ห้ามเลือด และป้องกันร่างกายจากเชื้อโรคและเซลล์ผิดปกติ",
+   "en_summary": "Transports gases and other substances in the blood, stops bleeding, and defends the body against pathogens and abnormal cells.",
    "organs": [
     "เลือด",
     "ไขกระดูก",
@@ -98,6 +104,7 @@
    "en": "Cardiovascular system",
    "color": "#C0392B",
    "summary": "สูบฉีดและนำเลือดไปเลี้ยงทั่วร่างกาย",
+   "en_summary": "Pumps and carries blood throughout the body.",
    "organs": [
     "หัวใจ",
     "หลอดเลือดแดง",
@@ -111,6 +118,7 @@
    "en": "Respiratory system",
    "color": "#4DA6D9",
    "summary": "แลกเปลี่ยนก๊าซออกซิเจนและคาร์บอนไดออกไซด์ระหว่างอากาศกับเลือด",
+   "en_summary": "Exchanges oxygen and carbon dioxide between the air and the blood.",
    "organs": [
     "โพรงจมูก",
     "คอหอย",
@@ -126,6 +134,7 @@
    "en": "Digestive system",
    "color": "#6DBE45",
    "summary": "ย่อยอาหารและดูดซึมสารอาหาร น้ำ และเกลือแร่เข้าสู่ร่างกาย",
+   "en_summary": "Digests food and absorbs nutrients, water and electrolytes into the body.",
    "organs": [
     "ปาก",
     "หลอดอาหาร",
@@ -143,6 +152,7 @@
    "en": "Urinary system",
    "color": "#E5C100",
    "summary": "กรองเลือด ขับของเสีย และรักษาสมดุลน้ำ เกลือแร่ และกรด-เบส",
+   "en_summary": "Filters blood, removes waste, and balances water, electrolytes and acid-base status.",
    "organs": [
     "ไต",
     "ท่อไต",
@@ -156,6 +166,7 @@
    "en": "Reproductive system",
    "color": "#E86AA6",
    "summary": "สร้างเซลล์สืบพันธุ์และฮอร์โมนเพศ และรองรับการตั้งครรภ์",
+   "en_summary": "Produces gametes and sex hormones and supports pregnancy.",
    "organs": [
     "อัณฑะ",
     "ท่อนำอสุจิ",
@@ -178,6 +189,11 @@
    "location": "ผิวด้านนอกของร่างกาย บุผิวด้านในของท่อและโพรง และเป็นเนื้อเยื่อของต่อม",
    "function": "ปกป้อง ดูดซึม สร้างและหลั่งสาร และรับความรู้สึก",
    "exam": "",
+   "en_content": {
+    "features": "Cells sit tightly packed on a basement membrane with little extracellular matrix; the tissue has no blood vessels of its own and shows apical-basal polarity.",
+    "location": "Outer body surfaces, linings of ducts and cavities, and the secretory parts of glands.",
+    "function": "Protection, absorption, secretion and sensation."
+   },
    "germ_layers": [
     "ectoderm",
     "mesoderm",
@@ -232,6 +248,12 @@
    "location": "พบทั่วร่างกาย ได้แก่ ใต้ผิวหนัง รอบอวัยวะ กระดูก กระดูกอ่อน เลือด และไขกระดูก",
    "function": "ค้ำจุน เชื่อมต่อ ยึดอวัยวะ กักเก็บพลังงาน ลำเลียงสาร และป้องกันร่างกาย",
    "exam": "เลือดจัดเป็นเนื้อเยื่อเกี่ยวพัน เพราะประกอบด้วยเซลล์ที่ลอยอยู่ในเมทริกซ์ของเหลวคือพลาสมา และมีต้นกำเนิดจากมีเซนไคม์เช่นเดียวกับเนื้อเยื่อเกี่ยวพันชนิดอื่น",
+   "en_content": {
+    "features": "Cells are scattered in an extracellular matrix of fibres and ground substance. Blood is classified as connective tissue because its cells are suspended in a fluid matrix, the plasma.",
+    "location": "Found throughout the body: under the skin, around organs, in bone, cartilage, blood and bone marrow.",
+    "function": "Supports, connects, anchors organs, stores energy, transports substances and defends the body.",
+    "exam": "Blood is classified as connective tissue because it consists of cells suspended in a fluid matrix (plasma) and, like other connective tissues, develops from mesenchyme."
+   },
    "germ_layers": [
     "mesoderm"
    ],
@@ -289,6 +311,11 @@
    "location": "กล้ามเนื้อที่ยึดกับกระดูก ผนังอวัยวะกลวง และผนังหัวใจ",
    "function": "หดตัวเพื่อสร้างแรงและการเคลื่อนไหว",
    "exam": "",
+   "en_content": {
+    "features": "Elongated cells containing actin and myosin organised into contractile units; the three types differ in striation and in how they are controlled.",
+    "location": "Muscles attached to bone, walls of hollow organs, and the wall of the heart.",
+    "function": "Contraction to produce force and movement."
+   },
    "germ_layers": [
     "mesoderm"
    ],
@@ -321,6 +348,12 @@
    "location": "สมอง ไขสันหลัง และเส้นประสาท",
    "function": "รับ ประมวลผล และส่งสัญญาณ ควบคุมการทำงานของร่างกาย",
    "exam": "ไมโครเกลีย (microglial cell) จัดเป็นเกลียและเป็นเซลล์ภูมิคุ้มกันประจำระบบประสาทส่วนกลาง แต่มีต้นกำเนิดต่างจากเกลียชนิดอื่น คือมาจาก yolk sac ไม่ใช่เอ็กโทเดิร์ม (ประสาท) เหมือนแอสโตรไซต์และโอลิโกเดนโดรไซต์",
+   "en_content": {
+    "features": "Neurons that generate and conduct electrical signals, supported by glial cells.",
+    "location": "Brain, spinal cord and nerves.",
+    "function": "Receive, process and transmit signals to control the body.",
+    "exam": "Microglia are classified as glia and act as the resident immune cells of the central nervous system, but unlike other glia they originate from the yolk sac, not from neural ectoderm."
+   },
    "germ_layers": [
     "ectoderm"
    ],
@@ -348,6 +381,9 @@
    "location": "",
    "function": "",
    "exam": "",
+   "en_content": {
+    "features": "A group for cells that do not fit the four main tissue types."
+   },
    "germ_layers": [],
    "image": null,
    "subtypes": [
@@ -380,6 +416,9 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "function": "Cells derived from the hematopoietic stem cell: red cells, platelets and the white blood cells"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000988",
    "cl": {
     "label": "hematopoietic cell",
@@ -407,6 +446,9 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "function": "Nucleated blood cells that defend the body against pathogens and foreign material"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000738",
    "cl": {
     "label": "leukocyte",
@@ -435,6 +477,9 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "function": "Leukocytes with specific cytoplasmic granules: neutrophils, eosinophils and basophils"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000094",
    "cl": {
     "label": "granulocyte",
@@ -462,6 +507,9 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "function": "Leukocytes central to adaptive immunity: T cells, B cells and NK cells"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000542",
    "cl": {
     "label": "lymphocyte",
@@ -485,6 +533,9 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "function": "Cells with MHC class II that present antigen to helper T cells: dendritic cells, macrophages and B cells"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000145",
    "cl": {
     "label": "professional antigen presenting cell",
@@ -523,6 +574,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bone marrow (a few in peripheral blood and cord blood)",
+    "morphology": "Small cell with a round nucleus and scant cytoplasm, resembling a small lymphocyte",
+    "function": "Self-renews and differentiates into progenitors of every blood cell lineage",
+    "exam": "Multipotent, giving rise to all blood cell types; the basis of bone marrow transplantation"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000037",
    "cl": {
     "label": "hematopoietic stem cell",
@@ -563,6 +620,11 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bone marrow",
+    "function": "Progenitor of the myeloid lineage; differentiates into progenitors of the red cell/platelet and granulocyte/monocyte lineages",
+    "exam": "Source of red cells, platelets, granulocytes, monocytes and dendritic cells"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000049",
    "cl": {
     "label": "common myeloid progenitor",
@@ -607,6 +669,11 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bone marrow",
+    "function": "Progenitor of lymphocytes; differentiates into T cells, B cells and NK cells",
+    "exam": "Source of all lymphocytes; T cells mature in the thymus and B cells in the bone marrow"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000051",
    "cl": {
     "label": "common lymphoid progenitor",
@@ -650,6 +717,11 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bone marrow",
+    "function": "Differentiates into the erythroid or the megakaryocyte (platelet) lineage",
+    "exam": "Branch point between the red cell lineage (erythropoietin) and the platelet lineage (thrombopoietin)"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000050",
    "cl": {
     "label": "megakaryocyte-erythroid progenitor cell",
@@ -691,6 +763,10 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bone marrow",
+    "function": "Differentiates into neutrophils, eosinophils, basophils, monocytes and mast cells"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000557",
    "cl": {
     "label": "granulocyte monocyte progenitor cell",
@@ -735,6 +811,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bone marrow",
+    "morphology": "Still nucleated; the nucleus shrinks and the chromatin condenses as the cell matures",
+    "function": "Accumulates hemoglobin, then extrudes its nucleus to become a reticulocyte",
+    "exam": "Red cell production is stimulated by erythropoietin from the kidney"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000765",
    "cl": {
     "label": "erythroblast",
@@ -772,6 +854,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bone marrow, then the bloodstream",
+    "morphology": "No nucleus, but residual ribosomes and RNA remain; supravital staining shows a blue reticular network",
+    "function": "Immature red cell that matures into an erythrocyte within about 1-2 days",
+    "exam": "The reticulocyte count reflects red cell production by the bone marrow; it rises after blood loss or hemolysis"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000558",
    "cl": {
     "label": "reticulocyte",
@@ -812,6 +900,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bloodstream",
+    "morphology": "Biconcave disc without a nucleus or organelles, about 7-8 µm in diameter",
+    "function": "Carries oxygen with hemoglobin and helps carry carbon dioxide",
+    "exam": "Destroyed in the spleen, liver and bone marrow; the biconcave shape increases surface area and flexibility through capillaries"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000232",
    "cl": {
     "label": "erythrocyte",
@@ -851,6 +945,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bone marrow",
+    "morphology": "Very large cell with a multilobed, polyploid nucleus",
+    "function": "Sheds cytoplasm as fragments that become platelets",
+    "exam": "Platelet production is driven mainly by thrombopoietin from the liver"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000556",
    "cl": {
     "label": "megakaryocyte",
@@ -894,6 +994,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bloodstream",
+    "morphology": "Small anucleate cytoplasmic fragment, about 2-3 µm",
+    "function": "Aggregates at sites of vessel injury to stop bleeding and supports blood clotting",
+    "exam": "A fragment of the megakaryocyte, not a complete cell; normal count about 150,000-400,000 per µL"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000233",
    "cl": {
     "label": "platelet",
@@ -939,6 +1045,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bloodstream; migrates into inflamed tissue",
+    "morphology": "Nucleus with 3-5 lobes and fine, pale-staining granules; about 10-12 µm",
+    "function": "Engulfs and kills bacteria by phagocytosis; first responder in acute inflammation",
+    "exam": "Most abundant white cell (about 40-70%); rises in bacterial infection, and dead cells form pus"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000775",
    "cl": {
     "label": "neutrophil",
@@ -991,6 +1103,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bloodstream and tissue beneath epithelia",
+    "morphology": "Bilobed nucleus with large granules that stain red-orange with eosin",
+    "function": "Kills large parasites such as helminths and takes part in allergic reactions",
+    "exam": "About 1-6% of leukocytes; increased in allergy and helminth infection"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000771",
    "cl": {
     "label": "eosinophil",
@@ -1040,6 +1158,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bloodstream",
+    "morphology": "Large dark blue granules that often obscure the nucleus",
+    "function": "Releases histamine and other mediators in allergy and inflammation",
+    "exam": "Least common leukocyte (under 1%); carries IgE receptors like mast cells, but circulates in the blood"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000767",
    "cl": {
     "label": "basophil",
@@ -1089,6 +1213,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Connective tissue near vessels, skin, and the linings of the respiratory and digestive tracts",
+    "morphology": "Round to oval cell packed with large granules that stain blue-purple with basic dyes",
+    "function": "Releases granule contents when IgE on its surface binds antigen, causing inflammation and allergy",
+    "exam": "Lives in tissues, not in blood; the cause of type I hypersensitivity (anaphylaxis)"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000097",
    "cl": {
     "label": "mast cell",
@@ -1129,6 +1259,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bloodstream",
+    "morphology": "Largest leukocyte, with a kidney- or horseshoe-shaped nucleus and grey-blue cytoplasm",
+    "function": "Migrates from blood into tissues and becomes a macrophage or dendritic cell",
+    "exam": "About 2-8% of leukocytes; becomes a macrophage once it leaves the vessel"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000576",
    "cl": {
     "label": "monocyte",
@@ -1167,6 +1303,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Connective tissue throughout the body, spleen, lymph nodes",
+    "morphology": "Large cell of irregular shape with many lysosomes and phagosomes",
+    "function": "Engulfs foreign material and dead cells, presents antigen to helper T cells and secretes cytokines",
+    "exam": "Derived from monocytes; activated by IFN-γ from helper T cells; tissue-resident macrophages have organ-specific names"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000235",
    "cl": {
     "label": "macrophage",
@@ -1213,6 +1355,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bone surface, in resorption pits called Howship's lacunae",
+    "morphology": "Large multinucleated cell with a ruffled border facing the bone",
+    "function": "Dissolves bone matrix with acid and enzymes (bone resorption)",
+    "exam": "Formed by fusion of cells of the monocyte/macrophage lineage, unlike osteoblasts, which build bone"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000092",
    "cl": {
     "label": "osteoclast",
@@ -1251,6 +1399,11 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Wall of the liver sinusoids",
+    "function": "Resident liver macrophage that removes aged red cells, bacteria and debris from the blood passing through the liver",
+    "exam": "A tissue-resident macrophage of the mononuclear phagocyte system"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000091",
    "cl": {
     "label": "Kupffer cell",
@@ -1294,6 +1447,11 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Lumen and lining of the lung alveoli",
+    "function": "Engulfs dust, bacteria and debris that reach the alveoli",
+    "exam": "Also called a dust cell; the resident macrophage of the lung"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000583",
    "cl": {
     "label": "alveolar macrophage",
@@ -1335,6 +1493,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Brain and spinal cord",
+    "morphology": "Small cell with an elongated or oval nucleus and short processes",
+    "function": "Resident immune cell of the central nervous system that engulfs dead cells and debris",
+    "exam": "Originates from the yolk sac in the embryo, not from bone marrow monocytes, although it behaves like a macrophage"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000129",
    "cl": {
     "label": "microglial cell",
@@ -1378,6 +1542,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Skin, mucosa and lymphoid organs",
+    "morphology": "Cell with long, branch-like processes",
+    "function": "Captures antigen in tissue, migrates to lymph nodes and presents antigen to naive T cells",
+    "exam": "The most effective activator of naive T cells; links innate and adaptive immunity"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000451",
    "cl": {
     "label": "dendritic cell",
@@ -1417,6 +1587,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Blood, lymph nodes, spleen and thymus",
+    "morphology": "Small lymphocyte with a large round nucleus and scant cytoplasm",
+    "function": "Mediates cell-mediated immunity; recognises antigen through the T cell receptor (TCR)",
+    "exam": "Produced in the bone marrow but matures in the thymus"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000084",
    "cl": {
     "label": "T cell",
@@ -1465,6 +1641,11 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Lymph nodes, spleen and blood",
+    "function": "Recognises antigen presented on MHC class II and secretes cytokines that activate B cells, cytotoxic T cells and macrophages",
+    "exam": "CD4+; recognises MHC class II"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000912",
    "cl": {
     "label": "helper T cell",
@@ -1510,6 +1691,11 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Lymph nodes, spleen and blood",
+    "function": "Kills virus-infected cells and tumour cells by releasing perforin and granzymes",
+    "exam": "CD8+; recognises MHC class I"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000910",
    "cl": {
     "label": "cytotoxic T cell",
@@ -1554,6 +1740,11 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Lymph nodes, spleen and blood",
+    "function": "Suppresses other immune cells to maintain tolerance to self",
+    "exam": "FOXP3 is the key marker"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000815",
    "cl": {
     "label": "regulatory T cell",
@@ -1598,6 +1789,11 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Lymph nodes, spleen, blood and tissues",
+    "function": "Remembers antigens met before and responds faster and more strongly on re-exposure",
+    "exam": "The basis of vaccine-induced immunity and the secondary response"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000813",
    "cl": {
     "label": "memory T cell",
@@ -1642,6 +1838,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bone marrow, lymph nodes, spleen and blood",
+    "morphology": "Small lymphocyte that looks like a T cell under ordinary light microscopy",
+    "function": "Mediates humoral immunity; surface immunoglobulin acts as the B cell receptor (BCR)",
+    "exam": "Matures in the bone marrow; on activation it becomes plasma cells and memory B cells"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000236",
    "cl": {
     "label": "B cell",
@@ -1686,6 +1888,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Bone marrow, lymph nodes and mucosa-associated tissue",
+    "morphology": "Eccentric round nucleus with clock-face chromatin; basophilic cytoplasm rich in rough ER and a prominent Golgi apparatus",
+    "function": "Produces and secretes large amounts of antibody",
+    "exam": "Arises from activated B cells; the abundant rough ER matches its heavy protein secretion"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000786",
    "cl": {
     "label": "plasma cell",
@@ -1730,6 +1938,11 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Lymph nodes, spleen and blood",
+    "function": "Remembers antigens met before and makes more antibody, faster, on re-exposure",
+    "exam": "The basis of vaccine-induced immunity and the secondary response"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000787",
    "cl": {
     "label": "memory B cell",
@@ -1773,6 +1986,12 @@
    "image": null,
    "verified": false,
    "refs": [],
+   "en_content": {
+    "location": "Blood, spleen and liver",
+    "morphology": "Large lymphocyte with cytoplasmic granules",
+    "function": "Kills virus-infected and tumour cells without prior antigen-specific sensitisation, using perforin and granzymes",
+    "exam": "Part of innate immunity; kills cells that display too little MHC class I"
+   },
    "purl": "http://purl.obolibrary.org/obo/CL_0000623",
    "cl": {
     "label": "natural killer cell",

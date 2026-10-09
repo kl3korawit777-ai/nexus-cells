@@ -3,7 +3,7 @@
 //   en: ใช้ชื่ออังกฤษ และ en_content ถ้ามี ถ้าไม่มีให้ใช้เนื้อหาไทยพร้อมระบุว่า "Thai only"
 
 // ข้อความที่เป็นอักษรละติน/กรีก/สัญลักษณ์ทั่วไป (ไม่มีอักษรไทย) ถือว่าอ่านได้ในโหมดอังกฤษ
-const NON_THAI = /[฀-๿]/;
+const NON_THAI = new RegExp('[\u0E00-\u0E7F]');
 export const hasThai = (s) => NON_THAI.test(String(s || ''));
 
 export const nameOf = (x, lang) => (lang === 'en' ? x.en : x.th);

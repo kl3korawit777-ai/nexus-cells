@@ -9,6 +9,11 @@
     "location": "ผิวด้านนอกของร่างกาย บุผิวด้านในของท่อและโพรง และเป็นเนื้อเยื่อของต่อม",
     "function": "ปกป้อง ดูดซึม สร้างและหลั่งสาร และรับความรู้สึก",
     "exam": "",
+    "en_content": {
+      "features": "Cells sit tightly packed on a basement membrane with little extracellular matrix; the tissue has no blood vessels of its own and shows apical-basal polarity.",
+      "location": "Outer body surfaces, linings of ducts and cavities, and the secretory parts of glands.",
+      "function": "Protection, absorption, secretion and sensation."
+    },
     "germ_layers": [
       "ectoderm",
       "mesoderm",
@@ -63,6 +68,12 @@
     "location": "พบทั่วร่างกาย ได้แก่ ใต้ผิวหนัง รอบอวัยวะ กระดูก กระดูกอ่อน เลือด และไขกระดูก",
     "function": "ค้ำจุน เชื่อมต่อ ยึดอวัยวะ กักเก็บพลังงาน ลำเลียงสาร และป้องกันร่างกาย",
     "exam": "เลือดจัดเป็นเนื้อเยื่อเกี่ยวพัน เพราะประกอบด้วยเซลล์ที่ลอยอยู่ในเมทริกซ์ของเหลวคือพลาสมา และมีต้นกำเนิดจากมีเซนไคม์เช่นเดียวกับเนื้อเยื่อเกี่ยวพันชนิดอื่น",
+    "en_content": {
+      "features": "Cells are scattered in an extracellular matrix of fibres and ground substance. Blood is classified as connective tissue because its cells are suspended in a fluid matrix, the plasma.",
+      "location": "Found throughout the body: under the skin, around organs, in bone, cartilage, blood and bone marrow.",
+      "function": "Supports, connects, anchors organs, stores energy, transports substances and defends the body.",
+      "exam": "Blood is classified as connective tissue because it consists of cells suspended in a fluid matrix (plasma) and, like other connective tissues, develops from mesenchyme."
+    },
     "germ_layers": [
       "mesoderm"
     ],
@@ -120,6 +131,11 @@
     "location": "กล้ามเนื้อที่ยึดกับกระดูก ผนังอวัยวะกลวง และผนังหัวใจ",
     "function": "หดตัวเพื่อสร้างแรงและการเคลื่อนไหว",
     "exam": "",
+    "en_content": {
+      "features": "Elongated cells containing actin and myosin organised into contractile units; the three types differ in striation and in how they are controlled.",
+      "location": "Muscles attached to bone, walls of hollow organs, and the wall of the heart.",
+      "function": "Contraction to produce force and movement."
+    },
     "germ_layers": [
       "mesoderm"
     ],
@@ -152,6 +168,12 @@
     "location": "สมอง ไขสันหลัง และเส้นประสาท",
     "function": "รับ ประมวลผล และส่งสัญญาณ ควบคุมการทำงานของร่างกาย",
     "exam": "ไมโครเกลีย (microglial cell) จัดเป็นเกลียและเป็นเซลล์ภูมิคุ้มกันประจำระบบประสาทส่วนกลาง แต่มีต้นกำเนิดต่างจากเกลียชนิดอื่น คือมาจาก yolk sac ไม่ใช่เอ็กโทเดิร์ม (ประสาท) เหมือนแอสโตรไซต์และโอลิโกเดนโดรไซต์",
+    "en_content": {
+      "features": "Neurons that generate and conduct electrical signals, supported by glial cells.",
+      "location": "Brain, spinal cord and nerves.",
+      "function": "Receive, process and transmit signals to control the body.",
+      "exam": "Microglia are classified as glia and act as the resident immune cells of the central nervous system, but unlike other glia they originate from the yolk sac, not from neural ectoderm."
+    },
     "germ_layers": [
       "ectoderm"
     ],
@@ -179,6 +201,9 @@
     "location": "",
     "function": "",
     "exam": "",
+    "en_content": {
+      "features": "A group for cells that do not fit the four main tissue types."
+    },
     "germ_layers": [],
     "image": null,
     "subtypes": [

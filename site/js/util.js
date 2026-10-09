@@ -1,3 +1,6 @@
+import { t, getLang } from './i18n.js';
+import { nameOf } from './content.js';
+
 // ตัวช่วยทั่วไป: สร้าง DOM อย่างปลอดภัย (ไม่ใช้ innerHTML กับข้อมูล) และอ่านค่าธีม
 
 export function h(tag, attrs = {}, ...children) {
@@ -40,5 +43,11 @@ export function onThemeChange(fn) {
   return () => themeListeners.delete(fn);
 }
 
-// ตัดชื่อ "ระบบ" นำหน้า เพื่อให้ป้ายสั้นลง
-export const shortSystemName = (s) => s.th.replace(/^ระบบ/, '');
+// ตัดคำนำหน้า/ต่อท้ายที่ซ้ำ ๆ (เช่น "ระบบ" / " system") ให้ป้ายสั้นลง คำที่ตัดกำหนดใน i18n (sys.prefix, sys.suffix)
+export function shortSystemName(s) {
+  let n = nameOf(s, getLang());
+  const prefix = t('sys.prefix'), suffix = t('sys.suffix');
+  if (prefix && n.startsWith(prefix)) n = n.slice(prefix.length);
+  if (suffix && n.endsWith(suffix)) n = n.slice(0, -suffix.length);
+  return n.trim();
+}

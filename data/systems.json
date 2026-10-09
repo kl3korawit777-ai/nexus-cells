@@ -5,7 +5,15 @@
     "en": "Integumentary system",
     "color": "#E8A87C",
     "summary": "ปกป้องร่างกายจากสิ่งแวดล้อม ช่วยควบคุมอุณหภูมิ และรับความรู้สึกสัมผัส",
-    "organs": ["ผิวหนัง", "ผม", "ขน", "เล็บ", "ต่อมเหงื่อ", "ต่อมไขมัน"]
+    "en_summary": "Protects the body from the environment, helps regulate temperature, and senses touch.",
+    "organs": [
+      "ผิวหนัง",
+      "ผม",
+      "ขน",
+      "เล็บ",
+      "ต่อมเหงื่อ",
+      "ต่อมไขมัน"
+    ]
   },
   {
     "id": "skeletal",
@@ -13,7 +21,14 @@
     "en": "Skeletal system",
     "color": "#C9B79C",
     "summary": "ค้ำจุนร่างกาย ปกป้องอวัยวะภายใน เป็นที่เก็บแคลเซียม และเป็นแหล่งสร้างเซลล์เม็ดเลือดในไขกระดูก",
-    "organs": ["กระดูก", "กระดูกอ่อน", "ข้อต่อ", "เอ็นยึดข้อ", "ไขกระดูก"]
+    "en_summary": "Supports the body, protects internal organs, stores calcium, and houses the bone marrow where blood cells are made.",
+    "organs": [
+      "กระดูก",
+      "กระดูกอ่อน",
+      "ข้อต่อ",
+      "เอ็นยึดข้อ",
+      "ไขกระดูก"
+    ]
   },
   {
     "id": "muscular",
@@ -21,7 +36,13 @@
     "en": "Muscular system",
     "color": "#D9534F",
     "summary": "สร้างการเคลื่อนไหวของร่างกาย การบีบตัวของอวัยวะภายใน และการหดตัวของหัวใจ",
-    "organs": ["กล้ามเนื้อลาย", "กล้ามเนื้อเรียบ", "กล้ามเนื้อหัวใจ", "เอ็นกล้ามเนื้อ"]
+    "en_summary": "Produces body movement, moves substances through internal organs, and makes the heart contract.",
+    "organs": [
+      "กล้ามเนื้อลาย",
+      "กล้ามเนื้อเรียบ",
+      "กล้ามเนื้อหัวใจ",
+      "เอ็นกล้ามเนื้อ"
+    ]
   },
   {
     "id": "nervous",
@@ -29,7 +50,13 @@
     "en": "Nervous system",
     "color": "#8E6FD8",
     "summary": "รับรู้ ประมวลผล และสั่งการตอบสนองด้วยสัญญาณไฟฟ้าและสารสื่อประสาท",
-    "organs": ["สมอง", "ไขสันหลัง", "เส้นประสาท", "อวัยวะรับความรู้สึก"]
+    "en_summary": "Senses, processes and commands responses using electrical signals and neurotransmitters.",
+    "organs": [
+      "สมอง",
+      "ไขสันหลัง",
+      "เส้นประสาท",
+      "อวัยวะรับความรู้สึก"
+    ]
   },
   {
     "id": "endocrine",
@@ -37,7 +64,16 @@
     "en": "Endocrine system",
     "color": "#F0A030",
     "summary": "ควบคุมการทำงานของร่างกายด้วยฮอร์โมนที่หลั่งเข้ากระแสเลือด",
-    "organs": ["ไฮโพทาลามัส", "ต่อมใต้สมอง", "ต่อมไพเนียล", "ต่อมไทรอยด์", "ต่อมพาราไทรอยด์", "ต่อมหมวกไต", "ตับอ่อน (ส่วนต่อมไร้ท่อ)"]
+    "en_summary": "Controls body functions with hormones released into the bloodstream.",
+    "organs": [
+      "ไฮโพทาลามัส",
+      "ต่อมใต้สมอง",
+      "ต่อมไพเนียล",
+      "ต่อมไทรอยด์",
+      "ต่อมพาราไทรอยด์",
+      "ต่อมหมวกไต",
+      "ตับอ่อน (ส่วนต่อมไร้ท่อ)"
+    ]
   },
   {
     "id": "blood-immune",
@@ -45,7 +81,16 @@
     "en": "Blood and immune system",
     "color": "#E0457B",
     "summary": "ลำเลียงก๊าซและสารต่าง ๆ ในเลือด ห้ามเลือด และป้องกันร่างกายจากเชื้อโรคและเซลล์ผิดปกติ",
-    "organs": ["เลือด", "ไขกระดูก", "ต่อมน้ำเหลือง", "ม้าม", "ต่อมไทมัส", "ทอนซิล", "หลอดน้ำเหลือง"]
+    "en_summary": "Transports gases and other substances in the blood, stops bleeding, and defends the body against pathogens and abnormal cells.",
+    "organs": [
+      "เลือด",
+      "ไขกระดูก",
+      "ต่อมน้ำเหลือง",
+      "ม้าม",
+      "ต่อมไทมัส",
+      "ทอนซิล",
+      "หลอดน้ำเหลือง"
+    ]
   },
   {
     "id": "cardiovascular",
@@ -53,7 +98,13 @@
     "en": "Cardiovascular system",
     "color": "#C0392B",
     "summary": "สูบฉีดและนำเลือดไปเลี้ยงทั่วร่างกาย",
-    "organs": ["หัวใจ", "หลอดเลือดแดง", "หลอดเลือดดำ", "หลอดเลือดฝอย"]
+    "en_summary": "Pumps and carries blood throughout the body.",
+    "organs": [
+      "หัวใจ",
+      "หลอดเลือดแดง",
+      "หลอดเลือดดำ",
+      "หลอดเลือดฝอย"
+    ]
   },
   {
     "id": "respiratory",
@@ -61,7 +112,15 @@
     "en": "Respiratory system",
     "color": "#4DA6D9",
     "summary": "แลกเปลี่ยนก๊าซออกซิเจนและคาร์บอนไดออกไซด์ระหว่างอากาศกับเลือด",
-    "organs": ["โพรงจมูก", "คอหอย", "กล่องเสียง", "หลอดลม", "ปอด", "ถุงลม"]
+    "en_summary": "Exchanges oxygen and carbon dioxide between the air and the blood.",
+    "organs": [
+      "โพรงจมูก",
+      "คอหอย",
+      "กล่องเสียง",
+      "หลอดลม",
+      "ปอด",
+      "ถุงลม"
+    ]
   },
   {
     "id": "digestive",
@@ -69,7 +128,17 @@
     "en": "Digestive system",
     "color": "#6DBE45",
     "summary": "ย่อยอาหารและดูดซึมสารอาหาร น้ำ และเกลือแร่เข้าสู่ร่างกาย",
-    "organs": ["ปาก", "หลอดอาหาร", "กระเพาะอาหาร", "ลำไส้เล็ก", "ลำไส้ใหญ่", "ตับ", "ถุงน้ำดี", "ตับอ่อน"]
+    "en_summary": "Digests food and absorbs nutrients, water and electrolytes into the body.",
+    "organs": [
+      "ปาก",
+      "หลอดอาหาร",
+      "กระเพาะอาหาร",
+      "ลำไส้เล็ก",
+      "ลำไส้ใหญ่",
+      "ตับ",
+      "ถุงน้ำดี",
+      "ตับอ่อน"
+    ]
   },
   {
     "id": "urinary",
@@ -77,7 +146,13 @@
     "en": "Urinary system",
     "color": "#E5C100",
     "summary": "กรองเลือด ขับของเสีย และรักษาสมดุลน้ำ เกลือแร่ และกรด-เบส",
-    "organs": ["ไต", "ท่อไต", "กระเพาะปัสสาวะ", "ท่อปัสสาวะ"]
+    "en_summary": "Filters blood, removes waste, and balances water, electrolytes and acid-base status.",
+    "organs": [
+      "ไต",
+      "ท่อไต",
+      "กระเพาะปัสสาวะ",
+      "ท่อปัสสาวะ"
+    ]
   },
   {
     "id": "reproductive",
@@ -85,6 +160,15 @@
     "en": "Reproductive system",
     "color": "#E86AA6",
     "summary": "สร้างเซลล์สืบพันธุ์และฮอร์โมนเพศ และรองรับการตั้งครรภ์",
-    "organs": ["อัณฑะ", "ท่อนำอสุจิ", "ต่อมลูกหมาก", "รังไข่", "ท่อนำไข่", "มดลูก", "ช่องคลอด"]
+    "en_summary": "Produces gametes and sex hormones and supports pregnancy.",
+    "organs": [
+      "อัณฑะ",
+      "ท่อนำอสุจิ",
+      "ต่อมลูกหมาก",
+      "รังไข่",
+      "ท่อนำไข่",
+      "มดลูก",
+      "ช่องคลอด"
+    ]
   }
 ]

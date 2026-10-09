@@ -1,9 +1,11 @@
 // ใยภาพรวมทั้งร่างกาย: จัดกลุ่มตามระบบหรือตามเนื้อเยื่อ ซูมสองระดับ และตารางสรุปการเชื่อมข้ามกลุ่ม
 // ตำแหน่งมาจาก data/layout-overview.json (คำนวณล่วงหน้า) ดู overview-data.js
 
-import { store, edgeSentence, colorKey } from './data.js';
+import { store, edgeSentence, colorKey, cellName, sysName, tissueName } from './data.js';
 import { h, cellHref, systemHref, cssVar, onThemeChange, reducedMotion } from './util.js';
 import { buildStyle } from './graph.js';
+import { t, getLang } from './i18n.js';
+import { nameOf } from './content.js';
 import { renderPeek } from './card.js';
 import { searchBox, edgeSwatch, legendFor, modesInData, makeToggle } from './ui.js';
 import { loadOverviewLayout, overviewData } from './overview-data.js';
@@ -11,7 +13,8 @@ import { groupsFor } from './overview-layout.js';
 
 const cytoscape = window.cytoscape;
 const EDGE_CLASS = { develops_from: 'e-dev', is_a: 'e-isa', interacts_with: 'e-int' };
-const ZOOM_IN_RATIO = 1.6; // ซูมเกินระดับพอดีจอกี่เท่าจึงถือว่า "ซูมเข้า"
+const ZOOM_IN_RATIO = 1.6; // ซูมเกินระดับพอดีจอกี่เท่าจึงถือว่าเป็นระดับซูมเข้า
+const groupLabel = (g) => nameOf(g, getLang());
 
 // ------------------------------------------------------------------ สไตล์
 
@@ -95,7 +98,7 @@ function groupMap(mode) {
 function cellElements(layout, mode, withEdges) {
   const pos = layout.modes[mode].positions;
   const { groups, of } = groupMap(mode);
-  const els = groups.map((g) => ({ group: 'nodes', data: { id: 'g:' + g.id, label: g.th, color: g.color, gid: g.id }, classes: 'group' }));
+  const els = groups.map((g) => ({ group: 'nodes', data: { id: 'g:' + g.id, label: groupLabel(g), color: g.color, gid: g.id }, classes: 'group' }));
   for (const c of store.cells) {
     const others = mode === 'system' ? (c.systems || []).slice(1) : [];
     const p = pos[c.id] || [0, 0];
@@ -194,7 +197,7 @@ export async function createOverviewGraph(container, initialMode, handlers = {})
       for (const g of groups) {
         const b = boxes[g.id];
         if (!b) continue;
-        const w = g.th.length * fs * 0.6;
+        const w = groupLabel(g).length * fs * 0.6;
         const cx = (b[0] + b[2]) / 2;
         bb.x1 = Math.min(bb.x1, cx - w / 2);
         bb.x2 = Math.max(bb.x2, cx + w / 2);
@@ -291,7 +294,7 @@ export async function createOverviewGraph(container, initialMode, handlers = {})
   cy.on('tap', 'edge.agg', (ev) => {
     const e = ev.target;
     const name = (id) => (cy.getElementById(id).data('label') || id);
-    if (handlers.onSelectEdge) handlers.onSelectEdge(`${name(e.data('source'))} ↔ ${name(e.data('target'))}: ${e.data('label')} เส้น (ดูรายการในตารางด้านล่าง)`);
+    if (handlers.onSelectEdge) handlers.onSelectEdge(t('overview.aggInfo', { a: name(e.data('source')), b: name(e.data('target')), n: e.data('label') }));
   });
   cy.on('tap', (ev) => { if (ev.target === cy) clearSelection(true); });
 
@@ -305,7 +308,7 @@ export async function createOverviewGraph(container, initialMode, handlers = {})
     cy.batch(() => {
       cy.nodes('.cell').move({ parent: null });
       cy.nodes('.group').remove();
-      cy.add(groups.map((g) => ({ group: 'nodes', data: { id: 'g:' + g.id, label: g.th, color: g.color, gid: g.id }, classes: 'group' })));
+      cy.add(groups.map((g) => ({ group: 'nodes', data: { id: 'g:' + g.id, label: groupLabel(g), color: g.color, gid: g.id }, classes: 'group' })));
       cy.nodes('.cell').forEach((n) => {
         const c = store.cellsById.get(n.id());
         const others = m === 'system' ? (c.systems || []).slice(1) : [];
@@ -384,7 +387,7 @@ export async function createOverviewPreview(container) {
 
 // ------------------------------------------------------------------ ตารางสรุปการเชื่อมข้ามกลุ่ม
 
-const TYPE_PHRASE = { develops_from: 'เจริญมาจาก', is_a: 'เป็นชนิดหนึ่งของ', interacts_with: '→' };
+const typePhrase = (ty) => (ty === 'interacts_with' ? '→' : t('edge.toggle.' + ty));
 
 function crossTable(mode) {
   const { groups, of } = groupMap(mode);
@@ -398,26 +401,26 @@ function crossTable(mode) {
     pairs.get(key).push(e);
   }
   const sorted = [...pairs.entries()].sort((x, y) => y[1].length - x[1].length || x[0].localeCompare(y[0]));
-  const noun = mode === 'tissue' ? 'เนื้อเยื่อ' : 'ระบบ';
-  const cellLink = (id) => { const c = store.cellsById.get(id); return h('a', { href: cellHref(id) }, c ? c.th : id); };
-  const box = h('section', { class: 'cross-table', 'aria-label': `สรุปการเชื่อมข้าม${noun}` },
-    h('h2', { class: 'section', text: `การเชื่อมข้าม${noun}` }),
-    h('p', { class: 'sub-title', text: `${sorted.length} คู่${noun} เรียงตามจำนวนเส้น กดเพื่อดูรายการ (ใช้แทนการดูใยด้วยแป้นพิมพ์หรือโปรแกรมอ่านหน้าจอได้)` }));
-  if (!sorted.length) { box.append(h('p', { class: 'empty', text: 'ยังไม่มีเส้นที่เชื่อมข้ามกลุ่ม' })); return box; }
+  const noun = t(mode === 'tissue' ? 'overview.nounTissue' : 'overview.nounSystem');
+  const cellLink = (id) => { const c = store.cellsById.get(id); return h('a', { href: cellHref(id) }, c ? cellName(c) : id); };
+  const box = h('section', { class: 'cross-table', 'aria-label': t('overview.crossAria', { noun }) },
+    h('h2', { class: 'section', text: t('overview.crossTitle', { noun }) }),
+    h('p', { class: 'sub-title', text: t('overview.crossIntro', { n: sorted.length, noun }) }));
+  if (!sorted.length) { box.append(h('p', { class: 'empty', text: t('overview.crossNone') })); return box; }
   for (const [key, edges] of sorted) {
     const [a, b] = key.split('|');
     const ga = gById.get(a), gb = gById.get(b);
-    const sysLink = (g) => (mode === 'system' ? h('a', { href: systemHref(g.id) }, g.th) : g.th);
+    const sysLink = (g) => (mode === 'system' ? h('a', { href: systemHref(g.id) }, groupLabel(g)) : groupLabel(g));
     box.append(h('details', { class: 'pair' },
       h('summary', {},
-        h('span', { class: 'dot', style: `background:${ga.color}` }), ga.th, ' ↔ ',
-        h('span', { class: 'dot', style: `background:${gb.color}` }), gb.th,
-        h('span', { class: 'chip' }, `${edges.length} เส้น`)),
+        h('span', { class: 'dot', style: `background:${ga.color}` }), groupLabel(ga), ' ↔ ',
+        h('span', { class: 'dot', style: `background:${gb.color}` }), groupLabel(gb),
+        h('span', { class: 'chip' }, t('overview.linkCount', { n: edges.length }))),
       h('ul', { class: 'rel-list' }, edges.map((e) => h('li', {},
-        cellLink(e.from), ' ', h('span', { class: 'note' }, TYPE_PHRASE[e.type]), ' ', cellLink(e.to),
-        e.mode ? h('span', { class: 'chip mode-chip', 'data-mode': e.mode }, (modesInData().find((m) => m.id === e.mode) || {}).th || e.mode) : null,
+        cellLink(e.from), ' ', h('span', { class: 'note' }, typePhrase(e.type)), ' ', cellLink(e.to),
+        e.mode ? h('span', { class: 'chip mode-chip', 'data-mode': e.mode }, t('mode.' + e.mode)) : null,
         e.th ? h('span', { class: 'note' }, e.th) : null))),
-      mode === 'system' ? h('p', { class: 'note' }, 'ไปที่ใย: ', sysLink(ga), ' · ', sysLink(gb)) : null));
+      mode === 'system' ? h('p', { class: 'note' }, t('overview.goToWeb'), ' ', sysLink(ga), ' · ', sysLink(gb)) : null));
   }
   return box;
 }
@@ -431,30 +434,30 @@ export function overviewView(initialMode) {
   const nReal = store.cells.filter((c) => c.kind === 'cell').length;
   const sysCount = new Set(store.cells.map((c) => (c.systems || [])[0])).size;
 
-  const graphBox = h('div', { class: 'cy', role: 'img', 'aria-label': 'ใยภาพรวมของเซลล์ทั้งร่างกาย ใช้ตารางสรุปการเชื่อมข้ามกลุ่มด้านล่างเพื่อใช้แป้นพิมพ์' });
-  const loading = h('p', { class: 'loading graph-loading', text: 'กำลังจัดวางใย…' });
+  const graphBox = h('div', { class: 'cy', role: 'img', 'aria-label': t('overview.graphAria') });
+  const loading = h('p', { class: 'loading graph-loading', text: t('overview.loading') });
   const levelBadge = h('div', { class: 'level-badge', 'aria-hidden': 'true' });
   const graphWrap = h('div', { class: 'graph-wrap overview-wrap' }, graphBox, loading, levelBadge);
-  const peek = h('aside', { class: 'peek card', 'aria-label': 'ข้อมูลย่อของเซลล์ที่เลือก', 'aria-live': 'polite' });
+  const peek = h('aside', { class: 'peek card', 'aria-label': t('peek.aria'), 'aria-live': 'polite' });
   const info = h('div', { class: 'edge-info', role: 'status', 'aria-live': 'polite' });
   const tableHost = h('div', {});
 
-  const emptyPeek = () => h('p', { class: 'peek-empty', text: 'แตะจุดบนใยเพื่อดูข้อมูลย่อ แตะที่ว่างเพื่อยกเลิก ซูมออกเพื่อดูกลุ่ม แตะกลุ่มเพื่อซูมเข้า' });
+  const emptyPeek = () => h('p', { class: 'peek-empty', text: t('overview.peekEmpty') });
   const resetPeek = () => { peek.replaceChildren(emptyPeek()); info.textContent = ''; };
   resetPeek();
 
   const setBadge = (lv) => {
     levelBadge.textContent = lv === 'coarse'
-      ? 'ซูมออก: แสดงกลุ่มและจำนวนเส้นเชื่อมระหว่างกลุ่ม · ซูมเข้าเพื่อดูเซลล์'
-      : 'ซูมเข้า: แสดงชื่อเซลล์และเส้นจริง';
+      ? t('overview.badgeCoarse')
+      : t('overview.badgeFine');
   };
   setBadge('coarse');
 
   const modeBtns = ['system', 'tissue'].map((m) =>
     h('button', { type: 'button', 'aria-pressed': String(m === mode), onclick: () => switchMode(m) },
-      m === 'system' ? 'ตามระบบอวัยวะ' : 'ตามเนื้อเยื่อ'));
+      t(m === 'system' ? 'overview.bySystem' : 'overview.byTissue')));
   const crossLabel = h('span', { class: 'label' });
-  const setCrossLabel = () => { crossLabel.textContent = mode === 'tissue' ? 'แสดงเฉพาะเส้นข้ามเนื้อเยื่อ' : 'แสดงเฉพาะเส้นข้ามระบบ'; };
+  const setCrossLabel = () => { crossLabel.textContent = t(mode === 'tissue' ? 'overview.crossOnlyTissue' : 'overview.crossOnlySystem'); };
   setCrossLabel();
   const crossBtn = h('button', { type: 'button', class: 'toggle', 'aria-pressed': 'false', onclick: () => {
     const on = crossBtn.getAttribute('aria-pressed') !== 'true';
@@ -464,12 +467,12 @@ export function overviewView(initialMode) {
   } }, crossLabel);
 
   const toggles = [
-    makeToggle('เจริญมาจาก', edgeSwatch('develops_from'), (on) => { if (graph) graph.setEdgeVisible('develops_from', on); resetPeek(); }),
-    makeToggle('เป็นชนิดหนึ่งของ', edgeSwatch('is_a'), (on) => { if (graph) graph.setEdgeVisible('is_a', on); resetPeek(); }),
-    ...modesInData().map((m) => makeToggle(m.th, edgeSwatch('interacts_with', m.id), (on) => { if (graph) graph.setEdgeVisible('mode:' + m.id, on); resetPeek(); })),
+    makeToggle(t('edge.toggle.develops_from'), edgeSwatch('develops_from'), (on) => { if (graph) graph.setEdgeVisible('develops_from', on); resetPeek(); }),
+    makeToggle(t('edge.toggle.is_a'), edgeSwatch('is_a'), (on) => { if (graph) graph.setEdgeVisible('is_a', on); resetPeek(); }),
+    ...modesInData().map((m) => makeToggle(m.label, edgeSwatch('interacts_with', m.id), (on) => { if (graph) graph.setEdgeVisible('mode:' + m.id, on); resetPeek(); })),
     crossBtn,
   ];
-  const fitBtn = h('button', { type: 'button', class: 'btn', onclick: () => graph && graph.fit() }, 'ดูทั้งใย');
+  const fitBtn = h('button', { type: 'button', class: 'btn', onclick: () => graph && graph.fit() }, t('sys.fit'));
 
   function switchMode(m) {
     if (m === mode) return;
@@ -489,19 +492,19 @@ export function overviewView(initialMode) {
   tableHost.append(crossTable(mode));
 
   const el = h('div', {},
-    h('a', { class: 'crumb', href: '#/' }, '← หน้าแรก'),
+    h('a', { class: 'crumb', href: '#/' }, t('nav.backHome')),
     h('header', { class: 'sys-head' },
-      h('h1', { class: 'page-title', id: 'page-title', tabindex: '-1', text: 'ใยภาพรวมทั้งร่างกาย' }),
-      h('p', { class: 'sub-title' }, `${nReal} เซลล์ · ${store.edges.length} เส้นเชื่อม · ${sysCount} ระบบ`)),
+      h('h1', { class: 'page-title', id: 'page-title', tabindex: '-1', text: t('home.overviewTitle') }),
+      h('p', { class: 'sub-title' }, t('overview.subtitle', { cells: nReal, links: store.edges.length, systems: sysCount }))),
     h('div', { class: 'toolbar' },
-      h('div', { class: 'btn-group', role: 'group', 'aria-label': 'การจัดกลุ่ม' }, modeBtns), fitBtn),
+      h('div', { class: 'btn-group', role: 'group', 'aria-label': t('overview.grouping') }, modeBtns), fitBtn),
     h('div', { class: 'toolbar' }, toggles),
     search.el, legend, info,
-    h('div', { class: 'sys-body' }, h('div', {}, graphWrap, h('p', { class: 'graph-hint', text: 'ซูมด้วยล้อเมาส์หรือบีบนิ้ว · ลากเพื่อเลื่อน · แตะกลุ่มตอนซูมออกเพื่อซูมเข้า' })), peek),
+    h('div', { class: 'sys-body' }, h('div', {}, graphWrap, h('p', { class: 'graph-hint', text: t('overview.hint') })), peek),
     tableHost);
 
   return {
-    title: 'ใยภาพรวมทั้งร่างกาย',
+    title: t('home.overviewTitle'),
     el,
     after: () => {
       createOverviewGraph(graphBox, mode, {
@@ -513,7 +516,7 @@ export function overviewView(initialMode) {
         if (destroyed) { g.destroy(); return; }
         graph = g;
         loading.remove();
-      }).catch((e) => { console.error(e); loading.textContent = 'จัดวางใยไม่สำเร็จ: ' + e.message; });
+      }).catch((e) => { console.error(e); loading.textContent = t('overview.failed', { msg: e.message }); });
     },
     destroy: () => { destroyed = true; search.destroy(); if (graph) graph.destroy(); },
   };

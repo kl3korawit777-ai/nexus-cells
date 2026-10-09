@@ -1,20 +1,17 @@
 // หน้าเนื้อเยื่อ (#/tissue/<id>): ข้อมูลเนื้อเยื่อ ชนิดย่อยพร้อมรายการเซลล์ ระบบที่กระจายอยู่ และใยย่อย
 
-import { store, colorKey } from './data.js';
+import { store, colorKey, cellName, cellAlt, sysName, tissueName, subtypeName } from './data.js';
 import { h, cellHref, systemHref, onThemeChange } from './util.js';
-import { t } from './i18n.js';
+import { t, getLang } from './i18n.js';
+import { tissueText, altNameOf } from './content.js';
 import { colorForKey, ensureFcose } from './graph.js';
 import { overviewStyle } from './overview.js';
 import { imageBlock } from './card.js';
 import { notFoundView } from './views.js';
 
 const cytoscape = window.cytoscape;
-const GERM = {
-  ectoderm: 'เอ็กโทเดิร์ม (ectoderm)',
-  mesoderm: 'มีโซเดิร์ม (mesoderm)',
-  endoderm: 'เอนโดเดิร์ม (endoderm)',
-};
 const EDGE_CLASS = { develops_from: 'e-dev', is_a: 'e-isa', interacts_with: 'e-int' };
+const thaiOnlyChip = () => h('span', { class: 'chip chip-thai', text: t('common.thaiOnly') });
 
 const cellsOfTissue = (tissueId) =>
   store.cells.filter((c) => (c.tissue || 'other') === tissueId);
@@ -26,13 +23,9 @@ function createTissueGraph(container, tissue, cells, onNavigate) {
   const subtypes = new Map(tissue.subtypes.map((s) => [s.id, s]));
   const used = new Set();
   const els = [];
-  for (const c of cells) {
-    const sub = subtypes.has(c.tissue_subtype) ? c.tissue_subtype : '';
-    used.add(sub);
-  }
+  for (const c of cells) used.add(subtypes.has(c.tissue_subtype) ? c.tissue_subtype : '');
   for (const sub of used) {
-    const st = subtypes.get(sub);
-    els.push({ group: 'nodes', data: { id: 'st:' + sub, label: st ? st.th : 'ไม่ระบุชนิดย่อย', color: tissue.color }, classes: 'group' });
+    els.push({ group: 'nodes', data: { id: 'st:' + sub, label: sub ? subtypeName(sub) : t('tissue.noSubtype'), color: tissue.color }, classes: 'group' });
   }
   for (const c of cells) {
     const sub = subtypes.has(c.tissue_subtype) ? c.tissue_subtype : '';
@@ -81,15 +74,16 @@ function createTissueGraph(container, tissue, cells, onNavigate) {
 function cellList(cells) {
   return h('ul', { class: 'cell-list' }, cells.map((c) =>
     h('li', {}, h('a', { href: cellHref(c.id), style: `--c:${colorForKey(colorKey(c))}` },
-      h('div', { class: 'th', text: c.th }), h('div', { class: 'en', text: c.en }),
+      h('div', { class: 'th', text: cellName(c) }), h('div', { class: 'en', text: cellAlt(c) }),
       h('div', { class: 'tags' },
-        c.kind === 'class' ? h('span', { class: 'chip' }, 'หมวด') : null,
+        c.kind === 'class' ? h('span', { class: 'chip' }, t('card.classShort')) : null,
         h('span', { class: 'chip mono' }, c.id))))));
 }
 
 export function tissueView(id) {
   const tissue = store.tissuesById.get(id);
-  if (!tissue) return notFoundView('ไม่พบเนื้อเยื่อนี้', `ไม่มีเนื้อเยื่อ "${id}" ในข้อมูล`);
+  if (!tissue) return notFoundView(t('tissue.notFound'), t('tissue.noSuchTissue', { id }));
+  const lang = getLang();
   const cells = cellsOfTissue(id);
   let graph = null;
 
@@ -97,53 +91,61 @@ export function tissueView(id) {
   const bySystem = new Map();
   for (const c of cells) for (const s of c.systems || []) bySystem.set(s, (bySystem.get(s) || 0) + 1);
   const sysChips = store.systems.filter((s) => bySystem.has(s.id)).map((s) =>
-    h('a', { class: 'chip', href: systemHref(s.id), title: 'ดูใยของ' + s.th },
-      h('span', { class: 'dot', style: `background:${s.color}` }), s.th, h('span', { class: 'count', text: bySystem.get(s.id) })));
+    h('a', { class: 'chip', href: systemHref(s.id), title: t('card.viewSystem', { system: sysName(s) }) },
+      h('span', { class: 'dot', style: `background:${s.color}` }), sysName(s), h('span', { class: 'count', text: bySystem.get(s.id) })));
 
   const subSections = tissue.subtypes.map((st) => {
     const list = cells.filter((c) => c.tissue_subtype === st.id);
+    const alt = altNameOf(st, lang);
     return h('section', { class: 'subtype' },
-      h('h3', {}, st.th, h('span', { class: 'en', text: ' · ' + st.en }), h('span', { class: 'chip', text: list.length ? `${list.length} รายการ` : 'ยังไม่มีข้อมูล' })),
-      list.length ? cellList(list) : h('p', { class: 'empty', text: 'ยังไม่มีข้อมูล' }));
+      h('h3', {}, subtypeName(st.id), alt ? h('span', { class: 'en', text: ' · ' + alt }) : null,
+        h('span', { class: 'chip', text: list.length ? t('tissue.itemCount', { n: list.length }) : t('tissue.noData') })),
+      list.length ? cellList(list) : h('p', { class: 'empty', text: t('tissue.noData') }));
   });
   const noSub = cells.filter((c) => !tissue.subtypes.some((s) => s.id === c.tissue_subtype));
   if (noSub.length) {
     subSections.push(h('section', { class: 'subtype' },
-      h('h3', {}, 'ไม่ระบุชนิดย่อย', h('span', { class: 'chip', text: `${noSub.length} รายการ` })), cellList(noSub)));
+      h('h3', {}, t('tissue.noSubtype'), h('span', { class: 'chip', text: t('tissue.itemCount', { n: noSub.length }) })), cellList(noSub)));
   }
 
+  const textFact = (field, key) => {
+    const x = tissueText(tissue, field, lang);
+    return x.text ? h('section', { class: 'fact' }, h('h2', {}, t(key), x.thaiOnly ? thaiOnlyChip() : null), h('p', { text: x.text })) : null;
+  };
   const facts = [
-    tissue.features ? h('section', { class: 'fact' }, h('h2', { text: 'ลักษณะเด่น' }), h('p', { text: tissue.features })) : null,
-    tissue.location ? h('section', { class: 'fact' }, h('h2', { text: 'ตำแหน่งที่พบ' }), h('p', { text: tissue.location })) : null,
-    tissue.function ? h('section', { class: 'fact' }, h('h2', { text: 'หน้าที่' }), h('p', { text: tissue.function })) : null,
+    textFact('features', 'tissue.features'),
+    textFact('location', 'field.location'),
+    textFact('function', 'field.function'),
     (tissue.germ_layers || []).length
-      ? h('section', { class: 'fact' }, h('h2', { text: 'ชั้นเอ็มบริโอต้นกำเนิด' }), h('p', { text: tissue.germ_layers.map((g) => GERM[g] || g).join(', ') }))
+      ? h('section', { class: 'fact' }, h('h2', { text: t('tissue.germLayers') }), h('p', { text: tissue.germ_layers.map((g) => t('germ.' + g)).join(', ') }))
       : null,
   ].filter(Boolean);
+  const exam = tissueText(tissue, 'exam', lang);
 
-  const graphBox = h('div', { class: 'mini-graph tissue-graph', role: 'img', 'aria-label': `ใยย่อยของเซลล์ในเนื้อเยื่อ${tissue.th} จัดกลุ่มตามชนิดย่อย` }, h('div', { class: 'cy' }));
+  const graphBox = h('div', { class: 'mini-graph tissue-graph', role: 'img', 'aria-label': t('tissue.graphAria', { tissue: tissueName(tissue) }) }, h('div', { class: 'cy' }));
   const hasEdges = store.edges.some((e) => cells.some((c) => c.id === e.from) && cells.some((c) => c.id === e.to));
+  const alt = altNameOf(tissue, lang);
 
   const el = h('article', { class: 'tissue-page' },
-    h('a', { class: 'crumb', href: '#/' }, '← หน้าแรก'),
+    h('a', { class: 'crumb', href: '#/' }, t('nav.backHome')),
     h('header', { class: 'sys-head' },
-      h('h1', { class: 'page-title', id: 'page-title', tabindex: '-1', text: tissue.th }),
-      h('p', { class: 'sub-title' }, h('span', { class: 'dot', style: `background:${tissue.color}` }), `${tissue.en} · ${cells.length} รายการ`),
-      tissue.cl_class ? h('p', { class: 'eyebrow' }, 'อ้างอิง Cell Ontology: ', h('span', { class: 'mono', text: tissue.cl_class })) : null,
+      h('h1', { class: 'page-title', id: 'page-title', tabindex: '-1', text: tissueName(tissue) }),
+      h('p', { class: 'sub-title' }, h('span', { class: 'dot', style: `background:${tissue.color}` }), [alt, t('tissue.itemCount', { n: cells.length })].filter(Boolean).join(' · ')),
+      tissue.cl_class ? h('p', { class: 'eyebrow' }, t('tissue.clRef'), ' ', h('span', { class: 'mono', text: tissue.cl_class })) : null,
       h('p', {}, h('a', { class: 'btn', href: '#/quiz?tissue=' + encodeURIComponent(tissue.id) }, t('quiz.testThis')))),
-    h('div', { class: 'cell-hero' }, imageBlock(tissue.image, `ภาพเนื้อเยื่อ${tissue.th}`, `images/tissue-${tissue.id}.jpg`),
+    h('div', { class: 'cell-hero' }, imageBlock(tissue.image, t('tissue.imageAlt', { tissue: tissueName(tissue) }), `images/tissue-${tissue.id}.jpg`),
       h('div', { class: 'facts card' }, facts)),
-    tissue.exam ? h('section', { class: 'exam' }, h('h2', { text: 'จุดออกสอบ' }), h('p', { text: tissue.exam })) : null,
-    sysChips.length ? h('section', {}, h('h2', { class: 'section', text: 'ระบบที่เซลล์ในเนื้อเยื่อนี้กระจายอยู่' }), h('div', { class: 'chips' }, sysChips)) : null,
-    h('h2', { class: 'section', text: 'ชนิดย่อยและเซลล์' }),
+    exam.text ? h('section', { class: 'exam' }, h('h2', {}, t('field.exam'), exam.thaiOnly ? thaiOnlyChip() : null), h('p', { text: exam.text })) : null,
+    sysChips.length ? h('section', {}, h('h2', { class: 'section', text: t('tissue.systems') }), h('div', { class: 'chips' }, sysChips)) : null,
+    h('h2', { class: 'section', text: t('tissue.subtypesAndCells') }),
     h('div', { class: 'subtypes' }, subSections),
     cells.length && hasEdges
-      ? [h('h2', { class: 'section', text: 'ใยย่อยของเนื้อเยื่อนี้' }), graphBox,
-        h('p', { class: 'graph-hint', text: 'แตะจุดเพื่อไปยังเซลล์นั้น · ใช้รายการด้านบนเพื่อใช้แป้นพิมพ์' })]
+      ? [h('h2', { class: 'section', text: t('tissue.subgraph') }), graphBox,
+        h('p', { class: 'graph-hint', text: t('tissue.subgraphHint') })]
       : null);
 
   return {
-    title: tissue.th,
+    title: tissueName(tissue),
     el,
     after: () => {
       if (cells.length && hasEdges) graph = createTissueGraph(graphBox.querySelector('.cy'), tissue, cells, (cid) => { location.hash = cellHref(cid); });

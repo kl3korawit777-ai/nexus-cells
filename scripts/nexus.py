@@ -41,6 +41,9 @@ RO_DEVELOPS_FROM = OBO + "RO_0002202"
 CL_RE = re.compile(r"^CL:\d{7}$")
 SLUG_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 KINDS = {"cell", "class"}
+# ฟิลด์ภาษาอังกฤษแบบไม่บังคับ (en_content) ของเซลล์ และของเนื้อเยื่อ
+EN_CELL_FIELDS = ("location", "morphology", "function", "exam")
+EN_TISSUE_FIELDS = ("features", "location", "function", "exam")
 # ประเภทของเส้น interacts_with: ฮอร์โมน, ซินแนปส์, สนับสนุน, ภูมิคุ้มกัน, พาราไครน์
 MODES = ("hormone", "synapse", "support", "immune", "paracrine")
 IMAGE_REQUIRED = ("src", "credit", "license")
@@ -114,6 +117,8 @@ def run_validate(quiet=False):
         for k in ("id", "th", "en", "color", "summary", "organs"):
             if is_empty(s.get(k)):
                 err("ระบบ %s ไม่มีช่อง %s" % (s.get("id"), k))
+        if s.get("en_summary") is not None and not (isinstance(s["en_summary"], str) and s["en_summary"].strip()):
+            err("ระบบ %s: en_summary ต้องเป็นข้อความที่ไม่ว่าง" % s.get("id"))
         if s.get("color") and not re.match(r"^#[0-9A-Fa-f]{6}$", s["color"]):
             err("ระบบ %s สี (color) ไม่ใช่รูปแบบ #RRGGBB" % s.get("id"))
 
@@ -122,6 +127,16 @@ def run_validate(quiet=False):
         if t.get("id") in tissue_subtypes:
             err("เนื้อเยื่อ id ซ้ำ: %s" % t.get("id"))
         tissue_subtypes[t.get("id")] = {st.get("id") for st in t.get("subtypes", [])}
+        ten = t.get("en_content")
+        if ten is not None:
+            if not isinstance(ten, dict):
+                err("เนื้อเยื่อ %s: en_content ต้องเป็น object" % t.get("id"))
+            else:
+                for k, v in ten.items():
+                    if k not in EN_TISSUE_FIELDS:
+                        err("เนื้อเยื่อ %s: en_content ไม่รองรับช่อง \"%s\"" % (t.get("id"), k))
+                    elif not isinstance(v, str) or not v.strip():
+                        err("เนื้อเยื่อ %s: en_content.%s ต้องเป็นข้อความที่ไม่ว่าง" % (t.get("id"), k))
         cls = t.get("cl_class")
         if cls is not None and not CL_RE.match(cls):
             err("เนื้อเยื่อ %s: cl_class รูปแบบไม่ถูกต้อง (%s)" % (t.get("id"), cls))
@@ -163,6 +178,18 @@ def run_validate(quiet=False):
             sub = c.get("tissue_subtype")
             if sub is not None and sub not in tissue_subtypes[tis]:
                 err("%s: ไม่มี tissue_subtype \"%s\" ในเนื้อเยื่อ %s" % (lab, sub, tis))
+        en = c.get("en_content")
+        if en is not None:
+            if not isinstance(en, dict):
+                err("%s: en_content ต้องเป็น object" % lab)
+            else:
+                for k, v in en.items():
+                    if k not in EN_CELL_FIELDS:
+                        err("%s: en_content ไม่รองรับช่อง \"%s\" (ใช้ได้: %s)" % (lab, k, ", ".join(EN_CELL_FIELDS)))
+                    elif not isinstance(v, str) or not v.strip():
+                        err("%s: en_content.%s ต้องเป็นข้อความที่ไม่ว่าง" % (lab, k))
+                    elif re.search("[฀-๿]", v):
+                        warn("%s: en_content.%s มีอักษรไทย" % (lab, k))
         img = c.get("image")
         if img is not None:
             if not isinstance(img, dict):
@@ -237,6 +264,9 @@ def run_validate(quiet=False):
             print("\nคำเตือน (%d):" % len(warnings))
             for m in warnings:
                 print("  ! " + m)
+        n_cells = [c for c in ds["cells"] if c.get("kind") == "cell"]
+        n_en = [c for c in n_cells if c.get("en_content")]
+        print("\nข้อมูลภาษาอังกฤษ (en_content): เซลล์ %d/%d ชนิด" % (len(n_en), len(n_cells)))
         if not errors:
             print("\nผ่านการตรวจ (ไม่มีข้อผิดพลาด คำเตือน %d รายการ)" % len(warnings))
     return errors, warnings

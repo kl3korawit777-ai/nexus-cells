@@ -1,39 +1,43 @@
 // การ์ดเซลล์: หน้าเซลล์เต็ม และการ์ดย่อด้านข้างในใยรายระบบ
-// ทุกหัวข้อที่ไม่มีข้อมูลจะถูกซ่อน
+// ทุกหัวข้อที่ไม่มีข้อมูลจะถูกซ่อน เนื้อหาเลือกตามภาษา (en_content ถ้ามี ไม่มีก็ใช้ภาษาไทยพร้อมป้าย "Thai only")
 
-import { store, relationsOf, subtypeLabel, modeLabel } from './data.js';
+import { store, relationsOf, modeLabel, colorKey, cellName, cellAlt, sysName, tissueName, subtypeName } from './data.js';
 import { h, cellHref, systemHref, tissueHref, idToHash } from './util.js';
-import { t } from './i18n.js';
-import { createMiniGraph } from './graph.js';
-import { colorForKey } from './graph.js';
-import { colorKey } from './data.js';
+import { t, getLang } from './i18n.js';
+import { textOf, listOf } from './content.js';
+import { createMiniGraph, colorForKey } from './graph.js';
 
 const has = (v) => !(v == null || v === '' || (Array.isArray(v) && v.length === 0));
+const thaiOnlyChip = () => h('span', { class: 'chip chip-thai', text: t('common.thaiOnly') });
 
 function systemChips(cell) {
   return (cell.systems || [])
     .map((id) => store.systemsById.get(id))
     .filter(Boolean)
     .map((s) =>
-      h('a', { class: 'chip', href: systemHref(s.id), title: 'ดูใยของ' + s.th },
-        h('span', { class: 'dot', style: `background:${s.color}` }), s.th));
+      h('a', { class: 'chip', href: systemHref(s.id), title: t('card.viewSystem', { system: sysName(s) }) },
+        h('span', { class: 'dot', style: `background:${s.color}` }), sysName(s)));
 }
 
 function tissueChips(cell) {
-  const t = store.tissuesById.get(cell.tissue);
+  const tt = store.tissuesById.get(cell.tissue);
   const chips = [];
-  if (t) chips.push(h('a', { class: 'chip', href: tissueHref(t.id), title: 'ดูหน้าเนื้อเยื่อ' + t.th }, h('span', { class: 'dot', style: `background:${colorForKey(colorKey(cell))}` }), t.th));
-  const st = subtypeLabel(cell);
+  if (tt) {
+    chips.push(h('a', { class: 'chip', href: tissueHref(tt.id), title: t('card.viewTissue', { tissue: tissueName(tt) }) },
+      h('span', { class: 'dot', style: `background:${colorForKey(colorKey(cell))}` }), tissueName(tt)));
+  }
+  const st = subtypeName(cell.tissue_subtype);
   if (st) chips.push(h('span', { class: 'chip' }, st));
   return chips;
 }
 
 function cellLink(c) {
-  return h('a', { href: cellHref(c.id) }, c.th, ' ', h('span', { class: 'note' }, '(' + c.en + ')'));
+  const alt = cellAlt(c);
+  return h('a', { href: cellHref(c.id) }, cellName(c), alt ? ' ' : null, alt ? h('span', { class: 'note' }, '(' + alt + ')') : null);
 }
 
-function fact(title, content) {
-  return h('section', { class: 'fact' }, h('h2', { text: title }), content);
+function fact(title, content, thaiOnly) {
+  return h('section', { class: 'fact' }, h('h2', {}, title, thaiOnly ? thaiOnlyChip() : null), content);
 }
 
 // รูปพร้อมเครดิต ใช้ร่วมกันระหว่างหน้าเซลล์และหน้าเนื้อเยื่อ
@@ -42,28 +46,28 @@ export function imageBlock(image, alt, hint) {
   const img = image;
   if (!img || !img.src) {
     return h('div', { class: 'img-missing' },
-      h('strong', { text: 'ยังไม่มีรูป' }),
-      h('span', { text: 'ใส่รูปที่ได้รับอนุญาตไว้ที่' }),
+      h('strong', { text: t('card.imageMissing') }),
+      h('span', { text: t('card.imageHint') }),
       h('code', { text: hint }));
   }
   const figure = h('figure', { class: 'figure' });
   const pic = h('img', { src: img.src, alt, loading: 'lazy' });
   pic.addEventListener('error', () => {
-    pic.replaceWith(h('div', { class: 'img-missing', role: 'img', 'aria-label': 'โหลดรูปไม่สำเร็จ' },
-      h('strong', { text: 'โหลดรูปไม่สำเร็จ' }),
+    pic.replaceWith(h('div', { class: 'img-missing', role: 'img', 'aria-label': t('card.imageFailed') },
+      h('strong', { text: t('card.imageFailed') }),
       h('code', { text: img.src })));
   });
   const credit = [];
   if (img.type) credit.push(img.type);
-  if (img.stain) credit.push('ย้อม ' + img.stain);
+  if (img.stain) credit.push(t('card.stain', { stain: img.stain }));
   const line = [];
-  if (img.credit) line.push('ภาพโดย ' + img.credit);
+  if (img.credit) line.push(t('card.credit', { credit: img.credit }));
   if (img.license) line.push(img.license);
   figure.append(pic);
   const cap = h('figcaption', {}, credit.length ? credit.join(' · ') + ' — ' : '', line.join(' · '));
   if (img.source) {
     const safe = /^https?:\/\//i.test(img.source);
-    cap.append(' · ', safe ? h('a', { href: img.source, rel: 'noopener noreferrer', target: '_blank' }, 'ที่มา') : 'ที่มา: ' + img.source);
+    cap.append(' · ', safe ? h('a', { href: img.source, rel: 'noopener noreferrer', target: '_blank' }, t('card.source')) : t('card.sourceText', { source: img.source }));
   }
   figure.append(cap);
   return figure;
@@ -75,73 +79,84 @@ function relGroup(title, items, withNote = false, incoming = false) {
     h('ul', { class: 'rel-list' },
       items.map((x) => h('li', {}, cellLink(x.cell),
         withNote && x.mode ? h('span', { class: 'chip mode-chip', 'data-mode': x.mode }, modeLabel(x.mode)) : null,
-        withNote && x.th ? h('span', { class: 'note' }, (incoming ? '← ' : '→ ') + x.th) : null))));
+        withNote && x.th ? h('span', { class: 'note' }, (incoming ? '← ' : '→ ') + x.th) : null,
+        withNote && x.th && getLang() === 'en' ? thaiOnlyChip() : null))));
 }
 
 export function renderCellPage(cell) {
+  const lang = getLang();
   const rel = relationsOf(cell.id);
   const cleanups = [];
   const root = h('article', { class: 'cell-page' });
 
   const synonyms = (cell.cl && cell.cl.synonyms) || [];
+  const alt = cellAlt(cell);
   const title = h('div', { class: 'cell-title' },
-    h('h1', { id: 'page-title', tabindex: '-1', text: cell.th }),
-    h('p', { class: 'en', text: cell.en }),
+    h('h1', { id: 'page-title', tabindex: '-1', text: cellName(cell) }),
+    alt ? h('p', { class: 'en', text: alt }) : null,
     h('div', { class: 'ids' },
-      cell.purl ? h('a', { class: 'mono', href: cell.purl, rel: 'noopener', target: '_blank', title: 'เปิดใน Cell Ontology' }, cell.id) : h('span', { class: 'mono' }, cell.id),
-      cell.kind === 'class' ? h('span', { class: 'chip' }, 'หมวด (กลุ่มของเซลล์)') : null,
-      cell.verified ? h('span', { class: 'chip chip-ok' }, 'ตรวจกับตำราแล้ว') : h('span', { class: 'chip chip-warn' }, 'ยังไม่ได้ตรวจกับตำรา')),
-    synonyms.length ? h('p', { class: 'synonyms' }, 'ชื่ออื่น: ', synonyms.join(', ')) : null,
-    h('div', { class: 'chips', 'aria-label': 'ระบบ' }, systemChips(cell)),
-    h('div', { class: 'chips', 'aria-label': 'เนื้อเยื่อ' }, tissueChips(cell)),
-    h('p', { class: 'toolbar' }, h('a', { class: 'btn', href: '#/quiz?cell=' + idToHash(cell.id) }, t('quiz.testThis')),
+      cell.purl ? h('a', { class: 'mono', href: cell.purl, rel: 'noopener', target: '_blank', title: t('card.openInCL') }, cell.id) : h('span', { class: 'mono' }, cell.id),
+      cell.kind === 'class' ? h('span', { class: 'chip' }, t('card.class')) : null,
+      cell.verified ? h('span', { class: 'chip chip-ok' }, t('card.verified')) : h('span', { class: 'chip chip-warn' }, t('card.unverified'))),
+    synonyms.length ? h('p', { class: 'synonyms' }, t('card.synonyms'), ': ', synonyms.join(', ')) : null,
+    h('div', { class: 'chips', 'aria-label': t('card.systemsAria') }, systemChips(cell)),
+    h('div', { class: 'chips', 'aria-label': t('card.tissuesAria') }, tissueChips(cell)),
+    h('p', { class: 'toolbar' },
+      h('a', { class: 'btn', href: '#/quiz?cell=' + idToHash(cell.id) }, t('quiz.testThis')),
       h('a', { class: 'btn', href: '#/compare/' + idToHash(cell.id) }, t('cmp.compareWith'))),
     cell.cl && cell.cl.definition
-      ? h('div', { class: 'def-box', lang: 'en' }, h('h2', { lang: 'th', text: 'คำนิยามจาก Cell Ontology (อังกฤษ)' }), h('p', { text: cell.cl.definition }))
+      ? h('div', { class: 'def-box', lang: 'en' }, h('h2', { lang, text: t('card.definition') }), h('p', { text: cell.cl.definition }))
       : null);
-  root.append(h('div', { class: 'cell-hero' }, imageBlock(cell.image, `ภาพ ${cell.th} (${cell.en})`, `images/${cell.slug}.jpg`), title));
+  root.append(h('div', { class: 'cell-hero' }, imageBlock(cell.image, t('card.imageAlt', { name: cellName(cell) }), `images/${cell.slug}.jpg`), title));
 
+  const T = (field) => textOf(cell, field, lang);
+  const L = (field) => listOf(cell, field, lang);
+  const textFact = (field, key) => { const x = T(field); return x.text ? fact(t(key), h('p', { text: x.text }), x.thaiOnly) : null; };
+  const secretes = L('secretes'), markers = L('markers');
   const facts = [
-    has(cell.location) ? fact('ตำแหน่งที่พบ', h('p', { text: cell.location })) : null,
-    has(cell.morphology) ? fact('ลักษณะ', h('p', { text: cell.morphology })) : null,
-    has(cell.function) ? fact('หน้าที่', h('p', { text: cell.function })) : null,
-    has(cell.secretes) ? fact('สารที่หลั่ง', h('p', { text: cell.secretes.join(', ') })) : null,
-    has(cell.markers) ? fact('Marker', h('p', { class: 'mono', text: cell.markers.join(' · ') })) : null,
-    has(cell.lifespan) ? fact('อายุขัย', h('p', { text: cell.lifespan })) : null,
+    textFact('location', 'field.location'),
+    textFact('morphology', 'field.morphology'),
+    textFact('function', 'field.function'),
+    secretes.items.length ? fact(t('field.secretes'), h('p', { text: secretes.items.join(', ') }), secretes.thaiOnly) : null,
+    markers.items.length ? fact(t('field.markers'), h('p', { class: 'mono', text: markers.items.join(' · ') }), markers.thaiOnly) : null,
+    textFact('lifespan', 'field.lifespan'),
   ].filter(Boolean);
   if (facts.length) root.append(h('div', { class: 'facts card' }, facts));
 
-  if (has(cell.exam)) {
-    root.append(h('section', { class: 'exam' }, h('h2', { text: 'จุดออกสอบ' }), h('p', { text: cell.exam })));
+  const exam = T('exam');
+  if (exam.text) {
+    root.append(h('section', { class: 'exam' }, h('h2', {}, t('field.exam'), exam.thaiOnly ? thaiOnlyChip() : null), h('p', { text: exam.text })));
   }
 
   const extra = [];
-  if (has(cell.diseases)) {
-    extra.push(fact('โรคและภาวะที่เกี่ยวข้อง', h('ul', { class: 'bullets' }, cell.diseases.map((d) => h('li', { text: d })))));
+  const diseases = L('diseases');
+  if (diseases.items.length) {
+    extra.push(fact(t('field.diseases'), h('ul', { class: 'bullets' }, diseases.items.map((d) => h('li', { text: d }))), diseases.thaiOnly));
   }
   const confused = (cell.confused_with || []).map((i) => store.cellsById.get(i)).filter(Boolean);
   if (confused.length) {
-    extra.push(fact('มักสับสนกับ', h('ul', { class: 'rel-list' }, confused.map((c) => h('li', {}, cellLink(c))))));
+    extra.push(fact(t('field.confused'), h('ul', { class: 'rel-list' }, confused.map((c) => h('li', {}, cellLink(c),
+      h('a', { class: 'note', href: '#/compare/' + idToHash(cell.id) + '/' + idToHash(c.id) }, t('card.compareShort')))))));
   }
   if (extra.length) root.append(h('div', { class: 'facts card' }, extra));
 
   const groups = [
-    relGroup('เจริญมาจาก', rel.developsFrom),
-    relGroup('เจริญไปเป็น', rel.giveRiseTo),
-    relGroup('เป็นชนิดหนึ่งของ', rel.isA),
-    relGroup('ชนิดย่อย', rel.subtypes),
-    relGroup('ทำงานร่วมกับ (ส่งผลต่อ)', rel.interactsOut, true, false),
-    relGroup('ทำงานร่วมกับ (ได้รับผลจาก)', rel.interactsIn, true, true),
+    relGroup(t('rel.developsFrom'), rel.developsFrom),
+    relGroup(t('rel.giveRiseTo'), rel.giveRiseTo),
+    relGroup(t('rel.isA'), rel.isA),
+    relGroup(t('rel.subtypes'), rel.subtypes),
+    relGroup(t('rel.interactsOut'), rel.interactsOut, true, false),
+    relGroup(t('rel.interactsIn'), rel.interactsIn, true, true),
   ].filter(Boolean);
   if (groups.length) {
-    const graphBox = h('div', { class: 'mini-graph', role: 'img', 'aria-label': `ใยย่อยของ ${cell.en} และเซลล์ที่เชื่อมโยงโดยตรง` },
+    const graphBox = h('div', { class: 'mini-graph', role: 'img', 'aria-label': t('card.subgraphAria', { name: cellName(cell) }) },
       h('div', { class: 'cy' }));
     root.append(
-      h('h2', { class: 'section', text: 'ความเชื่อมโยง' }),
+      h('h2', { class: 'section', text: t('card.relations') }),
       h('div', { class: 'relations card' }, groups),
-      h('h2', { class: 'section', text: 'ใยย่อย' }),
+      h('h2', { class: 'section', text: t('card.subgraph') }),
       graphBox,
-      h('p', { class: 'graph-hint', text: 'แตะจุดเพื่อไปยังเซลล์นั้น · ใช้ลิงก์ในรายการด้านบนเพื่อใช้แป้นพิมพ์' }));
+      h('p', { class: 'graph-hint', text: t('card.subgraphHint') }));
     // สร้างกราฟหลังใส่ใน DOM แล้ว
     queueMicrotask(() => {
       const g = createMiniGraph(graphBox.querySelector('.cy'), cell.id, (id) => { location.hash = cellHref(id); });
@@ -150,23 +165,25 @@ export function renderCellPage(cell) {
   }
 
   if (has(cell.refs)) {
-    root.append(h('h2', { class: 'section', text: 'อ้างอิง' }), h('ul', { class: 'bullets refs' }, cell.refs.map((r) => h('li', { text: r }))));
+    root.append(h('h2', { class: 'section', text: t('card.refs') }), h('ul', { class: 'bullets refs' }, cell.refs.map((r) => h('li', { text: r }))));
   }
 
   return { el: root, destroy: () => cleanups.forEach((f) => f()) };
 }
 
-// การ์ดย่อด้านข้างในหน้าใยรายระบบ
+// การ์ดย่อด้านข้างในหน้าใยรายระบบ/ใยภาพรวม
 export function renderPeek(cell) {
+  const fn = textOf(cell, 'function', getLang());
+  const alt = cellAlt(cell);
   return h('div', {},
-    h('h2', { text: cell.th }),
-    h('p', { class: 'en', text: cell.en }),
+    h('h2', { text: cellName(cell) }),
+    alt ? h('p', { class: 'en', text: alt }) : null,
     h('div', { class: 'chips' },
       h('span', { class: 'chip mono' }, cell.id),
-      cell.kind === 'class' ? h('span', { class: 'chip' }, 'หมวด') : null,
+      cell.kind === 'class' ? h('span', { class: 'chip' }, t('card.classShort')) : null,
       tissueChips(cell),
-      cell.verified ? null : h('span', { class: 'chip chip-warn' }, 'ยังไม่ได้ตรวจ')),
+      cell.verified ? null : h('span', { class: 'chip chip-warn' }, t('card.unverifiedShort'))),
     (cell.systems || []).length > 1 ? h('div', { class: 'chips' }, systemChips(cell)) : null,
-    has(cell.function) ? h('p', { text: cell.function }) : null,
-    h('div', { class: 'actions' }, h('a', { class: 'btn btn-primary', href: cellHref(cell.id) }, 'ดูข้อมูลเต็ม')));
+    fn.text ? h('p', {}, fn.text, fn.thaiOnly ? thaiOnlyChip() : null) : null,
+    h('div', { class: 'actions' }, h('a', { class: 'btn btn-primary', href: cellHref(cell.id) }, t('peek.viewFull'))));
 }

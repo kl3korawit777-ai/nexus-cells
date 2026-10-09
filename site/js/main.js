@@ -10,8 +10,9 @@ async function boot() {
     await initI18n();
   } catch (e) {
     console.error(e);
-    // ยังไม่มีไฟล์ภาษา จึงใช้ข้อความสองภาษาตายตัวเฉพาะกรณีนี้
-    app.replaceChildren(h('p', { class: 'loading' }, 'Failed to load language files / โหลดไฟล์ภาษาไม่สำเร็จ: ' + e.message));
+    // ยังไม่มีไฟล์ภาษา จึงใช้ข้อความสองภาษาที่เขียนไว้ใน index.html (#boot-error)
+    const box = document.getElementById('boot-error');
+    if (box) { box.hidden = false; box.append(' ' + e.message); app.replaceChildren(box); }
     return;
   }
   document.querySelectorAll('[data-lang-btn]').forEach((b) => b.addEventListener('click', () => setLang(b.dataset.langBtn)));
