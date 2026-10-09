@@ -8,12 +8,18 @@
     "layout": "node scripts/layout.mjs",
     "test:quiz": "node scripts/test-quiz.mjs",
     "test:i18n": "node scripts/test-i18n.mjs",
-    "test": "node scripts/test-quiz.mjs && node scripts/test-i18n.mjs"
+    "test": "node scripts/test-quiz.mjs && node scripts/test-i18n.mjs",
+    "test:offline": "node scripts/test-offline.mjs",
+    "icons": "node scripts/make-icons.mjs"
   },
   "dependencies": {
     "cose-base": "2.2.0",
     "cytoscape": "3.30.2",
     "cytoscape-fcose": "2.2.0",
     "layout-base": "2.0.1"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "puppeteer-core": "25.13.0"
   }
 }

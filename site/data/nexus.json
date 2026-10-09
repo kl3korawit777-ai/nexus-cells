@@ -1,6 +1,7 @@
 {
  "meta": {
-  "generated_at": "2026-10-09T11:50:22+00:00",
+  "data_version": "0cf4bdc986d4",
+  "generated_at": "2026-10-09T11:52:14+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "edge_direction": "develops_from/is_a: from=ลูก to=แม่; interacts_with: from=ผู้กระทำ to=ผู้ถูกกระทำ"
  },

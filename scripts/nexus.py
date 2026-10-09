@@ -13,6 +13,7 @@ import argparse
 import glob
 import json
 import os
+import hashlib
 import re
 import shutil
 import subprocess
@@ -509,8 +510,13 @@ def cmd_build(args):
             edges_out.append({"type": "interacts_with", "from": it["from"], "to": it["to"],
                               "th": it.get("th", ""), "mode": it.get("mode"), "source": "curated", "file": fid})
 
+    # เวอร์ชันข้อมูล = hash ของเนื้อหาข้อมูล (ไม่รวมเวลาสร้าง) ใช้ให้เว็บรู้ว่ามีข้อมูลใหม่
+    version = hashlib.sha1(json.dumps({
+        "systems": ds["systems"], "tissues": ds["tissues"], "cells": cells_out, "edges": edges_out,
+    }, sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()[:12]
     save_json(SITE_OUT, {
         "meta": {
+            "data_version": version,
             "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "ontology": "Cell Ontology (CL), CC BY 4.0",
             "edge_direction": "develops_from/is_a: from=ลูก to=แม่; interacts_with: from=ผู้กระทำ to=ผู้ถูกกระทำ",
@@ -524,7 +530,27 @@ def cmd_build(args):
 
     write_build_report(ds, cl, edges_out, warnings)
     run_layout()
+    write_pwa_files(version)
     return 0
+
+
+def write_pwa_files(version):
+    """สร้าง site/data/version.json และ site/precache.json (รายการไฟล์ที่ service worker เก็บไว้ใช้ออฟไลน์)"""
+    site = os.path.join(ROOT, "site")
+    save_json(os.path.join(site, "data", "version.json"), {"version": version})
+    skip_files = {"sw.js", "precache.json", ".gitkeep"}
+    files = []
+    for base, dirs, names in os.walk(site):
+        rel_dir = os.path.relpath(base, site).replace("\\", "/")
+        # รูปเซลล์เก็บแบบ runtime (เฉพาะที่เคยเปิด) ไม่ precache ทั้งโฟลเดอร์
+        dirs[:] = sorted(d for d in dirs if not (rel_dir == "." and d == "images"))
+        for n in sorted(names):
+            if n in skip_files:
+                continue
+            rel = n if rel_dir == "." else rel_dir + "/" + n
+            files.append(rel)
+    save_json(os.path.join(site, "precache.json"), sorted(files), indent=0)
+    print("เขียน site/data/version.json (%s) และ site/precache.json (%d ไฟล์)" % (version, len(files)))
 
 
 def run_layout():

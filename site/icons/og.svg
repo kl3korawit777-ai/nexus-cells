@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4b3394"/>
+      <stop offset="1" stop-color="#241a4d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(700 70) scale(.95)" opacity=".95">
+    <g stroke="#ffffff" stroke-opacity=".6" stroke-width="8" stroke-linecap="round" fill="none">
+      <path d="M256 256 L120 148 M256 256 L398 170 M256 256 L372 380 M256 256 L140 372 M120 148 L398 170 M398 170 L372 380 M140 372 L372 380 M120 148 L140 372"/>
+    </g>
+    <circle cx="256" cy="256" r="58" fill="#ffffff"/>
+    <circle cx="256" cy="256" r="26" fill="#6e4bb5"/>
+    <circle cx="120" cy="148" r="36" fill="#f27aa5"/>
+    <circle cx="398" cy="170" r="36" fill="#7fb0f0"/>
+    <circle cx="372" cy="380" r="36" fill="#f27aa5"/>
+    <circle cx="140" cy="372" r="36" fill="#a98bf0"/>
+  </g>
+  <text x="70" y="290" font-family="Leelawadee UI, Tahoma, Noto Sans Thai, Arial, sans-serif" font-size="120" font-weight="700" fill="#ffffff">Nexus</text>
+  <text x="70" y="380" font-family="Leelawadee UI, Tahoma, Noto Sans Thai, Arial, sans-serif" font-size="56" fill="#e9ddff">ใยเซลล์ · Cell Web</text>
+  <text x="70" y="450" font-family="Leelawadee UI, Tahoma, Noto Sans Thai, Arial, sans-serif" font-size="34" fill="#c7b6ee">A network map of human cells</text>
+</svg>

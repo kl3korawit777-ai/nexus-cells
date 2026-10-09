@@ -1,0 +1,20 @@
+{
+  "name": "Nexus · ใยเซลล์",
+  "short_name": "Nexus",
+  "description": "แผนที่เครือข่ายเซลล์ในร่างกายมนุษย์ เชื่อมข้อมูลตาม Cell Ontology · A network map of the cells of the human body",
+  "lang": "th",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f2fb",
+  "theme_color": "#5b3fa0",
+  "categories": ["education", "medical"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

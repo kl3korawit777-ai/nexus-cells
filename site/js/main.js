@@ -2,6 +2,7 @@ import { loadData } from './data.js';
 import { start, render } from './router.js';
 import { h } from './util.js';
 import { initI18n, setLang, onLangChange, t } from './i18n.js';
+import { registerPwa, checkDataUpdate } from './pwa.js';
 
 const app = document.getElementById('app');
 
@@ -30,6 +31,8 @@ async function boot() {
   // เปลี่ยนภาษาแล้วสร้างหน้าปัจจุบันใหม่
   onLangChange(() => render(app));
   start(app);
+  registerPwa();
+  checkDataUpdate();
 }
 
 boot();

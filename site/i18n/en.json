@@ -148,6 +148,8 @@
   "peek.aria": "Summary of the selected cell",
   "peek.empty": "Tap a node on the web for a summary. Tap empty space to clear.",
   "peek.viewFull": "View full page",
+  "pwa.update": "Update now",
+  "pwa.updateAvailable": "New data is available.",
   "quiz.again": "New quiz",
   "quiz.availableTotal": "At least {n} questions are available in this scope.",
   "quiz.back": "Back to setup",
