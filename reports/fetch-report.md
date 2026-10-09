@@ -1,11 +1,13 @@
 # รายงานการดึงข้อมูล (fetch)
 
-สร้างเมื่อ: 2026-10-09 18:07
-ดึงใหม่ 21 รหัส จากทั้งหมด 78 รหัสในชุดข้อมูล
+สร้างเมื่อ: 2026-10-09 18:13
+ดึงใหม่ 24 รหัส จากทั้งหมด 102 รหัสในชุดข้อมูล
 
-## ปัญหาที่ต้องตรวจ (1)
+## ปัญหาที่ต้องตรวจ (3)
 
 - **tissue ต่างจาก CL** CL:0002088 (interstitial cell of Cajal): ตั้งไว้ "connective" แต่ ancestors ใน CL ชี้ไป epithelial
+- **tissue ต่างจาก CL** CL:0000589 (cochlear inner hair cell): ตั้งไว้ "epithelial" แต่ ancestors ใน CL ชี้ไป nervous
+- **tissue ต่างจาก CL** CL:0000601 (cochlear outer hair cell): ตั้งไว้ "epithelial" แต่ ancestors ใน CL ชี้ไป nervous
 
 ## หมายเหตุ (3)
 

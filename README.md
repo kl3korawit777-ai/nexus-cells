@@ -101,12 +101,24 @@ python scripts/nexus.py build             # รวมเป็น site/data/nexu
 {
   "develops_from": [["CL:ลูก", "CL:แม่"]],
   "is_a": [["CL:ลูก", "CL:แม่"]],
-  "interacts_with": [{ "from": "CL:...", "to": "CL:...", "th": "คำอธิบายสั้น ๆ" }]
+  "interacts_with": [{ "from": "CL:...", "to": "CL:...", "th": "คำอธิบายสั้น ๆ", "mode": "hormone" }]
 }
 ```
 
 - `develops_from` และ `is_a` เขียนเป็นคู่ **[ลูก, แม่]** เสมอ
 - `interacts_with` ไม่มีใน CL ต้องเพิ่มเอง ทิศทางจาก `from` ไปยัง `to`
+- `mode` ของ `interacts_with` **จำเป็น** (validate จะแจ้งข้อผิดพลาดถ้าขาด) ค่าได้ 5 แบบ แต่ละแบบมีสีและลายเส้นต่างกันบนเว็บ
+
+| mode | ความหมาย | ตัวอย่าง |
+|---|---|---|
+| `hormone` | ฮอร์โมนผ่านกระแสเลือด | beta cell → hepatocyte (insulin) |
+| `synapse` | สัญญาณผ่านไซแนปส์ | rod cell → bipolar cell |
+| `paracrine` | สารสื่อสารระยะใกล้ | delta cell → beta cell (somatostatin) |
+| `support` | เซลล์สนับสนุนเซลล์อื่น | oligodendrocyte → pyramidal neuron (ไมอีลิน) |
+| `immune` | ปฏิสัมพันธ์ของระบบภูมิคุ้มกัน | dendritic cell → helper T cell |
+
+- เส้น `interacts_with` ข้ามระบบได้ ในใยรายระบบ เซลล์ปลายทางที่อยู่นอกระบบจะแสดงเป็นจุดจางสีของระบบนั้น (ghost node) แตะแล้วไปหน้าเซลล์นั้น
+- เส้นที่ปลายทางอยู่ในระบบที่ยังไม่ได้เพิ่ม (เช่น สืบพันธุ์ กล้ามเนื้อ) ให้รอจนกว่าจะเพิ่มระบบนั้น
 - ทุกเส้นใน `nexus.json` มี `source: "curated"` (คัดเอง)
 - ใน `nexus.json` ใช้ `from`/`to` เหมือนกันทุกชนิดเส้น โดย `develops_from` และ `is_a` มี `from` เป็นลูก `to` เป็นแม่
 

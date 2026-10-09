@@ -1,18 +1,21 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-09 18:07
+สร้างเมื่อ: 2026-10-09 18:13
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 41 เส้น
-- คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 1 เส้น
+- ตรงกัน: 58 เส้น
+- คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 4 เส้น
 - คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 4 เส้น
-- CL มี แต่ไม่ได้คัดไว้: 24 เส้น
+- CL มี แต่ไม่ได้คัดไว้: 37 เส้น
 
 ### is_a ที่คัดเองข้ามขั้น
 ถูกตามความหมาย แต่ใน CL มีตัวกลางอยู่ระหว่างสองรหัสนี้ในชุดข้อมูล
 
+- CL:0000207 olfactory receptor cell → CL:0000540 neuron
+- CL:0000210 photoreceptor cell → CL:0000540 neuron
 - CL:0000235 macrophage → CL:0000738 leukocyte
+- CL:0000645 pituicyte → CL:0000125 glial cell
 
 ### is_a ที่คัดเองแต่ CL ไม่มี
 ควรตรวจว่าตำราหรือ CL ถูก
@@ -34,12 +37,21 @@
 - CL:0000169 type B pancreatic cell → CL:0000164 enteroendocrine cell
 - CL:0000171 pancreatic A cell → CL:0000164 enteroendocrine cell
 - CL:0000173 pancreatic D cell → CL:0000164 enteroendocrine cell
+- CL:0000173 pancreatic D cell → CL:0000165 neuroendocrine cell
+- CL:0000207 olfactory receptor cell → CL:0000101 sensory neuron
+- CL:0000210 photoreceptor cell → CL:0000101 sensory neuron
 - CL:0000233 platelet → CL:0000988 hematopoietic cell
+- CL:0000336 adrenal medulla chromaffin cell → CL:0000165 neuroendocrine cell
+- CL:0000437 gonadotroph → CL:0000165 neuroendocrine cell
+- CL:0000476 thyrotroph → CL:0000165 neuroendocrine cell
 - CL:0000509 gastrin secreting cell → CL:0000167 peptide hormone secreting cell
 - CL:0000510 paneth cell → CL:0002563 intestinal epithelial cell
 - CL:0000556 megakaryocyte → CL:0000988 hematopoietic cell
 - CL:0000557 granulocyte monocyte progenitor cell → CL:0000988 hematopoietic cell
 - CL:0000558 reticulocyte → CL:0000988 hematopoietic cell
+- CL:0000589 cochlear inner hair cell → CL:0000101 sensory neuron
+- CL:0000601 cochlear outer hair cell → CL:0000101 sensory neuron
+- CL:0000645 pituicyte → CL:0000127 astrocyte
 - CL:0000765 erythroblast → CL:0000988 hematopoietic cell
 - CL:0000786 plasma cell → CL:0000542 lymphocyte
 - CL:0000787 memory B cell → CL:0000145 professional antigen presenting cell
@@ -48,15 +60,19 @@
 - CL:0000815 regulatory T cell → CL:0000084 T cell
 - CL:0002258 thyroid follicular cell → CL:0000167 peptide hormone secreting cell
 - CL:0002275 pancreatic PP cell → CL:0000164 enteroendocrine cell
+- CL:0002309 corticotroph → CL:0000165 neuroendocrine cell
+- CL:0002311 mammotroph → CL:0000165 neuroendocrine cell
+- CL:0002312 somatotroph → CL:0000165 neuroendocrine cell
+- CL:1001505 parvocellular neurosecretory cell → CL:0000167 peptide hormone secreting cell
 
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
 - ตรงกัน: 4 เส้น
 - คัดเองมี แต่ CL ไม่มี: 24 เส้น
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 2 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 21 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 25 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 208 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 228 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -93,8 +109,10 @@
 ### develops_from ที่ CL ชี้ไปเซลล์นอกชุดข้อมูล
 
 - CL:0000037 hematopoietic stem cell ← CL:0000566 angioblastic mesenchymal cell
+- CL:0000065 ependymal cell ← CL:0000681 radial glial cell
 - CL:0000084 T cell ← CL:0000827 pro-T cell
 - CL:0000097 mast cell ← CL:0000831 mast cell progenitor
+- CL:0000128 oligodendrocyte ← CL:0002453 oligodendrocyte precursor cell
 - CL:0000129 microglial cell ← CL:0000034 stem cell
 - CL:0000129 microglial cell ← CL:0000222 mesodermal cell
 - CL:0000169 type B pancreatic cell ← CL:0002351 progenitor cell of endocrine pancreas
@@ -107,14 +125,16 @@
 - CL:0000556 megakaryocyte ← CL:0000553 megakaryocyte progenitor cell
 - CL:0000558 reticulocyte ← CL:0000552 orthochromatic erythroblast
 - CL:0000570 parafollicular cell ← CL:0000333 migratory neural crest cell
+- CL:0000573 retinal cone cell ← CL:0002672 retinal progenitor cell
 - CL:0000576 monocyte ← CL:0000559 promonocyte
+- CL:0000604 retinal rod cell ← CL:0002672 retinal progenitor cell
 - CL:0000623 natural killer cell ← CL:0000825 pro-NK cell
 - CL:0000765 erythroblast ← CL:0000547 proerythroblast
 - CL:0000786 plasma cell ← CL:0000980 plasmablast
 - CL:0000786 plasma cell ← CL:0017508 cartwheel heterochromatin
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 
-## คำเตือนจาก validate (78)
+## คำเตือนจาก validate (102)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -194,3 +214,27 @@
 - CL:0000437 (gonadotroph): ช่องว่าง: lifespan, diseases, confused_with; ยังไม่มีรูป
 - CL:0000652 (pinealocyte): ช่องว่าง: markers, lifespan, diseases, confused_with; ยังไม่มีรูป
 - CL:0000645 (pituicyte): ช่องว่าง: markers, lifespan, diseases, confused_with; ยังไม่มีรูป
+- CL:0000540 (neuron): ยังไม่มีรูป
+- CL:0000125 (glial cell): ยังไม่มีรูป
+- CL:0000210 (photoreceptor cell): ยังไม่มีรูป
+- CL:0000165 (neuroendocrine cell): ยังไม่มีรูป
+- CL:0000101 (sensory neuron): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
+- CL:0000100 (motor neuron): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000099 (interneuron): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
+- CL:0000598 (pyramidal neuron): ช่องว่าง: markers, lifespan, confused_with; ยังไม่มีรูป
+- CL:0000121 (Purkinje cell): ช่องว่าง: lifespan, confused_with; ยังไม่มีรูป
+- CL:0011003 (magnocellular neurosecretory cell): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
+- CL:1001505 (parvocellular neurosecretory cell): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
+- CL:0000127 (astrocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000128 (oligodendrocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002573 (Schwann cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000065 (ependymal cell): ช่องว่าง: markers, lifespan, confused_with; ยังไม่มีรูป
+- CL:0000604 (retinal rod cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000573 (retinal cone cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000748 (retinal bipolar neuron): ช่องว่าง: markers, lifespan, diseases, confused_with; ยังไม่มีรูป
+- CL:0000740 (retinal ganglion cell): ช่องว่าง: markers, lifespan, confused_with; ยังไม่มีรูป
+- CL:0002586 (retinal pigment epithelial cell): ช่องว่าง: markers, lifespan, confused_with; ยังไม่มีรูป
+- CL:0000589 (cochlear inner hair cell): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
+- CL:0000601 (cochlear outer hair cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000207 (olfactory receptor cell): ช่องว่าง: markers, confused_with; ยังไม่มีรูป
+- CL:0000209 (taste receptor cell): ช่องว่าง: markers, diseases, confused_with, tissue_subtype; ยังไม่มีรูป

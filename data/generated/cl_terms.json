@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T11:07:50+00:00",
+  "fetched_at": "2026-10-09T11:13:38+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -8399,6 +8399,2294 @@
         {
           "id": "UBERON:0002198",
           "label": "neurohypophysis"
+        }
+      ]
+    },
+    "CL:0000540": {
+      "id": "CL:0000540",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000540",
+      "label": "neuron",
+      "definition": "The basic cellular unit of nervous tissue. Each neuron consists of a body, an axon, and dendrites. Their purpose is to receive, conduct, and transmit impulses in the nervous system.",
+      "synonyms": [
+        "nerve cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0019226",
+          "label": "transmission of nerve impulse"
+        }
+      ]
+    },
+    "CL:0000125": {
+      "id": "CL:0000125",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000125",
+      "label": "glial cell",
+      "definition": "A non-neuronal cell of the nervous system. They not only provide physical support, but also respond to injury, regulate the ionic and chemical composition of the extracellular milieu. Guide neuronal migration during development, and exchange metabolites with neurons.",
+      "synonyms": [
+        "neuroglia",
+        "neuroglial cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000095",
+          "label": "neuron associated cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000095",
+          "label": "neuron associated cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000210": {
+      "id": "CL:0000210",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000210",
+      "label": "photoreceptor cell",
+      "definition": "A cell specialized in detecting light stimuli that are involved in visual perception.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000101",
+          "label": "sensory neuron"
+        },
+        {
+          "id": "CL:0008028",
+          "label": "visual system neuron"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000101",
+          "label": "sensory neuron"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000526",
+          "label": "afferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0008028",
+          "label": "visual system neuron"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0050908",
+          "label": "detection of light stimulus involved in visual perception"
+        }
+      ]
+    },
+    "CL:0000165": {
+      "id": "CL:0000165",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000165",
+      "label": "neuroendocrine cell",
+      "definition": "A neuron that is capable of some hormone secretion in response to neuronal signals.",
+      "synonyms": [
+        "neurosecretory cell",
+        "neurosecretory neuron"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000101": {
+      "id": "CL:0000101",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000101",
+      "label": "sensory neuron",
+      "definition": "Any neuron having a sensory function; an afferent neuron conveying sensory impulses.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000526",
+          "label": "afferent neuron"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000526",
+          "label": "afferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0050906",
+          "label": "detection of stimulus involved in sensory perception"
+        }
+      ]
+    },
+    "CL:0000100": {
+      "id": "CL:0000100",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000100",
+      "label": "motor neuron",
+      "definition": "An efferent neuron that passes from the central nervous system or a ganglion toward or to a muscle and conducts an impulse that causes or inhibits movement.",
+      "synonyms": [
+        "motoneuron"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000099": {
+      "id": "CL:0000099",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000099",
+      "label": "interneuron",
+      "definition": "Most generally any neuron which is not motor or sensory. Interneurons may also refer to neurons whose axons remain within a particular brain region as contrasted with projection neurons which have axons projecting to other brain regions.",
+      "synonyms": [
+        "CNS interneuron"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:2000029",
+          "label": "central nervous system neuron"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:2000029",
+          "label": "central nervous system neuron"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0001017",
+          "label": "central nervous system"
+        }
+      ]
+    },
+    "CL:0000598": {
+      "id": "CL:0000598",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000598",
+      "label": "pyramidal neuron",
+      "definition": "Pyramidal neurons have a pyramid-shaped soma with a single axon, a large apical dendrite and multiple basal dendrites. The apex and an apical dendrite typically point toward the pial surface and other dendrites and an axon emerging from the base. The axons may have local collaterals but also project outside their region. Pyramidal neurons are found in the cerebral cortex, the hippocampus, and the amygdala.",
+      "synonyms": [
+        "projection neuron",
+        "pyramidal cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:2000029",
+          "label": "central nervous system neuron"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:2000029",
+          "label": "central nervous system neuron"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "PATO:0070015",
+          "label": "pyramidal family morphology"
+        }
+      ]
+    },
+    "CL:0000121": {
+      "id": "CL:0000121",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000121",
+      "label": "Purkinje cell",
+      "definition": "An inhibitory neuron and the sole output neuron of the cerebellar cortex, the Purkinje cell's soma is located between the granular and molecular layers of the cerebellum. It is one of the largest neural cells in the mammalian brain, ranging from 50 to 80 micrometres in diameter. Purkinje cells have planar, fan-shaped dendrites that branch extensively with little overlap. This cell type receives synaptic input from parallel fibres, which modulate high-frequency spike activity known as \"simple spikes,\" and climbing fibres, which modulate infrequent calcium spike activity known as \"complex spikes\". Purkinje cells are involved in motor coordination, particularly in correcting movements in progress.",
+      "synonyms": [
+        "PC",
+        "PN",
+        "Purkinje neuron",
+        "cerebellar Purkinje cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000617",
+          "label": "GABAergic neuron"
+        },
+        {
+          "id": "CL:1001611",
+          "label": "cerebellar neuron"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000617",
+          "label": "GABAergic neuron"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:1001611",
+          "label": "cerebellar neuron"
+        },
+        {
+          "id": "CL:2000029",
+          "label": "central nervous system neuron"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0002979",
+          "label": "Purkinje cell layer of cerebellar cortex"
+        }
+      ]
+    },
+    "CL:0011003": {
+      "id": "CL:0011003",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0011003",
+      "label": "magnocellular neurosecretory cell",
+      "definition": "A neurosecretory neuron residing mainly in the hypothalamic supraoptic and paraventricular nuclei and in a number of smaller accessory cell groups between these two nuclei, that is capable of secreting the hormones oxytocin or vasopressin, and sometimes both, into the systemic circulation.",
+      "synonyms": [
+        "magnocellular neuron"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0012001",
+          "label": "neuron of the forebrain"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0012001",
+          "label": "neuron of the forebrain"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "CL:2000029",
+          "label": "central nervous system neuron"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0001898",
+          "label": "hypothalamus"
+        }
+      ]
+    },
+    "CL:1001505": {
+      "id": "CL:1001505",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_1001505",
+      "label": "parvocellular neurosecretory cell",
+      "definition": "The secretory neurons of the paraventricular nucleus that synthesize and secrete vasopressin, corticotropin-releasing factor (CRF) and thyrotropin-releasing hormone (TRH) into blood vessels in the hypothalamo-pituitary portal system.",
+      "synonyms": [
+        "parvocellular neuron",
+        "parvocellular neurosecretory neuron"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0012001",
+          "label": "neuron of the forebrain"
+        },
+        {
+          "id": "CL:2000030",
+          "label": "hypothalamus cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0012001",
+          "label": "neuron of the forebrain"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "CL:2000029",
+          "label": "central nervous system neuron"
+        },
+        {
+          "id": "CL:2000030",
+          "label": "hypothalamus cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0030103",
+          "label": "vasopressin secretion"
+        },
+        {
+          "id": "UBERON:0001930",
+          "label": "paraventricular nucleus of hypothalamus"
+        }
+      ]
+    },
+    "CL:0000127": {
+      "id": "CL:0000127",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000127",
+      "label": "astrocyte",
+      "definition": "A class of large neuroglial (macroglial) cells in the central nervous system - the largest and most numerous neuroglial cells in the brain and spinal cord. Astrocytes (from 'star' cells) are irregularly shaped with many long processes, including those with 'end feet' which form the glial (limiting) membrane and directly and indirectly contribute to the blood-brain barrier. They regulate the extracellular ionic and chemical environment, and 'reactive astrocytes' (along with microglia) respond to injury.",
+      "synonyms": [
+        "astrocytic glia"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000126",
+          "label": "macroglial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000095",
+          "label": "neuron associated cell"
+        },
+        {
+          "id": "CL:0000125",
+          "label": "glial cell"
+        },
+        {
+          "id": "CL:0000126",
+          "label": "macroglial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000128": {
+      "id": "CL:0000128",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000128",
+      "label": "oligodendrocyte",
+      "definition": "A class of large neuroglial (macroglial) cells in the central nervous system. Form the insulating myelin sheath of axons in the central nervous system.",
+      "synonyms": [
+        "oligodendroglia",
+        "OLs"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000126",
+          "label": "macroglial cell"
+        },
+        {
+          "id": "CL:4023154",
+          "label": "myelinating glial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000095",
+          "label": "neuron associated cell"
+        },
+        {
+          "id": "CL:0000125",
+          "label": "glial cell"
+        },
+        {
+          "id": "CL:0000126",
+          "label": "macroglial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:4023154",
+          "label": "myelinating glial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0002453",
+          "label": "oligodendrocyte precursor cell"
+        },
+        {
+          "id": "UBERON:0001017",
+          "label": "central nervous system"
+        }
+      ]
+    },
+    "CL:0002573": {
+      "id": "CL:0002573",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002573",
+      "label": "Schwann cell",
+      "definition": "A glial cell that myelinates or ensheathes axons in the peripheral nervous system.",
+      "synonyms": [
+        "neurolemmocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000125",
+          "label": "glial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000095",
+          "label": "neuron associated cell"
+        },
+        {
+          "id": "CL:0000125",
+          "label": "glial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0000010",
+          "label": "peripheral nervous system"
+        }
+      ]
+    },
+    "CL:0000065": {
+      "id": "CL:0000065",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000065",
+      "label": "ependymal cell",
+      "definition": "A neuroepithelial glial cell, derived from a radial glial cell originating from the neuroectoderm, lines the ventricles of the brain and the central canal of the spinal cord. This cell is characterized by the presence of cilia on its apical surface, which can be motile or non-motile.",
+      "synonyms": [
+        "ependymocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000067",
+          "label": "ciliated epithelial cell"
+        },
+        {
+          "id": "CL:0000125",
+          "label": "glial cell"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000064",
+          "label": "ciliated cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000067",
+          "label": "ciliated epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000095",
+          "label": "neuron associated cell"
+        },
+        {
+          "id": "CL:0000125",
+          "label": "glial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000681",
+          "label": "radial glial cell"
+        },
+        {
+          "id": "UBERON:0004670",
+          "label": "ependyma"
+        }
+      ]
+    },
+    "CL:0000604": {
+      "id": "CL:0000604",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000604",
+      "label": "retinal rod cell",
+      "definition": "One of the two photoreceptor cell types of the vertebrate retina. In rods the photopigment is in stacks of membranous disks separate from the outer cell membrane. Rods are more sensitive to light than cones, but rod mediated vision has less spatial and temporal resolution than cone vision.",
+      "synonyms": [
+        "rod"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0010009",
+          "label": "camera-type eye photoreceptor cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000006",
+          "label": "neuronal receptor cell"
+        },
+        {
+          "id": "CL:0000101",
+          "label": "sensory neuron"
+        },
+        {
+          "id": "CL:0000197",
+          "label": "sensory receptor cell"
+        },
+        {
+          "id": "CL:0000210",
+          "label": "photoreceptor cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000287",
+          "label": "eye photoreceptor cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000526",
+          "label": "afferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0008028",
+          "label": "visual system neuron"
+        },
+        {
+          "id": "CL:0009004",
+          "label": "retinal cell"
+        },
+        {
+          "id": "CL:0010009",
+          "label": "camera-type eye photoreceptor cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0002672",
+          "label": "retinal progenitor cell"
+        }
+      ]
+    },
+    "CL:0000573": {
+      "id": "CL:0000573",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000573",
+      "label": "retinal cone cell",
+      "definition": "One of the two photoreceptor cell types in the vertebrate retina. In cones the photopigment is in invaginations of the cell membrane of the outer segment. Cones are less sensitive to light than rods, but they provide vision with higher spatial and temporal acuity, and the combination of signals from cones with different pigments allows color vision.",
+      "synonyms": [
+        "cone"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0010009",
+          "label": "camera-type eye photoreceptor cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000006",
+          "label": "neuronal receptor cell"
+        },
+        {
+          "id": "CL:0000101",
+          "label": "sensory neuron"
+        },
+        {
+          "id": "CL:0000197",
+          "label": "sensory receptor cell"
+        },
+        {
+          "id": "CL:0000210",
+          "label": "photoreceptor cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000287",
+          "label": "eye photoreceptor cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000526",
+          "label": "afferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0008028",
+          "label": "visual system neuron"
+        },
+        {
+          "id": "CL:0009004",
+          "label": "retinal cell"
+        },
+        {
+          "id": "CL:0010009",
+          "label": "camera-type eye photoreceptor cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0002672",
+          "label": "retinal progenitor cell"
+        }
+      ]
+    },
+    "CL:0000748": {
+      "id": "CL:0000748",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000748",
+      "label": "retinal bipolar neuron",
+      "definition": "A bipolar neuron found in the retina and having connections with photoreceptors cells and neurons in the inner plexiform layer.",
+      "synonyms": [
+        "BC",
+        "BCs",
+        "BPs"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "CL:0000679",
+          "label": "glutamatergic neuron"
+        },
+        {
+          "id": "CL:0008028",
+          "label": "visual system neuron"
+        },
+        {
+          "id": "CL:0009004",
+          "label": "retinal cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000679",
+          "label": "glutamatergic neuron"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0008028",
+          "label": "visual system neuron"
+        },
+        {
+          "id": "CL:0009004",
+          "label": "retinal cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0061535",
+          "label": "glutamate secretion, neurotransmission"
+        },
+        {
+          "id": "UBERON:0001791",
+          "label": "inner nuclear layer of retina"
+        }
+      ]
+    },
+    "CL:0000740": {
+      "id": "CL:0000740",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000740",
+      "label": "retinal ganglion cell",
+      "definition": "Retinal ganglion cells (RGCs) are a type of neuron located near the inner surface of the retina, playing a critical role in the visual pathway. There are approximately 1 million RGCs in a typical human eye, each receiving inputs from multiple photoreceptor cells. As the only neurons in the retina that send information to the brain, they are the final output neurons of the vertebrate retina, and their axons constitute the majority of fibers in the optic nerve. \nThe primary function of RGCs is to receive visual information from photoreceptors via intermediary bipolar and amacrine cells, process it, and transmit it to the brain through their axons. The information that RGCs relay encompasses various aspects of the visual field, including color, contrast, brightness, and motion. A diverse population of RGCs, up to 30 distinct subtypes, each contributes to a specific aspect of vision, such as object motion, edge detection, or color contrast, illustrating the complexity of visual data processing that occurs already at the retinal level.\nRGCs also play a role in the regulation of circadian rhythms and the pupillary light reflex. Some RGCs contain the photopigment melanopsin and respond directly to light, separately from the retinal rod and cone cells found in the outer retina. These photosensitive RGCs are primarily involved in subconscious vision, particularly the regulation of circadian rhythms and the pupillary light reflex in response to changes in ambient light intensity. Hence, RGCs serve a highly specialized and diverse role in transmitting visual information and regulating light-dependent responses, view modalities, and key physiological processes.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)",
+      "synonyms": [
+        "gangliocyte",
+        "ganglion cell of retina",
+        "RGC",
+        "RGCs"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0000966",
+          "label": "retina"
+        }
+      ]
+    },
+    "CL:0002586": {
+      "id": "CL:0002586",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002586",
+      "label": "retinal pigment epithelial cell",
+      "definition": "An epithelial cell of the retinal pigmented epithelium.",
+      "synonyms": [
+        "RPE"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000149",
+          "label": "visual pigment cell"
+        },
+        {
+          "id": "CL:0009004",
+          "label": "retinal cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000147",
+          "label": "pigment cell"
+        },
+        {
+          "id": "CL:0000149",
+          "label": "visual pigment cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0009004",
+          "label": "retinal cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0042470",
+          "label": "melanosome"
+        },
+        {
+          "id": "UBERON:0001782",
+          "label": "pigmented layer of retina"
+        }
+      ]
+    },
+    "CL:0000589": {
+      "id": "CL:0000589",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000589",
+      "label": "cochlear inner hair cell",
+      "definition": "A bulbous cell that is medially placed in one row in the organ of Corti. In contrast to the outer hair cells, the inner hair cells are fewer in number, have fewer sensory hairs, and are less differentiated.",
+      "synonyms": [
+        "inner hair cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:4023120",
+          "label": "cochlea auditory hair cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000006",
+          "label": "neuronal receptor cell"
+        },
+        {
+          "id": "CL:0000101",
+          "label": "sensory neuron"
+        },
+        {
+          "id": "CL:0000197",
+          "label": "sensory receptor cell"
+        },
+        {
+          "id": "CL:0000199",
+          "label": "mechanoreceptor cell"
+        },
+        {
+          "id": "CL:0000202",
+          "label": "auditory hair cell"
+        },
+        {
+          "id": "CL:0000203",
+          "label": "gravity sensitive cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000526",
+          "label": "afferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000855",
+          "label": "sensory hair cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0002374",
+          "label": "ear hair cell"
+        },
+        {
+          "id": "CL:4023120",
+          "label": "cochlea auditory hair cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000601": {
+      "id": "CL:0000601",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000601",
+      "label": "cochlear outer hair cell",
+      "definition": "A mechanoreceptor in the organ of Corti. In mammals the outer hair cells are arranged in three rows which are further from the modiolus than the single row of inner hair cells. The motile properties of the outer hair cells may contribute actively to tuning the sensitivity and frequency selectivity of the cochlea.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:4023120",
+          "label": "cochlea auditory hair cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000006",
+          "label": "neuronal receptor cell"
+        },
+        {
+          "id": "CL:0000101",
+          "label": "sensory neuron"
+        },
+        {
+          "id": "CL:0000197",
+          "label": "sensory receptor cell"
+        },
+        {
+          "id": "CL:0000199",
+          "label": "mechanoreceptor cell"
+        },
+        {
+          "id": "CL:0000202",
+          "label": "auditory hair cell"
+        },
+        {
+          "id": "CL:0000203",
+          "label": "gravity sensitive cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000526",
+          "label": "afferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000855",
+          "label": "sensory hair cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0002374",
+          "label": "ear hair cell"
+        },
+        {
+          "id": "CL:4023120",
+          "label": "cochlea auditory hair cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000207": {
+      "id": "CL:0000207",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000207",
+      "label": "olfactory receptor cell",
+      "definition": "Any neuron that is capable of some detection of chemical stimulus involved in sensory perception of smell.",
+      "synonyms": [
+        "Schultze's cell",
+        "odorant receptor cell",
+        "olfactory receptor neuron",
+        "olfactory sensory neuron"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000006",
+          "label": "neuronal receptor cell"
+        },
+        {
+          "id": "CL:0000206",
+          "label": "chemoreceptor cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000006",
+          "label": "neuronal receptor cell"
+        },
+        {
+          "id": "CL:0000101",
+          "label": "sensory neuron"
+        },
+        {
+          "id": "CL:0000197",
+          "label": "sensory receptor cell"
+        },
+        {
+          "id": "CL:0000206",
+          "label": "chemoreceptor cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000526",
+          "label": "afferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0050911",
+          "label": "detection of chemical stimulus involved in sensory perception of smell"
+        },
+        {
+          "id": "UBERON:0005725",
+          "label": "olfactory system"
+        }
+      ]
+    },
+    "CL:0000209": {
+      "id": "CL:0000209",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000209",
+      "label": "taste receptor cell",
+      "definition": "A specialized cell involved in gustatory sensory perception.",
+      "synonyms": [
+        "taste bud cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000098",
+          "label": "sensory epithelial cell"
+        },
+        {
+          "id": "CL:0000206",
+          "label": "chemoreceptor cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000098",
+          "label": "sensory epithelial cell"
+        },
+        {
+          "id": "CL:0000197",
+          "label": "sensory receptor cell"
+        },
+        {
+          "id": "CL:0000206",
+          "label": "chemoreceptor cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0050912",
+          "label": "detection of chemical stimulus involved in sensory perception of taste"
         }
       ]
     }
