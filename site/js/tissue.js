@@ -2,6 +2,7 @@
 
 import { store, colorKey } from './data.js';
 import { h, cellHref, systemHref, onThemeChange } from './util.js';
+import { t } from './i18n.js';
 import { colorForKey, ensureFcose } from './graph.js';
 import { overviewStyle } from './overview.js';
 import { imageBlock } from './card.js';
@@ -128,7 +129,8 @@ export function tissueView(id) {
     h('header', { class: 'sys-head' },
       h('h1', { class: 'page-title', id: 'page-title', tabindex: '-1', text: tissue.th }),
       h('p', { class: 'sub-title' }, h('span', { class: 'dot', style: `background:${tissue.color}` }), `${tissue.en} · ${cells.length} รายการ`),
-      tissue.cl_class ? h('p', { class: 'eyebrow' }, 'อ้างอิง Cell Ontology: ', h('span', { class: 'mono', text: tissue.cl_class })) : null),
+      tissue.cl_class ? h('p', { class: 'eyebrow' }, 'อ้างอิง Cell Ontology: ', h('span', { class: 'mono', text: tissue.cl_class })) : null,
+      h('p', {}, h('a', { class: 'btn', href: '#/quiz?tissue=' + encodeURIComponent(tissue.id) }, t('quiz.testThis')))),
     h('div', { class: 'cell-hero' }, imageBlock(tissue.image, `ภาพเนื้อเยื่อ${tissue.th}`, `images/tissue-${tissue.id}.jpg`),
       h('div', { class: 'facts card' }, facts)),
     tissue.exam ? h('section', { class: 'exam' }, h('h2', { text: 'จุดออกสอบ' }), h('p', { text: tissue.exam })) : null,

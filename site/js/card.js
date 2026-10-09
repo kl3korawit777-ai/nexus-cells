@@ -2,7 +2,8 @@
 // ทุกหัวข้อที่ไม่มีข้อมูลจะถูกซ่อน
 
 import { store, relationsOf, subtypeLabel, modeLabel } from './data.js';
-import { h, cellHref, systemHref, tissueHref } from './util.js';
+import { h, cellHref, systemHref, tissueHref, idToHash } from './util.js';
+import { t } from './i18n.js';
 import { createMiniGraph } from './graph.js';
 import { colorForKey } from './graph.js';
 import { colorKey } from './data.js';
@@ -93,6 +94,7 @@ export function renderCellPage(cell) {
     synonyms.length ? h('p', { class: 'synonyms' }, 'ชื่ออื่น: ', synonyms.join(', ')) : null,
     h('div', { class: 'chips', 'aria-label': 'ระบบ' }, systemChips(cell)),
     h('div', { class: 'chips', 'aria-label': 'เนื้อเยื่อ' }, tissueChips(cell)),
+    h('p', {}, h('a', { class: 'btn', href: '#/quiz?cell=' + idToHash(cell.id) }, t('quiz.testThis'))),
     cell.cl && cell.cl.definition
       ? h('div', { class: 'def-box', lang: 'en' }, h('h2', { lang: 'th', text: 'คำนิยามจาก Cell Ontology (อังกฤษ)' }), h('p', { text: cell.cl.definition }))
       : null);

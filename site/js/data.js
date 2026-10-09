@@ -1,5 +1,20 @@
 // โหลด nexus.json และสร้างดัชนี ข้อมูลทั้งหมดมาจากไฟล์นี้เท่านั้น
 
+import { getLang } from './i18n.js';
+import { nameOf, altNameOf } from './content.js';
+
+// ชื่อตามภาษาปัจจุบัน (ไทย: ชื่อไทย + ชื่ออังกฤษเป็นชื่อรอง, อังกฤษ: ชื่ออังกฤษอย่างเดียว)
+export const cellName = (c) => nameOf(c, getLang());
+export const cellAlt = (c) => altNameOf(c, getLang());
+export const sysName = (s) => nameOf(s, getLang());
+export const tissueName = (t) => nameOf(t, getLang());
+export function subtypeName(id) {
+  const st = store.subtypes.get(id);
+  return st ? nameOf(st, getLang()) : '';
+}
+// ข้อมูลทั้งชุดในรูปแบบที่ quiz-engine/overview-layout ใช้
+export const dataset = () => ({ systems: store.systems, tissues: store.tissues, cells: store.cells, edges: store.edges });
+
 // ประเภทของเส้น interacts_with (ลำดับนี้ใช้เรียงปุ่มและ legend)
 export const MODES = [
   { id: 'hormone', th: 'ฮอร์โมน' },

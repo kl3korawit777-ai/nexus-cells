@@ -3,6 +3,7 @@
 
 import { store, realCellCount, cellsInSystem, searchCells, colorKey, MODES, crossSystemEdges, systemEdges } from './data.js';
 import { h, cellHref, systemHref, tissueHref } from './util.js';
+import { t } from './i18n.js';
 import { createSystemGraph, colorForKey } from './graph.js';
 import { renderCellPage, renderPeek } from './card.js';
 import { searchBox, edgeSwatch, legendFor } from './ui.js';
@@ -208,7 +209,8 @@ export function systemView(systemId) {
       h('h1', { class: 'page-title', id: 'page-title', tabindex: '-1', text: sys.th }),
       h('p', { class: 'sub-title' }, h('span', { class: 'dot', style: `background:${sys.color}` }), `${sys.en} · ${nReal} เซลล์` + (cells.length > nReal ? ` + ${cells.length - nReal} หมวด` : '')),
       h('p', { class: 'summary', text: sys.summary })),
-    h('div', { class: 'toolbar' }, h('div', { class: 'btn-group', role: 'group', 'aria-label': 'มุมมอง' }, viewBtns), graphTools),
+    h('div', { class: 'toolbar' }, h('div', { class: 'btn-group', role: 'group', 'aria-label': 'มุมมอง' }, viewBtns), graphTools,
+      h('a', { class: 'btn', href: '#/quiz?system=' + encodeURIComponent(systemId) }, t('quiz.testThis'))),
     legend, info, graphPane, listPane);
 
   return {

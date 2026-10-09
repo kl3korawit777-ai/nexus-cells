@@ -5,7 +5,8 @@
   "type": "module",
   "description": "Nexus · ใยเซลล์ — เครื่องมือคำนวณตำแหน่งใยภาพรวมล่วงหน้า (ไม่เกี่ยวกับหน้าเว็บที่ deploy)",
   "scripts": {
-    "layout": "node scripts/layout.mjs"
+    "layout": "node scripts/layout.mjs",
+    "test:quiz": "node scripts/test-quiz.mjs"
   },
   "dependencies": {
     "cose-base": "2.2.0",

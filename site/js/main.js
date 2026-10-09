@@ -1,21 +1,33 @@
 import { loadData } from './data.js';
-import { start } from './router.js';
+import { start, render } from './router.js';
 import { h } from './util.js';
+import { initI18n, setLang, onLangChange, t } from './i18n.js';
 
 const app = document.getElementById('app');
 
 async function boot() {
+  try {
+    await initI18n();
+  } catch (e) {
+    console.error(e);
+    // ยังไม่มีไฟล์ภาษา จึงใช้ข้อความสองภาษาตายตัวเฉพาะกรณีนี้
+    app.replaceChildren(h('p', { class: 'loading' }, 'Failed to load language files / โหลดไฟล์ภาษาไม่สำเร็จ: ' + e.message));
+    return;
+  }
+  document.querySelectorAll('[data-lang-btn]').forEach((b) => b.addEventListener('click', () => setLang(b.dataset.langBtn)));
   if (!window.cytoscape) {
-    app.replaceChildren(h('p', { class: 'loading' }, 'โหลดไลบรารีกราฟ (Cytoscape.js) ไม่สำเร็จ ตรวจสอบการเชื่อมต่ออินเทอร์เน็ตแล้วลองใหม่'));
+    app.replaceChildren(h('p', { class: 'loading' }, t('app.libFailed')));
     return;
   }
   try {
     await loadData();
   } catch (e) {
     console.error(e);
-    app.replaceChildren(h('p', { class: 'loading' }, 'โหลดข้อมูลไม่สำเร็จ: ' + e.message));
+    app.replaceChildren(h('p', { class: 'loading' }, t('app.dataFailed', { msg: e.message })));
     return;
   }
+  // เปลี่ยนภาษาแล้วสร้างหน้าปัจจุบันใหม่
+  onLangChange(() => render(app));
   start(app);
 }
 
