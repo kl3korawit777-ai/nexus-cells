@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "bd42d9d47264",
-  "generated_at": "2026-10-09T16:27:49+00:00",
+  "data_version": "5505818baba4",
+  "generated_at": "2026-10-09T16:30:30+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "edge_direction": "develops_from/is_a: from=ลูก to=แม่; interacts_with: from=ผู้กระทำ to=ผู้ถูกกระทำ"
  },
@@ -5668,6 +5668,492 @@
     ],
     "obsolete": false
    }
+  },
+  {
+   "id": "CL:0000653",
+   "slug": "podocyte",
+   "kind": "cell",
+   "en": "podocyte",
+   "th": "พอโดไซต์ (podocyte)",
+   "systems": [
+    "urinary"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": null,
+   "location": "ผนังชั้นในของ Bowman's capsule (visceral layer) ล้อมรอบหลอดเลือดฝอยของ glomerulus",
+   "morphology": "เซลล์มีแขนงใหญ่ (primary process) แตกเป็นแขนงเล็ก (foot process หรือ pedicel) ที่สอดประสานกับเซลล์ข้างเคียง ช่องระหว่างกันคือ filtration slit มี slit diaphragm คลุม",
+   "function": "เป็นส่วนหนึ่งของเกราะกรองเลือดของ glomerulus (filtration barrier) ป้องกันโปรตีนขนาดใหญ่รั่วออกสู่ปัสสาวะ",
+   "secretes": [],
+   "markers": [
+    "nephrin",
+    "podocin",
+    "WT1"
+   ],
+   "lifespan": "",
+   "exam": "เกราะกรองประกอบด้วย endothelium ที่มีรูเปิด, glomerular basement membrane และ slit diaphragm ของ podocyte ในโรค minimal change disease พบ foot process แบนราบ (effacement) ทำให้โปรตีน (โดยเฉพาะอัลบูมิน) รั่วในปัสสาวะ",
+   "diseases": [
+    "minimal change disease",
+    "focal segmental glomerulosclerosis (FSGS)",
+    "nephrotic syndrome"
+   ],
+   "confused_with": [
+    "CL:0002188",
+    "CL:1000742"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000653",
+   "cl": {
+    "label": "podocyte",
+    "definition": "A specialized kidney epithelial cell, contained within a glomerulus, that contains \"feet\" that interdigitate with the \"feet\" of other podocytes.",
+    "synonyms": [
+     "glomerular visceral epithelial cell",
+     "kidney podocyte",
+     "renal podocyte",
+     "epithelial cell of visceral layer of glomerular capsule",
+     "glomerular podocyte"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002188",
+   "slug": "glomerular-endothelial-cell",
+   "kind": "cell",
+   "en": "glomerular endothelial cell",
+   "th": "เซลล์บุผนังหลอดเลือดฝอยของ glomerulus",
+   "systems": [
+    "urinary"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-squamous",
+   "location": "ผนังหลอดเลือดฝอยของ glomerulus ในไต",
+   "morphology": "เซลล์แบนบางที่มีรูเปิด (fenestra) ขนาดประมาณ 70–100 นาโนเมตร ไม่มี diaphragm ปิด",
+   "function": "ให้น้ำและตัวถูกละลายขนาดเล็กผ่านได้ แต่กั้นเซลล์เม็ดเลือด เป็นชั้นแรกของเกราะกรองเลือด",
+   "secretes": [],
+   "markers": [
+    "CD31 (PECAM-1)",
+    "VEGFR2"
+   ],
+   "lifespan": "",
+   "exam": "รูเปิดไม่มี diaphragm ต่างจากเซลล์บุผนังหลอดเลือดฝอยของอวัยวะอื่นหลายแห่ง ประจุลบบนผิวช่วยกั้นโปรตีนที่มีประจุลบ",
+   "diseases": [
+    "โรคไตอักเสบ (glomerulonephritis)"
+   ],
+   "confused_with": [
+    "CL:0000653"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002188",
+   "cl": {
+    "label": "glomerular endothelial cell",
+    "definition": "An endothelial cell that is part of the glomerulus of the kidney. This cell is flattened, highly fenestrated, and plays a vital role in the formation of glomerular ultrafiltrate.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:1000742",
+   "slug": "glomerular-mesangial-cell",
+   "kind": "cell",
+   "en": "glomerular mesangial cell",
+   "th": "เซลล์เมซันเจียล (mesangial cell)",
+   "systems": [
+    "urinary"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": null,
+   "location": "แทรกอยู่ระหว่างหลอดเลือดฝอยของ glomerulus ภายใน renal corpuscle",
+   "morphology": "เซลล์มีแขนงแทรกอยู่ในเมทริกซ์ระหว่างหลอดเลือดฝอย",
+   "function": "ค้ำจุนหลอดเลือดฝอยของ glomerulus กินสารที่ติดค้างในเกราะกรอง (phagocytosis) หดตัวปรับพื้นที่กรอง และสร้างเมทริกซ์เมซันเจียล",
+   "secretes": [],
+   "markers": [
+    "PDGFRβ"
+   ],
+   "lifespan": "",
+   "exam": "อยู่ภายใน glomerulus ต่างจาก extraglomerular mesangial cell (lacis cell) ที่อยู่นอก glomerulus ใน juxtaglomerular apparatus โรค IgA nephropathy พบ IgA สะสมที่เมซันเจียม",
+   "diseases": [
+    "IgA nephropathy"
+   ],
+   "confused_with": [
+    "CL:0000653"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_1000742",
+   "cl": {
+    "label": "glomerular mesangial cell",
+    "definition": "A mesangial cell located among the glomerular capillaries in a renal corpuscle.",
+    "synonyms": [
+     "intraglomerular mesangial cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002306",
+   "slug": "proximal-tubule-cell",
+   "kind": "cell",
+   "en": "epithelial cell of proximal tubule",
+   "th": "เซลล์หลอดไตส่วนต้น (proximal tubule cell)",
+   "systems": [
+    "urinary"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-cuboidal",
+   "location": "หลอดไตส่วนต้น (proximal convoluted tubule) ในเนื้อไตส่วนนอก (cortex)",
+   "morphology": "เซลล์ทรงลูกบาศก์ ผิวด้านในมีไมโครวิลไลหนาแน่นเรียก brush border ไซโทพลาซึมติดสีอีโอซิน (acidophilic) มีไมโทคอนเดรียมาก",
+   "function": "ดูดกลับสารส่วนใหญ่จากน้ำกรอง ได้แก่ น้ำและโซเดียมประมาณสองในสาม กลูโคส กรดอะมิโน และไบคาร์บอเนต",
+   "secretes": [],
+   "markers": [
+    "megalin (LRP2)",
+    "aquaporin-1 (AQP1)",
+    "SGLT2"
+   ],
+   "lifespan": "",
+   "exam": "กลูโคสถูกดูดกลับเกือบทั้งหมดที่นี่ด้วย SGLT2 ยากลุ่ม SGLT2 inhibitor ออกฤทธิ์ที่นี่ ถ้าระดับกลูโคสสูงเกินความสามารถในการดูดกลับ จะมีกลูโคสในปัสสาวะ ความผิดปกติของการดูดกลับหลายชนิดพร้อมกันเรียก Fanconi syndrome",
+   "diseases": [
+    "Fanconi syndrome",
+    "acute tubular necrosis"
+   ],
+   "confused_with": [
+    "CL:0002305"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002306",
+   "cl": {
+    "label": "epithelial cell of proximal tubule",
+    "definition": "An epithelial cell of the proximal tubule of the kidney.",
+    "synonyms": [
+     "kidney proximal tubule epithelial cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:1000909",
+   "slug": "loop-of-henle-cell",
+   "kind": "cell",
+   "en": "kidney loop of Henle epithelial cell",
+   "th": "เซลล์หลอดไตส่วนห่วงเฮนเล (loop of Henle)",
+   "systems": [
+    "urinary"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": null,
+   "location": "ห่วงเฮนเลในเนื้อไตส่วนใน (medulla) แบ่งเป็นส่วนลงบาง ส่วนขึ้นบาง และส่วนขึ้นหนา",
+   "morphology": "ส่วนบางเป็นเซลล์แบนบาง ส่วนขึ้นหนา (thick ascending limb) เป็นเซลล์ทรงลูกบาศก์",
+   "function": "สร้างความเข้มข้นสูงในเนื้อไตส่วนใน (countercurrent multiplier) ส่วนลงให้น้ำผ่านได้ ส่วนขึ้นหนาดูดโซเดียมและคลอไรด์กลับโดยไม่ให้น้ำผ่าน",
+   "secretes": [],
+   "markers": [
+    "NKCC2 (ส่วนขึ้นหนา)",
+    "aquaporin-1 (ส่วนลง)"
+   ],
+   "lifespan": "",
+   "exam": "ยาขับปัสสาวะกลุ่ม loop diuretic (เช่น furosemide) ยับยั้ง NKCC2 ที่ส่วนขึ้นหนา ส่วนขึ้นหนาไม่ให้น้ำผ่าน",
+   "diseases": [
+    "Bartter syndrome (ความผิดปกติของ NKCC2)"
+   ],
+   "confused_with": [
+    "CL:0002306",
+    "CL:0002305"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_1000909",
+   "cl": {
+    "label": "kidney loop of Henle epithelial cell",
+    "definition": "Any nephron tubule epithelial cell that is part of some loop of Henle.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002305",
+   "slug": "distal-tubule-cell",
+   "kind": "cell",
+   "en": "epithelial cell of distal tubule",
+   "th": "เซลล์หลอดไตส่วนปลาย (distal tubule cell)",
+   "systems": [
+    "urinary"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-cuboidal",
+   "location": "หลอดไตส่วนปลาย (distal convoluted tubule) ในเนื้อไตส่วนนอก",
+   "morphology": "เซลล์ทรงลูกบาศก์ ไมโครวิลไลน้อยกว่าหลอดไตส่วนต้น ไม่มี brush border ที่ชัด ไซโทพลาซึมติดสีจางกว่า",
+   "function": "ปรับระดับโซเดียม โพแทสเซียม แคลเซียม และสมดุลกรด–ด่าง โดยดูดโซเดียมและคลอไรด์กลับด้วย Na–Cl cotransporter (NCC)",
+   "secretes": [],
+   "markers": [
+    "NCC (SLC12A3)",
+    "parvalbumin"
+   ],
+   "lifespan": "",
+   "exam": "NCC เป็นเป้าหมายของยาขับปัสสาวะกลุ่ม thiazide ฮอร์โมน PTH เพิ่มการดูดแคลเซียมกลับที่หลอดไตส่วนปลาย aldosterone ออกฤทธิ์ที่ส่วนปลายของหลอดไตส่วนปลายและ collecting duct",
+   "diseases": [
+    "Gitelman syndrome"
+   ],
+   "confused_with": [
+    "CL:0002306",
+    "CL:1000909"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002305",
+   "cl": {
+    "label": "epithelial cell of distal tubule",
+    "definition": "An epithelial cell of the distal convoluted tubule of the kidney that helps regulate systemic levels of potassium, sodium, calcium, and pH.",
+    "synonyms": [
+     "kidney distal tubule epithelial cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:1000850",
+   "slug": "macula-densa-cell",
+   "kind": "cell",
+   "en": "macula densa epithelial cell",
+   "th": "เซลล์แมคคิวลาเดนซา (macula densa cell)",
+   "systems": [
+    "urinary"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-columnar",
+   "location": "ผนังหลอดไตส่วนปลายช่วงที่ชิดกับหลอดเลือดแดงนำเลือดเข้า (afferent arteriole) ของ glomerulus เดียวกัน",
+   "morphology": "เซลล์ทรงสูงเรียงชิดกัน นิวเคลียสอยู่ใกล้ผิวด้านบน ทำให้เห็นเป็นจุดแน่นเมื่อมองใต้กล้อง จึงเรียก macula densa",
+   "function": "ตรวจวัดความเข้มข้นโซเดียมคลอไรด์ในน้ำกรอง แล้วส่งสัญญาณปรับอัตราการกรองและกระตุ้นการหลั่งเรนินจากเซลล์ juxtaglomerular (tubuloglomerular feedback)",
+   "secretes": [],
+   "markers": [
+    "NKCC2",
+    "nNOS"
+   ],
+   "lifespan": "",
+   "exam": "macula densa ร่วมกับ juxtaglomerular cell และ extraglomerular mesangial cell เป็น juxtaglomerular apparatus เมื่อโซเดียมคลอไรด์ในหลอดไตต่ำจะกระตุ้นให้หลั่งเรนิน",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000648"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_1000850",
+   "cl": {
+    "label": "macula densa epithelial cell",
+    "definition": "An epithelial cell that is part of the macula densa, characterized by a tightly packed arrangement, apically positioned nuclei, and prominent primary cilia, creating a distinctive 'dense spot' appearance under microscopy. It is involved in regulating renal blood flow, glomerular filtration rate, and renin release.",
+    "synonyms": [
+     "macula densa cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000648",
+   "slug": "juxtaglomerular-cell",
+   "kind": "cell",
+   "en": "kidney granular cell",
+   "th": "เซลล์จักซ์ตากลอเมอรูลาร์ (juxtaglomerular cell, JG cell)",
+   "systems": [
+    "urinary"
+   ],
+   "tissue": "muscle",
+   "tissue_subtype": "smooth-muscle",
+   "location": "ผนังหลอดเลือดแดงนำเลือดเข้า (afferent arteriole) ตรงทางเข้า glomerulus",
+   "morphology": "เซลล์กล้ามเนื้อเรียบที่ดัดแปลง มีแกรนูลเรนินในไซโทพลาซึม",
+   "function": "สร้าง เก็บ และหลั่งเอนไซม์เรนิน (renin) เมื่อความดันหรือปริมาตรเลือดแดงลดลง",
+   "secretes": [
+    "renin"
+   ],
+   "markers": [
+    "renin"
+   ],
+   "lifespan": "",
+   "exam": "เรนินเปลี่ยน angiotensinogen เป็น angiotensin I จากนั้น ACE เปลี่ยนเป็น angiotensin II ซึ่งกระตุ้น aldosterone การหลั่งเรนินถูกกระตุ้นด้วยความดันเลือดที่ afferent arteriole ลดลง ระบบประสาทซิมพาเทติก (β1) และสัญญาณจาก macula densa",
+   "diseases": [
+    "ความดันโลหิตสูงจากหลอดเลือดแดงไตตีบ (renovascular hypertension)"
+   ],
+   "confused_with": [
+    "CL:1000850"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000648",
+   "cl": {
+    "label": "kidney granular cell",
+    "definition": "A smooth muscle cell that synthesizes, stores, and secretes the enzyme renin. This cell type are located in the wall of the afferent arteriole at the entrance to the glomerulus. While having a different origin than other kidney smooth muscle cells, this cell type expresses smooth muscle actin upon maturation.",
+    "synonyms": [
+     "JG cell",
+     "juxtaglomerular cell",
+     "renin secreting cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:1001431",
+   "slug": "collecting-duct-principal-cell",
+   "kind": "cell",
+   "en": "kidney collecting duct principal cell",
+   "th": "เซลล์ปริ้นซิพัล (principal cell) ของท่อรวมปัสสาวะ",
+   "systems": [
+    "urinary"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-cuboidal",
+   "location": "ท่อรวมปัสสาวะ (collecting duct) ในไต",
+   "morphology": "เซลล์ทรงลูกบาศก์ ไซโทพลาซึมติดสีจาง เป็นเซลล์ส่วนใหญ่ของท่อรวม",
+   "function": "ตอบสนอง ADH โดยเพิ่มช่องน้ำ aquaporin-2 ทำให้ดูดน้ำกลับ และตอบสนอง aldosterone โดยดูดโซเดียมกลับและขับโพแทสเซียมออก",
+   "secretes": [],
+   "markers": [
+    "aquaporin-2 (AQP2)",
+    "ENaC"
+   ],
+   "lifespan": "",
+   "exam": "ADH จับกับตัวรับ V2 เพิ่ม AQP2 ที่เยื่อด้านบน ยา spironolactone ต้าน aldosterone ส่วน amiloride ยับยั้ง ENaC ขาด ADH หรือไม่ตอบสนอง ทำให้เกิด diabetes insipidus",
+   "diseases": [
+    "diabetes insipidus (ชนิดจากไต: nephrogenic)"
+   ],
+   "confused_with": [
+    "CL:0005010"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_1001431",
+   "cl": {
+    "label": "kidney collecting duct principal cell",
+    "definition": "Any renal principal cell that is part of some collecting duct of renal tubule.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0005010",
+   "slug": "intercalated-cell",
+   "kind": "cell",
+   "en": "renal intercalated cell",
+   "th": "เซลล์อินเทอร์คาเลตเตด (intercalated cell) ของท่อรวมปัสสาวะ",
+   "systems": [
+    "urinary"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-cuboidal",
+   "location": "ท่อรวมปัสสาวะ (collecting duct) แทรกอยู่ระหว่าง principal cell",
+   "morphology": "เซลล์ทรงลูกบาศก์ ไซโทพลาซึมติดสีเข้มกว่า principal cell มีไมโทคอนเดรียมาก",
+   "function": "ควบคุมสมดุลกรด–ด่าง ชนิด alpha ขับ H+ และดูดไบคาร์บอเนตกลับ ชนิด beta ขับไบคาร์บอเนต",
+   "secretes": [],
+   "markers": [
+    "carbonic anhydrase II",
+    "H+-ATPase"
+   ],
+   "lifespan": "",
+   "exam": "เซลล์ชนิด alpha เป็นชนิดหลักที่ขับกรด ความผิดปกติทำให้เกิด renal tubular acidosis",
+   "diseases": [
+    "renal tubular acidosis"
+   ],
+   "confused_with": [
+    "CL:1001431"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0005010",
+   "cl": {
+    "label": "renal intercalated cell",
+    "definition": "A cuboidal epithelial cell of the kidney that regulates acid/base balance.",
+    "synonyms": [
+     "intercalated cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000731",
+   "slug": "urothelial-cell",
+   "kind": "cell",
+   "en": "urothelial cell",
+   "th": "เซลล์เยื่อบุทางเดินปัสสาวะ (urothelial cell)",
+   "systems": [
+    "urinary"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "transitional",
+   "location": "เยื่อบุกรวยไต (renal pelvis) ท่อไต (ureter) กระเพาะปัสสาวะ และท่อปัสสาวะส่วนต้น",
+   "morphology": "เยื่อบุผิวแบบเปลี่ยนรูป (transitional epithelium) หลายชั้น รูปร่างเปลี่ยนตามการยืดของอวัยวะ",
+   "function": "กันปัสสาวะซึมกลับเข้าเนื้อเยื่อ และยืดหยุ่นได้เมื่อมีปัสสาวะเต็ม",
+   "secretes": [],
+   "markers": [
+    "uroplakin",
+    "GATA3"
+   ],
+   "lifespan": "",
+   "exam": "เป็นเนื้อเยื่อบุผิวแบบ transitional ซึ่งมีชั้นผิวเป็น umbrella cell เมื่อเปลี่ยนแปลงเป็นมะเร็งเรียก urothelial carcinoma (transitional cell carcinoma)",
+   "diseases": [
+    "มะเร็งเยื่อบุทางเดินปัสสาวะ (urothelial carcinoma)"
+   ],
+   "confused_with": [
+    "CL:4030056"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000731",
+   "cl": {
+    "label": "urothelial cell",
+    "definition": "A cell of a layer of transitional epithelium in the wall of the proximal urethra, bladder, ureter or renal pelvis, external to the lamina propria.",
+    "synonyms": [
+     "urinary tract transitional epithelial cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:4030056",
+   "slug": "umbrella-cell",
+   "kind": "cell",
+   "en": "umbrella cell of urothelium",
+   "th": "เซลล์อัมเบรลลา (umbrella cell)",
+   "systems": [
+    "urinary"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "transitional",
+   "location": "ชั้นผิวสุดของเยื่อบุกระเพาะปัสสาวะและทางเดินปัสสาวะ",
+   "morphology": "เซลล์ขนาดใหญ่ ผิวด้านบนนูนคล้ายร่ม บางเซลล์มีสองนิวเคลียส ผิวด้านบนมีแผ่น uroplakin",
+   "function": "เป็นผิวชั้นกั้น (barrier) ที่ปัสสาวะซึมผ่านได้น้อยมาก มี tight junction เชื่อมระหว่างเซลล์ และยืดหรือหดตัวตามปริมาณปัสสาวะ",
+   "secretes": [],
+   "markers": [
+    "uroplakin"
+   ],
+   "lifespan": "",
+   "exam": "เป็นชั้นผิวของ urothelium ต่างจากเซลล์ชั้นล่างกว่า เพราะมีแผ่น uroplakin ที่ผิวด้านบน",
+   "diseases": [
+    "กระเพาะปัสสาวะอักเสบ (cystitis)"
+   ],
+   "confused_with": [
+    "CL:0000731"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_4030056",
+   "cl": {
+    "label": "umbrella cell of urothelium",
+    "definition": "A urothelial cell that is terminally differentiated and part of the urothelial apical surface that forms the high-resistance barrier of urothelium. Umbrella cells have been described as the largest of urothelial cell types, highly polarized, and, in some species, multinucleated. In the relaxed state, these cells form a dome-shaped structure at the apical pole and can also cover multiple underlying intermediate cells, leading to the name umbrella cells. In contrast, these cells flatten when the bladder is filled.",
+    "synonyms": [
+     "facet cell of urothelium",
+     "superficial cell of urothelium"
+    ],
+    "obsolete": false
+   }
   }
  ],
  "edges": [
@@ -6863,6 +7349,59 @@
    "mode": "hormone",
    "source": "curated",
    "file": "skeletal"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002188",
+   "to": "CL:0000115",
+   "source": "curated",
+   "file": "urinary"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:1000742",
+   "to": "CL:0000669",
+   "source": "curated",
+   "file": "urinary"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:1000850",
+   "to": "CL:0002305",
+   "source": "curated",
+   "file": "urinary"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000648",
+   "to": "CL:0000192",
+   "source": "curated",
+   "file": "urinary"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:4030056",
+   "to": "CL:0000731",
+   "source": "curated",
+   "file": "urinary"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:1000850",
+   "to": "CL:0000648",
+   "th": "macula densa ตรวจพบโซเดียมคลอไรด์ในหลอดไตต่ำ แล้วส่งสัญญาณกระตุ้น JG cell ให้หลั่งเรนิน",
+   "mode": "paracrine",
+   "source": "curated",
+   "file": "urinary"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000648",
+   "to": "CL:0002099",
+   "th": "เรนินจาก JG cell ทำให้เกิด angiotensin II ซึ่งกระตุ้นเซลล์ zona glomerulosa ให้หลั่ง aldosterone",
+   "mode": "hormone",
+   "source": "curated",
+   "file": "urinary"
   }
  ]
 }

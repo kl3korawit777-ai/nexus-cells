@@ -1,10 +1,10 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-09 23:27
+สร้างเมื่อ: 2026-10-09 23:30
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 64 เส้น
+- ตรงกัน: 69 เส้น
 - คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 4 เส้น
 - คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 4 เส้น
 - CL มี แต่ไม่ได้คัดไว้: 37 เส้น
@@ -72,7 +72,7 @@
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 2 เส้น
 - CL ชี้ไปเซลล์นอกชุดข้อมูล: 36 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 253 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 267 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -153,7 +153,7 @@
 - CL:0008002 skeletal muscle fiber ← CL:0000515 skeletal muscle myoblast
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 
-## คำเตือนจาก validate (129)
+## คำเตือนจาก validate (141)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -284,3 +284,15 @@
 - CL:0000134 (mesenchymal stem cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0002302 (type A synovial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0002301 (type B synovial cell): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
+- CL:0000653 (podocyte): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
+- CL:0002188 (glomerular endothelial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:1000742 (glomerular mesangial cell): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
+- CL:0002306 (epithelial cell of proximal tubule): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:1000909 (kidney loop of Henle epithelial cell): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
+- CL:0002305 (epithelial cell of distal tubule): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:1000850 (macula densa epithelial cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000648 (kidney granular cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:1001431 (kidney collecting duct principal cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0005010 (renal intercalated cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000731 (urothelial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:4030056 (umbrella cell of urothelium): ช่องว่าง: lifespan; ยังไม่มีรูป

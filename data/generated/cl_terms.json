@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T16:27:49+00:00",
+  "fetched_at": "2026-10-09T16:30:29+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -13144,6 +13144,1216 @@
           "label": "synovial membrane of synovial joint"
         }
       ]
+    },
+    "CL:0000653": {
+      "id": "CL:0000653",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000653",
+      "label": "podocyte",
+      "definition": "A specialized kidney epithelial cell, contained within a glomerulus, that contains \"feet\" that interdigitate with the \"feet\" of other podocytes.",
+      "synonyms": [
+        "glomerular visceral epithelial cell",
+        "kidney podocyte",
+        "renal podocyte",
+        "epithelial cell of visceral layer of glomerular capsule",
+        "glomerular podocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002522",
+          "label": "renal filtration cell"
+        },
+        {
+          "id": "CL:1000450",
+          "label": "epithelial cell of glomerular capsule"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000424",
+          "label": "excretory cell"
+        },
+        {
+          "id": "CL:0002518",
+          "label": "kidney epithelial cell"
+        },
+        {
+          "id": "CL:0002522",
+          "label": "renal filtration cell"
+        },
+        {
+          "id": "CL:0002584",
+          "label": "renal cortical epithelial cell"
+        },
+        {
+          "id": "CL:0002681",
+          "label": "kidney cortical cell"
+        },
+        {
+          "id": "CL:1000449",
+          "label": "epithelial cell of nephron"
+        },
+        {
+          "id": "CL:1000450",
+          "label": "epithelial cell of glomerular capsule"
+        },
+        {
+          "id": "CL:1000497",
+          "label": "kidney cell"
+        },
+        {
+          "id": "CL:1000510",
+          "label": "kidney glomerular epithelial cell"
+        },
+        {
+          "id": "CL:1000612",
+          "label": "kidney corpuscule cell"
+        },
+        {
+          "id": "CL:1000746",
+          "label": "glomerular cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0005751",
+          "label": "glomerular visceral epithelium"
+        }
+      ]
+    },
+    "CL:0002188": {
+      "id": "CL:0002188",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002188",
+      "label": "glomerular endothelial cell",
+      "definition": "An endothelial cell that is part of the glomerulus of the kidney. This cell is flattened, highly fenestrated, and plays a vital role in the formation of glomerular ultrafiltrate.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000666",
+          "label": "fenestrated endothelial cell"
+        },
+        {
+          "id": "CL:0002681",
+          "label": "kidney cortical cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000115",
+          "label": "endothelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000666",
+          "label": "fenestrated endothelial cell"
+        },
+        {
+          "id": "CL:0002681",
+          "label": "kidney cortical cell"
+        },
+        {
+          "id": "CL:1000497",
+          "label": "kidney cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0036053",
+          "label": "glomerular endothelium fenestra"
+        },
+        {
+          "id": "UBERON:0000074",
+          "label": "renal glomerulus"
+        }
+      ]
+    },
+    "CL:1000742": {
+      "id": "CL:1000742",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_1000742",
+      "label": "glomerular mesangial cell",
+      "definition": "A mesangial cell located among the glomerular capillaries in a renal corpuscle.",
+      "synonyms": [
+        "intraglomerular mesangial cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000234",
+          "label": "phagocyte"
+        },
+        {
+          "id": "CL:0000650",
+          "label": "mesangial cell"
+        },
+        {
+          "id": "CL:1000746",
+          "label": "glomerular cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000234",
+          "label": "phagocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0000630",
+          "label": "supporting cell"
+        },
+        {
+          "id": "CL:0000650",
+          "label": "mesangial cell"
+        },
+        {
+          "id": "CL:0000669",
+          "label": "pericyte"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "CL:0002518",
+          "label": "kidney epithelial cell"
+        },
+        {
+          "id": "CL:0002584",
+          "label": "renal cortical epithelial cell"
+        },
+        {
+          "id": "CL:0002681",
+          "label": "kidney cortical cell"
+        },
+        {
+          "id": "CL:0008034",
+          "label": "mural cell"
+        },
+        {
+          "id": "CL:1000449",
+          "label": "epithelial cell of nephron"
+        },
+        {
+          "id": "CL:1000497",
+          "label": "kidney cell"
+        },
+        {
+          "id": "CL:1000500",
+          "label": "kidney interstitial cell"
+        },
+        {
+          "id": "CL:1000612",
+          "label": "kidney corpuscule cell"
+        },
+        {
+          "id": "CL:1000746",
+          "label": "glomerular cell"
+        },
+        {
+          "id": "CL:1001318",
+          "label": "renal interstitial pericyte"
+        },
+        {
+          "id": "CL:4030031",
+          "label": "interstitial cell"
+        },
+        {
+          "id": "CL:4033054",
+          "label": "perivascular cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0070252",
+          "label": "actin-mediated cell contraction"
+        },
+        {
+          "id": "UBERON:0002320",
+          "label": "glomerular mesangium"
+        }
+      ]
+    },
+    "CL:0002306": {
+      "id": "CL:0002306",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002306",
+      "label": "epithelial cell of proximal tubule",
+      "definition": "An epithelial cell of the proximal tubule of the kidney.",
+      "synonyms": [
+        "kidney proximal tubule epithelial cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "CL:1000494",
+          "label": "nephron tubule epithelial cell"
+        },
+        {
+          "id": "CL:1000615",
+          "label": "kidney cortex tubule cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "CL:0002518",
+          "label": "kidney epithelial cell"
+        },
+        {
+          "id": "CL:0002584",
+          "label": "renal cortical epithelial cell"
+        },
+        {
+          "id": "CL:0002681",
+          "label": "kidney cortical cell"
+        },
+        {
+          "id": "CL:1000449",
+          "label": "epithelial cell of nephron"
+        },
+        {
+          "id": "CL:1000494",
+          "label": "nephron tubule epithelial cell"
+        },
+        {
+          "id": "CL:1000497",
+          "label": "kidney cell"
+        },
+        {
+          "id": "CL:1000507",
+          "label": "kidney tubule cell"
+        },
+        {
+          "id": "CL:1000615",
+          "label": "kidney cortex tubule cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0004134",
+          "label": "proximal tubule"
+        }
+      ]
+    },
+    "CL:1000909": {
+      "id": "CL:1000909",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_1000909",
+      "label": "kidney loop of Henle epithelial cell",
+      "definition": "Any nephron tubule epithelial cell that is part of some loop of Henle.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:1000494",
+          "label": "nephron tubule epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002518",
+          "label": "kidney epithelial cell"
+        },
+        {
+          "id": "CL:1000449",
+          "label": "epithelial cell of nephron"
+        },
+        {
+          "id": "CL:1000494",
+          "label": "nephron tubule epithelial cell"
+        },
+        {
+          "id": "CL:1000497",
+          "label": "kidney cell"
+        },
+        {
+          "id": "CL:1000507",
+          "label": "kidney tubule cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0001288",
+          "label": "loop of Henle"
+        }
+      ]
+    },
+    "CL:0002305": {
+      "id": "CL:0002305",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002305",
+      "label": "epithelial cell of distal tubule",
+      "definition": "An epithelial cell of the distal convoluted tubule of the kidney that helps regulate systemic levels of potassium, sodium, calcium, and pH.",
+      "synonyms": [
+        "kidney distal tubule epithelial cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "CL:1000494",
+          "label": "nephron tubule epithelial cell"
+        },
+        {
+          "id": "CL:1000615",
+          "label": "kidney cortex tubule cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "CL:0002518",
+          "label": "kidney epithelial cell"
+        },
+        {
+          "id": "CL:0002584",
+          "label": "renal cortical epithelial cell"
+        },
+        {
+          "id": "CL:0002681",
+          "label": "kidney cortical cell"
+        },
+        {
+          "id": "CL:1000449",
+          "label": "epithelial cell of nephron"
+        },
+        {
+          "id": "CL:1000494",
+          "label": "nephron tubule epithelial cell"
+        },
+        {
+          "id": "CL:1000497",
+          "label": "kidney cell"
+        },
+        {
+          "id": "CL:1000507",
+          "label": "kidney tubule cell"
+        },
+        {
+          "id": "CL:1000615",
+          "label": "kidney cortex tubule cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0004135",
+          "label": "distal tubule"
+        }
+      ]
+    },
+    "CL:1000850": {
+      "id": "CL:1000850",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_1000850",
+      "label": "macula densa epithelial cell",
+      "definition": "An epithelial cell that is part of the macula densa, characterized by a tightly packed arrangement, apically positioned nuclei, and prominent primary cilia, creating a distinctive 'dense spot' appearance under microscopy. It is involved in regulating renal blood flow, glomerular filtration rate, and renin release.",
+      "synonyms": [
+        "macula densa cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000067",
+          "label": "ciliated epithelial cell"
+        },
+        {
+          "id": "CL:0002305",
+          "label": "epithelial cell of distal tubule"
+        },
+        {
+          "id": "CL:1000618",
+          "label": "juxtaglomerular complex cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000064",
+          "label": "ciliated cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000067",
+          "label": "ciliated epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "CL:0002305",
+          "label": "epithelial cell of distal tubule"
+        },
+        {
+          "id": "CL:0002518",
+          "label": "kidney epithelial cell"
+        },
+        {
+          "id": "CL:0002584",
+          "label": "renal cortical epithelial cell"
+        },
+        {
+          "id": "CL:0002681",
+          "label": "kidney cortical cell"
+        },
+        {
+          "id": "CL:1000449",
+          "label": "epithelial cell of nephron"
+        },
+        {
+          "id": "CL:1000494",
+          "label": "nephron tubule epithelial cell"
+        },
+        {
+          "id": "CL:1000497",
+          "label": "kidney cell"
+        },
+        {
+          "id": "CL:1000507",
+          "label": "kidney tubule cell"
+        },
+        {
+          "id": "CL:1000615",
+          "label": "kidney cortex tubule cell"
+        },
+        {
+          "id": "CL:1000618",
+          "label": "juxtaglomerular complex cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0003093",
+          "label": "regulation of glomerular filtration"
+        },
+        {
+          "id": "GO:0097730",
+          "label": "non-motile cilium"
+        },
+        {
+          "id": "GO:1900133",
+          "label": "regulation of renin secretion into blood stream"
+        },
+        {
+          "id": "UBERON:0002335",
+          "label": "macula densa"
+        }
+      ]
+    },
+    "CL:0000648": {
+      "id": "CL:0000648",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000648",
+      "label": "kidney granular cell",
+      "definition": "A smooth muscle cell that synthesizes, stores, and secretes the enzyme renin. This cell type are located in the wall of the afferent arteriole at the entrance to the glomerulus. While having a different origin than other kidney smooth muscle cells, this cell type expresses smooth muscle actin upon maturation.",
+      "synonyms": [
+        "JG cell",
+        "juxtaglomerular cell",
+        "renin secreting cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000154",
+          "label": "protein secreting cell"
+        },
+        {
+          "id": "CL:0000192",
+          "label": "smooth muscle cell"
+        },
+        {
+          "id": "CL:1000618",
+          "label": "juxtaglomerular complex cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000154",
+          "label": "protein secreting cell"
+        },
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0000187",
+          "label": "muscle cell"
+        },
+        {
+          "id": "CL:0000192",
+          "label": "smooth muscle cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0002681",
+          "label": "kidney cortical cell"
+        },
+        {
+          "id": "CL:0008000",
+          "label": "non-striated muscle cell"
+        },
+        {
+          "id": "CL:0008007",
+          "label": "visceral muscle cell"
+        },
+        {
+          "id": "CL:1000497",
+          "label": "kidney cell"
+        },
+        {
+          "id": "CL:1000618",
+          "label": "juxtaglomerular complex cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0002001",
+          "label": "renin secretion into blood stream"
+        }
+      ]
+    },
+    "CL:1001431": {
+      "id": "CL:1001431",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_1001431",
+      "label": "kidney collecting duct principal cell",
+      "definition": "Any renal principal cell that is part of some collecting duct of renal tubule.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0005009",
+          "label": "renal principal cell"
+        },
+        {
+          "id": "CL:1000454",
+          "label": "kidney collecting duct epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000068",
+          "label": "duct epithelial cell"
+        },
+        {
+          "id": "CL:0000072",
+          "label": "non-branched duct epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "CL:0002518",
+          "label": "kidney epithelial cell"
+        },
+        {
+          "id": "CL:0005009",
+          "label": "renal principal cell"
+        },
+        {
+          "id": "CL:1000449",
+          "label": "epithelial cell of nephron"
+        },
+        {
+          "id": "CL:1000454",
+          "label": "kidney collecting duct epithelial cell"
+        },
+        {
+          "id": "CL:1000497",
+          "label": "kidney cell"
+        },
+        {
+          "id": "CL:1001225",
+          "label": "kidney collecting duct cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0005010": {
+      "id": "CL:0005010",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0005010",
+      "label": "renal intercalated cell",
+      "definition": "A cuboidal epithelial cell of the kidney that regulates acid/base balance.",
+      "synonyms": [
+        "intercalated cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "CL:1000449",
+          "label": "epithelial cell of nephron"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "CL:0002518",
+          "label": "kidney epithelial cell"
+        },
+        {
+          "id": "CL:1000449",
+          "label": "epithelial cell of nephron"
+        },
+        {
+          "id": "CL:1000497",
+          "label": "kidney cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000731": {
+      "id": "CL:0000731",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000731",
+      "label": "urothelial cell",
+      "definition": "A cell of a layer of transitional epithelium in the wall of the proximal urethra, bladder, ureter or renal pelvis, external to the lamina propria.",
+      "synonyms": [
+        "urinary tract transitional epithelial cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000079",
+          "label": "stratified epithelial cell"
+        },
+        {
+          "id": "CL:0000244",
+          "label": "transitional epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000079",
+          "label": "stratified epithelial cell"
+        },
+        {
+          "id": "CL:0000244",
+          "label": "transitional epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0000365",
+          "label": "urothelium"
+        }
+      ]
+    },
+    "CL:4030056": {
+      "id": "CL:4030056",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_4030056",
+      "label": "umbrella cell of urothelium",
+      "definition": "A urothelial cell that is terminally differentiated and part of the urothelial apical surface that forms the high-resistance barrier of urothelium. Umbrella cells have been described as the largest of urothelial cell types, highly polarized, and, in some species, multinucleated. In the relaxed state, these cells form a dome-shaped structure at the apical pole and can also cover multiple underlying intermediate cells, leading to the name umbrella cells. In contrast, these cells flatten when the bladder is filled.",
+      "synonyms": [
+        "facet cell of urothelium",
+        "superficial cell of urothelium"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000731",
+          "label": "urothelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000079",
+          "label": "stratified epithelial cell"
+        },
+        {
+          "id": "CL:0000244",
+          "label": "transitional epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000731",
+          "label": "urothelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
     }
   }
 }
