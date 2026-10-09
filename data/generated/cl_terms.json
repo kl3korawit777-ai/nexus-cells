@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T11:01:46+00:00",
+  "fetched_at": "2026-10-09T11:07:50+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -5928,6 +5928,2477 @@
         {
           "id": "UBERON:0001064",
           "label": "ventral pancreatic duct"
+        }
+      ]
+    },
+    "CL:0000167": {
+      "id": "CL:0000167",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000167",
+      "label": "peptide hormone secreting cell",
+      "definition": "Any secretory cell that is capable of some peptide hormone secretion.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0030072",
+          "label": "peptide hormone secretion"
+        }
+      ]
+    },
+    "CL:0000174": {
+      "id": "CL:0000174",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000174",
+      "label": "steroid hormone secreting cell",
+      "definition": "Any secretory cell that is capable of some steroid hormone secretion.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0035929",
+          "label": "steroid hormone secretion"
+        }
+      ]
+    },
+    "CL:0002097": {
+      "id": "CL:0002097",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002097",
+      "label": "cortical cell of adrenal gland",
+      "definition": "A cell of the adrenal cortex. Cell types include those that synthesize and secrete chemical derivatives (steroids) of cholesterol.",
+      "synonyms": [
+        "adrenal cortex cell",
+        "adrenocortical cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000174",
+          "label": "steroid hormone secreting cell"
+        },
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "CL:1001601",
+          "label": "adrenal gland glandular cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000174",
+          "label": "steroid hormone secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "CL:1001601",
+          "label": "adrenal gland glandular cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000171": {
+      "id": "CL:0000171",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000171",
+      "label": "pancreatic A cell",
+      "definition": "A type A enteroendocrine cell found in the periphery of the islets of Langerhans that secretes glucagon.",
+      "synonyms": [
+        "alpha cell of islet of Langerhans",
+        "pancreatic alpha cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002067",
+          "label": "type A enteroendocrine cell"
+        },
+        {
+          "id": "CL:0008024",
+          "label": "pancreatic endocrine cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000083",
+          "label": "epithelial cell of pancreas"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000164",
+          "label": "enteroendocrine cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000170",
+          "label": "glucagon secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002067",
+          "label": "type A enteroendocrine cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0008024",
+          "label": "pancreatic endocrine cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0002351",
+          "label": "progenitor cell of endocrine pancreas"
+        },
+        {
+          "id": "UBERON:0000006",
+          "label": "islet of Langerhans"
+        }
+      ]
+    },
+    "CL:0000169": {
+      "id": "CL:0000169",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000169",
+      "label": "type B pancreatic cell",
+      "definition": "A cell that secretes insulin and is located towards the center of the islets of Langerhans.",
+      "synonyms": [
+        "pancreatic B cell",
+        "B-cell of pancreatic islet",
+        "beta cell islet",
+        "beta cell of pancreatic islet",
+        "beta cell",
+        "insulin-secreting cell",
+        "pancreatic B-cell",
+        "pancreatic beta cell",
+        "pancreatic islet core",
+        "type B enteroendocrine cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000168",
+          "label": "insulin secreting cell"
+        },
+        {
+          "id": "CL:0008024",
+          "label": "pancreatic endocrine cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000083",
+          "label": "epithelial cell of pancreas"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000154",
+          "label": "protein secreting cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000164",
+          "label": "enteroendocrine cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000168",
+          "label": "insulin secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0008024",
+          "label": "pancreatic endocrine cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0002351",
+          "label": "progenitor cell of endocrine pancreas"
+        },
+        {
+          "id": "UBERON:0000006",
+          "label": "islet of Langerhans"
+        }
+      ]
+    },
+    "CL:0000173": {
+      "id": "CL:0000173",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000173",
+      "label": "pancreatic D cell",
+      "definition": "A D cell located in the pancreas. Peripherally placed within the islets like type A cells; contains somatostatin.",
+      "synonyms": [
+        "D-cell of pancreatic islet",
+        "delta cell of islet",
+        "delta cell of pancreatic islet",
+        "pancreatic D-cell",
+        "pancreatic delta cell",
+        "somatostatin-secreting pancreatic cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000502",
+          "label": "type D enteroendocrine cell"
+        },
+        {
+          "id": "CL:0008024",
+          "label": "pancreatic endocrine cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000083",
+          "label": "epithelial cell of pancreas"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000164",
+          "label": "enteroendocrine cell"
+        },
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000172",
+          "label": "somatostatin secreting cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000502",
+          "label": "type D enteroendocrine cell"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0008024",
+          "label": "pancreatic endocrine cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0002351",
+          "label": "progenitor cell of endocrine pancreas"
+        },
+        {
+          "id": "UBERON:0000006",
+          "label": "islet of Langerhans"
+        }
+      ]
+    },
+    "CL:0002275": {
+      "id": "CL:0002275",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002275",
+      "label": "pancreatic PP cell",
+      "definition": "A PP cell located in the islets of the pancreas.",
+      "synonyms": [
+        "PP cell of pancreatic islet",
+        "PP-cell of pancreatic islet",
+        "pancreatic polypeptide-secreting cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000696",
+          "label": "PP cell"
+        },
+        {
+          "id": "CL:0008024",
+          "label": "pancreatic endocrine cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000083",
+          "label": "epithelial cell of pancreas"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000164",
+          "label": "enteroendocrine cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000696",
+          "label": "PP cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0008024",
+          "label": "pancreatic endocrine cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0000006",
+          "label": "islet of Langerhans"
+        }
+      ]
+    },
+    "CL:0002258": {
+      "id": "CL:0002258",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002258",
+      "label": "thyroid follicular cell",
+      "definition": "An epithelial cell that is part of the thyroid follicle epithelium, with a shape that ranges from squamous when inactive to cuboidal or columnar when active, reflecting its hormonal activity. Its apical surface is lined with microvilli projecting into the colloid-filled lumen, where it synthesizes, stores, and secretes the thyroid hormones thyroxine (T4) and triiodothyronine (T3), releasing them into the bloodstream in response to thyroid-stimulating hormone (TSH).",
+      "synonyms": [
+        "follicular cell of thyroid gland",
+        "principal cell of thyroid gland",
+        "thyroid gland follicular cell",
+        "thyroid hormone secreting cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0002257",
+          "label": "epithelial cell of thyroid gland"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002257",
+          "label": "epithelial cell of thyroid gland"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0005902",
+          "label": "microvillus"
+        },
+        {
+          "id": "GO:0070460",
+          "label": "thyroid-stimulating hormone secretion"
+        },
+        {
+          "id": "UBERON:0012363",
+          "label": "thyroid follicle epithelium"
+        }
+      ]
+    },
+    "CL:0000570": {
+      "id": "CL:0000570",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000570",
+      "label": "parafollicular cell",
+      "definition": "A neuroepithelial cells that occurs singly or in small groups, close to the outer follicular borders but within the follicular basement membrane of the thyroid. This cell expresses a form of the neural cell adhesion molecule (N-CAM) on its surface and secretes calcitonin and serotonin (5-hydroxytryptamine).",
+      "synonyms": [
+        "C cell",
+        "C cell of thyroid gland",
+        "clear cell of thyroid gland",
+        "parafollicular cell of thyroid gland",
+        "thyroid parafollicular cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000443",
+          "label": "calcitonin secreting cell"
+        },
+        {
+          "id": "CL:0000458",
+          "label": "serotonin secreting cell"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002257",
+          "label": "epithelial cell of thyroid gland"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000443",
+          "label": "calcitonin secreting cell"
+        },
+        {
+          "id": "CL:0000457",
+          "label": "biogenic amine secreting cell"
+        },
+        {
+          "id": "CL:0000458",
+          "label": "serotonin secreting cell"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002257",
+          "label": "epithelial cell of thyroid gland"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000333",
+          "label": "migratory neural crest cell"
+        },
+        {
+          "id": "GO:0001820",
+          "label": "serotonin secretion"
+        },
+        {
+          "id": "GO:0036161",
+          "label": "calcitonin secretion"
+        },
+        {
+          "id": "PR:000001024",
+          "label": "neural cell adhesion molecule 1"
+        },
+        {
+          "id": "UBERON:0001747",
+          "label": "parenchyma of thyroid gland"
+        }
+      ]
+    },
+    "CL:0000446": {
+      "id": "CL:0000446",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000446",
+      "label": "chief cell of parathyroid gland",
+      "definition": "An epithelial cell of the parathyroid gland that is arranged in wide, irregular interconnecting columns; responsible for the synthesis and secretion of parathyroid hormone.",
+      "synonyms": [
+        "parathyroid chief cell",
+        "parathyroid gland chief cell",
+        "parathyroid hormone secreting cell",
+        "principal cell of parathyroid gland"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000079",
+          "label": "stratified epithelial cell"
+        },
+        {
+          "id": "CL:1001593",
+          "label": "parathyroid glandular cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000079",
+          "label": "stratified epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002260",
+          "label": "epithelial cell of parathyroid gland"
+        },
+        {
+          "id": "CL:1001593",
+          "label": "parathyroid glandular cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0035898",
+          "label": "parathyroid hormone secretion"
+        },
+        {
+          "id": "UBERON:0011197",
+          "label": "parathyroid epithelium"
+        }
+      ]
+    },
+    "CL:0002099": {
+      "id": "CL:0002099",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002099",
+      "label": "type I cell of adrenal cortex",
+      "definition": "A small, polyhedral, cell found in rounded groups or curved columns with deeply staining nuclei, scanty basophilic cytoplasm and a few lipid droplets. This cell in the zona glomerulosa produces mineralocorticoids.",
+      "synonyms": [
+        "epithelial cell of zona glomerulosa of adrenal gland"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000456",
+          "label": "mineralocorticoid secreting cell"
+        },
+        {
+          "id": "CL:0002097",
+          "label": "cortical cell of adrenal gland"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000174",
+          "label": "steroid hormone secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000456",
+          "label": "mineralocorticoid secreting cell"
+        },
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "CL:0002097",
+          "label": "cortical cell of adrenal gland"
+        },
+        {
+          "id": "CL:1001601",
+          "label": "adrenal gland glandular cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0002053",
+          "label": "zona glomerulosa of adrenal gland"
+        }
+      ]
+    },
+    "CL:0002136": {
+      "id": "CL:0002136",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002136",
+      "label": "type II cell of adrenal cortex",
+      "definition": "A cell in the zona fasciculata that produce glucocorticoids, e.g cortisol.",
+      "synonyms": [
+        "type II cortical cell of adrenal gland"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000460",
+          "label": "glucocorticoid secreting cell"
+        },
+        {
+          "id": "CL:0002097",
+          "label": "cortical cell of adrenal gland"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000174",
+          "label": "steroid hormone secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000460",
+          "label": "glucocorticoid secreting cell"
+        },
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "CL:0002097",
+          "label": "cortical cell of adrenal gland"
+        },
+        {
+          "id": "CL:1001601",
+          "label": "adrenal gland glandular cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0002137": {
+      "id": "CL:0002137",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002137",
+      "label": "type III cell of adrenal cortex",
+      "definition": "A cell in the zona reticularis that produce sex hormones.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000593",
+          "label": "androgen secreting cell"
+        },
+        {
+          "id": "CL:0002097",
+          "label": "cortical cell of adrenal gland"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000174",
+          "label": "steroid hormone secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000593",
+          "label": "androgen secreting cell"
+        },
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "CL:0002097",
+          "label": "cortical cell of adrenal gland"
+        },
+        {
+          "id": "CL:1001601",
+          "label": "adrenal gland glandular cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000336": {
+      "id": "CL:0000336",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000336",
+      "label": "adrenal medulla chromaffin cell",
+      "definition": "A cell found within the adrenal medulla that secrete biogenic amine hormones upon stimulation.",
+      "synonyms": [
+        "medullary chromaffin cell of adrenal gland"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000457",
+          "label": "biogenic amine secreting cell"
+        },
+        {
+          "id": "CL:1000426",
+          "label": "chromaffin cell of adrenal gland"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000029",
+          "label": "neural crest derived neuron"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0000166",
+          "label": "chromaffin cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000457",
+          "label": "biogenic amine secreting cell"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000568",
+          "label": "amine precursor uptake and decarboxylation cell"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:1000426",
+          "label": "chromaffin cell of adrenal gland"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000011",
+          "label": "migratory trunk neural crest cell"
+        },
+        {
+          "id": "UBERON:0001236",
+          "label": "adrenal medulla"
+        }
+      ]
+    },
+    "CL:0002312": {
+      "id": "CL:0002312",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002312",
+      "label": "somatotroph",
+      "definition": "An acidophilic cell of the anterior pituitary that produces growth hormone, somatotropin.",
+      "synonyms": [
+        "somatotrope",
+        "somatotropic cell",
+        "somatrophic cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000295",
+          "label": "somatotropin secreting cell"
+        },
+        {
+          "id": "CL:0000638",
+          "label": "acidophil cell of pars distalis of adenohypophysis"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000029",
+          "label": "neural crest derived neuron"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0000166",
+          "label": "chromaffin cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000295",
+          "label": "somatotropin secreting cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000568",
+          "label": "amine precursor uptake and decarboxylation cell"
+        },
+        {
+          "id": "CL:0000637",
+          "label": "chromophil cell of anterior pituitary gland"
+        },
+        {
+          "id": "CL:0000638",
+          "label": "acidophil cell of pars distalis of adenohypophysis"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0012001",
+          "label": "neuron of the forebrain"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "CL:2000004",
+          "label": "pituitary gland cell"
+        },
+        {
+          "id": "CL:2000029",
+          "label": "central nervous system neuron"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0002311": {
+      "id": "CL:0002311",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002311",
+      "label": "mammotroph",
+      "definition": "An acidophilic cell of the anterior pituitary that produces prolactin.",
+      "synonyms": [
+        "epsilon-acidophil",
+        "lactotrope",
+        "lactotroph",
+        "lactotropic cell",
+        "mammotrope",
+        "mammotrophic cell",
+        "mammotropic cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000439",
+          "label": "prolactin secreting cell"
+        },
+        {
+          "id": "CL:0000638",
+          "label": "acidophil cell of pars distalis of adenohypophysis"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000029",
+          "label": "neural crest derived neuron"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000154",
+          "label": "protein secreting cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0000166",
+          "label": "chromaffin cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000439",
+          "label": "prolactin secreting cell"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000568",
+          "label": "amine precursor uptake and decarboxylation cell"
+        },
+        {
+          "id": "CL:0000637",
+          "label": "chromophil cell of anterior pituitary gland"
+        },
+        {
+          "id": "CL:0000638",
+          "label": "acidophil cell of pars distalis of adenohypophysis"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0012001",
+          "label": "neuron of the forebrain"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "CL:2000004",
+          "label": "pituitary gland cell"
+        },
+        {
+          "id": "CL:2000029",
+          "label": "central nervous system neuron"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0002309": {
+      "id": "CL:0002309",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002309",
+      "label": "corticotroph",
+      "definition": "A basophil chromphil cell of the anterior pitiutary gland that produce adrenocorticotropic hormone, melanocyte-stimulating hormone and lipotropin. This cell type is irregular in shape and has short dendritic processes which are inserted among other neighboring cells;",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000467",
+          "label": "adrenocorticotropic hormone secreting cell"
+        },
+        {
+          "id": "CL:0000639",
+          "label": "basophil cell of pars distalis of adenohypophysis"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000029",
+          "label": "neural crest derived neuron"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0000166",
+          "label": "chromaffin cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000467",
+          "label": "adrenocorticotropic hormone secreting cell"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000568",
+          "label": "amine precursor uptake and decarboxylation cell"
+        },
+        {
+          "id": "CL:0000637",
+          "label": "chromophil cell of anterior pituitary gland"
+        },
+        {
+          "id": "CL:0000639",
+          "label": "basophil cell of pars distalis of adenohypophysis"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0012001",
+          "label": "neuron of the forebrain"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "CL:2000004",
+          "label": "pituitary gland cell"
+        },
+        {
+          "id": "CL:2000029",
+          "label": "central nervous system neuron"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000476": {
+      "id": "CL:0000476",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000476",
+      "label": "thyrotroph",
+      "definition": "A basophil cell of the anterior pituitary that produces thyroid stimulating hormone, thyrotrophin. This cell type is elongated, polygonal and lie in clusters towards the adenohypophyseal center.",
+      "synonyms": [
+        "beta-basophil",
+        "thyroid stimulating hormone secreting cell",
+        "thyrotrope"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000639",
+          "label": "basophil cell of pars distalis of adenohypophysis"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000029",
+          "label": "neural crest derived neuron"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0000166",
+          "label": "chromaffin cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000568",
+          "label": "amine precursor uptake and decarboxylation cell"
+        },
+        {
+          "id": "CL:0000637",
+          "label": "chromophil cell of anterior pituitary gland"
+        },
+        {
+          "id": "CL:0000639",
+          "label": "basophil cell of pars distalis of adenohypophysis"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0012001",
+          "label": "neuron of the forebrain"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "CL:2000004",
+          "label": "pituitary gland cell"
+        },
+        {
+          "id": "CL:2000029",
+          "label": "central nervous system neuron"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0070460",
+          "label": "thyroid-stimulating hormone secretion"
+        }
+      ]
+    },
+    "CL:0000437": {
+      "id": "CL:0000437",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000437",
+      "label": "gonadtroph",
+      "definition": "A rounded cell that is usually situated next to sinusoids; secretes follicular stimulating hormone (FSH) and luteinizing hormone (LH).",
+      "synonyms": [
+        "delta basophil",
+        "follicle stimulating hormone secreting cell",
+        "gonadotrope cell",
+        "gonadotrope",
+        "gonadotroph",
+        "gonadotropic cell",
+        "pituitary delta cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000438",
+          "label": "luteinizing hormone secreting cell"
+        },
+        {
+          "id": "CL:0000639",
+          "label": "basophil cell of pars distalis of adenohypophysis"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000029",
+          "label": "neural crest derived neuron"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0000166",
+          "label": "chromaffin cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000438",
+          "label": "luteinizing hormone secreting cell"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000568",
+          "label": "amine precursor uptake and decarboxylation cell"
+        },
+        {
+          "id": "CL:0000637",
+          "label": "chromophil cell of anterior pituitary gland"
+        },
+        {
+          "id": "CL:0000639",
+          "label": "basophil cell of pars distalis of adenohypophysis"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0012001",
+          "label": "neuron of the forebrain"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "CL:2000004",
+          "label": "pituitary gland cell"
+        },
+        {
+          "id": "CL:2000029",
+          "label": "central nervous system neuron"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000652": {
+      "id": "CL:0000652",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000652",
+      "label": "pinealocyte",
+      "definition": "This cell type produces and secretes melatonin and forms the pineal parenchyma. Extending from each cell body, which has a spherical, oval or lobulated mucleus, are one or more tortuous basophilic processes, containing parallel microtubules known as synaptic ribbons. These processes end in expanded terminal buds near capillaries or less, frequently, ependymal cells of the pineal recess. The terminal buds contain granular endoplasmic reticulum, mitochondria and electron-dense cored vesicles, which store monoamines and polypeptide hormones, release of which appears to require sympathetic innervation.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0030187",
+          "label": "melatonin biosynthetic process"
+        },
+        {
+          "id": "UBERON:0001905",
+          "label": "pineal body"
+        }
+      ]
+    },
+    "CL:0000645": {
+      "id": "CL:0000645",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000645",
+      "label": "pituicyte",
+      "definition": "A glial cell of astrocytic lineage with long processes running parallel to adjacent axons in the proximal infundibulum of the neurohypophysis. These processes form a three-dimensional network among the axons of the hypothalamic neurosecretory cells and are connected by gap junctions which provide for their metabolic coupling. This cell type constitutes most of the nonexcitable tissue in the neurohypophsis; function may include possibly acting as an intermediate in the modulation of oxytocin and vasopressin release. This cell type is highly variable in size and shape and commonly contain lipid droplets and deposits of lipochrome pigment.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0012000",
+          "label": "astrocyte of the forebrain"
+        },
+        {
+          "id": "CL:2000004",
+          "label": "pituitary gland cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000095",
+          "label": "neuron associated cell"
+        },
+        {
+          "id": "CL:0000125",
+          "label": "glial cell"
+        },
+        {
+          "id": "CL:0000126",
+          "label": "macroglial cell"
+        },
+        {
+          "id": "CL:0000127",
+          "label": "astrocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0012000",
+          "label": "astrocyte of the forebrain"
+        },
+        {
+          "id": "CL:2000004",
+          "label": "pituitary gland cell"
+        },
+        {
+          "id": "CL:2000005",
+          "label": "brain macroglial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0002198",
+          "label": "neurohypophysis"
         }
       ]
     }
