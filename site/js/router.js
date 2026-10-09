@@ -4,6 +4,7 @@ import { homeView, systemView, cellView, notFoundView } from './views.js';
 import { overviewView } from './overview.js';
 import { tissueView } from './tissue.js';
 import { quizView } from './quiz.js';
+import { compareView, confusablesView } from './compare.js';
 import { hashToId } from './util.js';
 import { t } from './i18n.js';
 
@@ -27,6 +28,8 @@ export function resolve(hash) {
   if (parts[0] === 'system' && parts.length === 2) return systemView(parts[1]);
   if (parts[0] === 'tissue' && parts.length === 2) return tissueView(parts[1]);
   if (parts[0] === 'quiz' && parts.length === 1) return quizView(params);
+  if (parts[0] === 'compare' && parts.length === 1) return confusablesView();
+  if (parts[0] === 'compare' && (parts.length === 2 || parts.length === 3)) return compareView(parts[1], parts[2] || null);
   if (parts[0] === 'overview' && parts.length <= 2) {
     const m = parts[1] || 'system';
     if (m === 'system' || m === 'tissue') return overviewView(m);

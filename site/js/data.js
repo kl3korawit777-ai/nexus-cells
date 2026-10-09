@@ -1,6 +1,6 @@
 // โหลด nexus.json และสร้างดัชนี ข้อมูลทั้งหมดมาจากไฟล์นี้เท่านั้น
 
-import { getLang } from './i18n.js';
+import { getLang, t } from './i18n.js';
 import { nameOf, altNameOf } from './content.js';
 
 // ชื่อตามภาษาปัจจุบัน (ไทย: ชื่อไทย + ชื่ออังกฤษเป็นชื่อรอง, อังกฤษ: ชื่ออังกฤษอย่างเดียว)
@@ -15,15 +15,13 @@ export function subtypeName(id) {
 // ข้อมูลทั้งชุดในรูปแบบที่ quiz-engine/overview-layout ใช้
 export const dataset = () => ({ systems: store.systems, tissues: store.tissues, cells: store.cells, edges: store.edges });
 
-// ประเภทของเส้น interacts_with (ลำดับนี้ใช้เรียงปุ่มและ legend)
-export const MODES = [
-  { id: 'hormone', th: 'ฮอร์โมน' },
-  { id: 'synapse', th: 'ซินแนปส์' },
-  { id: 'paracrine', th: 'พาราไครน์' },
-  { id: 'support', th: 'สนับสนุน' },
-  { id: 'immune', th: 'ภูมิคุ้มกัน' },
-];
-export const modeLabel = (id) => (MODES.find((m) => m.id === id) || { th: '' }).th;
+// ประเภทของเส้น interacts_with (ลำดับนี้ใช้เรียงปุ่มและ legend) ชื่อที่แสดงอยู่ใน i18n (mode.<id>)
+export const MODES = ['hormone', 'synapse', 'paracrine', 'support', 'immune'].map((id) => ({
+  id,
+  get label() { return t('mode.' + id); },
+  get th() { return t('mode.' + id); }, // ชื่อเดิม (จะเลิกใช้เมื่อย้ายข้อความทั้งหมดไป i18n)
+}));
+export const modeLabel = (id) => t('mode.' + id);
 
 export const store = {
   meta: null,
@@ -91,10 +89,11 @@ export function edgeSentence(e) {
   const a = store.cellsById.get(e.from);
   const b = store.cellsById.get(e.to);
   if (!a || !b) return '';
-  if (e.type === 'develops_from') return `${a.en} เจริญมาจาก ${b.en}`;
-  if (e.type === 'is_a') return `${a.en} เป็นชนิดหนึ่งของ ${b.en}`;
+  const p = { a: cellName(a), b: cellName(b) };
+  if (e.type === 'develops_from') return t('edge.develops_from', p);
+  if (e.type === 'is_a') return t('edge.is_a', p);
   const m = e.mode ? ` [${modeLabel(e.mode)}]` : '';
-  return `${a.en} → ${b.en}${m}` + (e.th ? `: ${e.th}` : '');
+  return t('edge.interacts', p) + m + (e.th ? `: ${e.th}` : '');
 }
 
 export function relationsOf(id) {

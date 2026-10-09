@@ -94,7 +94,8 @@ export function renderCellPage(cell) {
     synonyms.length ? h('p', { class: 'synonyms' }, 'ชื่ออื่น: ', synonyms.join(', ')) : null,
     h('div', { class: 'chips', 'aria-label': 'ระบบ' }, systemChips(cell)),
     h('div', { class: 'chips', 'aria-label': 'เนื้อเยื่อ' }, tissueChips(cell)),
-    h('p', {}, h('a', { class: 'btn', href: '#/quiz?cell=' + idToHash(cell.id) }, t('quiz.testThis'))),
+    h('p', { class: 'toolbar' }, h('a', { class: 'btn', href: '#/quiz?cell=' + idToHash(cell.id) }, t('quiz.testThis')),
+      h('a', { class: 'btn', href: '#/compare/' + idToHash(cell.id) }, t('cmp.compareWith'))),
     cell.cl && cell.cl.definition
       ? h('div', { class: 'def-box', lang: 'en' }, h('h2', { lang: 'th', text: 'คำนิยามจาก Cell Ontology (อังกฤษ)' }), h('p', { text: cell.cl.definition }))
       : null);

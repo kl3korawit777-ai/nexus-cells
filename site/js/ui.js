@@ -1,18 +1,21 @@
 // ส่วนประกอบหน้าตาที่ใช้ซ้ำหลายหน้า: ช่องค้นหา สัญลักษณ์เส้น legend ปุ่มเปิดปิด
 
-import { store, searchCells, colorKey, MODES, crossSystemEdges } from './data.js';
+import { store, searchCells, colorKey, MODES, crossSystemEdges, cellName, cellAlt, subtypeName, tissueName } from './data.js';
 import { h, cellHref } from './util.js';
 import { colorForKey } from './graph.js';
+import { t } from './i18n.js';
 
-export function searchBox(onPick) {
+// ช่องค้นหาเซลล์ onPick(cell) ถ้าไม่ระบุจะไปหน้าเซลล์ opts: {id, label} (id ต้องไม่ซ้ำเมื่อมีหลายช่องในหน้าเดียว)
+export function searchBox(onPick, opts = {}) {
+  const id = opts.id || 'q';
   const input = h('input', {
-    id: 'q', type: 'search', autocomplete: 'off', role: 'combobox',
-    'aria-expanded': 'false', 'aria-controls': 'q-results', 'aria-autocomplete': 'list',
-    placeholder: 'เช่น นิวโทรฟิล, macrophage, CL:0000775',
+    id, type: 'search', autocomplete: 'off', role: 'combobox',
+    'aria-expanded': 'false', 'aria-controls': id + '-results', 'aria-autocomplete': 'list',
+    placeholder: t('search.placeholder'),
   });
-  const list = h('ul', { id: 'q-results', class: 'search-results', role: 'listbox', 'aria-label': 'ผลการค้นหา', hidden: true });
-  const status = h('p', { class: 'sr-only', role: 'status', 'aria-live': 'polite', style: 'position:absolute;left:-9999px' });
-  const wrap = h('div', { class: 'search' }, h('label', { for: 'q', text: 'ค้นหาเซลล์' }), input, list, status);
+  const list = h('ul', { id: id + '-results', class: 'search-results', role: 'listbox', 'aria-label': t('search.results'), hidden: true });
+  const status = h('p', { class: 'sr-only', role: 'status', 'aria-live': 'polite' });
+  const wrap = h('div', { class: 'search' }, h('label', { for: id, text: opts.label || t('search.label') }), input, list, status);
 
   function close() { list.hidden = true; input.setAttribute('aria-expanded', 'false'); }
   function update() {
@@ -21,13 +24,14 @@ export function searchBox(onPick) {
     if (!q.trim()) { close(); status.textContent = ''; return; }
     const res = searchCells(q);
     if (!res.length) {
-      list.append(h('li', { class: 'search-note', role: 'presentation' }, 'ไม่พบเซลล์ที่ตรงกับ "' + q + '"'));
+      list.append(h('li', { class: 'search-note', role: 'presentation' }, t('search.none', { q })));
     }
     for (const c of res) {
       list.append(h('li', { role: 'presentation' },
-        h('a', { role: 'option', href: cellHref(c.id), 'data-id': c.id }, h('span', { class: 'th' }, c.th), h('span', { class: 'en' }, c.en), h('span', { class: 'mono' }, c.id))));
+        h('a', { role: 'option', href: cellHref(c.id), 'data-id': c.id },
+          h('span', { class: 'th' }, cellName(c)), h('span', { class: 'en' }, cellAlt(c)), h('span', { class: 'mono' }, c.id))));
     }
-    status.textContent = res.length ? `พบ ${res.length} รายการ` : 'ไม่พบผลลัพธ์';
+    status.textContent = res.length ? t('search.count', { n: res.length }) : t('search.noneStatus');
     list.hidden = false;
     input.setAttribute('aria-expanded', 'true');
   }
@@ -56,12 +60,12 @@ export function searchBox(onPick) {
     if (e.key === 'ArrowDown') { e.preventDefault(); (links[i + 1] || links[i]).focus(); }
     else if (e.key === 'ArrowUp') { e.preventDefault(); (i <= 0 ? input : links[i - 1]).focus(); }
     else if (e.key === 'Escape') { input.focus(); close(); }
+    else if (e.key === 'Enter' && onPick && i >= 0) { e.preventDefault(); pick(links[i]); }
   });
   const outside = (e) => { if (!wrap.contains(e.target)) close(); };
   document.addEventListener('click', outside);
   return { el: wrap, destroy: () => document.removeEventListener('click', outside) };
 }
-
 
 export function edgeSwatch(type, mode) {
   const ns = 'http://www.w3.org/2000/svg';
@@ -93,24 +97,22 @@ export function edgeSwatch(type, mode) {
   return svg;
 }
 
-
 export function legendFor(cells, systemId, opts = {}) {
   const keys = [];
   for (const c of cells) { const k = colorKey(c); if (!keys.includes(k)) keys.push(k); }
-  const label = (k) => (store.subtypes.get(k) || store.tissuesById.get(k) || { th: k }).th;
+  const label = (k) => (store.subtypes.has(k) ? subtypeName(k) : store.tissuesById.has(k) ? tissueName(store.tissuesById.get(k)) : k);
   const items = keys.map((k) => h('span', {}, h('i', { class: 'sw', style: `background:${colorForKey(k)}` }), label(k)));
-  if (cells.some((c) => c.kind === 'class')) items.push(h('span', {}, h('i', { class: 'sw cls' }), 'หมวด (กลุ่มของเซลล์)'));
+  if (cells.some((c) => c.kind === 'class')) items.push(h('span', {}, h('i', { class: 'sw cls' }), t('legend.class')));
   if (opts.overview) {
-    items.push(h('span', {}, h('i', { class: 'sw dotmark' }), 'จุดสีเล็กที่ขอบ = อยู่ในระบบอื่นด้วย (เมื่อจัดกลุ่มตามระบบ)'));
+    items.push(h('span', {}, h('i', { class: 'sw dotmark' }), t('legend.dots')));
   } else if (cells.some((c) => (c.systems || []).some((s) => s !== systemId))) {
-    items.push(h('span', {}, h('i', { class: 'sw ring' }), 'ขอบสองชั้น = อยู่ในระบบอื่นด้วย (ชื่อระบบใต้ชื่อเซลล์)'));
+    items.push(h('span', {}, h('i', { class: 'sw ring' }), t('legend.ring')));
   }
   if (!opts.overview && crossSystemEdges(systemId).length) {
-    items.push(h('span', {}, h('i', { class: 'sw ghost' }), 'จุดจาง = เซลล์ของระบบอื่น (แตะเพื่อเปิดหน้าเซลล์)'));
+    items.push(h('span', {}, h('i', { class: 'sw ghost' }), t('legend.ghost')));
   }
-  return h('div', { class: 'legend', 'aria-label': 'คำอธิบายสี' }, items);
+  return h('div', { class: 'legend', 'aria-label': t('legend.aria') }, items);
 }
-
 
 // mode ของ interacts_with ที่มีในข้อมูลทั้งหมด (เรียงตามลำดับมาตรฐาน)
 export function modesInData() {
