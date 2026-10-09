@@ -1,0 +1,3945 @@
+{
+  "fetched_at": "2026-10-09T10:41:57+00:00",
+  "source": "OLS4 / Cell Ontology",
+  "terms": {
+    "CL:0000988": {
+      "id": "CL:0000988",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000988",
+      "label": "hematopoietic cell",
+      "definition": "A cell of a hematopoietic lineage.",
+      "synonyms": [
+        "haematopoietic cell",
+        "haemopoietic cell",
+        "hemopoietic cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000738": {
+      "id": "CL:0000738",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000738",
+      "label": "leukocyte",
+      "definition": "An achromatic cell of the myeloid or lymphoid lineages capable of ameboid movement, found in blood or other tissue.",
+      "synonyms": [
+        "immune cell",
+        "leucocyte",
+        "white blood cell",
+        "WBC"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000037",
+          "label": "hematopoietic stem cell"
+        },
+        {
+          "id": "GO:0001667",
+          "label": "ameboidal-type cell migration"
+        },
+        {
+          "id": "NCBITaxon:7742",
+          "label": "Vertebrata <vertebrates>"
+        },
+        {
+          "id": "UBERON:0002405",
+          "label": "immune system"
+        }
+      ]
+    },
+    "CL:0000094": {
+      "id": "CL:0000094",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000094",
+      "label": "granulocyte",
+      "definition": "A leukocyte with abundant granules in the cytoplasm.",
+      "synonyms": [
+        "granular leucocyte",
+        "granular leukocyte",
+        "polymorphonuclear leukocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000081",
+          "label": "blood cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000081",
+          "label": "blood cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0030141",
+          "label": "secretory granule"
+        },
+        {
+          "id": "PR:000001002",
+          "label": "CD19 molecule"
+        },
+        {
+          "id": "PR:000001012",
+          "label": "integrin alpha-M"
+        },
+        {
+          "id": "PR:000001020",
+          "label": "CD3 epsilon"
+        },
+        {
+          "id": "PR:000001024",
+          "label": "neural cell adhesion molecule 1"
+        },
+        {
+          "id": "PR:000001084",
+          "label": "T-cell surface glycoprotein CD8 alpha chain"
+        },
+        {
+          "id": "PR:000001332",
+          "label": "cell adhesion molecule CEACAM8"
+        },
+        {
+          "id": "PR:000001969",
+          "label": "urokinase plasminogen activator surface receptor"
+        }
+      ]
+    },
+    "CL:0000542": {
+      "id": "CL:0000542",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000542",
+      "label": "lymphocyte",
+      "definition": "A lymphocyte is a leukocyte commonly found in the blood and lymph that has the characteristics of a large nucleus, a neutral staining cytoplasm, and prominent heterochromatin.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000051",
+          "label": "common lymphoid progenitor"
+        },
+        {
+          "id": "CL:0017500",
+          "label": "neutrophillic cytoplasm"
+        },
+        {
+          "id": "GO:0000792",
+          "label": "heterochromatin"
+        },
+        {
+          "id": "PATO:0040072",
+          "label": "high nuclear/cytoplasmic ratio"
+        }
+      ]
+    },
+    "CL:0000145": {
+      "id": "CL:0000145",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000145",
+      "label": "professional antigen presenting cell",
+      "definition": "A cell capable of processing and presenting lipid and protein antigens to T cells in order to initiate an immune response.",
+      "synonyms": [
+        "APC"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0002504",
+          "label": "antigen processing and presentation of peptide or polysaccharide antigen via MHC class II"
+        }
+      ]
+    },
+    "CL:0000037": {
+      "id": "CL:0000037",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000037",
+      "label": "hematopoietic stem cell",
+      "definition": "A stem cell from which all cells of the lymphoid and myeloid lineages develop, including blood cells and cells of the immune system. Hematopoietic stem cells lack cell markers of effector cells (lin-negative). Lin-negative is defined by lacking one or more of the following cell surface markers: CD2, CD3 epsilon, CD4, CD5 ,CD8 alpha chain, CD11b, CD14, CD19, CD20, CD56, ly6G, ter119.",
+      "synonyms": [
+        "blood forming stem cell",
+        "colony forming unit hematopoietic",
+        "hemopoietic stem cell",
+        "HSC"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000723",
+          "label": "somatic stem cell"
+        },
+        {
+          "id": "CL:0008001",
+          "label": "hematopoietic precursor cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000034",
+          "label": "stem cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000723",
+          "label": "somatic stem cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0008001",
+          "label": "hematopoietic precursor cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        },
+        {
+          "id": "CL:0011115",
+          "label": "precursor cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000566",
+          "label": "angioblastic mesenchymal cell"
+        },
+        {
+          "id": "GO:0002244",
+          "label": "hematopoietic progenitor cell differentiation"
+        },
+        {
+          "id": "PR:000001002",
+          "label": "CD19 molecule"
+        },
+        {
+          "id": "PR:000001004",
+          "label": "CD4 molecule"
+        },
+        {
+          "id": "PR:000001012",
+          "label": "integrin alpha-M"
+        },
+        {
+          "id": "PR:000001020",
+          "label": "CD3 epsilon"
+        },
+        {
+          "id": "PR:000001024",
+          "label": "neural cell adhesion molecule 1"
+        },
+        {
+          "id": "PR:000001083",
+          "label": "CD2 molecule"
+        },
+        {
+          "id": "PR:000001084",
+          "label": "T-cell surface glycoprotein CD8 alpha chain"
+        },
+        {
+          "id": "PR:000001289",
+          "label": "membrane-spanning 4-domains subfamily A member 1"
+        },
+        {
+          "id": "PR:000001839",
+          "label": "T-cell surface glycoprotein CD5"
+        },
+        {
+          "id": "PR:000001889",
+          "label": "CD14 molecule"
+        },
+        {
+          "id": "PR:000002978",
+          "label": "lymphocyte antigen 6G"
+        },
+        {
+          "id": "PR:000002981",
+          "label": "lymphocyte antigen 76 (mouse)"
+        }
+      ]
+    },
+    "CL:0000049": {
+      "id": "CL:0000049",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000049",
+      "label": "common myeloid progenitor",
+      "definition": "A progenitor cell committed to myeloid lineage, including the megakaryocyte and erythroid lineages.",
+      "synonyms": [
+        "common myeloid precursor",
+        "CFU-GEMM",
+        "CFU-S",
+        "CMP",
+        "colony forming unit granulocyte, erythrocyte, macrophage, and megakaryocyte",
+        "multipotential myeloid stem cell",
+        "myeloid stem cell",
+        "pluripotent stem cell (bone marrow)"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002032",
+          "label": "hematopoietic oligopotent progenitor cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002032",
+          "label": "hematopoietic oligopotent progenitor cell"
+        },
+        {
+          "id": "CL:0008001",
+          "label": "hematopoietic precursor cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000051": {
+      "id": "CL:0000051",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000051",
+      "label": "common lymphoid progenitor",
+      "definition": "A oligopotent progenitor cell committed to the lymphoid lineage.",
+      "synonyms": [
+        "committed lymphopoietic stem cell",
+        "common lymphocyte precursor",
+        "common lymphocyte progenitor",
+        "common lymphoid precursor",
+        "early lymphocyte progenitor",
+        "lymphoid stem cell",
+        "lymphopoietic stem cell",
+        "CLP",
+        "ELP"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002032",
+          "label": "hematopoietic oligopotent progenitor cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002032",
+          "label": "hematopoietic oligopotent progenitor cell"
+        },
+        {
+          "id": "CL:0008001",
+          "label": "hematopoietic precursor cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        },
+        {
+          "id": "CL:0011115",
+          "label": "precursor cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0030098",
+          "label": "lymphocyte differentiation"
+        }
+      ]
+    },
+    "CL:0000050": {
+      "id": "CL:0000050",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000050",
+      "label": "megakaryocyte-erythroid progenitor cell",
+      "definition": "A progenitor cell committed to the megakaryocyte and erythroid lineages.",
+      "synonyms": [
+        "CFU-EM",
+        "CFU-MegE",
+        "MEP",
+        "Meg/E progenitor",
+        "colony forming unit erythroid megakaryocyte",
+        "megakaryocyte/erythrocyte progenitor",
+        "megakaryocyte/erythroid progenitor cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0002032",
+          "label": "hematopoietic oligopotent progenitor cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002032",
+          "label": "hematopoietic oligopotent progenitor cell"
+        },
+        {
+          "id": "CL:0008001",
+          "label": "hematopoietic precursor cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        },
+        {
+          "id": "CL:0011115",
+          "label": "precursor cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0030218",
+          "label": "erythrocyte differentiation"
+        },
+        {
+          "id": "GO:0030219",
+          "label": "megakaryocyte differentiation"
+        }
+      ]
+    },
+    "CL:0000557": {
+      "id": "CL:0000557",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000557",
+      "label": "granulocyte monocyte progenitor cell",
+      "definition": "A hematopoietic progenitor cell that is committed to the granulocyte and monocyte lineages. These cells are CD123-positive, and do not express Gata1 or Gata2 but do express C/EBPa, and Pu.1.",
+      "synonyms": [
+        "granulocyte/monocyte precursor",
+        "granulocyte/monocyte progenitor",
+        "CFU-C , Colony forming unit in culture",
+        "CFU-GM",
+        "GMP",
+        "colony forming unit granulocyte macrophage",
+        "granulocyte-macrophage progenitor"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0001012",
+          "label": "CD7-negative lymphoid progenitor OR granulocyte monocyte progenitor"
+        },
+        {
+          "id": "CL:1001610",
+          "label": "bone marrow hematopoietic cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0001012",
+          "label": "CD7-negative lymphoid progenitor OR granulocyte monocyte progenitor"
+        },
+        {
+          "id": "CL:0001035",
+          "label": "bone cell"
+        },
+        {
+          "id": "CL:0001060",
+          "label": "hematopoietic oligopotent progenitor cell, lineage-negative"
+        },
+        {
+          "id": "CL:0002032",
+          "label": "hematopoietic oligopotent progenitor cell"
+        },
+        {
+          "id": "CL:0002092",
+          "label": "bone marrow cell"
+        },
+        {
+          "id": "CL:0008001",
+          "label": "hematopoietic precursor cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        },
+        {
+          "id": "CL:0011115",
+          "label": "precursor cell"
+        },
+        {
+          "id": "CL:1001610",
+          "label": "bone marrow hematopoietic cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0030225",
+          "label": "macrophage differentiation"
+        },
+        {
+          "id": "GO:0030851",
+          "label": "granulocyte differentiation"
+        },
+        {
+          "id": "PR:000001865",
+          "label": "interleukin-3 receptor class 2 alpha chain"
+        },
+        {
+          "id": "PR:000001944",
+          "label": "transcription factor PU.1"
+        },
+        {
+          "id": "PR:000005307",
+          "label": "CCAAT/enhancer-binding protein alpha"
+        },
+        {
+          "id": "PR:000007857",
+          "label": "erythroid transcription factor"
+        },
+        {
+          "id": "PR:000007858",
+          "label": "endothelial transcription factor GATA-2"
+        }
+      ]
+    },
+    "CL:0000765": {
+      "id": "CL:0000765",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000765",
+      "label": "erythroblast",
+      "definition": "A nucleated precursor of an erythrocyte that lacks hematopoietic lineage markers.",
+      "synonyms": [
+        "normoblast"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000764",
+          "label": "erythroid lineage cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000764",
+          "label": "erythroid lineage cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        },
+        {
+          "id": "CL:0011115",
+          "label": "precursor cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000547",
+          "label": "proerythroblast"
+        },
+        {
+          "id": "GO:0005634",
+          "label": "nucleus"
+        },
+        {
+          "id": "GO:0005730",
+          "label": "nucleolus"
+        },
+        {
+          "id": "GO:0030218",
+          "label": "erythrocyte differentiation"
+        },
+        {
+          "id": "PR:000001002",
+          "label": "CD19 molecule"
+        },
+        {
+          "id": "PR:000001004",
+          "label": "CD4 molecule"
+        },
+        {
+          "id": "PR:000001012",
+          "label": "integrin alpha-M"
+        },
+        {
+          "id": "PR:000001020",
+          "label": "CD3 epsilon"
+        },
+        {
+          "id": "PR:000001024",
+          "label": "neural cell adhesion molecule 1"
+        },
+        {
+          "id": "PR:000001083",
+          "label": "CD2 molecule"
+        },
+        {
+          "id": "PR:000001084",
+          "label": "T-cell surface glycoprotein CD8 alpha chain"
+        },
+        {
+          "id": "PR:000001289",
+          "label": "membrane-spanning 4-domains subfamily A member 1"
+        },
+        {
+          "id": "PR:000001839",
+          "label": "T-cell surface glycoprotein CD5"
+        },
+        {
+          "id": "PR:000001889",
+          "label": "CD14 molecule"
+        },
+        {
+          "id": "PR:000002978",
+          "label": "lymphocyte antigen 6G"
+        }
+      ]
+    },
+    "CL:0000558": {
+      "id": "CL:0000558",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000558",
+      "label": "reticulocyte",
+      "definition": "An immature erythrocyte that changes the protein composition of its plasma membrane by exosome formation and extrusion. The types of protein removed differ between species though removal of the transferrin receptor is apparent in mammals and birds.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000764",
+          "label": "erythroid lineage cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000764",
+          "label": "erythroid lineage cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000552",
+          "label": "orthochromatic erythroblast"
+        },
+        {
+          "id": "GO:0071971",
+          "label": "extracellular exosome assembly"
+        },
+        {
+          "id": "PR:000001002",
+          "label": "CD19 molecule"
+        },
+        {
+          "id": "PR:000001004",
+          "label": "CD4 molecule"
+        },
+        {
+          "id": "PR:000001012",
+          "label": "integrin alpha-M"
+        },
+        {
+          "id": "PR:000001020",
+          "label": "CD3 epsilon"
+        },
+        {
+          "id": "PR:000001024",
+          "label": "neural cell adhesion molecule 1"
+        },
+        {
+          "id": "PR:000001083",
+          "label": "CD2 molecule"
+        },
+        {
+          "id": "PR:000001084",
+          "label": "T-cell surface glycoprotein CD8 alpha chain"
+        },
+        {
+          "id": "PR:000001289",
+          "label": "membrane-spanning 4-domains subfamily A member 1"
+        },
+        {
+          "id": "PR:000001839",
+          "label": "T-cell surface glycoprotein CD5"
+        },
+        {
+          "id": "PR:000001889",
+          "label": "CD14 molecule"
+        },
+        {
+          "id": "PR:000001945",
+          "label": "transferrin receptor protein 1"
+        },
+        {
+          "id": "PR:000002978",
+          "label": "lymphocyte antigen 6G"
+        }
+      ]
+    },
+    "CL:0000232": {
+      "id": "CL:0000232",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000232",
+      "label": "erythrocyte",
+      "definition": "A red blood cell. In mammals, mature erythrocytes are biconcave disks containing hemoglobin whose function is to transport oxygen.",
+      "synonyms": [
+        "RBC",
+        "red blood cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000081",
+          "label": "blood cell"
+        },
+        {
+          "id": "CL:0000329",
+          "label": "oxygen accumulating cell"
+        },
+        {
+          "id": "CL:0000764",
+          "label": "erythroid lineage cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000081",
+          "label": "blood cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000329",
+          "label": "oxygen accumulating cell"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000764",
+          "label": "erythroid lineage cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000558",
+          "label": "reticulocyte"
+        },
+        {
+          "id": "GO:0005840",
+          "label": "ribosome"
+        },
+        {
+          "id": "PATO:0002039",
+          "label": "biconcave"
+        },
+        {
+          "id": "PR:000001945",
+          "label": "transferrin receptor protein 1"
+        }
+      ]
+    },
+    "CL:0000556": {
+      "id": "CL:0000556",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000556",
+      "label": "megakaryocyte",
+      "definition": "A large hematopoietic cell (50 to 100 micron) with a lobated nucleus. Once mature, this cell undergoes multiple rounds of endomitosis and cytoplasmic restructuring to allow platelet formation and release.",
+      "synonyms": [
+        "megacaryocyte",
+        "megalocaryocyte",
+        "megalokaryocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000553",
+          "label": "megakaryocyte progenitor cell"
+        },
+        {
+          "id": "PATO:0001393",
+          "label": "euploid"
+        }
+      ]
+    },
+    "CL:0000233": {
+      "id": "CL:0000233",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000233",
+      "label": "platelet",
+      "definition": "A non-nucleated disk-shaped cell formed by extrusion from megakaryocytes, found in the blood of all mammals, and mainly involved in blood coagulation.",
+      "synonyms": [
+        "anucleate thrombocyte",
+        "blood platelet",
+        "enucleate thrombocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000081",
+          "label": "blood cell"
+        },
+        {
+          "id": "CL:0000225",
+          "label": "anucleate cell"
+        },
+        {
+          "id": "CL:0000458",
+          "label": "serotonin secreting cell"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000081",
+          "label": "blood cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000225",
+          "label": "anucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000457",
+          "label": "biogenic amine secreting cell"
+        },
+        {
+          "id": "CL:0000458",
+          "label": "serotonin secreting cell"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000556",
+          "label": "megakaryocyte"
+        },
+        {
+          "id": "GO:0007596",
+          "label": "blood coagulation"
+        },
+        {
+          "id": "PATO:0001874",
+          "label": "discoid"
+        }
+      ]
+    },
+    "CL:0000775": {
+      "id": "CL:0000775",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000775",
+      "label": "neutrophil",
+      "definition": "Any of the immature or mature forms of a granular leukocyte that in its mature form has a nucleus with three to five lobes connected by slender threads of chromatin, and cytoplasm containing fine inconspicuous granules and stainable by neutral dyes.",
+      "synonyms": [
+        "PMN",
+        "neutrocyte",
+        "neutrophil leucocyte",
+        "neutrophil leukocyte",
+        "neutrophilic leucocyte",
+        "neutrophilic leukocyte",
+        "poly",
+        "polymorphonuclear leucocyte",
+        "polymorphonuclear leukocyte",
+        "polymorphonuclear neutrophil",
+        "polynuclear neutrophilic leucocyte",
+        "polynuclear neutrophilic leukocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000094",
+          "label": "granulocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000081",
+          "label": "blood cell"
+        },
+        {
+          "id": "CL:0000094",
+          "label": "granulocyte"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "PR:000001479",
+          "label": "low affinity immunoglobulin gamma Fc region receptor II"
+        },
+        {
+          "id": "PR:000001879",
+          "label": "leukosialin"
+        }
+      ]
+    },
+    "CL:0000771": {
+      "id": "CL:0000771",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000771",
+      "label": "eosinophil",
+      "definition": "Any of the immature or mature forms of a granular leukocyte with a nucleus that usually has two lobes connected by one or more slender threads of chromatin, and cytoplasm containing coarse, round granules that are uniform in size and which can be stained by the dye eosin. Eosinophils are CD9-positive, CD191-positive, and CD193-positive.",
+      "synonyms": [
+        "eosinocyte",
+        "eosinophilic granulocyte",
+        "eosinophilic leucocyte",
+        "eosinophilic leukocyte",
+        "polymorphonuclear leucocyte",
+        "polymorphonuclear leukocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000094",
+          "label": "granulocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000081",
+          "label": "blood cell"
+        },
+        {
+          "id": "CL:0000094",
+          "label": "granulocyte"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "PR:000001254",
+          "label": "C-C chemokine receptor type 1"
+        },
+        {
+          "id": "PR:000001255",
+          "label": "C-C chemokine receptor type 3"
+        },
+        {
+          "id": "PR:000001307",
+          "label": "CD44 molecule"
+        },
+        {
+          "id": "PR:000001343",
+          "label": "CD69 molecule"
+        },
+        {
+          "id": "PR:000005178",
+          "label": "CD9 molecule"
+        }
+      ]
+    },
+    "CL:0000767": {
+      "id": "CL:0000767",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000767",
+      "label": "basophil",
+      "definition": "Any of the immature or mature forms of a granular leukocyte that in its mature form has an irregularly shaped, pale-staining nucleus that is partially constricted into two lobes, and with cytoplasm that contains coarse, bluish-black granules of variable size. Basophils contain vasoactive amines such as histamine and serotonin, which are released on appropriate stimulation. A basophil is CD123-positive, CD193-positive, CD203c-positive, and FceRIa-positive.",
+      "synonyms": [
+        "basophilic leucocyte",
+        "basophilic leukocyte",
+        "polymorphonuclear leucocyte",
+        "polymorphonuclear leukocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000094",
+          "label": "granulocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000081",
+          "label": "blood cell"
+        },
+        {
+          "id": "CL:0000094",
+          "label": "granulocyte"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "PR:000001255",
+          "label": "C-C chemokine receptor type 3"
+        },
+        {
+          "id": "PR:000001344",
+          "label": "ectonucleotide pyrophosphatase/phosphodiesterase family member 3"
+        },
+        {
+          "id": "PR:000001865",
+          "label": "interleukin-3 receptor class 2 alpha chain"
+        },
+        {
+          "id": "PR:000001950",
+          "label": "tumor necrosis factor ligand superfamily member 5"
+        },
+        {
+          "id": "PR:000007431",
+          "label": "high affinity immunoglobulin epsilon receptor subunit alpha"
+        }
+      ]
+    },
+    "CL:0000097": {
+      "id": "CL:0000097",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000097",
+      "label": "mast cell",
+      "definition": "A cell that is found in almost all tissues containing numerous basophilic granules and capable of releasing large amounts of histamine and heparin upon activation. Progenitors leave bone marrow and mature in connective and mucosal tissue. Mature mast cells are found in all tissues, except the bloodstream. Their phenotype is CD117-high, CD123-negative, CD193-positive, CD200R3-positive, and FceRI-high. Stem-cell factor (KIT-ligand; SCF) is the main controlling signal of their survival and development.",
+      "synonyms": [
+        "histaminocyte",
+        "labrocyte",
+        "mastocyte",
+        "tissue basophil"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0002274",
+          "label": "histamine secreting cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000457",
+          "label": "biogenic amine secreting cell"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "CL:0002274",
+          "label": "histamine secreting cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000831",
+          "label": "mast cell progenitor"
+        },
+        {
+          "id": "GO:0002349",
+          "label": "histamine production involved in inflammatory response"
+        },
+        {
+          "id": "GO:0002539",
+          "label": "prostaglandin production involved in inflammatory response"
+        },
+        {
+          "id": "GO:0002660",
+          "label": "positive regulation of peripheral tolerance induction"
+        },
+        {
+          "id": "GO:0002690",
+          "label": "positive regulation of leukocyte chemotaxis"
+        },
+        {
+          "id": "GO:0002830",
+          "label": "positive regulation of type 2 immune response"
+        },
+        {
+          "id": "GO:0030141",
+          "label": "secretory granule"
+        },
+        {
+          "id": "GO:0030210",
+          "label": "heparin proteoglycan biosynthetic process"
+        },
+        {
+          "id": "PR:000001255",
+          "label": "C-C chemokine receptor type 3"
+        },
+        {
+          "id": "PR:000001865",
+          "label": "interleukin-3 receptor class 2 alpha chain"
+        },
+        {
+          "id": "PR:000002065",
+          "label": "mast/stem cell growth factor receptor"
+        },
+        {
+          "id": "PR:000006169",
+          "label": "cell surface glycoprotein CD200 receptor 3"
+        },
+        {
+          "id": "PR:000007431",
+          "label": "high affinity immunoglobulin epsilon receptor subunit alpha"
+        }
+      ]
+    },
+    "CL:0000576": {
+      "id": "CL:0000576",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000576",
+      "label": "monocyte",
+      "definition": "Monocytes are a type of white blood cell that constitute part of the mononuclear phagocyte system. They feature prominently in the human body's first line of defense against foreign substances as a part of the innate immune system. Monocytes are the largest of all circulating leukocytes and are identified by their bean-shaped nucleus. They are produced in the bone marrow and circulate in the bloodstream; in some conditions, they may enter tissues and differentiate into macrophages or dendritic cells or a distinct monocyte-derived cell.\nMonocytes function effectively as phagocytes, devouring harmful pathogens in the body. They engulf and destroy microbes, foreign substances, cancer cells, and other materials detrimental to the body's well-being. This process, known as phagocytosis, is vital for the body's immune response. Monocytes are also equipped to identify harmful pathogens and alert other immune cells to their presence. This is achieved by producing proinflammatory cytokines that recruit other immune cells to the affected area, amplifying the immune response.\nBeyond their role in fighting infections, monocytes play an important role in the repair and healing of tissues. After an infection or inflammation subsides, monocytes can transition into different types of cells and assist in healing by clearing dead cells and debris and facilitating tissue regeneration. They are crucial in wound healing, control of microbial growth, and tissue development.\n\n(This extended description was generated by ChatGPT and reviewed by the CellGuide team, who added references, and by the CL editors, who approved it for inclusion in CL. It may contain information that applies only to some subtypes and species, and so should not be considered definitional.)",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000113",
+          "label": "mononuclear phagocyte"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000113",
+          "label": "mononuclear phagocyte"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000234",
+          "label": "phagocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0000518",
+          "label": "phagocyte (sensu Vertebrata)"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        },
+        {
+          "id": "CL:0011115",
+          "label": "precursor cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000559",
+          "label": "promonocyte"
+        },
+        {
+          "id": "GO:0030225",
+          "label": "macrophage differentiation"
+        },
+        {
+          "id": "GO:0030316",
+          "label": "osteoclast differentiation"
+        },
+        {
+          "id": "GO:0043011",
+          "label": "myeloid dendritic cell differentiation"
+        }
+      ]
+    },
+    "CL:0000235": {
+      "id": "CL:0000235",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000235",
+      "label": "macrophage",
+      "definition": "A mononuclear phagocyte present in variety of tissues, typically differentiated from monocytes, capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells.",
+      "synonyms": [
+        "histiocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000113",
+          "label": "mononuclear phagocyte"
+        },
+        {
+          "id": "CL:0000145",
+          "label": "professional antigen presenting cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000113",
+          "label": "mononuclear phagocyte"
+        },
+        {
+          "id": "CL:0000145",
+          "label": "professional antigen presenting cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000234",
+          "label": "phagocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0000518",
+          "label": "phagocyte (sensu Vertebrata)"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000576",
+          "label": "monocyte"
+        },
+        {
+          "id": "GO:0031268",
+          "label": "pseudopodium organization"
+        }
+      ]
+    },
+    "CL:0000092": {
+      "id": "CL:0000092",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000092",
+      "label": "osteoclast",
+      "definition": "A specialized phagocytic cell associated with the absorption and removal of the mineralized matrix of bone tissue, which typically differentiates from monocytes. This cell has the following markers: tartrate-resistant acid phosphatase type 5-positive, PU.1-positive, c-fos-positive, nuclear factor NF-kappa-B p100 subunit-positive, tumor necrosis factor receptor superfamily member 11A-positive and macrophage colony-stimulating factor 1 receptor-positive.",
+      "synonyms": [
+        "chondroclast"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000518",
+          "label": "phagocyte (sensu Vertebrata)"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0001035",
+          "label": "bone cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000234",
+          "label": "phagocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0000518",
+          "label": "phagocyte (sensu Vertebrata)"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0001035",
+          "label": "bone cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000576",
+          "label": "monocyte"
+        },
+        {
+          "id": "GO:0045453",
+          "label": "bone resorption"
+        },
+        {
+          "id": "PR:000001850",
+          "label": "cathepsin K"
+        },
+        {
+          "id": "PR:000001937",
+          "label": "tartrate-resistant acid phosphatase type 5"
+        },
+        {
+          "id": "PR:000001944",
+          "label": "transcription factor PU.1"
+        },
+        {
+          "id": "PR:000001954",
+          "label": "tumor necrosis factor receptor superfamily member 11A"
+        },
+        {
+          "id": "PR:000002062",
+          "label": "macrophage colony-stimulating factor 1 receptor"
+        },
+        {
+          "id": "PR:000007597",
+          "label": "protein c-Fos"
+        },
+        {
+          "id": "PR:000011178",
+          "label": "nuclear factor NF-kappa-B p100 subunit"
+        }
+      ]
+    },
+    "CL:0000091": {
+      "id": "CL:0000091",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000091",
+      "label": "Kupffer cell",
+      "definition": "A tissue-resident macrophage of the reticuloendothelial system found on the luminal surface of the hepatic sinusoids involved in erythrocyte clearance. Markers include F4/80+, CD11b-low, CD68-positive, sialoadhesin-positive, CD163/SRCR-positive. Irregular, with long processes including lamellipodia extending into the sinusoid lumen, have flattened nucleus with cytoplasm containing characteristic invaginations of the plasma membrane (vermiform bodies); lie within the sinusoid lumen attached to the endothelial surface; derived from the bone marrow, form a major part of the body's mononuclear phagocyte system.",
+      "synonyms": [
+        "hepatic macrophage",
+        "littoral cell of hepatic sinusoid",
+        "liver macrophage",
+        "macrophagocytus stellatus",
+        "stellate cell of von Kupffer",
+        "von Kupffer cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000864",
+          "label": "tissue-resident macrophage"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000113",
+          "label": "mononuclear phagocyte"
+        },
+        {
+          "id": "CL:0000145",
+          "label": "professional antigen presenting cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000234",
+          "label": "phagocyte"
+        },
+        {
+          "id": "CL:0000235",
+          "label": "macrophage"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0000518",
+          "label": "phagocyte (sensu Vertebrata)"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000864",
+          "label": "tissue-resident macrophage"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0034102",
+          "label": "erythrocyte clearance"
+        },
+        {
+          "id": "PR:000001012",
+          "label": "integrin alpha-M"
+        },
+        {
+          "id": "PR:000001813",
+          "label": "adhesion G protein-coupled receptor E1"
+        },
+        {
+          "id": "PR:000001925",
+          "label": "scavenger receptor cysteine-rich type 1 protein M130"
+        },
+        {
+          "id": "PR:000002064",
+          "label": "macrosialin"
+        },
+        {
+          "id": "UBERON:0001281",
+          "label": "hepatic sinusoid"
+        }
+      ]
+    },
+    "CL:0000583": {
+      "id": "CL:0000583",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000583",
+      "label": "alveolar macrophage",
+      "definition": "A tissue-resident macrophage found in the alveoli of the lungs. Ingests small inhaled particles resulting in degradation and presentation of the antigen to immunocompetent cells. Markers include F4/80-positive, CD11b-/low, CD11c-positive, CD68-positive, sialoadhesin-positive, dectin-1-positive, MR-positive, CX3CR1-negative.",
+      "synonyms": [
+        "MF.Lu",
+        "dust cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000864",
+          "label": "tissue-resident macrophage"
+        },
+        {
+          "id": "CL:1001603",
+          "label": "lung macrophage"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000113",
+          "label": "mononuclear phagocyte"
+        },
+        {
+          "id": "CL:0000145",
+          "label": "professional antigen presenting cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000234",
+          "label": "phagocyte"
+        },
+        {
+          "id": "CL:0000235",
+          "label": "macrophage"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0000518",
+          "label": "phagocyte (sensu Vertebrata)"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000864",
+          "label": "tissue-resident macrophage"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "CL:1001603",
+          "label": "lung macrophage"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CLM:1000003",
+          "label": "NS forest marker set of alveolar macrophage (Human lung)."
+        },
+        {
+          "id": "PR:000001012",
+          "label": "integrin alpha-M"
+        },
+        {
+          "id": "PR:000001013",
+          "label": "integrin alpha-X"
+        },
+        {
+          "id": "PR:000001206",
+          "label": "CX3C chemokine receptor 1"
+        },
+        {
+          "id": "PR:000001807",
+          "label": "C-type lectin domain family 7 member A"
+        },
+        {
+          "id": "PR:000001813",
+          "label": "adhesion G protein-coupled receptor E1"
+        },
+        {
+          "id": "PR:000001931",
+          "label": "sialoadhesin"
+        },
+        {
+          "id": "PR:000002064",
+          "label": "macrosialin"
+        },
+        {
+          "id": "PR:000002972",
+          "label": "macrophage mannose receptor 1"
+        },
+        {
+          "id": "UBERON:8850000",
+          "label": "lumen of pulmonary alveolus"
+        }
+      ]
+    },
+    "CL:0000129": {
+      "id": "CL:0000129",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000129",
+      "label": "microglial cell",
+      "definition": "A transcriptomically distinct central nervous system macrophage found in the parenchyma of the central nervous system. Marker include CD11b-positive, F4/80-positive, and CD68-positive.",
+      "synonyms": [
+        "MF.microglia.CNS",
+        "brain macrophage",
+        "brain-resident macrophage",
+        "hortega cells",
+        "microglia",
+        "microgliocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000125",
+          "label": "glial cell"
+        },
+        {
+          "id": "CL:0000878",
+          "label": "central nervous system macrophage"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000095",
+          "label": "neuron associated cell"
+        },
+        {
+          "id": "CL:0000113",
+          "label": "mononuclear phagocyte"
+        },
+        {
+          "id": "CL:0000125",
+          "label": "glial cell"
+        },
+        {
+          "id": "CL:0000145",
+          "label": "professional antigen presenting cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000234",
+          "label": "phagocyte"
+        },
+        {
+          "id": "CL:0000235",
+          "label": "macrophage"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0000518",
+          "label": "phagocyte (sensu Vertebrata)"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000864",
+          "label": "tissue-resident macrophage"
+        },
+        {
+          "id": "CL:0000878",
+          "label": "central nervous system macrophage"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000034",
+          "label": "stem cell"
+        },
+        {
+          "id": "CL:0000222",
+          "label": "mesodermal cell"
+        },
+        {
+          "id": "GO:0045087",
+          "label": "innate immune response"
+        },
+        {
+          "id": "PR:000001012",
+          "label": "integrin alpha-M"
+        },
+        {
+          "id": "PR:000001813",
+          "label": "adhesion G protein-coupled receptor E1"
+        },
+        {
+          "id": "PR:000002064",
+          "label": "macrosialin"
+        }
+      ]
+    },
+    "CL:0000451": {
+      "id": "CL:0000451",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000451",
+      "label": "dendritic cell",
+      "definition": "A cell of hematopoietic origin, typically resident in particular tissues, specialized in the uptake, processing, and transport of antigens to lymph nodes for the purpose of stimulating an immune response via T cell activation. These cells are lineage negative (CD3-negative, CD19-negative, CD34-negative, and CD56-negative).",
+      "synonyms": [
+        "interdigitating cell",
+        "veiled cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000113",
+          "label": "mononuclear phagocyte"
+        },
+        {
+          "id": "CL:0000145",
+          "label": "professional antigen presenting cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000113",
+          "label": "mononuclear phagocyte"
+        },
+        {
+          "id": "CL:0000145",
+          "label": "professional antigen presenting cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000234",
+          "label": "phagocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0000518",
+          "label": "phagocyte (sensu Vertebrata)"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0001816",
+          "label": "cytokine production"
+        },
+        {
+          "id": "GO:0042613",
+          "label": "MHC class II protein complex"
+        },
+        {
+          "id": "GO:0045580",
+          "label": "regulation of T cell differentiation"
+        },
+        {
+          "id": "PR:000001002",
+          "label": "CD19 molecule"
+        },
+        {
+          "id": "PR:000001003",
+          "label": "CD34 molecule"
+        },
+        {
+          "id": "PR:000001020",
+          "label": "CD3 epsilon"
+        },
+        {
+          "id": "PR:000001024",
+          "label": "neural cell adhesion molecule 1"
+        },
+        {
+          "id": "PR:000001289",
+          "label": "membrane-spanning 4-domains subfamily A member 1"
+        }
+      ]
+    },
+    "CL:0000084": {
+      "id": "CL:0000084",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000084",
+      "label": "T cell",
+      "definition": "A type of lymphocyte whose defining characteristic is the expression of a T cell receptor complex.",
+      "synonyms": [
+        "T lymphocyte",
+        "T-cell",
+        "T-lymphocyte",
+        "immature T cell",
+        "mature T cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000542",
+          "label": "lymphocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000542",
+          "label": "lymphocyte"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000827",
+          "label": "pro-T cell"
+        },
+        {
+          "id": "GO:0002456",
+          "label": "T cell mediated immunity"
+        }
+      ]
+    },
+    "CL:0000912": {
+      "id": "CL:0000912",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000912",
+      "label": "helper T cell",
+      "definition": "A effector T cell that provides help in the form of secreted cytokines to other immune cells.",
+      "synonyms": [
+        "T-helper cell",
+        "helper T lymphocyte",
+        "helper T-cell",
+        "helper T-lymphocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000911",
+          "label": "effector T cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000084",
+          "label": "T cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000542",
+          "label": "lymphocyte"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000911",
+          "label": "effector T cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "CL:0002419",
+          "label": "mature T cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0001816",
+          "label": "cytokine production"
+        }
+      ]
+    },
+    "CL:0000910": {
+      "id": "CL:0000910",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000910",
+      "label": "cytotoxic T cell",
+      "definition": "A mature T cell that differentiated and acquired cytotoxic function with the phenotype perforin-positive and granzyme-B positive.",
+      "synonyms": [
+        "cytotoxic T lymphocyte",
+        "cytotoxic T-cell",
+        "cytotoxic T-lymphocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000911",
+          "label": "effector T cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000084",
+          "label": "T cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000542",
+          "label": "lymphocyte"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000911",
+          "label": "effector T cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "CL:0002419",
+          "label": "mature T cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0001913",
+          "label": "T cell mediated cytotoxicity"
+        }
+      ]
+    },
+    "CL:0000815": {
+      "id": "CL:0000815",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000815",
+      "label": "regulatory T cell",
+      "definition": "A T cell which regulates overall immune responses as well as the responses of other T cell subsets through direct cell-cell contact and cytokine release.",
+      "synonyms": [
+        "Treg",
+        "regulatory T lymphocyte",
+        "regulatory T-cell",
+        "regulatory T-lymphocyte",
+        "suppressor T cell",
+        "suppressor T lymphocyte",
+        "suppressor T-cell",
+        "suppressor T-lymphocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002419",
+          "label": "mature T cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000084",
+          "label": "T cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000542",
+          "label": "lymphocyte"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "CL:0002419",
+          "label": "mature T cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0050777",
+          "label": "negative regulation of immune response"
+        }
+      ]
+    },
+    "CL:0000813": {
+      "id": "CL:0000813",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000813",
+      "label": "memory T cell",
+      "definition": "A long-lived, antigen-experienced T cell that has acquired a memory phenotype including distinct surface markers and the ability to differentiate into an effector T cell upon antigen reexposure.",
+      "synonyms": [
+        "memory T lymphocyte",
+        "memory T-cell",
+        "memory T-lymphocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002419",
+          "label": "mature T cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000084",
+          "label": "T cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000542",
+          "label": "lymphocyte"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "CL:0002419",
+          "label": "mature T cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0043379",
+          "label": "memory T cell differentiation"
+        },
+        {
+          "id": "PATO:0001603",
+          "label": "increased life span"
+        }
+      ]
+    },
+    "CL:0000236": {
+      "id": "CL:0000236",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000236",
+      "label": "B cell",
+      "definition": "A lymphocyte of B lineage that is capable of B cell mediated immunity.",
+      "synonyms": [
+        "B lymphocyte",
+        "B-cell",
+        "B-lymphocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000945",
+          "label": "lymphocyte of B lineage"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000542",
+          "label": "lymphocyte"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000945",
+          "label": "lymphocyte of B lineage"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0019724",
+          "label": "B cell mediated immunity"
+        }
+      ]
+    },
+    "CL:0000786": {
+      "id": "CL:0000786",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000786",
+      "label": "plasma cell",
+      "definition": "A terminally differentiated, post-mitotic, antibody secreting cell of the B cell lineage with the phenotype CD138-positive, surface immunonoglobulin-negative, and MHC Class II-negative. Plasma cells are oval or round with extensive rough endoplasmic reticulum, a well-developed Golgi apparatus, and a round nucleus having a characteristic cartwheel heterochromatin pattern and are devoted to producing large amounts of immunoglobulin.",
+      "synonyms": [
+        "effector B cell",
+        "effector B-cell",
+        "plasma B cell",
+        "plasma B-cell",
+        "plasmacyte",
+        "plasmocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000946",
+          "label": "antibody secreting cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000542",
+          "label": "lymphocyte"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000945",
+          "label": "lymphocyte of B lineage"
+        },
+        {
+          "id": "CL:0000946",
+          "label": "antibody secreting cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000980",
+          "label": "plasmablast"
+        },
+        {
+          "id": "CL:0017508",
+          "label": "cartwheel heterochromatin"
+        },
+        {
+          "id": "GO:0005794",
+          "label": "Golgi apparatus"
+        },
+        {
+          "id": "GO:0019814",
+          "label": "immunoglobulin complex"
+        },
+        {
+          "id": "GO:0042613",
+          "label": "MHC class II protein complex"
+        },
+        {
+          "id": "PR:000001289",
+          "label": "membrane-spanning 4-domains subfamily A member 1"
+        },
+        {
+          "id": "PR:000001935",
+          "label": "syndecan-1"
+        }
+      ]
+    },
+    "CL:0000787": {
+      "id": "CL:0000787",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000787",
+      "label": "memory B cell",
+      "definition": "A memory B cell is a mature B cell that is long-lived, readily activated upon re-encounter of its antigenic determinant, and has been selected for expression of higher affinity immunoglobulin. This cell type has the phenotype CD19-positive, CD20-positive, MHC Class II-positive, and CD138-negative.",
+      "synonyms": [
+        "memory B lymphocyte",
+        "memory B-cell",
+        "memory B-lymphocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000785",
+          "label": "mature B cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000145",
+          "label": "professional antigen presenting cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000236",
+          "label": "B cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000542",
+          "label": "lymphocyte"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000785",
+          "label": "mature B cell"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000945",
+          "label": "lymphocyte of B lineage"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0001200",
+          "label": "lymphocyte of B lineage, CD19-positive"
+        },
+        {
+          "id": "CL:0001201",
+          "label": "B cell, CD19-positive"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0002344",
+          "label": "B cell affinity maturation"
+        },
+        {
+          "id": "GO:0042613",
+          "label": "MHC class II protein complex"
+        },
+        {
+          "id": "PR:000001289",
+          "label": "membrane-spanning 4-domains subfamily A member 1"
+        },
+        {
+          "id": "PR:000001935",
+          "label": "syndecan-1"
+        }
+      ]
+    },
+    "CL:0000623": {
+      "id": "CL:0000623",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000623",
+      "label": "natural killer cell",
+      "definition": "A lymphocyte that can spontaneously kill a variety of target cells without prior antigenic activation via germline encoded activation receptors and also regulate immune responses via cytokine release and direct contact with other cells.",
+      "synonyms": [
+        "NK cell",
+        "large granular lymphocyte",
+        "null cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0001067",
+          "label": "group 1 innate lymphoid cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000542",
+          "label": "lymphocyte"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0001065",
+          "label": "innate lymphoid cell"
+        },
+        {
+          "id": "CL:0001067",
+          "label": "group 1 innate lymphoid cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000825",
+          "label": "pro-NK cell"
+        },
+        {
+          "id": "GO:0002228",
+          "label": "natural killer cell mediated immunity"
+        },
+        {
+          "id": "GO:0050776",
+          "label": "regulation of immune response"
+        },
+        {
+          "id": "PR:000001289",
+          "label": "membrane-spanning 4-domains subfamily A member 1"
+        },
+        {
+          "id": "PR:000001889",
+          "label": "CD14 molecule"
+        }
+      ]
+    }
+  }
+}

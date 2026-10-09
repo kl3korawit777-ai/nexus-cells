@@ -1,0 +1,384 @@
+/* Nexus · ใยเซลล์ — โทนสีย้อมสไลด์เลือด Wright-Giemsa
+   ชมพู eosin · ม่วง hematoxylin · น้ำเงิน methylene blue */
+
+:root {
+  color-scheme: light dark;
+  --bg: #f6f2fb;
+  --surface: #ffffff;
+  --surface-2: #efe9f7;
+  --ink: #2a2140;
+  --muted: #62597c;
+  --line: #ddd4ec;
+  --accent: #5b3fa0;          /* hematoxylin */
+  --accent-ink: #ffffff;
+  --eosin: #c93b72;
+  --methylene: #2f64ac;
+  --focus: #1b64d8;
+  --exam-bg: #fff1f6;
+  --exam-line: #e58aab;
+  --warn-bg: #fff6e0;
+  --warn-ink: #7a5200;
+  --node-border: #ffffff;
+
+  /* สีจุดตามชนิดย่อยของเนื้อเยื่อ (--st-<id>) ถ้าไม่มีจะใช้ --p1..--p6 */
+  --st-blood: #d94a7e;
+  --st-hematopoietic: #7a55c4;
+  --st-lymphoid: #3f72b8;
+  --st-loose: #d98a3d;
+  --st-bone: #a68b6a;
+  --st-glia: #4fa37a;
+  --st-other: #8a83a0;
+  --p1: #3aa6a0; --p2: #c9a227; --p3: #8a6fd1; --p4: #d26a5a; --p5: #5a9bd4; --p6: #7aa648;
+
+  --edge-dev: #5b3fa0;
+  --edge-isa: #7b7390;
+  --edge-int: #0f8f86;
+  /* ประเภทเส้น interacts_with */
+  --mode-hormone: #d2561f;
+  --mode-synapse: #2f64ac;
+  --mode-paracrine: #b58a00;
+  --mode-support: #3f8f4f;
+  --mode-immune: #0f8f86;
+
+  --font: "IBM Plex Sans Thai", "Noto Sans Thai", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --radius: 14px;
+  --shadow: 0 1px 2px rgba(60, 40, 110, .08), 0 4px 14px rgba(60, 40, 110, .07);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14101f;
+    --surface: #1e1830;
+    --surface-2: #2a2242;
+    --ink: #eee9f8;
+    --muted: #b3a9cc;
+    --line: #3a3156;
+    --accent: #a98bf0;
+    --accent-ink: #1a1230;
+    --eosin: #f27aa5;
+    --methylene: #7fb0f0;
+    --focus: #8ab8ff;
+    --exam-bg: #34182a;
+    --exam-line: #b4577e;
+    --warn-bg: #3a2e12;
+    --warn-ink: #f0cf85;
+    --node-border: #1e1830;
+
+    --st-blood: #f0709c;
+    --st-hematopoietic: #a283ea;
+    --st-lymphoid: #6c9be0;
+    --st-loose: #e8a55e;
+    --st-bone: #c4a987;
+    --st-glia: #6cc39a;
+    --st-other: #a49cbc;
+    --p1: #5cc4be; --p2: #e0c04a; --p3: #ad94ee; --p4: #ec8c7c; --p5: #7db7ec; --p6: #9bc766;
+
+    --edge-dev: #b79cf5;
+    --edge-isa: #a79fc0;
+    --edge-int: #4fd0c5;
+    --mode-hormone: #ff915f;
+    --mode-synapse: #7fb0f0;
+    --mode-paracrine: #e8c24a;
+    --mode-support: #7fd18f;
+    --mode-immune: #4fd0c5;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 4px 14px rgba(0, 0, 0, .3);
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+h1, h2, h3, p, ul, ol, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { color: var(--eosin); }
+button { font: inherit; color: inherit; }
+img { max-width: 100%; display: block; }
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.skip-link {
+  position: absolute; left: 8px; top: -60px; z-index: 100;
+  background: var(--accent); color: var(--accent-ink);
+  padding: 8px 14px; border-radius: 8px;
+}
+.skip-link:focus { top: 8px; }
+
+/* ---------- โครงหน้า ---------- */
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  padding: 10px 16px;
+}
+.brand {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-weight: 700; font-size: 1.1rem;
+  color: var(--ink); text-decoration: none;
+}
+.brand-mark { width: 30px; height: 30px; color: var(--accent); }
+.brand-mark .m-a { fill: var(--st-hematopoietic); }
+.brand-mark .m-b { fill: var(--st-blood); }
+.brand-mark .m-c { fill: var(--st-lymphoid); }
+
+main { flex: 1; width: 100%; max-width: 1180px; margin: 0 auto; padding: 20px 16px 40px; }
+main:focus { outline: none; }
+.site-footer { padding: 18px 16px 28px; text-align: center; color: var(--muted); font-size: .85rem; }
+.loading, .empty { color: var(--muted); padding: 24px 0; }
+
+.crumb { display: inline-block; margin-bottom: 8px; font-size: .92rem; }
+.eyebrow { color: var(--muted); font-size: .9rem; }
+
+.page-title { font-size: clamp(1.6rem, 5vw, 2.3rem); line-height: 1.25; font-weight: 700; }
+.sub-title { color: var(--muted); font-size: 1.05rem; }
+h2.section { font-size: 1.2rem; font-weight: 600; margin: 28px 0 12px; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+
+/* ---------- ป้าย ---------- */
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  font-size: .85rem; line-height: 1.6;
+  color: var(--ink); text-decoration: none;
+}
+a.chip:hover { border-color: var(--accent); color: var(--ink); }
+.dot { width: 10px; height: 10px; border-radius: 50%; flex: none; background: var(--muted); }
+.chip-warn { background: var(--warn-bg); color: var(--warn-ink); border-color: transparent; }
+.chip-ok { background: var(--surface-2); color: var(--methylene); }
+.mono { font-family: var(--mono); font-size: .88em; }
+
+/* ---------- หน้าแรก ---------- */
+.hero { padding: 12px 0 8px; }
+.hero .page-title { margin-bottom: 4px; }
+.search { position: relative; max-width: 560px; margin-top: 18px; }
+.search label { display: block; font-weight: 500; margin-bottom: 4px; }
+.search input {
+  width: 100%; padding: 12px 14px;
+  border: 1.5px solid var(--line); border-radius: 12px;
+  background: var(--surface); color: var(--ink);
+  font: inherit;
+}
+.search input:focus-visible { outline-offset: 0; border-color: var(--focus); }
+.search-results {
+  position: absolute; left: 0; right: 0; z-index: 20; top: 100%;
+  margin-top: 6px;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 12px; box-shadow: var(--shadow); overflow: hidden;
+}
+.search-results a {
+  display: grid; grid-template-columns: 1fr auto; gap: 2px 12px;
+  padding: 9px 14px; color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+.search-results li:last-child a { border-bottom: 0; }
+.search-results a:hover, .search-results a:focus-visible { background: var(--surface-2); outline-offset: -3px; }
+.search-results .en { color: var(--muted); font-size: .88rem; }
+.search-results .mono { color: var(--muted); grid-row: 1 / span 2; grid-column: 2; align-self: center; }
+.search-note { padding: 10px 14px; color: var(--muted); }
+
+.sys-grid {
+  display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+}
+.sys-card {
+  display: block; position: relative;
+  padding: 14px 16px 14px 20px;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  color: var(--ink); text-decoration: none;
+  overflow: hidden;
+}
+.sys-card::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px;
+  background: var(--sys-color, var(--accent));
+}
+a.sys-card:hover { border-color: var(--sys-color, var(--accent)); color: var(--ink); transform: translateY(-1px); }
+.sys-card .th { font-weight: 600; font-size: 1.05rem; }
+.sys-card .en { color: var(--muted); font-size: .9rem; }
+.sys-card .meta { margin-top: 8px; font-size: .88rem; color: var(--muted); }
+.sys-card[aria-disabled="true"] { opacity: .62; box-shadow: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .sys-card { transition: transform .15s, border-color .15s; }
+}
+
+.tissue-row {
+  display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+}
+.tissue-card { padding: 12px 14px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); }
+.tissue-card h3 { font-size: 1rem; font-weight: 600; }
+.tissue-card .en { color: var(--muted); font-size: .88rem; }
+.tissue-card .chips { margin-top: 8px; }
+.tissue-card .chip { font-size: .78rem; padding: 0 8px; }
+
+/* ---------- ใยรายระบบ ---------- */
+.sys-head { margin-bottom: 12px; }
+.sys-head .sub-title .dot { display: inline-block; margin-right: 6px; }
+.sys-head p.summary { margin-top: 6px; max-width: 70ch; }
+
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin: 12px 0 8px; }
+.btn-group { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--surface); }
+.btn-group button { border: 0; background: transparent; padding: 7px 14px; cursor: pointer; }
+.btn-group button + button { border-left: 1px solid var(--line); }
+.btn-group button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+.btn {
+  border: 1px solid var(--line); background: var(--surface);
+  padding: 7px 14px; border-radius: 10px; cursor: pointer;
+}
+.btn:hover { border-color: var(--accent); }
+.btn-primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); text-decoration: none; display: inline-block; }
+.btn-primary:hover { color: var(--accent-ink); filter: brightness(1.1); }
+
+.toggle {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 12px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--surface); cursor: pointer;
+}
+.toggle[aria-pressed="false"] { opacity: .6; }
+.toggle svg { width: 34px; height: 12px; flex: none; }
+.toggle[aria-pressed="false"] .label { text-decoration: line-through; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .86rem; color: var(--muted); margin: 6px 0 10px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend .sw { width: 12px; height: 12px; border-radius: 50%; }
+.legend .sw.cls { border-radius: 3px; border: 2px dashed currentColor; background: transparent; }
+.legend .sw.ring { background: transparent; border: 3px double currentColor; }
+
+.edge-info {
+  min-height: 2.2em; margin: 4px 0 8px; padding: 6px 12px;
+  border-left: 4px solid var(--accent); background: var(--surface-2);
+  border-radius: 0 8px 8px 0; font-size: .95rem;
+}
+.edge-info:empty { display: none; }
+
+.sys-body { display: grid; gap: 14px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 900px) {
+  .sys-body { grid-template-columns: minmax(0, 1fr) 320px; align-items: start; }
+}
+.graph-wrap {
+  position: relative; background: var(--surface);
+  border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+  height: min(72vh, 680px); min-height: 420px;
+}
+.graph-wrap .cy { position: absolute; inset: 0; }
+.graph-hint { font-size: .84rem; color: var(--muted); margin-top: 6px; }
+
+.peek { position: sticky; top: 12px; }
+.peek h2 { font-size: 1.25rem; line-height: 1.3; }
+.peek .en { color: var(--muted); }
+.peek .chips { margin: 10px 0; }
+.peek p { margin: 8px 0; font-size: .95rem; }
+.peek .actions { margin-top: 12px; }
+.peek-empty { color: var(--muted); font-size: .95rem; }
+
+/* มุมมองรายการ */
+.list-view { display: grid; gap: 18px; }
+.list-group h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 4px; }
+.list-group h4 { font-size: .9rem; font-weight: 500; color: var(--muted); margin: 10px 0 6px; }
+.cell-list { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); }
+.cell-list a {
+  display: block; padding: 9px 12px 9px 14px; position: relative;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  color: var(--ink); text-decoration: none;
+}
+.cell-list a::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: var(--c, var(--muted)); border-radius: 10px 0 0 10px; }
+.cell-list a:hover { border-color: var(--accent); }
+.cell-list .th { font-weight: 500; }
+.cell-list .en { color: var(--muted); font-size: .88rem; }
+.cell-list .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 2px; }
+.cell-list .tags .chip { font-size: .74rem; padding: 0 8px; }
+
+/* ---------- หน้าเซลล์ ---------- */
+.cell-hero { display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 760px) { .cell-hero { grid-template-columns: 340px minmax(0, 1fr); } }
+.figure { margin: 0; }
+.figure img { width: 100%; border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface-2); }
+.figure figcaption { font-size: .8rem; color: var(--muted); margin-top: 6px; }
+.img-missing {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 4px;
+  aspect-ratio: 4 / 3; padding: 16px;
+  border: 2px dashed var(--line); border-radius: var(--radius); color: var(--muted);
+  background: repeating-linear-gradient(135deg, transparent 0 12px, var(--surface-2) 12px 13px);
+}
+.img-missing strong { color: var(--ink); font-weight: 500; }
+.img-missing code { font-family: var(--mono); font-size: .8rem; word-break: break-all; }
+.cell-title h1 { font-size: clamp(1.7rem, 6vw, 2.4rem); line-height: 1.2; font-weight: 700; }
+.cell-title .en { font-size: 1.2rem; color: var(--muted); }
+.cell-title .ids { margin: 8px 0; display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
+.cell-title .chips { margin: 8px 0; }
+.synonyms { color: var(--muted); font-size: .92rem; }
+
+.def-box { margin-top: 14px; padding: 12px 14px; border-left: 4px solid var(--methylene); background: var(--surface-2); border-radius: 0 10px 10px 0; }
+.def-box h2 { font-size: .85rem; font-weight: 600; color: var(--muted); margin-bottom: 2px; }
+.def-box p { font-size: .95rem; }
+
+.facts { display: grid; gap: 12px; margin-top: 18px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.fact h2 { font-size: .85rem; font-weight: 600; color: var(--muted); margin-bottom: 2px; }
+.exam {
+  margin-top: 18px; padding: 14px 16px;
+  background: var(--exam-bg); border: 2px solid var(--exam-line); border-radius: var(--radius);
+}
+.exam h2 { font-size: 1.05rem; font-weight: 700; color: var(--eosin); margin-bottom: 4px; }
+.exam h2::before { content: "★ "; }
+.bullets { padding-left: 1.2em; list-style: disc; }
+.bullets li { margin: 2px 0; }
+
+.relations { display: grid; gap: 14px; margin-top: 8px; }
+.rel-group h3 { font-size: .95rem; font-weight: 600; margin-bottom: 6px; }
+.rel-list { display: grid; gap: 6px; }
+.rel-list li { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.rel-list .note { color: var(--muted); font-size: .9rem; }
+.mini-graph { height: 300px; position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.mini-graph .cy { position: absolute; inset: 0; }
+.refs { font-size: .9rem; color: var(--muted); }
+
+.notfound { text-align: center; padding: 48px 8px; }
+.notfound h1 { font-size: 1.6rem; margin-bottom: 8px; }
+.notfound p { color: var(--muted); margin-bottom: 16px; }
+
+@media (max-width: 480px) {
+  main { padding: 14px 16px 32px; }
+  .graph-wrap { min-height: 520px; height: 78vh; }
+  .toolbar { gap: 6px 8px; }
+  .toggle, .btn, .btn-group button { padding: 5px 10px; font-size: .9rem; }
+  .toggle svg { width: 28px; }
+  .legend { font-size: .8rem; gap: 4px 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+[hidden] { display: none !important; }
+
+.mode-chip { border-color: transparent; color: #fff; font-size: .75rem; padding: 0 8px; }
+.mode-chip[data-mode="hormone"] { background: #b8461a; }
+.mode-chip[data-mode="synapse"] { background: #2f64ac; }
+.mode-chip[data-mode="paracrine"] { background: #8a6a00; }
+.mode-chip[data-mode="support"] { background: #2f7a40; }
+.mode-chip[data-mode="immune"] { background: #0b7771; }
+.legend .sw.ghost { border: 2px dotted currentColor; background: transparent; opacity: .7; }

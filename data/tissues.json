@@ -1,0 +1,94 @@
+[
+  {
+    "id": "epithelial",
+    "th": "เนื้อเยื่อบุผิว",
+    "en": "Epithelial tissue",
+    "color": "#3FA7A0",
+    "cl_class": "CL:0000066",
+    "features": "เซลล์เรียงชิดกันเป็นแผ่นบนเยื่อชั้นฐาน (basement membrane) มีเมทริกซ์นอกเซลล์น้อย ไม่มีหลอดเลือดภายในเนื้อเยื่อ มีขั้ว (polarity) ด้านบน (apical) และด้านล่าง (basal)",
+    "location": "ผิวด้านนอกของร่างกาย บุผิวด้านในของท่อและโพรง และเป็นเนื้อเยื่อของต่อม",
+    "function": "ปกป้อง ดูดซึม สร้างและหลั่งสาร และรับความรู้สึก",
+    "germ_layers": ["ectoderm", "mesoderm", "endoderm"],
+    "image": null,
+    "subtypes": [
+      { "id": "simple-squamous", "th": "บุผิวชั้นเดียวเซลล์แบน", "en": "Simple squamous epithelium" },
+      { "id": "simple-cuboidal", "th": "บุผิวชั้นเดียวเซลล์ลูกบาศก์", "en": "Simple cuboidal epithelium" },
+      { "id": "simple-columnar", "th": "บุผิวชั้นเดียวเซลล์ทรงสูง", "en": "Simple columnar epithelium" },
+      { "id": "stratified-squamous", "th": "บุผิวหลายชั้นเซลล์แบน", "en": "Stratified squamous epithelium" },
+      { "id": "pseudostratified", "th": "บุผิวหลายชั้นเทียม", "en": "Pseudostratified epithelium" },
+      { "id": "transitional", "th": "บุผิวเปลี่ยนรูป", "en": "Transitional epithelium (urothelium)" },
+      { "id": "glandular", "th": "เนื้อเยื่อบุผิวต่อม", "en": "Glandular epithelium" }
+    ]
+  },
+  {
+    "id": "connective",
+    "th": "เนื้อเยื่อเกี่ยวพัน",
+    "en": "Connective tissue",
+    "color": "#E0457B",
+    "cl_class": "CL:0002320",
+    "features": "เซลล์กระจายอยู่ในเมทริกซ์นอกเซลล์ (extracellular matrix) ที่ประกอบด้วยเส้นใยและสารพื้น เลือดจัดเป็นเนื้อเยื่อเกี่ยวพันชนิดหนึ่ง เพราะมีเซลล์ลอยอยู่ในเมทริกซ์ของเหลวคือพลาสมา",
+    "location": "พบทั่วร่างกาย ได้แก่ ใต้ผิวหนัง รอบอวัยวะ กระดูก กระดูกอ่อน เลือด และไขกระดูก",
+    "function": "ค้ำจุน เชื่อมต่อ ยึดอวัยวะ กักเก็บพลังงาน ลำเลียงสาร และป้องกันร่างกาย",
+    "germ_layers": ["mesoderm"],
+    "image": null,
+    "subtypes": [
+      { "id": "loose", "th": "เนื้อเยื่อเกี่ยวพันชนิดหลวม", "en": "Loose connective tissue" },
+      { "id": "dense", "th": "เนื้อเยื่อเกี่ยวพันชนิดแน่น", "en": "Dense connective tissue" },
+      { "id": "adipose", "th": "เนื้อเยื่อไขมัน", "en": "Adipose tissue" },
+      { "id": "cartilage", "th": "กระดูกอ่อน", "en": "Cartilage" },
+      { "id": "bone", "th": "กระดูก", "en": "Bone" },
+      { "id": "blood", "th": "เลือด", "en": "Blood" },
+      { "id": "hematopoietic", "th": "เนื้อเยื่อสร้างเม็ดเลือด", "en": "Hematopoietic tissue" },
+      { "id": "lymphoid", "th": "เนื้อเยื่อน้ำเหลือง", "en": "Lymphoid tissue" }
+    ]
+  },
+  {
+    "id": "muscle",
+    "th": "เนื้อเยื่อกล้ามเนื้อ",
+    "en": "Muscle tissue",
+    "color": "#D9534F",
+    "cl_class": "CL:0000187",
+    "features": "เซลล์ยาวที่มีโปรตีนแอกทินและไมโอซินเรียงตัวเป็นโครงสร้างหดตัวได้ แบ่งเป็นสามชนิดตามลักษณะลายและการควบคุม",
+    "location": "กล้ามเนื้อที่ยึดกับกระดูก ผนังอวัยวะกลวง และผนังหัวใจ",
+    "function": "หดตัวเพื่อสร้างแรงและการเคลื่อนไหว",
+    "germ_layers": ["mesoderm"],
+    "image": null,
+    "subtypes": [
+      { "id": "skeletal-muscle", "th": "กล้ามเนื้อลาย", "en": "Skeletal muscle" },
+      { "id": "smooth-muscle", "th": "กล้ามเนื้อเรียบ", "en": "Smooth muscle" },
+      { "id": "cardiac-muscle", "th": "กล้ามเนื้อหัวใจ", "en": "Cardiac muscle" }
+    ]
+  },
+  {
+    "id": "nervous",
+    "th": "เนื้อเยื่อประสาท",
+    "en": "Nervous tissue",
+    "color": "#8E6FD8",
+    "cl_class": "CL:0002319",
+    "features": "ประกอบด้วยเซลล์ประสาท (neuron) ที่สร้างและส่งสัญญาณไฟฟ้า และเซลล์เกลีย (glia) ที่คอยสนับสนุน",
+    "location": "สมอง ไขสันหลัง และเส้นประสาท",
+    "function": "รับ ประมวลผล และส่งสัญญาณ ควบคุมการทำงานของร่างกาย",
+    "germ_layers": ["ectoderm"],
+    "image": null,
+    "subtypes": [
+      { "id": "neuron", "th": "เซลล์ประสาท", "en": "Neuron" },
+      { "id": "glia", "th": "เซลล์เกลีย", "en": "Glia" }
+    ]
+  },
+  {
+    "id": "other",
+    "th": "อื่น ๆ",
+    "en": "Other",
+    "color": "#9AA0A6",
+    "cl_class": null,
+    "features": "หมวดสำหรับเซลล์ที่ไม่เข้ากับเนื้อเยื่อหลักทั้งสี่ประเภท",
+    "location": "",
+    "function": "",
+    "germ_layers": [],
+    "image": null,
+    "subtypes": [
+      { "id": "germ-cell", "th": "เซลล์สืบพันธุ์", "en": "Germ cell" },
+      { "id": "stem-progenitor", "th": "สเต็มเซลล์และเซลล์ตั้งต้น", "en": "Stem and progenitor cell" }
+    ]
+  }
+]

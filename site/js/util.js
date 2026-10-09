@@ -1,0 +1,43 @@
+// ตัวช่วยทั่วไป: สร้าง DOM อย่างปลอดภัย (ไม่ใช้ innerHTML กับข้อมูล) และอ่านค่าธีม
+
+export function h(tag, attrs = {}, ...children) {
+  const node = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (v == null || v === false) continue;
+    if (k === 'class') node.className = v;
+    else if (k === 'text') node.textContent = v;
+    else if (k.startsWith('on') && typeof v === 'function') node.addEventListener(k.slice(2), v);
+    else node.setAttribute(k, v === true ? '' : v);
+  }
+  for (const c of children.flat(Infinity)) {
+    if (c == null || c === false) continue;
+    node.append(c.nodeType ? c : document.createTextNode(String(c)));
+  }
+  return node;
+}
+
+// CL:0000775 <-> CL_0000775 (ใช้ใน hash)
+export const idToHash = (id) => id.replace(':', '_');
+export const hashToId = (s) => s.replace('_', ':');
+
+export const cellHref = (id) => '#/cell/' + idToHash(id);
+export const systemHref = (id) => '#/system/' + encodeURIComponent(id);
+
+export function cssVar(name) {
+  return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+}
+
+export const reducedMotion = () =>
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// เรียก callback เมื่อธีมสว่าง/มืดของระบบเปลี่ยน
+const schemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const themeListeners = new Set();
+schemeQuery.addEventListener('change', () => themeListeners.forEach((fn) => fn()));
+export function onThemeChange(fn) {
+  themeListeners.add(fn);
+  return () => themeListeners.delete(fn);
+}
+
+// ตัดชื่อ "ระบบ" นำหน้า เพื่อให้ป้ายสั้นลง
+export const shortSystemName = (s) => s.th.replace(/^ระบบ/, '');

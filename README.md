@@ -1,0 +1,214 @@
+# Nexus · ใยเซลล์
+
+เว็บรวบรวมชนิดเซลล์ในร่างกายมนุษย์ ที่เชื่อมข้อมูลเป็นใยเครือข่ายตาม Cell Ontology (CL)
+ผู้ใช้หลักคือนักเรียนที่เตรียมสอบ กสพท และผู้สนใจชีววิทยาเซลล์ เนื้อหาสองภาษา (ไทย/อังกฤษ)
+เว็บเป็น static site บน GitHub Pages ใช้ Cytoscape.js
+
+**สถานะ:** ขั้นที่ 1 (โครงข้อมูล สคริปต์) และขั้นที่ 2 (หน้าเว็บระบบเลือดและภูมิคุ้มกัน) เสร็จแล้ว ยังไม่มีใยภาพรวม หน้าเนื้อเยื่อ โหมดทดสอบ เปรียบเทียบสองเซลล์ และสลับภาษา
+
+## โครงสร้างโฟลเดอร์
+
+```
+data/systems.json         ระบบอวัยวะ 11 ระบบ
+data/tissues.json         เนื้อเยื่อหลัก 4 ประเภท + หมวด other
+data/cells/<system>.json  ข้อมูลเซลล์ หนึ่งไฟล์ต่อระบบ (เขียนเอง)
+data/edges/<system>.json  เส้นใยที่คัดเอง หนึ่งไฟล์ต่อระบบ
+data/generated/           ไฟล์ที่สคริปต์สร้าง (cl_terms.json; cache/ อยู่ใน .gitignore)
+reports/                  รายงานจากสคริปต์
+scripts/nexus.py          เครื่องมือหลัก
+site/                     หน้าเว็บ (โฟลเดอร์นี้คือสิ่งที่ deploy)
+  index.html
+  css/style.css
+  js/                     main, router, views, card, graph, data, util (ES modules)
+  data/nexus.json         ข้อมูลรวมสำหรับหน้าเว็บ (สร้างจาก build ห้ามแก้เอง)
+  images/                 รูปเซลล์ ตั้งชื่อตาม slug
+```
+
+ต้องใช้ Python 3 เท่านั้น ไม่ต้องติดตั้งไลบรารีเพิ่ม
+
+## วิธีใช้สคริปต์
+
+```bash
+python scripts/nexus.py validate          # ตรวจข้อมูล
+python scripts/nexus.py fetch             # ดึงข้อมูลจาก OLS4 (Cell Ontology)
+python scripts/nexus.py build             # รวมเป็น site/data/nexus.json
+```
+
+| คำสั่ง | ทำอะไร |
+|---|---|
+| `validate` | ตรวจรูปแบบ CL ID, id/slug ซ้ำ, kind, ชื่อ en/th, ระบบและเนื้อเยื่อที่อ้างถึงมีอยู่จริง, confused_with และปลายเส้นทุกเส้น, เส้นที่ชี้หาตัวเอง, รูปที่ขาด src/credit/license แบ่งเป็น **ข้อผิดพลาด** (exit code 1) กับ **คำเตือน** (ช่องว่าง ยังไม่มีรูป หนึ่งบรรทัดต่อเซลล์) |
+| `fetch` | ดึง label, definition, synonyms, สถานะ obsolete, is_a ancestors และ develops_from ของทุก CL ID เก็บ cache รายเซลล์ แล้วรวมเป็น `data/generated/cl_terms.json` และเขียน `reports/fetch-report.md` |
+| `build` | รัน validate ก่อน (ถ้ามีข้อผิดพลาดจะไม่สร้างไฟล์) แล้วรวมข้อมูลทั้งหมดเป็น `site/data/nexus.json` และเขียน `reports/build-report.md` เทียบเส้นใยที่คัดเองกับ CL |
+
+ตัวเลือกของ `fetch`:
+
+- `--refresh` ดึงใหม่แม้มี cache
+- `--only CL:0000235,CL:0000576` ดึงเฉพาะรหัสที่ระบุ
+- `--sleep 0.2` หน่วงเวลาระหว่างคำขอ (วินาที)
+
+## ข้อมูลเซลล์ (`data/cells/<system>.json`)
+
+ไฟล์เป็นรายการ (array) ของเซลล์และหมวด ใช้ CL ID เป็นตัวหลัก
+**ไม่ต้องเก็บคำนิยามและ synonyms ภาษาอังกฤษ** สคริปต์ดึงจาก CL ให้เอง
+
+ช่องที่ช่องว่างได้ ให้เว้นว่าง (`""` หรือ `[]`) ห้ามเดา การ์ดบนเว็บจะซ่อนหัวข้อที่ว่าง
+
+### เซลล์ (`"kind": "cell"`)
+
+| ช่อง | ความหมาย |
+|---|---|
+| `id` | CL ID เช่น `CL:0000775` (7 หลัก) |
+| `slug` | ชื่อสั้น kebab-case ใช้เป็นชื่อไฟล์รูปและ URL เช่น `neutrophil` |
+| `kind` | `"cell"` |
+| `en`, `th` | ชื่ออังกฤษ (ตรงกับ label หรือ synonym ใน CL) และชื่อไทย |
+| `systems` | รายการ id ระบบ เซลล์ที่อยู่หลายระบบใส่หลายค่า |
+| `tissue`, `tissue_subtype` | id เนื้อเยื่อหลักและชนิดย่อยจาก `tissues.json` |
+| `location` | ตำแหน่งที่พบ |
+| `morphology` | ลักษณะรูปร่างและโครงสร้าง |
+| `function` | หน้าที่ |
+| `secretes` | สารที่เซลล์หลั่ง (ว่างได้ถ้าไม่หลั่งสารเด่น) |
+| `markers` | marker บนผิวเซลล์หรือในเซลล์ |
+| `lifespan` | อายุเซลล์ |
+| `exam` | จุดออกสอบและข้อควรจำ |
+| `diseases` | โรคหรือภาวะที่เกี่ยวข้อง |
+| `confused_with` | CL ID ของเซลล์ที่มักสับสน (ต้องอยู่ในชุดข้อมูล) |
+| `image` | `null` หรือ object รูป (ดูหัวข้อรูปภาพ) |
+| `verified` | `true` เมื่อตรวจเนื้อหาไทยกับตำราแล้ว (เริ่มต้น `false`) |
+| `refs` | ตำราหรือแหล่งอ้างอิงที่ใช้ตรวจ |
+
+### หมวด (`"kind": "class"`)
+
+ใช้แค่ `id`, `slug`, `kind`, `en`, `th`, `systems`, `tissue`, `tissue_subtype`, `function`, `image`, `verified`, `refs`
+หมวดคือกลุ่มกว้างของเซลล์ เช่น leukocyte, lymphocyte ไม่ใช่เซลล์ชนิดเดียว
+
+### ผลที่สคริปต์เติมให้ใน `nexus.json`
+
+- `purl` ลิงก์ถาวรของเทอมใน CL
+- `cl` ประกอบด้วย `label`, `definition`, `synonyms`, `obsolete` (ได้ค่ามาจาก `fetch`)
+
+## ระบบและเนื้อเยื่อ
+
+`systems.json`: แต่ละระบบมี `id`, `th`, `en`, `color` (`#RRGGBB`), `summary`, `organs`
+
+`tissues.json`: แต่ละประเภทมี `id`, `th`, `en`, `color`, `cl_class`, `features`, `location`, `function`, `germ_layers`, `image`, `subtypes`
+หมวด `other` ไม่มี `cl_class` สำหรับเซลล์ที่ไม่เข้าสี่ประเภท (เซลล์สืบพันธุ์ สเต็มเซลล์)
+
+เลือดจัดเป็นเนื้อเยื่อเกี่ยวพัน เซลล์สายเลือดจึงใช้ `tissue: "connective"` กับ subtype `blood`, `hematopoietic` หรือ `lymphoid` ตามตำแหน่ง
+
+## เส้นใย (`data/edges/<system>.json`)
+
+```json
+{
+  "develops_from": [["CL:ลูก", "CL:แม่"]],
+  "is_a": [["CL:ลูก", "CL:แม่"]],
+  "interacts_with": [{ "from": "CL:...", "to": "CL:...", "th": "คำอธิบายสั้น ๆ" }]
+}
+```
+
+- `develops_from` และ `is_a` เขียนเป็นคู่ **[ลูก, แม่]** เสมอ
+- `interacts_with` ไม่มีใน CL ต้องเพิ่มเอง ทิศทางจาก `from` ไปยัง `to`
+- ทุกเส้นใน `nexus.json` มี `source: "curated"` (คัดเอง)
+- ใน `nexus.json` ใช้ `from`/`to` เหมือนกันทุกชนิดเส้น โดย `develops_from` และ `is_a` มี `from` เป็นลูก `to` เป็นแม่
+
+`build-report.md` เทียบเส้น `is_a` และ `develops_from` ที่คัดเองกับ CL ให้ ใช้ตัดสินว่าจะแก้เส้นใดเอง
+(CL ระบุ `develops_from` ของเซลล์เม็ดเลือดไว้น้อย เส้นที่ "คัดเองแต่ CL ไม่มี" จึงมีมาก ไม่ได้แปลว่าผิดเสมอไป)
+
+## วิธีใส่รูป
+
+ใช้เฉพาะรูปที่ **ได้รับอนุญาตให้ใช้** เท่านั้น ห้ามใช้รูปจาก Google ทั่วไป
+แหล่งที่ใช้ได้ เช่น Wikimedia Commons และ Human Protein Atlas และรูปถ่ายเองจากกล้องจุลทรรศน์ในแลป
+
+1. ดาวน์โหลดรูปมาเก็บใน `site/images/` ตั้งชื่อตาม slug เช่น `site/images/neutrophil.jpg`
+   (การใช้ลิงก์ภายนอกเสี่ยงที่ลิงก์จะเสีย ควรเก็บรูปไว้ในเว็บ)
+2. แก้ช่อง `image` ของเซลล์:
+
+```json
+"image": {
+  "src": "images/neutrophil.jpg",
+  "credit": "ชื่อผู้สร้างรูป",
+  "license": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:...",
+  "stain": "H&E",
+  "type": "micrograph"
+}
+```
+
+- `src` นับจากโฟลเดอร์ `site/` (เช่น `images/neutrophil.jpg` คือไฟล์ `site/images/neutrophil.jpg`)
+- `src`, `credit`, `license` **จำเป็น** (validate จะแจ้งข้อผิดพลาดถ้าขาด) เว็บแสดงเครดิตใต้รูปอัตโนมัติ
+- `source` ลิงก์ต้นทาง, `stain` วิธีย้อมสี, `type` ประเภทรูป (เช่น micrograph, illustration)
+- เซลล์ที่ยังไม่มีรูปจะแสดงกรอบ "ยังไม่มีรูป"
+- ภาพวาด SVG ใช้เฉพาะเซลล์ที่หารูปไม่ได้
+- การมีลิงก์ไม่ได้ทำให้พ้นเรื่องลิขสิทธิ์ ต้องตรวจสัญญาอนุญาตทุกรูป
+
+## เปิดเว็บบนเครื่อง
+
+เว็บเป็นไฟล์ static ไม่มี build step แต่ต้องเปิดผ่านเซิร์ฟเวอร์ (เปิดไฟล์ตรง ๆ จะโหลด `nexus.json` ไม่ได้) และต้องต่ออินเทอร์เน็ตเพื่อโหลดไลบรารีกราฟและฟอนต์จาก CDN
+
+```bash
+python scripts/nexus.py build            # สร้าง site/data/nexus.json ใหม่เมื่อแก้ข้อมูล
+cd site
+python -m http.server 8000
+```
+
+แล้วเปิด http://localhost:8000/ หน้าเว็บอ่านข้อมูลจาก `site/data/nexus.json` เท่านั้น
+เมื่อเพิ่มระบบใหม่ในข้อมูลแล้วรัน `build` การ์ดระบบบนหน้าแรกและใยรายระบบจะขึ้นเองโดยไม่ต้องแก้โค้ด
+
+| ลิงก์ | หน้า |
+|---|---|
+| `#/` | หน้าแรก (ระบบ เนื้อเยื่อ ค้นหา) |
+| `#/system/blood-immune` | ใยรายระบบ (สลับเป็นมุมมองรายการได้) |
+| `#/cell/CL_0000775` | หน้าเซลล์ (CL ID ใช้ `_` แทน `:`) |
+
+## Deploy บน GitHub Pages
+
+`site/data/nexus.json` ถูกสร้างจาก `build` และต้อง commit ไปด้วย (GitHub Pages ไม่รัน Python ให้) มีสองวิธี:
+
+**วิธี 1: GitHub Actions (แนะนำ เพราะรองรับโฟลเดอร์ `site/`)**
+1. ไปที่ Settings → Pages → Source เลือก **GitHub Actions**
+2. สร้างไฟล์ `.github/workflows/pages.yml`:
+
+```yaml
+name: Deploy site
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+**วิธี 2: เลือกโฟลเดอร์โดยตรง** GitHub Pages เลือกโฟลเดอร์ได้เฉพาะ `/ (root)` หรือ `/docs` ดังนั้นถ้าไม่ใช้ Actions ให้ย้ายหรือคัดลอกเนื้อหาใน `site/` ไปไว้ที่ `docs/`
+
+เว็บใช้ path แบบ relative และ routing ด้วย hash จึงทำงานได้ทั้งที่ `https://<user>.github.io/<repo>/` และโดเมนของตัวเอง
+
+## วิธีเพิ่มระบบใหม่
+
+1. ตรวจว่า id ระบบมีอยู่ใน `data/systems.json` แล้ว (มีครบ 11 ระบบ)
+2. สร้าง `data/cells/<system>.json` ตามรูปแบบด้านบน ใส่ `systems` ให้ถูก
+   เซลล์ที่มีอยู่แล้วในอีกระบบ ไม่ต้องสร้างซ้ำ ให้เพิ่มระบบใน `systems` ของเซลล์เดิม
+3. สร้าง `data/edges/<system>.json` (ไม่มีเส้นก็ใส่ `{}` ได้)
+4. รัน `validate` แล้วแก้ข้อผิดพลาด
+5. รัน `fetch` ตรวจ `reports/fetch-report.md` ว่ารหัสถูกต้อง ชื่อตรง และไม่ถูกยกเลิก
+6. รัน `build` ตรวจ `reports/build-report.md` แล้วค่อยตัดสินใจเรื่องเส้นใย
+7. ตรวจเนื้อหาไทยกับตำรา (Junqueira's Basic Histology, Campbell Biology) ก่อนตั้ง `verified: true`
+
+## ที่มาของข้อมูล
+
+- **Cell Ontology (CL)** ชื่อ คำนิยาม synonyms และความสัมพันธ์ ดึงผ่าน OLS4 API ของ EBI (https://www.ebi.ac.uk/ols4)
+  Cell Ontology เผยแพร่ภายใต้สัญญาอนุญาต **CC BY 4.0** (https://obofoundry.org/ontology/cl.html)
+- เนื้อหาภาษาไทย เส้น `interacts_with` และข้อมูลอื่น ๆ ที่คัดเองเขียนโดยผู้จัดทำโครงการ ทุกรายการเริ่มที่ `verified: false` จนกว่าจะตรวจกับตำรา
