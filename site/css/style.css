@@ -382,3 +382,25 @@ a.sys-card:hover { border-color: var(--sys-color, var(--accent)); color: var(--i
 .mode-chip[data-mode="support"] { background: #2f7a40; }
 .mode-chip[data-mode="immune"] { background: #0b7771; }
 .legend .sw.ghost { border: 2px dotted currentColor; background: transparent; opacity: .7; }
+
+/* ---------- ใยภาพรวม ---------- */
+.overview-wrap { height: min(78vh, 760px); min-height: 460px; }
+.graph-loading { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; z-index: 3; background: var(--surface); }
+.level-badge {
+  position: absolute; left: 10px; bottom: 10px; right: 10px; z-index: 4; pointer-events: none;
+  font-size: .8rem; color: var(--muted);
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  border: 1px solid var(--line); border-radius: 8px; padding: 3px 10px; width: fit-content; max-width: calc(100% - 20px);
+}
+.legend .sw.dotmark { width: 12px; height: 12px; border-radius: 50%; background: var(--st-blood); position: relative; }
+.legend .sw.dotmark::after { content: ""; position: absolute; width: 6px; height: 6px; border-radius: 50%; right: -4px; top: -3px; background: var(--st-lymphoid); border: 1px solid var(--surface); }
+.cross-table .pair { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; margin: 8px 0; }
+.cross-table summary { cursor: pointer; padding: 10px 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
+.cross-table summary .dot { display: inline-block; }
+.cross-table summary .chip { margin-left: auto; }
+.cross-table .rel-list { padding: 0 14px 12px; }
+.cross-table .note { color: var(--muted); font-size: .9rem; }
+.cross-table p.note { padding: 0 14px 10px; }
+@media (max-width: 480px) {
+  .overview-wrap { min-height: 420px; height: 64vh; }
+}

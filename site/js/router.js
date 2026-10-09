@@ -1,6 +1,7 @@
 // router แบบ hash: #/  #/system/<id>  #/cell/<CL_0000000>
 
 import { homeView, systemView, cellView, notFoundView } from './views.js';
+import { overviewView } from './overview.js';
 import { hashToId } from './util.js';
 
 let current = null;
@@ -12,6 +13,11 @@ export function resolve(hash) {
   });
   if (parts.length === 0) return homeView();
   if (parts[0] === 'system' && parts.length === 2) return systemView(parts[1]);
+  if (parts[0] === 'overview' && parts.length <= 2) {
+    const m = parts[1] || 'system';
+    if (m === 'system' || m === 'tissue') return overviewView(m);
+    return notFoundView('ไม่พบหน้านี้', `ไม่มีการจัดกลุ่ม "${m}" (ใช้ system หรือ tissue)`);
+  }
   if (parts[0] === 'cell' && parts.length === 2) {
     if (!/^CL_\d{7}$/.test(parts[1])) return notFoundView('ไม่พบเซลล์นี้', `รหัส "${parts[1]}" ไม่ถูกรูปแบบ (ต้องเป็น CL_ ตามด้วยเลข 7 หลัก)`);
     return cellView(hashToId(parts[1]));

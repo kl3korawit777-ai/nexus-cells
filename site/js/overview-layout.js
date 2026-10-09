@@ -5,7 +5,7 @@
 
 import { hashHex } from './hash.js';
 
-export const LAYOUT_VERSION = 1;
+export const LAYOUT_VERSION = 2;
 
 export const primarySystem = (cell) => (cell.systems || [])[0] || 'other';
 export const tissueGroup = (cell) => cell.tissue || 'other';
@@ -49,7 +49,7 @@ export function computeLayout(cytoscape, data, mode) {
 
   // วางกลุ่มเป็นวงกลมตามลำดับ แล้วเรียงสมาชิกเป็นเกลียวรอบจุดศูนย์กลางของกลุ่ม
   const G = groups.length;
-  const R = Math.max(320, G * 75);
+  const R = Math.max(520, G * 110);
   const init = new Map();
   const elements = [];
   groups.forEach((g, gi) => {
@@ -84,21 +84,33 @@ export function computeLayout(cytoscape, data, mode) {
   });
 
   // fcose บางขั้นตอนเรียก Math.random: ใช้ตัวสุ่มมีเมล็ดชั่วคราวเพื่อให้ผลเหมือนเดิมทุกครั้ง
-  const realRandom = Math.random;
-  Math.random = mulberry32(mode === 'tissue' ? 31 : 17);
-  try {
-    cy.layout({
-      name: 'fcose', quality: 'proof', randomize: false, animate: false, fit: false,
-      nodeDimensionsIncludeLabels: false, uniformNodeDimensions: false, packComponents: false,
-      nodeRepulsion: () => 7000,
-      idealEdgeLength: (e) => (e.data('same') ? 55 : 190),
-      edgeElasticity: (e) => (e.data('same') ? 0.45 : 0.08),
-      nestingFactor: 0.15, gravity: 0.2, gravityRange: 3.8,
-      gravityCompound: 1.0, gravityRangeCompound: 1.6,
-      numIter: 3500, tile: true, tilingPaddingVertical: 14, tilingPaddingHorizontal: 14,
-    }).run();
-  } finally {
-    Math.random = realRandom;
+  const opts = (randomize) => ({
+    name: 'fcose', quality: 'proof', randomize, animate: false, fit: false,
+    nodeDimensionsIncludeLabels: false, uniformNodeDimensions: false, packComponents: false,
+    nodeRepulsion: () => 12000,
+    idealEdgeLength: (e) => (e.data('same') ? 55 : 300),
+    edgeElasticity: (e) => (e.data('same') ? 0.45 : 0.04),
+    nestingFactor: 0.15, gravity: 0.08, gravityRange: 3.8,
+    gravityCompound: 0.5, gravityRangeCompound: 2.0,
+    numIter: 3500, tile: true, tilingPaddingVertical: 14, tilingPaddingHorizontal: 14,
+  });
+  const run = (randomize) => {
+    const realRandom = Math.random;
+    Math.random = mulberry32(mode === 'tissue' ? 31 : 17);
+    try { cy.layout(opts(randomize)).run(); } finally { Math.random = realRandom; }
+  };
+  // fcose แบบ randomize: false (ใช้ตำแหน่งเริ่มต้นที่เรากำหนด) บางชุดข้อมูลยุบเป็นเส้นทแยง (x = y)
+  // ถ้าตรวจพบ ให้คืนตำแหน่งเริ่มต้นแล้วรันแบบ randomize: true ซึ่งยังเหมือนเดิมทุกครั้งเพราะใช้ตัวสุ่มมีเมล็ด
+  const degenerate = () => {
+    const ns = cy.nodes().not('.group');
+    let diag = 0;
+    ns.forEach((n) => { const p = n.position(); if (Math.abs(p.x - p.y) < 1) diag++; });
+    return ns.length > 4 && diag / ns.length > 0.5;
+  };
+  run(false);
+  if (degenerate()) {
+    cy.nodes().not('.group').forEach((n) => n.position(init.get(n.id())));
+    run(true);
   }
 
   const positions = {};

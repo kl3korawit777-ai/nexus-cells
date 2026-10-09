@@ -6,7 +6,7 @@ import { cssVar, onThemeChange, shortSystemName, reducedMotion } from './util.js
 
 const cytoscape = window.cytoscape;
 let registered = false;
-function ensureFcose() {
+export function ensureFcose() {
   if (registered) return;
   registered = true;
   if (window.cytoscapeFcose) cytoscape.use(window.cytoscapeFcose);
@@ -30,7 +30,7 @@ const MODE_SHAPE = {
 
 const EDGE_CLASS = { develops_from: 'e-dev', is_a: 'e-isa', interacts_with: 'e-int' };
 
-function buildStyle() {
+export function buildStyle() {
   const ink = cssVar('--ink');
   const surface = cssVar('--surface');
   const font = 'IBM Plex Sans Thai, Noto Sans Thai, system-ui, sans-serif';
