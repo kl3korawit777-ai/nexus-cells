@@ -1,10 +1,10 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-09 23:36
+สร้างเมื่อ: 2026-10-09 23:37
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 82 เส้น
+- ตรงกัน: 83 เส้น
 - คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 5 เส้น
 - คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 4 เส้น
 - CL มี แต่ไม่ได้คัดไว้: 38 เส้น
@@ -72,9 +72,9 @@
 - ตรงกัน: 14 เส้น
 - คัดเองมี แต่ CL ไม่มี: 37 เส้น
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 3 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 48 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 50 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 337 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 344 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -127,6 +127,8 @@
 - CL:0000024 oogonial cell ← CL:0000670 primordial germ cell
 - CL:0000037 hematopoietic stem cell ← CL:0000566 angioblastic mesenchymal cell
 - CL:0000058 chondroblast ← CL:0007009 prechondroblast
+- CL:0000059 ameloblast ← CL:0007000 preameloblast
+- CL:0000060 odontoblast ← CL:0007003 preodontoblast
 - CL:0000065 ependymal cell ← CL:0000681 radial glial cell
 - CL:0000084 T cell ← CL:0000827 pro-T cell
 - CL:0000097 mast cell ← CL:0000831 mast cell progenitor
@@ -173,7 +175,7 @@
 - CL:0008002 skeletal muscle fiber ← CL:0000515 skeletal muscle myoblast
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 
-## คำเตือนจาก validate (176)
+## คำเตือนจาก validate (179)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -249,6 +251,9 @@
 - CL:1000488 (cholangiocyte): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
 - CL:0002064 (pancreatic acinar cell): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
 - CL:0002079 (pancreatic ductal cell): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
+- CL:0000060 (odontoblast): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
+- CL:0000059 (ameloblast): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:1000398 (endothelial cell of hepatic sinusoid): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0000167 (peptide hormone secreting cell): ยังไม่มีรูป
 - CL:0000174 (steroid hormone secreting cell): ยังไม่มีรูป
 - CL:0002097 (cortical cell of adrenal gland): ยังไม่มีรูป

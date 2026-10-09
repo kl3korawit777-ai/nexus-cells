@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T16:36:17+00:00",
+  "fetched_at": "2026-10-09T16:37:12+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -7649,6 +7649,293 @@
         {
           "id": "UBERON:0001064",
           "label": "ventral pancreatic duct"
+        }
+      ]
+    },
+    "CL:0000060": {
+      "id": "CL:0000060",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000060",
+      "label": "odontoblast",
+      "definition": "Skeletogenic cell that secretes dentine matrix, is derived from the odontogenic papilla, and develops from a preodontoblast cell.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002148",
+          "label": "dental pulp cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002148",
+          "label": "dental pulp cell"
+        },
+        {
+          "id": "CL:0002159",
+          "label": "general ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0007003",
+          "label": "preodontoblast"
+        },
+        {
+          "id": "UBERON:0001751",
+          "label": "dentine"
+        },
+        {
+          "id": "UBERON:0005176",
+          "label": "tooth enamel organ"
+        }
+      ]
+    },
+    "CL:0000059": {
+      "id": "CL:0000059",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000059",
+      "label": "ameloblast",
+      "definition": "Skeletogenic cell that produces enamel, overlies the odontogenic papilla, and arises from the differentiation of a preameloblast cell.",
+      "synonyms": [
+        "amelocyte",
+        "enamel secreting cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000146",
+          "label": "simple columnar epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000146",
+          "label": "simple columnar epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0007000",
+          "label": "preameloblast"
+        },
+        {
+          "id": "GO:0097186",
+          "label": "amelogenesis"
+        },
+        {
+          "id": "UBERON:0001752",
+          "label": "enamel"
+        },
+        {
+          "id": "UBERON:0001763",
+          "label": "odontogenic papilla"
+        },
+        {
+          "id": "UBERON:0005176",
+          "label": "tooth enamel organ"
+        }
+      ]
+    },
+    "CL:1000398": {
+      "id": "CL:1000398",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_1000398",
+      "label": "endothelial cell of hepatic sinusoid",
+      "definition": "An endothelial cell that is part of the hepatic sinusoid. These cells possess flattened areas containing perforations about 0.1 micrometers in diameter, known as fenestrae. The fenestrae are arranged in groups known as sieve plates.",
+      "synonyms": [
+        "LSEC",
+        "endotheliocyte of hepatic sinusoid",
+        "liver sinusoidal endothelial cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000666",
+          "label": "fenestrated endothelial cell"
+        },
+        {
+          "id": "CL:0002262",
+          "label": "endothelial cell of sinusoid"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000071",
+          "label": "blood vessel endothelial cell"
+        },
+        {
+          "id": "CL:0000115",
+          "label": "endothelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000666",
+          "label": "fenestrated endothelial cell"
+        },
+        {
+          "id": "CL:0002139",
+          "label": "endothelial cell of vascular tree"
+        },
+        {
+          "id": "CL:0002262",
+          "label": "endothelial cell of sinusoid"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0001281",
+          "label": "hepatic sinusoid"
         }
       ]
     },

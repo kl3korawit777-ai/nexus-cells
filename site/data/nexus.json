@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "7fdf7c751e73",
-  "generated_at": "2026-10-09T16:36:17+00:00",
+  "data_version": "875718ef2cac",
+  "generated_at": "2026-10-09T16:37:12+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "edge_direction": "develops_from/is_a: from=ลูก to=แม่; interacts_with: from=ผู้กระทำ to=ผู้ถูกกระทำ"
  },
@@ -3540,6 +3540,134 @@
     "label": "pancreatic ductal cell",
     "definition": "Epithelial cell found in the ducts of the pancreas. This cell type contributes to the high luminal pH.",
     "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000060",
+   "slug": "odontoblast",
+   "kind": "cell",
+   "en": "odontoblast",
+   "th": "โอดอนโตบลาสต์ (odontoblast)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": null,
+   "location": "ชั้นนอกสุดของเนื้อฟัน (dental pulp) ชิดกับเนื้อฟันชั้นใน (dentin)",
+   "morphology": "เซลล์ทรงสูง เรียงชั้นเดียว มีแขนง (odontoblastic process หรือ Tomes' fiber) ยื่นเข้าไปในท่อเล็กของเนื้อฟัน (dentinal tubule)",
+   "function": "สร้างและสะสมเนื้อฟัน (dentin) ตลอดชีวิต รวมทั้งเนื้อฟันที่สร้างใหม่เมื่อฟันถูกกระตุ้นหรือสึก",
+   "secretes": [
+    "คอลลาเจนชนิด I",
+    "dentin sialophosphoprotein (DSPP)"
+   ],
+   "markers": [
+    "DSPP",
+    "DMP1"
+   ],
+   "lifespan": "",
+   "exam": "เซลล์มีต้นกำเนิดจากเนื้อเยื่อ neural crest (ectomesenchyme) ต่างจาก ameloblast ที่มาจากเยื่อบุผิว และอยู่ตลอดชีวิตต่างจาก ameloblast ที่หายไปหลังฟันขึ้น",
+   "diseases": [
+    "dentinogenesis imperfecta"
+   ],
+   "confused_with": [
+    "CL:0000059"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000060",
+   "cl": {
+    "label": "odontoblast",
+    "definition": "Skeletogenic cell that secretes dentine matrix, is derived from the odontogenic papilla, and develops from a preodontoblast cell.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000059",
+   "slug": "ameloblast",
+   "kind": "cell",
+   "en": "ameloblast",
+   "th": "อะมีโลบลาสต์ (ameloblast)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-columnar",
+   "location": "ผิวเคลือบฟันที่กำลังพัฒนาในระยะสร้างฟัน (enamel organ)",
+   "morphology": "เซลล์ทรงสูงมาก มีส่วนยื่นที่ปลายเรียกว่า Tomes' process",
+   "function": "สร้างเคลือบฟัน (enamel) ซึ่งเป็นเนื้อเยื่อที่แข็งที่สุดในร่างกาย โดยหลั่งโปรตีนเคลือบฟัน แล้วควบคุมการสะสมแร่ธาตุ",
+   "secretes": [
+    "amelogenin",
+    "enamelin",
+    "ameloblastin"
+   ],
+   "markers": [
+    "amelogenin",
+    "enamelin"
+   ],
+   "lifespan": "",
+   "exam": "ameloblast พัฒนามาจากเยื่อบุผิวช่องปาก (inner enamel epithelium) และหายไปหลังฟันขึ้น จึงสร้างเคลือบฟันใหม่ไม่ได้ ต่างจาก odontoblast ที่สร้างเนื้อฟันและยังอยู่ตลอดชีวิต",
+   "diseases": [
+    "amelogenesis imperfecta"
+   ],
+   "confused_with": [
+    "CL:0000060"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000059",
+   "cl": {
+    "label": "ameloblast",
+    "definition": "Skeletogenic cell that produces enamel, overlies the odontogenic papilla, and arises from the differentiation of a preameloblast cell.",
+    "synonyms": [
+     "amelocyte",
+     "enamel secreting cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:1000398",
+   "slug": "hepatic-sinusoidal-endothelial-cell",
+   "kind": "cell",
+   "en": "endothelial cell of hepatic sinusoid",
+   "th": "เซลล์บุผนังหลอดเลือดไซนูซอยด์ของตับ",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-squamous",
+   "location": "ผนังไซนูซอยด์ (sinusoid) ของตับ ระหว่างเลือดกับเซลล์ตับ",
+   "morphology": "เซลล์แบนบางมีรูเปิดขนาดใหญ่หลายรู (fenestra) ไม่มี diaphragm และไม่มี basement membrane ต่อเนื่อง",
+   "function": "ให้พลาสมาและสารผ่านเข้าสู่ช่องดิสเซ (space of Disse) เพื่อแลกเปลี่ยนกับเซลล์ตับ และกำจัดสารบางชนิดออกจากเลือด",
+   "secretes": [],
+   "markers": [
+    "LYVE1",
+    "stabilin-2",
+    "CD32b"
+   ],
+   "lifespan": "",
+   "exam": "ผนังไม่มี basement membrane ต่อเนื่อง ทำให้แลกเปลี่ยนสารระหว่างเลือดและเซลล์ตับได้สะดวก ต่างจาก Kupffer cell ที่เป็นแมโครฟาจในไซนูซอยด์ และ hepatic stellate cell ที่อยู่ในช่องดิสเซ",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000091",
+    "CL:0000632"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_1000398",
+   "cl": {
+    "label": "endothelial cell of hepatic sinusoid",
+    "definition": "An endothelial cell that is part of the hepatic sinusoid. These cells possess flattened areas containing perforations about 0.1 micrometers in diameter, known as fenestrae. The fenestrae are arranged in groups known as sieve plates.",
+    "synonyms": [
+     "LSEC",
+     "endotheliocyte of hepatic sinusoid",
+     "liver sinusoidal endothelial cell"
+    ],
     "obsolete": false
    }
   },
@@ -8141,6 +8269,13 @@
    "type": "is_a",
    "from": "CL:0002079",
    "to": "CL:1001433",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:1000398",
+   "to": "CL:0000115",
    "source": "curated",
    "file": "digestive"
   },
