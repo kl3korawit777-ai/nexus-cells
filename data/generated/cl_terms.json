@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T16:37:12+00:00",
+  "fetched_at": "2026-10-09T16:37:37+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -14075,6 +14075,319 @@
         {
           "id": "GO:0050912",
           "label": "detection of chemical stimulus involved in sensory perception of taste"
+        }
+      ]
+    },
+    "CL:0000700": {
+      "id": "CL:0000700",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000700",
+      "label": "dopaminergic neuron",
+      "definition": "A neuron that releases dopamine as a neurotransmitter.",
+      "synonyms": [
+        "dopaminergic cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:4033050",
+          "label": "catecholaminergic neuron"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:4033050",
+          "label": "catecholaminergic neuron"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0061527",
+          "label": "dopamine secretion, neurotransmission"
+        }
+      ]
+    },
+    "CL:0000108": {
+      "id": "CL:0000108",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000108",
+      "label": "cholinergic neuron",
+      "definition": "A neuron that uses acetylcholine as a vesicular neurotransmitter.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0014055",
+          "label": "acetylcholine secretion, neurotransmission"
+        }
+      ]
+    },
+    "CL:0000047": {
+      "id": "CL:0000047",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000047",
+      "label": "neural stem cell",
+      "definition": "An undifferentiated neural cell that originates from the neuroectoderm and has the capacity both to perpetually self-renew without differentiating and to generate multiple central nervous system neuronal and glial cell types.",
+      "synonyms": [
+        "NSC",
+        "neuronal stem cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000133",
+          "label": "neurectodermal cell"
+        }
+      ]
+    },
+    "CL:0000636": {
+      "id": "CL:0000636",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000636",
+      "label": "Mueller cell",
+      "definition": "Astrocyte-like radial glial cell that extends vertically throughout the retina, with the nucleus are usually in the middle of the inner nuclear layer.",
+      "synonyms": [
+        "Muller glia",
+        "Müller cell",
+        "Muller cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000681",
+          "label": "radial glial cell"
+        },
+        {
+          "id": "CL:0009004",
+          "label": "retinal cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000095",
+          "label": "neuron associated cell"
+        },
+        {
+          "id": "CL:0000125",
+          "label": "glial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000681",
+          "label": "radial glial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0009004",
+          "label": "retinal cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0000966",
+          "label": "retina"
         }
       ]
     },

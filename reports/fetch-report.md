@@ -1,13 +1,14 @@
 # รายงานการดึงข้อมูล (fetch)
 
 สร้างเมื่อ: 2026-10-09 23:37
-ดึงใหม่ 0 รหัส จากทั้งหมด 179 รหัสในชุดข้อมูล
+ดึงใหม่ 0 รหัส จากทั้งหมด 183 รหัสในชุดข้อมูล
 
-## ปัญหาที่ต้องตรวจ (5)
+## ปัญหาที่ต้องตรวจ (6)
 
 - **tissue ต่างจาก CL** CL:0002088 (interstitial cell of Cajal): ตั้งไว้ "connective" แต่ ancestors ใน CL ชี้ไป epithelial
 - **tissue ต่างจาก CL** CL:0000589 (cochlear inner hair cell): ตั้งไว้ "epithelial" แต่ ancestors ใน CL ชี้ไป nervous
 - **tissue ต่างจาก CL** CL:0000601 (cochlear outer hair cell): ตั้งไว้ "epithelial" แต่ ancestors ใน CL ชี้ไป nervous
+- **tissue ต่างจาก CL** CL:0000047 (neural stem cell): ตั้งไว้ "other" แต่ ancestors ใน CL ชี้ไป nervous
 - **tissue ต่างจาก CL** CL:0000134 (mesenchymal stem cell): ตั้งไว้ "other" แต่ ancestors ใน CL ชี้ไป connective
 - **tissue ต่างจาก CL** CL:0002302 (type A synovial cell): ตั้งไว้ "connective" แต่ ancestors ใน CL ชี้ไป epithelial
 

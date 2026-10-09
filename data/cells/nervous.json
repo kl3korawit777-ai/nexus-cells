@@ -650,5 +650,132 @@
     "image": null,
     "verified": false,
     "refs": []
+  },
+  {
+    "id": "CL:0000700",
+    "slug": "dopaminergic-neuron",
+    "kind": "cell",
+    "en": "dopaminergic neuron",
+    "th": "เซลล์ประสาทโดพามีน (dopaminergic neuron)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
+    "location": "สมองส่วนกลาง (substantia nigra และ ventral tegmental area) และไฮโพทาลามัสบางส่วน",
+    "morphology": "เซลล์ประสาทหลายขั้ว ตัวเซลล์ใน substantia nigra มีเม็ดสีนิวโรเมลานิน (neuromelanin) ทำให้มองเห็นเป็นสีดำ",
+    "function": "สร้างและปล่อยสารสื่อประสาท dopamine ควบคุมการเคลื่อนไหว (nigrostriatal pathway) และระบบรางวัลและแรงจูงใจ (mesolimbic pathway)",
+    "secretes": [
+      "dopamine"
+    ],
+    "markers": [
+      "tyrosine hydroxylase (TH)",
+      "DAT (dopamine transporter)"
+    ],
+    "lifespan": "",
+    "exam": "การตายของเซลล์ประสาทโดพามีนใน substantia nigra pars compacta ทำให้เกิดโรคพาร์กินสัน (Parkinson disease) ยา levodopa (L-DOPA) ใช้รักษา เพราะข้ามผ่านสมองได้และเปลี่ยนเป็นโดพามีน",
+    "diseases": [
+      "โรคพาร์กินสัน (Parkinson disease)"
+    ],
+    "confused_with": [
+      "CL:0000108"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000108",
+    "slug": "cholinergic-neuron",
+    "kind": "cell",
+    "en": "cholinergic neuron",
+    "th": "เซลล์ประสาทโคลีเนอร์จิก (cholinergic neuron)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
+    "location": "ทั้งระบบประสาทส่วนกลาง (เช่น basal forebrain nucleus basalis of Meynert) และระบบประสาทส่วนปลาย (เซลล์ประสาทสั่งการที่ไปยังกล้ามเนื้อลาย และเซลล์ประสาทพรีแกงเกลียนของระบบประสาทอัตโนมัติ)",
+    "morphology": "เซลล์ประสาทหลายขั้ว ขนาดแตกต่างกันตามตำแหน่ง",
+    "function": "สร้างและปล่อยสารสื่อประสาท acetylcholine (ACh) ที่ neuromuscular junction ปมประสาทอัตโนมัติ และปลายประสาทพาราซิมพาเทติก",
+    "secretes": [
+      "acetylcholine (ACh)"
+    ],
+    "markers": [
+      "choline acetyltransferase (ChAT)",
+      "vesicular ACh transporter (VAChT)"
+    ],
+    "lifespan": "",
+    "exam": "การเสื่อมของเซลล์ประสาทโคลีเนอร์จิกใน nucleus basalis of Meynert พบในโรคอัลไซเมอร์ ยากลุ่ม acetylcholinesterase inhibitor ใช้บรรเทาอาการอัลไซเมอร์ และรักษา myasthenia gravis ซึ่งเกิดจากแอนติบอดีต่อตัวรับ ACh ที่กล้ามเนื้อ",
+    "diseases": [
+      "โรคอัลไซเมอร์ (Alzheimer disease)",
+      "myasthenia gravis"
+    ],
+    "confused_with": [
+      "CL:0000700",
+      "CL:0000100"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000047",
+    "slug": "neural-stem-cell",
+    "kind": "cell",
+    "en": "neural stem cell",
+    "th": "เซลล์ต้นกำเนิดประสาท (neural stem cell)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "other",
+    "tissue_subtype": "stem-progenitor",
+    "location": "บริเวณ subventricular zone ของ lateral ventricle และ subgranular zone ของ dentate gyrus ในฮิปโปแคมปัส",
+    "morphology": "เซลล์รูปร่างคล้ายเซลล์เกลียแบบ radial มีแขนง",
+    "function": "แบ่งตัวและเปลี่ยนเป็นเซลล์ประสาทและเซลล์เกลีย ในสมองผู้ใหญ่ยังสร้างเซลล์ประสาทใหม่ได้ในบางบริเวณ (adult neurogenesis)",
+    "secretes": [],
+    "markers": [
+      "nestin",
+      "SOX2",
+      "GFAP"
+    ],
+    "lifespan": "",
+    "exam": "adult neurogenesis ในฮิปโปแคมปัสสัมพันธ์กับการเรียนรู้และความจำ เซลล์ประสาทส่วนใหญ่ของผู้ใหญ่แบ่งตัวไม่ได้",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000127"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000636",
+    "slug": "mueller-cell",
+    "kind": "cell",
+    "en": "Mueller cell",
+    "th": "เซลล์มึลเลอร์ (Müller glia)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "glia",
+    "location": "จอตา (retina) พาดผ่านเกือบทุกชั้นจาก inner limiting membrane ถึง outer limiting membrane",
+    "morphology": "เซลล์เกลียขนาดใหญ่ ทอดตัวเกือบทั้งความหนาของจอตา และล้อมเซลล์ประสาทของจอตา",
+    "function": "ค้ำจุนโครงสร้างของจอตา ให้อาหาร รักษาสมดุลไอออนและสารสื่อประสาท (เช่น กลูตาเมต) และดูดซับสารเหลือ",
+    "secretes": [],
+    "markers": [
+      "glutamine synthetase",
+      "GFAP (ในภาวะบาดเจ็บ)"
+    ],
+    "lifespan": "",
+    "exam": "เป็นเซลล์เกลียหลักของจอตา ทำหน้าที่คล้ายแอสโทรไซต์ในสมอง ในสัตว์บางชนิดเปลี่ยนเป็นเซลล์ตั้งต้นเพื่อซ่อมแซมจอตาได้",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000127"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   }
 ]

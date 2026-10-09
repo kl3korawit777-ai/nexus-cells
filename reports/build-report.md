@@ -4,7 +4,7 @@
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 83 เส้น
+- ตรงกัน: 86 เส้น
 - คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 5 เส้น
 - คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 4 เส้น
 - CL มี แต่ไม่ได้คัดไว้: 38 เส้น
@@ -72,9 +72,9 @@
 - ตรงกัน: 14 เส้น
 - คัดเองมี แต่ CL ไม่มี: 37 เส้น
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 3 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 50 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 51 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 344 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 347 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -126,6 +126,7 @@
 
 - CL:0000024 oogonial cell ← CL:0000670 primordial germ cell
 - CL:0000037 hematopoietic stem cell ← CL:0000566 angioblastic mesenchymal cell
+- CL:0000047 neural stem cell ← CL:0000133 neurectodermal cell
 - CL:0000058 chondroblast ← CL:0007009 prechondroblast
 - CL:0000059 ameloblast ← CL:0007000 preameloblast
 - CL:0000060 odontoblast ← CL:0007003 preodontoblast
@@ -175,7 +176,7 @@
 - CL:0008002 skeletal muscle fiber ← CL:0000515 skeletal muscle myoblast
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 
-## คำเตือนจาก validate (179)
+## คำเตือนจาก validate (183)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -314,6 +315,10 @@
 - CL:0000601 (cochlear outer hair cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000207 (olfactory receptor cell): ช่องว่าง: markers, confused_with; ยังไม่มีรูป
 - CL:0000209 (taste receptor cell): ช่องว่าง: markers, diseases, confused_with, tissue_subtype; ยังไม่มีรูป
+- CL:0000700 (dopaminergic neuron): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000108 (cholinergic neuron): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000047 (neural stem cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000636 (Mueller cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0000020 (spermatogonium): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
 - CL:0000656 (primary spermatocyte): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
 - CL:0000657 (secondary spermatocyte): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป

@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "875718ef2cac",
-  "generated_at": "2026-10-09T16:37:12+00:00",
+  "data_version": "28cb9277a3a2",
+  "generated_at": "2026-10-09T16:37:37+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "edge_direction": "develops_from/is_a: from=ลูก to=แม่; interacts_with: from=ผู้กระทำ to=ผู้ถูกกระทำ"
  },
@@ -5971,6 +5971,170 @@
    }
   },
   {
+   "id": "CL:0000700",
+   "slug": "dopaminergic-neuron",
+   "kind": "cell",
+   "en": "dopaminergic neuron",
+   "th": "เซลล์ประสาทโดพามีน (dopaminergic neuron)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "nervous",
+   "tissue_subtype": "neuron",
+   "location": "สมองส่วนกลาง (substantia nigra และ ventral tegmental area) และไฮโพทาลามัสบางส่วน",
+   "morphology": "เซลล์ประสาทหลายขั้ว ตัวเซลล์ใน substantia nigra มีเม็ดสีนิวโรเมลานิน (neuromelanin) ทำให้มองเห็นเป็นสีดำ",
+   "function": "สร้างและปล่อยสารสื่อประสาท dopamine ควบคุมการเคลื่อนไหว (nigrostriatal pathway) และระบบรางวัลและแรงจูงใจ (mesolimbic pathway)",
+   "secretes": [
+    "dopamine"
+   ],
+   "markers": [
+    "tyrosine hydroxylase (TH)",
+    "DAT (dopamine transporter)"
+   ],
+   "lifespan": "",
+   "exam": "การตายของเซลล์ประสาทโดพามีนใน substantia nigra pars compacta ทำให้เกิดโรคพาร์กินสัน (Parkinson disease) ยา levodopa (L-DOPA) ใช้รักษา เพราะข้ามผ่านสมองได้และเปลี่ยนเป็นโดพามีน",
+   "diseases": [
+    "โรคพาร์กินสัน (Parkinson disease)"
+   ],
+   "confused_with": [
+    "CL:0000108"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000700",
+   "cl": {
+    "label": "dopaminergic neuron",
+    "definition": "A neuron that releases dopamine as a neurotransmitter.",
+    "synonyms": [
+     "dopaminergic cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000108",
+   "slug": "cholinergic-neuron",
+   "kind": "cell",
+   "en": "cholinergic neuron",
+   "th": "เซลล์ประสาทโคลีเนอร์จิก (cholinergic neuron)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "nervous",
+   "tissue_subtype": "neuron",
+   "location": "ทั้งระบบประสาทส่วนกลาง (เช่น basal forebrain nucleus basalis of Meynert) และระบบประสาทส่วนปลาย (เซลล์ประสาทสั่งการที่ไปยังกล้ามเนื้อลาย และเซลล์ประสาทพรีแกงเกลียนของระบบประสาทอัตโนมัติ)",
+   "morphology": "เซลล์ประสาทหลายขั้ว ขนาดแตกต่างกันตามตำแหน่ง",
+   "function": "สร้างและปล่อยสารสื่อประสาท acetylcholine (ACh) ที่ neuromuscular junction ปมประสาทอัตโนมัติ และปลายประสาทพาราซิมพาเทติก",
+   "secretes": [
+    "acetylcholine (ACh)"
+   ],
+   "markers": [
+    "choline acetyltransferase (ChAT)",
+    "vesicular ACh transporter (VAChT)"
+   ],
+   "lifespan": "",
+   "exam": "การเสื่อมของเซลล์ประสาทโคลีเนอร์จิกใน nucleus basalis of Meynert พบในโรคอัลไซเมอร์ ยากลุ่ม acetylcholinesterase inhibitor ใช้บรรเทาอาการอัลไซเมอร์ และรักษา myasthenia gravis ซึ่งเกิดจากแอนติบอดีต่อตัวรับ ACh ที่กล้ามเนื้อ",
+   "diseases": [
+    "โรคอัลไซเมอร์ (Alzheimer disease)",
+    "myasthenia gravis"
+   ],
+   "confused_with": [
+    "CL:0000700",
+    "CL:0000100"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000108",
+   "cl": {
+    "label": "cholinergic neuron",
+    "definition": "A neuron that uses acetylcholine as a vesicular neurotransmitter.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000047",
+   "slug": "neural-stem-cell",
+   "kind": "cell",
+   "en": "neural stem cell",
+   "th": "เซลล์ต้นกำเนิดประสาท (neural stem cell)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "other",
+   "tissue_subtype": "stem-progenitor",
+   "location": "บริเวณ subventricular zone ของ lateral ventricle และ subgranular zone ของ dentate gyrus ในฮิปโปแคมปัส",
+   "morphology": "เซลล์รูปร่างคล้ายเซลล์เกลียแบบ radial มีแขนง",
+   "function": "แบ่งตัวและเปลี่ยนเป็นเซลล์ประสาทและเซลล์เกลีย ในสมองผู้ใหญ่ยังสร้างเซลล์ประสาทใหม่ได้ในบางบริเวณ (adult neurogenesis)",
+   "secretes": [],
+   "markers": [
+    "nestin",
+    "SOX2",
+    "GFAP"
+   ],
+   "lifespan": "",
+   "exam": "adult neurogenesis ในฮิปโปแคมปัสสัมพันธ์กับการเรียนรู้และความจำ เซลล์ประสาทส่วนใหญ่ของผู้ใหญ่แบ่งตัวไม่ได้",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000127"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000047",
+   "cl": {
+    "label": "neural stem cell",
+    "definition": "An undifferentiated neural cell that originates from the neuroectoderm and has the capacity both to perpetually self-renew without differentiating and to generate multiple central nervous system neuronal and glial cell types.",
+    "synonyms": [
+     "NSC",
+     "neuronal stem cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000636",
+   "slug": "mueller-cell",
+   "kind": "cell",
+   "en": "Mueller cell",
+   "th": "เซลล์มึลเลอร์ (Müller glia)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "nervous",
+   "tissue_subtype": "glia",
+   "location": "จอตา (retina) พาดผ่านเกือบทุกชั้นจาก inner limiting membrane ถึง outer limiting membrane",
+   "morphology": "เซลล์เกลียขนาดใหญ่ ทอดตัวเกือบทั้งความหนาของจอตา และล้อมเซลล์ประสาทของจอตา",
+   "function": "ค้ำจุนโครงสร้างของจอตา ให้อาหาร รักษาสมดุลไอออนและสารสื่อประสาท (เช่น กลูตาเมต) และดูดซับสารเหลือ",
+   "secretes": [],
+   "markers": [
+    "glutamine synthetase",
+    "GFAP (ในภาวะบาดเจ็บ)"
+   ],
+   "lifespan": "",
+   "exam": "เป็นเซลล์เกลียหลักของจอตา ทำหน้าที่คล้ายแอสโทรไซต์ในสมอง ในสัตว์บางชนิดเปลี่ยนเป็นเซลล์ตั้งต้นเพื่อซ่อมแซมจอตาได้",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000127"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000636",
+   "cl": {
+    "label": "Mueller cell",
+    "definition": "Astrocyte-like radial glial cell that extends vertically throughout the retina, with the nucleus are usually in the middle of the inner nuclear layer.",
+    "synonyms": [
+     "Muller glia",
+     "Müller cell",
+     "Muller cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
    "id": "CL:0000020",
    "slug": "spermatogonium",
    "kind": "cell",
@@ -8794,6 +8958,27 @@
   {
    "type": "is_a",
    "from": "CL:0000645",
+   "to": "CL:0000125",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000700",
+   "to": "CL:0000540",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000108",
+   "to": "CL:0000540",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000636",
    "to": "CL:0000125",
    "source": "curated",
    "file": "nervous"
