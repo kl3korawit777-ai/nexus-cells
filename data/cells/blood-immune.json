@@ -1187,5 +1187,286 @@
       "function": "Kills virus-infected and tumour cells without prior antigen-specific sensitisation, using perforin and granzymes",
       "exam": "Part of innate immunity; kills cells that display too little MHC class I"
     }
+  },
+  {
+    "id": "CL:0000547",
+    "slug": "proerythroblast",
+    "kind": "cell",
+    "en": "proerythroblast",
+    "th": "โพรเอริโทรบลาสต์ (proerythroblast)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "hematopoietic",
+    "location": "ไขกระดูก",
+    "morphology": "เซลล์ขนาดใหญ่ นิวเคลียสกลมใหญ่ โครมาตินละเอียด เห็นนิวคลีโอลัส ไซโทพลาซึมติดสีเบสเข้ม",
+    "function": "เป็นระยะแรกที่จำแนกได้ในสายเม็ดเลือดแดง แบ่งตัวและเจริญเป็น erythroblast ระยะถัดไป ตอบสนองต่อฮอร์โมน erythropoietin",
+    "secretes": [],
+    "markers": [
+      "CD71 (transferrin receptor)",
+      "CD117 (c-Kit)"
+    ],
+    "lifespan": "",
+    "exam": "ลำดับการเจริญของเม็ดเลือดแดงในไขกระดูก คือ proerythroblast, basophilic, polychromatophilic, orthochromatic erythroblast, reticulocyte และ erythrocyte",
+    "diseases": [
+      "โรคเม็ดเลือดแดงไม่เจริญ (pure red cell aplasia)"
+    ],
+    "confused_with": [
+      "CL:0000765"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000835",
+    "slug": "myeloblast",
+    "kind": "cell",
+    "en": "myeloblast",
+    "th": "ไมอีโลบลาสต์ (myeloblast)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "hematopoietic",
+    "location": "ไขกระดูก",
+    "morphology": "เซลล์ขนาดใหญ่ นิวเคลียสกลมโครมาตินละเอียด เห็นนิวคลีโอลัสชัด ไซโทพลาซึมติดสีเบสและไม่มีแกรนูล",
+    "function": "เป็นระยะแรกของสายเม็ดเลือดขาวชนิดมีแกรนูล แบ่งตัวแล้วเจริญเป็น promyelocyte",
+    "secretes": [],
+    "markers": [
+      "CD34",
+      "CD117 (c-Kit)",
+      "myeloperoxidase (MPO)"
+    ],
+    "lifespan": "",
+    "exam": "ในไขกระดูกปกติ blast มีน้อยกว่า 5 เปอร์เซ็นต์ ถ้ามีมากผิดปกติและมีแท่ง Auer rod สงสัยมะเร็งเม็ดเลือดขาวชนิดไมอีลอยด์เฉียบพลัน (AML)",
+    "diseases": [
+      "มะเร็งเม็ดเลือดขาวชนิดไมอีลอยด์เฉียบพลัน (acute myeloid leukemia, AML)"
+    ],
+    "confused_with": [
+      "CL:0000836"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000836",
+    "slug": "promyelocyte",
+    "kind": "cell",
+    "en": "promyelocyte",
+    "th": "โพรไมอีโลไซต์ (promyelocyte)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "hematopoietic",
+    "location": "ไขกระดูก",
+    "morphology": "เซลล์ขนาดใหญ่ มีแกรนูลปฐมภูมิ (azurophilic granule) ติดสีม่วงแดงในไซโทพลาซึม",
+    "function": "สร้างแกรนูลปฐมภูมิที่มีเอนไซม์ เช่น myeloperoxidase แล้วเจริญเป็น myelocyte ซึ่งเริ่มสร้างแกรนูลจำเพาะของ neutrophil, eosinophil หรือ basophil",
+    "secretes": [],
+    "markers": [
+      "myeloperoxidase (MPO)",
+      "CD33"
+    ],
+    "lifespan": "",
+    "exam": "มะเร็งเม็ดเลือดขาวชนิด acute promyelocytic leukemia (APL) มี t(15;17) เกิดยีน PML–RARA รักษาด้วยกรด all-trans retinoic acid (ATRA)",
+    "diseases": [
+      "acute promyelocytic leukemia (APL)"
+    ],
+    "confused_with": [
+      "CL:0000835"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000560",
+    "slug": "band-neutrophil",
+    "kind": "cell",
+    "en": "band form neutrophil",
+    "th": "แบนด์นิวโทรฟิล (band neutrophil)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "blood",
+    "location": "ไขกระดูกและเลือดส่วนปลาย",
+    "morphology": "นิวโทรฟิลที่ยังไม่เจริญเต็มที่ นิวเคลียสรูปแท่งโค้งคล้ายเกือกม้า ยังไม่แบ่งเป็นพู",
+    "function": "ทำหน้าที่คล้ายนิวโทรฟิลที่เจริญเต็มที่ คือกินและทำลายแบคทีเรีย",
+    "secretes": [],
+    "markers": [
+      "CD16",
+      "CD11b"
+    ],
+    "lifespan": "",
+    "exam": "เมื่อมีการติดเชื้อแบคทีเรียรุนแรง ไขกระดูกปล่อย band neutrophil ออกมามากขึ้น เรียกว่า left shift ต่างจาก neutrophil เต็มวัยที่นิวเคลียสแบ่งเป็น 3–5 พู",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000775"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000814",
+    "slug": "nkt-cell",
+    "kind": "cell",
+    "en": "mature NK T cell",
+    "th": "เอ็นเคทีเซลล์ (NK T cell)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "เลือดและเนื้อเยื่อน้ำเหลือง โดยเฉพาะตับ",
+    "morphology": "ลิมโฟไซต์ขนาดเล็กถึงกลาง",
+    "function": "ทีเซลล์ที่มีตัวรับของเซลล์ NK ร่วมด้วย รู้จักแอนติเจนชนิดไขมันที่ถูกนำเสนอบนโมเลกุล CD1d และหลั่งไซโตไคน์เร็ว เช่น IFN-γ และ IL-4 ช่วยปรับการตอบสนองของภูมิคุ้มกัน",
+    "secretes": [
+      "IFN-γ",
+      "IL-4"
+    ],
+    "markers": [
+      "CD3",
+      "CD56 (ในคน)",
+      "CD1d-restricted TCR"
+    ],
+    "lifespan": "",
+    "exam": "เชื่อมระหว่างภูมิคุ้มกันกำเนิดกับภูมิคุ้มกันจำเพาะ ต่างจากเซลล์ NK ที่ไม่มี TCR และไม่มี CD3",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000623",
+      "CL:0000084"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000798",
+    "slug": "gamma-delta-t-cell",
+    "kind": "cell",
+    "en": "gamma-delta T cell",
+    "th": "แกมมา–เดลตาทีเซลล์ (γδ T cell)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "เลือดส่วนปลาย (ส่วนน้อย) และเยื่อบุผิว เช่น ผิวหนังและลำไส้",
+    "morphology": "ลิมโฟไซต์ที่มีตัวรับ T cell (TCR) ชนิดสายแกมมาและเดลตา แทนที่จะเป็นอัลฟาและเบตา",
+    "function": "รู้จักแอนติเจนที่ไม่ต้องถูกนำเสนอบน MHC เช่น โมเลกุลความเครียดของเซลล์และแอนติเจนไม่ใช่เปปไทด์ ทำหน้าที่ปกป้องเยื่อบุผิวด่านหน้า",
+    "secretes": [],
+    "markers": [
+      "CD3",
+      "TCR γδ"
+    ],
+    "lifespan": "",
+    "exam": "พบเพียงส่วนน้อยของ T cell ในเลือด แต่พบมากในเยื่อบุผิว ต่างจาก αβ T cell ที่รู้จักเปปไทด์ที่ถูกนำเสนอด้วย MHC",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000084"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0001065",
+    "slug": "innate-lymphoid-cell",
+    "kind": "cell",
+    "en": "innate lymphoid cell",
+    "th": "เซลล์ลิมฟอยด์ภูมิคุ้มกันกำเนิด (innate lymphoid cell, ILC)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "เนื้อเยื่อเยื่อบุผิว เช่น ลำไส้ ปอด และผิวหนัง",
+    "morphology": "ลักษณะคล้ายลิมโฟไซต์ขนาดเล็ก",
+    "function": "ตอบสนองต่อสัญญาณจากเนื้อเยื่ออย่างรวดเร็วด้วยการหลั่งไซโตไคน์ โดยไม่ใช้ตัวรับแอนติเจนจำเพาะ แบ่งเป็นกลุ่ม ILC1, ILC2 และ ILC3 ซึ่งสร้างไซโตไคน์คล้าย Th1, Th2 และ Th17",
+    "secretes": [
+      "IFN-γ (ILC1)",
+      "IL-5 และ IL-13 (ILC2)",
+      "IL-17 และ IL-22 (ILC3)"
+    ],
+    "markers": [
+      "CD127 (IL-7Rα)"
+    ],
+    "lifespan": "",
+    "exam": "ไม่มีตัวรับแอนติเจนที่เกิดจากการเรียงยีน (ไม่มี TCR หรือ BCR) เซลล์ NK จัดเป็น ILC ชนิดที่ทำลายเซลล์",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000623",
+      "CL:0000084"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000442",
+    "slug": "follicular-dendritic-cell",
+    "kind": "cell",
+    "en": "follicular dendritic cell",
+    "th": "ฟอลลิคูลาร์เดนไดรต์เซลล์ (follicular dendritic cell, FDC)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "ฟอลลิเคิลของ B cell (germinal center) ในต่อมน้ำเหลืองและม้าม",
+    "morphology": "เซลล์มีแขนงยาวสานกันเป็นข่ายภายใน follicle",
+    "function": "จับและแสดงแอนติเจนในรูปแอนติเจนเชิงซ้อนกับแอนติบอดีและคอมพลีเมนต์ ให้ B cell ตรวจสอบและคัดเลือกในกระบวนการ affinity maturation",
+    "secretes": [],
+    "markers": [
+      "CD21 (CR2)",
+      "CD35 (CR1)",
+      "CD23"
+    ],
+    "lifespan": "",
+    "exam": "FDC ไม่ได้มาจากไขกระดูก และไม่ใช่เซลล์นำเสนอแอนติเจนให้ T cell ผ่าน MHC class II ต่างจาก dendritic cell ทั่วไป",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000451"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000784",
+    "slug": "plasmacytoid-dendritic-cell",
+    "kind": "cell",
+    "en": "plasmacytoid dendritic cell",
+    "th": "พลาสมาไซทอยด์เดนไดรต์เซลล์ (plasmacytoid dendritic cell, pDC)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "เลือดและอวัยวะน้ำเหลืองทุติยภูมิ",
+    "morphology": "เซลล์รูปร่างคล้ายพลาสมาเซลล์",
+    "function": "ตรวจจับกรดนิวคลีอิกของไวรัสผ่านตัวรับ TLR7 และ TLR9 แล้วหลั่ง type I interferon (IFN-α และ IFN-β) ปริมาณมากเพื่อต้านไวรัส",
+    "secretes": [
+      "type I interferon (IFN-α, IFN-β)"
+    ],
+    "markers": [
+      "CD123 (IL-3Rα)",
+      "BDCA-2 (CD303)"
+    ],
+    "lifespan": "",
+    "exam": "เป็นผู้ผลิต interferon ชนิด I หลักในการติดเชื้อไวรัส ต่างจาก conventional dendritic cell ที่เน้นนำเสนอแอนติเจนให้ T cell",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000451",
+      "CL:0000786"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   }
 ]

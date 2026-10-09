@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T16:34:29+00:00",
+  "fetched_at": "2026-10-09T16:36:17+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -3938,6 +3938,1043 @@
         {
           "id": "PR:000001889",
           "label": "CD14 molecule"
+        }
+      ]
+    },
+    "CL:0000547": {
+      "id": "CL:0000547",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000547",
+      "label": "proerythroblast",
+      "definition": "An immature, nucleated erythrocyte occupying the stage of erythropoeisis that follows formation of erythroid progenitor cells. This cell is CD71-positive, has both a nucleus and a nucleolus, and lacks hematopoeitic lineage markers.",
+      "synonyms": [
+        "pronormoblast",
+        "rubriblast"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000764",
+          "label": "erythroid lineage cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000764",
+          "label": "erythroid lineage cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000038",
+          "label": "erythroid progenitor cell"
+        },
+        {
+          "id": "CL:0017503",
+          "label": "basophilic cytoplasm"
+        },
+        {
+          "id": "GO:0005730",
+          "label": "nucleolus"
+        },
+        {
+          "id": "PATO:0040072",
+          "label": "high nuclear/cytoplasmic ratio"
+        },
+        {
+          "id": "PR:000001002",
+          "label": "CD19 molecule"
+        },
+        {
+          "id": "PR:000001004",
+          "label": "CD4 molecule"
+        },
+        {
+          "id": "PR:000001012",
+          "label": "integrin alpha-M"
+        },
+        {
+          "id": "PR:000001020",
+          "label": "CD3 epsilon"
+        },
+        {
+          "id": "PR:000001024",
+          "label": "neural cell adhesion molecule 1"
+        },
+        {
+          "id": "PR:000001083",
+          "label": "CD2 molecule"
+        },
+        {
+          "id": "PR:000001084",
+          "label": "T-cell surface glycoprotein CD8 alpha chain"
+        },
+        {
+          "id": "PR:000001289",
+          "label": "membrane-spanning 4-domains subfamily A member 1"
+        },
+        {
+          "id": "PR:000001839",
+          "label": "T-cell surface glycoprotein CD5"
+        },
+        {
+          "id": "PR:000001889",
+          "label": "CD14 molecule"
+        },
+        {
+          "id": "PR:000001945",
+          "label": "transferrin receptor protein 1"
+        },
+        {
+          "id": "PR:000002978",
+          "label": "lymphocyte antigen 6G"
+        }
+      ]
+    },
+    "CL:0000835": {
+      "id": "CL:0000835",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000835",
+      "label": "myeloblast",
+      "definition": "The most primitive precursor in the granulocytic series, having fine, evenly distributed chromatin, several nucleoli, a high nuclear-to-cytoplasmic ration (5:1-7:1), and a nongranular basophilic cytoplasm. They reside in the bone marrow.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0002191",
+          "label": "granulocytopoietic cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000839",
+          "label": "myeloid lineage restricted progenitor cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002031",
+          "label": "hematopoietic lineage restricted progenitor cell"
+        },
+        {
+          "id": "CL:0002191",
+          "label": "granulocytopoietic cell"
+        },
+        {
+          "id": "CL:0008001",
+          "label": "hematopoietic precursor cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        },
+        {
+          "id": "CL:0011115",
+          "label": "precursor cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000557",
+          "label": "granulocyte monocyte progenitor cell"
+        },
+        {
+          "id": "CL:0017503",
+          "label": "basophilic cytoplasm"
+        },
+        {
+          "id": "GO:0000791",
+          "label": "euchromatin"
+        },
+        {
+          "id": "GO:0042582",
+          "label": "azurophil granule"
+        },
+        {
+          "id": "PATO:0040072",
+          "label": "high nuclear/cytoplasmic ratio"
+        }
+      ]
+    },
+    "CL:0000836": {
+      "id": "CL:0000836",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000836",
+      "label": "promyelocyte",
+      "definition": "A precursor in the granulocytic series, being a cell intermediate in development between a myeloblast and myelocyte, that has distinct nucleoli, a nuclear-to-cytoplasmic ratio of 5:1 to 3:1, and containing a few primary cytoplasmic granules. Markers for this cell are fucosyltransferase FUT4-positive, CD33-positive, integrin alpha-M-negative, low affinity immunoglobulin gamma Fc region receptor III-negative, and CD24-negative.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0002191",
+          "label": "granulocytopoietic cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000839",
+          "label": "myeloid lineage restricted progenitor cell"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002031",
+          "label": "hematopoietic lineage restricted progenitor cell"
+        },
+        {
+          "id": "CL:0002191",
+          "label": "granulocytopoietic cell"
+        },
+        {
+          "id": "CL:0008001",
+          "label": "hematopoietic precursor cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        },
+        {
+          "id": "CL:0011115",
+          "label": "precursor cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000835",
+          "label": "myeloblast"
+        },
+        {
+          "id": "CL:0017503",
+          "label": "basophilic cytoplasm"
+        },
+        {
+          "id": "GO:0005730",
+          "label": "nucleolus"
+        },
+        {
+          "id": "GO:0042582",
+          "label": "azurophil granule"
+        },
+        {
+          "id": "PATO:0040072",
+          "label": "high nuclear/cytoplasmic ratio"
+        },
+        {
+          "id": "PR:000001012",
+          "label": "integrin alpha-M"
+        },
+        {
+          "id": "PR:000001456",
+          "label": "alpha-(1,3)-fucosyltransferase 4"
+        },
+        {
+          "id": "PR:000001483",
+          "label": "low affinity immunoglobulin gamma Fc region receptor III"
+        },
+        {
+          "id": "PR:000001892",
+          "label": "CD33 molecule"
+        },
+        {
+          "id": "PR:000001932",
+          "label": "signal transducer CD24"
+        }
+      ]
+    },
+    "CL:0000560": {
+      "id": "CL:0000560",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000560",
+      "label": "band form neutrophil",
+      "definition": "A late neutrophilic metamyelocyte in which the nucleus is indented to more than half the distance to the farthest nuclear margin but in no area being condensed to a single filament. The nucleus is in the form of a curved or coiled band, not having acquired the typical multilobar shape of the mature neutrophil. These cells are fMLP receptor-positive, CD11b-positive, CD35-negative, and CD49d-negative.",
+      "synonyms": [
+        "band cell",
+        "band form",
+        "band",
+        "rod neutrophil",
+        "stab cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000096",
+          "label": "mature neutrophil"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000081",
+          "label": "blood cell"
+        },
+        {
+          "id": "CL:0000094",
+          "label": "granulocyte"
+        },
+        {
+          "id": "CL:0000096",
+          "label": "mature neutrophil"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000234",
+          "label": "phagocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0000775",
+          "label": "neutrophil"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000582",
+          "label": "neutrophilic metamyelocyte"
+        },
+        {
+          "id": "CL:0017506",
+          "label": "banded nucleus"
+        },
+        {
+          "id": "PR:000001337",
+          "label": "complement receptor type 1"
+        },
+        {
+          "id": "PR:000001580",
+          "label": "fMet-Leu-Phe receptor"
+        },
+        {
+          "id": "PR:000005307",
+          "label": "CCAAT/enhancer-binding protein alpha"
+        },
+        {
+          "id": "PR:000009129",
+          "label": "integrin alpha-4"
+        },
+        {
+          "id": "PR:000010543",
+          "label": "myeloperoxidase"
+        }
+      ]
+    },
+    "CL:0000814": {
+      "id": "CL:0000814",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000814",
+      "label": "mature NK T cell",
+      "definition": "A mature alpha-beta T cell of a distinct lineage that bears natural killer markers and a T cell receptor specific for a limited set of ligands. NK T cells have activation and regulatory roles particularly early in an immune response.",
+      "synonyms": [
+        "mature NK T lymphocyte",
+        "mature NK T-cell",
+        "mature NK T-lymphocyte",
+        "mature NKT cell",
+        "mature natural killer T cell",
+        "mature natural killer T lymphocyte",
+        "mature natural killer T-cell",
+        "mature natural killer T-lymphocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000791",
+          "label": "mature alpha-beta T cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000084",
+          "label": "T cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000542",
+          "label": "lymphocyte"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000789",
+          "label": "alpha-beta T cell"
+        },
+        {
+          "id": "CL:0000791",
+          "label": "mature alpha-beta T cell"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "CL:0002419",
+          "label": "mature T cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000914",
+          "label": "immature NK T cell"
+        },
+        {
+          "id": "GO:0030217",
+          "label": "T cell differentiation"
+        },
+        {
+          "id": "GO:0032394",
+          "label": "MHC class Ib receptor activity"
+        },
+        {
+          "id": "GO:0045087",
+          "label": "innate immune response"
+        },
+        {
+          "id": "PR:000001874",
+          "label": "KLRB1-like protein"
+        }
+      ]
+    },
+    "CL:0000798": {
+      "id": "CL:0000798",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000798",
+      "label": "gamma-delta T cell",
+      "definition": "A T cell that expresses a gamma-delta T cell receptor complex.",
+      "synonyms": [
+        "gamma-delta T lymphocyte",
+        "gamma-delta T-cell",
+        "gamma-delta T-lymphocyte",
+        "gammadelta T cell",
+        "gd T cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000084",
+          "label": "T cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000084",
+          "label": "T cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000542",
+          "label": "lymphocyte"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0042106",
+          "label": "gamma-delta T cell receptor complex"
+        }
+      ]
+    },
+    "CL:0001065": {
+      "id": "CL:0001065",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0001065",
+      "label": "innate lymphoid cell",
+      "definition": "A lymphocyte that lacks characteristic T cell, B cell, myeloid cell, and dendritic cell markers, that functions as part of the innate immune response to produce cytokines and other effector responses.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000542",
+          "label": "lymphocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000542",
+          "label": "lymphocyte"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0001816",
+          "label": "cytokine production"
+        },
+        {
+          "id": "GO:0045087",
+          "label": "innate immune response"
+        },
+        {
+          "id": "PR:000001002",
+          "label": "CD19 molecule"
+        },
+        {
+          "id": "PR:000001020",
+          "label": "CD3 epsilon"
+        }
+      ]
+    },
+    "CL:0000442": {
+      "id": "CL:0000442",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000442",
+      "label": "follicular dendritic cell",
+      "definition": "A cell with extensive dendritic processes found in the B cell areas (primary follicles and germinal centers) of lymphoid tissue. They are unrelated to the dendritic cell associated with T cells. Follicular dendritic cells have Fc receptors and C3b receptors, but unlike other dendritic cells, they do not process or present antigen in a way that allows recognition by T cells. Instead, they hold antigen in the form of immune complexes on their surfaces for long periods and can present antigen to B cells during an immune response.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000451",
+          "label": "dendritic cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000113",
+          "label": "mononuclear phagocyte"
+        },
+        {
+          "id": "CL:0000145",
+          "label": "professional antigen presenting cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000234",
+          "label": "phagocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0000451",
+          "label": "dendritic cell"
+        },
+        {
+          "id": "CL:0000518",
+          "label": "phagocyte (sensu Vertebrata)"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000784": {
+      "id": "CL:0000784",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000784",
+      "label": "plasmacytoid dendritic cell",
+      "definition": "A dendritic cell type of distinct morphology, localization, and surface marker expression (CD123-positive) from other dendritic cell types and associated with early stage immune responses, particularly the release of physiologically abundant amounts of type I interferons in response to infection.",
+      "synonyms": [
+        "DC2",
+        "IPC",
+        "T-associated plasma cell",
+        "interferon-producing cell",
+        "lymphoid dendritic cell",
+        "pDC",
+        "plasmacytoid T cell",
+        "plasmacytoid monocyte",
+        "type 2 DC"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000451",
+          "label": "dendritic cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000113",
+          "label": "mononuclear phagocyte"
+        },
+        {
+          "id": "CL:0000145",
+          "label": "professional antigen presenting cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000234",
+          "label": "phagocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0000451",
+          "label": "dendritic cell"
+        },
+        {
+          "id": "CL:0000518",
+          "label": "phagocyte (sensu Vertebrata)"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0032606",
+          "label": "type I interferon production"
         }
       ]
     },

@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "6a7656fe1baa",
-  "generated_at": "2026-10-09T16:34:29+00:00",
+  "data_version": "7fdf7c751e73",
+  "generated_at": "2026-10-09T16:36:17+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "edge_direction": "develops_from/is_a: from=ลูก to=แม่; interacts_with: from=ผู้กระทำ to=ผู้ถูกกระทำ"
  },
@@ -2001,6 +2001,384 @@
      "NK cell",
      "large granular lymphocyte",
      "null cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000547",
+   "slug": "proerythroblast",
+   "kind": "cell",
+   "en": "proerythroblast",
+   "th": "โพรเอริโทรบลาสต์ (proerythroblast)",
+   "systems": [
+    "blood-immune"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "hematopoietic",
+   "location": "ไขกระดูก",
+   "morphology": "เซลล์ขนาดใหญ่ นิวเคลียสกลมใหญ่ โครมาตินละเอียด เห็นนิวคลีโอลัส ไซโทพลาซึมติดสีเบสเข้ม",
+   "function": "เป็นระยะแรกที่จำแนกได้ในสายเม็ดเลือดแดง แบ่งตัวและเจริญเป็น erythroblast ระยะถัดไป ตอบสนองต่อฮอร์โมน erythropoietin",
+   "secretes": [],
+   "markers": [
+    "CD71 (transferrin receptor)",
+    "CD117 (c-Kit)"
+   ],
+   "lifespan": "",
+   "exam": "ลำดับการเจริญของเม็ดเลือดแดงในไขกระดูก คือ proerythroblast, basophilic, polychromatophilic, orthochromatic erythroblast, reticulocyte และ erythrocyte",
+   "diseases": [
+    "โรคเม็ดเลือดแดงไม่เจริญ (pure red cell aplasia)"
+   ],
+   "confused_with": [
+    "CL:0000765"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000547",
+   "cl": {
+    "label": "proerythroblast",
+    "definition": "An immature, nucleated erythrocyte occupying the stage of erythropoeisis that follows formation of erythroid progenitor cells. This cell is CD71-positive, has both a nucleus and a nucleolus, and lacks hematopoeitic lineage markers.",
+    "synonyms": [
+     "pronormoblast",
+     "rubriblast"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000835",
+   "slug": "myeloblast",
+   "kind": "cell",
+   "en": "myeloblast",
+   "th": "ไมอีโลบลาสต์ (myeloblast)",
+   "systems": [
+    "blood-immune"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "hematopoietic",
+   "location": "ไขกระดูก",
+   "morphology": "เซลล์ขนาดใหญ่ นิวเคลียสกลมโครมาตินละเอียด เห็นนิวคลีโอลัสชัด ไซโทพลาซึมติดสีเบสและไม่มีแกรนูล",
+   "function": "เป็นระยะแรกของสายเม็ดเลือดขาวชนิดมีแกรนูล แบ่งตัวแล้วเจริญเป็น promyelocyte",
+   "secretes": [],
+   "markers": [
+    "CD34",
+    "CD117 (c-Kit)",
+    "myeloperoxidase (MPO)"
+   ],
+   "lifespan": "",
+   "exam": "ในไขกระดูกปกติ blast มีน้อยกว่า 5 เปอร์เซ็นต์ ถ้ามีมากผิดปกติและมีแท่ง Auer rod สงสัยมะเร็งเม็ดเลือดขาวชนิดไมอีลอยด์เฉียบพลัน (AML)",
+   "diseases": [
+    "มะเร็งเม็ดเลือดขาวชนิดไมอีลอยด์เฉียบพลัน (acute myeloid leukemia, AML)"
+   ],
+   "confused_with": [
+    "CL:0000836"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000835",
+   "cl": {
+    "label": "myeloblast",
+    "definition": "The most primitive precursor in the granulocytic series, having fine, evenly distributed chromatin, several nucleoli, a high nuclear-to-cytoplasmic ration (5:1-7:1), and a nongranular basophilic cytoplasm. They reside in the bone marrow.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000836",
+   "slug": "promyelocyte",
+   "kind": "cell",
+   "en": "promyelocyte",
+   "th": "โพรไมอีโลไซต์ (promyelocyte)",
+   "systems": [
+    "blood-immune"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "hematopoietic",
+   "location": "ไขกระดูก",
+   "morphology": "เซลล์ขนาดใหญ่ มีแกรนูลปฐมภูมิ (azurophilic granule) ติดสีม่วงแดงในไซโทพลาซึม",
+   "function": "สร้างแกรนูลปฐมภูมิที่มีเอนไซม์ เช่น myeloperoxidase แล้วเจริญเป็น myelocyte ซึ่งเริ่มสร้างแกรนูลจำเพาะของ neutrophil, eosinophil หรือ basophil",
+   "secretes": [],
+   "markers": [
+    "myeloperoxidase (MPO)",
+    "CD33"
+   ],
+   "lifespan": "",
+   "exam": "มะเร็งเม็ดเลือดขาวชนิด acute promyelocytic leukemia (APL) มี t(15;17) เกิดยีน PML–RARA รักษาด้วยกรด all-trans retinoic acid (ATRA)",
+   "diseases": [
+    "acute promyelocytic leukemia (APL)"
+   ],
+   "confused_with": [
+    "CL:0000835"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000836",
+   "cl": {
+    "label": "promyelocyte",
+    "definition": "A precursor in the granulocytic series, being a cell intermediate in development between a myeloblast and myelocyte, that has distinct nucleoli, a nuclear-to-cytoplasmic ratio of 5:1 to 3:1, and containing a few primary cytoplasmic granules. Markers for this cell are fucosyltransferase FUT4-positive, CD33-positive, integrin alpha-M-negative, low affinity immunoglobulin gamma Fc region receptor III-negative, and CD24-negative.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000560",
+   "slug": "band-neutrophil",
+   "kind": "cell",
+   "en": "band form neutrophil",
+   "th": "แบนด์นิวโทรฟิล (band neutrophil)",
+   "systems": [
+    "blood-immune"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "blood",
+   "location": "ไขกระดูกและเลือดส่วนปลาย",
+   "morphology": "นิวโทรฟิลที่ยังไม่เจริญเต็มที่ นิวเคลียสรูปแท่งโค้งคล้ายเกือกม้า ยังไม่แบ่งเป็นพู",
+   "function": "ทำหน้าที่คล้ายนิวโทรฟิลที่เจริญเต็มที่ คือกินและทำลายแบคทีเรีย",
+   "secretes": [],
+   "markers": [
+    "CD16",
+    "CD11b"
+   ],
+   "lifespan": "",
+   "exam": "เมื่อมีการติดเชื้อแบคทีเรียรุนแรง ไขกระดูกปล่อย band neutrophil ออกมามากขึ้น เรียกว่า left shift ต่างจาก neutrophil เต็มวัยที่นิวเคลียสแบ่งเป็น 3–5 พู",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000775"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000560",
+   "cl": {
+    "label": "band form neutrophil",
+    "definition": "A late neutrophilic metamyelocyte in which the nucleus is indented to more than half the distance to the farthest nuclear margin but in no area being condensed to a single filament. The nucleus is in the form of a curved or coiled band, not having acquired the typical multilobar shape of the mature neutrophil. These cells are fMLP receptor-positive, CD11b-positive, CD35-negative, and CD49d-negative.",
+    "synonyms": [
+     "band cell",
+     "band form",
+     "band",
+     "rod neutrophil",
+     "stab cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000814",
+   "slug": "nkt-cell",
+   "kind": "cell",
+   "en": "mature NK T cell",
+   "th": "เอ็นเคทีเซลล์ (NK T cell)",
+   "systems": [
+    "blood-immune"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "lymphoid",
+   "location": "เลือดและเนื้อเยื่อน้ำเหลือง โดยเฉพาะตับ",
+   "morphology": "ลิมโฟไซต์ขนาดเล็กถึงกลาง",
+   "function": "ทีเซลล์ที่มีตัวรับของเซลล์ NK ร่วมด้วย รู้จักแอนติเจนชนิดไขมันที่ถูกนำเสนอบนโมเลกุล CD1d และหลั่งไซโตไคน์เร็ว เช่น IFN-γ และ IL-4 ช่วยปรับการตอบสนองของภูมิคุ้มกัน",
+   "secretes": [
+    "IFN-γ",
+    "IL-4"
+   ],
+   "markers": [
+    "CD3",
+    "CD56 (ในคน)",
+    "CD1d-restricted TCR"
+   ],
+   "lifespan": "",
+   "exam": "เชื่อมระหว่างภูมิคุ้มกันกำเนิดกับภูมิคุ้มกันจำเพาะ ต่างจากเซลล์ NK ที่ไม่มี TCR และไม่มี CD3",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000623",
+    "CL:0000084"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000814",
+   "cl": {
+    "label": "mature NK T cell",
+    "definition": "A mature alpha-beta T cell of a distinct lineage that bears natural killer markers and a T cell receptor specific for a limited set of ligands. NK T cells have activation and regulatory roles particularly early in an immune response.",
+    "synonyms": [
+     "mature NK T lymphocyte",
+     "mature NK T-cell",
+     "mature NK T-lymphocyte",
+     "mature NKT cell",
+     "mature natural killer T cell",
+     "mature natural killer T lymphocyte",
+     "mature natural killer T-cell",
+     "mature natural killer T-lymphocyte"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000798",
+   "slug": "gamma-delta-t-cell",
+   "kind": "cell",
+   "en": "gamma-delta T cell",
+   "th": "แกมมา–เดลตาทีเซลล์ (γδ T cell)",
+   "systems": [
+    "blood-immune"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "lymphoid",
+   "location": "เลือดส่วนปลาย (ส่วนน้อย) และเยื่อบุผิว เช่น ผิวหนังและลำไส้",
+   "morphology": "ลิมโฟไซต์ที่มีตัวรับ T cell (TCR) ชนิดสายแกมมาและเดลตา แทนที่จะเป็นอัลฟาและเบตา",
+   "function": "รู้จักแอนติเจนที่ไม่ต้องถูกนำเสนอบน MHC เช่น โมเลกุลความเครียดของเซลล์และแอนติเจนไม่ใช่เปปไทด์ ทำหน้าที่ปกป้องเยื่อบุผิวด่านหน้า",
+   "secretes": [],
+   "markers": [
+    "CD3",
+    "TCR γδ"
+   ],
+   "lifespan": "",
+   "exam": "พบเพียงส่วนน้อยของ T cell ในเลือด แต่พบมากในเยื่อบุผิว ต่างจาก αβ T cell ที่รู้จักเปปไทด์ที่ถูกนำเสนอด้วย MHC",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000084"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000798",
+   "cl": {
+    "label": "gamma-delta T cell",
+    "definition": "A T cell that expresses a gamma-delta T cell receptor complex.",
+    "synonyms": [
+     "gamma-delta T lymphocyte",
+     "gamma-delta T-cell",
+     "gamma-delta T-lymphocyte",
+     "gammadelta T cell",
+     "gd T cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0001065",
+   "slug": "innate-lymphoid-cell",
+   "kind": "cell",
+   "en": "innate lymphoid cell",
+   "th": "เซลล์ลิมฟอยด์ภูมิคุ้มกันกำเนิด (innate lymphoid cell, ILC)",
+   "systems": [
+    "blood-immune"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "lymphoid",
+   "location": "เนื้อเยื่อเยื่อบุผิว เช่น ลำไส้ ปอด และผิวหนัง",
+   "morphology": "ลักษณะคล้ายลิมโฟไซต์ขนาดเล็ก",
+   "function": "ตอบสนองต่อสัญญาณจากเนื้อเยื่ออย่างรวดเร็วด้วยการหลั่งไซโตไคน์ โดยไม่ใช้ตัวรับแอนติเจนจำเพาะ แบ่งเป็นกลุ่ม ILC1, ILC2 และ ILC3 ซึ่งสร้างไซโตไคน์คล้าย Th1, Th2 และ Th17",
+   "secretes": [
+    "IFN-γ (ILC1)",
+    "IL-5 และ IL-13 (ILC2)",
+    "IL-17 และ IL-22 (ILC3)"
+   ],
+   "markers": [
+    "CD127 (IL-7Rα)"
+   ],
+   "lifespan": "",
+   "exam": "ไม่มีตัวรับแอนติเจนที่เกิดจากการเรียงยีน (ไม่มี TCR หรือ BCR) เซลล์ NK จัดเป็น ILC ชนิดที่ทำลายเซลล์",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000623",
+    "CL:0000084"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0001065",
+   "cl": {
+    "label": "innate lymphoid cell",
+    "definition": "A lymphocyte that lacks characteristic T cell, B cell, myeloid cell, and dendritic cell markers, that functions as part of the innate immune response to produce cytokines and other effector responses.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000442",
+   "slug": "follicular-dendritic-cell",
+   "kind": "cell",
+   "en": "follicular dendritic cell",
+   "th": "ฟอลลิคูลาร์เดนไดรต์เซลล์ (follicular dendritic cell, FDC)",
+   "systems": [
+    "blood-immune"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "lymphoid",
+   "location": "ฟอลลิเคิลของ B cell (germinal center) ในต่อมน้ำเหลืองและม้าม",
+   "morphology": "เซลล์มีแขนงยาวสานกันเป็นข่ายภายใน follicle",
+   "function": "จับและแสดงแอนติเจนในรูปแอนติเจนเชิงซ้อนกับแอนติบอดีและคอมพลีเมนต์ ให้ B cell ตรวจสอบและคัดเลือกในกระบวนการ affinity maturation",
+   "secretes": [],
+   "markers": [
+    "CD21 (CR2)",
+    "CD35 (CR1)",
+    "CD23"
+   ],
+   "lifespan": "",
+   "exam": "FDC ไม่ได้มาจากไขกระดูก และไม่ใช่เซลล์นำเสนอแอนติเจนให้ T cell ผ่าน MHC class II ต่างจาก dendritic cell ทั่วไป",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000451"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000442",
+   "cl": {
+    "label": "follicular dendritic cell",
+    "definition": "A cell with extensive dendritic processes found in the B cell areas (primary follicles and germinal centers) of lymphoid tissue. They are unrelated to the dendritic cell associated with T cells. Follicular dendritic cells have Fc receptors and C3b receptors, but unlike other dendritic cells, they do not process or present antigen in a way that allows recognition by T cells. Instead, they hold antigen in the form of immune complexes on their surfaces for long periods and can present antigen to B cells during an immune response.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000784",
+   "slug": "plasmacytoid-dendritic-cell",
+   "kind": "cell",
+   "en": "plasmacytoid dendritic cell",
+   "th": "พลาสมาไซทอยด์เดนไดรต์เซลล์ (plasmacytoid dendritic cell, pDC)",
+   "systems": [
+    "blood-immune"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "lymphoid",
+   "location": "เลือดและอวัยวะน้ำเหลืองทุติยภูมิ",
+   "morphology": "เซลล์รูปร่างคล้ายพลาสมาเซลล์",
+   "function": "ตรวจจับกรดนิวคลีอิกของไวรัสผ่านตัวรับ TLR7 และ TLR9 แล้วหลั่ง type I interferon (IFN-α และ IFN-β) ปริมาณมากเพื่อต้านไวรัส",
+   "secretes": [
+    "type I interferon (IFN-α, IFN-β)"
+   ],
+   "markers": [
+    "CD123 (IL-3Rα)",
+    "BDCA-2 (CD303)"
+   ],
+   "lifespan": "",
+   "exam": "เป็นผู้ผลิต interferon ชนิด I หลักในการติดเชื้อไวรัส ต่างจาก conventional dendritic cell ที่เน้นนำเสนอแอนติเจนให้ T cell",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000451",
+    "CL:0000786"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000784",
+   "cl": {
+    "label": "plasmacytoid dendritic cell",
+    "definition": "A dendritic cell type of distinct morphology, localization, and surface marker expression (CD123-positive) from other dendritic cell types and associated with early stage immune responses, particularly the release of physiologically abundant amounts of type I interferons in response to infection.",
+    "synonyms": [
+     "DC2",
+     "IPC",
+     "T-associated plasma cell",
+     "interferon-producing cell",
+     "lymphoid dendritic cell",
+     "pDC",
+     "plasmacytoid T cell",
+     "plasmacytoid monocyte",
+     "type 2 DC"
     ],
     "obsolete": false
    }
@@ -7351,6 +7729,34 @@
    "file": "blood-immune"
   },
   {
+   "type": "develops_from",
+   "from": "CL:0000547",
+   "to": "CL:0000050",
+   "source": "curated",
+   "file": "blood-immune"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000835",
+   "to": "CL:0000557",
+   "source": "curated",
+   "file": "blood-immune"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000836",
+   "to": "CL:0000835",
+   "source": "curated",
+   "file": "blood-immune"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0001065",
+   "to": "CL:0000051",
+   "source": "curated",
+   "file": "blood-immune"
+  },
+  {
    "type": "is_a",
    "from": "CL:0000738",
    "to": "CL:0000988",
@@ -7494,6 +7900,69 @@
    "type": "is_a",
    "from": "CL:0000236",
    "to": "CL:0000145",
+   "source": "curated",
+   "file": "blood-immune"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000547",
+   "to": "CL:0000988",
+   "source": "curated",
+   "file": "blood-immune"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000835",
+   "to": "CL:0000988",
+   "source": "curated",
+   "file": "blood-immune"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000836",
+   "to": "CL:0000988",
+   "source": "curated",
+   "file": "blood-immune"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000560",
+   "to": "CL:0000775",
+   "source": "curated",
+   "file": "blood-immune"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000814",
+   "to": "CL:0000084",
+   "source": "curated",
+   "file": "blood-immune"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000798",
+   "to": "CL:0000084",
+   "source": "curated",
+   "file": "blood-immune"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0001065",
+   "to": "CL:0000542",
+   "source": "curated",
+   "file": "blood-immune"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000442",
+   "to": "CL:0000451",
+   "source": "curated",
+   "file": "blood-immune"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000784",
+   "to": "CL:0000451",
    "source": "curated",
    "file": "blood-immune"
   },

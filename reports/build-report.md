@@ -1,13 +1,13 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-09 23:34
+สร้างเมื่อ: 2026-10-09 23:36
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 74 เส้น
-- คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 4 เส้น
+- ตรงกัน: 82 เส้น
+- คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 5 เส้น
 - คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 4 เส้น
-- CL มี แต่ไม่ได้คัดไว้: 37 เส้น
+- CL มี แต่ไม่ได้คัดไว้: 38 เส้น
 
 ### is_a ที่คัดเองข้ามขั้น
 ถูกตามความหมาย แต่ใน CL มีตัวกลางอยู่ระหว่างสองรหัสนี้ในชุดข้อมูล
@@ -15,6 +15,7 @@
 - CL:0000207 olfactory receptor cell → CL:0000540 neuron
 - CL:0000210 photoreceptor cell → CL:0000540 neuron
 - CL:0000235 macrophage → CL:0000738 leukocyte
+- CL:0000623 natural killer cell → CL:0000542 lymphocyte
 - CL:0000645 pituicyte → CL:0000125 glial cell
 
 ### is_a ที่คัดเองแต่ CL ไม่มี
@@ -51,6 +52,7 @@
 - CL:0000558 reticulocyte → CL:0000988 hematopoietic cell
 - CL:0000589 cochlear inner hair cell → CL:0000101 sensory neuron
 - CL:0000601 cochlear outer hair cell → CL:0000101 sensory neuron
+- CL:0000623 natural killer cell → CL:0001065 innate lymphoid cell
 - CL:0000645 pituicyte → CL:0000127 astrocyte
 - CL:0000765 erythroblast → CL:0000988 hematopoietic cell
 - CL:0000786 plasma cell → CL:0000542 lymphocyte
@@ -67,12 +69,12 @@
 
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
-- ตรงกัน: 12 เส้น
-- คัดเองมี แต่ CL ไม่มี: 35 เส้น
-- CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 2 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 42 เส้น
+- ตรงกัน: 14 เส้น
+- คัดเองมี แต่ CL ไม่มี: 37 เส้น
+- CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 3 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 48 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 297 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 337 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -92,6 +94,7 @@
 - CL:0000451 dendritic cell → CL:0000049 common myeloid progenitor
 - CL:0000510 paneth cell → CL:0002250 intestinal crypt stem cell
 - CL:0000525 syncytiotrophoblast cell → CL:0000523 mononuclear cytotrophoblast cell
+- CL:0000547 proerythroblast → CL:0000050 megakaryocyte-erythroid progenitor cell
 - CL:0000556 megakaryocyte → CL:0000050 megakaryocyte-erythroid progenitor cell
 - CL:0000557 granulocyte monocyte progenitor cell → CL:0000049 common myeloid progenitor
 - CL:0000558 reticulocyte → CL:0000765 erythroblast
@@ -107,6 +110,7 @@
 - CL:0000786 plasma cell → CL:0000236 B cell
 - CL:0000787 memory B cell → CL:0000236 B cell
 - CL:0000813 memory T cell → CL:0000084 T cell
+- CL:0001065 innate lymphoid cell → CL:0000051 common lymphoid progenitor
 - CL:0002062 pulmonary alveolar type 1 cell → CL:0002063 pulmonary alveolar type 2 cell
 - CL:0002145 multiciliated columnar cell of tracheobronchial tree → CL:0002329 basal epithelial cell of tracheobronchial tree
 - CL:0007010 osteoprogenitor cell → CL:0000134 mesenchymal stem cell
@@ -116,6 +120,7 @@
 
 - CL:0000542 lymphocyte → CL:0000051 common lymphoid progenitor
 - CL:0000738 leukocyte → CL:0000037 hematopoietic stem cell
+- CL:0000765 erythroblast → CL:0000547 proerythroblast
 
 ### develops_from ที่ CL ชี้ไปเซลล์นอกชุดข้อมูล
 
@@ -142,17 +147,23 @@
 - CL:0000501 granulosa cell ← CL:4033066 pre-granulosa cell
 - CL:0000510 paneth cell ← CL:4047017 transit amplifying cell of gut
 - CL:0000542 lymphocyte ← CL:0017500 neutrophillic cytoplasm
+- CL:0000547 proerythroblast ← CL:0000038 erythroid progenitor cell
+- CL:0000547 proerythroblast ← CL:0017503 basophilic cytoplasm
 - CL:0000556 megakaryocyte ← CL:0000553 megakaryocyte progenitor cell
 - CL:0000558 reticulocyte ← CL:0000552 orthochromatic erythroblast
+- CL:0000560 band form neutrophil ← CL:0000582 neutrophilic metamyelocyte
+- CL:0000560 band form neutrophil ← CL:0017506 banded nucleus
 - CL:0000570 parafollicular cell ← CL:0000333 migratory neural crest cell
 - CL:0000573 retinal cone cell ← CL:0002672 retinal progenitor cell
 - CL:0000576 monocyte ← CL:0000559 promonocyte
 - CL:0000604 retinal rod cell ← CL:0002672 retinal progenitor cell
 - CL:0000623 natural killer cell ← CL:0000825 pro-NK cell
 - CL:0000746 cardiac muscle cell ← CL:0000513 cardiac muscle myoblast
-- CL:0000765 erythroblast ← CL:0000547 proerythroblast
 - CL:0000786 plasma cell ← CL:0000980 plasmablast
 - CL:0000786 plasma cell ← CL:0017508 cartwheel heterochromatin
+- CL:0000814 mature NK T cell ← CL:0000914 immature NK T cell
+- CL:0000835 myeloblast ← CL:0017503 basophilic cytoplasm
+- CL:0000836 promyelocyte ← CL:0017503 basophilic cytoplasm
 - CL:0002063 pulmonary alveolar type 2 cell ← CL:4040003 fetal pre-type II pulmonary alveolar epithelial cell
 - CL:0002145 multiciliated columnar cell of tracheobronchial tree ← CL:0002209 intermediate epitheliocyte
 - CL:0002255 stromal cell of endometrium ← CL:2000002 decidual cell
@@ -162,7 +173,7 @@
 - CL:0008002 skeletal muscle fiber ← CL:0000515 skeletal muscle myoblast
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 
-## คำเตือนจาก validate (167)
+## คำเตือนจาก validate (176)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -199,6 +210,15 @@
 - CL:0000786 (plasma cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000787 (memory B cell): ช่องว่าง: morphology, lifespan, diseases; ยังไม่มีรูป
 - CL:0000623 (natural killer cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000547 (proerythroblast): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000835 (myeloblast): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000836 (promyelocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000560 (band form neutrophil): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000814 (mature NK T cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000798 (gamma-delta T cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0001065 (innate lymphoid cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000442 (follicular dendritic cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000784 (plasmacytoid dendritic cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0000746 (cardiac muscle cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:1000477 (cardiac pacemaker cell of sinoatrial node): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0002068 (Purkinje myocyte): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
