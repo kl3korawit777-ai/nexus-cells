@@ -2,10 +2,11 @@
 // แต่ละ view คืน {el, title, destroy?, after?}
 
 import { store, realCellCount, cellsInSystem, searchCells, colorKey, MODES, crossSystemEdges, systemEdges } from './data.js';
-import { h, cellHref, systemHref } from './util.js';
+import { h, cellHref, systemHref, tissueHref } from './util.js';
 import { createSystemGraph, colorForKey } from './graph.js';
 import { renderCellPage, renderPeek } from './card.js';
 import { searchBox, edgeSwatch, legendFor } from './ui.js';
+import { createOverviewPreview } from './overview.js';
 
 // ---------------------------------------------------------------- หน้าไม่พบ
 
@@ -37,20 +38,45 @@ export function homeView() {
   });
   // เนื้อเยื่อหลัก 4 ประเภท (ไม่รวมหมวด other ที่ไม่มี cl_class)
   const tissues = store.tissues.filter((t) => t.cl_class).map((t) =>
-    h('div', { class: 'tissue-card' },
+    h('a', { class: 'tissue-card', href: tissueHref(t.id), style: `border-left: 6px solid ${t.color}` },
       h('h3', { text: t.th }), h('div', { class: 'en', text: t.en }),
       h('div', { class: 'chips' }, (t.subtypes || []).map((st) => h('span', { class: 'chip' }, st.th)))));
+
+  // การ์ดใหญ่: ทางเข้าหลักไปยังใยภาพรวม ภาพตัวอย่างสร้างจากข้อมูลและตำแหน่งจริง
+  const nReal = store.cells.filter((c) => c.kind === 'cell').length;
+  const nSys = store.systems.filter((s) => realCellCount(s.id) > 0).length;
+  const previewBox = h('div', { class: 'overview-preview', 'aria-hidden': 'true' }, h('div', { class: 'cy' }));
+  const stat = (n, label) => h('div', { class: 'stat' }, h('b', { text: n }), h('span', { text: label }));
+  const overviewCard = h('a', { class: 'overview-card', href: '#/overview/system' },
+    h('div', {},
+      h('h2', { text: 'ใยภาพรวมทั้งร่างกาย' }),
+      h('p', { class: 'sub-title', text: 'ดูเซลล์ทุกชนิดในใยเดียว สลับจัดกลุ่มตามระบบอวัยวะหรือตามเนื้อเยื่อ ซูมเข้าเพื่อดูเซลล์และเส้นเชื่อม' }),
+      h('div', { class: 'stats' }, stat(nReal, 'เซลล์'), stat(store.edges.length, 'เส้นเชื่อม'), stat(nSys, 'ระบบ')),
+      h('div', { class: 'cta', text: 'เปิดใยภาพรวม →' })),
+    previewBox);
+  let preview = null;
 
   const el = h('div', {},
     h('section', { class: 'hero' },
       h('h1', { class: 'page-title', id: 'page-title', tabindex: '-1', text: 'Nexus · ใยเซลล์' }),
       h('p', { class: 'sub-title', text: 'แผนที่เครือข่ายเซลล์ในร่างกายมนุษย์' }),
       search.el),
+    h('div', { style: 'margin-top:18px' }, overviewCard),
     h('h2', { class: 'section', text: 'ระบบอวัยวะ' }),
     h('div', { class: 'sys-grid' }, cards),
     h('h2', { class: 'section', text: 'เนื้อเยื่อหลัก 4 ประเภท' }),
     h('div', { class: 'tissue-row' }, tissues));
-  return { title: 'Nexus · ใยเซลล์', el, destroy: search.destroy };
+  let gone = false;
+  return {
+    title: 'Nexus · ใยเซลล์',
+    el,
+    after: () => {
+      createOverviewPreview(previewBox.querySelector('.cy')).then((p) => {
+        if (gone) p.destroy(); else preview = p;
+      }).catch((e) => console.error(e));
+    },
+    destroy: () => { gone = true; search.destroy(); if (preview) preview.destroy(); },
+  };
 }
 
 // ---------------------------------------------------------------- ใยรายระบบ
