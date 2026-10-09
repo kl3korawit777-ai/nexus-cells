@@ -25,7 +25,8 @@
       "myasthenia gravis"
     ],
     "confused_with": [
-      "CL:0000192"
+      "CL:0000192",
+      "CL:0000746"
     ],
     "image": null,
     "verified": false,
@@ -113,7 +114,8 @@
       "หอบหืด (asthma) ซึ่งมีการหดเกร็งของกล้ามเนื้อเรียบหลอดลม"
     ],
     "confused_with": [
-      "CL:0008002"
+      "CL:0008002",
+      "CL:0000746"
     ],
     "image": null,
     "verified": false,

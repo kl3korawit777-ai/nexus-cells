@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T16:25:22+00:00",
+  "fetched_at": "2026-10-09T16:26:35+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -3938,6 +3938,690 @@
         {
           "id": "PR:000001889",
           "label": "CD14 molecule"
+        }
+      ]
+    },
+    "CL:0000746": {
+      "id": "CL:0000746",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000746",
+      "label": "cardiac muscle cell",
+      "definition": "Cardiac muscle cells are striated muscle cells that are responsible for heart contraction. In mammals, the contractile fiber resembles those of skeletal muscle but are only one third as large in diameter, are richer in sarcoplasm, and contain centrally located instead of peripheral nuclei.",
+      "synonyms": [
+        "cardiac myocyte",
+        "cardiocyte",
+        "cardiomyocyte",
+        "heart muscle cell",
+        "cardiac muscle fiber"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000737",
+          "label": "striated muscle cell"
+        },
+        {
+          "id": "CL:0002494",
+          "label": "cardiocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0000187",
+          "label": "muscle cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000737",
+          "label": "striated muscle cell"
+        },
+        {
+          "id": "CL:0002494",
+          "label": "cardiocyte"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000513",
+          "label": "cardiac muscle myoblast"
+        },
+        {
+          "id": "GO:0060047",
+          "label": "heart contraction"
+        },
+        {
+          "id": "PATO:0002478",
+          "label": "transversely striated"
+        }
+      ]
+    },
+    "CL:1000477": {
+      "id": "CL:1000477",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_1000477",
+      "label": "cardiac pacemaker cell of sinoatrial node",
+      "definition": "A nodal myocyte that is part of the sinoatrial node.",
+      "synonyms": [
+        "cardiac pacemaker cell of sinuatrial node",
+        "pacemaker cell of sinoatrial node",
+        "pacemaker cell of sinuatrial node"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:1000409",
+          "label": "myocyte of sinoatrial node"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0000187",
+          "label": "muscle cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000737",
+          "label": "striated muscle cell"
+        },
+        {
+          "id": "CL:0000746",
+          "label": "cardiac muscle cell"
+        },
+        {
+          "id": "CL:0002072",
+          "label": "nodal myocyte"
+        },
+        {
+          "id": "CL:0002086",
+          "label": "specialized cardiac myocyte"
+        },
+        {
+          "id": "CL:0002494",
+          "label": "cardiocyte"
+        },
+        {
+          "id": "CL:0008007",
+          "label": "visceral muscle cell"
+        },
+        {
+          "id": "CL:0008008",
+          "label": "striated visceral muscle cell"
+        },
+        {
+          "id": "CL:0008009",
+          "label": "transversely striated visceral muscle cell"
+        },
+        {
+          "id": "CL:1000409",
+          "label": "myocyte of sinoatrial node"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0002068": {
+      "id": "CL:0002068",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002068",
+      "label": "Purkinje myocyte",
+      "definition": "Specialized cardiac myocyte that is subendocardially interspersed with the regular cardiac muscle cell. They are uninucleate cylindrical cells, associated end-to-end in long rows, continue from the node to the atrioventricular bundle; relatively short compared to ordinary myocytes but are nearly twice their diameter.",
+      "synonyms": [
+        "Purkinje cell fiber",
+        "Purkinje muscle cell",
+        "myocytus conducens cardiacus"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002086",
+          "label": "specialized cardiac myocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0000187",
+          "label": "muscle cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000737",
+          "label": "striated muscle cell"
+        },
+        {
+          "id": "CL:0000746",
+          "label": "cardiac muscle cell"
+        },
+        {
+          "id": "CL:0002086",
+          "label": "specialized cardiac myocyte"
+        },
+        {
+          "id": "CL:0002494",
+          "label": "cardiocyte"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000115": {
+      "id": "CL:0000115",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000115",
+      "label": "endothelial cell",
+      "definition": "An endothelial cell comprises the outermost layer or lining of anatomical structures and can be squamous or cuboidal. In mammals, endothelial cell has vimentin filaments and is derived from the mesoderm.",
+      "synonyms": [
+        "endotheliocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000222",
+          "label": "mesodermal cell"
+        }
+      ]
+    },
+    "CL:0002350": {
+      "id": "CL:0002350",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002350",
+      "label": "endocardial cell",
+      "definition": "An endothelial cell that lines the intracavitary lumen of the heart, separating the circulating blood from the underlying myocardium. This cell type releases a number of vasoactive substances including prostacyclin, nitrous oxide and endothelin.",
+      "synonyms": [
+        "endocardial endothelial cell",
+        "endothelial cell of endocardium"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0010008",
+          "label": "cardiac endothelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000115",
+          "label": "endothelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002494",
+          "label": "cardiocyte"
+        },
+        {
+          "id": "CL:0010008",
+          "label": "cardiac endothelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0002165",
+          "label": "endocardium"
+        }
+      ]
+    },
+    "CL:0000359": {
+      "id": "CL:0000359",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000359",
+      "label": "vascular associated smooth muscle cell",
+      "definition": "A smooth muscle cell associated with the vasculature.",
+      "synonyms": [
+        "VSMC",
+        "vascular smooth muscle cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000192",
+          "label": "smooth muscle cell"
+        },
+        {
+          "id": "CL:4033054",
+          "label": "perivascular cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0000187",
+          "label": "muscle cell"
+        },
+        {
+          "id": "CL:0000192",
+          "label": "smooth muscle cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0008000",
+          "label": "non-striated muscle cell"
+        },
+        {
+          "id": "CL:0008007",
+          "label": "visceral muscle cell"
+        },
+        {
+          "id": "CL:4033054",
+          "label": "perivascular cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0002049",
+          "label": "vasculature"
+        }
+      ]
+    },
+    "CL:0000669": {
+      "id": "CL:0000669",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000669",
+      "label": "pericyte",
+      "definition": "An elongated, contractile cell found wrapped about precapillary arterioles outside the basement membrane. Pericytes are present in capillaries where proper adventitia and muscle layer are missing (thus distingushing this cell type from adventitial cells). They are relatively undifferentiated and may become fibroblasts, macrophages, or smooth muscle cells.",
+      "synonyms": [
+        "adventitial cell",
+        "adventitial reticular cell",
+        "cell of Rouget",
+        "pericyte cell",
+        "pericyte of Rouget",
+        "ARC"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0000630",
+          "label": "supporting cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "CL:0008034",
+          "label": "mural cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000630",
+          "label": "supporting cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "CL:0008034",
+          "label": "mural cell"
+        },
+        {
+          "id": "CL:4033054",
+          "label": "perivascular cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0002548": {
+      "id": "CL:0002548",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002548",
+      "label": "fibroblast of cardiac tissue",
+      "definition": "A fibroblast that is part of the heart.",
+      "synonyms": [
+        "cardiac fibroblast"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000057",
+          "label": "fibroblast"
+        },
+        {
+          "id": "CL:0002494",
+          "label": "cardiocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000057",
+          "label": "fibroblast"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000499",
+          "label": "stromal cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "CL:0002494",
+          "label": "cardiocyte"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0000948",
+          "label": "heart"
         }
       ]
     },

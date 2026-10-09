@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "75eedd2b9d62",
-  "generated_at": "2026-10-09T16:25:23+00:00",
+  "data_version": "29abe8771ead",
+  "generated_at": "2026-10-09T16:26:36+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "edge_direction": "develops_from/is_a: from=ลูก to=แม่; interacts_with: from=ผู้กระทำ to=ผู้ถูกกระทำ"
  },
@@ -2006,6 +2006,341 @@
    }
   },
   {
+   "id": "CL:0000746",
+   "slug": "cardiac-muscle-cell",
+   "kind": "cell",
+   "en": "cardiac muscle cell",
+   "th": "เซลล์กล้ามเนื้อหัวใจ (cardiomyocyte)",
+   "systems": [
+    "cardiovascular"
+   ],
+   "tissue": "muscle",
+   "tissue_subtype": "cardiac-muscle",
+   "location": "ผนังหัวใจชั้น myocardium",
+   "morphology": "เซลล์สั้นแตกแขนง มีนิวเคลียสหนึ่งหรือสองนิวเคลียสอยู่กลางเซลล์ มีลายตามขวาง เซลล์ต่อกันด้วย intercalated disc",
+   "function": "หดตัวเป็นจังหวะเพื่อบีบเลือดออกจากหัวใจ โดยไม่อยู่ใต้อำนาจจิตใจ",
+   "secretes": [],
+   "markers": [
+    "cardiac troponin T",
+    "cardiac troponin I",
+    "α-actinin"
+   ],
+   "lifespan": "",
+   "exam": "intercalated disc ประกอบด้วย desmosome และ gap junction ทำให้เซลล์ยึดกันและส่งสัญญาณไฟฟ้าต่อกันได้ ไมโทคอนเดรียมาก เพราะใช้พลังงานต่อเนื่อง การตรวจ troponin ในเลือดใช้ดูกล้ามเนื้อหัวใจตาย",
+   "diseases": [
+    "กล้ามเนื้อหัวใจตาย (myocardial infarction)",
+    "กล้ามเนื้อหัวใจโต (cardiomyopathy)"
+   ],
+   "confused_with": [
+    "CL:0008002",
+    "CL:0000192"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000746",
+   "cl": {
+    "label": "cardiac muscle cell",
+    "definition": "Cardiac muscle cells are striated muscle cells that are responsible for heart contraction. In mammals, the contractile fiber resembles those of skeletal muscle but are only one third as large in diameter, are richer in sarcoplasm, and contain centrally located instead of peripheral nuclei.",
+    "synonyms": [
+     "cardiac myocyte",
+     "cardiocyte",
+     "cardiomyocyte",
+     "heart muscle cell",
+     "cardiac muscle fiber"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:1000477",
+   "slug": "sa-node-pacemaker-cell",
+   "kind": "cell",
+   "en": "cardiac pacemaker cell of sinoatrial node",
+   "th": "เซลล์ควบคุมจังหวะหัวใจ (pacemaker cell) ของ SA node",
+   "systems": [
+    "cardiovascular"
+   ],
+   "tissue": "muscle",
+   "tissue_subtype": "cardiac-muscle",
+   "location": "ปมไซโนเอเทรียล (sinoatrial node, SA node) บริเวณผนังหัวใจห้องบนขวา",
+   "morphology": "เซลล์เล็กกว่ากล้ามเนื้อหัวใจทั่วไป มีไมโอไฟบริลน้อย",
+   "function": "สร้างศักย์ไฟฟ้าเองอย่างเป็นจังหวะ (automaticity) กำหนดอัตราการเต้นของหัวใจ",
+   "secretes": [],
+   "markers": [
+    "HCN4"
+   ],
+   "lifespan": "",
+   "exam": "SA node เป็นตัวกำหนดจังหวะหัวใจปกติ (sinus rhythm) ระบบประสาทซิมพาเทติกเพิ่มอัตราเต้น พาราซิมพาเทติกลดอัตราเต้น",
+   "diseases": [
+    "sick sinus syndrome"
+   ],
+   "confused_with": [
+    "CL:0002068"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_1000477",
+   "cl": {
+    "label": "cardiac pacemaker cell of sinoatrial node",
+    "definition": "A nodal myocyte that is part of the sinoatrial node.",
+    "synonyms": [
+     "cardiac pacemaker cell of sinuatrial node",
+     "pacemaker cell of sinoatrial node",
+     "pacemaker cell of sinuatrial node"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002068",
+   "slug": "cardiac-purkinje-fiber-cell",
+   "kind": "cell",
+   "en": "Purkinje myocyte",
+   "th": "เซลล์เส้นใยเพอร์กินเจ (Purkinje fiber) ของหัวใจ",
+   "systems": [
+    "cardiovascular"
+   ],
+   "tissue": "muscle",
+   "tissue_subtype": "cardiac-muscle",
+   "location": "ใต้เยื่อบุหัวใจ (subendocardium) ของผนังกั้นห้องล่างและผนังห้องล่าง",
+   "morphology": "เซลล์กล้ามเนื้อหัวใจที่ดัดแปลง ใหญ่กว่ากล้ามเนื้อหัวใจทั่วไป มีไมโอไฟบริลน้อย ไซโทพลาซึมติดสีจางและมีไกลโคเจนมาก",
+   "function": "นำสัญญาณไฟฟ้าจาก bundle of His ไปยังกล้ามเนื้อห้องล่างอย่างรวดเร็ว ให้ห้องล่างหดตัวพร้อมกัน",
+   "secretes": [],
+   "markers": [],
+   "lifespan": "",
+   "exam": "Purkinje fiber ของหัวใจ (เซลล์กล้ามเนื้อหัวใจดัดแปลง) เป็นคนละชนิดกับ Purkinje cell ในสมองน้อย (เซลล์ประสาท) ชื่อเหมือนกันเพราะตั้งตามผู้ค้นพบคนเดียวกัน",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000121",
+    "CL:1000477"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002068",
+   "cl": {
+    "label": "Purkinje myocyte",
+    "definition": "Specialized cardiac myocyte that is subendocardially interspersed with the regular cardiac muscle cell. They are uninucleate cylindrical cells, associated end-to-end in long rows, continue from the node to the atrioventricular bundle; relatively short compared to ordinary myocytes but are nearly twice their diameter.",
+    "synonyms": [
+     "Purkinje cell fiber",
+     "Purkinje muscle cell",
+     "myocytus conducens cardiacus"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000115",
+   "slug": "endothelial-cell",
+   "kind": "cell",
+   "en": "endothelial cell",
+   "th": "เซลล์บุผนังหลอดเลือด (endothelial cell)",
+   "systems": [
+    "cardiovascular"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-squamous",
+   "location": "ผิวด้านในของหลอดเลือดและหลอดน้ำเหลืองทุกชนิด และหัวใจ",
+   "morphology": "เซลล์แบนบางเรียงเป็นชั้นเดียว นิวเคลียสนูน อยู่บน basal lamina",
+   "function": "เป็นผิวเรียบป้องกันเลือดจับตัว ควบคุมการซึมผ่านของสารและเซลล์เม็ดเลือด และหลั่งสารควบคุมความดัน เช่น nitric oxide (NO)",
+   "secretes": [
+    "nitric oxide (NO)",
+    "endothelin",
+    "von Willebrand factor"
+   ],
+   "markers": [
+    "CD31 (PECAM-1)",
+    "CD34",
+    "von Willebrand factor"
+   ],
+   "lifespan": "",
+   "exam": "NO ทำให้กล้ามเนื้อเรียบหลอดเลือดคลายตัว Weibel–Palade body เก็บ von Willebrand factor เซลล์บุผนังหลอดเลือดเรียงเป็นชั้นเดียว จัดเป็นเนื้อเยื่อบุผิวเรียบชั้นเดียว (endothelium)",
+   "diseases": [
+    "หลอดเลือดแดงแข็ง (atherosclerosis)"
+   ],
+   "confused_with": [
+    "CL:0002350"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000115",
+   "cl": {
+    "label": "endothelial cell",
+    "definition": "An endothelial cell comprises the outermost layer or lining of anatomical structures and can be squamous or cuboidal. In mammals, endothelial cell has vimentin filaments and is derived from the mesoderm.",
+    "synonyms": [
+     "endotheliocyte"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002350",
+   "slug": "endocardial-cell",
+   "kind": "cell",
+   "en": "endocardial cell",
+   "th": "เซลล์เยื่อบุหัวใจ (endocardial cell)",
+   "systems": [
+    "cardiovascular"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-squamous",
+   "location": "ผิวด้านในของห้องหัวใจและลิ้นหัวใจ (endocardium)",
+   "morphology": "เซลล์แบนเรียงชั้นเดียว คล้ายเซลล์บุผนังหลอดเลือด",
+   "function": "บุผิวด้านในของหัวใจให้เรียบ ป้องกันเลือดจับตัว และมีบทบาทในการพัฒนาลิ้นหัวใจ",
+   "secretes": [],
+   "markers": [],
+   "lifespan": "",
+   "exam": "เป็นชั้นในสุดของผนังหัวใจ (endocardium) ต่อเนื่องกับ endothelium ของหลอดเลือดที่ออกจากหัวใจ",
+   "diseases": [
+    "เยื่อบุหัวใจอักเสบ (endocarditis)"
+   ],
+   "confused_with": [
+    "CL:0000115"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002350",
+   "cl": {
+    "label": "endocardial cell",
+    "definition": "An endothelial cell that lines the intracavitary lumen of the heart, separating the circulating blood from the underlying myocardium. This cell type releases a number of vasoactive substances including prostacyclin, nitrous oxide and endothelin.",
+    "synonyms": [
+     "endocardial endothelial cell",
+     "endothelial cell of endocardium"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000359",
+   "slug": "vascular-smooth-muscle-cell",
+   "kind": "cell",
+   "en": "vascular associated smooth muscle cell",
+   "th": "เซลล์กล้ามเนื้อเรียบของหลอดเลือด",
+   "systems": [
+    "cardiovascular"
+   ],
+   "tissue": "muscle",
+   "tissue_subtype": "smooth-muscle",
+   "location": "ชั้น tunica media ของผนังหลอดเลือด",
+   "morphology": "รูปกระสวย มีนิวเคลียสเดียว เรียงเป็นชั้นรอบหลอดเลือด",
+   "function": "หดและคลายเพื่อปรับขนาดเส้นผ่านศูนย์กลางของหลอดเลือด ควบคุมความดันโลหิตและการไหลเวียน และสร้างอีลาสตินกับคอลลาเจนของผนังหลอดเลือด",
+   "secretes": [],
+   "markers": [
+    "α-smooth muscle actin (α-SMA)",
+    "calponin"
+   ],
+   "lifespan": "",
+   "exam": "หลอดเลือดแดงมี tunica media หนา ตอบสนองต่อระบบประสาทซิมพาเทติก (norepinephrine ทำให้หดตัว) เมื่อเสื่อมสภาพมีบทบาทในการเกิด atherosclerosis",
+   "diseases": [
+    "หลอดเลือดแดงแข็ง (atherosclerosis)",
+    "ความดันโลหิตสูง (hypertension)"
+   ],
+   "confused_with": [
+    "CL:0000669",
+    "CL:0000192"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000359",
+   "cl": {
+    "label": "vascular associated smooth muscle cell",
+    "definition": "A smooth muscle cell associated with the vasculature.",
+    "synonyms": [
+     "VSMC",
+     "vascular smooth muscle cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000669",
+   "slug": "pericyte",
+   "kind": "cell",
+   "en": "pericyte",
+   "th": "เพอริไซต์ (pericyte)",
+   "systems": [
+    "cardiovascular"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "loose",
+   "location": "ล้อมรอบผนังหลอดเลือดฝอยและหลอดเลือดดำเล็ก อยู่ภายใน basal lamina ของหลอดเลือด",
+   "morphology": "เซลล์มีแขนงยาวพันรอบหลอดเลือดฝอย",
+   "function": "ช่วยพยุงผนังหลอดเลือดฝอย ควบคุมการไหลของเลือดและการซึมผ่านของผนัง และมีบทบาทในการสร้างหลอดเลือดใหม่",
+   "secretes": [],
+   "markers": [
+    "PDGFRβ",
+    "NG2"
+   ],
+   "lifespan": "",
+   "exam": "อยู่บริเวณหลอดเลือดฝอย ส่วนกล้ามเนื้อเรียบหลอดเลือด (vascular smooth muscle cell) อยู่ที่หลอดเลือดขนาดใหญ่กว่า",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000359"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000669",
+   "cl": {
+    "label": "pericyte",
+    "definition": "An elongated, contractile cell found wrapped about precapillary arterioles outside the basement membrane. Pericytes are present in capillaries where proper adventitia and muscle layer are missing (thus distingushing this cell type from adventitial cells). They are relatively undifferentiated and may become fibroblasts, macrophages, or smooth muscle cells.",
+    "synonyms": [
+     "adventitial cell",
+     "adventitial reticular cell",
+     "cell of Rouget",
+     "pericyte cell",
+     "pericyte of Rouget",
+     "ARC"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002548",
+   "slug": "cardiac-fibroblast",
+   "kind": "cell",
+   "en": "fibroblast of cardiac tissue",
+   "th": "ไฟโบรบลาสต์ของหัวใจ (cardiac fibroblast)",
+   "systems": [
+    "cardiovascular"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "loose",
+   "location": "เนื้อเยื่อเกี่ยวพันระหว่างเซลล์กล้ามเนื้อหัวใจ (myocardium) ",
+   "morphology": "เซลล์รูปกระสวยแบน มีแขนง อยู่ระหว่างมัดกล้ามเนื้อหัวใจ",
+   "function": "สร้างและดูแลเมทริกซ์นอกเซลล์ (คอลลาเจน) ของหัวใจ และสร้างแผลเป็นหลังกล้ามเนื้อหัวใจตาย",
+   "secretes": [
+    "คอลลาเจน"
+   ],
+   "markers": [
+    "vimentin",
+    "DDR2"
+   ],
+   "lifespan": "",
+   "exam": "กล้ามเนื้อหัวใจที่ตายแล้วไม่สร้างใหม่ ถูกแทนที่ด้วยแผลเป็นเนื้อเยื่อเกี่ยวพันจากไฟโบรบลาสต์",
+   "diseases": [
+    "พังผืดในหัวใจ (cardiac fibrosis)"
+   ],
+   "confused_with": [],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002548",
+   "cl": {
+    "label": "fibroblast of cardiac tissue",
+    "definition": "A fibroblast that is part of the heart.",
+    "synonyms": [
+     "cardiac fibroblast"
+    ],
+    "obsolete": false
+   }
+  },
+  {
    "id": "CL:0002563",
    "slug": "intestinal-epithelial-cell",
    "kind": "class",
@@ -3673,7 +4008,8 @@
     "myasthenia gravis"
    ],
    "confused_with": [
-    "CL:0000192"
+    "CL:0000192",
+    "CL:0000746"
    ],
    "image": null,
    "verified": false,
@@ -3782,7 +4118,8 @@
     "หอบหืด (asthma) ซึ่งมีการหดเกร็งของกล้ามเนื้อเรียบหลอดลม"
    ],
    "confused_with": [
-    "CL:0008002"
+    "CL:0008002",
+    "CL:0000746"
    ],
    "image": null,
    "verified": false,
@@ -4118,7 +4455,9 @@
    "diseases": [
     "spinocerebellar ataxia"
    ],
-   "confused_with": [],
+   "confused_with": [
+    "CL:0002068"
+   ],
    "image": null,
    "verified": false,
    "refs": [],
@@ -5407,6 +5746,34 @@
    "mode": "immune",
    "source": "curated",
    "file": "blood-immune"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:1000477",
+   "to": "CL:0000746",
+   "source": "curated",
+   "file": "cardiovascular"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002068",
+   "to": "CL:0000746",
+   "source": "curated",
+   "file": "cardiovascular"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002350",
+   "to": "CL:0000115",
+   "source": "curated",
+   "file": "cardiovascular"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000359",
+   "to": "CL:0000192",
+   "source": "curated",
+   "file": "cardiovascular"
   },
   {
    "type": "develops_from",

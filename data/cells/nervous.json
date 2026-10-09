@@ -1,291 +1,654 @@
 [
   {
-    "id": "CL:0000540", "slug": "neuron", "kind": "class",
-    "en": "neuron", "th": "เซลล์ประสาท (นิวรอน)",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:0000540",
+    "slug": "neuron",
+    "kind": "class",
+    "en": "neuron",
+    "th": "เซลล์ประสาท (นิวรอน)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "function": "เซลล์ที่รับ นำ และส่งสัญญาณไฟฟ้าและเคมี ประกอบด้วยตัวเซลล์ เดนไดรต์ และแอกซอน",
-    "image": null, "verified": false, "refs": []
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000125", "slug": "glial-cell", "kind": "class",
-    "en": "glial cell", "th": "เซลล์เกลีย",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "glia",
+    "id": "CL:0000125",
+    "slug": "glial-cell",
+    "kind": "class",
+    "en": "glial cell",
+    "th": "เซลล์เกลีย",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "glia",
     "function": "กลุ่มเซลล์ที่ไม่ใช่เซลล์ประสาทในเนื้อเยื่อประสาท ทำหน้าที่ค้ำจุน ให้สารอาหาร สร้างไมอีลิน และป้องกัน",
-    "image": null, "verified": false, "refs": []
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000210", "slug": "photoreceptor-cell", "kind": "class",
-    "en": "photoreceptor cell", "th": "เซลล์รับแสง",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:0000210",
+    "slug": "photoreceptor-cell",
+    "kind": "class",
+    "en": "photoreceptor cell",
+    "th": "เซลล์รับแสง",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "function": "กลุ่มเซลล์ประสาทรับความรู้สึกของจอประสาทตาที่เปลี่ยนแสงเป็นสัญญาณไฟฟ้า ได้แก่ เซลล์รูปแท่งและเซลล์รูปกรวย",
-    "image": null, "verified": false, "refs": []
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000165", "slug": "neuroendocrine-cell", "kind": "class",
-    "en": "neuroendocrine cell", "th": "เซลล์ประสาทต่อมไร้ท่อ (neuroendocrine cell)",
-    "systems": ["nervous", "endocrine"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:0000165",
+    "slug": "neuroendocrine-cell",
+    "kind": "class",
+    "en": "neuroendocrine cell",
+    "th": "เซลล์ประสาทต่อมไร้ท่อ (neuroendocrine cell)",
+    "systems": [
+      "nervous",
+      "endocrine"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "function": "กลุ่มเซลล์ที่รับสัญญาณจากระบบประสาทและหลั่งฮอร์โมนเข้ากระแสเลือด",
-    "image": null, "verified": false, "refs": []
+    "image": null,
+    "verified": false,
+    "refs": []
   },
-
   {
-    "id": "CL:0000101", "slug": "sensory-neuron", "kind": "cell",
-    "en": "sensory neuron", "th": "เซลล์ประสาทรับความรู้สึก",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:0000101",
+    "slug": "sensory-neuron",
+    "kind": "cell",
+    "en": "sensory neuron",
+    "th": "เซลล์ประสาทรับความรู้สึก",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "location": "ตัวเซลล์ส่วนใหญ่อยู่ในปมประสาทรากหลัง (dorsal root ganglion) และปมประสาทของเส้นประสาทสมอง",
     "morphology": "ชนิดที่ตัวเซลล์อยู่ในปมประสาทรากหลังเป็นแบบ pseudounipolar คือมีแขนงเดียวจากตัวเซลล์แล้วแยกเป็นสองกิ่ง",
     "function": "นำสัญญาณจากตัวรับความรู้สึก (สัมผัส ปวด อุณหภูมิ ตำแหน่ง) เข้าสู่ระบบประสาทส่วนกลาง",
-    "secretes": [], "markers": [], "lifespan": "",
+    "secretes": [],
+    "markers": [],
+    "lifespan": "",
     "exam": "รากหลัง (dorsal root) นำสัญญาณรับความรู้สึกเข้า รากหน้า (ventral root) นำสัญญาณสั่งการออก (Bell-Magendie law)",
-    "diseases": ["โรคปลายประสาทอักเสบ (peripheral neuropathy)"],
-    "confused_with": ["CL:0000100"],
-    "image": null, "verified": false, "refs": []
+    "diseases": [
+      "โรคปลายประสาทอักเสบ (peripheral neuropathy)"
+    ],
+    "confused_with": [
+      "CL:0000100"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000100", "slug": "motor-neuron", "kind": "cell",
-    "en": "motor neuron", "th": "เซลล์ประสาทสั่งการ",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:0000100",
+    "slug": "motor-neuron",
+    "kind": "cell",
+    "en": "motor neuron",
+    "th": "เซลล์ประสาทสั่งการ",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "location": "ตัวเซลล์ของเซลล์ประสาทสั่งการส่วนล่างอยู่ที่ปีกหน้า (anterior horn) ของไขสันหลังและในก้านสมอง",
     "morphology": "multipolar ตัวเซลล์ขนาดใหญ่ มี Nissl body ชัดเจน แอกซอนยาวออกทางรากหน้า",
     "function": "ส่งสัญญาณสั่งการไปยังกล้ามเนื้อลายที่ neuromuscular junction ด้วยสารสื่อประสาทอะเซทิลโคลีน",
-    "secretes": ["acetylcholine"], "markers": ["ChAT"], "lifespan": "",
+    "secretes": [
+      "acetylcholine"
+    ],
+    "markers": [
+      "ChAT"
+    ],
+    "lifespan": "",
     "exam": "Upper motor neuron อยู่ที่เปลือกสมอง lower motor neuron อยู่ที่ไขสันหลังหรือก้านสมอง ความเสียหายของ lower motor neuron ทำให้กล้ามเนื้ออ่อนแรงแบบอ่อนปวกเปียก",
-    "diseases": ["โรคกล้ามเนื้ออ่อนแรง ALS", "โปลิโอ"],
-    "confused_with": ["CL:0000101", "CL:0000099"],
-    "image": null, "verified": false, "refs": []
+    "diseases": [
+      "โรคกล้ามเนื้ออ่อนแรง ALS",
+      "โปลิโอ"
+    ],
+    "confused_with": [
+      "CL:0000101",
+      "CL:0000099"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000099", "slug": "interneuron", "kind": "cell",
-    "en": "interneuron", "th": "เซลล์ประสาทประสานงาน (interneuron)",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:0000099",
+    "slug": "interneuron",
+    "kind": "cell",
+    "en": "interneuron",
+    "th": "เซลล์ประสาทประสานงาน (interneuron)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "location": "ภายในสมองและไขสันหลัง",
     "morphology": "multipolar",
     "function": "เชื่อมต่อเซลล์ประสาทรับความรู้สึกกับเซลล์ประสาทสั่งการ และประมวลผลสัญญาณภายในวงจรประสาท",
-    "secretes": [], "markers": [], "lifespan": "",
+    "secretes": [],
+    "markers": [],
+    "lifespan": "",
     "exam": "รีเฟล็กซ์แบบง่ายที่สุด เช่น การเตะขาเมื่อเคาะเอ็นสะบ้า (knee jerk) เป็น monosynaptic ไม่ผ่านอินเตอร์นิวรอน รีเฟล็กซ์ส่วนใหญ่ผ่านอินเตอร์นิวรอน (polysynaptic)",
     "diseases": [],
-    "confused_with": ["CL:0000100"],
-    "image": null, "verified": false, "refs": []
+    "confused_with": [
+      "CL:0000100"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000598", "slug": "pyramidal-neuron", "kind": "cell",
-    "en": "pyramidal neuron", "th": "เซลล์ประสาทพีระมิด",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:0000598",
+    "slug": "pyramidal-neuron",
+    "kind": "cell",
+    "en": "pyramidal neuron",
+    "th": "เซลล์ประสาทพีระมิด",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "location": "เปลือกสมอง (cerebral cortex) และฮิปโปแคมปัส",
     "morphology": "ตัวเซลล์รูปสามเหลี่ยมคล้ายพีระมิด มี apical dendrite ยาวชี้ไปทางผิวสมอง และ basal dendrite หลายเส้น",
     "function": "เซลล์ประสาทกระตุ้นหลักของเปลือกสมอง หลั่งกลูตาเมต",
-    "secretes": ["glutamate"], "markers": [], "lifespan": "",
+    "secretes": [
+      "glutamate"
+    ],
+    "markers": [],
+    "lifespan": "",
     "exam": "เซลล์เบทซ์ (Betz cell) ใน primary motor cortex เป็นเซลล์พีระมิดขนาดใหญ่ที่เป็น upper motor neuron",
-    "diseases": ["โรคอัลไซเมอร์"],
+    "diseases": [
+      "โรคอัลไซเมอร์"
+    ],
     "confused_with": [],
-    "image": null, "verified": false, "refs": []
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000121", "slug": "purkinje-cell", "kind": "cell",
-    "en": "Purkinje cell", "th": "เซลล์เพอร์กินเจ (Purkinje cell)",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:0000121",
+    "slug": "purkinje-cell",
+    "kind": "cell",
+    "en": "Purkinje cell",
+    "th": "เซลล์เพอร์กินเจ (Purkinje cell)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "location": "ชั้นเพอร์กินเจของเปลือกสมองน้อย (cerebellar cortex)",
     "morphology": "ตัวเซลล์ขนาดใหญ่รูปลูกแพร์ เดนไดรต์แตกแขนงหนาแน่นคล้ายต้นไม้อยู่ในระนาบเดียว",
     "function": "เป็นเซลล์ประสาทที่ส่งสัญญาณออกจากเปลือกสมองน้อย เป็นสัญญาณยับยั้งไปยังนิวเคลียสลึกของสมองน้อย",
-    "secretes": ["GABA"], "markers": ["calbindin"], "lifespan": "",
+    "secretes": [
+      "GABA"
+    ],
+    "markers": [
+      "calbindin"
+    ],
+    "lifespan": "",
     "exam": "เป็นเซลล์เดียวที่ส่งแอกซอนออกจากเปลือกสมองน้อย และหลั่ง GABA (ยับยั้ง) ความเสียหายทำให้เกิดอาการเสียการทรงตัวและการประสานงาน (ataxia)",
-    "diseases": ["spinocerebellar ataxia"],
-    "confused_with": [],
-    "image": null, "verified": false, "refs": []
+    "diseases": [
+      "spinocerebellar ataxia"
+    ],
+    "confused_with": [
+      "CL:0002068"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0011003", "slug": "magnocellular-neurosecretory-cell", "kind": "cell",
-    "en": "magnocellular neurosecretory cell", "th": "เซลล์ประสาทหลั่งฮอร์โมนขนาดใหญ่ของไฮโพทาลามัส",
-    "systems": ["nervous", "endocrine"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:0011003",
+    "slug": "magnocellular-neurosecretory-cell",
+    "kind": "cell",
+    "en": "magnocellular neurosecretory cell",
+    "th": "เซลล์ประสาทหลั่งฮอร์โมนขนาดใหญ่ของไฮโพทาลามัส",
+    "systems": [
+      "nervous",
+      "endocrine"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "location": "ตัวเซลล์อยู่ในนิวเคลียส supraoptic และ paraventricular ของไฮโพทาลามัส แอกซอนไปสิ้นสุดที่ต่อมใต้สมองส่วนหลัง",
     "morphology": "ตัวเซลล์ขนาดใหญ่ แอกซอนยาวลงไปที่ต่อมใต้สมองส่วนหลัง",
     "function": "สร้าง ADH (vasopressin) และ oxytocin ส่งตามแอกซอนไปเก็บที่ปลายแอกซอนในต่อมใต้สมองส่วนหลัง แล้วหลั่งเข้ากระแสเลือด",
-    "secretes": ["ADH", "oxytocin"], "markers": [], "lifespan": "",
+    "secretes": [
+      "ADH",
+      "oxytocin"
+    ],
+    "markers": [],
+    "lifespan": "",
     "exam": "ต่อมใต้สมองส่วนหลังไม่ได้สร้างฮอร์โมนเอง แต่เก็บและปล่อยฮอร์โมนที่สร้างจากไฮโพทาลามัส ปลายแอกซอนพองที่สะสมฮอร์โมนเรียกว่า Herring body",
-    "diseases": ["เบาหวานจืด (diabetes insipidus)"],
-    "confused_with": ["CL:1001505"],
-    "image": null, "verified": false, "refs": []
+    "diseases": [
+      "เบาหวานจืด (diabetes insipidus)"
+    ],
+    "confused_with": [
+      "CL:1001505"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:1001505", "slug": "parvocellular-neurosecretory-cell", "kind": "cell",
-    "en": "parvocellular neurosecretory cell", "th": "เซลล์ประสาทหลั่งฮอร์โมนขนาดเล็กของไฮโพทาลามัส",
-    "systems": ["nervous", "endocrine"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:1001505",
+    "slug": "parvocellular-neurosecretory-cell",
+    "kind": "cell",
+    "en": "parvocellular neurosecretory cell",
+    "th": "เซลล์ประสาทหลั่งฮอร์โมนขนาดเล็กของไฮโพทาลามัส",
+    "systems": [
+      "nervous",
+      "endocrine"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "location": "ตัวเซลล์อยู่ในนิวเคลียสของไฮโพทาลามัส เช่น arcuate และ paraventricular แอกซอนไปสิ้นสุดที่ median eminence",
     "morphology": "ตัวเซลล์ขนาดเล็กกว่าแบบ magnocellular",
     "function": "หลั่งฮอร์โมนปลดปล่อยและฮอร์โมนยับยั้งเข้าสู่หลอดเลือดพอร์ทัลของต่อมใต้สมอง เพื่อควบคุมต่อมใต้สมองส่วนหน้า",
-    "secretes": ["CRH", "TRH", "GnRH", "GHRH", "somatostatin", "dopamine"], "markers": [], "lifespan": "",
+    "secretes": [
+      "CRH",
+      "TRH",
+      "GnRH",
+      "GHRH",
+      "somatostatin",
+      "dopamine"
+    ],
+    "markers": [],
+    "lifespan": "",
     "exam": "ควบคุมต่อมใต้สมองส่วนหน้าผ่านหลอดเลือดพอร์ทัล (hypophyseal portal system) ซึ่งต่างจากส่วนหลังที่ควบคุมผ่านแอกซอนโดยตรง",
     "diseases": [],
-    "confused_with": ["CL:0011003"],
-    "image": null, "verified": false, "refs": []
+    "confused_with": [
+      "CL:0011003"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000127", "slug": "astrocyte", "kind": "cell",
-    "en": "astrocyte", "th": "แอสโตรไซต์",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "glia",
+    "id": "CL:0000127",
+    "slug": "astrocyte",
+    "kind": "cell",
+    "en": "astrocyte",
+    "th": "แอสโตรไซต์",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "glia",
     "location": "สมองและไขสันหลัง",
     "morphology": "เซลล์รูปดาว มีแขนงจำนวนมาก บางแขนงปลายเป็นเท้า (end-foot) ไปเกาะผนังหลอดเลือด",
     "function": "ค้ำจุนและให้สารอาหารแก่เซลล์ประสาท ควบคุมสภาพแวดล้อมรอบเซลล์ประสาท (เช่น ดูดกลูตาเมตและโพแทสเซียมส่วนเกิน) และร่วมสร้างด่านกั้นเลือดและสมอง (blood-brain barrier)",
-    "secretes": [], "markers": ["GFAP"], "lifespan": "",
+    "secretes": [],
+    "markers": [
+      "GFAP"
+    ],
+    "lifespan": "",
     "exam": "ใช้ GFAP เป็นตัวบ่งชี้ เมื่อสมองบาดเจ็บจะสร้างแผลเป็นเกลีย (glial scar)",
-    "diseases": ["astrocytoma และ glioblastoma"],
-    "confused_with": ["CL:0000128"],
-    "image": null, "verified": false, "refs": []
+    "diseases": [
+      "astrocytoma และ glioblastoma"
+    ],
+    "confused_with": [
+      "CL:0000128"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000128", "slug": "oligodendrocyte", "kind": "cell",
-    "en": "oligodendrocyte", "th": "โอลิโกเดนโดรไซต์",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "glia",
+    "id": "CL:0000128",
+    "slug": "oligodendrocyte",
+    "kind": "cell",
+    "en": "oligodendrocyte",
+    "th": "โอลิโกเดนโดรไซต์",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "glia",
     "location": "สมองและไขสันหลัง",
     "morphology": "ตัวเซลล์เล็ก มีแขนงสั้นหลายแขนง",
     "function": "สร้างไมอีลินหุ้มแอกซอนในระบบประสาทส่วนกลาง โดยหนึ่งเซลล์หุ้มได้หลายแอกซอน",
-    "secretes": [], "markers": ["MBP"], "lifespan": "",
+    "secretes": [],
+    "markers": [
+      "MBP"
+    ],
+    "lifespan": "",
     "exam": "หนึ่งโอลิโกเดนโดรไซต์หุ้มได้หลายแอกซอน ส่วน Schwann cell หุ้มแอกซอนเส้นเดียวในช่วงเดียว (ระบบประสาทส่วนปลาย) โรค multiple sclerosis ทำลายไมอีลินของระบบประสาทส่วนกลาง",
-    "diseases": ["multiple sclerosis"],
-    "confused_with": ["CL:0002573"],
-    "image": null, "verified": false, "refs": []
+    "diseases": [
+      "multiple sclerosis"
+    ],
+    "confused_with": [
+      "CL:0002573"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0002573", "slug": "schwann-cell", "kind": "cell",
-    "en": "Schwann cell", "th": "เซลล์ชวานน์",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "glia",
+    "id": "CL:0002573",
+    "slug": "schwann-cell",
+    "kind": "cell",
+    "en": "Schwann cell",
+    "th": "เซลล์ชวานน์",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "glia",
     "location": "ระบบประสาทส่วนปลาย ล้อมรอบแอกซอน",
     "morphology": "พันรอบแอกซอนเป็นชั้นไมอีลิน ช่องว่างระหว่างเซลล์ชวานน์คือ node of Ranvier",
     "function": "สร้างไมอีลินหุ้มแอกซอนในระบบประสาทส่วนปลาย และช่วยการงอกใหม่ของแอกซอนที่เสียหาย",
-    "secretes": [], "markers": ["S100"], "lifespan": "",
+    "secretes": [],
+    "markers": [
+      "S100"
+    ],
+    "lifespan": "",
     "exam": "หนึ่งเซลล์ชวานน์หุ้มแอกซอนเพียงหนึ่งเส้นในช่วงเดียว (internode) ต่างจากโอลิโกเดนโดรไซต์ ระบบประสาทส่วนปลายงอกใหม่ได้ดีกว่าระบบประสาทส่วนกลาง",
-    "diseases": ["Guillain-Barré syndrome", "Charcot-Marie-Tooth disease", "schwannoma"],
-    "confused_with": ["CL:0000128"],
-    "image": null, "verified": false, "refs": []
+    "diseases": [
+      "Guillain-Barré syndrome",
+      "Charcot-Marie-Tooth disease",
+      "schwannoma"
+    ],
+    "confused_with": [
+      "CL:0000128"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000065", "slug": "ependymal-cell", "kind": "cell",
-    "en": "ependymal cell", "th": "เซลล์เอพีนดิมัล (ependymal cell)",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "glia",
+    "id": "CL:0000065",
+    "slug": "ependymal-cell",
+    "kind": "cell",
+    "en": "ependymal cell",
+    "th": "เซลล์เอพีนดิมัล (ependymal cell)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "glia",
     "location": "เยื่อบุโพรงสมอง (ventricle) และคลองกลางไขสันหลัง",
     "morphology": "เซลล์ทรงลูกบาศก์ถึงทรงสูงเรียงชั้นเดียว ผิวด้านปลายมีซิเลีย",
     "function": "บุผนังโพรงสมองและคลองกลางไขสันหลัง ซิเลียช่วยให้น้ำไขสันหลังไหลเวียน",
-    "secretes": [], "markers": [], "lifespan": "",
+    "secretes": [],
+    "markers": [],
+    "lifespan": "",
     "exam": "เซลล์เอพีนดิมัลที่ดัดแปลงใน choroid plexus เกี่ยวข้องกับการสร้างน้ำไขสันหลัง (CSF)",
-    "diseases": ["ภาวะน้ำคั่งในโพรงสมอง (hydrocephalus)", "ependymoma"],
+    "diseases": [
+      "ภาวะน้ำคั่งในโพรงสมอง (hydrocephalus)",
+      "ependymoma"
+    ],
     "confused_with": [],
-    "image": null, "verified": false, "refs": []
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000604", "slug": "rod-cell", "kind": "cell",
-    "en": "retinal rod cell", "th": "เซลล์รูปแท่ง (rod)",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:0000604",
+    "slug": "rod-cell",
+    "kind": "cell",
+    "en": "retinal rod cell",
+    "th": "เซลล์รูปแท่ง (rod)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "location": "เรตินาชั้นรับแสง พบมากที่ส่วนรอบนอกของเรตินา ไม่พบที่ fovea",
     "morphology": "ส่วนปลายนอก (outer segment) รูปแท่ง มีแผ่น disc ซ้อนกันบรรจุ rhodopsin",
     "function": "รับแสงสลัวและมองเห็นขาว-ดำ ไวต่อแสงสูง",
-    "secretes": ["glutamate"], "markers": ["rhodopsin"], "lifespan": "",
+    "secretes": [
+      "glutamate"
+    ],
+    "markers": [
+      "rhodopsin"
+    ],
+    "lifespan": "",
     "exam": "ใช้มองเห็นในที่มืด (scotopic vision) มีจำนวนมากกว่าเซลล์รูปกรวยมาก (ประมาณ 120 ล้านเซลล์) การขาดวิตามินเอทำให้ตาบอดกลางคืน",
-    "diseases": ["ตาบอดกลางคืน (night blindness)", "retinitis pigmentosa"],
-    "confused_with": ["CL:0000573"],
-    "image": null, "verified": false, "refs": []
+    "diseases": [
+      "ตาบอดกลางคืน (night blindness)",
+      "retinitis pigmentosa"
+    ],
+    "confused_with": [
+      "CL:0000573"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000573", "slug": "cone-cell", "kind": "cell",
-    "en": "retinal cone cell", "th": "เซลล์รูปกรวย (cone)",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:0000573",
+    "slug": "cone-cell",
+    "kind": "cell",
+    "en": "retinal cone cell",
+    "th": "เซลล์รูปกรวย (cone)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "location": "เรตินาชั้นรับแสง หนาแน่นที่สุดที่ fovea",
     "morphology": "ส่วนปลายนอกรูปกรวย",
     "function": "รับแสงจ้าและแยกสี ให้ภาพที่ละเอียด มีสามชนิดตามชนิดของ opsin (ไวต่อแสงสีแดง เขียว และน้ำเงิน)",
-    "secretes": ["glutamate"], "markers": ["opsin"], "lifespan": "",
+    "secretes": [
+      "glutamate"
+    ],
+    "markers": [
+      "opsin"
+    ],
+    "lifespan": "",
     "exam": "ใช้มองเห็นในที่สว่างและเห็นสี (photopic vision) บริเวณกึ่งกลาง fovea มีแต่เซลล์รูปกรวย ความผิดปกติของ opsin ทำให้ตาบอดสี",
-    "diseases": ["ตาบอดสี (color blindness)"],
-    "confused_with": ["CL:0000604"],
-    "image": null, "verified": false, "refs": []
+    "diseases": [
+      "ตาบอดสี (color blindness)"
+    ],
+    "confused_with": [
+      "CL:0000604"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000748", "slug": "retinal-bipolar-cell", "kind": "cell",
-    "en": "retinal bipolar neuron", "th": "เซลล์ไบโพลาร์ของเรตินา",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:0000748",
+    "slug": "retinal-bipolar-cell",
+    "kind": "cell",
+    "en": "retinal bipolar neuron",
+    "th": "เซลล์ไบโพลาร์ของเรตินา",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "location": "ชั้น inner nuclear layer ของเรตินา",
     "morphology": "เซลล์ประสาทที่มีสองแขนง แขนงหนึ่งสัมผัสเซลล์รับแสง อีกแขนงสัมผัสเซลล์ปมประสาท",
     "function": "รับสัญญาณจากเซลล์รับแสงและส่งต่อให้เซลล์ปมประสาทของเรตินา",
-    "secretes": ["glutamate"], "markers": [], "lifespan": "",
+    "secretes": [
+      "glutamate"
+    ],
+    "markers": [],
+    "lifespan": "",
     "exam": "เป็นเซลล์ประสาทตัวกลางในวิถีการมองเห็น: เซลล์รับแสง → ไบโพลาร์ → เซลล์ปมประสาท",
     "diseases": [],
     "confused_with": [],
-    "image": null, "verified": false, "refs": []
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000740", "slug": "retinal-ganglion-cell", "kind": "cell",
-    "en": "retinal ganglion cell", "th": "เซลล์ปมประสาทของเรตินา",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:0000740",
+    "slug": "retinal-ganglion-cell",
+    "kind": "cell",
+    "en": "retinal ganglion cell",
+    "th": "เซลล์ปมประสาทของเรตินา",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "location": "ชั้น ganglion cell layer ของเรตินา",
     "morphology": "ตัวเซลล์ขนาดค่อนข้างใหญ่ แอกซอนยาวรวมกันเป็นเส้นประสาทตา",
     "function": "รับสัญญาณจากเซลล์ไบโพลาร์และส่งแอกซอนไปรวมเป็นเส้นประสาทตา (optic nerve) เข้าสู่สมอง",
-    "secretes": [], "markers": [], "lifespan": "",
+    "secretes": [],
+    "markers": [],
+    "lifespan": "",
     "exam": "เป็นเซลล์เดียวของเรตินาที่ส่งศักยะงานออกจากตา แอกซอนรวมกันออกจากจอประสาทตาที่ optic disc ซึ่งเป็นจุดบอด (ไม่มีเซลล์รับแสง)",
-    "diseases": ["ต้อหิน (glaucoma)"],
+    "diseases": [
+      "ต้อหิน (glaucoma)"
+    ],
     "confused_with": [],
-    "image": null, "verified": false, "refs": []
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0002586", "slug": "retinal-pigment-epithelial-cell", "kind": "cell",
-    "en": "retinal pigment epithelial cell", "th": "เซลล์เยื่อบุผิวเม็ดสีของเรตินา (RPE)",
-    "systems": ["nervous"], "tissue": "epithelial", "tissue_subtype": "simple-cuboidal",
+    "id": "CL:0002586",
+    "slug": "retinal-pigment-epithelial-cell",
+    "kind": "cell",
+    "en": "retinal pigment epithelial cell",
+    "th": "เซลล์เยื่อบุผิวเม็ดสีของเรตินา (RPE)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-cuboidal",
     "location": "ชั้นนอกสุดของเรตินา ติดกับคอรอยด์",
     "morphology": "เซลล์ลูกบาศก์ชั้นเดียว ไซโทพลาซึมมีเม็ดสีเมลานินมาก",
     "function": "ดูดซับแสงส่วนเกิน กินส่วนปลายนอกของเซลล์รับแสงที่หลุดออก และช่วยสร้าง 11-cis retinal ขึ้นใหม่ (visual cycle)",
-    "secretes": [], "markers": [], "lifespan": "",
+    "secretes": [],
+    "markers": [],
+    "lifespan": "",
     "exam": "เป็นเนื้อเยื่อบุผิวแม้จะอยู่ในเรตินาของระบบประสาท การแยกของเรตินาออกจากชั้นนี้คือภาวะจอประสาทตาลอก (retinal detachment)",
-    "diseases": ["จอประสาทตาเสื่อมตามอายุ (AMD)", "จอประสาทตาลอก"],
+    "diseases": [
+      "จอประสาทตาเสื่อมตามอายุ (AMD)",
+      "จอประสาทตาลอก"
+    ],
     "confused_with": [],
-    "image": null, "verified": false, "refs": []
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000589", "slug": "inner-hair-cell", "kind": "cell",
-    "en": "cochlear inner hair cell", "th": "เซลล์ขนชั้นใน (inner hair cell)",
-    "systems": ["nervous"], "tissue": "epithelial", "tissue_subtype": "simple-columnar",
+    "id": "CL:0000589",
+    "slug": "inner-hair-cell",
+    "kind": "cell",
+    "en": "cochlear inner hair cell",
+    "th": "เซลล์ขนชั้นใน (inner hair cell)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-columnar",
     "location": "อวัยวะคอร์ติ (organ of Corti) ในคอเคลีย เรียงเป็นแถวเดียว",
     "morphology": "ปลายเซลล์มี stereocilia เรียงเป็นแถวตามความสูง",
     "function": "เปลี่ยนการสั่นสะเทือนของเสียงเป็นสัญญาณประสาท ส่งต่อไปยังเซลล์ประสาทของ spiral ganglion",
-    "secretes": ["glutamate"], "markers": [], "lifespan": "",
+    "secretes": [
+      "glutamate"
+    ],
+    "markers": [],
+    "lifespan": "",
     "exam": "เป็นตัวรับเสียงหลัก (sensory) ส่วนเซลล์ขนชั้นนอกทำหน้าที่ขยายเสียง การงอของ stereocilia ทำให้ K+ จาก endolymph ไหลเข้าเซลล์",
-    "diseases": ["หูหนวกประสาทรับเสียง (sensorineural hearing loss)"],
-    "confused_with": ["CL:0000601"],
-    "image": null, "verified": false, "refs": []
+    "diseases": [
+      "หูหนวกประสาทรับเสียง (sensorineural hearing loss)"
+    ],
+    "confused_with": [
+      "CL:0000601"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000601", "slug": "outer-hair-cell", "kind": "cell",
-    "en": "cochlear outer hair cell", "th": "เซลล์ขนชั้นนอก (outer hair cell)",
-    "systems": ["nervous"], "tissue": "epithelial", "tissue_subtype": "simple-columnar",
+    "id": "CL:0000601",
+    "slug": "outer-hair-cell",
+    "kind": "cell",
+    "en": "cochlear outer hair cell",
+    "th": "เซลล์ขนชั้นนอก (outer hair cell)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-columnar",
     "location": "อวัยวะคอร์ติในคอเคลีย เรียงเป็นสามแถว",
     "morphology": "เซลล์ทรงกระบอก ปลายมี stereocilia เรียงรูปตัว V หรือ W",
     "function": "เปลี่ยนความยาวของตัวเซลล์ตามสัญญาณเสียง (electromotility) เพื่อขยายการสั่นของ basilar membrane",
-    "secretes": [], "markers": ["prestin"], "lifespan": "",
+    "secretes": [],
+    "markers": [
+      "prestin"
+    ],
+    "lifespan": "",
     "exam": "ขยายการสั่นและเพิ่มความไวและความละเอียดในการแยกความถี่ ถูกทำลายได้จากเสียงดังและยากลุ่ม aminoglycoside",
-    "diseases": ["หูหนวกประสาทรับเสียง (sensorineural hearing loss)"],
-    "confused_with": ["CL:0000589"],
-    "image": null, "verified": false, "refs": []
+    "diseases": [
+      "หูหนวกประสาทรับเสียง (sensorineural hearing loss)"
+    ],
+    "confused_with": [
+      "CL:0000589"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000207", "slug": "olfactory-receptor-neuron", "kind": "cell",
-    "en": "olfactory receptor cell", "th": "เซลล์รับกลิ่น",
-    "systems": ["nervous"], "tissue": "nervous", "tissue_subtype": "neuron",
+    "id": "CL:0000207",
+    "slug": "olfactory-receptor-neuron",
+    "kind": "cell",
+    "en": "olfactory receptor cell",
+    "th": "เซลล์รับกลิ่น",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
     "location": "เยื่อบุรับกลิ่นในโพรงจมูกส่วนบน",
     "morphology": "เซลล์ประสาทสองขั้ว (bipolar) ปลายด้านหนึ่งมีซิเลียยื่นเข้าชั้นเมือก แอกซอนอีกด้านผ่านรูของ cribriform plate",
     "function": "จับโมเลกุลกลิ่นและส่งสัญญาณไปยังกระเปาะรับกลิ่น (olfactory bulb)",
-    "secretes": [], "markers": [], "lifespan": "ประมาณ 1–2 เดือน",
+    "secretes": [],
+    "markers": [],
+    "lifespan": "ประมาณ 1–2 เดือน",
     "exam": "เป็นเซลล์ประสาทที่ถูกแทนที่ใหม่ได้ตลอดชีวิต เพราะมี basal cell เป็นเซลล์ต้นกำเนิดในเยื่อบุรับกลิ่น แอกซอนผ่านรูของกระดูก cribriform plate การบาดเจ็บที่นี่ทำให้ไม่ได้กลิ่น",
-    "diseases": ["ภาวะไม่ได้กลิ่น (anosmia)"],
+    "diseases": [
+      "ภาวะไม่ได้กลิ่น (anosmia)"
+    ],
     "confused_with": [],
-    "image": null, "verified": false, "refs": []
+    "image": null,
+    "verified": false,
+    "refs": []
   },
   {
-    "id": "CL:0000209", "slug": "taste-receptor-cell", "kind": "cell",
-    "en": "taste receptor cell", "th": "เซลล์รับรส",
-    "systems": ["nervous"], "tissue": "epithelial", "tissue_subtype": null,
+    "id": "CL:0000209",
+    "slug": "taste-receptor-cell",
+    "kind": "cell",
+    "en": "taste receptor cell",
+    "th": "เซลล์รับรส",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": null,
     "location": "ตุ่มรับรส (taste bud) บนลิ้น เพดานอ่อน และคอหอย",
     "morphology": "เซลล์รูปกระสวยในตุ่มรับรส ปลายมีไมโครวิลลัสยื่นเข้ารูตุ่มรับรส (taste pore)",
     "function": "ตรวจจับรสชาติ (หวาน เค็ม เปรี้ยว ขม อูมามิ) และส่งสัญญาณไปยังเส้นประสาทสมอง VII IX และ X",
-    "secretes": [], "markers": [], "lifespan": "ประมาณ 10 วัน",
+    "secretes": [],
+    "markers": [],
+    "lifespan": "ประมาณ 10 วัน",
     "exam": "เป็นเซลล์เยื่อบุผิวที่ดัดแปลง ไม่ใช่เซลล์ประสาท ถูกแทนที่ใหม่ตลอดเวลา",
     "diseases": [],
     "confused_with": [],
-    "image": null, "verified": false, "refs": []
+    "image": null,
+    "verified": false,
+    "refs": []
   }
 ]
