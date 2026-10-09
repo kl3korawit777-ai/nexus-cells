@@ -1,0 +1,256 @@
+[
+  {
+    "id": "CL:0007010",
+    "slug": "osteoprogenitor-cell",
+    "kind": "cell",
+    "en": "osteoprogenitor cell",
+    "th": "เซลล์ตั้งต้นของออสทีโอบลาสต์ (osteoprogenitor cell)",
+    "systems": [
+      "skeletal"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "bone",
+    "location": "เยื่อหุ้มกระดูก (periosteum) ชั้นใน และเยื่อบุผิวกระดูกด้านใน (endosteum)",
+    "morphology": "เซลล์รูปกระสวยแบน ไซโทพลาซึมติดสีจาง",
+    "function": "แบ่งตัวและเปลี่ยนเป็นออสทีโอบลาสต์ เป็นแหล่งเซลล์สร้างกระดูกใหม่",
+    "secretes": [],
+    "markers": [
+      "RUNX2"
+    ],
+    "lifespan": "",
+    "exam": "เป็นเซลล์ตั้งต้นที่เจริญมาจาก mesenchymal stem cell ก่อนเป็นออสทีโอบลาสต์",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000062"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000062",
+    "slug": "osteoblast",
+    "kind": "cell",
+    "en": "osteoblast",
+    "th": "ออสทีโอบลาสต์ (osteoblast)",
+    "systems": [
+      "skeletal"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "bone",
+    "location": "ผิวกระดูกที่กำลังสร้างใหม่ เรียงตัวเป็นชั้นบนผิว",
+    "morphology": "เซลล์รูปลูกบาศก์ถึงทรงกระบอก ไซโทพลาซึมติดสีเบสเพราะมีร่างแหเอนโดพลาซึมชนิดขรุขระมาก",
+    "function": "สร้างเมทริกซ์อินทรีย์ของกระดูก (osteoid) และกระตุ้นการสะสมแคลเซียมฟอสเฟต (mineralization)",
+    "secretes": [
+      "คอลลาเจนชนิด I",
+      "osteocalcin",
+      "alkaline phosphatase",
+      "RANKL"
+    ],
+    "markers": [
+      "RUNX2",
+      "osteocalcin",
+      "alkaline phosphatase"
+    ],
+    "lifespan": "",
+    "exam": "เมื่อถูกเมทริกซ์ที่สร้างเองล้อมรอบจะกลายเป็น osteocyte ถูกกระตุ้นด้วย PTH ให้หลั่ง RANKL เพื่อกระตุ้น osteoclast ส่วนออสทีโอบลาสต์สร้างกระดูก ตรงข้ามกับ osteoclast ที่สลายกระดูก",
+    "diseases": [
+      "osteogenesis imperfecta (ความผิดปกติของคอลลาเจนชนิด I)",
+      "โรคกระดูกพรุน (osteoporosis)"
+    ],
+    "confused_with": [
+      "CL:0000092",
+      "CL:0000137"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000137",
+    "slug": "osteocyte",
+    "kind": "cell",
+    "en": "osteocyte",
+    "th": "ออสทีโอไซต์ (osteocyte)",
+    "systems": [
+      "skeletal"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "bone",
+    "location": "อยู่ในช่องว่างเล็ก ๆ (lacuna) ภายในเมทริกซ์กระดูกที่สะสมแร่ธาตุแล้ว",
+    "morphology": "ตัวเซลล์รูปไข่อยู่ในช่อง lacuna มีแขนงยื่นไปในช่องเล็ก ๆ (canaliculi) และเชื่อมกับเซลล์ข้างเคียงด้วย gap junction",
+    "function": "รักษาเมทริกซ์กระดูก รับรู้แรงกลที่กระทำต่อกระดูก (mechanosensing) และควบคุมการสร้างกับการสลายกระดูก",
+    "secretes": [
+      "sclerostin"
+    ],
+    "markers": [
+      "sclerostin (SOST)",
+      "DMP1"
+    ],
+    "lifespan": "",
+    "exam": "เป็นเซลล์ที่พบมากที่สุดในกระดูกที่เจริญเต็มที่ ได้จากออสทีโอบลาสต์ที่ถูกเมทริกซ์ล้อมไว้ แลกเปลี่ยนสารผ่านช่อง canaliculi",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000062"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000058",
+    "slug": "chondroblast",
+    "kind": "cell",
+    "en": "chondroblast",
+    "th": "คอนโดรบลาสต์ (chondroblast)",
+    "systems": [
+      "skeletal"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "cartilage",
+    "location": "ชั้นในของเยื่อหุ้มกระดูกอ่อน (perichondrium) และผิวของกระดูกอ่อนที่กำลังเจริญ",
+    "morphology": "เซลล์รูปรีถึงแบน ไซโทพลาซึมติดสีเบส",
+    "function": "สร้างเมทริกซ์กระดูกอ่อน และเมื่อถูกเมทริกซ์ล้อมจะกลายเป็น chondrocyte",
+    "secretes": [
+      "คอลลาเจนชนิด II",
+      "proteoglycan"
+    ],
+    "markers": [
+      "SOX9"
+    ],
+    "lifespan": "",
+    "exam": "การเจริญของกระดูกอ่อนมีสองแบบ คือเติบโตจากด้านนอก (appositional) โดย chondroblast และเติบโตจากภายใน (interstitial) โดย chondrocyte",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000138"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000138",
+    "slug": "chondrocyte",
+    "kind": "cell",
+    "en": "chondrocyte",
+    "th": "คอนโดรไซต์ (chondrocyte)",
+    "systems": [
+      "skeletal"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "cartilage",
+    "location": "อยู่ในช่อง lacuna ในเมทริกซ์ของกระดูกอ่อน",
+    "morphology": "เซลล์กลมหรือรูปไข่ อยู่ในช่อง lacuna อาจพบเป็นกลุ่มจากการแบ่งตัวเรียกว่า isogenous group",
+    "function": "ดูแลเมทริกซ์ของกระดูกอ่อน",
+    "secretes": [
+      "คอลลาเจนชนิด II",
+      "aggrecan"
+    ],
+    "markers": [
+      "SOX9",
+      "aggrecan"
+    ],
+    "lifespan": "",
+    "exam": "กระดูกอ่อนไม่มีหลอดเลือด เซลล์รับสารอาหารโดยการแพร่ผ่านเมทริกซ์ จึงซ่อมแซมช้า กระดูกอ่อนไฮยาลีน (hyaline) มีคอลลาเจนชนิด II เป็นหลัก",
+    "diseases": [
+      "ข้อเสื่อม (osteoarthritis)"
+    ],
+    "confused_with": [
+      "CL:0000058"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000134",
+    "slug": "mesenchymal-stem-cell",
+    "kind": "cell",
+    "en": "mesenchymal stem cell",
+    "th": "เมเซนไคมอลสเต็มเซลล์ (mesenchymal stem cell)",
+    "systems": [
+      "skeletal"
+    ],
+    "tissue": "other",
+    "tissue_subtype": "stem-progenitor",
+    "location": "ไขกระดูก (stroma) และเนื้อเยื่อเกี่ยวพัน เช่น เนื้อเยื่อไขมัน",
+    "morphology": "เซลล์รูปคล้ายไฟโบรบลาสต์ รูปกระสวย ยึดเกาะผิวเพาะเลี้ยง",
+    "function": "สเต็มเซลล์ที่เปลี่ยนเป็นเซลล์เนื้อเยื่อเกี่ยวพันได้หลายชนิด เช่น ออสทีโอบลาสต์ คอนโดรบลาสต์ และเซลล์ไขมัน (adipocyte)",
+    "secretes": [],
+    "markers": [
+      "CD73",
+      "CD90",
+      "CD105"
+    ],
+    "lifespan": "",
+    "exam": "เป็นเซลล์ที่ให้กำเนิดเนื้อเยื่อเกี่ยวพัน กระดูก และกระดูกอ่อน (multipotent) ต่างจากเม็ดเลือดที่มาจาก hematopoietic stem cell",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000037"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002302",
+    "slug": "type-a-synovial-cell",
+    "kind": "cell",
+    "en": "type A synovial cell",
+    "th": "ไซโนวิโอไซต์ชนิด A (type A synovial cell)",
+    "systems": [
+      "skeletal"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "loose",
+    "location": "เยื่อบุข้อ (synovial membrane) ชั้นผิวด้านที่ติดโพรงข้อ",
+    "morphology": "คล้ายแมโครฟาจ มีเอนโดพลาซึมเรติคิวลัมชนิดเรียบเด่นและไลโซโซมมาก",
+    "function": "กินและกำจัดเศษเซลล์และสิ่งแปลกปลอมในโพรงข้อ (phagocytosis)",
+    "secretes": [],
+    "markers": [
+      "CD68"
+    ],
+    "lifespan": "",
+    "exam": "ชนิด A คล้ายแมโครฟาจ (กินสิ่งแปลกปลอม) ส่วนชนิด B คล้ายไฟโบรบลาสต์ (สร้างน้ำไขข้อ)",
+    "diseases": [
+      "ข้ออักเสบรูมาตอยด์ (rheumatoid arthritis)"
+    ],
+    "confused_with": [
+      "CL:0002301"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002301",
+    "slug": "type-b-synovial-cell",
+    "kind": "cell",
+    "en": "type B synovial cell",
+    "th": "ไซโนวิโอไซต์ชนิด B (type B synovial cell)",
+    "systems": [
+      "skeletal"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "loose",
+    "location": "เยื่อบุข้อ (synovial membrane) ชั้นผิว",
+    "morphology": "คล้ายไฟโบรบลาสต์ มีร่างแหเอนโดพลาซึมชนิดขรุขระเด่น",
+    "function": "สร้างส่วนประกอบของน้ำไขข้อ (synovial fluid) ที่หล่อลื่นข้อและเลี้ยงกระดูกอ่อน",
+    "secretes": [
+      "กรดไฮยาลูโรนิก (hyaluronic acid)",
+      "lubricin"
+    ],
+    "markers": [],
+    "lifespan": "",
+    "exam": "ชนิด B เป็นชนิดที่พบมากกว่าชนิด A สร้างกรดไฮยาลูโรนิกในน้ำไขข้อ",
+    "diseases": [
+      "ข้ออักเสบรูมาตอยด์ (rheumatoid arthritis)"
+    ],
+    "confused_with": [
+      "CL:0002302"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  }
+]

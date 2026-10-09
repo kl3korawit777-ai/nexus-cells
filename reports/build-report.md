@@ -1,6 +1,6 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-09 23:24
+สร้างเมื่อ: 2026-10-09 23:25
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
@@ -67,12 +67,12 @@
 
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
-- ตรงกัน: 4 เส้น
-- คัดเองมี แต่ CL ไม่มี: 26 เส้น
+- ตรงกัน: 6 เส้น
+- คัดเองมี แต่ CL ไม่มี: 29 เส้น
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 2 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 27 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 32 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 229 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 238 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -80,8 +80,10 @@
 - CL:0000050 megakaryocyte-erythroid progenitor cell → CL:0000049 common myeloid progenitor
 - CL:0000051 common lymphoid progenitor → CL:0000037 hematopoietic stem cell
 - CL:0000056 myoblast → CL:0000594 skeletal muscle satellite cell
+- CL:0000058 chondroblast → CL:0000134 mesenchymal stem cell
 - CL:0000084 T cell → CL:0000051 common lymphoid progenitor
 - CL:0000097 mast cell → CL:0000557 granulocyte monocyte progenitor cell
+- CL:0000137 osteocyte → CL:0000062 osteoblast
 - CL:0000160 goblet cell → CL:0002250 intestinal crypt stem cell
 - CL:0000164 enteroendocrine cell → CL:0002250 intestinal crypt stem cell
 - CL:0000236 B cell → CL:0000051 common lymphoid progenitor
@@ -101,6 +103,7 @@
 - CL:0000786 plasma cell → CL:0000236 B cell
 - CL:0000787 memory B cell → CL:0000236 B cell
 - CL:0000813 memory T cell → CL:0000084 T cell
+- CL:0007010 osteoprogenitor cell → CL:0000134 mesenchymal stem cell
 - CL:0008002 skeletal muscle fiber → CL:0000056 myoblast
 
 ### develops_from ที่ CL มีแต่ไม่ได้คัดไว้
@@ -111,12 +114,14 @@
 ### develops_from ที่ CL ชี้ไปเซลล์นอกชุดข้อมูล
 
 - CL:0000037 hematopoietic stem cell ← CL:0000566 angioblastic mesenchymal cell
+- CL:0000058 chondroblast ← CL:0007009 prechondroblast
 - CL:0000065 ependymal cell ← CL:0000681 radial glial cell
 - CL:0000084 T cell ← CL:0000827 pro-T cell
 - CL:0000097 mast cell ← CL:0000831 mast cell progenitor
 - CL:0000128 oligodendrocyte ← CL:0002453 oligodendrocyte precursor cell
 - CL:0000129 microglial cell ← CL:0000034 stem cell
 - CL:0000129 microglial cell ← CL:0000222 mesodermal cell
+- CL:0000137 osteocyte ← CL:0001040 non-terminally differentiated osteoblast
 - CL:0000169 type B pancreatic cell ← CL:0002351 progenitor cell of endocrine pancreas
 - CL:0000171 pancreatic A cell ← CL:0002351 progenitor cell of endocrine pancreas
 - CL:0000173 pancreatic D cell ← CL:0002351 progenitor cell of endocrine pancreas
@@ -135,10 +140,13 @@
 - CL:0000765 erythroblast ← CL:0000547 proerythroblast
 - CL:0000786 plasma cell ← CL:0000980 plasmablast
 - CL:0000786 plasma cell ← CL:0017508 cartwheel heterochromatin
+- CL:0002302 type A synovial cell ← CL:0000842 mononuclear leukocyte
+- CL:0007010 osteoprogenitor cell ← CL:0000222 mesodermal cell
+- CL:0007010 osteoprogenitor cell ← CL:0000333 migratory neural crest cell
 - CL:0008002 skeletal muscle fiber ← CL:0000515 skeletal muscle myoblast
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 
-## คำเตือนจาก validate (107)
+## คำเตือนจาก validate (115)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -247,3 +255,11 @@
 - CL:0000601 (cochlear outer hair cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000207 (olfactory receptor cell): ช่องว่าง: markers, confused_with; ยังไม่มีรูป
 - CL:0000209 (taste receptor cell): ช่องว่าง: markers, diseases, confused_with, tissue_subtype; ยังไม่มีรูป
+- CL:0007010 (osteoprogenitor cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000062 (osteoblast): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000137 (osteocyte): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000058 (chondroblast): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000138 (chondrocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000134 (mesenchymal stem cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0002302 (type A synovial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002301 (type B synovial cell): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
