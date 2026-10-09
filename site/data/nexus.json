@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "28cb9277a3a2",
-  "generated_at": "2026-10-09T16:37:37+00:00",
+  "data_version": "e45bf84f7d93",
+  "generated_at": "2026-10-09T16:37:52+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "edge_direction": "develops_from/is_a: from=ลูก to=แม่; interacts_with: from=ผู้กระทำ to=ผู้ถูกกระทำ"
  },
@@ -5988,7 +5988,7 @@
     "dopamine"
    ],
    "markers": [
-    "tyrosine hydroxylase (TH)",
+    "tyrosine hydroxylase",
     "DAT (dopamine transporter)"
    ],
    "lifespan": "",
