@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T16:30:29+00:00",
+  "fetched_at": "2026-10-09T16:32:14+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -9083,6 +9083,988 @@
         {
           "id": "UBERON:0002198",
           "label": "neurohypophysis"
+        }
+      ]
+    },
+    "CL:0002187": {
+      "id": "CL:0002187",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002187",
+      "label": "basal cell of epidermis",
+      "definition": "A mitotically active, columnar-shaped keratinocyte located in the stratum basale of the epidermis and attached to the basement membrane. This cell exhibits heterogeneity, encompassing stem and progenitor subpopulations with distinct molecular and proliferative characteristics (Haensel et al., 2020), and serves as the primary source of new keratinocytes for epidermal renewal, homeostasis, and regeneration.",
+      "synonyms": [
+        "epidermal basal cell",
+        "epidermal basal keratinocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000646",
+          "label": "basal cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        },
+        {
+          "id": "CL:1000428",
+          "label": "stem cell of epidermis"
+        },
+        {
+          "id": "CL:4052061",
+          "label": "epidermal keratinocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000034",
+          "label": "stem cell"
+        },
+        {
+          "id": "CL:0000036",
+          "label": "epithelial fate stem cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000079",
+          "label": "stratified epithelial cell"
+        },
+        {
+          "id": "CL:0000237",
+          "label": "keratinizing barrier epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000311",
+          "label": "keratin accumulating cell"
+        },
+        {
+          "id": "CL:0000312",
+          "label": "keratinocyte"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0000362",
+          "label": "epidermal cell"
+        },
+        {
+          "id": "CL:0000646",
+          "label": "basal cell"
+        },
+        {
+          "id": "CL:0000723",
+          "label": "somatic stem cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002159",
+          "label": "general ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        },
+        {
+          "id": "CL:0011115",
+          "label": "precursor cell"
+        },
+        {
+          "id": "CL:1000428",
+          "label": "stem cell of epidermis"
+        },
+        {
+          "id": "CL:4052061",
+          "label": "epidermal keratinocyte"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0030216",
+          "label": "keratinocyte differentiation"
+        },
+        {
+          "id": "UBERON:0002025",
+          "label": "stratum basale of epidermis"
+        }
+      ]
+    },
+    "CL:0000312": {
+      "id": "CL:0000312",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000312",
+      "label": "keratinocyte",
+      "definition": "An epithelial cell of stratified squamous tissues, including skin, oral mucosa (Hiroshima et al., 2011), and esophagus (Whelan et al., 2018), that produces keratin proteins and secretes antimicrobial peptides to form a resilient barrier against environmental damage, dehydration, pathogens, and microbial invasion. It undergoes successive stages of differentiation marked by changes in keratin expression, supporting tissue integrity, wound repair, and contributing to immune defense.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000237",
+          "label": "keratinizing barrier epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000079",
+          "label": "stratified epithelial cell"
+        },
+        {
+          "id": "CL:0000237",
+          "label": "keratinizing barrier epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000311",
+          "label": "keratin accumulating cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0002775",
+          "label": "antimicrobial peptide production"
+        },
+        {
+          "id": "GO:0002776",
+          "label": "antimicrobial peptide secretion"
+        },
+        {
+          "id": "GO:0042060",
+          "label": "wound healing"
+        }
+      ]
+    },
+    "CL:0002153": {
+      "id": "CL:0002153",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002153",
+      "label": "corneocyte",
+      "definition": "The dead keratin-filled squamous cell of the stratum corneum. This cell type lacks a nucleus.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "CL:0000225",
+          "label": "anucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000311",
+          "label": "keratin accumulating cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000225",
+          "label": "anucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000311",
+          "label": "keratin accumulating cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000312",
+          "label": "keratinocyte"
+        },
+        {
+          "id": "UBERON:0002027",
+          "label": "stratum corneum of epidermis"
+        }
+      ]
+    },
+    "CL:0000148": {
+      "id": "CL:0000148",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000148",
+      "label": "melanocyte",
+      "definition": "A pigment cell derived from the neural crest. Contains melanin-filled pigment granules, which gives a brown to black appearance.",
+      "synonyms": [
+        "melanophore"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "CL:0000147",
+          "label": "pigment cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000147",
+          "label": "pigment cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000541",
+          "label": "melanoblast"
+        },
+        {
+          "id": "GO:0042470",
+          "label": "melanosome"
+        }
+      ]
+    },
+    "CL:0000453": {
+      "id": "CL:0000453",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000453",
+      "label": "Langerhans cell",
+      "definition": "Langerhans cell is a conventional dendritic cell that has plasma membrane part CD207. A Langerhans cell is a stellate dendritic cell of myeloid origin, that appears clear on light microscopy and has a dark-staining, indented nucleus and characteristic inclusions (Birbeck granules) in the cytoplasm; Langerhans cells are found principally in the stratum spinosum of the epidermis, but they also occur in other stratified epithelia and have been identified in the lung, lymph nodes, spleen, and thymus.",
+      "synonyms": [
+        "LC"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0000990",
+          "label": "conventional dendritic cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000113",
+          "label": "mononuclear phagocyte"
+        },
+        {
+          "id": "CL:0000145",
+          "label": "professional antigen presenting cell"
+        },
+        {
+          "id": "CL:0000219",
+          "label": "motile cell"
+        },
+        {
+          "id": "CL:0000226",
+          "label": "single nucleate cell"
+        },
+        {
+          "id": "CL:0000234",
+          "label": "phagocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0000451",
+          "label": "dendritic cell"
+        },
+        {
+          "id": "CL:0000518",
+          "label": "phagocyte (sensu Vertebrata)"
+        },
+        {
+          "id": "CL:0000738",
+          "label": "leukocyte"
+        },
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "CL:0000766",
+          "label": "myeloid leukocyte"
+        },
+        {
+          "id": "CL:0000842",
+          "label": "mononuclear leukocyte"
+        },
+        {
+          "id": "CL:0000988",
+          "label": "hematopoietic cell"
+        },
+        {
+          "id": "CL:0000990",
+          "label": "conventional dendritic cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000763",
+          "label": "myeloid cell"
+        },
+        {
+          "id": "GO:0002828",
+          "label": "regulation of type 2 immune response"
+        },
+        {
+          "id": "PR:000001293",
+          "label": "C-type lectin domain family 4 member K"
+        }
+      ]
+    },
+    "CL:0000242": {
+      "id": "CL:0000242",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000242",
+      "label": "Merkel cell",
+      "definition": "A specialized epithelial cell located in the skin epidermis and certain mucosal epithelia. It functions as a mechanoreceptor for light touch by forming synapse-like contacts with somatosensory afferent nerve endings, contributing to slowly adapting type I (SAI) tactile responses. Characterized by dense-core neuroendocrine granules, the Merkel cell exhibits both sensory and neuroendocrine properties, including regulated neurotransmitter release via SNARE complex-dependent mechanisms. Its development in mice depends on the transcription factor Atoh1.",
+      "synonyms": [
+        "Merkel's cell",
+        "MC"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000123",
+          "label": "neuron associated cell (sensu Vertebrata)"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000095",
+          "label": "neuron associated cell"
+        },
+        {
+          "id": "CL:0000123",
+          "label": "neuron associated cell (sensu Vertebrata)"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0007269",
+          "label": "neurotransmitter secretion"
+        },
+        {
+          "id": "GO:0031201",
+          "label": "SNARE complex"
+        }
+      ]
+    },
+    "CL:0000317": {
+      "id": "CL:0000317",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000317",
+      "label": "sebocyte",
+      "definition": "An epithelial cell that is part of a sebaceous gland. This cell produces and secretes sebum, an oily, lipid-rich substance, through holocrine secretion where the entire cell ruptures to release its contents.",
+      "synonyms": [
+        "sebum secreting cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0000362",
+          "label": "epidermal cell"
+        },
+        {
+          "id": "CL:0002308",
+          "label": "epithelial cell of skin gland"
+        },
+        {
+          "id": "CL:2000021",
+          "label": "sebaceous gland cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000362",
+          "label": "epidermal cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002159",
+          "label": "general ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002308",
+          "label": "epithelial cell of skin gland"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "CL:2000021",
+          "label": "sebaceous gland cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:1000448": {
+      "id": "CL:1000448",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_1000448",
+      "label": "epithelial cell of sweat gland",
+      "definition": "An epithelial cell that is part of the sweat gland.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000362",
+          "label": "epidermal cell"
+        },
+        {
+          "id": "CL:0002308",
+          "label": "epithelial cell of skin gland"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000362",
+          "label": "epidermal cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002159",
+          "label": "general ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002308",
+          "label": "epithelial cell of skin gland"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0001820",
+          "label": "sweat gland"
+        }
+      ]
+    },
+    "CL:1000417": {
+      "id": "CL:1000417",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_1000417",
+      "label": "myoepithelial cell of sweat gland",
+      "definition": "A myoepithelial cell that is part of the sweat gland.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000185",
+          "label": "myoepithelial cell"
+        },
+        {
+          "id": "CL:1000448",
+          "label": "epithelial cell of sweat gland"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0000185",
+          "label": "myoepithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000362",
+          "label": "epidermal cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002159",
+          "label": "general ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002308",
+          "label": "epithelial cell of skin gland"
+        },
+        {
+          "id": "CL:1000448",
+          "label": "epithelial cell of sweat gland"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0002551": {
+      "id": "CL:0002551",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002551",
+      "label": "fibroblast of dermis",
+      "definition": "Any skin fibroblast that is part of some dermis.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002620",
+          "label": "skin fibroblast"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000057",
+          "label": "fibroblast"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000499",
+          "label": "stromal cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "CL:0002620",
+          "label": "skin fibroblast"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0002067",
+          "label": "dermis"
         }
       ]
     },

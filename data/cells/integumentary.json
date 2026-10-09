@@ -1,0 +1,327 @@
+[
+  {
+    "id": "CL:0002187",
+    "slug": "basal-keratinocyte",
+    "kind": "cell",
+    "en": "basal cell of epidermis",
+    "th": "เซลล์ฐานของหนังกำพร้า (basal keratinocyte)",
+    "systems": [
+      "integumentary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "stratified-squamous",
+    "location": "ชั้นล่างสุดของหนังกำพร้า (stratum basale) ติดกับ basement membrane",
+    "morphology": "เซลล์ทรงลูกบาศก์ถึงทรงสูง เรียงชั้นเดียว ยึดกับ basement membrane ด้วย hemidesmosome",
+    "function": "แบ่งตัวสร้างเซลล์ keratinocyte ใหม่ที่เคลื่อนขึ้นสู่ผิว ทำหน้าที่เป็นแหล่งสเต็มเซลล์และเซลล์ตั้งต้นของหนังกำพร้า",
+    "secretes": [],
+    "markers": [
+      "keratin 5 (KRT5)",
+      "keratin 14 (KRT14)",
+      "p63"
+    ],
+    "lifespan": "",
+    "exam": "เป็นชั้นเดียวของหนังกำพร้าที่มีการแบ่งเซลล์มาก ความผิดปกติของ keratin 5 และ 14 ทำให้เกิด epidermolysis bullosa simplex และมะเร็ง basal cell carcinoma",
+    "diseases": [
+      "epidermolysis bullosa simplex",
+      "มะเร็งผิวหนังชนิด basal cell carcinoma"
+    ],
+    "confused_with": [
+      "CL:0000148"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000312",
+    "slug": "keratinocyte",
+    "kind": "cell",
+    "en": "keratinocyte",
+    "th": "เคอราติโนไซต์ (keratinocyte)",
+    "systems": [
+      "integumentary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "stratified-squamous",
+    "location": "หนังกำพร้า (epidermis) ทุกชั้น เป็นเซลล์ส่วนใหญ่ของหนังกำพร้า",
+    "morphology": "เมื่อเคลื่อนจากชั้นฐานขึ้นสู่ผิว เซลล์แบนลงเรื่อย ๆ และสะสมเคราติน (keratin) มากขึ้น ชั้น stratum spinosum มีสะพานเชื่อม desmosome",
+    "function": "สร้างเคราติน ซึ่งทำให้ผิวแข็งแรงและกันน้ำ ป้องกันเชื้อโรคและการสูญเสียน้ำ และใช้ในการสังเคราะห์วิตามินดีของผิวหนัง",
+    "secretes": [],
+    "markers": [
+      "keratin 5/14 (ชั้นฐาน)",
+      "keratin 1/10 (ชั้นเหนือฐาน)"
+    ],
+    "lifespan": "",
+    "exam": "ชั้นของหนังกำพร้าจากลึกไปตื้น คือ stratum basale, spinosum, granulosum, lucidum (เฉพาะผิวหนังหนา) และ corneum ในชั้น granulosum มี keratohyalin granule และ lamellar body",
+    "diseases": [
+      "โรคสะเก็ดเงิน (psoriasis)",
+      "มะเร็งผิวหนังชนิด squamous cell carcinoma"
+    ],
+    "confused_with": [
+      "CL:0002187",
+      "CL:0002153"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002153",
+    "slug": "corneocyte",
+    "kind": "cell",
+    "en": "corneocyte",
+    "th": "คอร์นีโอไซต์ (corneocyte)",
+    "systems": [
+      "integumentary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "stratified-squamous",
+    "location": "ชั้นนอกสุดของหนังกำพร้า (stratum corneum)",
+    "morphology": "เซลล์แบนบางที่ตายแล้ว ไม่มีนิวเคลียสและออร์แกเนลล์ ภายในอัดแน่นด้วยเคราติน ล้อมด้วยเปลือกโปรตีน (cornified envelope)",
+    "function": "เป็นเกราะป้องกันชั้นนอกสุดของผิวหนัง กันน้ำ สารเคมี และเชื้อโรค แล้วหลุดลอกออกเป็นขี้ไคล (desquamation)",
+    "secretes": [],
+    "markers": [
+      "involucrin",
+      "loricrin",
+      "filaggrin"
+    ],
+    "lifespan": "",
+    "exam": "เกิดจาก keratinocyte ที่ตายตามกระบวนการ cornification ในโรคสะเก็ดเงินเซลล์เคลื่อนขึ้นเร็วผิดปกติจึงมีผิวหนาและเป็นสะเก็ด",
+    "diseases": [
+      "โรคสะเก็ดเงิน (psoriasis)",
+      "ichthyosis"
+    ],
+    "confused_with": [
+      "CL:0000312"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000148",
+    "slug": "melanocyte",
+    "kind": "cell",
+    "en": "melanocyte",
+    "th": "เมลาโนไซต์ (melanocyte)",
+    "systems": [
+      "integumentary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "stratified-squamous",
+    "location": "ชั้นฐานของหนังกำพร้า (stratum basale) และรูขุมขน",
+    "morphology": "เซลล์มีแขนง (dendrite) แทรกระหว่าง basal keratinocyte ไซโทพลาซึมใส ย้อมไม่ติดสีด้วย H&E",
+    "function": "สร้างเม็ดสีเมลานิน (melanin) ในเมลาโนโซม แล้วส่งให้ keratinocyte รอบข้างผ่านแขนง เพื่อป้องกันรังสี UV",
+    "secretes": [
+      "melanin"
+    ],
+    "markers": [
+      "MART-1 (Melan-A)",
+      "S100",
+      "tyrosinase",
+      "HMB-45"
+    ],
+    "lifespan": "",
+    "exam": "เกิดจากเซลล์ neural crest สีผิวขึ้นกับปริมาณและชนิดของเมลานินที่สร้าง ไม่ใช่จำนวนเมลาโนไซต์ซึ่งใกล้เคียงกันทุกคน ปฏิกิริยา tyrosinase เปลี่ยน tyrosine เป็นเมลานิน",
+    "diseases": [
+      "มะเร็งผิวหนังชนิด melanoma",
+      "vitiligo",
+      "albinism (ขาด tyrosinase)"
+    ],
+    "confused_with": [
+      "CL:0002187"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000453",
+    "slug": "langerhans-cell",
+    "kind": "cell",
+    "en": "Langerhans cell",
+    "th": "เซลล์แลงเกอร์ฮานส์ (Langerhans cell)",
+    "systems": [
+      "integumentary",
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "หนังกำพร้า โดยเฉพาะชั้น stratum spinosum",
+    "morphology": "เซลล์มีแขนง ไซโทพลาซึมใส ใต้กล้องอิเล็กตรอนพบแกรนูลรูปไม้เทนนิส (Birbeck granule)",
+    "function": "เซลล์นำเสนอแอนติเจน (antigen-presenting cell) ของผิวหนัง จับแอนติเจนแล้วเคลื่อนไปยังต่อมน้ำเหลืองเพื่อกระตุ้น T cell",
+    "secretes": [],
+    "markers": [
+      "CD1a",
+      "langerin (CD207)"
+    ],
+    "lifespan": "",
+    "exam": "เป็นเซลล์เดนไดรต์ชนิดหนึ่งที่อยู่ในหนังกำพร้า (ไม่ใช่เซลล์ประสาท) ต้นกำเนิดจากไขกระดูก แม้อยู่ที่ผิวหนัง",
+    "diseases": [
+      "Langerhans cell histiocytosis"
+    ],
+    "confused_with": [
+      "CL:0000451"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000242",
+    "slug": "merkel-cell",
+    "kind": "cell",
+    "en": "Merkel cell",
+    "th": "เซลล์เมอร์เคิล (Merkel cell)",
+    "systems": [
+      "integumentary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "stratified-squamous",
+    "location": "ชั้นฐานของหนังกำพร้า โดยเฉพาะบริเวณที่รับสัมผัสไวมาก เช่น ปลายนิ้ว",
+    "morphology": "เซลล์รูปไข่ ติดกับปลายประสาทรับความรู้สึกเป็นแผ่น (Merkel disc) ไซโทพลาซึมมีแกรนูลแกนทึบ",
+    "function": "ทำหน้าที่เป็นตัวรับความรู้สึกสัมผัสเบา (mechanoreceptor) และส่งสัญญาณไปยังปลายประสาทรับความรู้สึก",
+    "secretes": [],
+    "markers": [
+      "keratin 20 (CK20)",
+      "chromogranin A"
+    ],
+    "lifespan": "",
+    "exam": "เกี่ยวข้องกับการรับสัมผัสเบาและการแยกแยะพื้นผิว มะเร็ง Merkel cell carcinoma พบสัมพันธ์กับ Merkel cell polyomavirus",
+    "diseases": [
+      "Merkel cell carcinoma"
+    ],
+    "confused_with": [
+      "CL:0000148"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000317",
+    "slug": "sebocyte",
+    "kind": "cell",
+    "en": "sebocyte",
+    "th": "เซบโบไซต์ (sebocyte)",
+    "systems": [
+      "integumentary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "glandular",
+    "location": "ต่อมไขมัน (sebaceous gland) ซึ่งเปิดเข้ารูขุมขน",
+    "morphology": "เซลล์ขนาดใหญ่ ไซโทพลาซึมมีหยดไขมันมาก ทำให้ดูเป็นฟอง นิวเคลียสอยู่กลางเซลล์",
+    "function": "สร้างไขมัน (sebum) ที่หล่อลื่นผิวและเส้นผม เซลล์แตกตัวปล่อยไขมันออกมา (holocrine secretion)",
+    "secretes": [
+      "sebum"
+    ],
+    "markers": [],
+    "lifespan": "",
+    "exam": "การหลั่งแบบ holocrine คือทั้งเซลล์ตายและสลายเป็นสารที่หลั่ง ต่อมไขมันถูกกระตุ้นด้วยแอนโดรเจน จึงทำงานมากในวัยรุ่นและเกิดสิว",
+    "diseases": [
+      "สิว (acne vulgaris)"
+    ],
+    "confused_with": [
+      "CL:1000448"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:1000448",
+    "slug": "sweat-gland-epithelial-cell",
+    "kind": "cell",
+    "en": "epithelial cell of sweat gland",
+    "th": "เซลล์เยื่อบุผิวของต่อมเหงื่อ",
+    "systems": [
+      "integumentary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "glandular",
+    "location": "ส่วนขดของต่อมเหงื่อในหนังแท้และใต้ผิวหนัง ต่อมเหงื่อ eccrine พบทั่วตัว ต่อมเหงื่อ apocrine พบที่รักแร้และบริเวณอวัยวะเพศ",
+    "morphology": "เซลล์ทรงลูกบาศก์ถึงทรงสูง ในต่อม eccrine แบ่งเป็น clear cell และ dark cell",
+    "function": "หลั่งเหงื่อเพื่อระบายความร้อนของร่างกาย ต่อม eccrine หลั่งน้ำเกลือ ส่วนต่อม apocrine หลั่งสารข้นที่มีโปรตีนและไขมัน",
+    "secretes": [
+      "เหงื่อ (น้ำและอิเล็กโทรไลต์)"
+    ],
+    "markers": [],
+    "lifespan": "",
+    "exam": "เหงื่อของ eccrine gland เป็นน้ำเกลือ ท่อเหงื่อดูดโซเดียมคลอไรด์กลับด้วย CFTR ในผู้ป่วย cystic fibrosis ตรวจพบคลอไรด์ในเหงื่อสูง (sweat chloride test) กลิ่นตัวเกิดจากแบคทีเรียย่อยสารจากต่อม apocrine",
+    "diseases": [
+      "cystic fibrosis",
+      "เหงื่อออกมากผิดปกติ (hyperhidrosis)"
+    ],
+    "confused_with": [
+      "CL:0000317"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:1000417",
+    "slug": "sweat-gland-myoepithelial-cell",
+    "kind": "cell",
+    "en": "myoepithelial cell of sweat gland",
+    "th": "เซลล์ไมโออีพิทีเลียลของต่อมเหงื่อ",
+    "systems": [
+      "integumentary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "glandular",
+    "location": "ล้อมรอบส่วนหลั่งของต่อมเหงื่อ อยู่ระหว่างเซลล์หลั่งกับ basement membrane",
+    "morphology": "เซลล์รูปกระสวยแบน มีแขนง ล้อมรอบส่วนหลั่งของต่อม",
+    "function": "หดตัวเพื่อดันสารที่หลั่งจากเซลล์หลั่งออกไปตามท่อ",
+    "secretes": [],
+    "markers": [
+      "α-smooth muscle actin (α-SMA)",
+      "keratin 14",
+      "p63"
+    ],
+    "lifespan": "",
+    "exam": "เป็นเซลล์ที่เกิดจากเนื้อเยื่อบุผิวแต่หดตัวได้คล้ายกล้ามเนื้อเรียบ พบในต่อมเหงื่อ ต่อมน้ำลาย ต่อมน้ำตา และต่อมน้ำนม",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000192"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002551",
+    "slug": "dermal-fibroblast",
+    "kind": "cell",
+    "en": "fibroblast of dermis",
+    "th": "ไฟโบรบลาสต์ของหนังแท้ (dermal fibroblast)",
+    "systems": [
+      "integumentary"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "loose",
+    "location": "หนังแท้ (dermis) ซึ่งเป็นเนื้อเยื่อเกี่ยวพัน",
+    "morphology": "เซลล์รูปกระสวยแบน มีแขนง ไซโทพลาซึมมีร่างแหเอนโดพลาซึมชนิดขรุขระมาก",
+    "function": "สร้างคอลลาเจนและอีลาสติน รวมทั้งสารพื้นระหว่างเซลล์ของหนังแท้ ช่วยให้ผิวแข็งแรงและยืดหยุ่น และช่วยสมานแผล",
+    "secretes": [
+      "คอลลาเจนชนิด I และ III",
+      "elastin",
+      "proteoglycan"
+    ],
+    "markers": [
+      "vimentin"
+    ],
+    "lifespan": "",
+    "exam": "ในการสมานแผล ไฟโบรบลาสต์บางส่วนเปลี่ยนเป็น myofibroblast ที่หดตัวดึงขอบแผลให้เข้าหากัน การสร้างคอลลาเจนมากเกินทำให้เกิดแผลเป็นนูน (keloid)",
+    "diseases": [
+      "keloid",
+      "systemic sclerosis (scleroderma)"
+    ],
+    "confused_with": [
+      "CL:0000388"
+    ],
+    "image": null,
+    "verified": false,
+    "refs": []
+  }
+]

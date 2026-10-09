@@ -1,10 +1,10 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-09 23:30
+สร้างเมื่อ: 2026-10-09 23:32
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 69 เส้น
+- ตรงกัน: 72 เส้น
 - คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 4 เส้น
 - คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 4 เส้น
 - CL มี แต่ไม่ได้คัดไว้: 37 เส้น
@@ -67,12 +67,12 @@
 
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
-- ตรงกัน: 6 เส้น
-- คัดเองมี แต่ CL ไม่มี: 32 เส้น
+- ตรงกัน: 7 เส้น
+- คัดเองมี แต่ CL ไม่มี: 33 เส้น
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 2 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 36 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 38 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 267 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 280 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -88,6 +88,7 @@
 - CL:0000160 goblet cell → CL:0002250 intestinal crypt stem cell
 - CL:0000164 enteroendocrine cell → CL:0002250 intestinal crypt stem cell
 - CL:0000236 B cell → CL:0000051 common lymphoid progenitor
+- CL:0000312 keratinocyte → CL:0002187 basal cell of epidermis
 - CL:0000451 dendritic cell → CL:0000049 common myeloid progenitor
 - CL:0000510 paneth cell → CL:0002250 intestinal crypt stem cell
 - CL:0000556 megakaryocyte → CL:0000050 megakaryocyte-erythroid progenitor cell
@@ -126,12 +127,14 @@
 - CL:0000129 microglial cell ← CL:0000034 stem cell
 - CL:0000129 microglial cell ← CL:0000222 mesodermal cell
 - CL:0000137 osteocyte ← CL:0001040 non-terminally differentiated osteoblast
+- CL:0000148 melanocyte ← CL:0000541 melanoblast
 - CL:0000169 type B pancreatic cell ← CL:0002351 progenitor cell of endocrine pancreas
 - CL:0000171 pancreatic A cell ← CL:0002351 progenitor cell of endocrine pancreas
 - CL:0000173 pancreatic D cell ← CL:0002351 progenitor cell of endocrine pancreas
 - CL:0000182 hepatocyte ← CL:0005026 hepatoblast
 - CL:0000192 smooth muscle cell ← CL:0000514 smooth muscle myoblast
 - CL:0000336 adrenal medulla chromaffin cell ← CL:0000011 migratory trunk neural crest cell
+- CL:0000453 Langerhans cell ← CL:0000763 myeloid cell
 - CL:0000510 paneth cell ← CL:4047017 transit amplifying cell of gut
 - CL:0000542 lymphocyte ← CL:0017500 neutrophillic cytoplasm
 - CL:0000556 megakaryocyte ← CL:0000553 megakaryocyte progenitor cell
@@ -153,7 +156,7 @@
 - CL:0008002 skeletal muscle fiber ← CL:0000515 skeletal muscle myoblast
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 
-## คำเตือนจาก validate (141)
+## คำเตือนจาก validate (151)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -241,6 +244,16 @@
 - CL:0000437 (gonadotroph): ช่องว่าง: lifespan, diseases, confused_with; ยังไม่มีรูป
 - CL:0000652 (pinealocyte): ช่องว่าง: markers, lifespan, diseases, confused_with; ยังไม่มีรูป
 - CL:0000645 (pituicyte): ช่องว่าง: markers, lifespan, diseases, confused_with; ยังไม่มีรูป
+- CL:0002187 (basal cell of epidermis): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000312 (keratinocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002153 (corneocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000148 (melanocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000453 (Langerhans cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000242 (Merkel cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000317 (sebocyte): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
+- CL:1000448 (epithelial cell of sweat gland): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
+- CL:1000417 (myoepithelial cell of sweat gland): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0002551 (fibroblast of dermis): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0008002 (skeletal muscle fiber): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000594 (skeletal muscle satellite cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0000056 (myoblast): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
