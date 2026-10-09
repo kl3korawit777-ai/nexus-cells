@@ -404,3 +404,30 @@ a.sys-card:hover { border-color: var(--sys-color, var(--accent)); color: var(--i
 @media (max-width: 480px) {
   .overview-wrap { min-height: 420px; height: 64vh; }
 }
+
+/* ---------- หน้าเนื้อเยื่อ ---------- */
+.tissue-page .eyebrow { margin-top: 2px; }
+.tissue-page .sys-head .dot { display: inline-block; margin-right: 6px; }
+.subtypes { display: grid; gap: 18px; }
+.subtype h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
+.subtype h3 .en { color: var(--muted); font-weight: 400; font-size: .92rem; }
+.subtype .empty { padding: 4px 0; font-size: .95rem; }
+.chip .count { background: var(--surface); border-radius: 999px; padding: 0 7px; font-size: .78rem; font-weight: 600; }
+.tissue-graph { height: min(70vh, 560px); min-height: 360px; }
+.overview-card {
+  display: grid; gap: 14px; grid-template-columns: minmax(0, 1fr);
+  padding: 14px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface);
+  box-shadow: var(--shadow); color: var(--ink); text-decoration: none; position: relative; overflow: hidden;
+}
+@media (min-width: 760px) { .overview-card { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; } }
+.overview-card:hover { border-color: var(--accent); color: var(--ink); }
+.overview-card h2 { font-size: 1.35rem; margin-bottom: 4px; }
+.overview-card .stats { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+.overview-card .stat { background: var(--surface-2); border-radius: 12px; padding: 6px 12px; line-height: 1.2; }
+.overview-card .stat b { display: block; font-size: 1.3rem; }
+.overview-card .stat span { font-size: .8rem; color: var(--muted); }
+.overview-card .cta { margin-top: 6px; font-weight: 600; color: var(--accent); }
+.overview-preview { height: 230px; position: relative; border-radius: 12px; background: var(--bg); border: 1px solid var(--line); overflow: hidden; pointer-events: none; }
+.overview-preview .cy { position: absolute; inset: 0; }
+a.tissue-card { display: block; color: var(--ink); text-decoration: none; }
+a.tissue-card:hover { border-color: var(--accent); color: var(--ink); }

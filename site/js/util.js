@@ -22,6 +22,7 @@ export const hashToId = (s) => s.replace('_', ':');
 
 export const cellHref = (id) => '#/cell/' + idToHash(id);
 export const systemHref = (id) => '#/system/' + encodeURIComponent(id);
+export const tissueHref = (id) => '#/tissue/' + encodeURIComponent(id);
 
 export function cssVar(name) {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim();

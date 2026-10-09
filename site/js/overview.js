@@ -23,7 +23,7 @@ function dotUri(color) {
 }
 const dotList = (n) => (n.data('dots') || []).map(dotUri);
 
-function overviewStyle() {
+export function overviewStyle() {
   const ink = cssVar('--ink'), surface = cssVar('--surface'), muted = cssVar('--muted'), focus = cssVar('--focus');
   const dark = isDark();
   return [
@@ -371,7 +371,7 @@ export async function createOverviewPreview(container) {
   cy.edges('.agg').style('label', '');
   const refit = () => {
     cy.resize();
-    const f = fitFor(cy, boxesBounds(layout.modes.system.boxes), 8);
+    const f = fitFor(cy, boxesBounds(layout.modes.system.boxes), 26);
     cy.zoom(f.zoom); cy.pan(f.pan);
     cy.nodes('.group').style('font-size', Math.max(13, 13 / f.zoom));
   };

@@ -2,6 +2,7 @@
 
 import { homeView, systemView, cellView, notFoundView } from './views.js';
 import { overviewView } from './overview.js';
+import { tissueView } from './tissue.js';
 import { hashToId } from './util.js';
 
 let current = null;
@@ -13,6 +14,7 @@ export function resolve(hash) {
   });
   if (parts.length === 0) return homeView();
   if (parts[0] === 'system' && parts.length === 2) return systemView(parts[1]);
+  if (parts[0] === 'tissue' && parts.length === 2) return tissueView(parts[1]);
   if (parts[0] === 'overview' && parts.length <= 2) {
     const m = parts[1] || 'system';
     if (m === 'system' || m === 'tissue') return overviewView(m);

@@ -2,7 +2,7 @@
 // ทุกหัวข้อที่ไม่มีข้อมูลจะถูกซ่อน
 
 import { store, relationsOf, subtypeLabel, modeLabel } from './data.js';
-import { h, cellHref, systemHref } from './util.js';
+import { h, cellHref, systemHref, tissueHref } from './util.js';
 import { createMiniGraph } from './graph.js';
 import { colorForKey } from './graph.js';
 import { colorKey } from './data.js';
@@ -21,7 +21,7 @@ function systemChips(cell) {
 function tissueChips(cell) {
   const t = store.tissuesById.get(cell.tissue);
   const chips = [];
-  if (t) chips.push(h('span', { class: 'chip' }, h('span', { class: 'dot', style: `background:${colorForKey(colorKey(cell))}` }), t.th));
+  if (t) chips.push(h('a', { class: 'chip', href: tissueHref(t.id), title: 'ดูหน้าเนื้อเยื่อ' + t.th }, h('span', { class: 'dot', style: `background:${colorForKey(colorKey(cell))}` }), t.th));
   const st = subtypeLabel(cell);
   if (st) chips.push(h('span', { class: 'chip' }, st));
   return chips;
@@ -35,16 +35,18 @@ function fact(title, content) {
   return h('section', { class: 'fact' }, h('h2', { text: title }), content);
 }
 
-function imageBlock(cell) {
-  const img = cell.image;
+// รูปพร้อมเครดิต ใช้ร่วมกันระหว่างหน้าเซลล์และหน้าเนื้อเยื่อ
+// image: null หรือ {src, credit, license, source, stain, type}  hint: ชื่อไฟล์ที่ควรใส่เมื่อยังไม่มีรูป
+export function imageBlock(image, alt, hint) {
+  const img = image;
   if (!img || !img.src) {
     return h('div', { class: 'img-missing' },
       h('strong', { text: 'ยังไม่มีรูป' }),
       h('span', { text: 'ใส่รูปที่ได้รับอนุญาตไว้ที่' }),
-      h('code', { text: `images/${cell.slug}.jpg` }));
+      h('code', { text: hint }));
   }
   const figure = h('figure', { class: 'figure' });
-  const pic = h('img', { src: img.src, alt: `ภาพ ${cell.th} (${cell.en})`, loading: 'lazy' });
+  const pic = h('img', { src: img.src, alt, loading: 'lazy' });
   pic.addEventListener('error', () => {
     pic.replaceWith(h('div', { class: 'img-missing', role: 'img', 'aria-label': 'โหลดรูปไม่สำเร็จ' },
       h('strong', { text: 'โหลดรูปไม่สำเร็จ' }),
@@ -94,7 +96,7 @@ export function renderCellPage(cell) {
     cell.cl && cell.cl.definition
       ? h('div', { class: 'def-box', lang: 'en' }, h('h2', { lang: 'th', text: 'คำนิยามจาก Cell Ontology (อังกฤษ)' }), h('p', { text: cell.cl.definition }))
       : null);
-  root.append(h('div', { class: 'cell-hero' }, imageBlock(cell), title));
+  root.append(h('div', { class: 'cell-hero' }, imageBlock(cell.image, `ภาพ ${cell.th} (${cell.en})`, `images/${cell.slug}.jpg`), title));
 
   const facts = [
     has(cell.location) ? fact('ตำแหน่งที่พบ', h('p', { text: cell.location })) : null,
