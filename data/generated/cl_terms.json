@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T16:32:14+00:00",
+  "fetched_at": "2026-10-09T16:34:29+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -12751,6 +12751,1309 @@
         {
           "id": "GO:0050912",
           "label": "detection of chemical stimulus involved in sensory perception of taste"
+        }
+      ]
+    },
+    "CL:0000020": {
+      "id": "CL:0000020",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000020",
+      "label": "spermatogonium",
+      "definition": "An euploid male germ cell of an early stage of spermatogenesis.",
+      "synonyms": [
+        "spermatogonial cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000015",
+          "label": "male germ cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000015",
+          "label": "male germ cell"
+        },
+        {
+          "id": "CL:0000039",
+          "label": "germ line cell"
+        },
+        {
+          "id": "CL:0000586",
+          "label": "germ cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "PATO:0001394",
+          "label": "diploid"
+        },
+        {
+          "id": "PATO:0001501",
+          "label": "immature"
+        }
+      ]
+    },
+    "CL:0000656": {
+      "id": "CL:0000656",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000656",
+      "label": "primary spermatocyte",
+      "definition": "A diploid cell that has derived from a spermatogonium and can subsequently begin meiosis and divide into two haploid secondary spermatocytes.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000017",
+          "label": "spermatocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000015",
+          "label": "male germ cell"
+        },
+        {
+          "id": "CL:0000017",
+          "label": "spermatocyte"
+        },
+        {
+          "id": "CL:0000039",
+          "label": "germ line cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000586",
+          "label": "germ cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0007140",
+          "label": "male meiotic nuclear division"
+        },
+        {
+          "id": "PATO:0001394",
+          "label": "diploid"
+        }
+      ]
+    },
+    "CL:0000657": {
+      "id": "CL:0000657",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000657",
+      "label": "secondary spermatocyte",
+      "definition": "One of the two haploid cells into which a primary spermatocyte divides, and which in turn gives origin to spermatids.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000017",
+          "label": "spermatocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000413",
+          "label": "haploid cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000015",
+          "label": "male germ cell"
+        },
+        {
+          "id": "CL:0000017",
+          "label": "spermatocyte"
+        },
+        {
+          "id": "CL:0000039",
+          "label": "germ line cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000413",
+          "label": "haploid cell"
+        },
+        {
+          "id": "CL:0000586",
+          "label": "germ cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000656",
+          "label": "primary spermatocyte"
+        },
+        {
+          "id": "GO:0007142",
+          "label": "male meiosis II"
+        }
+      ]
+    },
+    "CL:0000018": {
+      "id": "CL:0000018",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000018",
+      "label": "spermatid",
+      "definition": "A male germ cell that develops from the haploid secondary spermatocytes. Without further division, spermatids undergo structural changes and give rise to spermatozoa.",
+      "synonyms": [
+        "nematoblast"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "CL:0000015",
+          "label": "male germ cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000413",
+          "label": "haploid cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000015",
+          "label": "male germ cell"
+        },
+        {
+          "id": "CL:0000039",
+          "label": "germ line cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000413",
+          "label": "haploid cell"
+        },
+        {
+          "id": "CL:0000586",
+          "label": "germ cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000657",
+          "label": "secondary spermatocyte"
+        },
+        {
+          "id": "GO:0001675",
+          "label": "acrosome assembly"
+        },
+        {
+          "id": "GO:0007288",
+          "label": "sperm axoneme assembly"
+        },
+        {
+          "id": "GO:0007289",
+          "label": "spermatid nucleus differentiation"
+        }
+      ]
+    },
+    "CL:0000019": {
+      "id": "CL:0000019",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000019",
+      "label": "sperm",
+      "definition": "A mature male germ cell that develops from a spermatid.",
+      "synonyms": [
+        "sperm cell",
+        "spermatozoid",
+        "spermatozoon"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000408",
+          "label": "male gamete"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000015",
+          "label": "male germ cell"
+        },
+        {
+          "id": "CL:0000039",
+          "label": "germ line cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000300",
+          "label": "gamete"
+        },
+        {
+          "id": "CL:0000408",
+          "label": "male gamete"
+        },
+        {
+          "id": "CL:0000413",
+          "label": "haploid cell"
+        },
+        {
+          "id": "CL:0000586",
+          "label": "germ cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000018",
+          "label": "spermatid"
+        }
+      ]
+    },
+    "CL:0000216": {
+      "id": "CL:0000216",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000216",
+      "label": "Sertoli cell",
+      "definition": "A supporting cell projecting inward from the basement membrane of seminiferous tubules. They surround and nourish the developing male germ cells and secrete androgen binding protein. Their tight junctions with the spermatogonia and spermatocytes provide a blood-testis barrier.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000511",
+          "label": "androgen binding protein secreting cell"
+        },
+        {
+          "id": "CL:0000630",
+          "label": "supporting cell"
+        },
+        {
+          "id": "CL:0002625",
+          "label": "seminiferous tubule epithelial cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000068",
+          "label": "duct epithelial cell"
+        },
+        {
+          "id": "CL:0000076",
+          "label": "squamous epithelial cell"
+        },
+        {
+          "id": "CL:0000077",
+          "label": "mesothelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000154",
+          "label": "protein secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000511",
+          "label": "androgen binding protein secreting cell"
+        },
+        {
+          "id": "CL:0000630",
+          "label": "supporting cell"
+        },
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "CL:0002625",
+          "label": "seminiferous tubule epithelial cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000178": {
+      "id": "CL:0000178",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000178",
+      "label": "Leydig cell",
+      "definition": "A Leydig cell is a testosterone-secreting cell in the interstitial area, between the seminiferous tubules, in the testis.",
+      "synonyms": [
+        "interstitial cell of Leydig",
+        "interstitial cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "CL:0000177",
+          "label": "testosterone secreting cell"
+        },
+        {
+          "id": "CL:4030031",
+          "label": "interstitial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000177",
+          "label": "testosterone secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:4030031",
+          "label": "interstitial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0009091",
+          "label": "Leydig stem cell"
+        },
+        {
+          "id": "UBERON:0005212",
+          "label": "Leydig cell region of testis"
+        }
+      ]
+    },
+    "CL:0000024": {
+      "id": "CL:0000024",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000024",
+      "label": "oogonial cell",
+      "definition": "An undifferentiated germ cell that proliferates rapidly and gives rise to oocytes.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "CL:0000021",
+          "label": "female germ cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000021",
+          "label": "female germ cell"
+        },
+        {
+          "id": "CL:0000039",
+          "label": "germ line cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000586",
+          "label": "germ cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000670",
+          "label": "primordial germ cell"
+        },
+        {
+          "id": "GO:0000278",
+          "label": "mitotic cell cycle"
+        }
+      ]
+    },
+    "CL:0000654": {
+      "id": "CL:0000654",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000654",
+      "label": "primary oocyte",
+      "definition": "A primary oocyte is an oocyte that has not completed female meosis I.",
+      "synonyms": [
+        "primary oogonium"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000023",
+          "label": "oocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000021",
+          "label": "female germ cell"
+        },
+        {
+          "id": "CL:0000023",
+          "label": "oocyte"
+        },
+        {
+          "id": "CL:0000039",
+          "label": "germ line cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000586",
+          "label": "germ cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000024",
+          "label": "oogonial cell"
+        },
+        {
+          "id": "GO:0051321",
+          "label": "meiotic cell cycle"
+        }
+      ]
+    },
+    "CL:0000655": {
+      "id": "CL:0000655",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000655",
+      "label": "secondary oocyte",
+      "definition": "A secondary oocyte is an oocyte that has not completed meiosis II.",
+      "synonyms": [
+        "primary oogonium"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000023",
+          "label": "oocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000021",
+          "label": "female germ cell"
+        },
+        {
+          "id": "CL:0000023",
+          "label": "oocyte"
+        },
+        {
+          "id": "CL:0000039",
+          "label": "germ line cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000586",
+          "label": "germ cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000654",
+          "label": "primary oocyte"
+        },
+        {
+          "id": "GO:0007147",
+          "label": "female meiosis II"
+        }
+      ]
+    },
+    "CL:0000501": {
+      "id": "CL:0000501",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000501",
+      "label": "granulosa cell",
+      "definition": "A supporting cell for the developing female gamete in the ovary of mammals. They develop from the coelomic epithelial cells of the gonadal ridge. Granulosa cells form a single layer around the mammalian oocyte in the primordial ovarian follicle and advance to form a multilayered cumulus oophorus surrounding the ovum in the Graafian follicle. The major functions of granulosa cells include the production of steroids and LH receptors.",
+      "synonyms": [
+        "granulosa cell of ovary"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "CL:0000174",
+          "label": "steroid hormone secreting cell"
+        },
+        {
+          "id": "CL:0002174",
+          "label": "follicular cell of ovary"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000174",
+          "label": "steroid hormone secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002174",
+          "label": "follicular cell of ovary"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:4033066",
+          "label": "pre-granulosa cell"
+        }
+      ]
+    },
+    "CL:0000503": {
+      "id": "CL:0000503",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000503",
+      "label": "theca cell",
+      "definition": "A specialized stromal cell that forms the theca layer outside the basal lamina lining the ovarian follicle, appearing during the secondary follicle stage.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002132",
+          "label": "stromal cell of ovary"
+        },
+        {
+          "id": "CL:0002174",
+          "label": "follicular cell of ovary"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000499",
+          "label": "stromal cell"
+        },
+        {
+          "id": "CL:0002132",
+          "label": "stromal cell of ovary"
+        },
+        {
+          "id": "CL:0002174",
+          "label": "follicular cell of ovary"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0000155",
+          "label": "theca cell layer"
+        }
+      ]
+    },
+    "CL:0000175": {
+      "id": "CL:0000175",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000175",
+      "label": "luteal cell",
+      "definition": "A progesterone secreting cell in the corpus luteum. The large luteal cells develop from the granulosa cells. The small luteal cells develop from the theca cells.",
+      "synonyms": [
+        "lutein cell",
+        "corpus luteum cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000179",
+          "label": "progesterone secreting cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000174",
+          "label": "steroid hormone secreting cell"
+        },
+        {
+          "id": "CL:0000179",
+          "label": "progesterone secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0002512",
+          "label": "corpus luteum"
+        }
+      ]
+    },
+    "CL:0002255": {
+      "id": "CL:0002255",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002255",
+      "label": "stromal cell of endometrium",
+      "definition": "A stromal cell of the endometrium, characterized by its fibroblast-like morphology, regenerative capacity, and ability to undergo decidualization. It differentiates into a decidual stromal cell during pregnancy, essential for embryo implantation and maintenance. This cell is involved in tissue proliferation, remodeling, and breakdown, responding to hormonal changes, particularly estrogen and progesterone.",
+      "synonyms": [
+        "endometrial stromal cell",
+        "stromal cell of uterus",
+        "endometrial stromal fibroblast"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000499",
+          "label": "stromal cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000499",
+          "label": "stromal cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:2000002",
+          "label": "decidual cell"
+        },
+        {
+          "id": "GO:0046697",
+          "label": "decidualization"
+        },
+        {
+          "id": "UBERON:0002337",
+          "label": "endometrial stroma"
+        }
+      ]
+    },
+    "CL:0000523": {
+      "id": "CL:0000523",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000523",
+      "label": "mononuclear cytotrophoblast cell",
+      "definition": "A cell from the inner layer of the trophoblast of the early mammalian embryo that gives rise to the outer surface and villi of the chorion. Mononuclear crytoblasts fuse to give rise to a multinuclear cytotrophoblast.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000351",
+          "label": "trophoblast cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000349",
+          "label": "extraembryonic cell"
+        },
+        {
+          "id": "CL:0000351",
+          "label": "trophoblast cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000525": {
+      "id": "CL:0000525",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000525",
+      "label": "syncytiotrophoblast cell",
+      "definition": "A cell from the outer syncytial layer of the trophoblast of an early mammalian embryo, directly associated with the maternal blood supply. It secretes hCG in order to maintain progesterone secretion and sustain a pregnancy.",
+      "synonyms": [
+        "plasmidotrophoblast cell",
+        "syntrophoblast cell",
+        "syncytial trophoblast cell",
+        "syncytiotrophoblastic cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000351",
+          "label": "trophoblast cell"
+        },
+        {
+          "id": "CL:4052002",
+          "label": "syncytial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000228",
+          "label": "multinucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000349",
+          "label": "extraembryonic cell"
+        },
+        {
+          "id": "CL:0000351",
+          "label": "trophoblast cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "CL:4052002",
+          "label": "syncytial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0000371",
+          "label": "syncytiotrophoblast"
         }
       ]
     },

@@ -1,10 +1,10 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-09 23:32
+สร้างเมื่อ: 2026-10-09 23:34
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 72 เส้น
+- ตรงกัน: 74 เส้น
 - คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 4 เส้น
 - คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 4 เส้น
 - CL มี แต่ไม่ได้คัดไว้: 37 เส้น
@@ -67,12 +67,12 @@
 
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
-- ตรงกัน: 7 เส้น
-- คัดเองมี แต่ CL ไม่มี: 33 เส้น
+- ตรงกัน: 12 เส้น
+- คัดเองมี แต่ CL ไม่มี: 35 เส้น
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 2 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 38 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 42 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 280 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 297 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -91,12 +91,14 @@
 - CL:0000312 keratinocyte → CL:0002187 basal cell of epidermis
 - CL:0000451 dendritic cell → CL:0000049 common myeloid progenitor
 - CL:0000510 paneth cell → CL:0002250 intestinal crypt stem cell
+- CL:0000525 syncytiotrophoblast cell → CL:0000523 mononuclear cytotrophoblast cell
 - CL:0000556 megakaryocyte → CL:0000050 megakaryocyte-erythroid progenitor cell
 - CL:0000557 granulocyte monocyte progenitor cell → CL:0000049 common myeloid progenitor
 - CL:0000558 reticulocyte → CL:0000765 erythroblast
 - CL:0000576 monocyte → CL:0000557 granulocyte monocyte progenitor cell
 - CL:0000584 enterocyte → CL:0002250 intestinal crypt stem cell
 - CL:0000623 natural killer cell → CL:0000051 common lymphoid progenitor
+- CL:0000656 primary spermatocyte → CL:0000020 spermatogonium
 - CL:0000682 M cell of gut → CL:0002250 intestinal crypt stem cell
 - CL:0000765 erythroblast → CL:0000050 megakaryocyte-erythroid progenitor cell
 - CL:0000767 basophil → CL:0000557 granulocyte monocyte progenitor cell
@@ -117,6 +119,7 @@
 
 ### develops_from ที่ CL ชี้ไปเซลล์นอกชุดข้อมูล
 
+- CL:0000024 oogonial cell ← CL:0000670 primordial germ cell
 - CL:0000037 hematopoietic stem cell ← CL:0000566 angioblastic mesenchymal cell
 - CL:0000058 chondroblast ← CL:0007009 prechondroblast
 - CL:0000065 ependymal cell ← CL:0000681 radial glial cell
@@ -131,10 +134,12 @@
 - CL:0000169 type B pancreatic cell ← CL:0002351 progenitor cell of endocrine pancreas
 - CL:0000171 pancreatic A cell ← CL:0002351 progenitor cell of endocrine pancreas
 - CL:0000173 pancreatic D cell ← CL:0002351 progenitor cell of endocrine pancreas
+- CL:0000178 Leydig cell ← CL:0009091 Leydig stem cell
 - CL:0000182 hepatocyte ← CL:0005026 hepatoblast
 - CL:0000192 smooth muscle cell ← CL:0000514 smooth muscle myoblast
 - CL:0000336 adrenal medulla chromaffin cell ← CL:0000011 migratory trunk neural crest cell
 - CL:0000453 Langerhans cell ← CL:0000763 myeloid cell
+- CL:0000501 granulosa cell ← CL:4033066 pre-granulosa cell
 - CL:0000510 paneth cell ← CL:4047017 transit amplifying cell of gut
 - CL:0000542 lymphocyte ← CL:0017500 neutrophillic cytoplasm
 - CL:0000556 megakaryocyte ← CL:0000553 megakaryocyte progenitor cell
@@ -150,13 +155,14 @@
 - CL:0000786 plasma cell ← CL:0017508 cartwheel heterochromatin
 - CL:0002063 pulmonary alveolar type 2 cell ← CL:4040003 fetal pre-type II pulmonary alveolar epithelial cell
 - CL:0002145 multiciliated columnar cell of tracheobronchial tree ← CL:0002209 intermediate epitheliocyte
+- CL:0002255 stromal cell of endometrium ← CL:2000002 decidual cell
 - CL:0002302 type A synovial cell ← CL:0000842 mononuclear leukocyte
 - CL:0007010 osteoprogenitor cell ← CL:0000222 mesodermal cell
 - CL:0007010 osteoprogenitor cell ← CL:0000333 migratory neural crest cell
 - CL:0008002 skeletal muscle fiber ← CL:0000515 skeletal muscle myoblast
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 
-## คำเตือนจาก validate (151)
+## คำเตือนจาก validate (167)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -283,6 +289,22 @@
 - CL:0000601 (cochlear outer hair cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000207 (olfactory receptor cell): ช่องว่าง: markers, confused_with; ยังไม่มีรูป
 - CL:0000209 (taste receptor cell): ช่องว่าง: markers, diseases, confused_with, tissue_subtype; ยังไม่มีรูป
+- CL:0000020 (spermatogonium): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
+- CL:0000656 (primary spermatocyte): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
+- CL:0000657 (secondary spermatocyte): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
+- CL:0000018 (spermatid): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
+- CL:0000019 (sperm): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
+- CL:0000216 (Sertoli cell): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
+- CL:0000178 (Leydig cell): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
+- CL:0000024 (oogonial cell): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
+- CL:0000654 (primary oocyte): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
+- CL:0000655 (secondary oocyte): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
+- CL:0000501 (granulosa cell): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
+- CL:0000503 (theca cell): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
+- CL:0000175 (luteal cell): ช่องว่าง: markers; ยังไม่มีรูป
+- CL:0002255 (stromal cell of endometrium): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000523 (mononuclear cytotrophoblast cell): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
+- CL:0000525 (syncytiotrophoblast cell): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
 - CL:0002062 (pulmonary alveolar type 1 cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0002063 (pulmonary alveolar type 2 cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000158 (club cell): ช่องว่าง: lifespan, diseases, tissue_subtype; ยังไม่มีรูป
