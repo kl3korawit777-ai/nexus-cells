@@ -61,8 +61,8 @@ python scripts/nexus.py build             # รวมเป็น site/data/nexu
 | `slug` | ชื่อสั้น kebab-case ใช้เป็นชื่อไฟล์รูปและ URL เช่น `neutrophil` |
 | `kind` | `"cell"` |
 | `en`, `th` | ชื่ออังกฤษ (ตรงกับ label หรือ synonym ใน CL) และชื่อไทย |
-| `systems` | รายการ id ระบบ เซลล์ที่อยู่หลายระบบใส่หลายค่า |
-| `tissue`, `tissue_subtype` | id เนื้อเยื่อหลักและชนิดย่อยจาก `tissues.json` |
+| `systems` | รายการ id ระบบ เซลล์ที่อยู่หลายระบบใส่หลายค่า **ค่าแรก (`systems[0]`) คือระบบหลัก** ใช้เป็นตำแหน่งของเซลล์ในใยภาพรวมแบบจัดกลุ่มตามระบบ (ดูหัวข้อ "ระบบหลัก") |
+| `tissue`, `tissue_subtype` | id เนื้อเยื่อหลักและชนิดย่อยจาก `tissues.json` ถ้าไม่ระบุ `tissue` validate จะเตือน และเซลล์จะไปอยู่กลุ่ม `other` ในใยภาพรวมแบบตามเนื้อเยื่อ |
 | `location` | ตำแหน่งที่พบ |
 | `morphology` | ลักษณะรูปร่างและโครงสร้าง |
 | `function` | หน้าที่ |
@@ -86,11 +86,25 @@ python scripts/nexus.py build             # รวมเป็น site/data/nexu
 - `purl` ลิงก์ถาวรของเทอมใน CL
 - `cl` ประกอบด้วย `label`, `definition`, `synonyms`, `obsolete` (ได้ค่ามาจาก `fetch`)
 
+## ระบบหลัก (primary system)
+
+เซลล์ที่อยู่หลายระบบต้องเรียง `systems` ให้ **ระบบหลักอยู่ลำดับแรก** ระบบหลักคือระบบที่เซลล์ทำหน้าที่หรืออยู่เป็นหลัก เช่น
+
+| เซลล์ | systems | เหตุผล |
+|---|---|---|
+| Kupffer cell | `["digestive", "blood-immune"]` | แมโครฟาจประจำตับ |
+| alveolar macrophage | `["respiratory", "blood-immune"]` | แมโครฟาจประจำถุงลม |
+| microglial cell | `["nervous", "blood-immune"]` | เกลียประจำระบบประสาทส่วนกลาง |
+| osteoclast | `["skeletal", "blood-immune"]` | ทำงานที่ผิวกระดูก |
+| enteroendocrine cell | `["digestive", "endocrine"]` | อยู่ในเยื่อบุทางเดินอาหาร |
+
+ระบบหลักมีผลเฉพาะตำแหน่งในใยภาพรวมแบบตามระบบ ส่วนใยรายระบบยังแสดงเซลล์ทุกตัวที่มีระบบนั้นอยู่ใน `systems`
+
 ## ระบบและเนื้อเยื่อ
 
 `systems.json`: แต่ละระบบมี `id`, `th`, `en`, `color` (`#RRGGBB`), `summary`, `organs`
 
-`tissues.json`: แต่ละประเภทมี `id`, `th`, `en`, `color`, `cl_class`, `features`, `location`, `function`, `germ_layers`, `image`, `subtypes`
+`tissues.json`: แต่ละประเภทมี `id`, `th`, `en`, `color`, `cl_class`, `features`, `location`, `function`, `exam` (จุดออกสอบของเนื้อเยื่อ แสดงเป็นกล่องเด่นในหน้าเนื้อเยื่อ ว่างได้), `germ_layers`, `image`, `subtypes`
 หมวด `other` ไม่มี `cl_class` สำหรับเซลล์ที่ไม่เข้าสี่ประเภท (เซลล์สืบพันธุ์ สเต็มเซลล์)
 
 เลือดจัดเป็นเนื้อเยื่อเกี่ยวพัน เซลล์สายเลือดจึงใช้ `tissue: "connective"` กับ subtype `blood`, `hematopoietic` หรือ `lymphoid` ตามตำแหน่ง

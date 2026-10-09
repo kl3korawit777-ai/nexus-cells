@@ -232,7 +232,7 @@
   {
     "id": "CL:0000092", "slug": "osteoclast", "kind": "cell",
     "en": "osteoclast", "th": "ออสทีโอคลาสต์",
-    "systems": ["blood-immune", "skeletal"], "tissue": "connective", "tissue_subtype": "bone",
+    "systems": ["skeletal", "blood-immune"], "tissue": "connective", "tissue_subtype": "bone",
     "location": "ผิวกระดูก ในแอ่งที่เรียกว่า Howship's lacuna",
     "morphology": "เซลล์ขนาดใหญ่ มีหลายนิวเคลียส ด้านที่ติดกับกระดูกมีขอบหยัก (ruffled border)",
     "function": "สลายเนื้อกระดูกด้วยกรดและเอนไซม์ (bone resorption)",
@@ -245,7 +245,7 @@
   {
     "id": "CL:0000091", "slug": "kupffer-cell", "kind": "cell",
     "en": "Kupffer cell", "th": "คัฟเฟอร์เซลล์",
-    "systems": ["blood-immune", "digestive"], "tissue": "connective", "tissue_subtype": "loose",
+    "systems": ["digestive", "blood-immune"], "tissue": "connective", "tissue_subtype": "loose",
     "location": "ผนังไซนูซอยด์ของตับ",
     "morphology": "", "function": "แมโครฟาจประจำตับ กินเม็ดเลือดแดงที่เสื่อม แบคทีเรีย และสิ่งแปลกปลอมจากเลือดที่ไหลผ่านตับ",
     "secretes": [], "markers": ["CD68"], "lifespan": "",
@@ -256,7 +256,7 @@
   {
     "id": "CL:0000583", "slug": "alveolar-macrophage", "kind": "cell",
     "en": "alveolar macrophage", "th": "แมโครฟาจในถุงลม",
-    "systems": ["blood-immune", "respiratory"], "tissue": "connective", "tissue_subtype": "loose",
+    "systems": ["respiratory", "blood-immune"], "tissue": "connective", "tissue_subtype": "loose",
     "location": "ในถุงลมปอดและผิวด้านในของถุงลม",
     "morphology": "", "function": "กินฝุ่น แบคทีเรีย และสิ่งแปลกปลอมที่เข้าสู่ถุงลม",
     "secretes": [], "markers": ["CD68"], "lifespan": "",
@@ -267,7 +267,7 @@
   {
     "id": "CL:0000129", "slug": "microglial-cell", "kind": "cell",
     "en": "microglial cell", "th": "ไมโครเกลีย",
-    "systems": ["blood-immune", "nervous"], "tissue": "nervous", "tissue_subtype": "glia",
+    "systems": ["nervous", "blood-immune"], "tissue": "nervous", "tissue_subtype": "glia",
     "location": "สมองและไขสันหลัง",
     "morphology": "เซลล์ขนาดเล็ก นิวเคลียสยาวหรือรูปไข่ มีแขนงสั้น ๆ",
     "function": "เซลล์ภูมิคุ้มกันประจำระบบประสาทส่วนกลาง กินเซลล์ที่ตายและสิ่งแปลกปลอม",

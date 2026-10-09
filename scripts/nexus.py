@@ -153,7 +153,9 @@ def run_validate(quiet=False):
             if s not in system_ids:
                 err("%s: ไม่มีระบบ \"%s\" ใน systems.json" % (lab, s))
         tis = c.get("tissue")
-        if tis not in tissue_subtypes:
+        if is_empty(tis):
+            pass  # ไม่มี tissue: เป็นคำเตือนด้านล่าง และไปอยู่กลุ่ม other ในใยภาพรวม
+        elif tis not in tissue_subtypes:
             err("%s: ไม่มีเนื้อเยื่อ \"%s\" ใน tissues.json" % (lab, tis))
         else:
             sub = c.get("tissue_subtype")
@@ -211,7 +213,9 @@ def run_validate(quiet=False):
         fields = CELL_FIELDS if c.get("kind") == "cell" else CLASS_FIELDS
         missing = [k for k in fields if is_empty(c.get(k))]
         parts = []
-        if c.get("tissue_subtype") is None:
+        if is_empty(c.get("tissue")):
+            missing.append("tissue")
+        elif c.get("tissue_subtype") is None:
             missing.append("tissue_subtype")
         if missing:
             parts.append("ช่องว่าง: " + ", ".join(missing))
