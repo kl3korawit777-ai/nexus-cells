@@ -1,6 +1,6 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-09 23:37
+สร้างเมื่อ: 2026-10-09 23:38
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
@@ -176,7 +176,7 @@
 - CL:0008002 skeletal muscle fiber ← CL:0000515 skeletal muscle myoblast
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 
-## คำเตือนจาก validate (183)
+## คำเตือนจาก validate (184)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -276,6 +276,7 @@
 - CL:0000437 (gonadotroph): ช่องว่าง: lifespan, diseases, confused_with; ยังไม่มีรูป
 - CL:0000652 (pinealocyte): ช่องว่าง: markers, lifespan, diseases, confused_with; ยังไม่มีรูป
 - CL:0000645 (pituicyte): ช่องว่าง: markers, lifespan, diseases, confused_with; ยังไม่มีรูป
+- CL:0002199 (oxyphil cell of parathyroid gland): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
 - CL:0002187 (basal cell of epidermis): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000312 (keratinocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0002153 (corneocyte): ช่องว่าง: lifespan; ยังไม่มีรูป

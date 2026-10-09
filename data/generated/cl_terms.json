@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T16:37:37+00:00",
+  "fetched_at": "2026-10-09T16:38:11+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -10409,6 +10409,77 @@
           "label": "neurohypophysis"
         }
       ]
+    },
+    "CL:0002199": {
+      "id": "CL:0002199",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002199",
+      "label": "oxyphil cell of parathyroid gland",
+      "definition": "An oncocyte located in the parathyroid gland.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002198",
+          "label": "oncocyte"
+        },
+        {
+          "id": "CL:0002260",
+          "label": "epithelial cell of parathyroid gland"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002198",
+          "label": "oncocyte"
+        },
+        {
+          "id": "CL:0002260",
+          "label": "epithelial cell of parathyroid gland"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
     },
     "CL:0002187": {
       "id": "CL:0002187",

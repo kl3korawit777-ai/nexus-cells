@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "e45bf84f7d93",
-  "generated_at": "2026-10-09T16:37:52+00:00",
+  "data_version": "4cacf3dc489d",
+  "generated_at": "2026-10-09T16:38:11+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "edge_direction": "develops_from/is_a: from=ลูก to=แม่; interacts_with: from=ผู้กระทำ to=ผู้ถูกกระทำ"
  },
@@ -4485,6 +4485,41 @@
    "cl": {
     "label": "pituicyte",
     "definition": "A glial cell of astrocytic lineage with long processes running parallel to adjacent axons in the proximal infundibulum of the neurohypophysis. These processes form a three-dimensional network among the axons of the hypothalamic neurosecretory cells and are connected by gap junctions which provide for their metabolic coupling. This cell type constitutes most of the nonexcitable tissue in the neurohypophsis; function may include possibly acting as an intermediate in the modulation of oxytocin and vasopressin release. This cell type is highly variable in size and shape and commonly contain lipid droplets and deposits of lipochrome pigment.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002199",
+   "slug": "oxyphil-cell-parathyroid",
+   "kind": "cell",
+   "en": "oxyphil cell of parathyroid gland",
+   "th": "เซลล์ออกซิฟิลของต่อมพาราไทรอยด์ (oxyphil cell)",
+   "systems": [
+    "endocrine"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "glandular",
+   "location": "ต่อมพาราไทรอยด์ แทรกอยู่ระหว่าง chief cell พบมากขึ้นตามอายุ",
+   "morphology": "เซลล์ขนาดใหญ่กว่า chief cell ไซโทพลาซึมติดสีอีโอซิน (acidophilic) เข้มเพราะมีไมโทคอนเดรียแน่นมาก",
+   "function": "ยังไม่ทราบหน้าที่ที่ชัดเจน โดยปกติไม่ได้เป็นเซลล์หลักที่หลั่ง PTH",
+   "secretes": [],
+   "markers": [],
+   "lifespan": "",
+   "exam": "ต่างจาก chief cell ที่หลั่ง PTH เซลล์ออกซิฟิลมีจำนวนเพิ่มขึ้นหลังวัยเจริญพันธุ์ ไซโทพลาซึมสีชมพูเข้มเพราะมีไมโทคอนเดรียมาก",
+   "diseases": [
+    "oxyphil adenoma (เนื้องอกพาราไทรอยด์ที่พบได้น้อย)"
+   ],
+   "confused_with": [
+    "CL:0000446"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002199",
+   "cl": {
+    "label": "oxyphil cell of parathyroid gland",
+    "definition": "An oncocyte located in the parathyroid gland.",
     "synonyms": [],
     "obsolete": false
    }
