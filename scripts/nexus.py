@@ -14,6 +14,8 @@ import glob
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
 import time
 import urllib.error
@@ -491,7 +493,25 @@ def cmd_build(args):
     print("เขียน site/data/nexus.json: เซลล์/หมวด %d, เส้นใย %d" % (len(cells_out), len(edges_out)))
 
     write_build_report(ds, cl, edges_out, warnings)
+    run_layout()
     return 0
+
+
+def run_layout():
+    """คำนวณตำแหน่งใยภาพรวมล่วงหน้าด้วย Node (scripts/layout.mjs) ถ้าไม่มี Node แจ้งเตือนแต่ไม่หยุด"""
+    node = shutil.which("node")
+    if not node:
+        print("! ไม่พบ Node.js จึงข้ามการคำนวณตำแหน่งใยภาพรวม (เว็บจะคำนวณในเบราว์เซอร์แทน และช้ากว่า) ติดตั้ง Node.js แล้วรัน build ใหม่")
+        return
+    if not os.path.isdir(os.path.join(ROOT, "node_modules", "cytoscape-fcose")):
+        print("! ยังไม่ได้ติดตั้งแพ็กเกจของ Node จึงข้ามการคำนวณตำแหน่ง รัน `npm install` ในโฟลเดอร์โปรเจกต์ก่อน แล้วรัน build ใหม่")
+        return
+    r = subprocess.run([node, os.path.join(ROOT, "scripts", "layout.mjs")], cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
+    if r.returncode != 0:
+        print("! คำนวณตำแหน่งใยภาพรวมไม่สำเร็จ (เว็บจะคำนวณในเบราว์เซอร์แทน):")
+        print((r.stderr or r.stdout).strip()[-600:])
+        return
+    print(r.stdout.strip())
 
 
 def write_build_report(ds, cl, edges_out, warnings):
