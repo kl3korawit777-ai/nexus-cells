@@ -1,10 +1,10 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-09 23:26
+สร้างเมื่อ: 2026-10-09 23:27
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 62 เส้น
+- ตรงกัน: 64 เส้น
 - คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 4 เส้น
 - คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 4 เส้น
 - CL มี แต่ไม่ได้คัดไว้: 37 เส้น
@@ -68,11 +68,11 @@
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
 - ตรงกัน: 6 เส้น
-- คัดเองมี แต่ CL ไม่มี: 29 เส้น
+- คัดเองมี แต่ CL ไม่มี: 32 เส้น
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 2 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 34 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 36 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 243 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 253 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -84,6 +84,7 @@
 - CL:0000084 T cell → CL:0000051 common lymphoid progenitor
 - CL:0000097 mast cell → CL:0000557 granulocyte monocyte progenitor cell
 - CL:0000137 osteocyte → CL:0000062 osteoblast
+- CL:0000158 club cell → CL:0002329 basal epithelial cell of tracheobronchial tree
 - CL:0000160 goblet cell → CL:0002250 intestinal crypt stem cell
 - CL:0000164 enteroendocrine cell → CL:0002250 intestinal crypt stem cell
 - CL:0000236 B cell → CL:0000051 common lymphoid progenitor
@@ -103,6 +104,8 @@
 - CL:0000786 plasma cell → CL:0000236 B cell
 - CL:0000787 memory B cell → CL:0000236 B cell
 - CL:0000813 memory T cell → CL:0000084 T cell
+- CL:0002062 pulmonary alveolar type 1 cell → CL:0002063 pulmonary alveolar type 2 cell
+- CL:0002145 multiciliated columnar cell of tracheobronchial tree → CL:0002329 basal epithelial cell of tracheobronchial tree
 - CL:0007010 osteoprogenitor cell → CL:0000134 mesenchymal stem cell
 - CL:0008002 skeletal muscle fiber → CL:0000056 myoblast
 
@@ -142,13 +145,15 @@
 - CL:0000765 erythroblast ← CL:0000547 proerythroblast
 - CL:0000786 plasma cell ← CL:0000980 plasmablast
 - CL:0000786 plasma cell ← CL:0017508 cartwheel heterochromatin
+- CL:0002063 pulmonary alveolar type 2 cell ← CL:4040003 fetal pre-type II pulmonary alveolar epithelial cell
+- CL:0002145 multiciliated columnar cell of tracheobronchial tree ← CL:0002209 intermediate epitheliocyte
 - CL:0002302 type A synovial cell ← CL:0000842 mononuclear leukocyte
 - CL:0007010 osteoprogenitor cell ← CL:0000222 mesodermal cell
 - CL:0007010 osteoprogenitor cell ← CL:0000333 migratory neural crest cell
 - CL:0008002 skeletal muscle fiber ← CL:0000515 skeletal muscle myoblast
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 
-## คำเตือนจาก validate (123)
+## คำเตือนจาก validate (129)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -265,6 +270,12 @@
 - CL:0000601 (cochlear outer hair cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000207 (olfactory receptor cell): ช่องว่าง: markers, confused_with; ยังไม่มีรูป
 - CL:0000209 (taste receptor cell): ช่องว่าง: markers, diseases, confused_with, tissue_subtype; ยังไม่มีรูป
+- CL:0002062 (pulmonary alveolar type 1 cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002063 (pulmonary alveolar type 2 cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000158 (club cell): ช่องว่าง: lifespan, diseases, tissue_subtype; ยังไม่มีรูป
+- CL:0002145 (multiciliated columnar cell of tracheobronchial tree): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002329 (basal epithelial cell of tracheobronchial tree): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:1000223 (pulmonary neuroendocrine cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0007010 (osteoprogenitor cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0000062 (osteoblast): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000137 (osteocyte): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป

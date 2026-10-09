@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-09T16:26:35+00:00",
+  "fetched_at": "2026-10-09T16:27:49+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -11769,6 +11769,702 @@
         {
           "id": "GO:0050912",
           "label": "detection of chemical stimulus involved in sensory perception of taste"
+        }
+      ]
+    },
+    "CL:0002062": {
+      "id": "CL:0002062",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002062",
+      "label": "pulmonary alveolar type 1 cell",
+      "definition": "A squamous pulmonary alveolar epithelial cell that is flattened and branched. A pulmonary alveolar type 1 cell covers more than 98% of the alveolar surface. This large cell has thin (50-100 nm) cytoplasmic extensions to form the air-blood barrier essential for normal gas exchange.",
+      "synonyms": [
+        "lung type 1 cells",
+        "membranous pneumocytes",
+        "pulmonary alveolar type I cell",
+        "small alveolar cells",
+        "squamous alveolar cell",
+        "squamous alveolar lining cell",
+        "type 1 alveolar epithelial cells",
+        "type I alveolar cells",
+        "type I alveolar epithelial cells",
+        "type I pneumocyte",
+        "AT1",
+        "ATI",
+        "type 1 pneumocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000076",
+          "label": "squamous epithelial cell"
+        },
+        {
+          "id": "CL:0000322",
+          "label": "pulmonary alveolar epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000076",
+          "label": "squamous epithelial cell"
+        },
+        {
+          "id": "CL:0000082",
+          "label": "epithelial cell of lung"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000322",
+          "label": "pulmonary alveolar epithelial cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002368",
+          "label": "respiratory tract epithelial cell"
+        },
+        {
+          "id": "CL:0002632",
+          "label": "epithelial cell of lower respiratory tract"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CLM:1000008",
+          "label": "NS forest marker set of pulmonary alveolar type 1 cell (Human lung)."
+        },
+        {
+          "id": "GO:0007585",
+          "label": "respiratory gaseous exchange by respiratory system"
+        }
+      ]
+    },
+    "CL:0002063": {
+      "id": "CL:0002063",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002063",
+      "label": "pulmonary alveolar type 2 cell",
+      "definition": "A pulmonary alveolar epithelial cell that modulates the fluid surrounding the alveolar epithelium by secreting and recycling surfactants via specialized organelles called alveolar lamellar bodies. This cell type also contributes to tissue repair and can differentiate after injury into a pulmonary alveolar type 1 cell. This cuboidal cell is thicker than squamous alveolar cells, has a rounded apical surface that projects above the level of the surrounding epithelium, and its free surface is covered by short microvilli.",
+      "synonyms": [
+        "TII",
+        "cuboidal type II cell",
+        "granular pneumocyte",
+        "great alveolar cell",
+        "lung type 2 cell",
+        "lung type II cell",
+        "type 2 alveolar epithelial cell",
+        "type 2 alveolocyte",
+        "type 2 pneumocyte",
+        "type II alveolar cell",
+        "type II alveolar epithelial cell",
+        "type II alveolocyte",
+        "AT2",
+        "ATII",
+        "type II pneumocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000322",
+          "label": "pulmonary alveolar epithelial cell"
+        },
+        {
+          "id": "CL:0020029",
+          "label": "cuboidal epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000082",
+          "label": "epithelial cell of lung"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000322",
+          "label": "pulmonary alveolar epithelial cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002368",
+          "label": "respiratory tract epithelial cell"
+        },
+        {
+          "id": "CL:0002632",
+          "label": "epithelial cell of lower respiratory tract"
+        },
+        {
+          "id": "CL:0020029",
+          "label": "cuboidal epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:4040003",
+          "label": "fetal pre-type II pulmonary alveolar epithelial cell"
+        },
+        {
+          "id": "CLM:1000009",
+          "label": "NS forest marker set of pulmonary alveolar type 2 cell (Human lung)."
+        },
+        {
+          "id": "GO:0043129",
+          "label": "surfactant homeostasis"
+        },
+        {
+          "id": "GO:0097208",
+          "label": "alveolar lamellar body"
+        }
+      ]
+    },
+    "CL:0000158": {
+      "id": "CL:0000158",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000158",
+      "label": "club cell",
+      "definition": "A non-mucous, epithelial secretory cell that is part of the tracheobronchial tree. A club cell has short microvilli but no cilia. A club cell is able to multiply and differentiate into ciliated cells to regenerate the bronchiolar epithelium and it also protects the tracheobronchial epithelium.",
+      "synonyms": [
+        "Clara cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000157",
+          "label": "surfactant secreting cell"
+        },
+        {
+          "id": "CL:0002202",
+          "label": "epithelial cell of tracheobronchial tree"
+        },
+        {
+          "id": "CL:0008055",
+          "label": "respiratory tract secretory epithelial cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000157",
+          "label": "surfactant secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002202",
+          "label": "epithelial cell of tracheobronchial tree"
+        },
+        {
+          "id": "CL:0002368",
+          "label": "respiratory tract epithelial cell"
+        },
+        {
+          "id": "CL:0002632",
+          "label": "epithelial cell of lower respiratory tract"
+        },
+        {
+          "id": "CL:0008055",
+          "label": "respiratory tract secretory epithelial cell"
+        },
+        {
+          "id": "CL:0011026",
+          "label": "progenitor cell"
+        },
+        {
+          "id": "CL:0011115",
+          "label": "precursor cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0005902",
+          "label": "microvillus"
+        }
+      ]
+    },
+    "CL:0002145": {
+      "id": "CL:0002145",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002145",
+      "label": "multiciliated columnar cell of tracheobronchial tree",
+      "definition": "A multi-ciliated epithelial cell located in the trachea and bronchi, characterized by a columnar shape and motile cilia on its apical surface. These cilia facilitate mucociliary clearance by moving mucus and trapped particles toward the pharynx.",
+      "synonyms": [
+        "ciliated columnar cell of tracheobronchial tree"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002202",
+          "label": "epithelial cell of tracheobronchial tree"
+        },
+        {
+          "id": "CL:4030034",
+          "label": "respiratory tract multiciliated cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000064",
+          "label": "ciliated cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000067",
+          "label": "ciliated epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002202",
+          "label": "epithelial cell of tracheobronchial tree"
+        },
+        {
+          "id": "CL:0002368",
+          "label": "respiratory tract epithelial cell"
+        },
+        {
+          "id": "CL:0002632",
+          "label": "epithelial cell of lower respiratory tract"
+        },
+        {
+          "id": "CL:0005012",
+          "label": "multiciliated epithelial cell"
+        },
+        {
+          "id": "CL:4030034",
+          "label": "respiratory tract multiciliated cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0002209",
+          "label": "intermediate epitheliocyte"
+        },
+        {
+          "id": "CLM:1000041",
+          "label": "NS forest marker set of multiciliated columnar cell of tracheobronchial tree (Human lung)."
+        }
+      ]
+    },
+    "CL:0002329": {
+      "id": "CL:0002329",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002329",
+      "label": "basal epithelial cell of tracheobronchial tree",
+      "definition": "An epithelial cell type that lacks the columnar shape typical for other respiratory epithelial cells. This cell type is able to differentiate into other respiratory epithelial cells in response to injury.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002202",
+          "label": "epithelial cell of tracheobronchial tree"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002202",
+          "label": "epithelial cell of tracheobronchial tree"
+        },
+        {
+          "id": "CL:0002368",
+          "label": "respiratory tract epithelial cell"
+        },
+        {
+          "id": "CL:0002632",
+          "label": "epithelial cell of lower respiratory tract"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:1000223": {
+      "id": "CL:1000223",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_1000223",
+      "label": "pulmonary neuroendocrine cell",
+      "definition": "A neuroendocrine cell that is part of respiratory epithelium of the lung and is involved in the sensory detection of environmental stimuli, including hypoxia, nicotine and air pressure. Ultrastructurally, this cell type is characterized by the presence of cytoplasmic dense core granules, which are considered the storage sites of amine and peptide hormones. Pulmonary neuroendocrine cells are innervated and appear as solitary cells or as clustered masses, localized at airway bifurcation sites, called neuroepithelial bodies that can release serotonin in response to hypoxia and interact with sensory nerve terminals. Pulmonary neuroendocrine cells also function as reserve stem cells that repair the surrounding epithelium after injury.",
+      "synonyms": [
+        "PNEC",
+        "lung neuroendocrine cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000006",
+          "label": "neuronal receptor cell"
+        },
+        {
+          "id": "CL:0000098",
+          "label": "sensory epithelial cell"
+        },
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0000206",
+          "label": "chemoreceptor cell"
+        },
+        {
+          "id": "CL:0000458",
+          "label": "serotonin secreting cell"
+        },
+        {
+          "id": "CL:1000272",
+          "label": "lung secretory cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000006",
+          "label": "neuronal receptor cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000098",
+          "label": "sensory epithelial cell"
+        },
+        {
+          "id": "CL:0000101",
+          "label": "sensory neuron"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0000197",
+          "label": "sensory receptor cell"
+        },
+        {
+          "id": "CL:0000206",
+          "label": "chemoreceptor cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000457",
+          "label": "biogenic amine secreting cell"
+        },
+        {
+          "id": "CL:0000458",
+          "label": "serotonin secreting cell"
+        },
+        {
+          "id": "CL:0000526",
+          "label": "afferent neuron"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:1000272",
+          "label": "lung secretory cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CLM:1000043",
+          "label": "NS forest marker set of pulmonary neuroendocrine cell (Human lung)."
+        },
+        {
+          "id": "GO:0031045",
+          "label": "dense core granule"
+        },
+        {
+          "id": "GO:0070483",
+          "label": "detection of hypoxia"
         }
       ]
     },

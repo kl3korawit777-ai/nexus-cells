@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "29abe8771ead",
-  "generated_at": "2026-10-09T16:26:36+00:00",
+  "data_version": "bd42d9d47264",
+  "generated_at": "2026-10-09T16:27:49+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "edge_direction": "develops_from/is_a: from=ลูก to=แม่; interacts_with: from=ผู้กระทำ to=ผู้ถูกกระทำ"
  },
@@ -2732,11 +2732,12 @@
    "en": "goblet cell",
    "th": "กอเบลตเซลล์ (เซลล์รูปถ้วย)",
    "systems": [
-    "digestive"
+    "digestive",
+    "respiratory"
    ],
    "tissue": "epithelial",
    "tissue_subtype": "glandular",
-   "location": "แทรกอยู่ในเยื่อบุผิวลำไส้ จำนวนเพิ่มขึ้นจากลำไส้เล็กไปยังลำไส้ใหญ่",
+   "location": "แทรกอยู่ในเยื่อบุผิวลำไส้ จำนวนเพิ่มขึ้นจากลำไส้เล็กไปยังลำไส้ใหญ่ และในเยื่อบุทางเดินหายใจ (หลอดลมใหญ่และหลอดลม)",
    "morphology": "รูปแก้วไวน์ ส่วนปลายอัดแน่นด้วยแกรนูลเมือก ส่วนฐานเรียวมีนิวเคลียสอยู่ที่ฐาน ย้อมติดสี PAS",
    "function": "หลั่งเมือกหล่อลื่นและปกป้องเยื่อบุลำไส้",
    "secretes": [
@@ -5057,6 +5058,282 @@
    }
   },
   {
+   "id": "CL:0002062",
+   "slug": "type-1-pneumocyte",
+   "kind": "cell",
+   "en": "pulmonary alveolar type 1 cell",
+   "th": "เซลล์ถุงลมชนิดที่ 1 (type I pneumocyte)",
+   "systems": [
+    "respiratory"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-squamous",
+   "location": "ผนังถุงลมปอด (alveolus) คลุมพื้นที่ผิวถุงลมประมาณร้อยละ 95",
+   "morphology": "เซลล์แบนบางมาก ไซโทพลาซึมเป็นแผ่นบาง ส่วนที่มีนิวเคลียสนูนเล็กน้อย",
+   "function": "เป็นผิวแลกเปลี่ยนแก๊ส (O2 และ CO2) ระหว่างอากาศในถุงลมกับเลือดในหลอดเลือดฝอย",
+   "secretes": [],
+   "markers": [
+    "AQP5",
+    "podoplanin (T1α)"
+   ],
+   "lifespan": "",
+   "exam": "ผนังกั้นอากาศ–เลือด (blood–air barrier) ประกอบด้วยเซลล์ชนิด I, basal lamina ที่เชื่อมกัน และเซลล์บุผนังหลอดเลือดฝอย ทำให้แพร่ได้เร็ว เซลล์ชนิด I แบ่งตัวไม่ได้ เมื่อเสียหายต้องถูกแทนที่ด้วยเซลล์ชนิด II",
+   "diseases": [
+    "ภาวะปอดบาดเจ็บเฉียบพลัน (acute lung injury / ARDS)"
+   ],
+   "confused_with": [
+    "CL:0002063"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002062",
+   "cl": {
+    "label": "pulmonary alveolar type 1 cell",
+    "definition": "A squamous pulmonary alveolar epithelial cell that is flattened and branched. A pulmonary alveolar type 1 cell covers more than 98% of the alveolar surface. This large cell has thin (50-100 nm) cytoplasmic extensions to form the air-blood barrier essential for normal gas exchange.",
+    "synonyms": [
+     "lung type 1 cells",
+     "membranous pneumocytes",
+     "pulmonary alveolar type I cell",
+     "small alveolar cells",
+     "squamous alveolar cell",
+     "squamous alveolar lining cell",
+     "type 1 alveolar epithelial cells",
+     "type I alveolar cells",
+     "type I alveolar epithelial cells",
+     "type I pneumocyte",
+     "AT1",
+     "ATI",
+     "type 1 pneumocyte"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002063",
+   "slug": "type-2-pneumocyte",
+   "kind": "cell",
+   "en": "pulmonary alveolar type 2 cell",
+   "th": "เซลล์ถุงลมชนิดที่ 2 (type II pneumocyte)",
+   "systems": [
+    "respiratory"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-cuboidal",
+   "location": "ผนังถุงลมปอด มักพบตามมุมระหว่างถุงลม (ประมาณร้อยละ 5 ของพื้นที่ผิว)",
+   "morphology": "เซลล์รูปลูกบาศก์ นิวเคลียสกลม ไซโทพลาซึมมีลักษณะเป็นฟองเพราะมี lamellar body",
+   "function": "สร้างและหลั่งสารลดแรงตึงผิว (pulmonary surfactant) และแบ่งตัวเป็นเซลล์ชนิด I เมื่อมีการซ่อมแซม",
+   "secretes": [
+    "surfactant (DPPC, SP-A, SP-B, SP-C, SP-D)"
+   ],
+   "markers": [
+    "surfactant protein C (SP-C)",
+    "surfactant protein A (SP-A)"
+   ],
+   "lifespan": "",
+   "exam": "surfactant ลดแรงตึงผิวในถุงลม ป้องกันถุงลมแฟบ ทารกคลอดก่อนกำหนดสร้างได้ไม่พอจึงเกิด respiratory distress syndrome (RDS) เซลล์ชนิด II เป็นเซลล์ตั้งต้นของเซลล์ชนิด I",
+   "diseases": [
+    "respiratory distress syndrome ในทารกแรกเกิด"
+   ],
+   "confused_with": [
+    "CL:0002062"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002063",
+   "cl": {
+    "label": "pulmonary alveolar type 2 cell",
+    "definition": "A pulmonary alveolar epithelial cell that modulates the fluid surrounding the alveolar epithelium by secreting and recycling surfactants via specialized organelles called alveolar lamellar bodies. This cell type also contributes to tissue repair and can differentiate after injury into a pulmonary alveolar type 1 cell. This cuboidal cell is thicker than squamous alveolar cells, has a rounded apical surface that projects above the level of the surrounding epithelium, and its free surface is covered by short microvilli.",
+    "synonyms": [
+     "TII",
+     "cuboidal type II cell",
+     "granular pneumocyte",
+     "great alveolar cell",
+     "lung type 2 cell",
+     "lung type II cell",
+     "type 2 alveolar epithelial cell",
+     "type 2 alveolocyte",
+     "type 2 pneumocyte",
+     "type II alveolar cell",
+     "type II alveolar epithelial cell",
+     "type II alveolocyte",
+     "AT2",
+     "ATII",
+     "type II pneumocyte"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000158",
+   "slug": "club-cell",
+   "kind": "cell",
+   "en": "club cell",
+   "th": "คลับเซลล์ (club cell, Clara cell)",
+   "systems": [
+    "respiratory"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": null,
+   "location": "เยื่อบุหลอดลมฝอย (bronchiole) โดยเฉพาะ terminal bronchiole",
+   "morphology": "เซลล์ไม่มีซีเลีย ส่วนปลายนูนเป็นรูปโดม ไซโทพลาซึมมีร่างแหเอนโดพลาซึมชนิดเรียบมาก",
+   "function": "หลั่งสารที่ป้องกันและหล่อลื่นทางเดินหายใจ กำจัดสารพิษด้วยเอนไซม์ cytochrome P450 และเป็นเซลล์ตั้งต้นซ่อมแซมเยื่อบุหลอดลมฝอย",
+   "secretes": [
+    "CC16 (uteroglobin)",
+    "surfactant protein"
+   ],
+   "markers": [
+    "CC16 (SCGB1A1)"
+   ],
+   "lifespan": "",
+   "exam": "ชื่อเดิม Clara cell เป็นเซลล์ไม่มีซีเลียในหลอดลมฝอย ต่างจาก ciliated cell และ goblet cell ซึ่งไม่พบ goblet cell ในหลอดลมฝอยปกติ",
+   "diseases": [],
+   "confused_with": [
+    "CL:0002145",
+    "CL:0000160"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000158",
+   "cl": {
+    "label": "club cell",
+    "definition": "A non-mucous, epithelial secretory cell that is part of the tracheobronchial tree. A club cell has short microvilli but no cilia. A club cell is able to multiply and differentiate into ciliated cells to regenerate the bronchiolar epithelium and it also protects the tracheobronchial epithelium.",
+    "synonyms": [
+     "Clara cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002145",
+   "slug": "airway-ciliated-cell",
+   "kind": "cell",
+   "en": "multiciliated columnar cell of tracheobronchial tree",
+   "th": "เซลล์มีซีเลียของทางเดินหายใจ (ciliated cell)",
+   "systems": [
+    "respiratory"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "pseudostratified",
+   "location": "เยื่อบุหลอดลมใหญ่ (trachea) และหลอดลม (bronchus)",
+   "morphology": "เซลล์ทรงสูง มีซีเลียจำนวนมากที่ผิวด้านบน",
+   "function": "กวาดเมือกที่ดักจับฝุ่นและเชื้อโรคออกจากทางเดินหายใจ (mucociliary escalator)",
+   "secretes": [],
+   "markers": [
+    "FOXJ1",
+    "acetylated α-tubulin"
+   ],
+   "lifespan": "",
+   "exam": "ซีเลียมีโครงสร้าง 9+2 microtubule ความผิดปกติของ dynein arm ทำให้เกิด primary ciliary dyskinesia (Kartagener syndrome) การสูบบุหรี่ทำลายซีเลียและเปลี่ยนเยื่อบุเป็นเซลล์ squamous (squamous metaplasia)",
+   "diseases": [
+    "primary ciliary dyskinesia (Kartagener syndrome)",
+    "หลอดลมอักเสบเรื้อรัง (chronic bronchitis)"
+   ],
+   "confused_with": [
+    "CL:0000158",
+    "CL:0000160"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002145",
+   "cl": {
+    "label": "multiciliated columnar cell of tracheobronchial tree",
+    "definition": "A multi-ciliated epithelial cell located in the trachea and bronchi, characterized by a columnar shape and motile cilia on its apical surface. These cilia facilitate mucociliary clearance by moving mucus and trapped particles toward the pharynx.",
+    "synonyms": [
+     "ciliated columnar cell of tracheobronchial tree"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002329",
+   "slug": "airway-basal-cell",
+   "kind": "cell",
+   "en": "basal epithelial cell of tracheobronchial tree",
+   "th": "เซลล์ฐาน (basal cell) ของทางเดินหายใจ",
+   "systems": [
+    "respiratory"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "pseudostratified",
+   "location": "เยื่อบุหลอดลมใหญ่และหลอดลม อยู่ชั้นล่างติดกับ basement membrane",
+   "morphology": "เซลล์เล็กรูปลูกบาศก์หรือกลม ไม่ยื่นถึงผิวด้านบน",
+   "function": "เป็นสเต็มเซลล์ของเยื่อบุทางเดินหายใจ แบ่งตัวและเปลี่ยนเป็น ciliated cell, goblet cell และ club cell และช่วยยึดเยื่อบุกับเยื่อฐาน",
+   "secretes": [],
+   "markers": [
+    "p63 (TP63)",
+    "keratin 5 (KRT5)"
+   ],
+   "lifespan": "",
+   "exam": "เยื่อบุทางเดินหายใจเป็นแบบ pseudostratified ciliated columnar epithelium ทุกเซลล์แตะ basement membrane แต่ basal cell ไม่ถึงผิวด้านบน",
+   "diseases": [
+    "squamous metaplasia ในผู้สูบบุหรี่"
+   ],
+   "confused_with": [
+    "CL:0002145"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002329",
+   "cl": {
+    "label": "basal epithelial cell of tracheobronchial tree",
+    "definition": "An epithelial cell type that lacks the columnar shape typical for other respiratory epithelial cells. This cell type is able to differentiate into other respiratory epithelial cells in response to injury.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:1000223",
+   "slug": "pulmonary-neuroendocrine-cell",
+   "kind": "cell",
+   "en": "pulmonary neuroendocrine cell",
+   "th": "เซลล์ประสาทต่อมไร้ท่อของปอด (pulmonary neuroendocrine cell)",
+   "systems": [
+    "respiratory"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "pseudostratified",
+   "location": "แทรกเดี่ยวหรือเป็นกลุ่มเล็ก (neuroepithelial body) ในเยื่อบุทางเดินหายใจ",
+   "morphology": "เซลล์เล็ก ไซโทพลาซึมมีแกรนูลแกนทึบ (dense-core granule)",
+   "function": "หลั่งอะมีนและเปปไทด์ เช่น serotonin และ bombesin ที่ควบคุมการไหลเวียนเลือดและการเติบโตของปอด และรับรู้ระดับออกซิเจนในทางเดินหายใจ",
+   "secretes": [
+    "serotonin",
+    "bombesin (gastrin-releasing peptide)",
+    "calcitonin"
+   ],
+   "markers": [
+    "chromogranin A",
+    "synaptophysin",
+    "CGRP"
+   ],
+   "lifespan": "",
+   "exam": "ชื่อเดิม Kulchitsky cell หรือเซลล์ชนิด APUD ในระบบ DNES เป็นต้นกำเนิดของมะเร็งปอดชนิด small cell",
+   "diseases": [
+    "มะเร็งปอดชนิด small cell (small cell lung carcinoma)",
+    "carcinoid tumor ของปอด"
+   ],
+   "confused_with": [
+    "CL:0000164"
+   ],
+   "image": null,
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_1000223",
+   "cl": {
+    "label": "pulmonary neuroendocrine cell",
+    "definition": "A neuroendocrine cell that is part of respiratory epithelium of the lung and is involved in the sensory detection of environmental stimuli, including hypoxia, nicotine and air pressure. Ultrastructurally, this cell type is characterized by the presence of cytoplasmic dense core granules, which are considered the storage sites of amine and peptide hormones. Pulmonary neuroendocrine cells are innervated and appear as solitary cells or as clustered masses, localized at airway bifurcation sites, called neuroepithelial bodies that can release serotonin in response to hypoxia and interact with sensory nerve terminals. Pulmonary neuroendocrine cells also function as reserve stem cells that repair the surrounding epithelium after injury.",
+    "synonyms": [
+     "PNEC",
+     "lung neuroendocrine cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
    "id": "CL:0007010",
    "slug": "osteoprogenitor-cell",
    "kind": "cell",
@@ -6498,6 +6775,41 @@
    "mode": "hormone",
    "source": "curated",
    "file": "nervous"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0002062",
+   "to": "CL:0002063",
+   "source": "curated",
+   "file": "respiratory"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0002145",
+   "to": "CL:0002329",
+   "source": "curated",
+   "file": "respiratory"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000158",
+   "to": "CL:0002329",
+   "source": "curated",
+   "file": "respiratory"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:1000223",
+   "to": "CL:0000101",
+   "source": "curated",
+   "file": "respiratory"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:1000223",
+   "to": "CL:0000165",
+   "source": "curated",
+   "file": "respiratory"
   },
   {
    "type": "develops_from",
