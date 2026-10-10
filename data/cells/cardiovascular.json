@@ -29,7 +29,7 @@
       "CL:0008002",
       "CL:0000192"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -59,7 +59,7 @@
     "confused_with": [
       "CL:0002068"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -86,7 +86,7 @@
       "CL:0000121",
       "CL:1000477"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -122,7 +122,7 @@
     "confused_with": [
       "CL:0002350"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -150,7 +150,7 @@
     "confused_with": [
       "CL:0000115"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -183,7 +183,7 @@
       "CL:0000669",
       "CL:0000192"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -212,7 +212,7 @@
     "confused_with": [
       "CL:0000359"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -243,7 +243,7 @@
       "พังผืดในหัวใจ (cardiac fibrosis)"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   }

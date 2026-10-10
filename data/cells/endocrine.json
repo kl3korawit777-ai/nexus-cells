@@ -11,7 +11,7 @@
     "tissue": "epithelial",
     "tissue_subtype": "glandular",
     "function": "กลุ่มเซลล์ต่อมไร้ท่อที่สร้างฮอร์โมนชนิดเปปไทด์หรือโปรตีน เก็บในแกรนูลแล้วหลั่งออกเมื่อถูกกระตุ้น",
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -27,7 +27,7 @@
     "tissue": "epithelial",
     "tissue_subtype": "glandular",
     "function": "กลุ่มเซลล์ที่สร้างฮอร์โมนสเตียรอยด์จากคอเลสเตอรอล มีร่างแหเอนโดพลาซึมชนิดเรียบและไมโทคอนเดรียมาก",
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -43,7 +43,7 @@
     "tissue": "epithelial",
     "tissue_subtype": "glandular",
     "function": "กลุ่มเซลล์ของต่อมหมวกไตส่วนนอก แบ่งเป็นสามชั้น (zona glomerulosa, fasciculata, reticularis) ที่หลั่งฮอร์โมนสเตียรอยด์ต่างชนิดกัน",
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -73,7 +73,7 @@
     "confused_with": [
       "CL:0000169"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -109,7 +109,7 @@
     "confused_with": [
       "CL:0000171"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -137,7 +137,7 @@
     "exam": "เซลล์เดลตามีจำนวนน้อยกว่าเซลล์อัลฟาและบีตา",
     "diseases": [],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -163,7 +163,7 @@
     "exam": "พบจำนวนน้อยที่สุดในเกาะลางเกอร์ฮานส์",
     "diseases": [],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -200,7 +200,7 @@
     "confused_with": [
       "CL:0000570"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -232,7 +232,7 @@
     "confused_with": [
       "CL:0002258"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -263,7 +263,7 @@
       "ภาวะพาราไทรอยด์ฮอร์โมนต่ำ (hypoparathyroidism)"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -294,7 +294,7 @@
       "CL:0002136",
       "CL:0002137"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -326,7 +326,7 @@
       "CL:0002099",
       "CL:0002137"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -356,7 +356,7 @@
       "CL:0002099",
       "CL:0002136"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -387,7 +387,7 @@
       "เนื้องอก pheochromocytoma"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -421,7 +421,7 @@
     "confused_with": [
       "CL:0002311"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -453,7 +453,7 @@
     "confused_with": [
       "CL:0002312"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -483,7 +483,7 @@
       "Cushing disease"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -511,7 +511,7 @@
     "exam": "ถูกกระตุ้นด้วย TRH และถูกยับยั้งด้วยฮอร์โมนไทรอยด์ (ป้อนกลับเชิงลบ)",
     "diseases": [],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -541,7 +541,7 @@
     "exam": "ถูกกระตุ้นด้วย GnRH จากไฮโพทาลามัสแบบเป็นจังหวะ (pulsatile)",
     "diseases": [],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -567,7 +567,7 @@
     "exam": "หลั่งมากในที่มืด ถูกควบคุมจากสัญญาณแสงที่ผ่านนิวเคลียสซูปราไคแอสมาติก (suprachiasmatic nucleus) และประสาทซิมพาเทติก",
     "diseases": [],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -592,7 +592,7 @@
     "exam": "ต่อมใต้สมองส่วนหลังไม่ได้สร้างฮอร์โมนเอง แต่เก็บและปล่อย ADH และ oxytocin ที่สร้างจากนิวรอนของไฮโพทาลามัส (supraoptic และ paraventricular nuclei)",
     "diseases": [],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -620,7 +620,7 @@
     "confused_with": [
       "CL:0000446"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   }

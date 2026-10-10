@@ -11,7 +11,7 @@
     "tissue": "nervous",
     "tissue_subtype": "neuron",
     "function": "เซลล์ที่รับ นำ และส่งสัญญาณไฟฟ้าและเคมี ประกอบด้วยตัวเซลล์ เดนไดรต์ และแอกซอน",
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -27,7 +27,7 @@
     "tissue": "nervous",
     "tissue_subtype": "glia",
     "function": "กลุ่มเซลล์ที่ไม่ใช่เซลล์ประสาทในเนื้อเยื่อประสาท ทำหน้าที่ค้ำจุน ให้สารอาหาร สร้างไมอีลิน และป้องกัน",
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -43,7 +43,7 @@
     "tissue": "nervous",
     "tissue_subtype": "neuron",
     "function": "กลุ่มเซลล์ประสาทรับความรู้สึกของจอประสาทตาที่เปลี่ยนแสงเป็นสัญญาณไฟฟ้า ได้แก่ เซลล์รูปแท่งและเซลล์รูปกรวย",
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -60,7 +60,7 @@
     "tissue": "nervous",
     "tissue_subtype": "neuron",
     "function": "กลุ่มเซลล์ที่รับสัญญาณจากระบบประสาทและหลั่งฮอร์โมนเข้ากระแสเลือด",
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -88,7 +88,7 @@
     "confused_with": [
       "CL:0000100"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -122,7 +122,7 @@
       "CL:0000101",
       "CL:0000099"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -148,7 +148,7 @@
     "confused_with": [
       "CL:0000100"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -176,7 +176,7 @@
       "โรคอัลไซเมอร์"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -208,7 +208,7 @@
     "confused_with": [
       "CL:0002068"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -240,7 +240,7 @@
     "confused_with": [
       "CL:1001505"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -274,7 +274,7 @@
     "confused_with": [
       "CL:0011003"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -304,7 +304,7 @@
     "confused_with": [
       "CL:0000128"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -334,7 +334,7 @@
     "confused_with": [
       "CL:0002573"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -366,7 +366,7 @@
     "confused_with": [
       "CL:0000128"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -393,7 +393,7 @@
       "ependymoma"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -426,7 +426,7 @@
     "confused_with": [
       "CL:0000573"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -458,7 +458,7 @@
     "confused_with": [
       "CL:0000604"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -484,7 +484,7 @@
     "exam": "เป็นเซลล์ประสาทตัวกลางในวิถีการมองเห็น: เซลล์รับแสง → ไบโพลาร์ → เซลล์ปมประสาท",
     "diseases": [],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -510,7 +510,7 @@
       "ต้อหิน (glaucoma)"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -537,7 +537,7 @@
       "จอประสาทตาลอก"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -567,7 +567,7 @@
     "confused_with": [
       "CL:0000601"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -597,7 +597,7 @@
     "confused_with": [
       "CL:0000589"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -623,7 +623,7 @@
       "ภาวะไม่ได้กลิ่น (anosmia)"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -647,7 +647,7 @@
     "exam": "เป็นเซลล์เยื่อบุผิวที่ดัดแปลง ไม่ใช่เซลล์ประสาท ถูกแทนที่ใหม่ตลอดเวลา",
     "diseases": [],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -680,7 +680,7 @@
     "confused_with": [
       "CL:0000108"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -715,7 +715,7 @@
       "CL:0000700",
       "CL:0000100"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -745,7 +745,7 @@
     "confused_with": [
       "CL:0000127"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -774,7 +774,7 @@
     "confused_with": [
       "CL:0000127"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   }

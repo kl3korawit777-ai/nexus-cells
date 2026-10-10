@@ -28,7 +28,7 @@
       "CL:0000192",
       "CL:0000746"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -56,7 +56,7 @@
     "confused_with": [
       "CL:0000056"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -85,7 +85,7 @@
     "confused_with": [
       "CL:0000594"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -117,7 +117,7 @@
       "CL:0008002",
       "CL:0000746"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -148,7 +148,7 @@
       "เอ็นอักเสบ (tendinitis/tendinopathy)"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   }

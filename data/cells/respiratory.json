@@ -26,7 +26,7 @@
     "confused_with": [
       "CL:0002063"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -59,7 +59,7 @@
     "confused_with": [
       "CL:0002062"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -91,7 +91,7 @@
       "CL:0002145",
       "CL:0000160"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -124,7 +124,7 @@
       "CL:0000158",
       "CL:0000160"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -155,7 +155,7 @@
     "confused_with": [
       "CL:0002145"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -192,7 +192,7 @@
     "confused_with": [
       "CL:0000164"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   }

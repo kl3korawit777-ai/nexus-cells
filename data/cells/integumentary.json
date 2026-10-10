@@ -28,7 +28,7 @@
     "confused_with": [
       "CL:0000148"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -61,7 +61,7 @@
       "CL:0002187",
       "CL:0002153"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -94,7 +94,7 @@
     "confused_with": [
       "CL:0000312"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -131,7 +131,7 @@
     "confused_with": [
       "CL:0002187"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -163,7 +163,7 @@
     "confused_with": [
       "CL:0000451"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -194,7 +194,7 @@
     "confused_with": [
       "CL:0000148"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -224,7 +224,7 @@
     "confused_with": [
       "CL:1000448"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -255,7 +255,7 @@
     "confused_with": [
       "CL:0000317"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -285,7 +285,7 @@
     "confused_with": [
       "CL:0000192"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -320,7 +320,7 @@
     "confused_with": [
       "CL:0000388"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   }

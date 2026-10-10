@@ -11,7 +11,7 @@
     "tissue": "epithelial",
     "tissue_subtype": "simple-columnar",
     "function": "กลุ่มเซลล์ที่เรียงตัวเป็นเยื่อบุผิวชั้นเดียวของลำไส้ ได้แก่ เซลล์ต้นกำเนิด เซลล์ดูดซึม เซลล์หลั่ง และเซลล์ M",
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -27,7 +27,7 @@
     "tissue": "epithelial",
     "tissue_subtype": "simple-columnar",
     "function": "กลุ่มเซลล์เยื่อบุผิวของกระเพาะอาหาร ทั้งเซลล์ผิวและเซลล์ในต่อมกระเพาะ",
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -43,7 +43,7 @@
     "tissue": "epithelial",
     "tissue_subtype": "glandular",
     "function": "กลุ่มเซลล์ของตับอ่อนส่วนที่หลั่งสารผ่านท่อเข้าลำไส้เล็ก ได้แก่ เซลล์อะซินาร์และเซลล์ท่อ",
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -74,7 +74,7 @@
     "confused_with": [
       "CL:4052066"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -102,7 +102,7 @@
     "confused_with": [
       "CL:4052065"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -136,7 +136,7 @@
     "confused_with": [
       "CL:0000155"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -165,7 +165,7 @@
     "confused_with": [
       "CL:0000162"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -193,7 +193,7 @@
     "confused_with": [
       "CL:0002179"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -225,7 +225,7 @@
     "confused_with": [
       "CL:0002181"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -253,7 +253,7 @@
       "Zollinger-Ellison syndrome (เนื้องอกสร้างแกสทริน)"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -285,7 +285,7 @@
     "confused_with": [
       "CL:0000160"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -316,7 +316,7 @@
     "confused_with": [
       "CL:0000584"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -347,7 +347,7 @@
       "โรค Crohn (พบความผิดปกติของ Paneth cell ที่เกี่ยวข้อง)"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -383,7 +383,7 @@
       "เนื้องอกคาร์ซินอยด์ (carcinoid tumor)"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -411,7 +411,7 @@
       "มะเร็งลำไส้ใหญ่ (เกี่ยวข้องกับสัญญาณ Wnt/APC)"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -435,7 +435,7 @@
     "exam": "เป็นประตูรับแอนติเจนเข้าสู่ Peyer's patch เชื้อบางชนิด เช่น Salmonella และโปลิโอไวรัส ใช้เซลล์ M เป็นทางผ่านเข้าร่างกาย",
     "diseases": [],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -463,7 +463,7 @@
       "เนื้องอก GIST (gastrointestinal stromal tumor)"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -497,7 +497,7 @@
       "ไขมันพอกตับ"
     ],
     "confused_with": [],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -530,7 +530,7 @@
     "confused_with": [
       "CL:0000091"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -563,7 +563,7 @@
     "confused_with": [
       "CL:0000182"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -596,7 +596,7 @@
     "confused_with": [
       "CL:0002079"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -628,7 +628,7 @@
     "confused_with": [
       "CL:0002064"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -662,7 +662,7 @@
     "confused_with": [
       "CL:0000059"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -697,7 +697,7 @@
     "confused_with": [
       "CL:0000060"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   },
@@ -728,7 +728,7 @@
       "CL:0000091",
       "CL:0000632"
     ],
-    "image": null,
+    "images": [],
     "verified": false,
     "refs": []
   }

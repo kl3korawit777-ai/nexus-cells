@@ -19,7 +19,7 @@
       "mesoderm",
       "endoderm"
     ],
-    "image": null,
+    "images": [],
     "subtypes": [
       {
         "id": "simple-squamous",
@@ -77,7 +77,7 @@
     "germ_layers": [
       "mesoderm"
     ],
-    "image": null,
+    "images": [],
     "subtypes": [
       {
         "id": "loose",
@@ -139,7 +139,7 @@
     "germ_layers": [
       "mesoderm"
     ],
-    "image": null,
+    "images": [],
     "subtypes": [
       {
         "id": "skeletal-muscle",
@@ -177,7 +177,7 @@
     "germ_layers": [
       "ectoderm"
     ],
-    "image": null,
+    "images": [],
     "subtypes": [
       {
         "id": "neuron",
@@ -205,7 +205,7 @@
       "features": "A group for cells that do not fit the four main tissue types."
     },
     "germ_layers": [],
-    "image": null,
+    "images": [],
     "subtypes": [
       {
         "id": "germ-cell",
