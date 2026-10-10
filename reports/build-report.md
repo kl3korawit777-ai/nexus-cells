@@ -1,13 +1,13 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-10 11:21
+สร้างเมื่อ: 2026-10-10 11:23
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 113 เส้น
+- ตรงกัน: 116 เส้น
 - คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 8 เส้น
 - คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 11 เส้น
-- CL มี แต่ไม่ได้คัดไว้: 61 เส้น
+- CL มี แต่ไม่ได้คัดไว้: 65 เส้น
 
 ### is_a ที่คัดเองข้ามขั้น
 ถูกตามความหมาย แต่ใน CL มีตัวกลางอยู่ระหว่างสองรหัสนี้ในชุดข้อมูล
@@ -51,8 +51,10 @@
 - CL:0000173 pancreatic D cell → CL:0000165 neuroendocrine cell
 - CL:0000207 olfactory receptor cell → CL:0000101 sensory neuron
 - CL:0000210 photoreceptor cell → CL:0000101 sensory neuron
+- CL:0000216 Sertoli cell → CL:0000077 mesothelial cell
 - CL:0000233 platelet → CL:0000988 hematopoietic cell
 - CL:0000336 adrenal medulla chromaffin cell → CL:0000165 neuroendocrine cell
+- CL:0000388 tendon cell → CL:0000057 fibroblast
 - CL:0000437 gonadotroph → CL:0000165 neuroendocrine cell
 - CL:0000453 Langerhans cell → CL:0000990 conventional dendritic cell
 - CL:0000476 thyrotroph → CL:0000165 neuroendocrine cell
@@ -70,6 +72,7 @@
 - CL:0000601 cochlear outer hair cell → CL:0000101 sensory neuron
 - CL:0000609 vestibular hair cell → CL:0000101 sensory neuron
 - CL:0000623 natural killer cell → CL:0001065 innate lymphoid cell
+- CL:0000632 hepatic stellate cell → CL:0000057 fibroblast
 - CL:0000636 Mueller cell → CL:0000681 radial glial cell
 - CL:0000645 pituicyte → CL:0000127 astrocyte
 - CL:0000748 retinal bipolar neuron → CL:0000679 glutamatergic neuron
@@ -98,16 +101,17 @@
 - CL:0002309 corticotroph → CL:0000165 neuroendocrine cell
 - CL:0002311 mammotroph → CL:0000165 neuroendocrine cell
 - CL:0002312 somatotroph → CL:0000165 neuroendocrine cell
+- CL:0009101 fibroblastic reticular cell → CL:0000057 fibroblast
 - CL:1001505 parvocellular neurosecretory cell → CL:0000167 peptide hormone secreting cell
 
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
 - ตรงกัน: 22 เส้น
-- คัดเองมี แต่ CL ไม่มี: 53 เส้น
+- คัดเองมี แต่ CL ไม่มี: 58 เส้น
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 4 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 55 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 58 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 428 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 436 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -116,6 +120,7 @@
 - CL:0000050 megakaryocyte-erythroid progenitor cell → CL:0000049 common myeloid progenitor
 - CL:0000051 common lymphoid progenitor → CL:0000037 hematopoietic stem cell
 - CL:0000056 myoblast → CL:0000594 skeletal muscle satellite cell
+- CL:0000057 fibroblast → CL:0000134 mesenchymal stem cell
 - CL:0000058 chondroblast → CL:0000134 mesenchymal stem cell
 - CL:0000084 T cell → CL:0000051 common lymphoid progenitor
 - CL:0000097 mast cell → CL:0000557 granulocyte monocyte progenitor cell
@@ -126,6 +131,8 @@
 - CL:0000164 enteroendocrine cell → CL:0002250 intestinal crypt stem cell
 - CL:0000236 B cell → CL:0000051 common lymphoid progenitor
 - CL:0000312 keratinocyte → CL:0002187 basal cell of epidermis
+- CL:0000448 white adipocyte → CL:0000134 mesenchymal stem cell
+- CL:0000449 brown adipocyte → CL:0000134 mesenchymal stem cell
 - CL:0000451 dendritic cell → CL:0000049 common myeloid progenitor
 - CL:0000510 paneth cell → CL:0002250 intestinal crypt stem cell
 - CL:0000525 syncytiotrophoblast cell → CL:0000523 mononuclear cytotrophoblast cell
@@ -153,6 +160,7 @@
 - CL:0000912 helper T cell → CL:0000898 naive T cell
 - CL:0000990 conventional dendritic cell → CL:0000049 common myeloid progenitor
 - CL:0001065 innate lymphoid cell → CL:0000051 common lymphoid progenitor
+- CL:0001070 beige adipocyte → CL:0000134 mesenchymal stem cell
 - CL:0002038 T follicular helper cell → CL:0000898 naive T cell
 - CL:0002062 pulmonary alveolar type 1 cell → CL:0002063 pulmonary alveolar type 2 cell
 - CL:0002145 multiciliated columnar cell of tracheobronchial tree → CL:0002329 basal epithelial cell of tracheobronchial tree
@@ -164,6 +172,7 @@
 - CL:0007010 osteoprogenitor cell → CL:0000134 mesenchymal stem cell
 - CL:0008002 skeletal muscle fiber → CL:0000056 myoblast
 - CL:1000347 colonocyte → CL:0002250 intestinal crypt stem cell
+- CL:4072104 fibrochondrocyte → CL:0000134 mesenchymal stem cell
 
 ### develops_from ที่ CL มีแต่ไม่ได้คัดไว้
 
@@ -197,6 +206,8 @@
 - CL:0000182 hepatocyte ← CL:0005026 hepatoblast
 - CL:0000192 smooth muscle cell ← CL:0000514 smooth muscle myoblast
 - CL:0000336 adrenal medulla chromaffin cell ← CL:0000011 migratory trunk neural crest cell
+- CL:0000448 white adipocyte ← CL:0002334 preadipocyte
+- CL:0000449 brown adipocyte ← CL:0002335 brown preadipocyte
 - CL:0000453 Langerhans cell ← CL:0000763 myeloid cell
 - CL:0000501 granulosa cell ← CL:4033066 pre-granulosa cell
 - CL:0000510 paneth cell ← CL:4047017 transit amplifying cell of gut
@@ -229,8 +240,9 @@
 - CL:0007010 osteoprogenitor cell ← CL:0000333 migratory neural crest cell
 - CL:0008002 skeletal muscle fiber ← CL:0000515 skeletal muscle myoblast
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
+- CL:4072104 fibrochondrocyte ← CL:0020021 fibrochondrocyte progenitor cell
 
-## คำเตือนจาก validate (227)
+## คำเตือนจาก validate (233)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -447,6 +459,12 @@
 - CL:0000134 (mesenchymal stem cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0002302 (type A synovial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0002301 (type B synovial cell): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
+- CL:4072104 (fibrochondrocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000057 (fibroblast): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000448 (white adipocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000449 (brown adipocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0001070 (beige adipocyte): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000077 (mesothelial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000653 (podocyte): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
 - CL:0002188 (glomerular endothelial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:1000742 (glomerular mesangial cell): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป

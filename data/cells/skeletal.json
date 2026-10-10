@@ -252,5 +252,217 @@
     "images": [],
     "verified": false,
     "refs": []
+  },
+  {
+    "id": "CL:4072104",
+    "slug": "fibrochondrocyte",
+    "kind": "cell",
+    "en": "fibrochondrocyte",
+    "th": "ไฟโบรคอนโดรไซต์ (fibrochondrocyte)",
+    "systems": [
+      "skeletal"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "cartilage",
+    "location": "กระดูกอ่อนเส้นใย (fibrocartilage) เช่น หมอนรองกระดูกสันหลัง (annulus fibrosus), เมนิสคัส, pubic symphysis และจุดเกาะของเอ็น",
+    "morphology": "เซลล์กลมถึงรูปไข่ เรียงเป็นแถวระหว่างมัดคอลลาเจนหนา",
+    "function": "สร้างและรักษาเมทริกซ์ที่มีคอลลาเจนชนิด I มาก ทำให้กระดูกอ่อนชนิดนี้ทนแรงดึงและแรงกดได้ดี",
+    "secretes": [
+      "คอลลาเจนชนิด I",
+      "คอลลาเจนชนิด II (ปริมาณน้อย)"
+    ],
+    "markers": [
+      "SOX9",
+      "คอลลาเจนชนิด I"
+    ],
+    "lifespan": "",
+    "exam": "กระดูกอ่อนมี 3 ชนิด: hyaline (คอลลาเจน II) elastic (เส้นใยยืดหยุ่น) และ fibrocartilage (คอลลาเจน I มาก ไม่มี perichondrium) fibrocartilage พบที่หมอนรองกระดูก เมนิสคัส และ pubic symphysis",
+    "diseases": [
+      "หมอนรองกระดูกเคลื่อน (disc herniation)",
+      "เมนิสคัสฉีก"
+    ],
+    "confused_with": [
+      "CL:0000138",
+      "CL:0000057"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000057",
+    "slug": "fibroblast",
+    "kind": "cell",
+    "en": "fibroblast",
+    "th": "ไฟโบรบลาสต์ (fibroblast)",
+    "systems": [
+      "skeletal"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "loose",
+    "location": "เนื้อเยื่อเกี่ยวพันทั่วร่างกาย โดยเฉพาะ loose connective tissue และชั้นหนังแท้",
+    "morphology": "เซลล์รูปกระสวย นิวเคลียสรูปไข่สีจาง ไซโทพลาซึมมี RER และ Golgi มากเมื่อกำลังสร้างสาร",
+    "function": "สร้างเมทริกซ์นอกเซลล์ ได้แก่ คอลลาเจน (ชนิด I และ III) เส้นใยอีลาสติน และสารพื้น (proteoglycan) และมีบทบาทสำคัญในการสมานแผล",
+    "secretes": [
+      "คอลลาเจน",
+      "อีลาสติน",
+      "fibronectin",
+      "proteoglycan"
+    ],
+    "markers": [
+      "vimentin",
+      "FSP1 (S100A4)"
+    ],
+    "lifespan": "",
+    "exam": "การสร้างคอลลาเจนต้องใช้วิตามินซี (hydroxylation ของ proline และ lysine) ขาดวิตามินซีทำให้เกิดโรคลักปิดลักเปิด (scurvy) ไฟโบรบลาสต์ที่ไม่ได้ทำงานเรียก fibrocyte",
+    "diseases": [
+      "scurvy (ขาดวิตามินซี)",
+      "Ehlers-Danlos syndrome (คอลลาเจนผิดปกติ)",
+      "keloid"
+    ],
+    "confused_with": [
+      "CL:0000388"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000448",
+    "slug": "white-adipocyte",
+    "kind": "cell",
+    "en": "white adipocyte",
+    "th": "เซลล์ไขมันสีขาว (white adipocyte)",
+    "systems": [
+      "skeletal"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "adipose",
+    "location": "เนื้อเยื่อไขมันใต้ผิวหนัง รอบอวัยวะในช่องท้อง และไขกระดูกสีเหลือง",
+    "morphology": "เซลล์ขนาดใหญ่มีหยดไขมันเดี่ยวขนาดใหญ่ (unilocular) ดันนิวเคลียสและไซโทพลาซึมไปติดขอบเซลล์ เห็นเป็นรูปแหวนตรา (signet ring)",
+    "function": "เก็บพลังงานเป็นไตรกลีเซอไรด์ สลายเป็นกรดไขมันเมื่อต้องการพลังงาน (lipolysis ถูกกระตุ้นด้วยแคทีโคลามีนและกลูคากอน) และหลั่งฮอร์โมน",
+    "secretes": [
+      "leptin",
+      "adiponectin"
+    ],
+    "markers": [
+      "perilipin 1",
+      "FABP4"
+    ],
+    "lifespan": "",
+    "exam": "เนื้อเยื่อไขมันขาวพบมากที่สุดในผู้ใหญ่ เซลล์ไขมันมีหยดไขมันเดียว ส่วนเซลล์ไขมันสีน้ำตาลมีหยดไขมันหลายหยดและไมโทคอนเดรียมาก leptin จากเซลล์ไขมันบอกสมองว่ามีพลังงานสะสมเพียงพอ",
+    "diseases": [
+      "โรคอ้วน (obesity)",
+      "ไขมันพอกตับ",
+      "ไขมันสะสมผิดปกติ (lipoma)"
+    ],
+    "confused_with": [
+      "CL:0000449"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000449",
+    "slug": "brown-adipocyte",
+    "kind": "cell",
+    "en": "brown adipocyte",
+    "th": "เซลล์ไขมันสีน้ำตาล (brown adipocyte)",
+    "systems": [
+      "skeletal"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "adipose",
+    "location": "เนื้อเยื่อไขมันสีน้ำตาล พบมากในทารกแรกเกิด (บริเวณระหว่างสะบัก รอบไต) และเหลือน้อยในผู้ใหญ่ (บริเวณเหนือกระดูกไหปลาร้า)",
+    "morphology": "เซลล์ขนาดเล็กกว่า มีหยดไขมันหลายหยด (multilocular) นิวเคลียสอยู่ตรงกลาง ไมโทคอนเดรียมากมาย",
+    "function": "สร้างความร้อนโดยไม่ต้องหดตัวของกล้ามเนื้อ (non-shivering thermogenesis) ผ่านโปรตีน UCP1 ซึ่งทำให้โปรตอนรั่วผ่านเยื่อหุ้มไมโทคอนเดรียโดยไม่ผลิต ATP ถูกกระตุ้นด้วยระบบประสาทซิมพาเทติก",
+    "secretes": [],
+    "markers": [
+      "UCP1 (thermogenin)",
+      "PGC-1α"
+    ],
+    "lifespan": "",
+    "exam": "ทารกแรกเกิดอาศัยไขมันสีน้ำตาลให้ความอบอุ่น สีน้ำตาลมาจากไมโทคอนเดรียที่มีไซโทโครมมาก UCP1 ทำให้เกิดการรั่วของโปรตอน",
+    "diseases": [
+      "pheochromocytoma (กระตุ้นไขมันสีน้ำตาลมากผิดปกติ)"
+    ],
+    "confused_with": [
+      "CL:0000448",
+      "CL:0001070"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0001070",
+    "slug": "beige-adipocyte",
+    "kind": "cell",
+    "en": "beige adipocyte",
+    "th": "เซลล์ไขมันสีเบจ (beige adipocyte)",
+    "systems": [
+      "skeletal"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "adipose",
+    "location": "แทรกอยู่ในเนื้อเยื่อไขมันขาว โดยเฉพาะไขมันใต้ผิวหนัง",
+    "morphology": "เซลล์ที่มีหยดไขมันหลายหยดและไมโทคอนเดรียเพิ่มขึ้นเมื่อถูกกระตุ้น",
+    "function": "คล้ายเซลล์ไขมันสีน้ำตาล คือสร้างความร้อนด้วย UCP1 แต่เกิดขึ้นเมื่อถูกกระตุ้น เช่น อากาศเย็นหรือการกระตุ้นตัวรับ β3-adrenergic (browning ของไขมันขาว)",
+    "secretes": [],
+    "markers": [
+      "UCP1 (เมื่อถูกกระตุ้น)",
+      "TMEM26",
+      "CD137"
+    ],
+    "lifespan": "",
+    "exam": "beige adipocyte เป็นเซลล์อยู่ในไขมันขาวที่ถูกกระตุ้นให้คล้ายสีน้ำตาลเมื่อเจอความเย็น จึงเป็นเป้าหมายการวิจัยเรื่องโรคอ้วน",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000449",
+      "CL:0000448"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000077",
+    "slug": "mesothelial-cell",
+    "kind": "cell",
+    "en": "mesothelial cell",
+    "th": "เซลล์เมโซทีเลียม (mesothelial cell)",
+    "systems": [
+      "respiratory",
+      "cardiovascular",
+      "digestive"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-squamous",
+    "location": "เยื่อบุผิวของเยื่อหุ้มปอด (pleura) เยื่อหุ้มหัวใจ (pericardium) และเยื่อบุช่องท้อง (peritoneum)",
+    "morphology": "เซลล์แบนบางเรียงชั้นเดียว มีไมโครวิลไลที่ผิว",
+    "function": "สร้างผิวเรียบลื่นและหลั่งของเหลวหล่อลื่นเพื่อลดการเสียดสีของอวัยวะในช่องลำตัว และมีบทบาทในการสมานและการอักเสบของเยื่อบุ",
+    "secretes": [
+      "ของเหลวหล่อลื่น (serous fluid)",
+      "hyaluronan"
+    ],
+    "markers": [
+      "calretinin",
+      "mesothelin",
+      "WT1"
+    ],
+    "lifespan": "",
+    "exam": "เยื่อบุผิวของช่องตัว (serosa) เป็นชั้นเดียวแบบ simple squamous เรียกว่า mesothelium ส่วนเยื่อบุหลอดเลือดเรียก endothelium มะเร็ง mesothelioma ของเยื่อหุ้มปอดสัมพันธ์กับแร่ใยหิน (asbestos)",
+    "diseases": [
+      "mesothelioma (สัมพันธ์กับ asbestos)",
+      "เยื่อหุ้มปอดอักเสบ (pleuritis)",
+      "ภาวะน้ำในช่องท้อง (ascites)"
+    ],
+    "confused_with": [
+      "CL:0000115"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
   }
 ]

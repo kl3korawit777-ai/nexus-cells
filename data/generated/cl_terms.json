@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-10T04:21:56+00:00",
+  "fetched_at": "2026-10-10T04:23:42+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -21632,6 +21632,476 @@
         {
           "id": "UBERON:0002018",
           "label": "synovial membrane of synovial joint"
+        }
+      ]
+    },
+    "CL:4072104": {
+      "id": "CL:4072104",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_4072104",
+      "label": "fibrochondrocyte",
+      "definition": "A chondrocyte with hybrid fibroblastic-chondrogenic characteristics found in fibrocartilage, particularly in the avascular inner zone and transitional middle zone of the meniscus. In humans, fibrochondrocytes are marked by predominant expression of type I collagen (COL1A1) and fibril-associated collagens (COL3A1, COL6A1), while retaining type II collagen (COL2A1) expression and exhibiting lower SOX9 than hyaline chondrocytes. This molecular profile underlies the synthesis of abundant type I collagen essential for fibrocartilage matrix and reflects an intermediate phenotype between fibroblast and chondrocyte.",
+      "synonyms": [
+        "FC",
+        "fibrocartilage chondrocyte",
+        "meniscus fibrochondrocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000138",
+          "label": "chondrocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000138",
+          "label": "chondrocyte"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000153",
+          "label": "glycosaminoglycan secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000327",
+          "label": "extracellular matrix secreting cell"
+        },
+        {
+          "id": "CL:0000447",
+          "label": "carbohydrate secreting cell"
+        },
+        {
+          "id": "CL:0000499",
+          "label": "stromal cell"
+        },
+        {
+          "id": "CL:0000667",
+          "label": "collagen secreting cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "CL:0007001",
+          "label": "skeletogenic cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0020021",
+          "label": "fibrochondrocyte progenitor cell"
+        },
+        {
+          "id": "PR:000003264",
+          "label": "collagen alpha-1(I) chain"
+        },
+        {
+          "id": "PR:000003328",
+          "label": "collagen alpha-1(III) chain"
+        },
+        {
+          "id": "PR:000003353",
+          "label": "collagen alpha-1(VI) chain"
+        },
+        {
+          "id": "UBERON:0001995",
+          "label": "fibrocartilage"
+        }
+      ]
+    },
+    "CL:0000057": {
+      "id": "CL:0000057",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000057",
+      "label": "fibroblast",
+      "definition": "A connective tissue cell which secretes an extracellular matrix rich in collagen and other macromolecules. Flattened and irregular in outline with branching processes; appear fusiform or spindle-shaped.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000499",
+          "label": "stromal cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000499",
+          "label": "stromal cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000448": {
+      "id": "CL:0000448",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000448",
+      "label": "white adipocyte",
+      "definition": "An adipocyte with light coloration and few mitochondria. It contains a scant ring of cytoplasm surrounding a single large lipid droplet or vacuole.",
+      "synonyms": [
+        "white adipose cell",
+        "white fat cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000136",
+          "label": "adipocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000136",
+          "label": "adipocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0002334",
+          "label": "preadipocyte"
+        },
+        {
+          "id": "UBERON:0001347",
+          "label": "white adipose tissue"
+        }
+      ]
+    },
+    "CL:0000449": {
+      "id": "CL:0000449",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000449",
+      "label": "brown adipocyte",
+      "definition": "A cell from the thermogenic form of adipose tissue found in many species,  particularly in newborns and hibernating mammals, but also in lesser amounts in adults of other mammals including humans. Brown fat is capable of rapid liberation of energy and seems to be important in the maintenance of body temperature immediately after birth and upon waking from hibernation.",
+      "synonyms": [
+        "brown adipose cell",
+        "brown fat cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000136",
+          "label": "adipocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000136",
+          "label": "adipocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0002335",
+          "label": "brown preadipocyte"
+        },
+        {
+          "id": "UBERON:0001348",
+          "label": "brown adipose tissue"
+        }
+      ]
+    },
+    "CL:0001070": {
+      "id": "CL:0001070",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0001070",
+      "label": "beige adipocyte",
+      "definition": "An adipocyte that is beige in color, thermogenic, and which differentiates in white fat tissue from a Myf5-negative progenitor.",
+      "synonyms": [
+        "beige brown adipocyte",
+        "beige fat cell",
+        "beige/brite adipocyte",
+        "brite adipocyte",
+        "brite cell",
+        "brite fat cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000136",
+          "label": "adipocyte"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000136",
+          "label": "adipocyte"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000325",
+          "label": "stuff accumulating cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0001347",
+          "label": "white adipose tissue"
+        }
+      ]
+    },
+    "CL:0000077": {
+      "id": "CL:0000077",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000077",
+      "label": "mesothelial cell",
+      "definition": "A flat, squamous-like epithelial cell of mesodermal origin. It forms the mesothelium, which lines the body's serous cavities including the pleural, peritoneal, and pericardial spaces. This cell plays a crucial role in synthesizing and secreting lubricants, such as glycosaminoglycans and surfactants, which minimize friction between adjacent tissues during movement.",
+      "synonyms": [
+        "mesotheliocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000076",
+          "label": "squamous epithelial cell"
+        },
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000076",
+          "label": "squamous epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002078",
+          "label": "meso-epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0001136",
+          "label": "mesothelium"
         }
       ]
     },

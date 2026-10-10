@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "be086bcd2799",
-  "generated_at": "2026-10-10T04:21:57+00:00",
+  "data_version": "0d9592568cf8",
+  "generated_at": "2026-10-10T04:23:43+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "stats": {
    "images": 0
@@ -9260,6 +9260,279 @@
    }
   },
   {
+   "id": "CL:4072104",
+   "slug": "fibrochondrocyte",
+   "kind": "cell",
+   "en": "fibrochondrocyte",
+   "th": "ไฟโบรคอนโดรไซต์ (fibrochondrocyte)",
+   "systems": [
+    "skeletal"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "cartilage",
+   "location": "กระดูกอ่อนเส้นใย (fibrocartilage) เช่น หมอนรองกระดูกสันหลัง (annulus fibrosus), เมนิสคัส, pubic symphysis และจุดเกาะของเอ็น",
+   "morphology": "เซลล์กลมถึงรูปไข่ เรียงเป็นแถวระหว่างมัดคอลลาเจนหนา",
+   "function": "สร้างและรักษาเมทริกซ์ที่มีคอลลาเจนชนิด I มาก ทำให้กระดูกอ่อนชนิดนี้ทนแรงดึงและแรงกดได้ดี",
+   "secretes": [
+    "คอลลาเจนชนิด I",
+    "คอลลาเจนชนิด II (ปริมาณน้อย)"
+   ],
+   "markers": [
+    "SOX9",
+    "คอลลาเจนชนิด I"
+   ],
+   "lifespan": "",
+   "exam": "กระดูกอ่อนมี 3 ชนิด: hyaline (คอลลาเจน II) elastic (เส้นใยยืดหยุ่น) และ fibrocartilage (คอลลาเจน I มาก ไม่มี perichondrium) fibrocartilage พบที่หมอนรองกระดูก เมนิสคัส และ pubic symphysis",
+   "diseases": [
+    "หมอนรองกระดูกเคลื่อน (disc herniation)",
+    "เมนิสคัสฉีก"
+   ],
+   "confused_with": [
+    "CL:0000138",
+    "CL:0000057"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_4072104",
+   "cl": {
+    "label": "fibrochondrocyte",
+    "definition": "A chondrocyte with hybrid fibroblastic-chondrogenic characteristics found in fibrocartilage, particularly in the avascular inner zone and transitional middle zone of the meniscus. In humans, fibrochondrocytes are marked by predominant expression of type I collagen (COL1A1) and fibril-associated collagens (COL3A1, COL6A1), while retaining type II collagen (COL2A1) expression and exhibiting lower SOX9 than hyaline chondrocytes. This molecular profile underlies the synthesis of abundant type I collagen essential for fibrocartilage matrix and reflects an intermediate phenotype between fibroblast and chondrocyte.",
+    "synonyms": [
+     "FC",
+     "fibrocartilage chondrocyte",
+     "meniscus fibrochondrocyte"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000057",
+   "slug": "fibroblast",
+   "kind": "cell",
+   "en": "fibroblast",
+   "th": "ไฟโบรบลาสต์ (fibroblast)",
+   "systems": [
+    "skeletal"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "loose",
+   "location": "เนื้อเยื่อเกี่ยวพันทั่วร่างกาย โดยเฉพาะ loose connective tissue และชั้นหนังแท้",
+   "morphology": "เซลล์รูปกระสวย นิวเคลียสรูปไข่สีจาง ไซโทพลาซึมมี RER และ Golgi มากเมื่อกำลังสร้างสาร",
+   "function": "สร้างเมทริกซ์นอกเซลล์ ได้แก่ คอลลาเจน (ชนิด I และ III) เส้นใยอีลาสติน และสารพื้น (proteoglycan) และมีบทบาทสำคัญในการสมานแผล",
+   "secretes": [
+    "คอลลาเจน",
+    "อีลาสติน",
+    "fibronectin",
+    "proteoglycan"
+   ],
+   "markers": [
+    "vimentin",
+    "FSP1 (S100A4)"
+   ],
+   "lifespan": "",
+   "exam": "การสร้างคอลลาเจนต้องใช้วิตามินซี (hydroxylation ของ proline และ lysine) ขาดวิตามินซีทำให้เกิดโรคลักปิดลักเปิด (scurvy) ไฟโบรบลาสต์ที่ไม่ได้ทำงานเรียก fibrocyte",
+   "diseases": [
+    "scurvy (ขาดวิตามินซี)",
+    "Ehlers-Danlos syndrome (คอลลาเจนผิดปกติ)",
+    "keloid"
+   ],
+   "confused_with": [
+    "CL:0000388"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000057",
+   "cl": {
+    "label": "fibroblast",
+    "definition": "A connective tissue cell which secretes an extracellular matrix rich in collagen and other macromolecules. Flattened and irregular in outline with branching processes; appear fusiform or spindle-shaped.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000448",
+   "slug": "white-adipocyte",
+   "kind": "cell",
+   "en": "white adipocyte",
+   "th": "เซลล์ไขมันสีขาว (white adipocyte)",
+   "systems": [
+    "skeletal"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "adipose",
+   "location": "เนื้อเยื่อไขมันใต้ผิวหนัง รอบอวัยวะในช่องท้อง และไขกระดูกสีเหลือง",
+   "morphology": "เซลล์ขนาดใหญ่มีหยดไขมันเดี่ยวขนาดใหญ่ (unilocular) ดันนิวเคลียสและไซโทพลาซึมไปติดขอบเซลล์ เห็นเป็นรูปแหวนตรา (signet ring)",
+   "function": "เก็บพลังงานเป็นไตรกลีเซอไรด์ สลายเป็นกรดไขมันเมื่อต้องการพลังงาน (lipolysis ถูกกระตุ้นด้วยแคทีโคลามีนและกลูคากอน) และหลั่งฮอร์โมน",
+   "secretes": [
+    "leptin",
+    "adiponectin"
+   ],
+   "markers": [
+    "perilipin 1",
+    "FABP4"
+   ],
+   "lifespan": "",
+   "exam": "เนื้อเยื่อไขมันขาวพบมากที่สุดในผู้ใหญ่ เซลล์ไขมันมีหยดไขมันเดียว ส่วนเซลล์ไขมันสีน้ำตาลมีหยดไขมันหลายหยดและไมโทคอนเดรียมาก leptin จากเซลล์ไขมันบอกสมองว่ามีพลังงานสะสมเพียงพอ",
+   "diseases": [
+    "โรคอ้วน (obesity)",
+    "ไขมันพอกตับ",
+    "ไขมันสะสมผิดปกติ (lipoma)"
+   ],
+   "confused_with": [
+    "CL:0000449"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000448",
+   "cl": {
+    "label": "white adipocyte",
+    "definition": "An adipocyte with light coloration and few mitochondria. It contains a scant ring of cytoplasm surrounding a single large lipid droplet or vacuole.",
+    "synonyms": [
+     "white adipose cell",
+     "white fat cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000449",
+   "slug": "brown-adipocyte",
+   "kind": "cell",
+   "en": "brown adipocyte",
+   "th": "เซลล์ไขมันสีน้ำตาล (brown adipocyte)",
+   "systems": [
+    "skeletal"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "adipose",
+   "location": "เนื้อเยื่อไขมันสีน้ำตาล พบมากในทารกแรกเกิด (บริเวณระหว่างสะบัก รอบไต) และเหลือน้อยในผู้ใหญ่ (บริเวณเหนือกระดูกไหปลาร้า)",
+   "morphology": "เซลล์ขนาดเล็กกว่า มีหยดไขมันหลายหยด (multilocular) นิวเคลียสอยู่ตรงกลาง ไมโทคอนเดรียมากมาย",
+   "function": "สร้างความร้อนโดยไม่ต้องหดตัวของกล้ามเนื้อ (non-shivering thermogenesis) ผ่านโปรตีน UCP1 ซึ่งทำให้โปรตอนรั่วผ่านเยื่อหุ้มไมโทคอนเดรียโดยไม่ผลิต ATP ถูกกระตุ้นด้วยระบบประสาทซิมพาเทติก",
+   "secretes": [],
+   "markers": [
+    "UCP1 (thermogenin)",
+    "PGC-1α"
+   ],
+   "lifespan": "",
+   "exam": "ทารกแรกเกิดอาศัยไขมันสีน้ำตาลให้ความอบอุ่น สีน้ำตาลมาจากไมโทคอนเดรียที่มีไซโทโครมมาก UCP1 ทำให้เกิดการรั่วของโปรตอน",
+   "diseases": [
+    "pheochromocytoma (กระตุ้นไขมันสีน้ำตาลมากผิดปกติ)"
+   ],
+   "confused_with": [
+    "CL:0000448",
+    "CL:0001070"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000449",
+   "cl": {
+    "label": "brown adipocyte",
+    "definition": "A cell from the thermogenic form of adipose tissue found in many species,  particularly in newborns and hibernating mammals, but also in lesser amounts in adults of other mammals including humans. Brown fat is capable of rapid liberation of energy and seems to be important in the maintenance of body temperature immediately after birth and upon waking from hibernation.",
+    "synonyms": [
+     "brown adipose cell",
+     "brown fat cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0001070",
+   "slug": "beige-adipocyte",
+   "kind": "cell",
+   "en": "beige adipocyte",
+   "th": "เซลล์ไขมันสีเบจ (beige adipocyte)",
+   "systems": [
+    "skeletal"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "adipose",
+   "location": "แทรกอยู่ในเนื้อเยื่อไขมันขาว โดยเฉพาะไขมันใต้ผิวหนัง",
+   "morphology": "เซลล์ที่มีหยดไขมันหลายหยดและไมโทคอนเดรียเพิ่มขึ้นเมื่อถูกกระตุ้น",
+   "function": "คล้ายเซลล์ไขมันสีน้ำตาล คือสร้างความร้อนด้วย UCP1 แต่เกิดขึ้นเมื่อถูกกระตุ้น เช่น อากาศเย็นหรือการกระตุ้นตัวรับ β3-adrenergic (browning ของไขมันขาว)",
+   "secretes": [],
+   "markers": [
+    "UCP1 (เมื่อถูกกระตุ้น)",
+    "TMEM26",
+    "CD137"
+   ],
+   "lifespan": "",
+   "exam": "beige adipocyte เป็นเซลล์อยู่ในไขมันขาวที่ถูกกระตุ้นให้คล้ายสีน้ำตาลเมื่อเจอความเย็น จึงเป็นเป้าหมายการวิจัยเรื่องโรคอ้วน",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000449",
+    "CL:0000448"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0001070",
+   "cl": {
+    "label": "beige adipocyte",
+    "definition": "An adipocyte that is beige in color, thermogenic, and which differentiates in white fat tissue from a Myf5-negative progenitor.",
+    "synonyms": [
+     "beige brown adipocyte",
+     "beige fat cell",
+     "beige/brite adipocyte",
+     "brite adipocyte",
+     "brite cell",
+     "brite fat cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000077",
+   "slug": "mesothelial-cell",
+   "kind": "cell",
+   "en": "mesothelial cell",
+   "th": "เซลล์เมโซทีเลียม (mesothelial cell)",
+   "systems": [
+    "respiratory",
+    "cardiovascular",
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-squamous",
+   "location": "เยื่อบุผิวของเยื่อหุ้มปอด (pleura) เยื่อหุ้มหัวใจ (pericardium) และเยื่อบุช่องท้อง (peritoneum)",
+   "morphology": "เซลล์แบนบางเรียงชั้นเดียว มีไมโครวิลไลที่ผิว",
+   "function": "สร้างผิวเรียบลื่นและหลั่งของเหลวหล่อลื่นเพื่อลดการเสียดสีของอวัยวะในช่องลำตัว และมีบทบาทในการสมานและการอักเสบของเยื่อบุ",
+   "secretes": [
+    "ของเหลวหล่อลื่น (serous fluid)",
+    "hyaluronan"
+   ],
+   "markers": [
+    "calretinin",
+    "mesothelin",
+    "WT1"
+   ],
+   "lifespan": "",
+   "exam": "เยื่อบุผิวของช่องตัว (serosa) เป็นชั้นเดียวแบบ simple squamous เรียกว่า mesothelium ส่วนเยื่อบุหลอดเลือดเรียก endothelium มะเร็ง mesothelioma ของเยื่อหุ้มปอดสัมพันธ์กับแร่ใยหิน (asbestos)",
+   "diseases": [
+    "mesothelioma (สัมพันธ์กับ asbestos)",
+    "เยื่อหุ้มปอดอักเสบ (pleuritis)",
+    "ภาวะน้ำในช่องท้อง (ascites)"
+   ],
+   "confused_with": [
+    "CL:0000115"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000077",
+   "cl": {
+    "label": "mesothelial cell",
+    "definition": "A flat, squamous-like epithelial cell of mesodermal origin. It forms the mesothelium, which lines the body's serous cavities including the pleural, peritoneal, and pericardial spaces. This cell plays a crucial role in synthesizing and secreting lubricants, such as glycosaminoglycans and surfactants, which minimize friction between adjacent tissues during movement.",
+    "synonyms": [
+     "mesotheliocyte"
+    ],
+    "obsolete": false
+   }
+  },
+  {
    "id": "CL:0000653",
    "slug": "podocyte",
    "kind": "cell",
@@ -11932,6 +12205,62 @@
    "type": "develops_from",
    "from": "CL:0000058",
    "to": "CL:0000134",
+   "source": "curated",
+   "file": "skeletal"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000057",
+   "to": "CL:0000134",
+   "source": "curated",
+   "file": "skeletal"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000448",
+   "to": "CL:0000134",
+   "source": "curated",
+   "file": "skeletal"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000449",
+   "to": "CL:0000134",
+   "source": "curated",
+   "file": "skeletal"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0001070",
+   "to": "CL:0000134",
+   "source": "curated",
+   "file": "skeletal"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:4072104",
+   "to": "CL:0000134",
+   "source": "curated",
+   "file": "skeletal"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:4072104",
+   "to": "CL:0000138",
+   "source": "curated",
+   "file": "skeletal"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002551",
+   "to": "CL:0000057",
+   "source": "curated",
+   "file": "skeletal"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002548",
+   "to": "CL:0000057",
    "source": "curated",
    "file": "skeletal"
   },
