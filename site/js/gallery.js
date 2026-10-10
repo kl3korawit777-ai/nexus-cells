@@ -43,7 +43,7 @@ export function captionNodes(img) {
   if (img.license) line.push(img.license);
   const credit = h('p', { class: 'gal-credit' }, line.join(' · '));
   if (img.source) {
-    const safe = /^https?:\/\//i.test(img.source);
+    const safe = /^https:\/\//i.test(img.source);
     credit.append(line.length ? ' · ' : '', safe
       ? h('a', { href: img.source, rel: 'noopener noreferrer', target: '_blank' }, t('card.source'))
       : t('card.sourceText', { source: img.source }));

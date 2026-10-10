@@ -61,7 +61,7 @@ export function aboutView() {
       h('ul', { class: 'rel-list' }, rows.map(({ name, href, img }) => h('li', {},
         h('a', { href }, name), img.type ? h('span', { class: 'chip' }, t('img.type.' + img.type)) : null,
         ' — ', img.credit || '',
-        img.source && /^https?:\/\//i.test(img.source) ? [' · ', h('a', { href: img.source, rel: 'noopener noreferrer', target: '_blank' }, t('card.source'))] : null)))))
+        img.source && /^https:\/\//i.test(img.source) ? [' · ', h('a', { href: img.source, rel: 'noopener noreferrer', target: '_blank' }, t('card.source'))] : null)))))
     : h('p', { class: 'empty', text: t('about.imagesNone') });
 
   const el = h('article', { class: 'about' },

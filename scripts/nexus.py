@@ -64,6 +64,12 @@ CELL_FIELDS = [
     "lifespan", "exam", "diseases", "confused_with",
 ]
 CLASS_FIELDS = ["function"]
+# ระดับการตรวจเนื้อหา: draft = ยังไม่ตรวจ, ai_reviewed = ให้ AI ทบทวนแล้ว (ไม่ได้เทียบตำรา), textbook = เทียบตำราแล้ว
+REVIEW_LEVELS = ("draft", "ai_reviewed", "textbook")
+# ข้อความที่ AI ทบทวนใส่ไว้ใน refs ต้องไม่นับเป็นแหล่งอ้างอิงตำรา
+AI_REF_PREFIX = "ทบทวนเนื้อหาโดย Claude"
+# แท็ก HTML (เช่น <script>, </b>, <!--) ห้ามอยู่ในข้อความใด ๆ ของข้อมูล เพราะเว็บแสดงข้อมูลนี้ให้ผู้ใช้ทุกคน
+HTML_TAG_RE = re.compile(r"<\s*/?\s*[A-Za-z!?]|javascript\s*:", re.I)
 
 
 # ---------------------------------------------------------------- ช่วยเหลือ
@@ -105,6 +111,48 @@ def load_dataset():
 
 def cell_label(c):
     return "%s (%s)" % (c.get("id", "?"), c.get("en") or c.get("slug") or "?")
+
+
+def walk_strings(obj, path=""):
+    """วนทุกข้อความในโครงสร้าง JSON คืน (พาธ, ข้อความ)"""
+    if isinstance(obj, str):
+        yield path, obj
+    elif isinstance(obj, list):
+        for i, x in enumerate(obj):
+            yield from walk_strings(x, "%s[%d]" % (path, i))
+    elif isinstance(obj, dict):
+        for k, v in obj.items():
+            if not str(k).startswith("_"):
+                yield from walk_strings(v, "%s.%s" % (path, k) if path else str(k))
+
+
+def find_cycle(pairs):
+    """pairs = [(ลูก, แม่)] คืนรายการ id ที่วนกลับ หรือ None ถ้าไม่มีวงวน"""
+    graph = {}
+    for a, b in pairs:
+        graph.setdefault(a, []).append(b)
+    state = {}
+    for start in list(graph):
+        if start in state:
+            continue
+        stack = [(start, iter(graph.get(start, [])))]
+        state[start] = 1
+        trail = [start]
+        while stack:
+            node, it = stack[-1]
+            nxt = next(it, None)
+            if nxt is None:
+                state[node] = 2
+                stack.pop()
+                trail.pop()
+                continue
+            if state.get(nxt) == 1:
+                return trail[trail.index(nxt):] + [nxt]
+            if nxt not in state:
+                state[nxt] = 1
+                stack.append((nxt, iter(graph.get(nxt, []))))
+                trail.append(nxt)
+    return None
 
 
 def is_empty(v):
@@ -206,6 +254,27 @@ def run_validate(quiet=False):
                     elif re.search("[฀-๿]", v):
                         warn("%s: en_content.%s มีอักษรไทย" % (lab, k))
         check_images(c, "images", lab, err, seen_src)
+        if "verified" in c:
+            err("%s: ช่อง verified ถูกแทนด้วย review (draft / ai_reviewed / textbook) ให้ลบ verified ออก" % lab)
+        review = c.get("review")
+        if review not in REVIEW_LEVELS:
+            err("%s: review ต้องเป็นหนึ่งใน %s (พบ %r)" % (lab, ", ".join(REVIEW_LEVELS), review))
+        refs = c.get("refs")
+        if refs is not None and not (isinstance(refs, list) and all(isinstance(r, str) and r.strip() for r in refs)):
+            err("%s: refs ต้องเป็นรายการข้อความที่ไม่ว่าง" % lab)
+        elif review == "textbook" and not [r for r in (refs or []) if not r.startswith(AI_REF_PREFIX)]:
+            err("%s: review เป็น textbook ต้องมีแหล่งอ้างอิงตำราใน refs อย่างน้อย 1 รายการ" % lab)
+
+    # ห้ามมีแท็ก HTML ในข้อความใด ๆ
+    for label, objs in (("ระบบ", ds["systems"]), ("เนื้อเยื่อ", ds["tissues"]), ("เซลล์", ds["cells"])):
+        for o in objs:
+            for path, text in walk_strings(o):
+                if HTML_TAG_RE.search(text):
+                    err("%s %s: ช่อง %s มีแท็ก HTML หรือสคริปต์ (ห้ามใช้): %s" % (label, o.get("id", "?"), path, text[:40]))
+    for fid, e in ds["edges"].items():
+        for path, text in walk_strings(e):
+            if HTML_TAG_RE.search(text):
+                err("edges/%s: %s มีแท็ก HTML หรือสคริปต์ (ห้ามใช้): %s" % (fid, path, text[:40]))
 
     # ตรวจการอ้างอิงข้ามเซลล์
     for c in ds["cells"]:
@@ -244,6 +313,13 @@ def run_validate(quiet=False):
             if (kind, a, b) in seen:
                 err("edges/%s: เส้น %s %s→%s ซ้ำ" % (fid, kind, a, b))
             seen.add((kind, a, b))
+
+    # develops_from และ is_a ห้ามวนกลับ
+    for kind in ("develops_from", "is_a"):
+        pairs = [(i[0], i[1]) for e in ds["edges"].values() for i in e.get(kind, []) if isinstance(i, list) and len(i) == 2]
+        cyc = find_cycle(pairs)
+        if cyc:
+            err("%s วนกลับ: %s" % (kind, " → ".join(cyc)))
 
     # คำเตือน: ช่องว่าง/ไม่มีรูป (หนึ่งบรรทัดต่อเซลล์)
     for c in ds["cells"]:
@@ -300,6 +376,8 @@ def check_images(obj, key, lab, err, seen_src):
         for k in IMAGE_REQUIRED:
             if is_empty(img.get(k)):
                 err("%s: ขาดช่อง %s" % (where, k))
+        if not is_empty(img.get("source")) and not (isinstance(img["source"], str) and img["source"].startswith("https://")):
+            err("%s: source ต้องเป็นลิงก์ที่ขึ้นต้นด้วย https:// (พบ %s)" % (where, str(img["source"])[:40]))
         for k in IMAGE_OPTIONAL_STR:
             if k in img and img[k] is not None and not isinstance(img[k], str):
                 err("%s: %s ต้องเป็นข้อความ" % (where, k))
@@ -314,6 +392,8 @@ def check_images(obj, key, lab, err, seen_src):
             err("%s: src \"%s\" ซ้ำกับ %s" % (where, src, seen_src[src]))
         seen_src[src] = where
         if re.match(r"^https?://", src, re.I):
+            if not src.lower().startswith("https://"):
+                err("%s: src ที่เป็นลิงก์ต้องขึ้นต้นด้วย https:// (พบ %s)" % (where, src[:40]))
             if is_empty(img.get("source")):
                 err("%s: รูปจากลิงก์ภายนอกต้องมี source (หน้าต้นทางของรูป)" % where)
         else:
@@ -864,6 +944,7 @@ def cmd_build(args):
     cells_out = []
     for c in ds["cells"]:
         o = {k: v for k, v in c.items() if not k.startswith("_")}
+        o["verified"] = c.get("review") == "textbook"  # หน้าเว็บใช้ verified = ตรวจกับตำราแล้วเท่านั้น
         t = cl.get(c["id"])
         o["purl"] = OBO + c["id"].replace(":", "_")
         if t and t.get("found"):
