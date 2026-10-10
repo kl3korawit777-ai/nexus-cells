@@ -833,10 +833,21 @@ def cmd_fetch(args):
     os.makedirs(CACHE, exist_ok=True)
     print("ดึงข้อมูลจาก OLS4 จำนวน %d รหัส" % len(ids))
     fetched = 0
+    # cl_terms.json ที่ commit ไว้ใช้เป็น cache สำรอง (เช่นบน GitHub Actions ที่ cache ว่าง) ดึงจาก OLS เฉพาะรหัสที่ยังไม่มี
+    committed = {}
+    if os.path.exists(CL_TERMS) and not args.refresh:
+        try:
+            committed = load_json(CL_TERMS).get("terms", {})
+        except (ValueError, OSError):
+            committed = {}
     for i, cid in enumerate(ids, 1):
         p = cache_path(cid)
         if os.path.exists(p) and not args.refresh:
             print("  [%d/%d] %s ใช้ข้อมูลใน cache" % (i, len(ids), cid))
+            continue
+        if cid in committed and committed[cid].get("found") is not None and not args.refresh:
+            save_json(p, committed[cid])
+            print("  [%d/%d] %s ใช้ข้อมูลจาก cl_terms.json" % (i, len(ids), cid))
             continue
         try:
             t = fetch_one(cid, args.sleep)
