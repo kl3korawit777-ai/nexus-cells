@@ -1,10 +1,10 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-10 11:29
+สร้างเมื่อ: 2026-10-10 11:32
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 133 เส้น
+- ตรงกัน: 134 เส้น
 - คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 8 เส้น
 - คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 11 เส้น
 - CL มี แต่ไม่ได้คัดไว้: 68 เส้น
@@ -109,15 +109,16 @@
 
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
-- ตรงกัน: 22 เส้น
-- คัดเองมี แต่ CL ไม่มี: 63 เส้น
-- CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 4 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 61 เส้น
+- ตรงกัน: 24 เส้น
+- คัดเองมี แต่ CL ไม่มี: 64 เส้น
+- CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 5 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 60 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 452 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 458 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
+- CL:0000020 spermatogonium → CL:0000670 primordial germ cell
 - CL:0000040 monoblast → CL:0000557 granulocyte monocyte progenitor cell
 - CL:0000049 common myeloid progenitor → CL:0000037 hematopoietic stem cell
 - CL:0000050 megakaryocyte-erythroid progenitor cell → CL:0000049 common myeloid progenitor
@@ -187,11 +188,11 @@
 - CL:0000542 lymphocyte → CL:0000051 common lymphoid progenitor
 - CL:0000561 amacrine cell → CL:0000740 retinal ganglion cell
 - CL:0000738 leukocyte → CL:0000037 hematopoietic stem cell
+- CL:0002255 stromal cell of endometrium → CL:2000002 decidual cell
 - CL:0002453 oligodendrocyte precursor cell → CL:0000125 glial cell
 
 ### develops_from ที่ CL ชี้ไปเซลล์นอกชุดข้อมูล
 
-- CL:0000024 oogonial cell ← CL:0000670 primordial germ cell
 - CL:0000037 hematopoietic stem cell ← CL:0000566 angioblastic mesenchymal cell
 - CL:0000040 monoblast ← CL:0002009 macrophage dendritic cell progenitor
 - CL:0000040 monoblast ← CL:0017503 basophilic cytoplasm
@@ -243,8 +244,8 @@
 - CL:0002063 pulmonary alveolar type 2 cell ← CL:4040003 fetal pre-type II pulmonary alveolar epithelial cell
 - CL:0002138 endothelial cell of lymphatic vessel ← CL:0005022 vascular lymphangioblast
 - CL:0002145 multiciliated columnar cell of tracheobronchial tree ← CL:0002209 intermediate epitheliocyte
-- CL:0002255 stromal cell of endometrium ← CL:2000002 decidual cell
 - CL:0002302 type A synovial cell ← CL:0000842 mononuclear leukocyte
+- CL:0002326 luminal epithelial cell of mammary gland ← CL:0009116 progenitor cell of mammary luminal epithelium
 - CL:0002453 oligodendrocyte precursor cell ← CL:0000339 glioblast (sensu Vertebrata)
 - CL:0002453 oligodendrocyte precursor cell ← CL:4023059 committed oligodendrocyte precursor
 - CL:0007010 osteoprogenitor cell ← CL:0000222 mesodermal cell
@@ -253,7 +254,7 @@
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 - CL:4072104 fibrochondrocyte ← CL:0020021 fibrochondrocyte progenitor cell
 
-## คำเตือนจาก validate (255)
+## คำเตือนจาก validate (265)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -469,6 +470,16 @@
 - CL:0002255 (stromal cell of endometrium): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000523 (mononuclear cytotrophoblast cell): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
 - CL:0000525 (syncytiotrophoblast cell): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
+- CL:0002340 (luminal cell of prostate epithelium): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:4030007 (fallopian tube multiciliated epithelial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:4052050 (luminal epithelial cell of endometrium): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0009084 (glandular epithelial cell of endometrium): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:2000002 (decidual cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002366 (myometrial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002326 (luminal epithelial cell of mammary gland): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002324 (basal-myoepithelial cell of mammary gland): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0002322 (embryonic stem cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000670 (primordial germ cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0002062 (pulmonary alveolar type 1 cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0002063 (pulmonary alveolar type 2 cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000158 (club cell): ช่องว่าง: lifespan, diseases, tissue_subtype; ยังไม่มีรูป

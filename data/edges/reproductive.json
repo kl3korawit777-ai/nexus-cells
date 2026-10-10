@@ -27,6 +27,18 @@
     [
       "CL:0000525",
       "CL:0000523"
+    ],
+    [
+      "CL:2000002",
+      "CL:0002255"
+    ],
+    [
+      "CL:0000020",
+      "CL:0000670"
+    ],
+    [
+      "CL:0000024",
+      "CL:0000670"
     ]
   ],
   "is_a": [
@@ -37,6 +49,10 @@
     [
       "CL:0000175",
       "CL:0000174"
+    ],
+    [
+      "CL:0002366",
+      "CL:0000192"
     ]
   ],
   "interacts_with": [
@@ -69,6 +85,66 @@
       "to": "CL:0000175",
       "th": "hCG จากรกกระตุ้น luteal cell ให้หลั่งโปรเจสเตอโรนต่อในระยะแรกของการตั้งครรภ์",
       "mode": "hormone"
+    },
+    {
+      "from": "CL:0000501",
+      "to": "CL:4052050",
+      "th": "เอสโตรเจนจาก granulosa cell กระตุ้นให้เยื่อบุโพรงมดลูกเพิ่มจำนวน (ระยะ proliferative)",
+      "mode": "hormone"
+    },
+    {
+      "from": "CL:0000175",
+      "to": "CL:0002255",
+      "th": "โพรเจสเทอโรนจาก luteal cell กระตุ้น stroma ให้เปลี่ยนเป็น decidual cell (decidualization)",
+      "mode": "hormone"
+    },
+    {
+      "from": "CL:0000175",
+      "to": "CL:0009084",
+      "th": "โพรเจสเทอโรนกระตุ้นต่อมเยื่อบุมดลูกให้หลั่งสารอาหาร (ระยะ secretory)",
+      "mode": "hormone"
+    },
+    {
+      "from": "CL:0000437",
+      "to": "CL:0000175",
+      "th": "LH กระตุ้นการสร้าง corpus luteum และ luteal cell",
+      "mode": "hormone"
+    },
+    {
+      "from": "CL:0011003",
+      "to": "CL:0002366",
+      "th": "oxytocin จากเซลล์ประสาท magnocellular กระตุ้นการบีบตัวของมดลูก",
+      "mode": "hormone"
+    },
+    {
+      "from": "CL:0011003",
+      "to": "CL:0002324",
+      "th": "oxytocin กระตุ้น myoepithelial cell ให้บีบน้ำนมออก (milk ejection)",
+      "mode": "hormone"
+    },
+    {
+      "from": "CL:0002311",
+      "to": "CL:0002326",
+      "th": "prolactin จาก mammotroph กระตุ้นการสร้างน้ำนม",
+      "mode": "hormone"
+    },
+    {
+      "from": "CL:0002324",
+      "to": "CL:0002326",
+      "th": "myoepithelial cell บีบตัวดันน้ำนมจาก luminal cell ออกสู่ท่อ",
+      "mode": "support"
+    },
+    {
+      "from": "CL:0000178",
+      "to": "CL:0002340",
+      "th": "testosterone จาก Leydig cell (เป็น DHT) ควบคุมการเจริญและหน้าที่ของ prostate luminal cell",
+      "mode": "hormone"
+    },
+    {
+      "from": "CL:0000523",
+      "to": "CL:2000002",
+      "th": "trophoblast แทรกเข้าสู่ decidua และสื่อสารกับ decidual cell",
+      "mode": "paracrine"
     }
   ]
 }

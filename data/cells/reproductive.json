@@ -482,5 +482,349 @@
     "images": [],
     "verified": false,
     "refs": []
+  },
+  {
+    "id": "CL:0002340",
+    "slug": "prostate-luminal-epithelial-cell",
+    "kind": "cell",
+    "en": "luminal cell of prostate epithelium",
+    "th": "เซลล์เยื่อบุผิวด้านในของต่อมลูกหมาก (prostate luminal cell)",
+    "systems": [
+      "reproductive"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "glandular",
+    "location": "ต่อมลูกหมาก (prostate gland) บุผนังด้านในของต่อมและท่อ",
+    "morphology": "เซลล์ทรงสูงถึงลูกบาศก์ ไซโทพลาซึมสีจาง เรียงบนชั้นเซลล์เบซัล",
+    "function": "หลั่งน้ำเลี้ยงของต่อมลูกหมาก (prostatic fluid) ซึ่งเป็นส่วนหนึ่งของน้ำอสุจิ มีกรดซิตริก สังกะสี และ PSA (prostate-specific antigen) ซึ่งช่วยทำให้อสุจิที่จับตัวเป็นก้อนละลาย",
+    "secretes": [
+      "PSA (KLK3)",
+      "กรดซิตริก",
+      "prostatic acid phosphatase",
+      "สังกะสี"
+    ],
+    "markers": [
+      "PSA (KLK3)",
+      "androgen receptor",
+      "NKX3-1"
+    ],
+    "lifespan": "",
+    "exam": "ต่อมลูกหมากอยู่ใต้การควบคุมของแอนโดรเจน (DHT จาก testosterone ด้วย 5α-reductase) PSA ใช้ตรวจคัดกรองมะเร็งต่อมลูกหมาก ยา finasteride ยับยั้ง 5α-reductase ใช้รักษาต่อมลูกหมากโต",
+    "diseases": [
+      "ต่อมลูกหมากโตชนิดไม่ร้าย (BPH)",
+      "มะเร็งต่อมลูกหมาก (adenocarcinoma)",
+      "ต่อมลูกหมากอักเสบ"
+    ],
+    "confused_with": [
+      "CL:0000216"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:4030007",
+    "slug": "oviduct-ciliated-cell",
+    "kind": "cell",
+    "en": "fallopian tube multiciliated epithelial cell",
+    "th": "เซลล์ขนกวัดของท่อนำไข่ (oviduct ciliated cell)",
+    "systems": [
+      "reproductive"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-columnar",
+    "location": "เยื่อบุผิวของท่อนำไข่ (fallopian tube) พบมากที่ infundibulum และ ampulla",
+    "morphology": "เซลล์คอลัมนาร์ที่ปลายเซลล์มีซิเลียจำนวนมาก แทรกอยู่กับ peg cell ที่หลั่งสาร",
+    "function": "ซิเลียพัดไปทางมดลูก ช่วยกวาดไข่ที่ตกออกจากรังไข่และตัวอ่อนระยะแรกไปตามท่อ ร่วมกับการบีบตัวของกล้ามเนื้อ การปฏิสนธิส่วนใหญ่เกิดที่ ampulla",
+    "secretes": [],
+    "markers": [
+      "FOXJ1",
+      "acetylated tubulin"
+    ],
+    "lifespan": "",
+    "exam": "การเคลื่อนไหวของซิเลียผิดปกติ (เช่น Kartagener syndrome) ทำให้เกิดมีบุตรยากและเสี่ยงท้องนอกมดลูก (ectopic pregnancy) ส่วนใหญ่เกิดที่ท่อนำไข่",
+    "diseases": [
+      "ท้องนอกมดลูก (ectopic pregnancy)",
+      "Kartagener syndrome",
+      "ท่อนำไข่อักเสบ (PID)"
+    ],
+    "confused_with": [
+      "CL:0002145"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:4052050",
+    "slug": "endometrial-luminal-epithelial-cell",
+    "kind": "cell",
+    "en": "luminal epithelial cell of endometrium",
+    "th": "เซลล์เยื่อบุผิวผิวหน้าของเยื่อบุโพรงมดลูก (endometrial luminal epithelial cell)",
+    "systems": [
+      "reproductive"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-columnar",
+    "location": "ผิวด้านในของเยื่อบุโพรงมดลูก (endometrium) ด้านที่ติดกับโพรงมดลูก",
+    "morphology": "เซลล์คอลัมนาร์ชั้นเดียว มีทั้งเซลล์มีซิเลียและเซลล์หลั่งสาร",
+    "function": "เป็นด่านแรกที่สัมผัสกับตัวอ่อนระยะ blastocyst มีช่วงที่เยื่อบุพร้อมรับการฝังตัว (window of implantation) ในระยะ secretory ของรอบเดือน ตอบสนองต่อเอสโตรเจนและโพรเจสเทอโรน",
+    "secretes": [],
+    "markers": [
+      "PAX8",
+      "estrogen receptor",
+      "progesterone receptor"
+    ],
+    "lifespan": "",
+    "exam": "เยื่อบุมดลูกมี functional layer ซึ่งหลุดลอกเป็นประจำเดือน และ basal layer ซึ่งสร้างชั้นใหม่ ระยะ proliferative ใช้เอสโตรเจน ระยะ secretory ใช้โพรเจสเทอโรน",
+    "diseases": [
+      "endometrial carcinoma",
+      "endometriosis"
+    ],
+    "confused_with": [
+      "CL:0009084",
+      "CL:0002255"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0009084",
+    "slug": "endometrial-glandular-epithelial-cell",
+    "kind": "cell",
+    "en": "glandular epithelial cell of endometrium",
+    "th": "เซลล์เยื่อบุต่อมของเยื่อบุโพรงมดลูก (endometrial gland cell)",
+    "systems": [
+      "reproductive"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "glandular",
+    "location": "ต่อมของเยื่อบุโพรงมดลูก (uterine gland) ที่ฝังลงใน stroma",
+    "morphology": "เซลล์คอลัมนาร์ เรียงเป็นต่อมท่อตรงในระยะ proliferative และคดเคี้ยวมีริ้วคล้ายฟันเลื่อยในระยะ secretory",
+    "function": "ในระยะ secretory (หลังตกไข่) หลั่งสารอาหาร เช่น ไกลโคเจน (เรียกว่า uterine milk) เพื่อเลี้ยงตัวอ่อนก่อนที่รกจะพัฒนา ภายใต้โพรเจสเทอโรนจาก corpus luteum",
+    "secretes": [
+      "ไกลโคเจน",
+      "uterine milk"
+    ],
+    "markers": [
+      "PAX8",
+      "progesterone receptor"
+    ],
+    "lifespan": "",
+    "exam": "ต่อมเยื่อบุมดลูกรูปฟันเลื่อย (sawtooth) และมีไกลโคเจนเป็นลักษณะของระยะ secretory",
+    "diseases": [
+      "endometrial hyperplasia",
+      "endometrial carcinoma"
+    ],
+    "confused_with": [
+      "CL:4052050"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:2000002",
+    "slug": "decidual-cell",
+    "kind": "cell",
+    "en": "decidual cell",
+    "th": "เดซิดูอัลเซลล์ (decidual cell)",
+    "systems": [
+      "reproductive"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "loose",
+    "location": "เยื่อบุโพรงมดลูกชั้น stroma ในช่วงปลาย secretory phase และตลอดการตั้งครรภ์ (decidua)",
+    "morphology": "เซลล์โตรูปหลายเหลี่ยม ไซโทพลาซึมใสมีไกลโคเจนและไขมัน",
+    "function": "เปลี่ยนมาจากเซลล์ stroma ของเยื่อบุมดลูกภายใต้โพรเจสเทอโรน (decidualization) หลั่งโปรแลกตินและ IGFBP-1 สนับสนุนการฝังตัวของตัวอ่อน และควบคุมความลึกของการแทรกของ trophoblast",
+    "secretes": [
+      "prolactin",
+      "IGFBP-1"
+    ],
+    "markers": [
+      "prolactin",
+      "IGFBP1"
+    ],
+    "lifespan": "",
+    "exam": "decidua คือเยื่อบุโพรงมดลูกที่เปลี่ยนไปในการตั้งครรภ์ ถ้าชั้น decidua บางผิดปกติ trophoblast อาจแทรกลึกเกินไป (placenta accreta)",
+    "diseases": [
+      "placenta accreta"
+    ],
+    "confused_with": [
+      "CL:0002255",
+      "CL:0000523"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002366",
+    "slug": "myometrial-cell",
+    "kind": "cell",
+    "en": "myometrial cell",
+    "th": "เซลล์กล้ามเนื้อเรียบของมดลูก (myometrial cell)",
+    "systems": [
+      "reproductive"
+    ],
+    "tissue": "muscle",
+    "tissue_subtype": "smooth-muscle",
+    "location": "myometrium ซึ่งเป็นชั้นกล้ามเนื้อหนาของผนังมดลูก",
+    "morphology": "เซลล์รูปกระสวยเรียงเป็นมัด ขนาดเพิ่มขึ้นมากในการตั้งครรภ์ทั้งจำนวนและขนาด",
+    "function": "บีบตัวเพื่อคลอดทารกภายใต้การกระตุ้นของ oxytocin ซึ่งตัวรับเพิ่มขึ้นมากเมื่อใกล้คลอด และบีบตัวหลังคลอดเพื่อห้ามเลือดและให้มดลูกกลับสู่ขนาดเดิม",
+    "secretes": [],
+    "markers": [
+      "oxytocin receptor",
+      "α-SMA",
+      "desmin"
+    ],
+    "lifespan": "",
+    "exam": "ช่วงตั้งครรภ์ myometrium ทั้ง hypertrophy และ hyperplasia ถ้ามดลูกหดรัดตัวไม่ดีหลังคลอด (uterine atony) เกิดเลือดออกหลังคลอด ยากลุ่ม oxytocin ใช้กระตุ้นการหดตัว",
+    "diseases": [
+      "เนื้องอกมดลูก (leiomyoma)",
+      "adenomyosis",
+      "ตกเลือดหลังคลอดจาก uterine atony"
+    ],
+    "confused_with": [
+      "CL:0000192"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002326",
+    "slug": "mammary-luminal-epithelial-cell",
+    "kind": "cell",
+    "en": "luminal epithelial cell of mammary gland",
+    "th": "เซลล์เยื่อบุผิวด้านในของต่อมน้ำนม (mammary luminal cell)",
+    "systems": [
+      "reproductive"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-cuboidal",
+    "location": "ท่อและถุงผลิตน้ำนม (alveolus) ของต่อมน้ำนม",
+    "morphology": "เซลล์ลูกบาศก์ถึงคอลัมนาร์เรียงชั้นเดียวบนชั้น myoepithelial cell",
+    "function": "ผลิตน้ำนมในระยะให้นมภายใต้ฮอร์โมนโปรแลกติน (ส่วนประกอบเช่น ไขมัน แลกโทส โปรตีนเคซีนและภูมิคุ้มกัน IgA)",
+    "secretes": [
+      "น้ำนม (casein, lactose, lipid)",
+      "IgA"
+    ],
+    "markers": [
+      "cytokeratin 8/18",
+      "estrogen receptor",
+      "α-lactalbumin"
+    ],
+    "lifespan": "",
+    "exam": "prolactin จากต่อมใต้สมองส่วนหน้ากระตุ้นการผลิตน้ำนม ส่วน oxytocin กระตุ้นการขับน้ำนม (milk ejection) ผ่าน myoepithelial cell มะเร็งเต้านมส่วนใหญ่เกิดจาก luminal cell",
+    "diseases": [
+      "มะเร็งเต้านม (breast cancer)",
+      "เต้านมอักเสบ (mastitis)"
+    ],
+    "confused_with": [
+      "CL:0002324"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002324",
+    "slug": "mammary-myoepithelial-cell",
+    "kind": "cell",
+    "en": "basal-myoepithelial cell of mammary gland",
+    "th": "เซลล์ไมโออีพิทีเลียลของต่อมน้ำนม (mammary myoepithelial cell)",
+    "systems": [
+      "reproductive"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "glandular",
+    "location": "ล้อมรอบถุงน้ำนม (alveolus) และท่อน้ำนม อยู่ระหว่าง luminal cell กับเยื่อฐาน",
+    "morphology": "เซลล์รูปดาวหรือกระสวย มีแขนงหุ้มรอบถุงน้ำนมเหมือนตะกร้า มีเส้นใยแอกตินที่หดตัวได้",
+    "function": "หดตัวเมื่อได้รับ oxytocin เพื่อบีบน้ำนมออกจากถุงน้ำนมเข้าสู่ท่อ (milk let-down หรือ milk ejection reflex)",
+    "secretes": [],
+    "markers": [
+      "α-SMA",
+      "p63",
+      "cytokeratin 5/14"
+    ],
+    "lifespan": "",
+    "exam": "การดูดนมกระตุ้นไฮโพทาลามัสให้หลั่ง oxytocin จากต่อมใต้สมองส่วนหลัง ไปทำให้ myoepithelial cell หดตัว ต่างจาก prolactin ที่ผลิตน้ำนม",
+    "diseases": [],
+    "confused_with": [
+      "CL:0002326",
+      "CL:1000417"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002322",
+    "slug": "embryonic-stem-cell",
+    "kind": "cell",
+    "en": "embryonic stem cell",
+    "th": "เซลล์ต้นกำเนิดตัวอ่อน (embryonic stem cell)",
+    "systems": [
+      "reproductive"
+    ],
+    "tissue": "other",
+    "tissue_subtype": "stem-progenitor",
+    "location": "inner cell mass (embryoblast) ของ blastocyst ในตัวอ่อนระยะต้น",
+    "morphology": "เซลล์ขนาดเล็ก อัตราส่วนนิวเคลียสต่อไซโทพลาซึมสูง",
+    "function": "เป็นเซลล์ pluripotent สามารถเปลี่ยนเป็นเซลล์ได้ทั้งสามชั้นเชื้อโรค (ectoderm, mesoderm, endoderm) และแบ่งตัวสร้างตัวเองได้ต่อเนื่อง แต่ไม่ก่อให้เกิดรกและเนื้อเยื่อนอกตัวอ่อน",
+    "secretes": [],
+    "markers": [
+      "OCT4 (POU5F1)",
+      "NANOG",
+      "SOX2"
+    ],
+    "lifespan": "",
+    "exam": "totipotent (zygote และเซลล์ระยะ morula ตอนแรก) สร้างได้ทั้งตัวอ่อนและรก, pluripotent (ICM ของ blastocyst) สร้างได้ทั้งสามชั้นเชื้อโรคแต่ไม่สร้างรก, multipotent (เซลล์ต้นกำเนิดผู้ใหญ่) สร้างได้เฉพาะกลุ่มเซลล์",
+    "diseases": [
+      "teratoma (ถ้าฉีดเซลล์ต้นกำเนิดตัวอ่อนที่ไม่แยกความต่างในสัตว์ทดลอง)"
+    ],
+    "confused_with": [
+      "CL:0000670",
+      "CL:0000134"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000670",
+    "slug": "primordial-germ-cell",
+    "kind": "cell",
+    "en": "primordial germ cell",
+    "th": "เซลล์สืบพันธุ์ปฐมภูมิ (primordial germ cell)",
+    "systems": [
+      "reproductive"
+    ],
+    "tissue": "other",
+    "tissue_subtype": "germ-cell",
+    "location": "เกิดที่ epiblast และพบที่ผนัง yolk sac ใกล้ allantois ในสัปดาห์ที่ 3 ถึง 4 แล้วอพยพไปที่ genital ridge ในสัปดาห์ที่ 5 ถึง 6",
+    "morphology": "เซลล์กลมขนาดใหญ่ ไซโทพลาซึมใส มีเอนไซม์ alkaline phosphatase",
+    "function": "เป็นเซลล์ต้นกำเนิดของเซลล์สืบพันธุ์ เมื่อไปถึง gonad จะเจริญเป็น spermatogonium ในเพศชายหรือ oogonium ในเพศหญิง",
+    "secretes": [],
+    "markers": [
+      "OCT4",
+      "BLIMP1 (PRDM1)",
+      "alkaline phosphatase"
+    ],
+    "lifespan": "",
+    "exam": "PGC เกิดที่ผนัง yolk sac (ไม่ได้เกิดที่ gonad) แล้วอพยพผ่านผนังลำไส้ส่วนหลังไป genital ridge ถ้าอพยพผิดที่อาจเป็นต้นกำเนิดของ germ cell tumor เช่น sacrococcygeal teratoma",
+    "diseases": [
+      "germ cell tumor",
+      "sacrococcygeal teratoma"
+    ],
+    "confused_with": [
+      "CL:0000020",
+      "CL:0000024"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
   }
 ]
