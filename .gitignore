@@ -1,3 +1,4 @@
 data/generated/cache/
 __pycache__/
 node_modules/
+site/images/_originals/
