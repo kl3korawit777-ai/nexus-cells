@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-10T04:15:04+00:00",
+  "fetched_at": "2026-10-10T04:18:14+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -9822,6 +9822,1337 @@
         {
           "id": "UBERON:0001281",
           "label": "hepatic sinusoid"
+        }
+      ]
+    },
+    "CL:0000061": {
+      "id": "CL:0000061",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000061",
+      "label": "cementoblast",
+      "definition": "Skeletogenic cell that produces cementum (a bony substance that covers the root of a tooth), is part of the odontogenic papilla, and develops from a precementoblast cell.",
+      "synonyms": [
+        "cementum secreting cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000062",
+          "label": "osteoblast"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000062",
+          "label": "osteoblast"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0007002",
+          "label": "precementoblast"
+        },
+        {
+          "id": "UBERON:0001753",
+          "label": "cementum"
+        },
+        {
+          "id": "UBERON:0005176",
+          "label": "tooth enamel organ"
+        }
+      ]
+    },
+    "CL:0009096": {
+      "id": "CL:0009096",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0009096",
+      "label": "esophagus non-keratinized squamous epithelial cell",
+      "definition": "Any cell that is part of the esophageal non-keratinized stratified squamous epithelium. In humans, the esophagus, which requires flexibility to accommodate swallowing of a bolus, is covered with a non-keratinized epithelium.",
+      "synonyms": [
+        "esophageal non-keratinized squamous epithelial cell",
+        "esophageal nonkeratinized squamous epithelial cell",
+        "esophagus non-keratinizing squamous epithelial cell",
+        "esophagus nonkeratinizing squamous epithelial cell",
+        "non-keratinized squamous epithelial cell of esophagus",
+        "non-keratinizing squamous epithelial cell of esophagus",
+        "nonkeratinized squamous epithelial cell of esophagus",
+        "nonkeratinizing squamous epithelial cell of esophagus"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000238",
+          "label": "non keratinizing barrier epithelial cell"
+        },
+        {
+          "id": "CL:0002252",
+          "label": "epithelial cell of esophagus"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000076",
+          "label": "squamous epithelial cell"
+        },
+        {
+          "id": "CL:0000079",
+          "label": "stratified epithelial cell"
+        },
+        {
+          "id": "CL:0000238",
+          "label": "non keratinizing barrier epithelial cell"
+        },
+        {
+          "id": "CL:0000240",
+          "label": "stratified squamous epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002252",
+          "label": "epithelial cell of esophagus"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0006920",
+          "label": "esophagus squamous epithelium"
+        }
+      ]
+    },
+    "CL:0000504": {
+      "id": "CL:0000504",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000504",
+      "label": "enterochromaffin-like cell",
+      "definition": "A enteroendocrine cell part of the glands of the gastric mucosa. They produce histamine and peptides such as chromogranins. This cell type respond to gastrin by releasing histamine which acts as a paracrine stimulator of the release of hydrochloric acid from the gastric parietal cells.",
+      "synonyms": [
+        "ECL"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000164",
+          "label": "enteroendocrine cell"
+        },
+        {
+          "id": "CL:0002274",
+          "label": "histamine secreting cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000164",
+          "label": "enteroendocrine cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000457",
+          "label": "biogenic amine secreting cell"
+        },
+        {
+          "id": "CL:0002274",
+          "label": "histamine secreting cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0002267": {
+      "id": "CL:0002267",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002267",
+      "label": "type D cell of stomach",
+      "definition": "A type D cell found in the stomach.",
+      "synonyms": [
+        "delta cell of stomach",
+        "stomach D-cell",
+        "stomach delta cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000502",
+          "label": "type D enteroendocrine cell"
+        },
+        {
+          "id": "CL:0002659",
+          "label": "glandular epithelial cell of stomach"
+        },
+        {
+          "id": "CL:1000222",
+          "label": "stomach neuroendocrine cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000164",
+          "label": "enteroendocrine cell"
+        },
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000172",
+          "label": "somatostatin secreting cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000502",
+          "label": "type D enteroendocrine cell"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002178",
+          "label": "epithelial cell of stomach"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:0002659",
+          "label": "glandular epithelial cell of stomach"
+        },
+        {
+          "id": "CL:1000222",
+          "label": "stomach neuroendocrine cell"
+        },
+        {
+          "id": "CL:1001517",
+          "label": "stomach enteroendocrine cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0002204": {
+      "id": "CL:0002204",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002204",
+      "label": "tuft cell",
+      "definition": "An epithelial cell found in various organs, including the gastrointestinal and respiratory tracts, characterized by a tuft of 120-140 blunt microvilli on its apical surface. This cell exhibits diverse functions depending on its location, which includes chemosensation, initiation of immune responses, contribution to mucociliary clearance, and defense against parasites.",
+      "synonyms": [
+        "brush cell",
+        "caveolated cell",
+        "fibrillovesicular cell",
+        "multivesicular cell",
+        "peculiar cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0151001",
+          "label": "tuft"
+        }
+      ]
+    },
+    "CL:1000347": {
+      "id": "CL:1000347",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_1000347",
+      "label": "colonocyte",
+      "definition": "An enterocyte (absorptive epithelial cell) of the colonic epithelium, characterized by a columnar shape. This cell is responsible for the absorption, transport, and metabolization of short-chain fatty acids (SCFAs) produced by gut bacteria, as well as the transport and absorption of water and electrolytes.",
+      "synonyms": [
+        "enterocyte of colon",
+        "vacuolar absorptive cell of epithelium of colon"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0002071",
+          "label": "enterocyte of epithelium of large intestine"
+        },
+        {
+          "id": "CL:0011108",
+          "label": "colon epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000239",
+          "label": "brush border epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000584",
+          "label": "enterocyte"
+        },
+        {
+          "id": "CL:0000677",
+          "label": "gut absorptive cell"
+        },
+        {
+          "id": "CL:0002071",
+          "label": "enterocyte of epithelium of large intestine"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002253",
+          "label": "epithelial cell of large intestine"
+        },
+        {
+          "id": "CL:0002563",
+          "label": "intestinal epithelial cell"
+        },
+        {
+          "id": "CL:0011108",
+          "label": "colon epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0019626",
+          "label": "short-chain fatty acid catabolic process"
+        },
+        {
+          "id": "GO:0035377",
+          "label": "transepithelial water transport"
+        }
+      ]
+    },
+    "CL:0002277": {
+      "id": "CL:0002277",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002277",
+      "label": "type I enteroendocrine cell",
+      "definition": "An enteroendocrine cell commonest in the duodenum and jejunum, rare in ileum, that secretes cholecystokinin. This cell type is involved in the regulation of digestive enzymes and bile.",
+      "synonyms": [
+        "CCK cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0009006",
+          "label": "enteroendocrine cell of small intestine"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000164",
+          "label": "enteroendocrine cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002254",
+          "label": "epithelial cell of small intestine"
+        },
+        {
+          "id": "CL:0002563",
+          "label": "intestinal epithelial cell"
+        },
+        {
+          "id": "CL:0009006",
+          "label": "enteroendocrine cell of small intestine"
+        },
+        {
+          "id": "CL:1001516",
+          "label": "intestinal enteroendocrine cell"
+        },
+        {
+          "id": "CL:1001598",
+          "label": "small intestine secretory cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0002281": {
+      "id": "CL:0002281",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002281",
+      "label": "type S enteroendocrine cell",
+      "definition": "Scattered in duodenojejunal mucosa, this enteroendocrine cell secretes secretin and serotonin.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000458",
+          "label": "serotonin secreting cell"
+        },
+        {
+          "id": "CL:0009006",
+          "label": "enteroendocrine cell of small intestine"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000164",
+          "label": "enteroendocrine cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000457",
+          "label": "biogenic amine secreting cell"
+        },
+        {
+          "id": "CL:0000458",
+          "label": "serotonin secreting cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002254",
+          "label": "epithelial cell of small intestine"
+        },
+        {
+          "id": "CL:0002563",
+          "label": "intestinal epithelial cell"
+        },
+        {
+          "id": "CL:0009006",
+          "label": "enteroendocrine cell of small intestine"
+        },
+        {
+          "id": "CL:1001516",
+          "label": "intestinal enteroendocrine cell"
+        },
+        {
+          "id": "CL:1001598",
+          "label": "small intestine secretory cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0002278": {
+      "id": "CL:0002278",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002278",
+      "label": "GIP cell",
+      "definition": "An enteroendocrine cell of duodenum and jejunum that produces gastric inhibitory peptide.",
+      "synonyms": [
+        "type K enteroendocrine cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0009006",
+          "label": "enteroendocrine cell of small intestine"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000164",
+          "label": "enteroendocrine cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002254",
+          "label": "epithelial cell of small intestine"
+        },
+        {
+          "id": "CL:0002563",
+          "label": "intestinal epithelial cell"
+        },
+        {
+          "id": "CL:0009006",
+          "label": "enteroendocrine cell of small intestine"
+        },
+        {
+          "id": "CL:1001516",
+          "label": "intestinal enteroendocrine cell"
+        },
+        {
+          "id": "CL:1001598",
+          "label": "small intestine secretory cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0002279": {
+      "id": "CL:0002279",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002279",
+      "label": "type L enteroendocrine cell",
+      "definition": "A enteroendocrine cell type that is numerous in ileum, present in jejunum and large intestine, few in duodenum. This cell type produces glucagon-like immunoreactants (glicentin, glucagon-37, glucagon-29, GLP-1 and -2) and PYY.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:1001516",
+          "label": "intestinal enteroendocrine cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000164",
+          "label": "enteroendocrine cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:0002251",
+          "label": "epithelial cell of alimentary canal"
+        },
+        {
+          "id": "CL:0002563",
+          "label": "intestinal epithelial cell"
+        },
+        {
+          "id": "CL:1001516",
+          "label": "intestinal enteroendocrine cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
+    },
+    "CL:0000577": {
+      "id": "CL:0000577",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000577",
+      "label": "type EC enteroendocrine cell",
+      "definition": "A subtype of enteroendocrine cells found in the gastrointestinal mucosa, particularly in the glands of pyloric antrum; duodenum; and ileum. These cell type secretes serotonin and some neurotransmitters including enkephalins and substance P. Their secretory granules stain readily with silver (argentaffin stain).",
+      "synonyms": [
+        "Kulchitsky cell",
+        "argentaffin cell",
+        "enterochromaffin cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000164",
+          "label": "enteroendocrine cell"
+        },
+        {
+          "id": "CL:0000166",
+          "label": "chromaffin cell"
+        },
+        {
+          "id": "CL:0000458",
+          "label": "serotonin secreting cell"
+        },
+        {
+          "id": "CL:0000506",
+          "label": "enkephalin secreting cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000029",
+          "label": "neural crest derived neuron"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000075",
+          "label": "columnar/cuboidal epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000163",
+          "label": "endocrine cell"
+        },
+        {
+          "id": "CL:0000164",
+          "label": "enteroendocrine cell"
+        },
+        {
+          "id": "CL:0000165",
+          "label": "neuroendocrine cell"
+        },
+        {
+          "id": "CL:0000166",
+          "label": "chromaffin cell"
+        },
+        {
+          "id": "CL:0000167",
+          "label": "peptide hormone secreting cell"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000404",
+          "label": "electrically signaling cell"
+        },
+        {
+          "id": "CL:0000457",
+          "label": "biogenic amine secreting cell"
+        },
+        {
+          "id": "CL:0000458",
+          "label": "serotonin secreting cell"
+        },
+        {
+          "id": "CL:0000506",
+          "label": "enkephalin secreting cell"
+        },
+        {
+          "id": "CL:0000507",
+          "label": "endorphin secreting cell"
+        },
+        {
+          "id": "CL:0000527",
+          "label": "efferent neuron"
+        },
+        {
+          "id": "CL:0000540",
+          "label": "neuron"
+        },
+        {
+          "id": "CL:0000568",
+          "label": "amine precursor uptake and decarboxylation cell"
+        },
+        {
+          "id": "CL:0000710",
+          "label": "neurecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002319",
+          "label": "neural cell"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0004786",
+          "label": "gastrointestinal system mucosa"
+        }
+      ]
+    },
+    "CL:0002080": {
+      "id": "CL:0002080",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002080",
+      "label": "pancreatic centro-acinar cell",
+      "definition": "A cubodial epithelial cell that is continuous with the lining of intercalated ducts that drain the acinus. This cell type secretes a high pH solution to aid in activation of zymogens, and can differentiate into endocrine and exocrine pancreatic cell types.",
+      "synonyms": [
+        "centroacinar cell of Langerhans",
+        "pancreatic centroacinar cell"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:1001433",
+          "label": "epithelial cell of exocrine pancreas"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000083",
+          "label": "epithelial cell of pancreas"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002076",
+          "label": "endo-epithelial cell"
+        },
+        {
+          "id": "CL:1001433",
+          "label": "epithelial cell of exocrine pancreas"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "GO:0015106",
+          "label": "bicarbonate transmembrane transporter activity"
+        },
+        {
+          "id": "UBERON:0001263",
+          "label": "pancreatic acinus"
+        }
+      ]
+    },
+    "CL:1000415": {
+      "id": "CL:1000415",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_1000415",
+      "label": "epithelial cell of gallbladder",
+      "definition": "An epithelial cell that is part of the gallbladder.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0002110",
+          "label": "gallbladder"
         }
       ]
     },

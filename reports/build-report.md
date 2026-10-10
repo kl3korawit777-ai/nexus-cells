@@ -1,13 +1,13 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-10 11:15
+สร้างเมื่อ: 2026-10-10 11:18
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 96 เส้น
+- ตรงกัน: 106 เส้น
 - คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 6 เส้น
-- คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 7 เส้น
-- CL มี แต่ไม่ได้คัดไว้: 44 เส้น
+- คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 9 เส้น
+- CL มี แต่ไม่ได้คัดไว้: 57 เส้น
 
 ### is_a ที่คัดเองข้ามขั้น
 ถูกตามความหมาย แต่ใน CL มีตัวกลางอยู่ระหว่างสองรหัสนี้ในชุดข้อมูล
@@ -24,11 +24,13 @@
 
 - CL:0000236 B cell → CL:0000145 professional antigen presenting cell
 - CL:0000446 chief cell of parathyroid gland → CL:0000167 peptide hormone secreting cell
+- CL:0000504 enterochromaffin-like cell → CL:0002178 epithelial cell of stomach
 - CL:0000509 gastrin secreting cell → CL:0002178 epithelial cell of stomach
 - CL:0000545 T-helper 1 cell → CL:0000912 helper T cell
 - CL:0000546 T-helper 2 cell → CL:0000912 helper T cell
 - CL:0000815 regulatory T cell → CL:0000912 helper T cell
 - CL:0000899 T-helper 17 cell → CL:0000912 helper T cell
+- CL:0002204 tuft cell → CL:0002563 intestinal epithelial cell
 
 ### is_a ที่ CL มีแต่ไม่ได้คัดไว้
 
@@ -57,6 +59,8 @@
 - CL:0000556 megakaryocyte → CL:0000988 hematopoietic cell
 - CL:0000557 granulocyte monocyte progenitor cell → CL:0000988 hematopoietic cell
 - CL:0000558 reticulocyte → CL:0000988 hematopoietic cell
+- CL:0000577 type EC enteroendocrine cell → CL:0000165 neuroendocrine cell
+- CL:0000577 type EC enteroendocrine cell → CL:0000167 peptide hormone secreting cell
 - CL:0000589 cochlear inner hair cell → CL:0000101 sensory neuron
 - CL:0000601 cochlear outer hair cell → CL:0000101 sensory neuron
 - CL:0000623 natural killer cell → CL:0001065 innate lymphoid cell
@@ -71,7 +75,18 @@
 - CL:0000845 marginal zone B cell of spleen → CL:0000145 professional antigen presenting cell
 - CL:0000899 T-helper 17 cell → CL:0000084 T cell
 - CL:0002258 thyroid follicular cell → CL:0000167 peptide hormone secreting cell
+- CL:0002267 type D cell of stomach → CL:0000165 neuroendocrine cell
+- CL:0002267 type D cell of stomach → CL:0000167 peptide hormone secreting cell
+- CL:0002267 type D cell of stomach → CL:0002178 epithelial cell of stomach
 - CL:0002275 pancreatic PP cell → CL:0000164 enteroendocrine cell
+- CL:0002277 type I enteroendocrine cell → CL:0000167 peptide hormone secreting cell
+- CL:0002277 type I enteroendocrine cell → CL:0002563 intestinal epithelial cell
+- CL:0002278 type K enteroendocrine cell → CL:0000167 peptide hormone secreting cell
+- CL:0002278 type K enteroendocrine cell → CL:0002563 intestinal epithelial cell
+- CL:0002279 type L enteroendocrine cell → CL:0000167 peptide hormone secreting cell
+- CL:0002279 type L enteroendocrine cell → CL:0002563 intestinal epithelial cell
+- CL:0002281 type S enteroendocrine cell → CL:0000167 peptide hormone secreting cell
+- CL:0002281 type S enteroendocrine cell → CL:0002563 intestinal epithelial cell
 - CL:0002309 corticotroph → CL:0000165 neuroendocrine cell
 - CL:0002311 mammotroph → CL:0000165 neuroendocrine cell
 - CL:0002312 somatotroph → CL:0000165 neuroendocrine cell
@@ -80,11 +95,11 @@
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
 - ตรงกัน: 19 เส้น
-- คัดเองมี แต่ CL ไม่มี: 44 เส้น
+- คัดเองมี แต่ CL ไม่มี: 51 เส้น
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 2 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 52 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 53 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 408 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 418 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -112,6 +127,7 @@
 - CL:0000558 reticulocyte → CL:0000765 erythroblast
 - CL:0000560 band form neutrophil → CL:0002192 metamyelocyte
 - CL:0000576 monocyte → CL:0000040 monoblast
+- CL:0000577 type EC enteroendocrine cell → CL:0002250 intestinal crypt stem cell
 - CL:0000584 enterocyte → CL:0002250 intestinal crypt stem cell
 - CL:0000623 natural killer cell → CL:0000051 common lymphoid progenitor
 - CL:0000656 primary spermatocyte → CL:0000020 spermatogonium
@@ -130,8 +146,14 @@
 - CL:0002038 T follicular helper cell → CL:0000898 naive T cell
 - CL:0002062 pulmonary alveolar type 1 cell → CL:0002063 pulmonary alveolar type 2 cell
 - CL:0002145 multiciliated columnar cell of tracheobronchial tree → CL:0002329 basal epithelial cell of tracheobronchial tree
+- CL:0002204 tuft cell → CL:0002250 intestinal crypt stem cell
+- CL:0002277 type I enteroendocrine cell → CL:0002250 intestinal crypt stem cell
+- CL:0002278 type K enteroendocrine cell → CL:0002250 intestinal crypt stem cell
+- CL:0002279 type L enteroendocrine cell → CL:0002250 intestinal crypt stem cell
+- CL:0002281 type S enteroendocrine cell → CL:0002250 intestinal crypt stem cell
 - CL:0007010 osteoprogenitor cell → CL:0000134 mesenchymal stem cell
 - CL:0008002 skeletal muscle fiber → CL:0000056 myoblast
+- CL:1000347 colonocyte → CL:0002250 intestinal crypt stem cell
 
 ### develops_from ที่ CL มีแต่ไม่ได้คัดไว้
 
@@ -148,6 +170,7 @@
 - CL:0000058 chondroblast ← CL:0007009 prechondroblast
 - CL:0000059 ameloblast ← CL:0007000 preameloblast
 - CL:0000060 odontoblast ← CL:0007003 preodontoblast
+- CL:0000061 cementoblast ← CL:0007002 precementoblast
 - CL:0000065 ependymal cell ← CL:0000681 radial glial cell
 - CL:0000084 T cell ← CL:0000827 pro-T cell
 - CL:0000097 mast cell ← CL:0000831 mast cell progenitor
@@ -193,7 +216,7 @@
 - CL:0008002 skeletal muscle fiber ← CL:0000515 skeletal muscle myoblast
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 
-## คำเตือนจาก validate (200)
+## คำเตือนจาก validate (213)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -288,6 +311,19 @@
 - CL:0000060 (odontoblast): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
 - CL:0000059 (ameloblast): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:1000398 (endothelial cell of hepatic sinusoid): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000061 (cementoblast): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0009096 (esophagus non-keratinized squamous epithelial cell): ช่องว่าง: lifespan, confused_with; ยังไม่มีรูป
+- CL:0000504 (enterochromaffin-like cell): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
+- CL:0002267 (type D cell of stomach): ช่องว่าง: lifespan, diseases, tissue_subtype; ยังไม่มีรูป
+- CL:0002204 (tuft cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:1000347 (colonocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002277 (type I enteroendocrine cell): ช่องว่าง: lifespan, diseases, tissue_subtype; ยังไม่มีรูป
+- CL:0002281 (type S enteroendocrine cell): ช่องว่าง: lifespan, diseases, tissue_subtype; ยังไม่มีรูป
+- CL:0002278 (type K enteroendocrine cell): ช่องว่าง: lifespan, diseases, tissue_subtype; ยังไม่มีรูป
+- CL:0002279 (type L enteroendocrine cell): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
+- CL:0000577 (type EC enteroendocrine cell): ช่องว่าง: lifespan, tissue_subtype; ยังไม่มีรูป
+- CL:0002080 (pancreatic centro-acinar cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:1000415 (epithelial cell of gallbladder): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000167 (peptide hormone secreting cell): ยังไม่มีรูป
 - CL:0000174 (steroid hormone secreting cell): ยังไม่มีรูป
 - CL:0002097 (cortical cell of adrenal gland): ยังไม่มีรูป

@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "c93171d0fc3e",
-  "generated_at": "2026-10-10T04:15:04+00:00",
+  "data_version": "f1856290e104",
+  "generated_at": "2026-10-10T04:18:14+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "stats": {
    "images": 0
@@ -4390,6 +4390,549 @@
      "endotheliocyte of hepatic sinusoid",
      "liver sinusoidal endothelial cell"
     ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000061",
+   "slug": "cementoblast",
+   "kind": "cell",
+   "en": "cementoblast",
+   "th": "ซีเมนโตบลาสต์ (cementoblast)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "bone",
+   "location": "ผิวรากฟัน ติดกับเอ็นยึดปริทันต์ (periodontal ligament)",
+   "morphology": "เซลล์รูปลูกบาศก์ เรียงชิดผิวซีเมนตัมที่กำลังสร้าง",
+   "function": "สร้างซีเมนตัม (cementum) ที่คลุมรากฟัน ซึ่งยึดเส้นใยคอลลาเจนของ periodontal ligament (Sharpey's fiber) ให้ติดกับรากฟัน",
+   "secretes": [
+    "คอลลาเจนชนิด I"
+   ],
+   "markers": [
+    "cementum protein 1 (CEMP1)"
+   ],
+   "lifespan": "",
+   "exam": "จำคู่: odontoblast สร้างเนื้อฟัน (dentin), ameloblast สร้างเคลือบฟัน (enamel), cementoblast สร้างซีเมนตัม (cementum)",
+   "diseases": [
+    "โรคปริทันต์อักเสบ (periodontitis)"
+   ],
+   "confused_with": [
+    "CL:0000060",
+    "CL:0000059"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000061",
+   "cl": {
+    "label": "cementoblast",
+    "definition": "Skeletogenic cell that produces cementum (a bony substance that covers the root of a tooth), is part of the odontogenic papilla, and develops from a precementoblast cell.",
+    "synonyms": [
+     "cementum secreting cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0009096",
+   "slug": "esophageal-squamous-epithelial-cell",
+   "kind": "cell",
+   "en": "esophagus non-keratinized squamous epithelial cell",
+   "th": "เซลล์เยื่อบุผิวสความัสของหลอดอาหาร",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "stratified-squamous",
+   "location": "เยื่อบุผิวชั้นในสุดของหลอดอาหาร",
+   "morphology": "เซลล์เรียงซ้อนกันหลายชั้น ชั้นบนแบน ไม่มีชั้นเคราติน (non-keratinized)",
+   "function": "ป้องกันการเสียดสีจากอาหารที่กลืน และป้องกันกรดที่ไหลย้อนได้บางส่วน",
+   "secretes": [],
+   "markers": [
+    "keratin 5",
+    "p63"
+   ],
+   "lifespan": "",
+   "exam": "เยื่อบุผิวหลอดอาหารเป็น stratified squamous epithelium ชนิดไม่มีเคราติน ถ้ากรดไหลย้อนเรื้อรังเยื่อบุส่วนล่างอาจเปลี่ยนเป็นเยื่อบุผิวชนิดคอลัมนาร์ที่มี goblet cell (Barrett's esophagus)",
+   "diseases": [
+    "โรคกรดไหลย้อน (GERD)",
+    "Barrett's esophagus",
+    "มะเร็งหลอดอาหารชนิด squamous cell carcinoma"
+   ],
+   "confused_with": [],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0009096",
+   "cl": {
+    "label": "esophagus non-keratinized squamous epithelial cell",
+    "definition": "Any cell that is part of the esophageal non-keratinized stratified squamous epithelium. In humans, the esophagus, which requires flexibility to accommodate swallowing of a bolus, is covered with a non-keratinized epithelium.",
+    "synonyms": [
+     "esophageal non-keratinized squamous epithelial cell",
+     "esophageal nonkeratinized squamous epithelial cell",
+     "esophagus non-keratinizing squamous epithelial cell",
+     "esophagus nonkeratinizing squamous epithelial cell",
+     "non-keratinized squamous epithelial cell of esophagus",
+     "non-keratinizing squamous epithelial cell of esophagus",
+     "nonkeratinized squamous epithelial cell of esophagus",
+     "nonkeratinizing squamous epithelial cell of esophagus"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000504",
+   "slug": "enterochromaffin-like-cell",
+   "kind": "cell",
+   "en": "enterochromaffin-like cell",
+   "th": "เซลล์คล้ายเอนเทอโรโครมาฟฟิน (ECL cell)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": null,
+   "location": "ต่อมกระเพาะอาหารส่วนฟันดัสและตัว (oxyntic gland) ใกล้ parietal cell",
+   "morphology": "เซลล์ต่อมไร้ท่อขนาดเล็ก มีแกรนูลของฮิสตามีน",
+   "function": "ถูกกระตุ้นด้วย gastrin แล้วหลั่งฮิสตามีน ซึ่งไปกระตุ้น parietal cell ผ่านตัวรับ H2 ให้หลั่งกรด",
+   "secretes": [
+    "ฮิสตามีน (histamine)"
+   ],
+   "markers": [
+    "chromogranin A",
+    "VMAT2"
+   ],
+   "lifespan": "",
+   "exam": "ยากลุ่ม H2 blocker (เช่น ranitidine, famotidine) ยับยั้งตัวรับ H2 บน parietal cell การกระตุ้นกรด: gastrin (G cell), ฮิสตามีน (ECL), อะเซทิลโคลีน (เส้นประสาทวากัส)",
+   "diseases": [
+    "gastric neuroendocrine tumor (carcinoid) จากระดับ gastrin สูงเรื้อรัง"
+   ],
+   "confused_with": [
+    "CL:0000162",
+    "CL:0000509"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000504",
+   "cl": {
+    "label": "enterochromaffin-like cell",
+    "definition": "A enteroendocrine cell part of the glands of the gastric mucosa. They produce histamine and peptides such as chromogranins. This cell type respond to gastrin by releasing histamine which acts as a paracrine stimulator of the release of hydrochloric acid from the gastric parietal cells.",
+    "synonyms": [
+     "ECL"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002267",
+   "slug": "d-cell-of-stomach",
+   "kind": "cell",
+   "en": "type D cell of stomach",
+   "th": "ดีเซลล์ของกระเพาะอาหาร (D cell)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": null,
+   "location": "ต่อมกระเพาะอาหาร โดยเฉพาะส่วนไพโลรัส (antrum)",
+   "morphology": "เซลล์ต่อมไร้ท่อขนาดเล็กแบบปลายเปิดหรือปลายปิด มีแขนงสั้นยื่นไปยังเซลล์ข้างเคียง",
+   "function": "หลั่ง somatostatin แบบพาราไครน์ ไปยับยั้ง G cell, ECL cell และ parietal cell จึงลดการหลั่งกรด",
+   "secretes": [
+    "somatostatin"
+   ],
+   "markers": [
+    "somatostatin"
+   ],
+   "lifespan": "",
+   "exam": "somatostatin เป็นตัวยับยั้ง (negative feedback) ของการหลั่งกรด: เมื่อกรดในกระเพาะมาก D cell จะถูกกระตุ้น ส่วนตับอ่อนมี delta cell ที่หลั่ง somatostatin เช่นกัน",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000509",
+    "CL:0002275"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002267",
+   "cl": {
+    "label": "type D cell of stomach",
+    "definition": "A type D cell found in the stomach.",
+    "synonyms": [
+     "delta cell of stomach",
+     "stomach D-cell",
+     "stomach delta cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002204",
+   "slug": "tuft-cell",
+   "kind": "cell",
+   "en": "tuft cell",
+   "th": "ทัฟต์เซลล์ (tuft cell)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-columnar",
+   "location": "เยื่อบุผิวลำไส้ (เล็กและใหญ่) นอกจากนี้พบในทางเดินหายใจและท่อน้ำดี",
+   "morphology": "เซลล์ชนิดคอลัมนาร์ที่ปลายเซลล์มีไมโครวิลไลยาวเป็นกระจุก (tuft)",
+   "function": "รับรู้สารจากลูเมนของลำไส้ เช่น ปรสิตพวกหนอนพยาธิ แล้วหลั่ง IL-25 ไปกระตุ้น innate lymphoid cell ชนิดที่ 2 (ILC2) ให้เริ่มการตอบสนองแบบ type 2 และหลั่งสารพวก prostaglandin",
+   "secretes": [
+    "IL-25"
+   ],
+   "markers": [
+    "DCLK1",
+    "POU2F3"
+   ],
+   "lifespan": "",
+   "exam": "tuft cell เป็นตัวรับรู้ (chemosensory) ของเยื่อบุผิวลำไส้ที่เชื่อมกับภูมิคุ้มกันต้านหนอนพยาธิ (IL-25 ถึง ILC2 ถึง IL-13)",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000164",
+    "CL:0000682"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002204",
+   "cl": {
+    "label": "tuft cell",
+    "definition": "An epithelial cell found in various organs, including the gastrointestinal and respiratory tracts, characterized by a tuft of 120-140 blunt microvilli on its apical surface. This cell exhibits diverse functions depending on its location, which includes chemosensation, initiation of immune responses, contribution to mucociliary clearance, and defense against parasites.",
+    "synonyms": [
+     "brush cell",
+     "caveolated cell",
+     "fibrillovesicular cell",
+     "multivesicular cell",
+     "peculiar cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:1000347",
+   "slug": "colonocyte",
+   "kind": "cell",
+   "en": "colonocyte",
+   "th": "โคโลโนไซต์ (colonocyte)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-columnar",
+   "location": "เยื่อบุผิวลำไส้ใหญ่ (colon)",
+   "morphology": "เซลล์คอลัมนาร์ที่ปลายเซลล์มีไมโครวิลไลสั้น ๆ เรียงชิดกัน",
+   "function": "ดูดซึมน้ำและเกลือแร่ (Na+ และ Cl−) ออกจากอุจจาระ และใช้กรดไขมันสายสั้นจากแบคทีเรีย (โดยเฉพาะ butyrate) เป็นแหล่งพลังงานหลัก",
+   "secretes": [],
+   "markers": [
+    "carbonic anhydrase I (CA1)",
+    "SATB2"
+   ],
+   "lifespan": "",
+   "exam": "เยื่อบุลำไส้ใหญ่ไม่มีวิลไล และมี goblet cell มากเพื่อหล่อลื่น ต่างจากลำไส้เล็กที่มีวิลไลและเซลล์ดูดซึมแบบ enterocyte",
+   "diseases": [
+    "มะเร็งลำไส้ใหญ่และไส้ตรง (colorectal cancer)"
+   ],
+   "confused_with": [
+    "CL:0000584"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_1000347",
+   "cl": {
+    "label": "colonocyte",
+    "definition": "An enterocyte (absorptive epithelial cell) of the colonic epithelium, characterized by a columnar shape. This cell is responsible for the absorption, transport, and metabolization of short-chain fatty acids (SCFAs) produced by gut bacteria, as well as the transport and absorption of water and electrolytes.",
+    "synonyms": [
+     "enterocyte of colon",
+     "vacuolar absorptive cell of epithelium of colon"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002277",
+   "slug": "i-cell",
+   "kind": "cell",
+   "en": "type I enteroendocrine cell",
+   "th": "ไอเซลล์ (I cell, CCK)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": null,
+   "location": "เยื่อบุผิวลำไส้เล็กส่วนต้น (duodenum และ jejunum)",
+   "morphology": "เซลล์ต่อมไร้ท่อขนาดเล็กในเยื่อบุผิวลำไส้",
+   "function": "หลั่ง cholecystokinin (CCK) เมื่อมีไขมันและกรดอะมิโนในลำไส้ ทำให้ถุงน้ำดีบีบตัว กล้ามเนื้อหูรูด Oddi คลายตัว และตับอ่อนหลั่งเอนไซม์",
+   "secretes": [
+    "cholecystokinin (CCK)"
+   ],
+   "markers": [
+    "CCK"
+   ],
+   "lifespan": "",
+   "exam": "CCK: ถุงน้ำดีหดตัว ตับอ่อนหลั่งเอนไซม์ ชะลอการเคลื่อนของกระเพาะ ตัวกระตุ้นคือไขมันและโปรตีน",
+   "diseases": [],
+   "confused_with": [
+    "CL:0002281"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002277",
+   "cl": {
+    "label": "type I enteroendocrine cell",
+    "definition": "An enteroendocrine cell commonest in the duodenum and jejunum, rare in ileum, that secretes cholecystokinin. This cell type is involved in the regulation of digestive enzymes and bile.",
+    "synonyms": [
+     "CCK cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002281",
+   "slug": "s-cell",
+   "kind": "cell",
+   "en": "type S enteroendocrine cell",
+   "th": "เอสเซลล์ (S cell, secretin)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": null,
+   "location": "เยื่อบุผิวลำไส้เล็กส่วนต้น (duodenum)",
+   "morphology": "เซลล์ต่อมไร้ท่อขนาดเล็กในเยื่อบุผิวลำไส้",
+   "function": "หลั่ง secretin เมื่อกรดจากกระเพาะเข้าสู่ duodenum ไปกระตุ้นเซลล์ท่อตับอ่อนและท่อน้ำดีให้หลั่งไบคาร์บอเนตเพื่อทำให้ chyme เป็นกลาง",
+   "secretes": [
+    "secretin"
+   ],
+   "markers": [
+    "secretin"
+   ],
+   "lifespan": "",
+   "exam": "secretin ถูกกระตุ้นด้วยกรด (H+) ใน duodenum ทำให้ตับอ่อนหลั่งน้ำและไบคาร์บอเนต ส่วน CCK ทำให้หลั่งเอนไซม์",
+   "diseases": [],
+   "confused_with": [
+    "CL:0002277"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002281",
+   "cl": {
+    "label": "type S enteroendocrine cell",
+    "definition": "Scattered in duodenojejunal mucosa, this enteroendocrine cell secretes secretin and serotonin.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002278",
+   "slug": "k-cell",
+   "kind": "cell",
+   "en": "type K enteroendocrine cell",
+   "th": "เคเซลล์ (K cell, GIP)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": null,
+   "location": "เยื่อบุผิวลำไส้เล็กส่วนต้นและส่วนกลาง (duodenum และ jejunum)",
+   "morphology": "เซลล์ต่อมไร้ท่อขนาดเล็กในเยื่อบุผิวลำไส้",
+   "function": "หลั่ง GIP (glucose-dependent insulinotropic peptide) หลังได้รับกลูโคสและไขมัน ไปกระตุ้นบีตาเซลล์ให้หลั่งอินซูลินมากขึ้น (incretin effect)",
+   "secretes": [
+    "GIP (glucose-dependent insulinotropic peptide)"
+   ],
+   "markers": [
+    "GIP"
+   ],
+   "lifespan": "",
+   "exam": "การกินกลูโคสทางปากกระตุ้นอินซูลินได้มากกว่าการให้ทางหลอดเลือด เพราะ incretin คือ GIP และ GLP-1",
+   "diseases": [],
+   "confused_with": [
+    "CL:0002279"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002278",
+   "cl": {
+    "label": "GIP cell",
+    "definition": "An enteroendocrine cell of duodenum and jejunum that produces gastric inhibitory peptide.",
+    "synonyms": [
+     "type K enteroendocrine cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002279",
+   "slug": "l-cell",
+   "kind": "cell",
+   "en": "type L enteroendocrine cell",
+   "th": "แอลเซลล์ (L cell, GLP-1)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": null,
+   "location": "เยื่อบุผิวลำไส้เล็กส่วนปลาย (ileum) และลำไส้ใหญ่",
+   "morphology": "เซลล์ต่อมไร้ท่อขนาดเล็กในเยื่อบุผิวลำไส้",
+   "function": "หลั่ง GLP-1 และ PYY หลังกินอาหาร GLP-1 กระตุ้นบีตาเซลล์ให้หลั่งอินซูลิน ยับยั้งการหลั่งกลูคากอน ชะลอการเคลื่อนของกระเพาะ และเพิ่มความรู้สึกอิ่ม",
+   "secretes": [
+    "GLP-1",
+    "PYY"
+   ],
+   "markers": [
+    "GLP-1",
+    "PYY"
+   ],
+   "lifespan": "",
+   "exam": "ยากลุ่ม GLP-1 agonist (เช่น semaglutide) ใช้รักษาเบาหวานชนิดที่ 2 และโรคอ้วน ส่วนยากลุ่ม DPP-4 inhibitor ชะลอการสลายของ GLP-1",
+   "diseases": [
+    "เบาหวานชนิดที่ 2"
+   ],
+   "confused_with": [
+    "CL:0002278"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002279",
+   "cl": {
+    "label": "type L enteroendocrine cell",
+    "definition": "A enteroendocrine cell type that is numerous in ileum, present in jejunum and large intestine, few in duodenum. This cell type produces glucagon-like immunoreactants (glicentin, glucagon-37, glucagon-29, GLP-1 and -2) and PYY.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000577",
+   "slug": "enterochromaffin-cell",
+   "kind": "cell",
+   "en": "type EC enteroendocrine cell",
+   "th": "เซลล์เอนเทอโรโครมาฟฟิน (EC cell)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": null,
+   "location": "เยื่อบุผิวทางเดินอาหารทั้งกระเพาะอาหารถึงลำไส้ใหญ่ พบมากที่สุดในลำไส้เล็ก",
+   "morphology": "เซลล์ต่อมไร้ท่อขนาดเล็กในเยื่อบุผิว มีแกรนูลของเซโรโทนิน",
+   "function": "หลั่งเซโรโทนิน (5-HT) ซึ่งเป็นสัญญาณที่กระตุ้นการเคลื่อนไหวและการหลั่งของลำไส้ผ่านเส้นประสาท และเป็นแหล่งเซโรโทนินส่วนใหญ่ของร่างกาย",
+   "secretes": [
+    "เซโรโทนิน (5-HT)"
+   ],
+   "markers": [
+    "chromogranin A",
+    "tryptophan hydroxylase 1"
+   ],
+   "lifespan": "",
+   "exam": "ร่างกายมีเซโรโทนินส่วนใหญ่ในลำไส้ ไม่ใช่ในสมอง เนื้องอกของ EC cell (carcinoid) ทำให้เกิดอาการหน้าแดง ท้องเสีย (carcinoid syndrome)",
+   "diseases": [
+    "carcinoid tumor",
+    "carcinoid syndrome"
+   ],
+   "confused_with": [
+    "CL:0000504"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000577",
+   "cl": {
+    "label": "type EC enteroendocrine cell",
+    "definition": "A subtype of enteroendocrine cells found in the gastrointestinal mucosa, particularly in the glands of pyloric antrum; duodenum; and ileum. These cell type secretes serotonin and some neurotransmitters including enkephalins and substance P. Their secretory granules stain readily with silver (argentaffin stain).",
+    "synonyms": [
+     "Kulchitsky cell",
+     "argentaffin cell",
+     "enterochromaffin cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002080",
+   "slug": "centroacinar-cell",
+   "kind": "cell",
+   "en": "pancreatic centro-acinar cell",
+   "th": "เซลล์เซนโทรเอซินาร์ (centroacinar cell)",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-cuboidal",
+   "location": "ตับอ่อนส่วนที่หลั่งเอนไซม์ ที่ตำแหน่งต่อระหว่าง acinus กับท่อขนาดเล็ก (intercalated duct)",
+   "morphology": "เซลล์แบนถึงลูกบาศก์ ไซโทพลาซึมสีจาง ไม่มี zymogen granule เห็นเป็นเซลล์ที่อยู่กลาง acinus",
+   "function": "หลั่งไบคาร์บอเนตและน้ำตอบสนองต่อ secretin เพื่อพาเอนไซม์จาก acinus ออกไปตามท่อ และทำให้ของเหลวมีฤทธิ์เป็นด่าง",
+   "secretes": [
+    "ไบคาร์บอเนต (HCO3−)"
+   ],
+   "markers": [
+    "cytokeratin 19"
+   ],
+   "lifespan": "",
+   "exam": "centroacinar cell เป็นเซลล์ที่พบเฉพาะในตับอ่อน (ไม่พบในต่อมน้ำลาย) เห็นเป็นนิวเคลียสอยู่ตรงกลาง acinus",
+   "diseases": [],
+   "confused_with": [
+    "CL:0002064",
+    "CL:0002079"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002080",
+   "cl": {
+    "label": "pancreatic centro-acinar cell",
+    "definition": "A cubodial epithelial cell that is continuous with the lining of intercalated ducts that drain the acinus. This cell type secretes a high pH solution to aid in activation of zymogens, and can differentiate into endocrine and exocrine pancreatic cell types.",
+    "synonyms": [
+     "centroacinar cell of Langerhans",
+     "pancreatic centroacinar cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:1000415",
+   "slug": "gallbladder-epithelial-cell",
+   "kind": "cell",
+   "en": "epithelial cell of gallbladder",
+   "th": "เซลล์เยื่อบุผิวถุงน้ำดี",
+   "systems": [
+    "digestive"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-columnar",
+   "location": "เยื่อบุผิวชั้นในของถุงน้ำดี",
+   "morphology": "เซลล์คอลัมนาร์ชั้นเดียว มีไมโครวิลไลที่ปลายเซลล์ เยื่อบุพับเป็นริ้ว",
+   "function": "ดูดซึมน้ำและเกลือแร่จากน้ำดี ทำให้น้ำดีเข้มข้นขึ้น 5 ถึง 10 เท่า ก่อนปล่อยเมื่อได้รับสัญญาณจาก CCK",
+   "secretes": [
+    "เมือก (mucin)"
+   ],
+   "markers": [
+    "cytokeratin 7",
+    "cytokeratin 19"
+   ],
+   "lifespan": "",
+   "exam": "ถุงน้ำดีไม่มี submucosa และไม่มี muscularis mucosae เยื่อบุผิวเป็นแบบ simple columnar",
+   "diseases": [
+    "นิ่วในถุงน้ำดี (cholelithiasis)",
+    "ถุงน้ำดีอักเสบ (cholecystitis)"
+   ],
+   "confused_with": [
+    "CL:1000488"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_1000415",
+   "cl": {
+    "label": "epithelial cell of gallbladder",
+    "definition": "An epithelial cell that is part of the gallbladder.",
+    "synonyms": [],
     "obsolete": false
    }
   },
@@ -9387,6 +9930,55 @@
    "file": "digestive"
   },
   {
+   "type": "develops_from",
+   "from": "CL:1000347",
+   "to": "CL:0002250",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0002204",
+   "to": "CL:0002250",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0002277",
+   "to": "CL:0002250",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0002281",
+   "to": "CL:0002250",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0002278",
+   "to": "CL:0002250",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0002279",
+   "to": "CL:0002250",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000577",
+   "to": "CL:0002250",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
    "type": "is_a",
    "from": "CL:0002250",
    "to": "CL:0002563",
@@ -9464,6 +10056,90 @@
    "file": "digestive"
   },
   {
+   "type": "is_a",
+   "from": "CL:0000504",
+   "to": "CL:0002178",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002267",
+   "to": "CL:0000164",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002277",
+   "to": "CL:0000164",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002281",
+   "to": "CL:0000164",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002278",
+   "to": "CL:0000164",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002279",
+   "to": "CL:0000164",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000577",
+   "to": "CL:0000164",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002204",
+   "to": "CL:0002563",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002080",
+   "to": "CL:1001433",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000061",
+   "to": "CL:0000062",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000504",
+   "to": "CL:0000164",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:1000347",
+   "to": "CL:0000584",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
    "type": "interacts_with",
    "from": "CL:0000509",
    "to": "CL:0000162",
@@ -9523,6 +10199,105 @@
    "to": "CL:0000632",
    "th": "ไซโตไคน์จากคัฟเฟอร์เซลล์กระตุ้นเซลล์สเตลเลตเมื่อตับบาดเจ็บ",
    "mode": "paracrine",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000509",
+   "to": "CL:0000504",
+   "th": "gastrin กระตุ้น ECL cell ให้หลั่งฮิสตามีน",
+   "mode": "hormone",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000504",
+   "to": "CL:0000162",
+   "th": "ฮิสตามีนจาก ECL cell กระตุ้น parietal cell ให้หลั่งกรด",
+   "mode": "paracrine",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0002267",
+   "to": "CL:0000509",
+   "th": "somatostatin จาก D cell ยับยั้ง G cell",
+   "mode": "paracrine",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0002267",
+   "to": "CL:0000162",
+   "th": "somatostatin จาก D cell ยับยั้ง parietal cell",
+   "mode": "paracrine",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0002277",
+   "to": "CL:0002064",
+   "th": "CCK กระตุ้นเซลล์ acinus ของตับอ่อนให้หลั่งเอนไซม์",
+   "mode": "hormone",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0002281",
+   "to": "CL:0002079",
+   "th": "secretin กระตุ้นเซลล์ท่อตับอ่อนให้หลั่งไบคาร์บอเนต",
+   "mode": "hormone",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0002281",
+   "to": "CL:0002080",
+   "th": "secretin กระตุ้น centroacinar cell ให้หลั่งไบคาร์บอเนต",
+   "mode": "hormone",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0002278",
+   "to": "CL:0000169",
+   "th": "GIP กระตุ้นบีตาเซลล์ให้หลั่งอินซูลิน (incretin)",
+   "mode": "hormone",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0002279",
+   "to": "CL:0000169",
+   "th": "GLP-1 กระตุ้นบีตาเซลล์ให้หลั่งอินซูลิน (incretin)",
+   "mode": "hormone",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0002279",
+   "to": "CL:0000171",
+   "th": "GLP-1 ยับยั้งการหลั่งกลูคากอนจากแอลฟาเซลล์",
+   "mode": "hormone",
+   "source": "curated",
+   "file": "digestive"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0002204",
+   "to": "CL:0001065",
+   "th": "tuft cell หลั่ง IL-25 กระตุ้น ILC2 ต้านหนอนพยาธิ",
+   "mode": "immune",
    "source": "curated",
    "file": "digestive"
   },
