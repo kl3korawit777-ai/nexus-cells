@@ -6,6 +6,7 @@
 
 import { mulberry32 } from './overview-layout.js';
 import { textOf, listOf, nameOf, hasThai } from './content.js';
+import { quizImagesOf } from './images.js';
 
 export const TYPES = ['morphology', 'secretes', 'marker', 'develops_from', 'tissue', 'interacts', 'image'];
 export const OPTION_COUNT = 4;
@@ -199,10 +200,12 @@ export function enumerateSpecs(ctx, type, subject) {
       });
     }
   } else if (type === 'image') {
-    if (!subject.image || !subject.image.src) return out;
+    // รูปที่ใช้ได้ทุกรูปของเซลล์ (ตัด quiz:false และ diagram/illustration) ข้อหนึ่งสุ่มหนึ่งรูปตอนสร้างคำถาม
+    const pool = quizImagesOf(subject);
+    if (!pool.length) return out;
     out.push({
       ...base, key: `image:${subject.id}`, answerId: subject.id, promptKey: 'quiz.q.image',
-      clue: { kind: 'image', image: subject.image },
+      clue: { kind: 'image', image: pool[0] }, imagePool: pool,
       truth: (c) => c.id === subject.id, wrongPred: () => true,
     });
   }
@@ -256,9 +259,11 @@ export function buildQuestion(ctx, spec, rng, id) {
   const options = shuffle([spec.answerId, ...wrong], rng);
   const s = spec.subject;
   const exam = textOf(s, 'exam', ctx.lang);
+  let clue = spec.clue;
+  if (spec.imagePool && spec.imagePool.length > 1) clue = { kind: 'image', image: spec.imagePool[Math.floor(rng() * spec.imagePool.length)] };
   return {
     id, key: spec.key, type: spec.type, subjectId: s.id, systemId: (s.systems || [])[0] || '',
-    promptKey: spec.promptKey, promptParams: spec.promptParams || {}, clue: spec.clue,
+    promptKey: spec.promptKey, promptParams: spec.promptParams || {}, clue,
     optionKind: spec.optionKind, options, answerIndex: options.indexOf(spec.answerId),
     verified: verifiedOf(s),
     explain: { exam: exam.text, examThaiOnly: exam.thaiOnly, edge: spec.edge ? { th: spec.edge.th || '', mode: spec.edge.mode } : null },

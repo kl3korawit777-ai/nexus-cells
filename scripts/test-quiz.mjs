@@ -6,6 +6,7 @@ import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildContext, generateQuiz, capacityByType, verifyQuestion, TYPES } from '../site/js/quiz-engine.js';
+import { quizImagesOf } from '../site/js/images.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const data = JSON.parse(readFileSync(join(root, 'site', 'data', 'nexus.json'), 'utf8'));
@@ -83,7 +84,7 @@ function independentChecks(q, lang) {
       break;
     }
     case 'image': {
-      if (!subj.image || subj.image.src !== q.clue.image.src) bad.push('image clue mismatch');
+      if (!quizImagesOf(subj).some((i) => i.src === q.clue.image.src)) bad.push('image clue is not an eligible image of the subject');
       if (ans !== subj.id) bad.push('answer is not the subject');
       break;
     }

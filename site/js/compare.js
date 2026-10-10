@@ -4,7 +4,8 @@ import { store, cellName, cellAlt, sysName, tissueName, subtypeName, edgeSentenc
 import { t, getLang } from './i18n.js';
 import { h, cellHref, idToHash, hashToId, onThemeChange } from './util.js';
 import { textOf, listOf } from './content.js';
-import { imageBlock } from './card.js';
+import { imageFigure } from './gallery.js';
+import { imagesOf, typesIn, pickByType } from './images.js';
 import { searchBox } from './ui.js';
 import { buildStyle, ensureFcose } from './graph.js';
 import { notFoundView } from './views.js';
@@ -162,6 +163,28 @@ function pickers(a, b) {
   return wrap;
 }
 
+// รูปของสองเซลล์เคียงกัน เลือกประเภทรูปที่จะเทียบได้ (ค่าเริ่มต้น = รูปหลักของแต่ละเซลล์)
+let cmpType = null;
+function imagesPanel(A, B) {
+  const types = typesIn([...imagesOf(A), ...imagesOf(B)]);
+  if (cmpType && !types.includes(cmpType)) cmpType = null;
+  const wrap = h('section', { class: 'cmp-imgs' });
+  const draw = () => {
+    const fig = (c) => {
+      const img = pickByType(c, cmpType);
+      const empty = cmpType && !img && imagesOf(c).length ? t('cmp.noImageOfType', { type: t('img.type.' + cmpType) }) : null;
+      return h('figure', {}, imageFigure(img, cellName(c), `images/${c.slug}/`, { emptyText: empty }), h('figcaption', { text: cellName(c) }));
+    };
+    const mk = (ty) => h('button', { type: 'button', class: 'gal-chip', 'aria-pressed': String(cmpType === ty),
+      onclick: () => { cmpType = ty; draw(); } }, ty ? t('img.type.' + ty) : t('cmp.mainImage'));
+    wrap.replaceChildren(
+      types.length > 1 ? h('div', { class: 'gal-filter', role: 'group', 'aria-label': t('cmp.imageTypeLabel') }, mk(null), types.map(mk)) : null,
+      h('div', { class: 'cmp-images' }, fig(A), fig(B)));
+  };
+  draw();
+  return wrap;
+}
+
 // ------------------------------------------------------------------ หน้าเปรียบเทียบ
 
 export function compareView(idA, idB) {
@@ -183,9 +206,7 @@ export function compareView(idA, idB) {
   if (B) {
     children.push(h('div', { class: 'toolbar' },
       h('a', { class: 'btn', href: compareHref(B.id, A.id) }, t('compare.swap'))));
-    children.push(h('div', { class: 'cmp-images' },
-      h('figure', {}, imageBlock(A.image, `${cellName(A)}`, `images/${A.slug}.jpg`), h('figcaption', { text: cellName(A) })),
-      h('figure', {}, imageBlock(B.image, `${cellName(B)}`, `images/${B.slug}.jpg`), h('figcaption', { text: cellName(B) }))));
+    children.push(imagesPanel(A, B));
     children.push(table(A, B));
 
     // เส้นทางในใย

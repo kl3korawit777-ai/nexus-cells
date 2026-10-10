@@ -6,6 +6,8 @@ import { h, cellHref, systemHref, tissueHref, idToHash } from './util.js';
 import { t, getLang } from './i18n.js';
 import { textOf, listOf } from './content.js';
 import { createMiniGraph, colorForKey } from './graph.js';
+import { renderGallery, thumbOf } from './gallery.js';
+import { firstImage } from './images.js';
 
 const has = (v) => !(v == null || v === '' || (Array.isArray(v) && v.length === 0));
 const thaiOnlyChip = () => h('span', { class: 'chip chip-thai', text: t('common.thaiOnly') });
@@ -38,39 +40,6 @@ function cellLink(c) {
 
 function fact(title, content, thaiOnly) {
   return h('section', { class: 'fact' }, h('h2', {}, title, thaiOnly ? thaiOnlyChip() : null), content);
-}
-
-// รูปพร้อมเครดิต ใช้ร่วมกันระหว่างหน้าเซลล์และหน้าเนื้อเยื่อ
-// image: null หรือ {src, credit, license, source, stain, type}  hint: ชื่อไฟล์ที่ควรใส่เมื่อยังไม่มีรูป
-export function imageBlock(image, alt, hint) {
-  const img = image;
-  if (!img || !img.src) {
-    return h('div', { class: 'img-missing' },
-      h('strong', { text: t('card.imageMissing') }),
-      h('span', { text: t('card.imageHint') }),
-      h('code', { text: hint }));
-  }
-  const figure = h('figure', { class: 'figure' });
-  const pic = h('img', { src: img.src, alt, loading: 'lazy' });
-  pic.addEventListener('error', () => {
-    pic.replaceWith(h('div', { class: 'img-missing', role: 'img', 'aria-label': t('card.imageFailed') },
-      h('strong', { text: t('card.imageFailed') }),
-      h('code', { text: img.src })));
-  });
-  const credit = [];
-  if (img.type) credit.push(img.type);
-  if (img.stain) credit.push(t('card.stain', { stain: img.stain }));
-  const line = [];
-  if (img.credit) line.push(t('card.credit', { credit: img.credit }));
-  if (img.license) line.push(img.license);
-  figure.append(pic);
-  const cap = h('figcaption', {}, credit.length ? credit.join(' · ') + ' — ' : '', line.join(' · '));
-  if (img.source) {
-    const safe = /^https?:\/\//i.test(img.source);
-    cap.append(' · ', safe ? h('a', { href: img.source, rel: 'noopener noreferrer', target: '_blank' }, t('card.source')) : t('card.sourceText', { source: img.source }));
-  }
-  figure.append(cap);
-  return figure;
 }
 
 function relGroup(title, items, withNote = false, incoming = false) {
@@ -107,7 +76,7 @@ export function renderCellPage(cell) {
     cell.cl && cell.cl.definition
       ? h('div', { class: 'def-box', lang: 'en' }, h('h2', { lang, text: t('card.definition') }), h('p', { text: cell.cl.definition }))
       : null);
-  root.append(h('div', { class: 'cell-hero' }, imageBlock(cell.image, t('card.imageAlt', { name: cellName(cell) }), `images/${cell.slug}.jpg`), title));
+  root.append(h('div', { class: 'cell-hero' }, renderGallery(cell.images, { alt: t('card.imageAlt', { name: cellName(cell) }), hint: `images/${cell.slug}/` }), title));
 
   const T = (field) => textOf(cell, field, lang);
   const L = (field) => listOf(cell, field, lang);
@@ -176,6 +145,7 @@ export function renderPeek(cell) {
   const fn = textOf(cell, 'function', getLang());
   const alt = cellAlt(cell);
   return h('div', {},
+    thumbOf(firstImage(cell), t('card.imageAlt', { name: cellName(cell) })),
     h('h2', { text: cellName(cell) }),
     alt ? h('p', { class: 'en', text: alt }) : null,
     h('div', { class: 'chips' },

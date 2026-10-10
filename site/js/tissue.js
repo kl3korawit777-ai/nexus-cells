@@ -6,7 +6,7 @@ import { t, getLang } from './i18n.js';
 import { tissueText, altNameOf } from './content.js';
 import { colorForKey, ensureFcose } from './graph.js';
 import { overviewStyle } from './overview.js';
-import { imageBlock } from './card.js';
+import { renderGallery } from './gallery.js';
 import { notFoundView } from './views.js';
 
 const cytoscape = window.cytoscape;
@@ -133,7 +133,7 @@ export function tissueView(id) {
       h('p', { class: 'sub-title' }, h('span', { class: 'dot', style: `background:${tissue.color}` }), [alt, t('tissue.itemCount', { n: cells.length })].filter(Boolean).join(' · ')),
       tissue.cl_class ? h('p', { class: 'eyebrow' }, t('tissue.clRef'), ' ', h('span', { class: 'mono', text: tissue.cl_class })) : null,
       h('p', {}, h('a', { class: 'btn', href: '#/quiz?tissue=' + encodeURIComponent(tissue.id) }, t('quiz.testThis')))),
-    h('div', { class: 'cell-hero' }, imageBlock(tissue.image, t('tissue.imageAlt', { tissue: tissueName(tissue) }), `images/tissue-${tissue.id}.jpg`),
+    h('div', { class: 'cell-hero' }, renderGallery(tissue.images, { alt: t('tissue.imageAlt', { tissue: tissueName(tissue) }), hint: `images/tissues/${tissue.id}/` }),
       h('div', { class: 'facts card' }, facts)),
     exam.text ? h('section', { class: 'exam' }, h('h2', {}, t('field.exam'), exam.thaiOnly ? thaiOnlyChip() : null), h('p', { text: exam.text })) : null,
     sysChips.length ? h('section', {}, h('h2', { class: 'section', text: t('tissue.systems') }), h('div', { class: 'chips' }, sysChips)) : null,

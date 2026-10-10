@@ -4,6 +4,7 @@
 import { store, realCellCount, cellName, tissueName } from './data.js';
 import { h, cellHref, tissueHref } from './util.js';
 import { t } from './i18n.js';
+import { imagesOf } from './images.js';
 
 // ไลบรารีและแหล่งข้อมูลที่ใช้ (ชื่อเฉพาะและสัญญาอนุญาต ไม่ต้องแปล)
 const LIBRARIES = [
@@ -18,12 +19,18 @@ function stat(n, label) {
   return h('div', { class: 'stat' }, h('b', { text: String(n) }), h('span', { text: label }));
 }
 
-// เครดิตรูปทั้งหมดจากช่อง image ของทุกเซลล์และเนื้อเยื่อ
+// เครดิตรูปทั้งหมดจากช่อง images ของทุกเซลล์และเนื้อเยื่อ จัดกลุ่มตามสัญญาอนุญาต
 function imageCredits() {
   const rows = [];
-  for (const c of store.cells) if (c.image && c.image.src) rows.push({ name: cellName(c), href: cellHref(c.id), img: c.image });
-  for (const tt of store.tissues) if (tt.image && tt.image.src) rows.push({ name: tissueName(tt), href: tissueHref(tt.id), img: tt.image });
-  return rows;
+  for (const c of store.cells) for (const img of imagesOf(c)) rows.push({ name: cellName(c), href: cellHref(c.id), img });
+  for (const tt of store.tissues) for (const img of imagesOf(tt)) rows.push({ name: tissueName(tt), href: tissueHref(tt.id), img });
+  const groups = new Map();
+  for (const r of rows) {
+    const k = r.img.license || '';
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(r);
+  }
+  return { total: rows.length, groups: [...groups.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0])) };
 }
 
 export function aboutView() {
@@ -31,11 +38,12 @@ export function aboutView() {
   const classes = store.cells.length - cells.length;
   const verified = cells.filter((c) => c.verified === true).length;
   const withEn = cells.filter((c) => c.en_content && Object.keys(c.en_content).length).length;
-  const withImg = cells.filter((c) => c.image && c.image.src).length;
+  const withImg = cells.filter((c) => imagesOf(c).length).length;
   const byType = (ty) => store.edges.filter((e) => e.type === ty).length;
   const sysWithData = store.systems.filter((s) => realCellCount(s.id) > 0).length;
   const pct = (a, b) => (b ? Math.round((a / b) * 100) : 0);
 
+  const credits = imageCredits();
   const stats = h('div', { class: 'stats about-stats' },
     stat(cells.length, t('about.stat.cells')),
     stat(classes, t('about.stat.classes')),
@@ -43,14 +51,17 @@ export function aboutView() {
     stat(`${sysWithData}/${store.systems.length}`, t('about.stat.systems')),
     stat(`${verified}/${cells.length} (${pct(verified, cells.length)}%)`, t('about.stat.verified')),
     stat(`${withEn}/${cells.length} (${pct(withEn, cells.length)}%)`, t('about.stat.english')),
-    stat(`${withImg}/${cells.length}`, t('about.stat.images')));
+    stat(`${withImg}/${cells.length}`, t('about.stat.images')),
+    stat(credits.total, t('about.stat.imageCount')));
   const linkLine = t('about.stat.linkTypes', { dev: byType('develops_from'), isa: byType('is_a'), int: byType('interacts_with') });
 
-  const credits = imageCredits();
-  const creditList = credits.length
-    ? h('ul', { class: 'rel-list' }, credits.map(({ name, href, img }) => h('li', {},
-      h('a', { href }, name), ' — ', [img.credit, img.license].filter(Boolean).join(' · '),
-      img.source && /^https?:\/\//i.test(img.source) ? [' · ', h('a', { href: img.source, rel: 'noopener noreferrer', target: '_blank' }, t('card.source'))] : null)))
+  const creditList = credits.total
+    ? credits.groups.map(([license, rows]) => h('div', { class: 'credit-group' },
+      h('h3', { text: `${license || t('about.licenseUnknown')} (${rows.length})` }),
+      h('ul', { class: 'rel-list' }, rows.map(({ name, href, img }) => h('li', {},
+        h('a', { href }, name), img.type ? h('span', { class: 'chip' }, t('img.type.' + img.type)) : null,
+        ' — ', img.credit || '',
+        img.source && /^https?:\/\//i.test(img.source) ? [' · ', h('a', { href: img.source, rel: 'noopener noreferrer', target: '_blank' }, t('card.source'))] : null)))))
     : h('p', { class: 'empty', text: t('about.imagesNone') });
 
   const el = h('article', { class: 'about' },
