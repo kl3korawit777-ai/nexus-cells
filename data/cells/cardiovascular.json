@@ -246,5 +246,247 @@
     "images": [],
     "verified": false,
     "refs": []
+  },
+  {
+    "id": "CL:0002129",
+    "slug": "atrial-cardiac-myocyte",
+    "kind": "cell",
+    "en": "regular atrial cardiac myocyte",
+    "th": "เซลล์กล้ามเนื้อหัวใจห้องบน (atrial cardiomyocyte)",
+    "systems": [
+      "cardiovascular"
+    ],
+    "tissue": "muscle",
+    "tissue_subtype": "cardiac-muscle",
+    "location": "ผนังห้องหัวใจห้องบนซ้ายและขวา",
+    "morphology": "เซลล์เล็กและสั้นกว่าเซลล์ห้องล่าง มี T-tubule น้อย และมีแกรนูลสะสมฮอร์โมนใกล้นิวเคลียส",
+    "function": "หดตัวส่งเลือดลงห้องล่าง และหลั่ง atrial natriuretic peptide (ANP) เมื่อห้องบนถูกยืดจากปริมาตรเลือดมาก ANP ทำให้ขับโซเดียมและน้ำทางไต ขยายหลอดเลือด และยับยั้ง renin และ aldosterone",
+    "secretes": [
+      "atrial natriuretic peptide (ANP)"
+    ],
+    "markers": [
+      "ANP (NPPA)",
+      "troponin T",
+      "connexin 40"
+    ],
+    "lifespan": "",
+    "exam": "ANP จากห้องบนลดปริมาตรเลือดและความดันเลือด (ตรงข้ามกับระบบ renin-angiotensin-aldosterone) ส่วน BNP หลั่งจากห้องล่างเมื่อมีหัวใจล้มเหลว ใช้เป็นตัวชี้วัดทางคลินิก",
+    "diseases": [
+      "atrial fibrillation",
+      "หัวใจล้มเหลว"
+    ],
+    "confused_with": [
+      "CL:2000046"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:2000046",
+    "slug": "ventricular-cardiac-myocyte",
+    "kind": "cell",
+    "en": "ventricular cardiac muscle cell",
+    "th": "เซลล์กล้ามเนื้อหัวใจห้องล่าง (ventricular cardiomyocyte)",
+    "systems": [
+      "cardiovascular"
+    ],
+    "tissue": "muscle",
+    "tissue_subtype": "cardiac-muscle",
+    "location": "ผนังห้องหัวใจห้องล่างซ้ายและขวา (ห้องล่างซ้ายหนากว่า)",
+    "morphology": "เซลล์ใหญ่ยาว มี T-tubule พัฒนาดีและไมโทคอนเดรียจำนวนมาก (ประมาณหนึ่งในสามของปริมาตรเซลล์) เชื่อมกันด้วย intercalated disc",
+    "function": "หดตัวแรงเพื่อสูบเลือดออกสู่ปอดและร่างกาย รับสัญญาณไฟฟ้าจากเส้นใย Purkinje และหลั่ง BNP เมื่อผนังถูกยืดมาก",
+    "secretes": [
+      "brain natriuretic peptide (BNP)"
+    ],
+    "markers": [
+      "troponin I",
+      "troponin T",
+      "myosin heavy chain β (MYH7)"
+    ],
+    "lifespan": "",
+    "exam": "troponin ในเลือดสูงขึ้นเมื่อเซลล์หัวใจตาย (กล้ามเนื้อหัวใจขาดเลือด) ส่วน BNP หรือ NT-proBNP เพิ่มในหัวใจล้มเหลว เซลล์หัวใจแทบไม่แบ่งตัว จึงซ่อมแซมตัวเองได้น้อยเมื่อตาย",
+    "diseases": [
+      "กล้ามเนื้อหัวใจตายเฉียบพลัน (myocardial infarction)",
+      "หัวใจล้มเหลว (heart failure)",
+      "hypertrophic cardiomyopathy"
+    ],
+    "confused_with": [
+      "CL:0002129",
+      "CL:0002068"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0011019",
+    "slug": "epicardial-cell",
+    "kind": "cell",
+    "en": "mesothelial cell of epicardium",
+    "th": "เซลล์เอพิคาร์เดียม (epicardial cell)",
+    "systems": [
+      "cardiovascular"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-squamous",
+    "location": "ผิวนอกสุดของหัวใจ (epicardium หรือ visceral pericardium)",
+    "morphology": "เซลล์แบนบางเรียงชั้นเดียว (mesothelium) มีไมโครวิลไลที่ผิว",
+    "function": "สร้างผิวเรียบลื่นของหัวใจ และในตัวอ่อนเป็นแหล่งตั้งต้นของไฟโบรบลาสต์และเซลล์กล้ามเนื้อเรียบของหลอดเลือดโคโรนารีผ่าน epithelial-mesenchymal transition",
+    "secretes": [],
+    "markers": [
+      "WT1",
+      "calretinin"
+    ],
+    "lifespan": "",
+    "exam": "ผนังหัวใจ 3 ชั้นจากนอกไปใน คือ epicardium, myocardium, endocardium epicardium คือ visceral layer ของ serous pericardium",
+    "diseases": [
+      "เยื่อหุ้มหัวใจอักเสบ (pericarditis)"
+    ],
+    "confused_with": [
+      "CL:0002350"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:1000413",
+    "slug": "arterial-endothelial-cell",
+    "kind": "cell",
+    "en": "endothelial cell of artery",
+    "th": "เซลล์บุผนังหลอดเลือดแดง (arterial endothelial cell)",
+    "systems": [
+      "cardiovascular"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-squamous",
+    "location": "ผนังชั้นในสุด (tunica intima) ของหลอดเลือดแดง",
+    "morphology": "เซลล์แบนยาวเรียงตัวขนานไปตามทิศทางการไหลของเลือด",
+    "function": "ควบคุมการหดและขยายของหลอดเลือดแดงโดยหลั่ง nitric oxide (NO) และ endothelin รักษาผิวไม่ให้เลือดแข็งตัว และทนต่อแรงเฉือนจากเลือดความดันสูง",
+    "secretes": [
+      "nitric oxide (NO)",
+      "endothelin"
+    ],
+    "markers": [
+      "ephrin-B2 (EFNB2)",
+      "SOX17",
+      "CD31"
+    ],
+    "lifespan": "",
+    "exam": "NO ทำให้กล้ามเนื้อเรียบของหลอดเลือดคลายตัว (ผ่าน cGMP) การบาดเจ็บของเอนโดทีเลียมเป็นจุดเริ่มต้นของหลอดเลือดแดงแข็ง (atherosclerosis)",
+    "diseases": [
+      "หลอดเลือดแดงแข็ง (atherosclerosis)",
+      "ความดันเลือดสูง"
+    ],
+    "confused_with": [
+      "CL:0002543",
+      "CL:0002144"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002543",
+    "slug": "venous-endothelial-cell",
+    "kind": "cell",
+    "en": "vein endothelial cell",
+    "th": "เซลล์บุผนังหลอดเลือดดำ (venous endothelial cell)",
+    "systems": [
+      "cardiovascular"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-squamous",
+    "location": "ผนังชั้นในของหลอดเลือดดำ และลิ้นหลอดเลือดดำ",
+    "morphology": "เซลล์แบนเรียงชั้นเดียว รูปร่างหลายเหลี่ยมมากกว่าเซลล์หลอดเลือดแดง",
+    "function": "บุผนังหลอดเลือดดำที่แรงดันต่ำ สร้างลิ้นกันเลือดไหลย้อน เป็นตำแหน่งที่เม็ดเลือดขาวผ่านออกมายังเนื้อเยื่อได้ง่ายในการอักเสบ (โดยเฉพาะหลอดเลือดดำหลังเส้นเลือดฝอย) และผลิต von Willebrand factor",
+    "secretes": [
+      "von Willebrand factor"
+    ],
+    "markers": [
+      "EPHB4",
+      "NR2F2 (COUP-TFII)",
+      "CD31"
+    ],
+    "lifespan": "",
+    "exam": "การอักเสบทำให้เม็ดเลือดขาวเกาะและผ่านผนังหลอดเลือดดำขนาดเล็กหลังเส้นเลือดฝอย (post-capillary venule) ลิ่มเลือดในหลอดเลือดดำลึก (DVT) สัมพันธ์กับ Virchow's triad",
+    "diseases": [
+      "deep vein thrombosis (DVT)",
+      "เส้นเลือดขอด"
+    ],
+    "confused_with": [
+      "CL:1000413",
+      "CL:0002144"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002144",
+    "slug": "capillary-endothelial-cell",
+    "kind": "cell",
+    "en": "capillary endothelial cell",
+    "th": "เซลล์บุผนังหลอดเลือดฝอย (capillary endothelial cell)",
+    "systems": [
+      "cardiovascular"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-squamous",
+    "location": "ผนังของเส้นเลือดฝอยทั่วร่างกาย",
+    "morphology": "เซลล์แบนบางมาก ผนังมีสามแบบ คือ ต่อเนื่อง (continuous) มีรูพรุน (fenestrated) และมีช่องกว้าง (sinusoidal)",
+    "function": "เป็นตำแหน่งแลกเปลี่ยนก๊าซ สารอาหาร และของเสียระหว่างเลือดกับเนื้อเยื่อ ผนังบางที่สุดของระบบหลอดเลือด",
+    "secretes": [],
+    "markers": [
+      "CD31",
+      "PLVAP (ชนิดมีรูพรุน)"
+    ],
+    "lifespan": "",
+    "exam": "จำที่พบของเส้นเลือดฝอยแต่ละแบบ: continuous (กล้ามเนื้อ ผิวหนัง สมองที่มี BBB), fenestrated (ไต glomerulus ลำไส้เล็ก ต่อมไร้ท่อ), sinusoidal (ตับ ม้าม ไขกระดูก)",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000115",
+      "CL:0000669"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002138",
+    "slug": "lymphatic-endothelial-cell",
+    "kind": "cell",
+    "en": "endothelial cell of lymphatic vessel",
+    "th": "เซลล์บุผนังหลอดน้ำเหลือง (lymphatic endothelial cell)",
+    "systems": [
+      "cardiovascular",
+      "blood-immune"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-squamous",
+    "location": "ผนังหลอดน้ำเหลืองและไซนัสของต่อมน้ำเหลือง",
+    "morphology": "เซลล์แบนบางมาก เรียงเหลื่อมกันเป็นลิ้นรับน้ำเหลือง ฐานรองไม่ต่อเนื่อง มีเส้นใยยึดกับเนื้อเยื่อโดยรอบ (anchoring filament)",
+    "function": "ระบายของเหลวระหว่างเซลล์ (น้ำเหลือง) โปรตีน ไขมันที่ดูดซึมจากลำไส้ (chylomicron ผ่าน lacteal) และเซลล์ภูมิคุ้มกันกลับสู่ระบบหมุนเวียนเลือด",
+    "secretes": [],
+    "markers": [
+      "LYVE1",
+      "PROX1",
+      "podoplanin (PDPN)",
+      "VEGFR3"
+    ],
+    "lifespan": "",
+    "exam": "PROX1 เป็นตัวกำหนดชนิดเซลล์บุผนังหลอดน้ำเหลือง ซึ่งเกิดจากเซลล์บุหลอดเลือดดำ การอุดตันของหลอดน้ำเหลืองทำให้บวมเรื้อรัง เช่น โรคเท้าช้างจากพยาธิฟิลาเรีย",
+    "diseases": [
+      "lymphedema",
+      "โรคเท้าช้าง (filariasis)"
+    ],
+    "confused_with": [
+      "CL:0000115",
+      "CL:0002543"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
   }
 ]

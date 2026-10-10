@@ -1,10 +1,10 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-10 11:24
+สร้างเมื่อ: 2026-10-10 11:26
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 118 เส้น
+- ตรงกัน: 125 เส้น
 - คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 8 เส้น
 - คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 11 เส้น
 - CL มี แต่ไม่ได้คัดไว้: 66 เส้น
@@ -108,11 +108,11 @@
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
 - ตรงกัน: 22 เส้น
-- คัดเองมี แต่ CL ไม่มี: 59 เส้น
+- คัดเองมี แต่ CL ไม่มี: 61 เส้น
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 4 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 60 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 61 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 436 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 442 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -165,12 +165,14 @@
 - CL:0001070 beige adipocyte → CL:0000134 mesenchymal stem cell
 - CL:0002038 T follicular helper cell → CL:0000898 naive T cell
 - CL:0002062 pulmonary alveolar type 1 cell → CL:0002063 pulmonary alveolar type 2 cell
+- CL:0002138 endothelial cell of lymphatic vessel → CL:0002543 vein endothelial cell
 - CL:0002145 multiciliated columnar cell of tracheobronchial tree → CL:0002329 basal epithelial cell of tracheobronchial tree
 - CL:0002204 tuft cell → CL:0002250 intestinal crypt stem cell
 - CL:0002277 type I enteroendocrine cell → CL:0002250 intestinal crypt stem cell
 - CL:0002278 type K enteroendocrine cell → CL:0002250 intestinal crypt stem cell
 - CL:0002279 type L enteroendocrine cell → CL:0002250 intestinal crypt stem cell
 - CL:0002281 type S enteroendocrine cell → CL:0002250 intestinal crypt stem cell
+- CL:0002548 fibroblast of cardiac tissue → CL:0011019 mesothelial cell of epicardium
 - CL:0007010 osteoprogenitor cell → CL:0000134 mesenchymal stem cell
 - CL:0008002 skeletal muscle fiber → CL:0000056 myoblast
 - CL:1000347 colonocyte → CL:0002250 intestinal crypt stem cell
@@ -235,6 +237,7 @@
 - CL:0000836 promyelocyte ← CL:0017503 basophilic cytoplasm
 - CL:0001031 cerebellar granule cell ← CL:0002362 cerebellar granule cell precursor
 - CL:0002063 pulmonary alveolar type 2 cell ← CL:4040003 fetal pre-type II pulmonary alveolar epithelial cell
+- CL:0002138 endothelial cell of lymphatic vessel ← CL:0005022 vascular lymphangioblast
 - CL:0002145 multiciliated columnar cell of tracheobronchial tree ← CL:0002209 intermediate epitheliocyte
 - CL:0002255 stromal cell of endometrium ← CL:2000002 decidual cell
 - CL:0002302 type A synovial cell ← CL:0000842 mononuclear leukocyte
@@ -246,7 +249,7 @@
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 - CL:4072104 fibrochondrocyte ← CL:0020021 fibrochondrocyte progenitor cell
 
-## คำเตือนจาก validate (236)
+## คำเตือนจาก validate (243)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -316,6 +319,13 @@
 - CL:0000359 (vascular associated smooth muscle cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000669 (pericyte): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0002548 (fibroblast of cardiac tissue): ช่องว่าง: lifespan, confused_with; ยังไม่มีรูป
+- CL:0002129 (regular atrial cardiac myocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:2000046 (ventricular cardiac muscle cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0011019 (mesothelial cell of epicardium): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:1000413 (endothelial cell of artery): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002543 (vein endothelial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002144 (capillary endothelial cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0002138 (endothelial cell of lymphatic vessel): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0002563 (intestinal epithelial cell): ยังไม่มีรูป
 - CL:0002178 (epithelial cell of stomach): ยังไม่มีรูป
 - CL:1001433 (epithelial cell of exocrine pancreas): ยังไม่มีรูป
