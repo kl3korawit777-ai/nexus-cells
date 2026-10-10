@@ -777,5 +777,425 @@
     "images": [],
     "verified": false,
     "refs": []
+  },
+  {
+    "id": "CL:0001031",
+    "slug": "cerebellar-granule-cell",
+    "kind": "cell",
+    "en": "cerebellar granule cell",
+    "th": "เซลล์แกรนูลของสมองน้อย (cerebellar granule cell)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
+    "location": "ชั้นแกรนูล (granular layer) ของเปลือกสมองน้อย",
+    "morphology": "เซลล์ประสาทขนาดเล็กมาก นิวเคลียสกลมเข้ม ไซโทพลาซึมน้อย แอกซอนยื่นขึ้นไปที่ชั้น molecular แล้วแตกเป็นรูปตัว T เรียก parallel fiber",
+    "function": "เซลล์ประสาทชนิดกระตุ้น (หลั่ง glutamate) รับสัญญาณจาก mossy fiber แล้วส่งต่อให้ Purkinje cell ผ่าน parallel fiber เป็นเซลล์ประสาทที่มีจำนวนมากที่สุดในสมอง",
+    "secretes": [
+      "กลูตาเมต (glutamate)"
+    ],
+    "markers": [
+      "GABRA6",
+      "PAX6"
+    ],
+    "lifespan": "",
+    "exam": "เปลือกสมองน้อย 3 ชั้นจากนอกไปใน คือ molecular, Purkinje, granular เซลล์ granule กระตุ้น Purkinje cell ส่วน Purkinje cell ยับยั้ง (GABA) เซลล์ในนิวเคลียสลึกของสมองน้อย",
+    "diseases": [
+      "medulloblastoma (เนื้องอกสมองน้อยในเด็ก)"
+    ],
+    "confused_with": [
+      "CL:0000121"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000617",
+    "slug": "gabaergic-neuron",
+    "kind": "cell",
+    "en": "GABAergic neuron",
+    "th": "เซลล์ประสาท GABA (GABAergic neuron)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
+    "location": "ทั่วระบบประสาทส่วนกลาง เช่น อินเตอร์นิวรอนของเปลือกสมอง เซลล์ Purkinje basal ganglia",
+    "morphology": "เซลล์ประสาทหลายแบบ ทั้งอินเตอร์นิวรอนขนาดเล็กและเซลล์ฉายแอกซอนไกล",
+    "function": "ปล่อย GABA ซึ่งเป็นสารสื่อประสาทชนิดยับยั้งหลักของสมอง เปิดช่อง Cl− ของตัวรับ GABA-A ทำให้เยื่อหุ้มเซลล์ hyperpolarize",
+    "secretes": [
+      "GABA"
+    ],
+    "markers": [
+      "GAD65/67 (glutamate decarboxylase)",
+      "GAT-1"
+    ],
+    "lifespan": "",
+    "exam": "ยาเบนโซไดอะซีพีนและบาร์บิทูเรตเสริมการทำงานของตัวรับ GABA-A (ออกฤทธิ์สงบประสาท) GABA สร้างจาก glutamate ด้วยเอนไซม์ GAD (ต้องใช้วิตามิน B6)",
+    "diseases": [
+      "โรคลมชัก (epilepsy)",
+      "Huntington disease (สูญเสีย GABAergic neuron ใน striatum)"
+    ],
+    "confused_with": [
+      "CL:0000679"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000679",
+    "slug": "glutamatergic-neuron",
+    "kind": "cell",
+    "en": "glutamatergic neuron",
+    "th": "เซลล์ประสาทกลูตาเมต (glutamatergic neuron)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
+    "location": "ทั่วระบบประสาทส่วนกลาง เช่น เซลล์ pyramidal ของเปลือกสมองและฮิปโปแคมปัส เซลล์ granule ของสมองน้อย",
+    "morphology": "เซลล์ประสาทหลายแบบ เช่น pyramidal และ granule",
+    "function": "ปล่อย glutamate ซึ่งเป็นสารสื่อประสาทชนิดกระตุ้นหลักของสมอง ผ่านตัวรับ AMPA, NMDA และ kainate NMDA receptor จำเป็นต่อการเรียนรู้และความจำ (long-term potentiation)",
+    "secretes": [
+      "กลูตาเมต (glutamate)"
+    ],
+    "markers": [
+      "VGLUT1",
+      "VGLUT2"
+    ],
+    "lifespan": "",
+    "exam": "glutamate ปริมาณมากเกินไปทำให้เซลล์ประสาทตายแบบ excitotoxicity เช่นในโรคหลอดเลือดสมองตีบ",
+    "diseases": [
+      "excitotoxicity ในโรคหลอดเลือดสมองตีบ",
+      "โรคลมชัก (epilepsy)"
+    ],
+    "confused_with": [
+      "CL:0000617"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000850",
+    "slug": "serotonergic-neuron",
+    "kind": "cell",
+    "en": "serotonergic neuron",
+    "th": "เซลล์ประสาทเซโรโทนิน (serotonergic neuron)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
+    "location": "ก้านสมอง โดยเฉพาะ raphe nuclei และส่งแอกซอนกระจายไปทั่วสมอง",
+    "morphology": "เซลล์ประสาทที่ส่งแอกซอนแตกแขนงมากไปยังสมองส่วนต่าง ๆ",
+    "function": "ปล่อย serotonin (5-HT) ควบคุมอารมณ์ การนอนหลับ ความอยากอาหาร และการรับรู้ความเจ็บปวด",
+    "secretes": [
+      "เซโรโทนิน (5-HT)"
+    ],
+    "markers": [
+      "tryptophan hydroxylase 2 (TPH2)",
+      "SERT"
+    ],
+    "lifespan": "",
+    "exam": "ยากลุ่ม SSRI ยับยั้งตัวขนส่ง SERT เพื่อเพิ่ม serotonin ในร่องซินแนปส์ รักษาภาวะซึมเศร้า serotonin ส่วนใหญ่ของร่างกายอยู่ที่ลำไส้ (EC cell) ไม่ใช่สมอง",
+    "diseases": [
+      "ภาวะซึมเศร้า (depression)",
+      "serotonin syndrome"
+    ],
+    "confused_with": [
+      "CL:0000577"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002453",
+    "slug": "oligodendrocyte-precursor-cell",
+    "kind": "cell",
+    "en": "oligodendrocyte precursor cell",
+    "th": "เซลล์ตั้งต้นโอลิโกเดนโดรไซต์ (OPC)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "glia",
+    "location": "สมองและไขสันหลัง ทั้งสสารเทาและสสารขาว",
+    "morphology": "เซลล์มีแขนงสั้น ๆ หลายแขนง กระจายอยู่ทั่ว",
+    "function": "เป็นเซลล์ตั้งต้นที่แบ่งตัวและเจริญเป็นโอลิโกเดนโดรไซต์ เพื่อสร้างไมอีลินใหม่ (remyelination) ตลอดชีวิต",
+    "secretes": [],
+    "markers": [
+      "PDGFRA",
+      "NG2 (CSPG4)",
+      "OLIG2"
+    ],
+    "lifespan": "",
+    "exam": "โอลิโกเดนโดรไซต์สร้างไมอีลินใน CNS (หนึ่งเซลล์หุ้มหลายแอกซอน) ต่างจาก Schwann cell ใน PNS (หนึ่งเซลล์หุ้มหนึ่งช่วงของแอกซอน)",
+    "diseases": [
+      "multiple sclerosis (remyelination ล้มเหลว)"
+    ],
+    "confused_with": [
+      "CL:0000128",
+      "CL:0000127"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002085",
+    "slug": "tanycyte",
+    "kind": "cell",
+    "en": "tanycyte",
+    "th": "แทนนีไซต์ (tanycyte)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "glia",
+    "location": "ผนังด้านล่างของโพรงสมองที่ 3 บริเวณไฮโพทาลามัสและ median eminence",
+    "morphology": "เซลล์คล้ายเซลล์ ependymal แต่มีแขนงยาวพุ่งเข้าไปในเนื้อไฮโพทาลามัส",
+    "function": "รับรู้สารเคมีในน้ำไขสันหลังและเลือด ควบคุมการสื่อสารระหว่างเลือด น้ำไขสันหลัง กับไฮโพทาลามัส และเปลี่ยน T4 เป็น T3 ด้วยเอนไซม์ deiodinase 2",
+    "secretes": [],
+    "markers": [
+      "vimentin",
+      "DIO2"
+    ],
+    "lifespan": "",
+    "exam": "median eminence ไม่มี blood-brain barrier ที่สมบูรณ์ ทำให้ฮอร์โมนปลดปล่อยจากไฮโพทาลามัสเข้า portal system ไปยังต่อมใต้สมองส่วนหน้าได้",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000065"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000706",
+    "slug": "choroid-plexus-epithelial-cell",
+    "kind": "cell",
+    "en": "choroid plexus epithelial cell",
+    "th": "เซลล์เยื่อบุผิวของ choroid plexus",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-cuboidal",
+    "location": "choroid plexus ในโพรงสมอง (ventricle) ของสมอง",
+    "morphology": "เซลล์รูปลูกบาศก์ชั้นเดียว มีไมโครวิลไลและซิเลียที่ปลายเซลล์ เชื่อมกันด้วย tight junction",
+    "function": "สร้างน้ำไขสันหลัง (CSF) ประมาณ 500 mL ต่อวัน และเป็นกำแพงกั้นเลือดกับน้ำไขสันหลัง (blood-CSF barrier)",
+    "secretes": [
+      "น้ำไขสันหลัง (CSF)",
+      "transthyretin"
+    ],
+    "markers": [
+      "transthyretin (TTR)",
+      "aquaporin 1"
+    ],
+    "lifespan": "",
+    "exam": "CSF สร้างที่ choroid plexus แล้วไหลผ่านโพรงสมอง ไปยัง subarachnoid space และถูกดูดกลับที่ arachnoid granulation ถ้าการไหลหรือการดูดกลับผิดปกติเกิด hydrocephalus",
+    "diseases": [
+      "hydrocephalus"
+    ],
+    "confused_with": [
+      "CL:0000065"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0011028",
+    "slug": "olfactory-ensheathing-cell",
+    "kind": "cell",
+    "en": "olfactory ensheathing cell",
+    "th": "เซลล์เกลียหุ้มปลายประสาทรับกลิ่น (olfactory ensheathing cell)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "glia",
+    "location": "เส้นประสาทรับกลิ่น (cranial nerve I) และชั้น nerve layer ของ olfactory bulb",
+    "morphology": "เซลล์เกลียที่มีลักษณะคล้ายทั้ง Schwann cell และแอสโทรไซต์ ห่อหุ้มกลุ่มแอกซอนหลายเส้น",
+    "function": "ห่อหุ้มและนำทางแอกซอนของเซลล์รับกลิ่นซึ่งสร้างใหม่ตลอดชีวิต ให้เจริญผ่านแผ่น cribriform ไปยัง olfactory bulb",
+    "secretes": [],
+    "markers": [
+      "p75NTR",
+      "S100",
+      "GFAP"
+    ],
+    "lifespan": "",
+    "exam": "เซลล์รับกลิ่นเป็นเซลล์ประสาทที่ถูกแทนที่ตลอดชีวิต และแอกซอนใหม่ของมันเชื่อมกับสมองได้อีก โดยมี olfactory ensheathing cell ช่วยนำทาง",
+    "diseases": [],
+    "confused_with": [
+      "CL:0002573",
+      "CL:0000127"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000681",
+    "slug": "radial-glial-cell",
+    "kind": "cell",
+    "en": "radial glial cell",
+    "th": "เซลล์เรเดียลเกลีย (radial glial cell)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "glia",
+    "location": "ventricular zone ของสมองและไขสันหลังที่กำลังพัฒนา",
+    "morphology": "เซลล์ยาวเรียวทอดจากผนังโพรงสมองไปถึงผิวนอกของสมอง",
+    "function": "เป็นเซลล์ตั้งต้นของระบบประสาทในตัวอ่อน แบ่งตัวสร้างเซลล์ประสาทและเซลล์เกลียในภายหลัง และเป็นเส้นทางให้เซลล์ประสาทอพยพ (radial migration) ไปสู่เปลือกสมอง",
+    "secretes": [],
+    "markers": [
+      "nestin",
+      "PAX6",
+      "BLBP"
+    ],
+    "lifespan": "",
+    "exam": "เซลล์ประสาทของเปลือกสมองอพยพตามเส้นใยของ radial glial cell แบบ inside-out (เซลล์เกิดก่อนอยู่ชั้นลึก)",
+    "diseases": [
+      "lissencephaly (การอพยพของเซลล์ประสาทผิดปกติ)"
+    ],
+    "confused_with": [
+      "CL:0000047",
+      "CL:0000127"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000745",
+    "slug": "retina-horizontal-cell",
+    "kind": "cell",
+    "en": "retina horizontal cell",
+    "th": "เซลล์ฮอริซอนทัลของจอตา (horizontal cell)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
+    "location": "ชั้น inner nuclear layer ด้านนอกของจอตา ติดกับชั้น outer plexiform",
+    "morphology": "อินเตอร์นิวรอนที่มีแขนงแผ่ไปตามแนวราบ",
+    "function": "เชื่อมสัญญาณด้านข้างระหว่างเซลล์รับแสงหลายเซลล์ ทำให้เกิด lateral inhibition เพิ่มความต่างของภาพ (contrast) และความคมชัดของขอบภาพ",
+    "secretes": [],
+    "markers": [
+      "calbindin"
+    ],
+    "lifespan": "",
+    "exam": "สัญญาณหลักในจอตาไหลจาก photoreceptor ไป bipolar cell ไป ganglion cell ส่วน horizontal และ amacrine cell ปรับสัญญาณในแนวขวาง",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000561"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000561",
+    "slug": "amacrine-cell",
+    "kind": "cell",
+    "en": "amacrine cell",
+    "th": "เซลล์อะมาคริน (amacrine cell)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "neuron",
+    "location": "ชั้น inner nuclear layer ด้านในของจอตา แขนงอยู่ในชั้น inner plexiform",
+    "morphology": "อินเตอร์นิวรอนที่ไม่มีแอกซอนยาว มีแขนงแผ่ในแนวราบหลายแบบ",
+    "function": "ปรับสัญญาณระหว่าง bipolar cell กับ ganglion cell ที่ชั้น inner plexiform มีหลายชนิด ช่วยตรวจจับการเคลื่อนไหวและทิศทาง หลั่ง GABA หรือ glycine เป็นหลัก",
+    "secretes": [
+      "GABA",
+      "glycine"
+    ],
+    "markers": [
+      "calretinin"
+    ],
+    "lifespan": "",
+    "exam": "ชื่อ amacrine มาจากภาษากรีกแปลว่าไม่มีเส้นใยยาว (a-makros-in) เพราะไม่มีแอกซอนแบบเซลล์ประสาททั่วไป",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000745"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000609",
+    "slug": "vestibular-hair-cell",
+    "kind": "cell",
+    "en": "vestibular hair cell",
+    "th": "เซลล์ขนของระบบทรงตัว (vestibular hair cell)",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-columnar",
+    "location": "macula ของ utricle และ saccule และ crista ampullaris ของท่อครึ่งวงกลม ในหูชั้นใน",
+    "morphology": "เซลล์รับความรู้สึกที่ปลายมี stereocilia หลายเส้นเรียงตามความสูงและ kinocilium หนึ่งเส้น",
+    "function": "แปลงการเคลื่อนไหวศีรษะ (การเร่งเชิงเส้นและการหมุน) เป็นสัญญาณประสาท เมื่อ stereocilia โค้งไปทาง kinocilium เซลล์จะ depolarize",
+    "secretes": [
+      "กลูตาเมต (glutamate)"
+    ],
+    "markers": [
+      "myosin VIIa"
+    ],
+    "lifespan": "",
+    "exam": "macula รับการเร่งเชิงเส้นและแรงโน้มถ่วง (มี otolith) ส่วน crista รับการหมุนของศีรษะ ต่างจากเซลล์ขนใน cochlea ซึ่งในผู้ใหญ่ไม่มี kinocilium",
+    "diseases": [
+      "BPPV (otolith หลุดเข้าท่อครึ่งวงกลม)",
+      "Meniere disease"
+    ],
+    "confused_with": [
+      "CL:0000589",
+      "CL:0000601"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002490",
+    "slug": "organ-of-corti-supporting-cell",
+    "kind": "cell",
+    "en": "organ of Corti supporting cell",
+    "th": "เซลล์ค้ำจุนของ organ of Corti",
+    "systems": [
+      "nervous"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-columnar",
+    "location": "organ of Corti บน basilar membrane ของ cochlea ในหูชั้นใน",
+    "morphology": "เซลล์เยื่อบุผิวรูปทรงยาว มีหลายชนิด เช่น pillar cell และ Deiters' cell",
+    "function": "ค้ำจุนเซลล์ขนและคงโครงสร้างของ organ of Corti pillar cell สร้างอุโมงค์ (tunnel of Corti) ส่วน Deiters' cell รองรับเซลล์ขนชั้นนอก",
+    "secretes": [],
+    "markers": [
+      "SOX2",
+      "p27Kip1"
+    ],
+    "lifespan": "",
+    "exam": "เซลล์ค้ำจุนไม่ใช่เซลล์รับเสียง เซลล์รับเสียงคือเซลล์ขนชั้นในและชั้นนอก ในสัตว์บางชนิดเซลล์ค้ำจุนเปลี่ยนเป็นเซลล์ขนใหม่ได้ แต่ในมนุษย์ทำไม่ได้",
+    "diseases": [
+      "หูหนวกจากประสาทรับเสียงเสื่อม (sensorineural hearing loss)"
+    ],
+    "confused_with": [
+      "CL:0000589",
+      "CL:0000601"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
   }
 ]

@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "f1856290e104",
-  "generated_at": "2026-10-10T04:18:14+00:00",
+  "data_version": "be086bcd2799",
+  "generated_at": "2026-10-10T04:21:57+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "stats": {
    "images": 0
@@ -5790,6 +5790,50 @@
    }
   },
   {
+   "id": "CL:0000642",
+   "slug": "folliculostellate-cell",
+   "kind": "cell",
+   "en": "folliculostellate cell",
+   "th": "เซลล์ฟอลลิคูโลสเตลเลต (folliculostellate cell)",
+   "systems": [
+    "endocrine"
+   ],
+   "tissue": "nervous",
+   "tissue_subtype": "glia",
+   "location": "ต่อมใต้สมองส่วนหน้า (adenohypophysis) แทรกอยู่ระหว่างเซลล์ต่อมไร้ท่อ",
+   "morphology": "เซลล์รูปดาวมีแขนงยาว สร้างเครือข่ายล้อมรอบกลุ่มเซลล์ต่อมไร้ท่อ ไม่ติดสีฮอร์โมน",
+   "function": "เป็นเซลล์ค้ำจุนที่ไม่ใช่เซลล์ต่อมไร้ท่อ หลั่งสัญญาณพาราไครน์ เช่น IL-6 และปัจจัยการเจริญเติบโต เพื่อควบคุมการหลั่งฮอร์โมนของเซลล์ข้างเคียง และเชื่อมกันด้วย gap junction",
+   "secretes": [
+    "IL-6",
+    "follistatin"
+   ],
+   "markers": [
+    "S100"
+   ],
+   "lifespan": "",
+   "exam": "เซลล์ในต่อมใต้สมองส่วนหน้ามีทั้งเซลล์ต่อมไร้ท่อ 5 ชนิดและ folliculostellate cell ซึ่งไม่หลั่งฮอร์โมนเอง ส่วนต่อมใต้สมองส่วนหลังไม่มีเซลล์ต่อมไร้ท่อ แต่มี pituicyte ทำหน้าที่ค้ำจุน",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000645"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000642",
+   "cl": {
+    "label": "folliculostellate cell",
+    "definition": "An agranular supporting cell of the anterior pituitary (adenohypophysis) that is characterized by a star-like morphology and ability to form follicles. Folliculostellate cells communicate with each other and with endocrine cells via gap junctions.",
+    "synonyms": [
+     "FS cell",
+     "FSC",
+     "Sox2-positive stem cell",
+     "folliculo-stellate cell",
+     "pituitary folliculostellate cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
    "id": "CL:0002187",
    "slug": "basal-keratinocyte",
    "kind": "cell",
@@ -7431,6 +7475,550 @@
      "Müller cell",
      "Muller cell"
     ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0001031",
+   "slug": "cerebellar-granule-cell",
+   "kind": "cell",
+   "en": "cerebellar granule cell",
+   "th": "เซลล์แกรนูลของสมองน้อย (cerebellar granule cell)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "nervous",
+   "tissue_subtype": "neuron",
+   "location": "ชั้นแกรนูล (granular layer) ของเปลือกสมองน้อย",
+   "morphology": "เซลล์ประสาทขนาดเล็กมาก นิวเคลียสกลมเข้ม ไซโทพลาซึมน้อย แอกซอนยื่นขึ้นไปที่ชั้น molecular แล้วแตกเป็นรูปตัว T เรียก parallel fiber",
+   "function": "เซลล์ประสาทชนิดกระตุ้น (หลั่ง glutamate) รับสัญญาณจาก mossy fiber แล้วส่งต่อให้ Purkinje cell ผ่าน parallel fiber เป็นเซลล์ประสาทที่มีจำนวนมากที่สุดในสมอง",
+   "secretes": [
+    "กลูตาเมต (glutamate)"
+   ],
+   "markers": [
+    "GABRA6",
+    "PAX6"
+   ],
+   "lifespan": "",
+   "exam": "เปลือกสมองน้อย 3 ชั้นจากนอกไปใน คือ molecular, Purkinje, granular เซลล์ granule กระตุ้น Purkinje cell ส่วน Purkinje cell ยับยั้ง (GABA) เซลล์ในนิวเคลียสลึกของสมองน้อย",
+   "diseases": [
+    "medulloblastoma (เนื้องอกสมองน้อยในเด็ก)"
+   ],
+   "confused_with": [
+    "CL:0000121"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0001031",
+   "cl": {
+    "label": "cerebellar granule cell",
+    "definition": "An excitatory granule cell with a soma located in the granular layer of cerebellar cortex. A mature cerebellar granule cell has short dendrites with a characteristic claw-like appearance and a long axon that ascends to the molecular layer where it bifurcates (except in non-teleost fish, where it does not bifurcate) and extends mediolaterally to form parallel fibers.",
+    "synonyms": [
+     "granule cell of the cerebellum"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000617",
+   "slug": "gabaergic-neuron",
+   "kind": "cell",
+   "en": "GABAergic neuron",
+   "th": "เซลล์ประสาท GABA (GABAergic neuron)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "nervous",
+   "tissue_subtype": "neuron",
+   "location": "ทั่วระบบประสาทส่วนกลาง เช่น อินเตอร์นิวรอนของเปลือกสมอง เซลล์ Purkinje basal ganglia",
+   "morphology": "เซลล์ประสาทหลายแบบ ทั้งอินเตอร์นิวรอนขนาดเล็กและเซลล์ฉายแอกซอนไกล",
+   "function": "ปล่อย GABA ซึ่งเป็นสารสื่อประสาทชนิดยับยั้งหลักของสมอง เปิดช่อง Cl− ของตัวรับ GABA-A ทำให้เยื่อหุ้มเซลล์ hyperpolarize",
+   "secretes": [
+    "GABA"
+   ],
+   "markers": [
+    "GAD65/67 (glutamate decarboxylase)",
+    "GAT-1"
+   ],
+   "lifespan": "",
+   "exam": "ยาเบนโซไดอะซีพีนและบาร์บิทูเรตเสริมการทำงานของตัวรับ GABA-A (ออกฤทธิ์สงบประสาท) GABA สร้างจาก glutamate ด้วยเอนไซม์ GAD (ต้องใช้วิตามิน B6)",
+   "diseases": [
+    "โรคลมชัก (epilepsy)",
+    "Huntington disease (สูญเสีย GABAergic neuron ใน striatum)"
+   ],
+   "confused_with": [
+    "CL:0000679"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000617",
+   "cl": {
+    "label": "GABAergic neuron",
+    "definition": "A neuron that uses GABA as a vesicular neurotransmitter",
+    "synonyms": [
+     "GABA-ergic neuron"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000679",
+   "slug": "glutamatergic-neuron",
+   "kind": "cell",
+   "en": "glutamatergic neuron",
+   "th": "เซลล์ประสาทกลูตาเมต (glutamatergic neuron)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "nervous",
+   "tissue_subtype": "neuron",
+   "location": "ทั่วระบบประสาทส่วนกลาง เช่น เซลล์ pyramidal ของเปลือกสมองและฮิปโปแคมปัส เซลล์ granule ของสมองน้อย",
+   "morphology": "เซลล์ประสาทหลายแบบ เช่น pyramidal และ granule",
+   "function": "ปล่อย glutamate ซึ่งเป็นสารสื่อประสาทชนิดกระตุ้นหลักของสมอง ผ่านตัวรับ AMPA, NMDA และ kainate NMDA receptor จำเป็นต่อการเรียนรู้และความจำ (long-term potentiation)",
+   "secretes": [
+    "กลูตาเมต (glutamate)"
+   ],
+   "markers": [
+    "VGLUT1",
+    "VGLUT2"
+   ],
+   "lifespan": "",
+   "exam": "glutamate ปริมาณมากเกินไปทำให้เซลล์ประสาทตายแบบ excitotoxicity เช่นในโรคหลอดเลือดสมองตีบ",
+   "diseases": [
+    "excitotoxicity ในโรคหลอดเลือดสมองตีบ",
+    "โรคลมชัก (epilepsy)"
+   ],
+   "confused_with": [
+    "CL:0000617"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000679",
+   "cl": {
+    "label": "glutamatergic neuron",
+    "definition": "",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000850",
+   "slug": "serotonergic-neuron",
+   "kind": "cell",
+   "en": "serotonergic neuron",
+   "th": "เซลล์ประสาทเซโรโทนิน (serotonergic neuron)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "nervous",
+   "tissue_subtype": "neuron",
+   "location": "ก้านสมอง โดยเฉพาะ raphe nuclei และส่งแอกซอนกระจายไปทั่วสมอง",
+   "morphology": "เซลล์ประสาทที่ส่งแอกซอนแตกแขนงมากไปยังสมองส่วนต่าง ๆ",
+   "function": "ปล่อย serotonin (5-HT) ควบคุมอารมณ์ การนอนหลับ ความอยากอาหาร และการรับรู้ความเจ็บปวด",
+   "secretes": [
+    "เซโรโทนิน (5-HT)"
+   ],
+   "markers": [
+    "tryptophan hydroxylase 2 (TPH2)",
+    "SERT"
+   ],
+   "lifespan": "",
+   "exam": "ยากลุ่ม SSRI ยับยั้งตัวขนส่ง SERT เพื่อเพิ่ม serotonin ในร่องซินแนปส์ รักษาภาวะซึมเศร้า serotonin ส่วนใหญ่ของร่างกายอยู่ที่ลำไส้ (EC cell) ไม่ใช่สมอง",
+   "diseases": [
+    "ภาวะซึมเศร้า (depression)",
+    "serotonin syndrome"
+   ],
+   "confused_with": [
+    "CL:0000577"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000850",
+   "cl": {
+    "label": "serotonergic neuron",
+    "definition": "A neuron that releases serotonin as a neurotransmitter.",
+    "synonyms": [
+     "5-HT neuron",
+     "5-hydroxytryptamine neuron",
+     "serotinergic neuron"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002453",
+   "slug": "oligodendrocyte-precursor-cell",
+   "kind": "cell",
+   "en": "oligodendrocyte precursor cell",
+   "th": "เซลล์ตั้งต้นโอลิโกเดนโดรไซต์ (OPC)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "nervous",
+   "tissue_subtype": "glia",
+   "location": "สมองและไขสันหลัง ทั้งสสารเทาและสสารขาว",
+   "morphology": "เซลล์มีแขนงสั้น ๆ หลายแขนง กระจายอยู่ทั่ว",
+   "function": "เป็นเซลล์ตั้งต้นที่แบ่งตัวและเจริญเป็นโอลิโกเดนโดรไซต์ เพื่อสร้างไมอีลินใหม่ (remyelination) ตลอดชีวิต",
+   "secretes": [],
+   "markers": [
+    "PDGFRA",
+    "NG2 (CSPG4)",
+    "OLIG2"
+   ],
+   "lifespan": "",
+   "exam": "โอลิโกเดนโดรไซต์สร้างไมอีลินใน CNS (หนึ่งเซลล์หุ้มหลายแอกซอน) ต่างจาก Schwann cell ใน PNS (หนึ่งเซลล์หุ้มหนึ่งช่วงของแอกซอน)",
+   "diseases": [
+    "multiple sclerosis (remyelination ล้มเหลว)"
+   ],
+   "confused_with": [
+    "CL:0000128",
+    "CL:0000127"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002453",
+   "cl": {
+    "label": "oligodendrocyte precursor cell",
+    "definition": "A proliferative and migratory glial progenitor cell that derives from a neural stem cell and resides within the central nervous system. It possesses the capacity to differentiate into a committed oligodendrocyte progenitor (COP) through a well-defined series of maturation steps, ultimately giving rise to a myelinating oligodendrocyte (MOL). In mice and humans, it is characterized by the expression of specific molecular markers, including Pdgfra, Cspg4 (also known as NG2) and Olig2.",
+    "synonyms": [
+     "NG2 cell",
+     "O2-A",
+     "OPC",
+     "Polydendrocyte"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002085",
+   "slug": "tanycyte",
+   "kind": "cell",
+   "en": "tanycyte",
+   "th": "แทนนีไซต์ (tanycyte)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "nervous",
+   "tissue_subtype": "glia",
+   "location": "ผนังด้านล่างของโพรงสมองที่ 3 บริเวณไฮโพทาลามัสและ median eminence",
+   "morphology": "เซลล์คล้ายเซลล์ ependymal แต่มีแขนงยาวพุ่งเข้าไปในเนื้อไฮโพทาลามัส",
+   "function": "รับรู้สารเคมีในน้ำไขสันหลังและเลือด ควบคุมการสื่อสารระหว่างเลือด น้ำไขสันหลัง กับไฮโพทาลามัส และเปลี่ยน T4 เป็น T3 ด้วยเอนไซม์ deiodinase 2",
+   "secretes": [],
+   "markers": [
+    "vimentin",
+    "DIO2"
+   ],
+   "lifespan": "",
+   "exam": "median eminence ไม่มี blood-brain barrier ที่สมบูรณ์ ทำให้ฮอร์โมนปลดปล่อยจากไฮโพทาลามัสเข้า portal system ไปยังต่อมใต้สมองส่วนหน้าได้",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000065"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002085",
+   "cl": {
+    "label": "tanycyte",
+    "definition": "A specialized elongated ventricular ependymal cell with one or more processes that extend into the brain parenchyma or associated blood vessels where they contact blood vessel endothelial cells and/or neurons. These cells are found in the ventricles and circumventricular organs of the brain. They are involved in hormonal regulation, gatekeeping molecules between the bloodstream and cerebrospinal fluid, metabolic sensing, and regulating food intake.",
+    "synonyms": [
+     "stretch cell",
+     "tanycyte-like cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000706",
+   "slug": "choroid-plexus-epithelial-cell",
+   "kind": "cell",
+   "en": "choroid plexus epithelial cell",
+   "th": "เซลล์เยื่อบุผิวของ choroid plexus",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-cuboidal",
+   "location": "choroid plexus ในโพรงสมอง (ventricle) ของสมอง",
+   "morphology": "เซลล์รูปลูกบาศก์ชั้นเดียว มีไมโครวิลไลและซิเลียที่ปลายเซลล์ เชื่อมกันด้วย tight junction",
+   "function": "สร้างน้ำไขสันหลัง (CSF) ประมาณ 500 mL ต่อวัน และเป็นกำแพงกั้นเลือดกับน้ำไขสันหลัง (blood-CSF barrier)",
+   "secretes": [
+    "น้ำไขสันหลัง (CSF)",
+    "transthyretin"
+   ],
+   "markers": [
+    "transthyretin (TTR)",
+    "aquaporin 1"
+   ],
+   "lifespan": "",
+   "exam": "CSF สร้างที่ choroid plexus แล้วไหลผ่านโพรงสมอง ไปยัง subarachnoid space และถูกดูดกลับที่ arachnoid granulation ถ้าการไหลหรือการดูดกลับผิดปกติเกิด hydrocephalus",
+   "diseases": [
+    "hydrocephalus"
+   ],
+   "confused_with": [
+    "CL:0000065"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000706",
+   "cl": {
+    "label": "choroid plexus epithelial cell",
+    "definition": "A choroid plexus epithelial cell possesses non-motile 9+0 cilia. While these cilia can exhibit transient motility during development, they generally do not contribute significantly to the directional flow of cerebrospinal fluid (CSF). Instead, they are primarily involved in sensory functions.",
+    "synonyms": [
+     "epithelial cell of choroid plexus",
+     "choroid plexus cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0011028",
+   "slug": "olfactory-ensheathing-cell",
+   "kind": "cell",
+   "en": "olfactory ensheathing cell",
+   "th": "เซลล์เกลียหุ้มปลายประสาทรับกลิ่น (olfactory ensheathing cell)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "nervous",
+   "tissue_subtype": "glia",
+   "location": "เส้นประสาทรับกลิ่น (cranial nerve I) และชั้น nerve layer ของ olfactory bulb",
+   "morphology": "เซลล์เกลียที่มีลักษณะคล้ายทั้ง Schwann cell และแอสโทรไซต์ ห่อหุ้มกลุ่มแอกซอนหลายเส้น",
+   "function": "ห่อหุ้มและนำทางแอกซอนของเซลล์รับกลิ่นซึ่งสร้างใหม่ตลอดชีวิต ให้เจริญผ่านแผ่น cribriform ไปยัง olfactory bulb",
+   "secretes": [],
+   "markers": [
+    "p75NTR",
+    "S100",
+    "GFAP"
+   ],
+   "lifespan": "",
+   "exam": "เซลล์รับกลิ่นเป็นเซลล์ประสาทที่ถูกแทนที่ตลอดชีวิต และแอกซอนใหม่ของมันเชื่อมกับสมองได้อีก โดยมี olfactory ensheathing cell ช่วยนำทาง",
+   "diseases": [],
+   "confused_with": [
+    "CL:0002573",
+    "CL:0000127"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0011028",
+   "cl": {
+    "label": "olfactory ensheathing cell",
+    "definition": "A neural-crest derived glial cell that supports the growth and survival of primary olfactory neuroons from the neuroepithelium in the nasal cavity to the brain by encasing large bundles of numerous unmyelinated axons.",
+    "synonyms": [
+     "OEC"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000681",
+   "slug": "radial-glial-cell",
+   "kind": "cell",
+   "en": "radial glial cell",
+   "th": "เซลล์เรเดียลเกลีย (radial glial cell)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "nervous",
+   "tissue_subtype": "glia",
+   "location": "ventricular zone ของสมองและไขสันหลังที่กำลังพัฒนา",
+   "morphology": "เซลล์ยาวเรียวทอดจากผนังโพรงสมองไปถึงผิวนอกของสมอง",
+   "function": "เป็นเซลล์ตั้งต้นของระบบประสาทในตัวอ่อน แบ่งตัวสร้างเซลล์ประสาทและเซลล์เกลียในภายหลัง และเป็นเส้นทางให้เซลล์ประสาทอพยพ (radial migration) ไปสู่เปลือกสมอง",
+   "secretes": [],
+   "markers": [
+    "nestin",
+    "PAX6",
+    "BLBP"
+   ],
+   "lifespan": "",
+   "exam": "เซลล์ประสาทของเปลือกสมองอพยพตามเส้นใยของ radial glial cell แบบ inside-out (เซลล์เกิดก่อนอยู่ชั้นลึก)",
+   "diseases": [
+    "lissencephaly (การอพยพของเซลล์ประสาทผิดปกติ)"
+   ],
+   "confused_with": [
+    "CL:0000047",
+    "CL:0000127"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000681",
+   "cl": {
+    "label": "radial glial cell",
+    "definition": "A cell present in the developing CNS. Functions as both a precursor cell and as a scaffold to support neuronal migration.",
+    "synonyms": [
+     "forebrain radial glial cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000745",
+   "slug": "retina-horizontal-cell",
+   "kind": "cell",
+   "en": "retina horizontal cell",
+   "th": "เซลล์ฮอริซอนทัลของจอตา (horizontal cell)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "nervous",
+   "tissue_subtype": "neuron",
+   "location": "ชั้น inner nuclear layer ด้านนอกของจอตา ติดกับชั้น outer plexiform",
+   "morphology": "อินเตอร์นิวรอนที่มีแขนงแผ่ไปตามแนวราบ",
+   "function": "เชื่อมสัญญาณด้านข้างระหว่างเซลล์รับแสงหลายเซลล์ ทำให้เกิด lateral inhibition เพิ่มความต่างของภาพ (contrast) และความคมชัดของขอบภาพ",
+   "secretes": [],
+   "markers": [
+    "calbindin"
+   ],
+   "lifespan": "",
+   "exam": "สัญญาณหลักในจอตาไหลจาก photoreceptor ไป bipolar cell ไป ganglion cell ส่วน horizontal และ amacrine cell ปรับสัญญาณในแนวขวาง",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000561"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000745",
+   "cl": {
+    "label": "retina horizontal cell",
+    "definition": "A neuron that laterally connects other neurons in the inner nuclear layer of the retina.",
+    "synonyms": [
+     "horizontal cell",
+     "HC",
+     "HCs"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000561",
+   "slug": "amacrine-cell",
+   "kind": "cell",
+   "en": "amacrine cell",
+   "th": "เซลล์อะมาคริน (amacrine cell)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "nervous",
+   "tissue_subtype": "neuron",
+   "location": "ชั้น inner nuclear layer ด้านในของจอตา แขนงอยู่ในชั้น inner plexiform",
+   "morphology": "อินเตอร์นิวรอนที่ไม่มีแอกซอนยาว มีแขนงแผ่ในแนวราบหลายแบบ",
+   "function": "ปรับสัญญาณระหว่าง bipolar cell กับ ganglion cell ที่ชั้น inner plexiform มีหลายชนิด ช่วยตรวจจับการเคลื่อนไหวและทิศทาง หลั่ง GABA หรือ glycine เป็นหลัก",
+   "secretes": [
+    "GABA",
+    "glycine"
+   ],
+   "markers": [
+    "calretinin"
+   ],
+   "lifespan": "",
+   "exam": "ชื่อ amacrine มาจากภาษากรีกแปลว่าไม่มีเส้นใยยาว (a-makros-in) เพราะไม่มีแอกซอนแบบเซลล์ประสาททั่วไป",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000745"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000561",
+   "cl": {
+    "label": "amacrine cell",
+    "definition": "Interneuron of the vertebrate retina. They integrate, modulate, and interpose a temporal domain in the visual message presented to the retinal ganglion cells, with which they synapse in the inner plexiform layer. They lack large axons.",
+    "synonyms": [
+     "amacrine neuron",
+     "AC",
+     "ACs"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000609",
+   "slug": "vestibular-hair-cell",
+   "kind": "cell",
+   "en": "vestibular hair cell",
+   "th": "เซลล์ขนของระบบทรงตัว (vestibular hair cell)",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-columnar",
+   "location": "macula ของ utricle และ saccule และ crista ampullaris ของท่อครึ่งวงกลม ในหูชั้นใน",
+   "morphology": "เซลล์รับความรู้สึกที่ปลายมี stereocilia หลายเส้นเรียงตามความสูงและ kinocilium หนึ่งเส้น",
+   "function": "แปลงการเคลื่อนไหวศีรษะ (การเร่งเชิงเส้นและการหมุน) เป็นสัญญาณประสาท เมื่อ stereocilia โค้งไปทาง kinocilium เซลล์จะ depolarize",
+   "secretes": [
+    "กลูตาเมต (glutamate)"
+   ],
+   "markers": [
+    "myosin VIIa"
+   ],
+   "lifespan": "",
+   "exam": "macula รับการเร่งเชิงเส้นและแรงโน้มถ่วง (มี otolith) ส่วน crista รับการหมุนของศีรษะ ต่างจากเซลล์ขนใน cochlea ซึ่งในผู้ใหญ่ไม่มี kinocilium",
+   "diseases": [
+    "BPPV (otolith หลุดเข้าท่อครึ่งวงกลม)",
+    "Meniere disease"
+   ],
+   "confused_with": [
+    "CL:0000589",
+    "CL:0000601"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000609",
+   "cl": {
+    "label": "vestibular hair cell",
+    "definition": "A mechanoreceptor located in the acoustic maculae and the semicircular canals that mediates the sense of balance, movement, and head position. The vestibular hair cells are connected to accessory structures in such a way that movements of the head displace their stereocilia. This influences the membrane potential of the cells which relay information about movements via the vestibular part of the vestibulocochlear nerve to the brain stem.",
+    "synonyms": [
+     "vestibular receptor cell"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002490",
+   "slug": "organ-of-corti-supporting-cell",
+   "kind": "cell",
+   "en": "organ of Corti supporting cell",
+   "th": "เซลล์ค้ำจุนของ organ of Corti",
+   "systems": [
+    "nervous"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-columnar",
+   "location": "organ of Corti บน basilar membrane ของ cochlea ในหูชั้นใน",
+   "morphology": "เซลล์เยื่อบุผิวรูปทรงยาว มีหลายชนิด เช่น pillar cell และ Deiters' cell",
+   "function": "ค้ำจุนเซลล์ขนและคงโครงสร้างของ organ of Corti pillar cell สร้างอุโมงค์ (tunnel of Corti) ส่วน Deiters' cell รองรับเซลล์ขนชั้นนอก",
+   "secretes": [],
+   "markers": [
+    "SOX2",
+    "p27Kip1"
+   ],
+   "lifespan": "",
+   "exam": "เซลล์ค้ำจุนไม่ใช่เซลล์รับเสียง เซลล์รับเสียงคือเซลล์ขนชั้นในและชั้นนอก ในสัตว์บางชนิดเซลล์ค้ำจุนเปลี่ยนเป็นเซลล์ขนใหม่ได้ แต่ในมนุษย์ทำไม่ได้",
+   "diseases": [
+    "หูหนวกจากประสาทรับเสียงเสื่อม (sensorineural hearing loss)"
+   ],
+   "confused_with": [
+    "CL:0000589",
+    "CL:0000601"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002490",
+   "cl": {
+    "label": "organ of Corti supporting cell",
+    "definition": "A supporting cell of the organ of Corti.",
+    "synonyms": [],
     "obsolete": false
    }
   },
@@ -10542,6 +11130,15 @@
    "file": "endocrine"
   },
   {
+   "type": "interacts_with",
+   "from": "CL:0000642",
+   "to": "CL:0002312",
+   "th": "folliculostellate cell ควบคุมเซลล์ต่อมไร้ท่อข้างเคียงแบบพาราไครน์ เช่น โซมาโตโทรฟ",
+   "mode": "paracrine",
+   "source": "curated",
+   "file": "endocrine"
+  },
+  {
    "type": "develops_from",
    "from": "CL:0000312",
    "to": "CL:0002187",
@@ -10618,6 +11215,41 @@
    "file": "muscular"
   },
   {
+   "type": "develops_from",
+   "from": "CL:0000127",
+   "to": "CL:0000681",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000065",
+   "to": "CL:0000681",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000598",
+   "to": "CL:0000681",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0002453",
+   "to": "CL:0000047",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "develops_from",
+   "from": "CL:0000128",
+   "to": "CL:0002453",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
    "type": "is_a",
    "from": "CL:0000101",
    "to": "CL:0000540",
@@ -10634,20 +11266,6 @@
   {
    "type": "is_a",
    "from": "CL:0000099",
-   "to": "CL:0000540",
-   "source": "curated",
-   "file": "nervous"
-  },
-  {
-   "type": "is_a",
-   "from": "CL:0000598",
-   "to": "CL:0000540",
-   "source": "curated",
-   "file": "nervous"
-  },
-  {
-   "type": "is_a",
-   "from": "CL:0000121",
    "to": "CL:0000540",
    "source": "curated",
    "file": "nervous"
@@ -10774,6 +11392,97 @@
   {
    "type": "is_a",
    "from": "CL:0000636",
+   "to": "CL:0000125",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000681",
+   "to": "CL:0000125",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000850",
+   "to": "CL:0000540",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002453",
+   "to": "CL:0000125",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000121",
+   "to": "CL:0000617",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0001031",
+   "to": "CL:0000679",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000598",
+   "to": "CL:0000679",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000745",
+   "to": "CL:0000099",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000561",
+   "to": "CL:0000099",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000617",
+   "to": "CL:0000540",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000679",
+   "to": "CL:0000540",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002085",
+   "to": "CL:0000065",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000706",
+   "to": "CL:0000065",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0011028",
    "to": "CL:0000125",
    "source": "curated",
    "file": "nervous"
@@ -10928,6 +11637,123 @@
    "to": "CL:0002311",
    "th": "dopamine ยับยั้งการหลั่งโพรแลกติน",
    "mode": "hormone",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0001031",
+   "to": "CL:0000121",
+   "th": "granule cell ส่งสัญญาณกระตุ้น (glutamate) ผ่าน parallel fiber ไปยัง Purkinje cell",
+   "mode": "synapse",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000745",
+   "to": "CL:0000604",
+   "th": "horizontal cell ทำ lateral inhibition ต่อเซลล์รับแสงรูปแท่ง",
+   "mode": "synapse",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000745",
+   "to": "CL:0000573",
+   "th": "horizontal cell ทำ lateral inhibition ต่อเซลล์รับแสงรูปกรวย",
+   "mode": "synapse",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000561",
+   "to": "CL:0000740",
+   "th": "amacrine cell ปรับสัญญาณที่ส่งไปยัง ganglion cell",
+   "mode": "synapse",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000609",
+   "to": "CL:0000101",
+   "th": "เซลล์ขนของระบบทรงตัวส่งสัญญาณไปยังเซลล์ประสาทรับความรู้สึกของเส้นประสาททรงตัว",
+   "mode": "synapse",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000589",
+   "to": "CL:0000101",
+   "th": "เซลล์ขนชั้นในส่งสัญญาณเสียงไปยังเซลล์ประสาทรับความรู้สึกของเส้นประสาทหู",
+   "mode": "synapse",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0002490",
+   "to": "CL:0000601",
+   "th": "เซลล์ค้ำจุน (Deiters' cell) รองรับเซลล์ขนชั้นนอก",
+   "mode": "support",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0002490",
+   "to": "CL:0000589",
+   "th": "เซลล์ค้ำจุนรองรับเซลล์ขนชั้นใน",
+   "mode": "support",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0011028",
+   "to": "CL:0000207",
+   "th": "olfactory ensheathing cell ห่อและนำทางแอกซอนของเซลล์รับกลิ่น",
+   "mode": "support",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0002085",
+   "to": "CL:1001505",
+   "th": "tanycyte ควบคุมการเข้าถึงของปลายแอกซอนของเซลล์ประสาทสร้างฮอร์โมนที่ median eminence",
+   "mode": "support",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000850",
+   "to": "CL:0000598",
+   "th": "เซลล์ประสาท serotonin ปรับการทำงานของเซลล์ pyramidal",
+   "mode": "synapse",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000617",
+   "to": "CL:0000598",
+   "th": "เซลล์ประสาท GABA ยับยั้งเซลล์ pyramidal",
+   "mode": "synapse",
+   "source": "curated",
+   "file": "nervous"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0002453",
+   "to": "CL:0000128",
+   "th": "OPC เจริญเป็นโอลิโกเดนโดรไซต์เพื่อสร้างไมอีลินใหม่",
+   "mode": "support",
    "source": "curated",
    "file": "nervous"
   },

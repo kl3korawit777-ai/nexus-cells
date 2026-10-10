@@ -1,13 +1,13 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-10 11:18
+สร้างเมื่อ: 2026-10-10 11:21
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 106 เส้น
-- คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 6 เส้น
-- คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 9 เส้น
-- CL มี แต่ไม่ได้คัดไว้: 57 เส้น
+- ตรงกัน: 113 เส้น
+- คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 8 เส้น
+- คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 11 เส้น
+- CL มี แต่ไม่ได้คัดไว้: 61 เส้น
 
 ### is_a ที่คัดเองข้ามขั้น
 ถูกตามความหมาย แต่ใน CL มีตัวกลางอยู่ระหว่างสองรหัสนี้ในชุดข้อมูล
@@ -17,7 +17,9 @@
 - CL:0000235 macrophage → CL:0000738 leukocyte
 - CL:0000453 Langerhans cell → CL:0000451 dendritic cell
 - CL:0000623 natural killer cell → CL:0000542 lymphocyte
+- CL:0000636 Mueller cell → CL:0000125 glial cell
 - CL:0000645 pituicyte → CL:0000125 glial cell
+- CL:0000748 retinal bipolar neuron → CL:0000540 neuron
 
 ### is_a ที่คัดเองแต่ CL ไม่มี
 ควรตรวจว่าตำราหรือ CL ถูก
@@ -28,9 +30,11 @@
 - CL:0000509 gastrin secreting cell → CL:0002178 epithelial cell of stomach
 - CL:0000545 T-helper 1 cell → CL:0000912 helper T cell
 - CL:0000546 T-helper 2 cell → CL:0000912 helper T cell
+- CL:0000598 pyramidal neuron → CL:0000679 glutamatergic neuron
 - CL:0000815 regulatory T cell → CL:0000912 helper T cell
 - CL:0000899 T-helper 17 cell → CL:0000912 helper T cell
 - CL:0002204 tuft cell → CL:0002563 intestinal epithelial cell
+- CL:0002453 oligodendrocyte precursor cell → CL:0000125 glial cell
 
 ### is_a ที่ CL มีแต่ไม่ได้คัดไว้
 
@@ -62,9 +66,13 @@
 - CL:0000577 type EC enteroendocrine cell → CL:0000165 neuroendocrine cell
 - CL:0000577 type EC enteroendocrine cell → CL:0000167 peptide hormone secreting cell
 - CL:0000589 cochlear inner hair cell → CL:0000101 sensory neuron
+- CL:0000598 pyramidal neuron → CL:0000540 neuron
 - CL:0000601 cochlear outer hair cell → CL:0000101 sensory neuron
+- CL:0000609 vestibular hair cell → CL:0000101 sensory neuron
 - CL:0000623 natural killer cell → CL:0001065 innate lymphoid cell
+- CL:0000636 Mueller cell → CL:0000681 radial glial cell
 - CL:0000645 pituicyte → CL:0000127 astrocyte
+- CL:0000748 retinal bipolar neuron → CL:0000679 glutamatergic neuron
 - CL:0000765 erythroblast → CL:0000988 hematopoietic cell
 - CL:0000786 plasma cell → CL:0000542 lymphocyte
 - CL:0000787 memory B cell → CL:0000145 professional antigen presenting cell
@@ -94,12 +102,12 @@
 
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
-- ตรงกัน: 19 เส้น
-- คัดเองมี แต่ CL ไม่มี: 51 เส้น
-- CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 2 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 53 เส้น
+- ตรงกัน: 22 เส้น
+- คัดเองมี แต่ CL ไม่มี: 53 เส้น
+- CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 4 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 55 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 418 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 428 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -111,6 +119,7 @@
 - CL:0000058 chondroblast → CL:0000134 mesenchymal stem cell
 - CL:0000084 T cell → CL:0000051 common lymphoid progenitor
 - CL:0000097 mast cell → CL:0000557 granulocyte monocyte progenitor cell
+- CL:0000127 astrocyte → CL:0000681 radial glial cell
 - CL:0000137 osteocyte → CL:0000062 osteoblast
 - CL:0000158 club cell → CL:0002329 basal epithelial cell of tracheobronchial tree
 - CL:0000160 goblet cell → CL:0002250 intestinal crypt stem cell
@@ -129,6 +138,7 @@
 - CL:0000576 monocyte → CL:0000040 monoblast
 - CL:0000577 type EC enteroendocrine cell → CL:0002250 intestinal crypt stem cell
 - CL:0000584 enterocyte → CL:0002250 intestinal crypt stem cell
+- CL:0000598 pyramidal neuron → CL:0000681 radial glial cell
 - CL:0000623 natural killer cell → CL:0000051 common lymphoid progenitor
 - CL:0000656 primary spermatocyte → CL:0000020 spermatogonium
 - CL:0000682 M cell of gut → CL:0002250 intestinal crypt stem cell
@@ -158,7 +168,9 @@
 ### develops_from ที่ CL มีแต่ไม่ได้คัดไว้
 
 - CL:0000542 lymphocyte → CL:0000051 common lymphoid progenitor
+- CL:0000561 amacrine cell → CL:0000740 retinal ganglion cell
 - CL:0000738 leukocyte → CL:0000037 hematopoietic stem cell
+- CL:0002453 oligodendrocyte precursor cell → CL:0000125 glial cell
 
 ### develops_from ที่ CL ชี้ไปเซลล์นอกชุดข้อมูล
 
@@ -171,11 +183,9 @@
 - CL:0000059 ameloblast ← CL:0007000 preameloblast
 - CL:0000060 odontoblast ← CL:0007003 preodontoblast
 - CL:0000061 cementoblast ← CL:0007002 precementoblast
-- CL:0000065 ependymal cell ← CL:0000681 radial glial cell
 - CL:0000084 T cell ← CL:0000827 pro-T cell
 - CL:0000097 mast cell ← CL:0000831 mast cell progenitor
 - CL:0000115 endothelial cell ← CL:0000222 mesodermal cell
-- CL:0000128 oligodendrocyte ← CL:0002453 oligodendrocyte precursor cell
 - CL:0000129 microglial cell ← CL:0000034 stem cell
 - CL:0000129 microglial cell ← CL:0000222 mesodermal cell
 - CL:0000137 osteocyte ← CL:0001040 non-terminally differentiated osteoblast
@@ -201,22 +211,26 @@
 - CL:0000576 monocyte ← CL:0000559 promonocyte
 - CL:0000604 retinal rod cell ← CL:0002672 retinal progenitor cell
 - CL:0000623 natural killer cell ← CL:0000825 pro-NK cell
+- CL:0000681 radial glial cell ← CL:0000710 neurecto-epithelial cell
 - CL:0000746 cardiac muscle cell ← CL:0000513 cardiac muscle myoblast
 - CL:0000786 plasma cell ← CL:0000980 plasmablast
 - CL:0000786 plasma cell ← CL:0017508 cartwheel heterochromatin
 - CL:0000814 mature NK T cell ← CL:0000914 immature NK T cell
 - CL:0000835 myeloblast ← CL:0017503 basophilic cytoplasm
 - CL:0000836 promyelocyte ← CL:0017503 basophilic cytoplasm
+- CL:0001031 cerebellar granule cell ← CL:0002362 cerebellar granule cell precursor
 - CL:0002063 pulmonary alveolar type 2 cell ← CL:4040003 fetal pre-type II pulmonary alveolar epithelial cell
 - CL:0002145 multiciliated columnar cell of tracheobronchial tree ← CL:0002209 intermediate epitheliocyte
 - CL:0002255 stromal cell of endometrium ← CL:2000002 decidual cell
 - CL:0002302 type A synovial cell ← CL:0000842 mononuclear leukocyte
+- CL:0002453 oligodendrocyte precursor cell ← CL:0000339 glioblast (sensu Vertebrata)
+- CL:0002453 oligodendrocyte precursor cell ← CL:4023059 committed oligodendrocyte precursor
 - CL:0007010 osteoprogenitor cell ← CL:0000222 mesodermal cell
 - CL:0007010 osteoprogenitor cell ← CL:0000333 migratory neural crest cell
 - CL:0008002 skeletal muscle fiber ← CL:0000515 skeletal muscle myoblast
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 
-## คำเตือนจาก validate (213)
+## คำเตือนจาก validate (227)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -346,6 +360,7 @@
 - CL:0000652 (pinealocyte): ช่องว่าง: markers, lifespan, diseases, confused_with; ยังไม่มีรูป
 - CL:0000645 (pituicyte): ช่องว่าง: markers, lifespan, diseases, confused_with; ยังไม่มีรูป
 - CL:0002199 (oxyphil cell of parathyroid gland): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
+- CL:0000642 (folliculostellate cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0002187 (basal cell of epidermis): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000312 (keratinocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0002153 (corneocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
@@ -389,6 +404,19 @@
 - CL:0000108 (cholinergic neuron): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000047 (neural stem cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0000636 (Mueller cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0001031 (cerebellar granule cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000617 (GABAergic neuron): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000679 (glutamatergic neuron): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000850 (serotonergic neuron): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002453 (oligodendrocyte precursor cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002085 (tanycyte): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000706 (choroid plexus epithelial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0011028 (olfactory ensheathing cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000681 (radial glial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000745 (retina horizontal cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000561 (amacrine cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000609 (vestibular hair cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002490 (organ of Corti supporting cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000020 (spermatogonium): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
 - CL:0000656 (primary spermatocyte): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
 - CL:0000657 (secondary spermatocyte): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป

@@ -152,6 +152,12 @@
       "to": "CL:0000182",
       "th": "epinephrine กระตุ้นการสลายไกลโคเจน",
       "mode": "hormone"
+    },
+    {
+      "from": "CL:0000642",
+      "to": "CL:0002312",
+      "th": "folliculostellate cell ควบคุมเซลล์ต่อมไร้ท่อข้างเคียงแบบพาราไครน์ เช่น โซมาโตโทรฟ",
+      "mode": "paracrine"
     }
   ]
 }

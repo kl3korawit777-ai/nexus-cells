@@ -623,5 +623,36 @@
     "images": [],
     "verified": false,
     "refs": []
+  },
+  {
+    "id": "CL:0000642",
+    "slug": "folliculostellate-cell",
+    "kind": "cell",
+    "en": "folliculostellate cell",
+    "th": "เซลล์ฟอลลิคูโลสเตลเลต (folliculostellate cell)",
+    "systems": [
+      "endocrine"
+    ],
+    "tissue": "nervous",
+    "tissue_subtype": "glia",
+    "location": "ต่อมใต้สมองส่วนหน้า (adenohypophysis) แทรกอยู่ระหว่างเซลล์ต่อมไร้ท่อ",
+    "morphology": "เซลล์รูปดาวมีแขนงยาว สร้างเครือข่ายล้อมรอบกลุ่มเซลล์ต่อมไร้ท่อ ไม่ติดสีฮอร์โมน",
+    "function": "เป็นเซลล์ค้ำจุนที่ไม่ใช่เซลล์ต่อมไร้ท่อ หลั่งสัญญาณพาราไครน์ เช่น IL-6 และปัจจัยการเจริญเติบโต เพื่อควบคุมการหลั่งฮอร์โมนของเซลล์ข้างเคียง และเชื่อมกันด้วย gap junction",
+    "secretes": [
+      "IL-6",
+      "follistatin"
+    ],
+    "markers": [
+      "S100"
+    ],
+    "lifespan": "",
+    "exam": "เซลล์ในต่อมใต้สมองส่วนหน้ามีทั้งเซลล์ต่อมไร้ท่อ 5 ชนิดและ folliculostellate cell ซึ่งไม่หลั่งฮอร์โมนเอง ส่วนต่อมใต้สมองส่วนหลังไม่มีเซลล์ต่อมไร้ท่อ แต่มี pituicyte ทำหน้าที่ค้ำจุน",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000645"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
   }
 ]
