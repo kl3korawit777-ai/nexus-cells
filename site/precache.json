@@ -22,6 +22,8 @@
 "js/content.js",
 "js/data.js",
 "js/gallery.js",
+"js/graph-config.js",
+"js/graph-controls.js",
 "js/graph.js",
 "js/hash.js",
 "js/i18n.js",

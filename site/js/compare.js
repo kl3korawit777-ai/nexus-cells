@@ -8,6 +8,7 @@ import { imageFigure } from './gallery.js';
 import { imagesOf, typesIn, pickByType } from './images.js';
 import { searchBox } from './ui.js';
 import { buildStyle, ensureFcose } from './graph.js';
+import { staticGraphOptions, allowTouchScroll } from './graph-config.js';
 import { notFoundView } from './views.js';
 
 const cytoscape = window.cytoscape;
@@ -69,8 +70,10 @@ function createPathGraph(container, path) {
   });
   const cy = cytoscape({
     container, elements: els, style: buildStyle(), layout: { name: 'preset', fit: true, padding: 30 },
-    userZoomingEnabled: false, boxSelectionEnabled: false, autoungrabify: true,
+    ...staticGraphOptions(),
   });
+  container.__cy = cy;
+  allowTouchScroll(container);
   cy.nodes().style({ width: 34, height: 34, 'font-size': 12, 'text-max-width': 120 });
   cy.fit(undefined, 30);
   cy.on('tap', 'node', (ev) => { location.hash = cellHref(ev.target.id()); });

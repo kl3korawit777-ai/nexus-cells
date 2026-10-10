@@ -12,6 +12,7 @@ import { createSystemGraph, colorForKey } from './graph.js';
 import { renderCellPage, renderPeek } from './card.js';
 import { searchBox, edgeSwatch, legendFor } from './ui.js';
 import { createOverviewPreview } from './overview.js';
+import { graphTip } from './graph-controls.js';
 
 const thaiOnlyChip = () => h('span', { class: 'chip chip-thai', text: t('common.thaiOnly') });
 
@@ -154,7 +155,7 @@ export function systemView(systemId) {
   const info = h('div', { class: 'edge-info', role: 'status', 'aria-live': 'polite' });
   const graphWrap = h('div', { class: 'graph-wrap' }, graphBox);
   const graphPane = h('div', { class: 'sys-body' },
-    h('div', {}, graphWrap, h('p', { class: 'graph-hint', text: t('sys.hint') })),
+    h('div', {}, graphWrap, h('p', { class: 'graph-hint', text: t('sys.hint') }), graphTip()),
     peek);
   const listPane = listView(cells);
   listPane.hidden = true;

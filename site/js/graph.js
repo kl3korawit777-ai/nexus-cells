@@ -2,6 +2,8 @@
 // สีทั้งหมดอ่านจาก CSS variables และสร้าง stylesheet ใหม่เมื่อธีมเปลี่ยน
 
 import { store, cellsInSystem, systemEdges, crossSystemEdges, colorKey, edgeSentence, MODES } from './data.js';
+import { attachGraphControls } from './graph-controls.js';
+import { interactiveGraphOptions, staticGraphOptions, allowTouchScroll } from './graph-config.js';
 import { cssVar, onThemeChange, shortSystemName, reducedMotion } from './util.js';
 
 const cytoscape = window.cytoscape;
@@ -231,6 +233,7 @@ function layoutSystem(cy) {
 // ---------------------------------------------------------------- ใยรายระบบ
 
 export function createSystemGraph(container, systemId, handlers = {}) {
+  const wrap = container.parentElement;
   ensureFcose();
   const cells = cellsInSystem(systemId);
   const cross = crossSystemEdges(systemId);
@@ -243,10 +246,7 @@ export function createSystemGraph(container, systemId, handlers = {}) {
     container,
     elements: toElements(cells, edges, systemId, ghosts),
     style: buildStyle(),
-    minZoom: 0.25,
-    maxZoom: 3,
-    boxSelectionEnabled: false,
-    autoungrabify: false,
+    ...interactiveGraphOptions({ minZoom: 0.25, maxZoom: 3 }),
   });
   layoutSystem(cy);
   container.__cy = cy; // ใช้ตรวจสอบ/ดีบักจาก console
@@ -297,6 +297,8 @@ export function createSystemGraph(container, systemId, handlers = {}) {
   cy.on('tap', (ev) => { if (ev.target === cy) clearSelection(true); });
 
   const offTheme = onThemeChange(() => { cy.style(buildStyle()); });
+  const fitAll = () => cy.animate({ fit: { eles: cy.elements().not('.hidden'), padding: 30 }, duration: reducedMotion() ? 0 : 250 });
+  const controls = attachGraphControls(wrap, cy, { fit: fitAll });
   const ro = new ResizeObserver(() => { if (container.offsetWidth) cy.resize(); });
   ro.observe(container);
 
@@ -304,10 +306,10 @@ export function createSystemGraph(container, systemId, handlers = {}) {
     cy,
     modesPresent: MODES.filter((m) => cy.edges('.m-' + m.id).nonempty()).map((m) => m.id),
     setEdgeVisible(type, on) { visible[type] = on; applyVisibility(); },
-    fit() { cy.animate({ fit: { eles: cy.elements().not('.hidden'), padding: 30 }, duration: reducedMotion() ? 0 : 250 }); },
-    refit() { cy.resize(); cy.fit(cy.elements().not('.hidden'), 30); },
+    fit: fitAll,
+    refit() { cy.resize(); cy.fit(cy.elements().not('.hidden'), 30); controls.captureHome(); },
     select: selectNode,
-    destroy() { offTheme(); ro.disconnect(); cy.destroy(); },
+    destroy() { offTheme(); ro.disconnect(); controls.destroy(); cy.destroy(); },
   };
 }
 
@@ -323,10 +325,10 @@ export function createMiniGraph(container, cellId, onNavigate) {
     container,
     elements: toElements(cells, rel, null),
     style: buildStyle(),
-    minZoom: 0.3,
-    maxZoom: 3,
-    userZoomingEnabled: false,
+    ...staticGraphOptions({ minZoom: 0.3, maxZoom: 3 }),
   });
+  container.__cy = cy;
+  allowTouchScroll(container);
   cy.getElementById(cellId).addClass('sel');
   cy.layout({
     name: 'concentric', fit: true, padding: 34, animate: false,

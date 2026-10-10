@@ -2,6 +2,8 @@
 // ตำแหน่งมาจาก data/layout-overview.json (คำนวณล่วงหน้า) ดู overview-data.js
 
 import { store, edgeSentence, colorKey, cellName, sysName, tissueName } from './data.js';
+import { interactiveGraphOptions, staticGraphOptions, allowTouchScroll } from './graph-config.js';
+import { attachGraphControls, graphTip } from './graph-controls.js';
 import { h, cellHref, systemHref, cssVar, onThemeChange, reducedMotion } from './util.js';
 import { buildStyle } from './graph.js';
 import { t, getLang } from './i18n.js';
@@ -176,9 +178,7 @@ export async function createOverviewGraph(container, initialMode, handlers = {})
     elements: cellElements(layout, mode, true),
     style: overviewStyle(),
     layout: { name: 'preset' },
-    minZoom: 0.04,
-    maxZoom: 4,
-    boxSelectionEnabled: false,
+    ...interactiveGraphOptions({ minZoom: 0.04, maxZoom: 4 }),
     textureOnViewport: true,
     hideLabelsOnViewport: mobile,
     // ข้อมูลมาก (หลายร้อยเส้น): ซ่อนเส้นชั่วคราวระหว่างลาก/ซูมเพื่อให้ลื่น
@@ -337,12 +337,17 @@ export async function createOverviewGraph(container, initialMode, handlers = {})
     cy.resize();
     baseZoom = computeFit().zoom;
     updateLevel(false);
+    if (controls) controls.refresh();
   });
   ro.observe(container);
 
   rebuildAgg(cy, level);
   applyView(false);
   cy.nodes('.group').toggleClass('coarse', true);
+
+  // ปุ่มซูมใช้ทั้ง "ดูทั้งใย" และ "กลับตำแหน่งเริ่มต้น" ผ่านการจัดให้พอดีของใยภาพรวม (100% = ซูมที่เห็นทั้งใยพอดี)
+  const fitAll = () => { const f = computeFit(); baseZoom = f.zoom; cy.stop(); cy.animate({ zoom: f.zoom, pan: f.pan }, { duration: reducedMotion() ? 0 : 350 }); };
+  const controls = attachGraphControls(container.parentElement, cy, { fit: fitAll, reset: fitAll, baseZoom: () => baseZoom });
 
   return {
     cy,
@@ -351,9 +356,9 @@ export async function createOverviewGraph(container, initialMode, handlers = {})
     setMode,
     setEdgeVisible(key, on) { visible[key] = on; applyFilters(); },
     setCrossOnly(on) { crossOnly = on; applyFilters(); },
-    fit() { const f = computeFit(); baseZoom = f.zoom; cy.animate({ zoom: f.zoom, pan: f.pan }, { duration: reducedMotion() ? 0 : 350 }); },
+    fit: fitAll,
     focusCell(id) { const n = cy.getElementById(id); if (n.empty()) return; selectNode(id); zoomTo(n, 2.6); },
-    destroy() { destroyed = true; offTheme(); ro.disconnect(); cy.destroy(); },
+    destroy() { destroyed = true; offTheme(); ro.disconnect(); controls.destroy(); cy.destroy(); },
   };
 }
 
@@ -365,9 +370,9 @@ export async function createOverviewPreview(container) {
     elements: cellElements(layout, 'system', true),
     style: overviewStyle(),
     layout: { name: 'preset' },
-    userZoomingEnabled: false, userPanningEnabled: false, boxSelectionEnabled: false,
-    autoungrabify: true, autounselectify: true,
+    ...staticGraphOptions({ autounselectify: true }),
   });
+  allowTouchScroll(container);
   cy.edges('.real').addClass('hidden');
   cy.nodes('.cell').addClass('lvl-coarse');
   rebuildAgg(cy, 'coarse');
@@ -500,7 +505,7 @@ export function overviewView(initialMode) {
       h('div', { class: 'btn-group', role: 'group', 'aria-label': t('overview.grouping') }, modeBtns), fitBtn),
     h('div', { class: 'toolbar' }, toggles),
     search.el, legend, info,
-    h('div', { class: 'sys-body' }, h('div', {}, graphWrap, h('p', { class: 'graph-hint', text: t('overview.hint') })), peek),
+    h('div', { class: 'sys-body' }, h('div', {}, graphWrap, h('p', { class: 'graph-hint', text: t('overview.hint') }), graphTip()), peek),
     tableHost);
 
   return {

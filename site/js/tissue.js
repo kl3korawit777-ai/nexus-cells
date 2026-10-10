@@ -1,7 +1,9 @@
 // หน้าเนื้อเยื่อ (#/tissue/<id>): ข้อมูลเนื้อเยื่อ ชนิดย่อยพร้อมรายการเซลล์ ระบบที่กระจายอยู่ และใยย่อย
 
 import { store, colorKey, cellName, cellAlt, sysName, tissueName, subtypeName } from './data.js';
-import { h, cellHref, systemHref, onThemeChange } from './util.js';
+import { h, cellHref, systemHref, onThemeChange, reducedMotion } from './util.js';
+import { interactiveGraphOptions } from './graph-config.js';
+import { attachGraphControls, graphTip } from './graph-controls.js';
 import { t, getLang } from './i18n.js';
 import { tissueText, altNameOf } from './content.js';
 import { colorForKey, ensureFcose } from './graph.js';
@@ -46,7 +48,7 @@ function createTissueGraph(container, tissue, cells, onNavigate) {
   });
   const cy = cytoscape({
     container, elements: els, style: overviewStyle(),
-    minZoom: 0.15, maxZoom: 3, boxSelectionEnabled: false,
+    ...interactiveGraphOptions({ minZoom: 0.15, maxZoom: 3 }),
   });
   cy.layout({
     name: 'fcose', quality: 'default', randomize: true, animate: false, fit: true, padding: 24,
@@ -66,9 +68,11 @@ function createTissueGraph(container, tissue, cells, onNavigate) {
   cy.on('mouseout', 'node.cell', () => { container.style.cursor = ''; });
   container.__cy = cy;
   const off = onThemeChange(() => cy.style(overviewStyle()));
-  const ro = new ResizeObserver(() => { if (container.offsetWidth) { cy.resize(); cy.fit(undefined, 24); sizeText(); } });
+  const fitAll = () => { cy.stop(); cy.animate({ fit: { eles: cy.elements(), padding: 24 } }, { duration: reducedMotion() ? 0 : 250 }); };
+  const controls = attachGraphControls(container.parentElement, cy, { fit: fitAll });
+  const ro = new ResizeObserver(() => { if (container.offsetWidth) { cy.resize(); cy.fit(undefined, 24); sizeText(); controls.captureHome(); } });
   ro.observe(container);
-  return { cy, destroy() { off(); ro.disconnect(); cy.destroy(); } };
+  return { cy, destroy() { off(); ro.disconnect(); controls.destroy(); cy.destroy(); } };
 }
 
 function cellList(cells) {
@@ -141,7 +145,7 @@ export function tissueView(id) {
     h('div', { class: 'subtypes' }, subSections),
     cells.length && hasEdges
       ? [h('h2', { class: 'section', text: t('tissue.subgraph') }), graphBox,
-        h('p', { class: 'graph-hint', text: t('tissue.subgraphHint') })]
+        h('p', { class: 'graph-hint', text: t('tissue.subgraphHint') }), graphTip()]
       : null);
 
   return {

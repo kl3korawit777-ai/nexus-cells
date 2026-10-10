@@ -625,3 +625,35 @@ a.tissue-card:hover { border-color: var(--accent); color: var(--ink); }
 .stat b { display: block; font-size: 1.3rem; }
 .stat span { font-size: .8rem; color: var(--muted); }
 .about-disclaimer h2::before { content: ""; }
+
+/* ---------- ปุ่มควบคุมใย ---------- */
+.gc-bar {
+  position: absolute; right: 10px; bottom: 10px; z-index: 5;
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+}
+.gc-btn {
+  width: 44px; height: 44px; padding: 0; display: grid; place-items: center; cursor: pointer;
+  background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 10px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / .18);
+}
+.gc-btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.gc-btn:hover:not(:disabled) { background: var(--surface-2); }
+.gc-btn:disabled { opacity: .4; cursor: not-allowed; }
+.gc-btn:focus-visible, .graph-wrap:focus-visible, .mini-graph:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.graph-wrap:focus-visible, .mini-graph:focus-visible { outline-offset: -3px; }
+.gc-level {
+  min-width: 44px; text-align: center; font-size: .78rem; font-variant-numeric: tabular-nums; color: var(--muted);
+  background: color-mix(in srgb, var(--surface) 88%, transparent); border-radius: 6px; padding: 1px 2px;
+}
+.level-badge { max-width: calc(100% - 76px); }
+.gc-tip {
+  display: flex; align-items: center; gap: 8px; margin-top: 6px; font-size: .84rem; color: var(--muted);
+  background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 2px 4px 2px 10px;
+}
+.gc-tip span { flex: 1; }
+.gc-tip-close { width: 44px; height: 44px; flex: none; background: none; border: 0; font-size: 1.3rem; cursor: pointer; color: var(--muted); border-radius: 8px; }
+.gc-tip-close:hover { color: var(--ink); }
+.tissue-graph { min-height: 420px; }
+/* ใยนิ่ง (หน้าเซลล์/เปรียบเทียบ/หน้าแรก): นิ้วที่แตะบนใยต้องเลื่อนหน้าเว็บได้ตามปกติ */
+.graph-wrap .cy, .mini-graph .cy, .overview-preview .cy { touch-action: pan-y; }
+.graph-wrap.gc-pan .cy, .mini-graph.gc-pan .cy { touch-action: none; }
