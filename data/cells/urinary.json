@@ -375,5 +375,224 @@
     "images": [],
     "verified": false,
     "refs": []
+  },
+  {
+    "id": "CL:1000452",
+    "slug": "parietal-epithelial-cell",
+    "kind": "cell",
+    "en": "parietal epithelial cell",
+    "th": "เซลล์เยื่อบุผิวชั้นนอกของ Bowman's capsule (parietal epithelial cell)",
+    "systems": [
+      "urinary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-squamous",
+    "location": "ผนังชั้นนอก (parietal layer) ของ Bowman's capsule ในไต",
+    "morphology": "เซลล์สความัสแบนเรียงชั้นเดียว",
+    "function": "ล้อมรอบช่องปัสสาวะ (Bowman's space) ที่ของเหลวกรองจาก glomerulus ไหลเข้า และต่อเนื่องไปเป็นเซลล์ท่อไตส่วนต้น บางส่วนเป็นเซลล์ตั้งต้นของ podocyte",
+    "secretes": [],
+    "markers": [
+      "PAX2",
+      "claudin-1"
+    ],
+    "lifespan": "",
+    "exam": "Bowman's capsule มี 2 ชั้น: visceral layer คือ podocyte (หุ้มเส้นเลือดฝอย) และ parietal layer คือเยื่อบุผิวสความัสชั้นเดียว",
+    "diseases": [
+      "crescentic glomerulonephritis (parietal epithelial cell เพิ่มจำนวนเป็น crescent)"
+    ],
+    "confused_with": [
+      "CL:0000653"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:1001111",
+    "slug": "thin-descending-limb-cell",
+    "kind": "cell",
+    "en": "kidney loop of Henle thin descending limb epithelial cell",
+    "th": "เซลล์ส่วนบางขาลงของ loop of Henle (thin descending limb)",
+    "systems": [
+      "urinary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-squamous",
+    "location": "ส่วนบางขาลงของ loop of Henle ในเมดัลลาของไต",
+    "morphology": "เซลล์สความัสแบนบาง มีไมโทคอนเดรียน้อย",
+    "function": "ซึมผ่านน้ำได้ดี (aquaporin-1) แต่ขนส่งเกลือแบบแอคทีฟน้อย น้ำออกจากท่อไปยังเมดัลลาที่เข้มข้น ทำให้ปัสสาวะในท่อเข้มข้นขึ้น",
+    "secretes": [],
+    "markers": [
+      "aquaporin 1 (AQP1)",
+      "UT-A2"
+    ],
+    "lifespan": "",
+    "exam": "ขาลง (descending) ซึมน้ำได้ ไม่ซึมเกลือ ส่วนขาขึ้น (ascending) ซึมเกลือแต่ไม่ซึมน้ำ นี่คือกลไกของ countercurrent multiplier",
+    "diseases": [],
+    "confused_with": [
+      "CL:1001107",
+      "CL:1001106"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:1001107",
+    "slug": "thin-ascending-limb-cell",
+    "kind": "cell",
+    "en": "kidney loop of Henle thin ascending limb epithelial cell",
+    "th": "เซลล์ส่วนบางขาขึ้นของ loop of Henle (thin ascending limb)",
+    "systems": [
+      "urinary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-squamous",
+    "location": "ส่วนบางขาขึ้นของ loop of Henle ในเมดัลลาของไต",
+    "morphology": "เซลล์สความัสแบนบาง",
+    "function": "ซึมผ่านเกลือ (NaCl) ได้แต่ไม่ซึมผ่านน้ำ เกลือออกจากท่อไปยังเมดัลลา ช่วยสร้างความเข้มข้นของเมดัลลา",
+    "secretes": [],
+    "markers": [
+      "ClC-K1 (CLCNKA)"
+    ],
+    "lifespan": "",
+    "exam": "เซลล์ส่วนบางขาขึ้นไม่ซึมน้ำ ทำให้ของเหลวในท่อเจือจางลงเมื่อไหลขึ้น",
+    "diseases": [],
+    "confused_with": [
+      "CL:1001111",
+      "CL:1001106"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:1001106",
+    "slug": "thick-ascending-limb-cell",
+    "kind": "cell",
+    "en": "kidney loop of Henle thick ascending limb epithelial cell",
+    "th": "เซลล์ส่วนหนาขาขึ้นของ loop of Henle (thick ascending limb)",
+    "systems": [
+      "urinary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-cuboidal",
+    "location": "ส่วนหนาขาขึ้นของ loop of Henle ตั้งแต่เมดัลลาถึงคอร์เทกซ์ ต่อไปถึง macula densa",
+    "morphology": "เซลล์ลูกบาศก์ ไมโทคอนเดรียมากที่ฐานเซลล์ ผนังด้านข้างเป็นรอยพับลึก",
+    "function": "ดูดกลับเกลือโดยตัวขนส่ง NKCC2 (Na-K-2Cl) ประมาณ 25 เปอร์เซ็นต์ของโซเดียมที่กรอง แต่ไม่ซึมน้ำ จึงทำให้เมดัลลาเข้มข้นและปัสสาวะในท่อเจือจาง",
+    "secretes": [
+      "uromodulin (Tamm-Horsfall protein)"
+    ],
+    "markers": [
+      "NKCC2 (SLC12A1)",
+      "uromodulin"
+    ],
+    "lifespan": "",
+    "exam": "ยาขับปัสสาวะกลุ่ม loop diuretic (เช่น furosemide) ยับยั้ง NKCC2 ที่นี่ มี Na+ K+ ATPase ที่ฐานเซลล์และไมโทคอนเดรียมาก",
+    "diseases": [
+      "Bartter syndrome (NKCC2 กลายพันธุ์)"
+    ],
+    "confused_with": [
+      "CL:1000850",
+      "CL:0002305"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0005011",
+    "slug": "type-a-intercalated-cell",
+    "kind": "cell",
+    "en": "renal alpha-intercalated cell",
+    "th": "เซลล์อินเตอร์คาเลตชนิด A (alpha-intercalated cell)",
+    "systems": [
+      "urinary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-cuboidal",
+    "location": "ท่อรวบรวมและท่อเชื่อมต่อของไต (collecting duct)",
+    "morphology": "เซลล์ลูกบาศก์ เข้มกว่า principal cell มีไมโทคอนเดรียและไมโครวิลไลมาก",
+    "function": "หลั่ง H+ สู่ลูเมนด้วย H+-ATPase และดูดกลับ HCO3− ที่ฐานเซลล์ผ่านตัวแลกเปลี่ยน Cl−/HCO3− (AE1) ช่วยขับกรดออกจากร่างกาย",
+    "secretes": [],
+    "markers": [
+      "AE1 (SLC4A1)",
+      "H+-ATPase",
+      "carbonic anhydrase II"
+    ],
+    "lifespan": "",
+    "exam": "type A (alpha) หลั่งกรด type B (beta) หลั่งไบคาร์บอเนต ไตควบคุมสมดุลกรดด่างผ่านเซลล์ทั้งสองชนิดนี้",
+    "diseases": [
+      "distal renal tubular acidosis (type 1)"
+    ],
+    "confused_with": [
+      "CL:0002201",
+      "CL:1001431"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002201",
+    "slug": "type-b-intercalated-cell",
+    "kind": "cell",
+    "en": "renal beta-intercalated cell",
+    "th": "เซลล์อินเตอร์คาเลตชนิด B (beta-intercalated cell)",
+    "systems": [
+      "urinary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-cuboidal",
+    "location": "ท่อรวบรวมและท่อเชื่อมต่อของไต (collecting duct)",
+    "morphology": "เซลล์ลูกบาศก์ เข้มกว่า principal cell มีไมโทคอนเดรียมาก",
+    "function": "หลั่ง HCO3− สู่ลูเมนผ่านตัวขนส่ง pendrin และดูดกลับ H+ ที่ฐานเซลล์ ช่วยขับด่างเมื่อร่างกายเป็นด่างเกิน",
+    "secretes": [],
+    "markers": [
+      "pendrin (SLC26A4)",
+      "H+-ATPase (ที่ฐานเซลล์)"
+    ],
+    "lifespan": "",
+    "exam": "ตรงกันข้ามกับ type A: type B หลั่ง HCO3− และดูดกลับ H+ จึงทำงานเมื่อร่างกายมีภาวะด่าง (metabolic alkalosis)",
+    "diseases": [],
+    "confused_with": [
+      "CL:0005011",
+      "CL:1001431"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:1000486",
+    "slug": "basal-urothelial-cell",
+    "kind": "cell",
+    "en": "basal cell of urothelium",
+    "th": "เซลล์เบซัลของยูโรทีเลียม (basal urothelial cell)",
+    "systems": [
+      "urinary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "transitional",
+    "location": "ชั้นล่างสุดของเยื่อบุผิวทางเดินปัสสาวะ ติดกับเยื่อฐาน (กรวยไต ท่อไต กระเพาะปัสสาวะ)",
+    "morphology": "เซลล์รูปลูกบาศก์ถึงทรงสูงขนาดเล็ก เรียงติดกับเยื่อฐาน",
+    "function": "เป็นเซลล์ตั้งต้นของเยื่อบุผิวทางเดินปัสสาวะ แบ่งตัวทดแทนเซลล์ชั้นบนที่หลุดลอก",
+    "secretes": [],
+    "markers": [
+      "keratin 5",
+      "p63"
+    ],
+    "lifespan": "",
+    "exam": "urothelium (transitional epithelium) มี 3 ชั้น: basal, intermediate และ umbrella cell ผิวบนสุด ถ้าเกิดมะเร็งเรียก urothelial carcinoma ซึ่งสัมพันธ์กับการสูบบุหรี่",
+    "diseases": [
+      "urothelial carcinoma (transitional cell carcinoma)"
+    ],
+    "confused_with": [
+      "CL:0000731",
+      "CL:4030056"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
   }
 ]

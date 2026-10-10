@@ -1,13 +1,13 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-10 11:27
+สร้างเมื่อ: 2026-10-10 11:28
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 125 เส้น
+- ตรงกัน: 131 เส้น
 - คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 8 เส้น
 - คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 11 เส้น
-- CL มี แต่ไม่ได้คัดไว้: 66 เส้น
+- CL มี แต่ไม่ได้คัดไว้: 68 เส้น
 
 ### is_a ที่คัดเองข้ามขั้น
 ถูกตามความหมาย แต่ใน CL มีตัวกลางอยู่ระหว่างสองรหัสนี้ในชุดข้อมูล
@@ -103,16 +103,18 @@
 - CL:0002312 somatotroph → CL:0000165 neuroendocrine cell
 - CL:0009101 fibroblastic reticular cell → CL:0000057 fibroblast
 - CL:0009101 fibroblastic reticular cell → CL:0000186 myofibroblast cell
+- CL:1001106 kidney loop of Henle thick ascending limb epithelial cell → CL:0002305 epithelial cell of distal tubule
+- CL:1001107 kidney loop of Henle thin ascending limb epithelial cell → CL:0002305 epithelial cell of distal tubule
 - CL:1001505 parvocellular neurosecretory cell → CL:0000167 peptide hormone secreting cell
 
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
 - ตรงกัน: 22 เส้น
-- คัดเองมี แต่ CL ไม่มี: 62 เส้น
+- คัดเองมี แต่ CL ไม่มี: 63 เส้น
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 4 เส้น
 - CL ชี้ไปเซลล์นอกชุดข้อมูล: 61 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 444 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 449 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -151,6 +153,7 @@
 - CL:0000623 natural killer cell → CL:0000051 common lymphoid progenitor
 - CL:0000656 primary spermatocyte → CL:0000020 spermatogonium
 - CL:0000682 M cell of gut → CL:0002250 intestinal crypt stem cell
+- CL:0000731 urothelial cell → CL:1000486 basal cell of urothelium
 - CL:0000767 basophil → CL:0002192 metamyelocyte
 - CL:0000771 eosinophil → CL:0002192 metamyelocyte
 - CL:0000775 neutrophil → CL:0000560 band form neutrophil
@@ -250,7 +253,7 @@
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 - CL:4072104 fibrochondrocyte ← CL:0020021 fibrochondrocyte progenitor cell
 
-## คำเตือนจาก validate (245)
+## คำเตือนจาก validate (252)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -497,3 +500,10 @@
 - CL:0005010 (renal intercalated cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000731 (urothelial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:4030056 (umbrella cell of urothelium): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:1000452 (parietal epithelial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:1001111 (kidney loop of Henle thin descending limb epithelial cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:1001107 (kidney loop of Henle thin ascending limb epithelial cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:1001106 (kidney loop of Henle thick ascending limb epithelial cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0005011 (renal alpha-intercalated cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002201 (renal beta-intercalated cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:1000486 (basal cell of urothelium): ช่องว่าง: lifespan; ยังไม่มีรูป
