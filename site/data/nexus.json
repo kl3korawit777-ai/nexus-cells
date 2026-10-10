@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "0d9592568cf8",
-  "generated_at": "2026-10-10T04:23:43+00:00",
+  "data_version": "30736bb41541",
+  "generated_at": "2026-10-10T04:24:33+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "stats": {
    "images": 0
@@ -6377,7 +6377,8 @@
    ],
    "confused_with": [
     "CL:0008002",
-    "CL:0000746"
+    "CL:0000746",
+    "CL:0000186"
    ],
    "images": [],
    "verified": false,
@@ -6432,6 +6433,127 @@
     "synonyms": [
      "muscle attachment cell",
      "tenocyte"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000189",
+   "slug": "slow-muscle-fiber",
+   "kind": "cell",
+   "en": "slow muscle cell",
+   "th": "เส้นใยกล้ามเนื้อชนิดช้า (slow, type I muscle fiber)",
+   "systems": [
+    "muscular"
+   ],
+   "tissue": "muscle",
+   "tissue_subtype": "skeletal-muscle",
+   "location": "กล้ามเนื้อลายที่ใช้ท่าทางและความทนทาน เช่น กล้ามเนื้อหลัง กล้ามเนื้อน่อง soleus",
+   "morphology": "เส้นใยเล็ก สีแดงเพราะมีไมโอโกลบินและเส้นเลือดฝอยมาก ไมโทคอนเดรียมาก",
+   "function": "หดตัวช้าแต่ทนต่อความล้า ใช้พลังงานจากการหายใจระดับเซลล์ (oxidative) ใช้ในการยืนและท่าทางต่อเนื่อง และกีฬาความทนทาน เช่น วิ่งมาราธอน",
+   "secretes": [],
+   "markers": [
+    "myosin heavy chain I (MYH7)",
+    "myoglobin"
+   ],
+   "lifespan": "",
+   "exam": "type I: ช้า สีแดง oxidative ทนล้า (เด่นในนักวิ่งมาราธอน) ส่วน type II: เร็ว glycolytic ล้าเร็ว (เด่นในนักวิ่งระยะสั้น) ย้อม SDH หรือ ATPase แยกชนิดเส้นใยได้",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000190"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000189",
+   "cl": {
+    "label": "slow muscle cell",
+    "definition": "A muscle cell that develops tension more slowly than a fast-twitch fiber.",
+    "synonyms": [
+     "slow muscle fiber"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000190",
+   "slug": "fast-muscle-fiber",
+   "kind": "cell",
+   "en": "fast muscle cell",
+   "th": "เส้นใยกล้ามเนื้อชนิดเร็ว (fast, type II muscle fiber)",
+   "systems": [
+    "muscular"
+   ],
+   "tissue": "muscle",
+   "tissue_subtype": "skeletal-muscle",
+   "location": "กล้ามเนื้อลายที่ใช้เคลื่อนไหวเร็ว เช่น กล้ามเนื้อแขน ขา และตา",
+   "morphology": "เส้นใยใหญ่ สีซีดกว่า ไมโทคอนเดรียน้อย เก็บไกลโคเจนมาก",
+   "function": "หดตัวเร็วและแรง แต่ล้าเร็ว ใช้พลังงานจากไกลโคไลซิส (glycolytic) เป็นหลัก เหมาะกับการเคลื่อนไหวระยะสั้นและแรงสูง เช่น วิ่งระยะสั้น ยกน้ำหนัก (type IIa ผสมระหว่าง oxidative กับ glycolytic)",
+   "secretes": [],
+   "markers": [
+    "myosin heavy chain II (MYH2, MYH1)",
+    "glycolytic enzymes"
+   ],
+   "lifespan": "",
+   "exam": "type II แบ่งเป็น IIa (oxidative-glycolytic) และ IIx/IIb (glycolytic ล้วน) ส่วน type I ใช้การหายใจแบบใช้ออกซิเจน",
+   "diseases": [],
+   "confused_with": [
+    "CL:0000189"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000190",
+   "cl": {
+    "label": "fast muscle cell",
+    "definition": "A muscle cell that can develop high tension rapidly. It is usually innervated by a single alpha neuron.",
+    "synonyms": [
+     "glycolytic muscle fiber"
+    ],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0000186",
+   "slug": "myofibroblast",
+   "kind": "cell",
+   "en": "myofibroblast cell",
+   "th": "ไมโอไฟโบรบลาสต์ (myofibroblast)",
+   "systems": [
+    "muscular"
+   ],
+   "tissue": "connective",
+   "tissue_subtype": "loose",
+   "location": "เนื้อเยื่อเกี่ยวพันบริเวณแผลที่กำลังสมาน และในอวัยวะที่เกิดพังผืด",
+   "morphology": "เซลล์รูปกระสวยที่มีเส้นใยแอกติน (stress fiber) แบบกล้ามเนื้อเรียบ",
+   "function": "หดตัวคล้ายกล้ามเนื้อเรียบเพื่อดึงขอบแผลเข้าหากัน (wound contraction) และสร้างคอลลาเจนจำนวนมากเพื่อซ่อมแซมเนื้อเยื่อ",
+   "secretes": [
+    "คอลลาเจนชนิด I และ III"
+   ],
+   "markers": [
+    "α-SMA (ACTA2)",
+    "vimentin"
+   ],
+   "lifespan": "",
+   "exam": "myofibroblast เกิดจาก fibroblast (ด้วย TGF-β) มีทั้งสร้างเมทริกซ์และหดตัวได้ ถ้าทำงานมากเกินไปเกิดพังผืดหรือแผลเป็นนูน",
+   "diseases": [
+    "แผลเป็นนูน (hypertrophic scar)",
+    "ตับแข็ง (cirrhosis)",
+    "Dupuytren contracture"
+   ],
+   "confused_with": [
+    "CL:0000057",
+    "CL:0000192"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0000186",
+   "cl": {
+    "label": "myofibroblast cell",
+    "definition": "An animal cell that has characteristics of both a fibroblast cell and a smooth muscle cell.",
+    "synonyms": [
+     "MFB"
     ],
     "obsolete": false
    }
@@ -9338,7 +9460,8 @@
     "keloid"
    ],
    "confused_with": [
-    "CL:0000388"
+    "CL:0000388",
+    "CL:0000186"
    ],
    "images": [],
    "verified": false,
@@ -11479,11 +11602,59 @@
    "file": "muscular"
   },
   {
+   "type": "develops_from",
+   "from": "CL:0000186",
+   "to": "CL:0000057",
+   "source": "curated",
+   "file": "muscular"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000189",
+   "to": "CL:0008002",
+   "source": "curated",
+   "file": "muscular"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0000190",
+   "to": "CL:0008002",
+   "source": "curated",
+   "file": "muscular"
+  },
+  {
    "type": "interacts_with",
    "from": "CL:0000100",
    "to": "CL:0008002",
    "th": "เซลล์ประสาทสั่งการปล่อย acetylcholine ที่ neuromuscular junction (synapse) กระตุ้นให้เส้นใยกล้ามเนื้อลายหดตัว",
    "mode": "synapse",
+   "source": "curated",
+   "file": "muscular"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000100",
+   "to": "CL:0000189",
+   "th": "motor neuron ควบคุมเส้นใยชนิดช้าใน motor unit เดียวกัน",
+   "mode": "synapse",
+   "source": "curated",
+   "file": "muscular"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000100",
+   "to": "CL:0000190",
+   "th": "motor neuron ควบคุมเส้นใยชนิดเร็วใน motor unit เดียวกัน",
+   "mode": "synapse",
+   "source": "curated",
+   "file": "muscular"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000235",
+   "to": "CL:0000057",
+   "th": "แมโครฟาจหลั่ง TGF-β กระตุ้น fibroblast ให้สร้างเมทริกซ์และเปลี่ยนเป็น myofibroblast",
+   "mode": "paracrine",
    "source": "curated",
    "file": "muscular"
   },

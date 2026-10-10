@@ -321,7 +321,8 @@
       "keloid"
     ],
     "confused_with": [
-      "CL:0000388"
+      "CL:0000388",
+      "CL:0000186"
     ],
     "images": [],
     "verified": false,

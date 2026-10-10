@@ -1,13 +1,13 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-10 11:23
+สร้างเมื่อ: 2026-10-10 11:24
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 116 เส้น
+- ตรงกัน: 118 เส้น
 - คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 8 เส้น
 - คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 11 เส้น
-- CL มี แต่ไม่ได้คัดไว้: 65 เส้น
+- CL มี แต่ไม่ได้คัดไว้: 66 เส้น
 
 ### is_a ที่คัดเองข้ามขั้น
 ถูกตามความหมาย แต่ใน CL มีตัวกลางอยู่ระหว่างสองรหัสนี้ในชุดข้อมูล
@@ -102,14 +102,15 @@
 - CL:0002311 mammotroph → CL:0000165 neuroendocrine cell
 - CL:0002312 somatotroph → CL:0000165 neuroendocrine cell
 - CL:0009101 fibroblastic reticular cell → CL:0000057 fibroblast
+- CL:0009101 fibroblastic reticular cell → CL:0000186 myofibroblast cell
 - CL:1001505 parvocellular neurosecretory cell → CL:0000167 peptide hormone secreting cell
 
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
 - ตรงกัน: 22 เส้น
-- คัดเองมี แต่ CL ไม่มี: 58 เส้น
+- คัดเองมี แต่ CL ไม่มี: 59 เส้น
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 4 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 58 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 60 เส้น
 
 หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 436 รายการ ไม่นับในการเทียบ
 
@@ -129,6 +130,7 @@
 - CL:0000158 club cell → CL:0002329 basal epithelial cell of tracheobronchial tree
 - CL:0000160 goblet cell → CL:0002250 intestinal crypt stem cell
 - CL:0000164 enteroendocrine cell → CL:0002250 intestinal crypt stem cell
+- CL:0000186 myofibroblast cell → CL:0000057 fibroblast
 - CL:0000236 B cell → CL:0000051 common lymphoid progenitor
 - CL:0000312 keratinocyte → CL:0002187 basal cell of epidermis
 - CL:0000448 white adipocyte → CL:0000134 mesenchymal stem cell
@@ -204,6 +206,8 @@
 - CL:0000173 pancreatic D cell ← CL:0002351 progenitor cell of endocrine pancreas
 - CL:0000178 Leydig cell ← CL:0009091 Leydig stem cell
 - CL:0000182 hepatocyte ← CL:0005026 hepatoblast
+- CL:0000189 slow muscle cell ← CL:0000857 slow muscle myoblast
+- CL:0000190 fast muscle cell ← CL:0000858 fast muscle myoblast
 - CL:0000192 smooth muscle cell ← CL:0000514 smooth muscle myoblast
 - CL:0000336 adrenal medulla chromaffin cell ← CL:0000011 migratory trunk neural crest cell
 - CL:0000448 white adipocyte ← CL:0002334 preadipocyte
@@ -242,7 +246,7 @@
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 - CL:4072104 fibrochondrocyte ← CL:0020021 fibrochondrocyte progenitor cell
 
-## คำเตือนจาก validate (233)
+## คำเตือนจาก validate (236)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -388,6 +392,9 @@
 - CL:0000056 (myoblast): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0000192 (smooth muscle cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000388 (tendon cell): ช่องว่าง: lifespan, confused_with; ยังไม่มีรูป
+- CL:0000189 (slow muscle cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000190 (fast muscle cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000186 (myofibroblast cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000540 (neuron): ยังไม่มีรูป
 - CL:0000125 (glial cell): ยังไม่มีรูป
 - CL:0000210 (photoreceptor cell): ยังไม่มีรูป

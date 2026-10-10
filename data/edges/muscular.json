@@ -7,15 +7,46 @@
     [
       "CL:0000056",
       "CL:0000594"
+    ],
+    [
+      "CL:0000186",
+      "CL:0000057"
     ]
   ],
-  "is_a": [],
+  "is_a": [
+    [
+      "CL:0000189",
+      "CL:0008002"
+    ],
+    [
+      "CL:0000190",
+      "CL:0008002"
+    ]
+  ],
   "interacts_with": [
     {
       "from": "CL:0000100",
       "to": "CL:0008002",
       "th": "เซลล์ประสาทสั่งการปล่อย acetylcholine ที่ neuromuscular junction (synapse) กระตุ้นให้เส้นใยกล้ามเนื้อลายหดตัว",
       "mode": "synapse"
+    },
+    {
+      "from": "CL:0000100",
+      "to": "CL:0000189",
+      "th": "motor neuron ควบคุมเส้นใยชนิดช้าใน motor unit เดียวกัน",
+      "mode": "synapse"
+    },
+    {
+      "from": "CL:0000100",
+      "to": "CL:0000190",
+      "th": "motor neuron ควบคุมเส้นใยชนิดเร็วใน motor unit เดียวกัน",
+      "mode": "synapse"
+    },
+    {
+      "from": "CL:0000235",
+      "to": "CL:0000057",
+      "th": "แมโครฟาจหลั่ง TGF-β กระตุ้น fibroblast ให้สร้างเมทริกซ์และเปลี่ยนเป็น myofibroblast",
+      "mode": "paracrine"
     }
   ]
 }

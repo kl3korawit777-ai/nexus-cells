@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-10T04:23:42+00:00",
+  "fetched_at": "2026-10-10T04:24:32+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -15151,6 +15151,279 @@
           "label": "tendon"
         }
       ]
+    },
+    "CL:0000189": {
+      "id": "CL:0000189",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000189",
+      "label": "slow muscle cell",
+      "definition": "A muscle cell that develops tension more slowly than a fast-twitch fiber.",
+      "synonyms": [
+        "slow muscle fiber"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0008046",
+          "label": "extrafusal muscle fiber"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0000187",
+          "label": "muscle cell"
+        },
+        {
+          "id": "CL:0000188",
+          "label": "cell of skeletal muscle"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000228",
+          "label": "multinucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000737",
+          "label": "striated muscle cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "CL:0002372",
+          "label": "myotube"
+        },
+        {
+          "id": "CL:0008002",
+          "label": "skeletal muscle fiber"
+        },
+        {
+          "id": "CL:0008046",
+          "label": "extrafusal muscle fiber"
+        },
+        {
+          "id": "CL:4052002",
+          "label": "syncytial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000857",
+          "label": "slow muscle myoblast"
+        }
+      ]
+    },
+    "CL:0000190": {
+      "id": "CL:0000190",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000190",
+      "label": "fast muscle cell",
+      "definition": "A muscle cell that can develop high tension rapidly. It is usually innervated by a single alpha neuron.",
+      "synonyms": [
+        "glycolytic muscle fiber"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0008046",
+          "label": "extrafusal muscle fiber"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0000187",
+          "label": "muscle cell"
+        },
+        {
+          "id": "CL:0000188",
+          "label": "cell of skeletal muscle"
+        },
+        {
+          "id": "CL:0000211",
+          "label": "electrically active cell"
+        },
+        {
+          "id": "CL:0000228",
+          "label": "multinucleate cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000393",
+          "label": "electrically responsive cell"
+        },
+        {
+          "id": "CL:0000737",
+          "label": "striated muscle cell"
+        },
+        {
+          "id": "CL:0002242",
+          "label": "nucleate cell"
+        },
+        {
+          "id": "CL:0002372",
+          "label": "myotube"
+        },
+        {
+          "id": "CL:0008002",
+          "label": "skeletal muscle fiber"
+        },
+        {
+          "id": "CL:0008046",
+          "label": "extrafusal muscle fiber"
+        },
+        {
+          "id": "CL:4052002",
+          "label": "syncytial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "CL:0000858",
+          "label": "fast muscle myoblast"
+        }
+      ]
+    },
+    "CL:0000186": {
+      "id": "CL:0000186",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0000186",
+      "label": "myofibroblast cell",
+      "definition": "An animal cell that has characteristics of both a fibroblast cell and a smooth muscle cell.",
+      "synonyms": [
+        "MFB"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000183",
+          "label": "contractile cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0002320",
+          "label": "connective tissue cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": []
     },
     "CL:0000540": {
       "id": "CL:0000540",
