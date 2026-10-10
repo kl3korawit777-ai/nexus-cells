@@ -3,7 +3,7 @@
 
 import { h } from './util.js';
 import { t, getLang } from './i18n.js';
-import { imagesOf, typesIn } from './images.js';
+import { imagesOf, typesIn, assetUrl } from './images.js';
 
 const typeLabel = (type) => t('img.type.' + type);
 const thaiOnlyChip = () => h('span', { class: 'chip chip-thai', text: t('common.thaiOnly') });
@@ -59,7 +59,7 @@ export function imageFigure(img, alt, hint, { emptyText } = {}) {
     return missingBox(hint);
   }
   const frame = h('div', { class: 'gal-frame' });
-  const pic = h('img', { src: img.src, alt: altOf(img, alt), loading: 'lazy', decoding: 'async' });
+  const pic = h('img', { src: assetUrl(img.src), alt: altOf(img, alt), loading: 'lazy', decoding: 'async' });
   pic.addEventListener('error', () => frame.replaceChildren(failedBox(img.src)));
   frame.append(pic);
   return h('figure', { class: 'figure' }, frame, h('figcaption', { class: 'gal-cap' }, captionNodes(img)));
@@ -68,7 +68,7 @@ export function imageFigure(img, alt, hint, { emptyText } = {}) {
 // รูปย่อสำหรับการ์ดย่อ (ใช้รูปแรกเท่านั้น) ถ้ารูปโหลดไม่ได้จะเอาออกทั้งกรอบ
 export function thumbOf(img, alt) {
   if (!img || !img.src) return null;
-  const pic = h('img', { src: img.src, alt: altOf(img, alt), loading: 'lazy', decoding: 'async' });
+  const pic = h('img', { src: assetUrl(img.src), alt: altOf(img, alt), loading: 'lazy', decoding: 'async' });
   const box = h('div', { class: 'peek-thumb' }, pic);
   pic.addEventListener('error', () => box.remove());
   return box;
@@ -101,7 +101,7 @@ export function renderGallery(allImages, { alt, hint }) {
 
   function drawMain() {
     const img = list[idx];
-    const pic = h('img', { src: img.src, alt: altOf(img, alt), decoding: 'async' });
+    const pic = h('img', { src: assetUrl(img.src), alt: altOf(img, alt), decoding: 'async' });
     pic.addEventListener('error', () => frame.replaceChildren(failedBox(img.src)));
     frame.replaceChildren(pic);
     cap.replaceChildren(...captionNodes(img));
@@ -121,7 +121,7 @@ export function renderGallery(allImages, { alt, hint }) {
   function drawThumbs() {
     thumbs.hidden = list.length < 2;
     thumbs.replaceChildren(...list.map((img, i) => {
-      const pic = h('img', { src: img.src, alt: '', loading: 'lazy', decoding: 'async', width: 72, height: 54 });
+      const pic = h('img', { src: assetUrl(img.src), alt: '', loading: 'lazy', decoding: 'async', width: 72, height: 54 });
       const b = h('button', { type: 'button', class: 'gal-thumb', 'aria-label': t('img.showN', { n: i + 1, type: typeLabel(img.type) }), onclick: () => go(i, true) }, pic);
       pic.addEventListener('error', () => { b.classList.add('bad'); pic.remove(); b.append('!'); });
       return b;
@@ -228,7 +228,7 @@ export function renderGallery(allImages, { alt, hint }) {
     function sync() {
       const img = list[idx];
       scale = 1; baseW = 0;
-      pic = h('img', { src: img.src, alt: altOf(img, alt), class: 'fit', draggable: 'false' });
+      pic = h('img', { src: assetUrl(img.src), alt: altOf(img, alt), class: 'fit', draggable: 'false' });
       pic.addEventListener('error', () => { pic = null; viewer.replaceChildren(failedBox(img.src)); });
       pic.addEventListener('load', () => { baseW = 0; });
       pic.addEventListener('dblclick', () => setScale(scale > 1 ? 1 : 2.5));

@@ -1,6 +1,11 @@
 // ตัวช่วยเรื่องรูปที่ไม่ผูกกับ DOM (ใช้ได้ทั้งในเบราว์เซอร์และในการทดสอบด้วย Node)
 // รูปของเซลล์/เนื้อเยื่ออยู่ในช่อง images (รายการ) รูปแรกคือรูปหลัก
 
+// แปลง src ของรูปเป็น URL ที่ใช้แสดงจริง (ค่าตั้งต้น: ใช้ตามเดิม) หน้าแอดมินใช้แทนรูปที่ยังไม่ได้บันทึกด้วย blob:
+let assetResolver = (src) => src;
+export const setAssetResolver = (fn) => { assetResolver = fn || ((src) => src); };
+export const assetUrl = (src) => assetResolver(src);
+
 export const IMAGE_TYPES = ['micrograph', 'em', 'photo', 'illustration', 'diagram'];
 
 // รูปที่ใช้ได้จริง (มี src)

@@ -40,7 +40,12 @@ export const store = {
 export async function loadData() {
   const res = await fetch('data/nexus.json', { cache: 'no-cache' });
   if (!res.ok) throw new Error(t('app.dataLoadFailed', { status: res.status }));
-  const d = await res.json();
+  return fillStore(await res.json());
+}
+
+// ใส่ข้อมูลรูปแบบ nexus.json ลงใน store (หน้าแอดมินใช้ตอนดูตัวอย่างจากข้อมูลที่กำลังแก้)
+export function fillStore(d) {
+  Object.assign(store, { cellsById: new Map(), systemsById: new Map(), tissuesById: new Map(), subtypes: new Map(), subtypeKeys: [] });
   store.meta = d.meta;
   store.systems = d.systems;
   store.tissues = d.tissues;

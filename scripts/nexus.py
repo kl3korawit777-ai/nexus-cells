@@ -1012,7 +1012,8 @@ def write_pwa_files(version):
     for base, dirs, names in os.walk(site):
         rel_dir = os.path.relpath(base, site).replace("\\", "/")
         # รูปเซลล์เก็บแบบ runtime (เฉพาะที่เคยเปิด) ไม่ precache ทั้งโฟลเดอร์
-        dirs[:] = sorted(d for d in dirs if not (rel_dir == "." and d == "images"))
+        # หน้าแอดมิน (site/admin) ไม่ precache เพื่อให้ไม่ถูกเก็บไว้ในเครื่องผู้ใช้ทั่วไป
+        dirs[:] = sorted(d for d in dirs if not (rel_dir == "." and d in ("images", "admin")))
         for n in sorted(names):
             if n in skip_files:
                 continue

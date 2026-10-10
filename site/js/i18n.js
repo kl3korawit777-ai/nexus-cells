@@ -21,7 +21,7 @@ export function detectLang() {
 
 export async function initI18n() {
   const load = async (l) => {
-    const res = await fetch(`i18n/${l}.json`, { cache: 'no-cache' });
+    const res = await fetch(new URL(`../i18n/${l}.json`, import.meta.url), { cache: 'no-cache' });
     if (!res.ok) throw new Error(`i18n/${l}.json (HTTP ${res.status})`);
     return res.json();
   };

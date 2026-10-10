@@ -84,6 +84,7 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(req.url);
   if (url.origin === self.location.origin) {
     const p = relPath(url);
+    if (p.startsWith('admin/')) return; // หน้าแอดมินไม่ผ่าน service worker และไม่ถูก cache
     if (p === 'data/version.json') { e.respondWith(networkFirst(req)); return; }
     if (DATA_FILES.includes(p) || p.startsWith('images/')) { e.respondWith(cacheFirst(req)); return; }
     e.respondWith(networkFirst(req));
