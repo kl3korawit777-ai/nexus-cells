@@ -1,6 +1,6 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-10 11:26
+สร้างเมื่อ: 2026-10-10 11:27
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
@@ -108,11 +108,11 @@
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
 - ตรงกัน: 22 เส้น
-- คัดเองมี แต่ CL ไม่มี: 61 เส้น
+- คัดเองมี แต่ CL ไม่มี: 62 เส้น
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 4 เส้น
 - CL ชี้ไปเซลล์นอกชุดข้อมูล: 61 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 442 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 444 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -175,6 +175,7 @@
 - CL:0002548 fibroblast of cardiac tissue → CL:0011019 mesothelial cell of epicardium
 - CL:0007010 osteoprogenitor cell → CL:0000134 mesenchymal stem cell
 - CL:0008002 skeletal muscle fiber → CL:0000056 myoblast
+- CL:0017000 pulmonary ionocyte → CL:0002329 basal epithelial cell of tracheobronchial tree
 - CL:1000347 colonocyte → CL:0002250 intestinal crypt stem cell
 - CL:4072104 fibrochondrocyte → CL:0000134 mesenchymal stem cell
 
@@ -249,7 +250,7 @@
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 - CL:4072104 fibrochondrocyte ← CL:0020021 fibrochondrocyte progenitor cell
 
-## คำเตือนจาก validate (243)
+## คำเตือนจาก validate (245)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -468,6 +469,8 @@
 - CL:0002145 (multiciliated columnar cell of tracheobronchial tree): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0002329 (basal epithelial cell of tracheobronchial tree): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:1000223 (pulmonary neuroendocrine cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0017000 (pulmonary ionocyte): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0019001 (tracheobronchial serous cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0007010 (osteoprogenitor cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0000062 (osteoblast): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000137 (osteocyte): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป

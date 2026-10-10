@@ -195,5 +195,74 @@
     "images": [],
     "verified": false,
     "refs": []
+  },
+  {
+    "id": "CL:0017000",
+    "slug": "pulmonary-ionocyte",
+    "kind": "cell",
+    "en": "pulmonary ionocyte",
+    "th": "พัลโมนารีไอโอโนไซต์ (pulmonary ionocyte)",
+    "systems": [
+      "respiratory"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "pseudostratified",
+    "location": "เยื่อบุผิวทางเดินหายใจ (หลอดลมและท่อลม) พบน้อยมาก ประมาณ 1 ถึง 2 เปอร์เซ็นต์ของเซลล์เยื่อบุ",
+    "morphology": "เซลล์เยื่อบุผิวชนิดพิเศษ มีไมโครวิลไลที่ผิวด้านลูเมน",
+    "function": "แสดงช่องไอออน CFTR ในปริมาณมากที่สุดในเยื่อบุทางเดินหายใจ ควบคุมการขนส่งไอออนและความหนืดของชั้นของเหลวบนผิว",
+    "secretes": [],
+    "markers": [
+      "FOXI1",
+      "CFTR",
+      "ASCL3"
+    ],
+    "lifespan": "",
+    "exam": "ยีน CFTR กลายพันธุ์ทำให้เกิดโรค cystic fibrosis ซึ่งเสมหะเหนียวข้น ติดเชื้อปอดซ้ำ ได้มีการพบ ionocyte ในปี 2018 และพบว่าเป็นเซลล์ที่แสดง CFTR มากที่สุด",
+    "diseases": [
+      "cystic fibrosis"
+    ],
+    "confused_with": [
+      "CL:0002145",
+      "CL:0000160"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0019001",
+    "slug": "bronchial-serous-cell",
+    "kind": "cell",
+    "en": "tracheobronchial serous cell",
+    "th": "เซลล์ซีรัสของต่อมใต้เยื่อเมือกหลอดลม (serous cell)",
+    "systems": [
+      "respiratory"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "glandular",
+    "location": "ต่อมใต้เยื่อเมือก (submucosal gland) ของท่อลมและหลอดลม",
+    "morphology": "เซลล์ต่อมรูปพีระมิด ไซโทพลาซึมติดสีเบสและมีแกรนูลสร้างสาร นิวเคลียสกลมอยู่ใกล้ฐานเซลล์ พบเป็นส่วนของต่อมแบบผสมร่วมกับเซลล์เมือก",
+    "function": "หลั่งของเหลวใสที่มีโปรตีนต้านจุลชีพ เช่น lysozyme และ lactoferrin และน้ำ ผ่านท่อไปยังผิวทางเดินหายใจ ทำให้เมือกไม่เหนียวเกินไป",
+    "secretes": [
+      "lysozyme",
+      "lactoferrin"
+    ],
+    "markers": [
+      "lysozyme",
+      "lactoferrin",
+      "CFTR"
+    ],
+    "lifespan": "",
+    "exam": "ต่อมใต้เยื่อเมือกพบเฉพาะในท่อลมและหลอดลมที่มีกระดูกอ่อน ไม่พบใน bronchiole ใน cystic fibrosis ต่อมเหล่านี้หลั่งเมือกเหนียวเพราะ CFTR ผิดปกติ",
+    "diseases": [
+      "cystic fibrosis",
+      "หลอดลมอักเสบเรื้อรัง (chronic bronchitis)"
+    ],
+    "confused_with": [
+      "CL:0000160"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
   }
 ]
