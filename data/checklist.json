@@ -1,0 +1,1151 @@
+{
+ "_comment": "รายการตรวจเซลล์ที่ควรมี จัดกลุ่มตามระบบ ใช้กับ `python scripts/nexus.py coverage` แต่ละรายการมี en (ชื่อที่ใช้ค้นใน CL) และ th ใส่ id (CL:xxxxxxx) เมื่อรู้ ถ้าไม่ใส่จะจับคู่ด้วยชื่อ en กับ en, cl.label และ synonyms ของเซลล์ในข้อมูล ใส่ note ได้ กลุ่ม other คือเซลล์ที่ไม่ใช่ระบบใดโดยเฉพาะ",
+ "groups": {
+  "blood-immune": [
+   {
+    "en": "hematopoietic stem cell",
+    "th": "เซลล์ต้นกำเนิดเม็ดเลือด"
+   },
+   {
+    "en": "common myeloid progenitor",
+    "th": "เซลล์ตั้งต้นสายไมอีลอยด์"
+   },
+   {
+    "en": "common lymphoid progenitor",
+    "th": "เซลล์ตั้งต้นสายลิมฟอยด์"
+   },
+   {
+    "en": "megakaryocyte-erythroid progenitor cell",
+    "th": "เซลล์ตั้งต้นเมกะคารีโอไซต์-เม็ดเลือดแดง"
+   },
+   {
+    "en": "granulocyte monocyte progenitor cell",
+    "th": "เซลล์ตั้งต้นแกรนูโลไซต์-โมโนไซต์"
+   },
+   {
+    "en": "proerythroblast",
+    "th": "โพรเอริโทรบลาสต์"
+   },
+   {
+    "en": "erythroblast",
+    "th": "เอริโทรบลาสต์"
+   },
+   {
+    "en": "reticulocyte",
+    "th": "เรติคิวโลไซต์"
+   },
+   {
+    "en": "erythrocyte",
+    "th": "เม็ดเลือดแดง"
+   },
+   {
+    "en": "megakaryoblast",
+    "th": "เมกะคารีโอบลาสต์",
+    "id": "CL:0000553",
+    "note": "CL ใช้ megakaryocyte progenitor cell (megakaryoblast เป็น synonym)"
+   },
+   {
+    "en": "megakaryocyte",
+    "th": "เมกะคารีโอไซต์"
+   },
+   {
+    "en": "platelet",
+    "th": "เกล็ดเลือด"
+   },
+   {
+    "en": "myeloblast",
+    "th": "ไมอีโลบลาสต์"
+   },
+   {
+    "en": "promyelocyte",
+    "th": "โพรไมอีโลไซต์"
+   },
+   {
+    "en": "myelocyte",
+    "th": "ไมอีโลไซต์",
+    "id": "CL:0002193"
+   },
+   {
+    "en": "metamyelocyte",
+    "th": "เมทาไมอีโลไซต์",
+    "id": "CL:0002192"
+   },
+   {
+    "en": "band form neutrophil",
+    "th": "แบนด์นิวโทรฟิล"
+   },
+   {
+    "en": "neutrophil",
+    "th": "นิวโทรฟิล"
+   },
+   {
+    "en": "eosinophil",
+    "th": "อีโอซิโนฟิล"
+   },
+   {
+    "en": "basophil",
+    "th": "เบโซฟิล"
+   },
+   {
+    "en": "mast cell",
+    "th": "มาสต์เซลล์"
+   },
+   {
+    "en": "monoblast",
+    "th": "โมโนบลาสต์",
+    "id": "CL:0000040"
+   },
+   {
+    "en": "monocyte",
+    "th": "โมโนไซต์"
+   },
+   {
+    "en": "macrophage",
+    "th": "แมโครฟาจ"
+   },
+   {
+    "en": "red pulp macrophage",
+    "th": "แมโครฟาจในเรดพัลป์ของม้าม",
+    "id": "CL:0000874"
+   },
+   {
+    "en": "conventional dendritic cell",
+    "th": "เดนไดรต์เซลล์ชนิดดั้งเดิม",
+    "id": "CL:0000990"
+   },
+   {
+    "en": "plasmacytoid dendritic cell",
+    "th": "พลาสมาไซทอยด์เดนไดรต์เซลล์"
+   },
+   {
+    "en": "follicular dendritic cell",
+    "th": "ฟอลลิคูลาร์เดนไดรต์เซลล์"
+   },
+   {
+    "en": "T cell",
+    "th": "ทีเซลล์"
+   },
+   {
+    "en": "naive T cell",
+    "th": "ทีเซลล์ที่ยังไม่เคยพบแอนติเจน",
+    "id": "CL:0000898"
+   },
+   {
+    "en": "helper T cell",
+    "th": "ทีเซลล์ช่วย"
+   },
+   {
+    "en": "T-helper 1 cell",
+    "th": "Th1",
+    "id": "CL:0000545"
+   },
+   {
+    "en": "T-helper 2 cell",
+    "th": "Th2",
+    "id": "CL:0000546"
+   },
+   {
+    "en": "T-helper 17 cell",
+    "th": "Th17",
+    "id": "CL:0000899"
+   },
+   {
+    "en": "T follicular helper cell",
+    "th": "ทีฟอลลิคูลาร์เฮลเปอร์เซลล์",
+    "id": "CL:0002038"
+   },
+   {
+    "en": "cytotoxic T cell",
+    "th": "ทีเซลล์ทำลายเซลล์"
+   },
+   {
+    "en": "regulatory T cell",
+    "th": "ทีเซลล์ควบคุม"
+   },
+   {
+    "en": "memory T cell",
+    "th": "ทีเซลล์ความจำ"
+   },
+   {
+    "en": "NK T cell",
+    "th": "เอ็นเคทีเซลล์",
+    "id": "CL:0000814"
+   },
+   {
+    "en": "gamma-delta T cell",
+    "th": "แกมมา-เดลตาทีเซลล์"
+   },
+   {
+    "en": "B cell",
+    "th": "บีเซลล์"
+   },
+   {
+    "en": "naive B cell",
+    "th": "บีเซลล์ที่ยังไม่เคยพบแอนติเจน",
+    "id": "CL:0000788"
+   },
+   {
+    "en": "marginal zone B cell",
+    "th": "บีเซลล์ใน marginal zone",
+    "id": "CL:0000845"
+   },
+   {
+    "en": "plasma cell",
+    "th": "พลาสมาเซลล์"
+   },
+   {
+    "en": "memory B cell",
+    "th": "บีเซลล์ความจำ"
+   },
+   {
+    "en": "natural killer cell",
+    "th": "เซลล์เอ็นเค"
+   },
+   {
+    "en": "innate lymphoid cell",
+    "th": "เซลล์ลิมฟอยด์ภูมิคุ้มกันกำเนิด"
+   },
+   {
+    "en": "thymic epithelial cell",
+    "th": "เซลล์เยื่อบุผิวของไทมัส",
+    "id": "CL:0002293"
+   },
+   {
+    "en": "fibroblastic reticular cell",
+    "th": "เซลล์เรติคูลาร์ไฟโบรบลาสต์",
+    "id": "CL:0009101"
+   },
+   {
+    "en": "high endothelial venule cell",
+    "th": "เซลล์บุผนังหลอดเลือดดำเอนโดทีเลียมสูง",
+    "id": "CL:0002652"
+   }
+  ],
+  "digestive": [
+   {
+    "en": "serous acinar cell of salivary gland",
+    "th": "เซลล์ซีรัสของต่อมน้ำลาย"
+   },
+   {
+    "en": "mucous acinar cell of salivary gland",
+    "th": "เซลล์สร้างเมือกของต่อมน้ำลาย"
+   },
+   {
+    "en": "odontoblast",
+    "th": "โอดอนโตบลาสต์"
+   },
+   {
+    "en": "ameloblast",
+    "th": "อะมีโลบลาสต์"
+   },
+   {
+    "en": "cementoblast",
+    "th": "ซีเมนโตบลาสต์",
+    "id": "CL:0000061"
+   },
+   {
+    "en": "esophageal squamous epithelial cell",
+    "th": "เซลล์เยื่อบุผิวสความัสของหลอดอาหาร",
+    "id": "CL:0009096"
+   },
+   {
+    "en": "parietal cell",
+    "th": "พาไรเอทัลเซลล์"
+   },
+   {
+    "en": "chief cell of stomach",
+    "th": "เซลล์หลักของกระเพาะอาหาร"
+   },
+   {
+    "en": "mucous neck cell",
+    "th": "เซลล์เมือกส่วนคอของต่อมกระเพาะ"
+   },
+   {
+    "en": "surface mucous cell",
+    "th": "เซลล์เมือกผิวกระเพาะ",
+    "id": "CL:0002179"
+   },
+   {
+    "en": "G cell",
+    "th": "จีเซลล์",
+    "id": "CL:0000509"
+   },
+   {
+    "en": "enterochromaffin-like cell",
+    "th": "เซลล์คล้ายเอนเทอโรโครมาฟฟิน",
+    "id": "CL:0000504"
+   },
+   {
+    "en": "D cell of stomach",
+    "th": "ดีเซลล์ของกระเพาะ",
+    "id": "CL:0002267"
+   },
+   {
+    "en": "enterocyte",
+    "th": "เอนเทอโรไซต์"
+   },
+   {
+    "en": "goblet cell",
+    "th": "เซลล์กอบเลต"
+   },
+   {
+    "en": "Paneth cell",
+    "th": "พาเนทเซลล์"
+   },
+   {
+    "en": "tuft cell",
+    "th": "ทัฟต์เซลล์",
+    "id": "CL:0002204"
+   },
+   {
+    "en": "M cell",
+    "th": "เอ็มเซลล์"
+   },
+   {
+    "en": "intestinal stem cell",
+    "th": "เซลล์ต้นกำเนิดลำไส้",
+    "id": "CL:0002250"
+   },
+   {
+    "en": "colonocyte",
+    "th": "โคโลโนไซต์",
+    "id": "CL:1000347"
+   },
+   {
+    "en": "Brunner gland cell",
+    "th": "เซลล์ต่อมบรุนเนอร์",
+    "no_cl": true,
+    "nearest_parent": "CL:1001589",
+    "note": "ไม่พบ Brunner gland cell ใน CL (พบเฉพาะ duodenum secretory cell)"
+   },
+   {
+    "en": "enteroendocrine cell",
+    "th": "เซลล์ต่อมไร้ท่อของลำไส้"
+   },
+   {
+    "en": "I cell",
+    "th": "ไอเซลล์ (CCK)",
+    "id": "CL:0002277"
+   },
+   {
+    "en": "S cell",
+    "th": "เอสเซลล์ (secretin)",
+    "id": "CL:0002281"
+   },
+   {
+    "en": "K cell",
+    "th": "เคเซลล์ (GIP)",
+    "id": "CL:0002278"
+   },
+   {
+    "en": "L cell",
+    "th": "แอลเซลล์ (GLP-1)",
+    "id": "CL:0002279"
+   },
+   {
+    "en": "enterochromaffin cell",
+    "th": "เซลล์เอนเทอโรโครมาฟฟิน",
+    "id": "CL:0000577"
+   },
+   {
+    "en": "interstitial cell of Cajal",
+    "th": "เซลล์คาฆาล"
+   },
+   {
+    "en": "hepatocyte",
+    "th": "เซลล์ตับ"
+   },
+   {
+    "en": "hepatic stellate cell",
+    "th": "เซลล์สเตลเลตของตับ"
+   },
+   {
+    "en": "cholangiocyte",
+    "th": "โคแลนจิโอไซต์"
+   },
+   {
+    "en": "liver sinusoidal endothelial cell",
+    "th": "เซลล์บุผนังไซนูซอยด์ของตับ"
+   },
+   {
+    "en": "Kupffer cell",
+    "th": "คัฟเฟอร์เซลล์"
+   },
+   {
+    "en": "pancreatic acinar cell",
+    "th": "เซลล์เอซินัสของตับอ่อน"
+   },
+   {
+    "en": "pancreatic ductal cell",
+    "th": "เซลล์เยื่อบุท่อตับอ่อน"
+   },
+   {
+    "en": "centroacinar cell",
+    "th": "เซลล์เซนโทรเอซินาร์",
+    "id": "CL:0002080"
+   },
+   {
+    "en": "gallbladder epithelial cell",
+    "th": "เซลล์เยื่อบุถุงน้ำดี",
+    "id": "CL:1000415"
+   }
+  ],
+  "endocrine": [
+   {
+    "en": "pancreatic alpha cell",
+    "th": "แอลฟาเซลล์ของตับอ่อน"
+   },
+   {
+    "en": "pancreatic beta cell",
+    "th": "บีตาเซลล์ของตับอ่อน"
+   },
+   {
+    "en": "pancreatic delta cell",
+    "th": "เดลตาเซลล์ของตับอ่อน"
+   },
+   {
+    "en": "pancreatic PP cell",
+    "th": "พีพีเซลล์ของตับอ่อน"
+   },
+   {
+    "en": "thyroid follicular cell",
+    "th": "เซลล์ฟอลลิเคิลของต่อมไทรอยด์"
+   },
+   {
+    "en": "parafollicular cell",
+    "th": "พาราฟอลลิคูลาร์เซลล์"
+   },
+   {
+    "en": "parathyroid chief cell",
+    "th": "เซลล์หลักของต่อมพาราไทรอยด์"
+   },
+   {
+    "en": "oxyphil cell",
+    "th": "ออกซิฟิลเซลล์",
+    "id": "CL:0002199"
+   },
+   {
+    "en": "zona glomerulosa cell",
+    "th": "เซลล์ zona glomerulosa",
+    "id": "CL:0002099"
+   },
+   {
+    "en": "zona fasciculata cell",
+    "th": "เซลล์ zona fasciculata",
+    "id": "CL:0002136"
+   },
+   {
+    "en": "zona reticularis cell",
+    "th": "เซลล์ zona reticularis",
+    "id": "CL:0002137"
+   },
+   {
+    "en": "chromaffin cell",
+    "th": "โครมาฟฟินเซลล์",
+    "id": "CL:0000336"
+   },
+   {
+    "en": "somatotroph",
+    "th": "โซมาโตโทรฟ"
+   },
+   {
+    "en": "lactotroph",
+    "th": "แล็กโทโทรฟ"
+   },
+   {
+    "en": "corticotroph",
+    "th": "คอร์ติโคโทรฟ"
+   },
+   {
+    "en": "thyrotroph",
+    "th": "ไทรอยด์โทรฟ"
+   },
+   {
+    "en": "gonadotroph",
+    "th": "โกนาโดโทรฟ"
+   },
+   {
+    "en": "folliculostellate cell",
+    "th": "เซลล์ฟอลลิคูโลสเตลเลต",
+    "id": "CL:0000642"
+   },
+   {
+    "en": "pituicyte",
+    "th": "พิทูอิไซต์"
+   },
+   {
+    "en": "pinealocyte",
+    "th": "พิเนียโลไซต์"
+   }
+  ],
+  "nervous": [
+   {
+    "en": "sensory neuron",
+    "th": "เซลล์ประสาทรับความรู้สึก"
+   },
+   {
+    "en": "motor neuron",
+    "th": "เซลล์ประสาทสั่งการ"
+   },
+   {
+    "en": "interneuron",
+    "th": "อินเตอร์นิวรอน"
+   },
+   {
+    "en": "pyramidal neuron",
+    "th": "เซลล์ประสาทพีระมิด"
+   },
+   {
+    "en": "Purkinje cell",
+    "th": "เซลล์เพอร์กินเจ"
+   },
+   {
+    "en": "cerebellar granule cell",
+    "th": "เซลล์แกรนูลของสมองน้อย",
+    "id": "CL:0001031"
+   },
+   {
+    "en": "neurosecretory cell",
+    "th": "เซลล์ประสาทสร้างฮอร์โมน",
+    "id": "CL:0000165",
+    "note": "ใช้หมวด neuroendocrine cell; ชนิดเฉพาะในข้อมูลคือ magnocellular และ parvocellular neurosecretory cell"
+   },
+   {
+    "en": "dopaminergic neuron",
+    "th": "เซลล์ประสาทโดพามีน"
+   },
+   {
+    "en": "cholinergic neuron",
+    "th": "เซลล์ประสาทโคลีเนอร์จิก"
+   },
+   {
+    "en": "GABAergic neuron",
+    "th": "เซลล์ประสาท GABA",
+    "id": "CL:0000617"
+   },
+   {
+    "en": "glutamatergic neuron",
+    "th": "เซลล์ประสาทกลูตาเมต",
+    "id": "CL:0000679"
+   },
+   {
+    "en": "serotonergic neuron",
+    "th": "เซลล์ประสาทเซโรโทนิน",
+    "id": "CL:0000850"
+   },
+   {
+    "en": "nociceptor",
+    "th": "โนซิเซพเตอร์",
+    "no_cl": true,
+    "nearest_parent": "CL:0000101",
+    "note": "ไม่พบ nociceptor ใน CL (พบเฉพาะกลุ่ม dorsal root ganglion neuron ที่ระบุตามยีน)"
+   },
+   {
+    "en": "astrocyte",
+    "th": "แอสโทรไซต์"
+   },
+   {
+    "en": "oligodendrocyte",
+    "th": "โอลิโกเดนโดรไซต์"
+   },
+   {
+    "en": "oligodendrocyte precursor cell",
+    "th": "เซลล์ตั้งต้นโอลิโกเดนโดรไซต์",
+    "id": "CL:0002453"
+   },
+   {
+    "en": "Schwann cell",
+    "th": "ชวานน์เซลล์"
+   },
+   {
+    "en": "ependymal cell",
+    "th": "เซลล์เอพเพนดิมา"
+   },
+   {
+    "en": "tanycyte",
+    "th": "แทนนีไซต์",
+    "id": "CL:0002085"
+   },
+   {
+    "en": "choroid plexus epithelial cell",
+    "th": "เซลล์เยื่อบุผิวของ choroid plexus",
+    "id": "CL:0000706"
+   },
+   {
+    "en": "satellite glial cell",
+    "th": "เซลล์เกลียดาวเทียม",
+    "no_cl": true,
+    "nearest_parent": "CL:0000125",
+    "note": "ไม่พบ satellite glial cell ใน CL"
+   },
+   {
+    "en": "microglial cell",
+    "th": "ไมโครเกลีย"
+   },
+   {
+    "en": "olfactory ensheathing cell",
+    "th": "เซลล์เกลียหุ้มปลายประสาทรับกลิ่น",
+    "id": "CL:0011028"
+   },
+   {
+    "en": "radial glial cell",
+    "th": "เซลล์เรเดียลเกลีย",
+    "id": "CL:0000681"
+   },
+   {
+    "en": "neural stem cell",
+    "th": "เซลล์ต้นกำเนิดประสาท"
+   },
+   {
+    "en": "retinal rod cell",
+    "th": "เซลล์รูปแท่ง"
+   },
+   {
+    "en": "retinal cone cell",
+    "th": "เซลล์รูปกรวย"
+   },
+   {
+    "en": "retinal bipolar neuron",
+    "th": "เซลล์ไบโพลาร์ของจอตา"
+   },
+   {
+    "en": "retina horizontal cell",
+    "th": "เซลล์ฮอริซอนทัลของจอตา",
+    "id": "CL:0000745"
+   },
+   {
+    "en": "amacrine cell",
+    "th": "เซลล์อะมาคริน",
+    "id": "CL:0000561"
+   },
+   {
+    "en": "retinal ganglion cell",
+    "th": "เซลล์ปมประสาทจอตา"
+   },
+   {
+    "en": "retinal pigment epithelial cell",
+    "th": "เซลล์เยื่อบุผิวเม็ดสีจอตา"
+   },
+   {
+    "en": "Mueller cell",
+    "th": "เซลล์มึลเลอร์"
+   },
+   {
+    "en": "cochlear inner hair cell",
+    "th": "เซลล์ขนชั้นใน"
+   },
+   {
+    "en": "cochlear outer hair cell",
+    "th": "เซลล์ขนชั้นนอก"
+   },
+   {
+    "en": "vestibular hair cell",
+    "th": "เซลล์ขนของระบบทรงตัว",
+    "id": "CL:0000609"
+   },
+   {
+    "en": "supporting cell of organ of Corti",
+    "th": "เซลล์ค้ำจุนของ organ of Corti",
+    "id": "CL:0002490"
+   },
+   {
+    "en": "olfactory receptor cell",
+    "th": "เซลล์รับกลิ่น"
+   },
+   {
+    "en": "taste receptor cell",
+    "th": "เซลล์รับรส"
+   }
+  ],
+  "muscular": [
+   {
+    "en": "skeletal muscle fiber",
+    "th": "เส้นใยกล้ามเนื้อลาย"
+   },
+   {
+    "en": "slow muscle fiber",
+    "th": "เส้นใยกล้ามเนื้อชนิดช้า (type I)",
+    "id": "CL:0000189",
+    "note": "slow muscle cell"
+   },
+   {
+    "en": "fast muscle fiber",
+    "th": "เส้นใยกล้ามเนื้อชนิดเร็ว (type II)",
+    "id": "CL:0000190",
+    "note": "fast muscle cell"
+   },
+   {
+    "en": "skeletal muscle satellite cell",
+    "th": "เซลล์ดาวเทียม"
+   },
+   {
+    "en": "myoblast",
+    "th": "ไมโอบลาสต์"
+   },
+   {
+    "en": "smooth muscle cell",
+    "th": "เซลล์กล้ามเนื้อเรียบ"
+   },
+   {
+    "en": "myofibroblast cell",
+    "th": "ไมโอไฟโบรบลาสต์",
+    "id": "CL:0000186"
+   },
+   {
+    "en": "tendon cell",
+    "th": "เทโนไซต์"
+   }
+  ],
+  "skeletal": [
+   {
+    "en": "mesenchymal stem cell",
+    "th": "เซลล์ต้นกำเนิดมีเซนไคม์"
+   },
+   {
+    "en": "osteoprogenitor cell",
+    "th": "เซลล์ตั้งต้นกระดูก"
+   },
+   {
+    "en": "osteoblast",
+    "th": "ออสทีโอบลาสต์"
+   },
+   {
+    "en": "osteocyte",
+    "th": "ออสทีโอไซต์"
+   },
+   {
+    "en": "bone lining cell",
+    "th": "เซลล์เรียงผิวกระดูก",
+    "no_cl": true,
+    "nearest_parent": "CL:0001035",
+    "note": "ไม่พบ bone lining cell ใน CL (bone cell เป็นคลาสที่ใกล้ที่สุด)"
+   },
+   {
+    "en": "osteoclast",
+    "th": "ออสทีโอคลาสต์"
+   },
+   {
+    "en": "chondroblast",
+    "th": "คอนโดรบลาสต์"
+   },
+   {
+    "en": "chondrocyte",
+    "th": "คอนโดรไซต์"
+   },
+   {
+    "en": "fibrochondrocyte",
+    "th": "ไฟโบรคอนโดรไซต์",
+    "id": "CL:4072104"
+   },
+   {
+    "en": "type A synovial cell",
+    "th": "ไซโนวิโอไซต์ชนิด A"
+   },
+   {
+    "en": "type B synovial cell",
+    "th": "ไซโนวิโอไซต์ชนิด B"
+   },
+   {
+    "en": "fibroblast",
+    "th": "ไฟโบรบลาสต์",
+    "id": "CL:0000057"
+   },
+   {
+    "en": "white fat cell",
+    "th": "เซลล์ไขมันสีขาว",
+    "id": "CL:0000448"
+   },
+   {
+    "en": "brown fat cell",
+    "th": "เซลล์ไขมันสีน้ำตาล",
+    "id": "CL:0000449"
+   },
+   {
+    "en": "beige fat cell",
+    "th": "เซลล์ไขมันสีเบจ",
+    "id": "CL:0001070"
+   },
+   {
+    "en": "mesothelial cell",
+    "th": "เซลล์เมโซทีเลียม",
+    "id": "CL:0000077"
+   }
+  ],
+  "cardiovascular": [
+   {
+    "en": "atrial cardiac muscle cell",
+    "th": "เซลล์กล้ามเนื้อหัวใจห้องบน",
+    "id": "CL:0002129",
+    "note": "regular atrial cardiac myocyte"
+   },
+   {
+    "en": "cardiac ventricular muscle cell",
+    "th": "เซลล์กล้ามเนื้อหัวใจห้องล่าง",
+    "id": "CL:2000046",
+    "note": "ventricular cardiac muscle cell"
+   },
+   {
+    "en": "cardiac pacemaker cell of sinoatrial node",
+    "th": "เซลล์ควบคุมจังหวะที่ SA node"
+   },
+   {
+    "en": "Purkinje myocyte",
+    "th": "เซลล์เส้นใยเพอร์กินเจของหัวใจ"
+   },
+   {
+    "en": "cardiac fibroblast",
+    "th": "ไฟโบรบลาสต์ของหัวใจ"
+   },
+   {
+    "en": "epicardial cell",
+    "th": "เซลล์เอพิคาร์เดียม",
+    "id": "CL:0011019",
+    "note": "mesothelial cell of epicardium"
+   },
+   {
+    "en": "endocardial cell",
+    "th": "เซลล์เอนโดคาร์เดียม"
+   },
+   {
+    "en": "endothelial cell",
+    "th": "เซลล์บุผนังหลอดเลือด"
+   },
+   {
+    "en": "endothelial cell of artery",
+    "th": "เซลล์บุผนังหลอดเลือดแดง",
+    "id": "CL:1000413"
+   },
+   {
+    "en": "endothelial cell of vein",
+    "th": "เซลล์บุผนังหลอดเลือดดำ",
+    "id": "CL:0002543"
+   },
+   {
+    "en": "endothelial cell of capillary",
+    "th": "เซลล์บุผนังหลอดเลือดฝอย",
+    "id": "CL:0002144"
+   },
+   {
+    "en": "endothelial cell of lymphatic vessel",
+    "th": "เซลล์บุผนังหลอดน้ำเหลือง",
+    "id": "CL:0002138"
+   },
+   {
+    "en": "vascular associated smooth muscle cell",
+    "th": "เซลล์กล้ามเนื้อเรียบหลอดเลือด"
+   },
+   {
+    "en": "pericyte",
+    "th": "เพอริไซต์"
+   }
+  ],
+  "respiratory": [
+   {
+    "en": "pulmonary alveolar type 1 cell",
+    "th": "เซลล์ถุงลมชนิดที่ 1"
+   },
+   {
+    "en": "pulmonary alveolar type 2 cell",
+    "th": "เซลล์ถุงลมชนิดที่ 2"
+   },
+   {
+    "en": "club cell",
+    "th": "คลับเซลล์"
+   },
+   {
+    "en": "ciliated cell of airway",
+    "th": "เซลล์ขนกวัดของทางเดินหายใจ",
+    "id": "CL:0002145"
+   },
+   {
+    "en": "basal cell of airway",
+    "th": "เซลล์เบซัลของทางเดินหายใจ",
+    "id": "CL:0002329"
+   },
+   {
+    "en": "pulmonary neuroendocrine cell",
+    "th": "เซลล์ประสาทต่อมไร้ท่อของปอด"
+   },
+   {
+    "en": "pulmonary ionocyte",
+    "th": "พัลโมนารีไอโอโนไซต์",
+    "id": "CL:0017000"
+   },
+   {
+    "en": "serous cell of bronchial submucosal gland",
+    "th": "เซลล์ซีรัสของต่อมใต้เยื่อเมือกหลอดลม",
+    "id": "CL:0019001",
+    "note": "tracheobronchial serous cell"
+   },
+   {
+    "en": "alveolar macrophage",
+    "th": "แมโครฟาจถุงลม"
+   },
+   {
+    "en": "goblet cell",
+    "th": "เซลล์กอบเลต"
+   }
+  ],
+  "urinary": [
+   {
+    "en": "podocyte",
+    "th": "พอโดไซต์"
+   },
+   {
+    "en": "glomerular endothelial cell",
+    "th": "เซลล์บุผนังหลอดเลือดฝอยของ glomerulus"
+   },
+   {
+    "en": "glomerular mesangial cell",
+    "th": "เซลล์เมแซงเจียล"
+   },
+   {
+    "en": "parietal epithelial cell of Bowman's capsule",
+    "th": "เซลล์เยื่อบุผิวชั้นนอกของ Bowman's capsule",
+    "id": "CL:1000452",
+    "note": "parietal epithelial cell"
+   },
+   {
+    "en": "epithelial cell of proximal tubule",
+    "th": "เซลล์ท่อไตส่วนต้น"
+   },
+   {
+    "en": "thin limb cell of loop of Henle",
+    "th": "เซลล์ส่วนบางของ loop of Henle",
+    "id": "CL:1001111",
+    "note": "kidney loop of Henle thin descending limb epithelial cell"
+   },
+   {
+    "en": "thick ascending limb cell",
+    "th": "เซลล์ส่วนหนาขาขึ้นของ loop of Henle",
+    "id": "CL:1001106"
+   },
+   {
+    "en": "epithelial cell of distal tubule",
+    "th": "เซลล์ท่อไตส่วนปลายที่ขดงอ"
+   },
+   {
+    "en": "macula densa epithelial cell",
+    "th": "เซลล์ macula densa"
+   },
+   {
+    "en": "kidney granular cell",
+    "th": "เซลล์จักซ์ตาโกลเมอรูลาร์"
+   },
+   {
+    "en": "kidney collecting duct principal cell",
+    "th": "เซลล์ปรินซิพัล"
+   },
+   {
+    "en": "type A intercalated cell",
+    "th": "เซลล์อินเตอร์คาเลตชนิด A",
+    "id": "CL:0005011",
+    "note": "renal alpha-intercalated cell"
+   },
+   {
+    "en": "type B intercalated cell",
+    "th": "เซลล์อินเตอร์คาเลตชนิด B",
+    "id": "CL:0002201",
+    "note": "renal beta-intercalated cell"
+   },
+   {
+    "en": "umbrella cell of urothelium",
+    "th": "เซลล์อัมเบรลลา"
+   },
+   {
+    "en": "basal urothelial cell",
+    "th": "เซลล์เบซัลของยูโรทีเลียม",
+    "id": "CL:1000486"
+   },
+   {
+    "en": "erythropoietin-producing renal interstitial cell",
+    "th": "เซลล์คั่นระหว่างท่อไตที่สร้าง EPO",
+    "no_cl": true,
+    "nearest_parent": "CL:1000692",
+    "note": "ไม่พบเซลล์คั่นระหว่างท่อไตที่สร้าง EPO ใน CL (kidney interstitial fibroblast ใกล้ที่สุด แต่นิยามไม่ระบุ EPO)"
+   }
+  ],
+  "integumentary": [
+   {
+    "en": "basal cell of epidermis",
+    "th": "เซลล์เบซัลของหนังกำพร้า"
+   },
+   {
+    "en": "keratinocyte",
+    "th": "เคราติโนไซต์"
+   },
+   {
+    "en": "corneocyte",
+    "th": "คอร์นีโอไซต์"
+   },
+   {
+    "en": "melanocyte",
+    "th": "เมลาโนไซต์"
+   },
+   {
+    "en": "Langerhans cell",
+    "th": "แลงเกอร์ฮานส์เซลล์"
+   },
+   {
+    "en": "Merkel cell",
+    "th": "เมอร์เคิลเซลล์"
+   },
+   {
+    "en": "sebocyte",
+    "th": "เซโบไซต์"
+   },
+   {
+    "en": "eccrine sweat gland cell",
+    "th": "เซลล์ต่อมเหงื่อแบบ eccrine",
+    "id": "CL:0002146",
+    "note": "clear cell of eccrine sweat gland (คู่กับ dark cell CL:0002142)"
+   },
+   {
+    "en": "apocrine sweat gland cell",
+    "th": "เซลล์ต่อมเหงื่อแบบ apocrine",
+    "no_cl": true,
+    "nearest_parent": "CL:1000448",
+    "note": "ไม่พบ apocrine sweat gland cell ใน CL (ใช้ epithelial cell of sweat gland)"
+   },
+   {
+    "en": "myoepithelial cell of sweat gland",
+    "th": "เซลล์ไมโออีพิทีเลียลของต่อมเหงื่อ"
+   },
+   {
+    "en": "hair follicle stem cell",
+    "th": "เซลล์ต้นกำเนิดรูขุมขน",
+    "no_cl": true,
+    "nearest_parent": "CL:1000428",
+    "note": "ไม่พบ hair follicle stem cell ใน CL (พบเฉพาะ hair follicle dermal stem cell ซึ่งเป็นคนละชนิด; stem cell of epidermis เป็นคลาสที่ใกล้ที่สุด)"
+   },
+   {
+    "en": "hair matrix cell",
+    "th": "เซลล์แมทริกซ์ของรากผม",
+    "id": "CL:0002562",
+    "note": "hair germinal matrix cell"
+   },
+   {
+    "en": "fibroblast of dermis",
+    "th": "ไฟโบรบลาสต์ของหนังแท้"
+   }
+  ],
+  "reproductive": [
+   {
+    "en": "spermatogonium",
+    "th": "สเปอร์มาโทโกเนียม"
+   },
+   {
+    "en": "primary spermatocyte",
+    "th": "สเปอร์มาโทไซต์ปฐมภูมิ"
+   },
+   {
+    "en": "secondary spermatocyte",
+    "th": "สเปอร์มาโทไซต์ทุติยภูมิ"
+   },
+   {
+    "en": "spermatid",
+    "th": "สเปอร์มาทิด"
+   },
+   {
+    "en": "sperm",
+    "th": "อสุจิ"
+   },
+   {
+    "en": "Sertoli cell",
+    "th": "เซอร์โทลีเซลล์"
+   },
+   {
+    "en": "Leydig cell",
+    "th": "เลย์ดิกเซลล์"
+   },
+   {
+    "en": "prostate luminal epithelial cell",
+    "th": "เซลล์เยื่อบุผิวด้านในของต่อมลูกหมาก",
+    "id": "CL:0002340",
+    "note": "luminal cell of prostate epithelium"
+   },
+   {
+    "en": "oogonial cell",
+    "th": "โอโอโกเนียม"
+   },
+   {
+    "en": "primary oocyte",
+    "th": "โอโอไซต์ปฐมภูมิ"
+   },
+   {
+    "en": "secondary oocyte",
+    "th": "โอโอไซต์ทุติยภูมิ"
+   },
+   {
+    "en": "granulosa cell",
+    "th": "แกรนูโลซาเซลล์"
+   },
+   {
+    "en": "theca cell",
+    "th": "ทีกาเซลล์"
+   },
+   {
+    "en": "luteal cell",
+    "th": "เซลล์คอร์พัสลูเทียม"
+   },
+   {
+    "en": "ciliated cell of oviduct",
+    "th": "เซลล์ขนกวัดของท่อนำไข่",
+    "id": "CL:4030007",
+    "note": "fallopian tube multiciliated epithelial cell"
+   },
+   {
+    "en": "endometrial epithelial cell",
+    "th": "เซลล์เยื่อบุผิวโพรงมดลูก",
+    "id": "CL:4052050",
+    "note": "luminal epithelial cell of endometrium (คู่กับ glandular CL:0009084)"
+   },
+   {
+    "en": "stromal cell of endometrium",
+    "th": "เซลล์สโตรมาของเยื่อบุโพรงมดลูก"
+   },
+   {
+    "en": "decidual cell",
+    "th": "เดซิดูอัลเซลล์",
+    "id": "CL:2000002"
+   },
+   {
+    "en": "myometrial smooth muscle cell",
+    "th": "เซลล์กล้ามเนื้อเรียบของมดลูก",
+    "id": "CL:0002366",
+    "note": "myometrial cell"
+   },
+   {
+    "en": "luminal epithelial cell of mammary gland",
+    "th": "เซลล์เยื่อบุผิวด้านในของต่อมน้ำนม",
+    "id": "CL:0002326"
+   },
+   {
+    "en": "myoepithelial cell of mammary gland",
+    "th": "เซลล์ไมโออีพิทีเลียลของต่อมน้ำนม",
+    "id": "CL:0002324",
+    "note": "basal-myoepithelial cell of mammary gland"
+   },
+   {
+    "en": "mononuclear cytotrophoblast cell",
+    "th": "ไซโทโทรโฟบลาสต์"
+   },
+   {
+    "en": "syncytiotrophoblast cell",
+    "th": "ซินซิเชียลโทรโฟบลาสต์"
+   }
+  ],
+  "other": [
+   {
+    "en": "embryonic stem cell",
+    "th": "เซลล์ต้นกำเนิดตัวอ่อน",
+    "id": "CL:0002322"
+   },
+   {
+    "en": "primordial germ cell",
+    "th": "เซลล์สืบพันธุ์ปฐมภูมิ",
+    "id": "CL:0000670"
+   }
+  ]
+ }
+}

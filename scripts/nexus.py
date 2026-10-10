@@ -5,6 +5,7 @@
   python scripts/nexus.py validate
   python scripts/nexus.py fetch [--refresh] [--only CL:0000235,CL:0000576] [--sleep 0.2]
   python scripts/nexus.py images [--optimize]
+  python scripts/nexus.py coverage
   python scripts/nexus.py build
 
 ใช้ไลบรารีมาตรฐานของ Python เท่านั้น
@@ -529,6 +530,130 @@ def rewrite_image_srcs(renames):
             print("  แก้ src ใน %s" % os.path.relpath(p, ROOT).replace("\\", "/"))
 
 
+# -------------------------------------------------------------------- coverage
+
+CHECKLIST = os.path.join(DATA, "checklist.json")
+
+
+def compute_coverage():
+    """เทียบ data/checklist.json กับข้อมูลจริง คืน dict ผลลัพธ์"""
+    ds = load_dataset()
+    cl = load_json(CL_TERMS)["terms"] if os.path.exists(CL_TERMS) else {}
+    norm = lambda s: re.sub(r"\s+", " ", str(s or "").strip().lower())
+    cells = ds["cells"]
+    by_id = {c["id"]: c for c in cells}
+    names = {}  # ชื่อ (ตัวพิมพ์เล็ก) -> เซลล์ที่มีชื่อนี้ใน en, cl.label หรือ synonyms
+    for c in cells:
+        t = cl.get(c["id"]) or {}
+        for n in [c.get("en"), t.get("label")] + list(t.get("synonyms") or []):
+            if n:
+                names.setdefault(norm(n), [])
+                if c["id"] not in names[norm(n)]:
+                    names[norm(n)].append(c["id"])
+    groups = load_json(CHECKLIST)["groups"]
+    matched_ids = set()
+    result = {}
+    for gid, items in groups.items():
+        rows = []
+        for it in items:
+            found, how = None, None
+            if it.get("no_cl"):
+                pass  # ไม่มีใน CL: ไม่นำเข้าข้อมูล (จดไว้ใน reports/missing-cl.md)
+            elif it.get("id"):
+                if it["id"] in by_id:
+                    found, how = by_id[it["id"]], "id"
+            else:
+                hit = names.get(norm(it["en"]))
+                if hit:
+                    found, how = by_id[hit[0]], "ชื่อ"
+            if found:
+                matched_ids.add(found["id"])
+            rows.append({"item": it, "cell": found, "how": how})
+        result[gid] = rows
+    extra = [c for c in cells if c["id"] not in matched_ids]
+    return {"ds": ds, "groups": result, "extra": extra}
+
+
+def cmd_coverage(args):
+    cov = compute_coverage()
+    ds, groups, extra = cov["ds"], cov["groups"], cov["extra"]
+    cells = [c for c in ds["cells"] if c.get("kind") == "cell"]
+    classes = [c for c in ds["cells"] if c.get("kind") != "cell"]
+    prim = lambda c: (c.get("systems") or ["-"])[0]
+
+    L = ["# รายงานความครบถ้วน (coverage)", "",
+         "สร้างเมื่อ: %s" % datetime.now().strftime("%Y-%m-%d %H:%M"),
+         "เทียบ data/checklist.json กับข้อมูลจริง จับคู่ด้วย CL ID ก่อน ถ้าไม่มี ID ใช้ชื่อ en เทียบกับ en, cl.label และ synonyms", "",
+         "## สรุป", "",
+         "- เซลล์ (kind = cell): **%d** ชนิด  |  หมวด (kind = class): **%d** หมวด  |  รวม %d รายการ" % (len(cells), len(classes), len(ds["cells"])),
+         "- เป้าหมาย: เซลล์อย่างน้อย 200 ชนิด (ขาดอีก %d)" % max(0, 200 - len(cells)), "",
+         "| ระบบ | เซลล์ในข้อมูล | หมวดในข้อมูล | รายการตรวจ | มีแล้ว | ขาด (หาได้ใน CL) | ไม่มีใน CL |", "|---|---:|---:|---:|---:|---:|---:|"]
+    tot = [0, 0, 0]
+    for gid, rows in groups.items():
+        have = sum(1 for r in rows if r["cell"])
+        nocl = sum(1 for r in rows if not r["cell"] and r["item"].get("no_cl"))
+        tot[0] += len(rows); tot[1] += have; tot[2] += nocl
+        nc = sum(1 for c in cells if prim(c) == gid)
+        nk = sum(1 for c in classes if prim(c) == gid)
+        L.append("| %s | %d | %d | %d | %d | %d | %d |" % (gid, nc, nk, len(rows), have, len(rows) - have - nocl, nocl))
+    L.append("| **รวม** | %d | %d | %d | %d | %d | %d |" % (len(cells), len(classes), tot[0], tot[1], tot[0] - tot[1] - tot[2], tot[2]))
+    L += ["", "นับระบบตามระบบหลัก (systems[0]) ของแต่ละเซลล์ กลุ่ม other ในรายการตรวจไม่ใช่ระบบ จึงไม่มีเซลล์ในข้อมูลนับที่กลุ่มนี้", ""]
+
+    L += ["## ยังขาด", ""]
+    n_missing = 0
+    for gid, rows in groups.items():
+        miss = [r for r in rows if not r["cell"] and not r["item"].get("no_cl")]
+        if not miss:
+            continue
+        L.append("### %s (%d)" % (gid, len(miss)))
+        for r in miss:
+            it = r["item"]
+            extra_note = (" — " + it["note"]) if it.get("note") else ""
+            L.append("- %s%s%s%s" % (it["en"], " (%s)" % it["th"] if it.get("th") else "", " [%s]" % it["id"] if it.get("id") else "", extra_note))
+            n_missing += 1
+        L.append("")
+    if not n_missing:
+        L += ["ไม่มี", ""]
+
+    nocl_rows = [(gid, r["item"]) for gid, rows in groups.items() for r in rows if not r["cell"] and r["item"].get("no_cl")]
+    L += ["## ไม่มีใน CL (%d)" % len(nocl_rows), "", "หารหัส CL ไม่เจอ จึงไม่นำเข้าข้อมูล ดู reports/missing-cl.md", ""]
+    L += ["- [%s] %s" % (g, it["en"]) for g, it in nocl_rows] + [""]
+    ml = ["# เซลล์ที่หารหัส CL ไม่เจอ", "",
+          "สร้างจาก data/checklist.json (รายการที่ตั้ง `no_cl`) ด้วย `python scripts/nexus.py coverage` ไม่ได้สร้างรหัสเอง ไม่ได้ใส่ในข้อมูล",
+          "ถ้า CL เพิ่มเทอมนี้ภายหลัง ให้ลบ `no_cl` ออกจากรายการแล้วใส่ `id`", "",
+          "| ระบบ | เซลล์ | คลาสแม่ที่ใกล้ที่สุดใน CL | หมายเหตุ |", "|---|---|---|---|"]
+    for g, it in nocl_rows:
+        ml.append("| %s | %s (%s) | %s | %s |" % (g, it["en"], it.get("th", ""), it.get("nearest_parent", ""), it.get("note", "")))
+    if not nocl_rows:
+        ml.append("| - | ไม่มี | | |")
+    save_text(os.path.join(REPORTS, "missing-cl.md"), chr(10).join(ml) + chr(10))
+
+    L += ["## มีแล้ว", ""]
+    for gid, rows in groups.items():
+        have = [r for r in rows if r["cell"]]
+        L.append("### %s (%d/%d)" % (gid, len(have), len(rows)))
+        for r in have:
+            c = r["cell"]
+            L.append("- %s → %s %s%s [%s]" % (r["item"]["en"], c["id"], c["en"], " (หมวด)" if c.get("kind") != "cell" else "", r["how"]))
+        L.append("")
+
+    L += ["## ในข้อมูลแต่ไม่อยู่ในรายการตรวจ (%d)" % len(extra), "",
+          "ไม่ใช่ข้อผิดพลาด แค่แจ้งไว้ (หมวดและเซลล์ที่เพิ่มนอกรายการ)", ""]
+    for c in sorted(extra, key=lambda c: (prim(c), c["en"])):
+        L.append("- %s %s%s (%s)" % (c["id"], c["en"], " [หมวด]" if c.get("kind") != "cell" else "", prim(c)))
+    save_text(os.path.join(REPORTS, "coverage.md"), "\n".join(L) + "\n")
+
+    print("เซลล์ %d ชนิด, หมวด %d หมวด (รวม %d)" % (len(cells), len(classes), len(ds["cells"])))
+    print("รายการตรวจ %d: มีแล้ว %d, ขาด %d, ไม่มีใน CL %d" % (tot[0], tot[1], tot[0] - tot[1] - tot[2], tot[2]))
+    for gid, rows in groups.items():
+        have = sum(1 for r in rows if r["cell"])
+        nocl = sum(1 for r in rows if not r["cell"] and r["item"].get("no_cl"))
+        print("  %-15s ตรวจ %2d  มี %2d  ขาด %2d  ไม่มีใน CL %d" % (gid, len(rows), have, len(rows) - have - nocl, nocl))
+    print("ในข้อมูลแต่ไม่อยู่ในรายการตรวจ %d รายการ" % len(extra))
+    print("เขียน reports/coverage.md และ reports/missing-cl.md แล้ว")
+    return 0
+
+
 # --------------------------------------------------------------------- fetch
 
 def http_get_json(url, retries=3, timeout=30):
@@ -925,6 +1050,7 @@ def main():
     im.add_argument("--optimize", action="store_true",
                     help="ย่อรูปให้กว้างไม่เกิน 1600 px แล้วแปลงเป็น WebP (ต้องมี Pillow) เก็บต้นฉบับใน site/images/_originals/")
     im.set_defaults(fn=cmd_images)
+    sub.add_parser("coverage", help="เทียบ data/checklist.json กับข้อมูลจริง เขียน reports/coverage.md").set_defaults(fn=cmd_coverage)
     sub.add_parser("build", help="รวมข้อมูลเป็น site/data/nexus.json").set_defaults(fn=cmd_build)
     args = ap.parse_args()
     sys.exit(args.fn(args))
