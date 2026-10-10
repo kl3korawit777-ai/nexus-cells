@@ -83,12 +83,12 @@ python scripts/nexus.py coverage          # เทียบข้อมูลก
 | `confused_with` | CL ID ของเซลล์ที่มักสับสน (ต้องอยู่ในชุดข้อมูล) |
 | `en_content` | (ไม่บังคับ) เนื้อหาภาษาอังกฤษ `{location, morphology, function, exam}` ช่องไหนไม่มีจะแสดงเนื้อหาไทยพร้อมป้าย "Thai only" ในโหมดอังกฤษ (ดูหัวข้อ "สลับภาษา") |
 | `images` | รายการรูป (`[]` ถ้ายังไม่มี) รูปแรกคือรูปหลัก ดูหัวข้อ "วิธีใส่รูป" |
-| `verified` | `true` เมื่อตรวจเนื้อหาไทยกับตำราแล้ว (เริ่มต้น `false`) |
+| `review` | ระดับการตรวจ: `draft` (เริ่มต้น) · `ai_reviewed` · `textbook` (เทียบตำราแล้ว ต้องมี `refs` ที่เป็นตำรา) `build` ใส่ `verified: true` ใน `nexus.json` เฉพาะ `textbook` |
 | `refs` | ตำราหรือแหล่งอ้างอิงที่ใช้ตรวจ |
 
 ### หมวด (`"kind": "class"`)
 
-ใช้แค่ `id`, `slug`, `kind`, `en`, `th`, `systems`, `tissue`, `tissue_subtype`, `function`, `images`, `verified`, `refs`
+ใช้แค่ `id`, `slug`, `kind`, `en`, `th`, `systems`, `tissue`, `tissue_subtype`, `function`, `images`, `review`, `refs`
 หมวดคือกลุ่มกว้างของเซลล์ เช่น leukocyte, lymphocyte ไม่ใช่เซลล์ชนิดเดียว
 
 ### ผลที่สคริปต์เติมให้ใน `nexus.json`
@@ -279,7 +279,7 @@ python -m http.server 8000
 - ไม่สร้างคำถามจากช่องที่ว่าง
 - **ตัวเลือกผิดต้องผิดจริง:** ตัวเลือกผิดต้องไม่เอ่ยถึงคำใบ้ในข้อมูลของตัวเอง ไม่เกี่ยวข้องกันทาง `is_a` กับคำตอบ ไม่ใช่ต้นกำเนิดของเซลล์ในคำถาม (ข้อ develops_from) และไม่เคยมีปฏิสัมพันธ์กับเซลล์นั้น (ข้อ interacts) ถ้าหาตัวเลือกผิดไม่ครบ 3 ตัวจะข้ามคำถามนั้น
   ตัวเลือกหลอกเลือกจากเซลล์ใน `confused_with` ก่อน แล้วชนิดย่อย/ระบบ/เนื้อเยื่อเดียวกัน
-- คำถามจากเซลล์ที่ `verified: false` มีป้าย "ข้อมูลยังไม่ได้ตรวจ" ตัวเลือก "ใช้เฉพาะข้อมูลที่ตรวจแล้ว" ใช้ไม่ได้จนกว่าจะมีเซลล์ที่ตรวจแล้วพอ
+- คำถามจากเซลล์ที่ไม่ใช่ `review: textbook` มีป้าย "ข้อมูลยังไม่ได้ตรวจ" ตัวเลือก "ใช้เฉพาะข้อมูลที่ตรวจแล้ว" ใช้ไม่ได้จนกว่าจะมีเซลล์ที่ตรวจแล้วพอ
 - ใช้แป้นพิมพ์ได้: 1–4 เลือก Enter ยืนยัน และ Enter อีกครั้งไปข้อถัดไป
 - เก็บเซลล์ที่เคยตอบผิดใน `localStorage` (คีย์ `nexus.quiz.wrong`) ใช้ให้น้ำหนักตอนสุ่มและฝึกเฉพาะเซลล์ที่เคยผิด
 - ลิงก์ล็อกขอบเขต: `#/quiz?system=digestive`, `#/quiz?tissue=epithelial`, `#/quiz?cell=CL_0000091`
@@ -377,6 +377,54 @@ Deploy ด้วย GitHub Actions ([`.github/workflows/deploy.yml`](.github/wor
 
 เว็บใช้ path แบบ relative และ routing ด้วย hash จึงทำงานได้ทั้งที่ `https://<user>.github.io/<repo>/` และโดเมนของตัวเอง
 
+## หน้าแอดมิน (แก้ข้อมูลและเพิ่มรูปจากเบราว์เซอร์)
+
+หน้าแอดมินอยู่ที่ `https://<user>.github.io/<repo>/admin/` (เช่น `https://kl3korawit777-ai.github.io/nexus-cells/admin/`) **ไม่มีลิงก์จากเว็บหลัก** มี `noindex` และ service worker ไม่ cache หน้านี้ ใช้ได้บนมือถือ (ออกแบบที่ 380px) ทำงานด้วยการอ่านและ commit ไฟล์ใน `data/` กับ `site/images/` ผ่าน GitHub REST API โดยตรง ไม่มีเซิร์ฟเวอร์ของเราเอง พอ commit แล้ว GitHub Actions จะ validate → build → deploy ให้ (ถ้า validate ไม่ผ่านเว็บจริงยังเป็นเวอร์ชันเดิม)
+
+### สร้าง token (ทำครั้งเดียว)
+
+1. GitHub → Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate new token
+2. **Repository access:** Only select repositories → เลือก repo นี้ **อย่างเดียว**
+3. **Permissions → Repository permissions:** `Contents: Read and write` และ `Actions: Read-only` (ใช้ดูสถานะการ build) ส่วน `Metadata: Read-only` ระบบใส่ให้เอง ไม่ต้องเปิดอย่างอื่น
+4. **Expiration:** แนะนำ 30–90 วัน (สั้นไว้ดีกว่า สร้างใหม่ได้เสมอ)
+5. คัดลอก token (ขึ้นต้น `github_pat_`) ไปวางในหน้าแอดมินครั้งแรก ระบบจะตรวจว่า token เข้าถึง repo นี้และเขียนได้จริง ถ้าไม่ได้จะบอกเหตุผล (token ผิด/หมดอายุ, ไม่ได้เลือก repo นี้, ไม่มีสิทธิ์เขียน, ไม่พบ branch)
+
+token เก็บใน `sessionStorage` (หายเมื่อปิดแท็บ) ถ้าติ๊ก "จำไว้ในเครื่องนี้" จะเก็บใน `localStorage` ปุ่ม "ออกจากระบบ" ลบทิ้ง token ไม่อยู่ในโค้ด ไม่อยู่ใน URL และส่งไปที่ `api.github.com` เท่านั้น (CSP ของหน้าแอดมินบังคับ: `connect-src` อนุญาตเฉพาะ `'self'`, `api.github.com` และ `www.ebi.ac.uk` ที่ใช้ค้น Cell Ontology โดยไม่ส่ง token)
+
+### ถ้า token หลุด
+
+1. เพิกถอนทันที: GitHub → Settings → Developer settings → Fine-grained tokens → ปุ่ม Revoke/Delete (หรือ Regenerate)
+2. ดู commit ล่าสุดที่ขึ้นต้น `admin:` ในหน้า "ประวัติ" หรือ `git log` ว่ามีรายการที่ไม่ใช่ของเราหรือไม่ ถ้ามีให้ `git revert` แล้ว push
+3. สร้าง token ใหม่ตามขั้นตอนด้านบน และถ้าเคยติ๊ก "จำไว้ในเครื่องนี้" บนเครื่องที่หายหรือไม่ใช่ของเรา ให้เพิกถอนตามข้อ 1 ก่อนเสมอ
+
+### สิ่งที่ทำได้
+
+| หน้า | ทำอะไร |
+|---|---|
+| รายการ (`#/`) | ค้นหาชื่อไทย/อังกฤษ/CL ID กรองตามระบบ เนื้อเยื่อ ระดับการตรวจ และ "ยังไม่มีรูป" (แสดงจำนวนในแต่ละตัวกรอง) |
+| แก้เซลล์ (`#/edit/CL_...`) | ฟอร์มทุกช่อง ระบบหลายค่าลากเรียงได้ (ตัวแรกคือระบบหลัก) ป้ายสำหรับรายการ ค้นเซลล์ที่สับสนง่าย แท็บอังกฤษ ข้อมูลจาก CL แสดงแบบอ่านอย่างเดียว ตัวอย่างการ์ดด้วย component เดียวกับเว็บจริง ตรวจข้อมูลทันทีตามกฎเดียวกับ `validate` |
+| เพิ่ม/ลบเซลล์ | เพิ่ม: ค้นรหัสจาก OLS (ถ้าเรียกไม่ได้กรอกเองได้) slug สร้างให้ ไฟล์ปลายทางเลือกตามระบบหลัก ลบ: พิมพ์ CL ID ยืนยัน แสดงเส้นใยและ confused_with ที่จะถูกลบตามก่อน |
+| ความเชื่อมโยง | เพิ่ม/ลบ develops_from, is_a, interacts_with (เลือก mode + คำอธิบาย) ไฟล์ edges เลือกตามระบบหลักของเซลล์ต้นทาง กันเส้นชี้หาตัวเอง เส้นซ้ำ และวงวน |
+| รูป | อัปโหลดหลายไฟล์ (ลากวาง/กล้อง/คลังภาพ) หรือเพิ่มจากลิงก์ `https://` ย่อให้กว้างไม่เกิน 1600 px แปลงเป็น WebP และ**ลบ EXIF ทั้งหมดรวม GPS** ด้วยการวาดลง canvas ใหม่ (หมุนตาม EXIF ก่อน) ลากเรียงลำดับ แก้ข้อมูล ลบ (ลบไฟล์ด้วย) ใช้กับเนื้อเยื่อได้ (`#/tissue/<id>`) |
+| ตรวจกับตำรา (`#/review`) | ไล่เซลล์ที่ยังไม่ใช่ `textbook` ทีละตัว ต้องกรอกแหล่งอ้างอิงก่อนยืนยัน (จำค่าล่าสุดให้) มีปุ่ม "ต้องแก้" และ "ข้าม" แถบความคืบหน้า |
+| รอบบันทึก (`#/pending`) | การแก้ทั้งหมดรออยู่ที่นี่ก่อน (เก็บใน IndexedDB ปิดหน้าแล้วยังอยู่) ดู diff ของแต่ละรายการ ยกเลิกทีละรายการ แล้ว "บันทึกและเผยแพร่" เป็น **commit เดียว** (Git Data API) |
+| ประวัติ (`#/history`) | commit ล่าสุด 20 รายการที่ขึ้นต้น `admin:` |
+
+**ระดับการตรวจ (`review`)** แทนช่อง `verified` เดิม: `draft` (ฉบับร่าง) · `ai_reviewed` (AI ทบทวนแล้ว ไม่ได้เทียบตำรา) · `textbook` (เทียบตำราแล้ว ต้องมีแหล่งอ้างอิงใน `refs`) เว็บหลักแสดงป้าย "ตรวจกับตำราแล้ว" และนับในโหมดทดสอบ "เฉพาะที่ตรวจแล้ว" เฉพาะ `textbook`
+
+**การป้องกันการเขียนทับ:** ตอน commit ถ้าไฟล์ที่จะแก้ใน repo เปลี่ยนไปหลังจากที่โหลดมา ระบบหยุดและแสดงว่าไฟล์ไหนชน กด "โหลดใหม่" เพื่อดึงข้อมูลล่าสุด การแก้ของคุณจะถูกนำกลับมาใส่ รายการที่ถูกแก้ใน repo ด้วยจะถูกทำเครื่องหมายให้เลือก "ใช้ของฉัน" หรือ "ใช้ของ repo" (การ commit ใช้ `force: false` จึงไม่มีทางเขียนทับ commit ของคนอื่นเงียบ ๆ)
+
+**ความปลอดภัยของเนื้อหา:** ข้อมูลที่แก้แสดงต่อผู้ใช้ทุกคน เว็บหลักสร้าง DOM ด้วย `textContent` ไม่ใช้ `innerHTML` กับข้อมูล และ `validate` (ทั้ง `nexus.py` และในหน้าแอดมิน) ปฏิเสธข้อความที่มีแท็ก HTML หรือ `javascript:` ลิงก์ `source` และ `src` แบบลิงก์ต้องขึ้นต้น `https://`
+
+### ใช้ adapter แบบ local (พัฒนา/ทดสอบ)
+
+```bash
+python scripts/nexus.py build            # ครั้งแรก
+python scripts/admin_server.py           # แล้วเปิด http://127.0.0.1:8765/admin/ กด "ใช้ adapter local"
+```
+
+`scripts/admin_server.py` รับเฉพาะ `127.0.0.1` (ตรวจ Host header ด้วย) เขียนได้เฉพาะ `data/*.json` และไฟล์รูปใน `site/images/` และทุก API ต้องมี header `X-Nexus-Admin` หลังบันทึกจะรัน `nexus.py validate` และ `build` ให้ ดูผลได้ในหน้ารอบบันทึก ใช้ UI เดียวกับแบบ GitHub ทุกอย่าง ต่างกันแค่ที่เก็บ
+
 ## ชุดทดสอบ
 
 ```bash
@@ -384,6 +432,11 @@ npm install
 npm test                           # test-quiz + test-i18n
 node scripts/test-offline.mjs      # ออฟไลน์ด้วย Chrome/Edge จริง (ต้องต่อเน็ตครั้งแรกเพื่อโหลด CDN)
 node scripts/test-graph.mjs        # พฤติกรรมของใย (ลาก ซูม ปุ่ม คีย์ลัด มือถือ) ด้วย Chrome/Edge จริง
+python scripts/test-validate.py    # กฎของ validate (แท็ก HTML, https, วงวน, review)
+node scripts/test-admin-core.mjs   # แกนของแอดมิน + admin_server.py บนสำเนาโปรเจกต์
+node scripts/test-admin-ui.mjs     # หน้าแอดมินด้วย Chrome/Edge จริง (adapter local)
+node scripts/test-admin-isolation.mjs  # เว็บหลักไม่มีลิงก์แอดมิน และ service worker ไม่ cache แอดมิน
+node scripts/test-admin-github.mjs # adapter github กับ branch ทดสอบ (ใช้ GITHUB_TOKEN หรือ gh) แล้วลบ branch
 ```
 
 | สคริปต์ | ตรวจอะไร |
@@ -418,7 +471,7 @@ node scripts/test-graph.mjs        # พฤติกรรมของใย (�
 5. รัน `fetch` ตรวจ `reports/fetch-report.md` ว่ารหัสถูกต้อง ชื่อตรง และไม่ถูกยกเลิก
 6. รัน `build` ตรวจ `reports/build-report.md` แล้วค่อยตัดสินใจเรื่องเส้นใย
 7. (อัตโนมัติ) `build` คำนวณตำแหน่งใยภาพรวมใหม่ ถ้าเครื่องมี Node.js ให้ commit `site/data/layout-overview.json` ที่เปลี่ยนไปด้วย
-8. ตรวจเนื้อหาไทยกับตำรา (Junqueira's Basic Histology, Campbell Biology) ก่อนตั้ง `verified: true`
+8. ตรวจเนื้อหาไทยกับตำรา (Junqueira's Basic Histology, Campbell Biology) ก่อนตั้ง `review: textbook` (ใช้หน้าแอดมิน #/review ได้)
 
 ระบบที่เพิ่มแล้วจะปรากฏเองในหน้าแรก ใยรายระบบ ใยภาพรวม ตารางการเชื่อมข้ามระบบ และหน้าเนื้อเยื่อ โดยไม่ต้องแก้ไฟล์ใน `site/js/` เซลล์ที่อยู่หลายระบบให้เรียง `systems` โดยใส่ระบบหลักเป็นลำดับแรก
 
@@ -426,4 +479,4 @@ node scripts/test-graph.mjs        # พฤติกรรมของใย (�
 
 - **Cell Ontology (CL)** ชื่อ คำนิยาม synonyms และความสัมพันธ์ ดึงผ่าน OLS4 API ของ EBI (https://www.ebi.ac.uk/ols4)
   Cell Ontology เผยแพร่ภายใต้สัญญาอนุญาต **CC BY 4.0** (https://obofoundry.org/ontology/cl.html)
-- เนื้อหาภาษาไทย เส้น `interacts_with` และข้อมูลอื่น ๆ ที่คัดเองเขียนโดยผู้จัดทำโครงการ ทุกรายการเริ่มที่ `verified: false` จนกว่าจะตรวจกับตำรา
+- เนื้อหาภาษาไทย เส้น `interacts_with` และข้อมูลอื่น ๆ ที่คัดเองเขียนโดยผู้จัดทำโครงการ ทุกรายการเป็น `draft` หรือ `ai_reviewed` จนกว่าจะตรวจกับตำรา

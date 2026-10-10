@@ -171,7 +171,7 @@ export function githubAdapter({ token, repo, branch = 'main', fetchFn }) {
             try {
               const res = await api(`/actions/jobs/${j.id}/logs`, { raw: true });
               const text = await res.text();
-              const lines = text.split('\n').filter((l) => /error|✗|fail|ผิดพลาด|Traceback/i.test(l)).slice(-12);
+              const lines = text.split('\n').filter((l) => /error|✗|fail|Traceback/i.test(l)).slice(-12);
               if (lines.length) error += '\n' + lines.map((l) => l.replace(/^\S+Z\s/, '')).join('\n');
             } catch { /* ดึง log ไม่ได้ (สิทธิ์/CORS) ใช้ชื่อขั้นตอนอย่างเดียว */ }
             break;

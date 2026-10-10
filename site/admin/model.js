@@ -170,8 +170,10 @@ export function applyOverlay(base, overlay) {
     }
   }
 
+  const goneIds = new Set(deleted);
   for (const op of Object.values(overlay.edges || {})) {
     if (op.op === 'remove') { removeEdge(ds, op.kind, op.a, op.b); continue; }
+    if (goneIds.has(op.a) || goneIds.has(op.b)) continue;
     const exists = listEdges(ds).some((x) => x.kind === op.kind && x.a === op.a && x.b === op.b);
     if (exists) continue;
     const src = findCell(ds, op.a);

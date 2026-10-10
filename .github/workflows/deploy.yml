@@ -58,6 +58,7 @@ jobs:
       - name: ทดสอบ
         run: |
           python scripts/test-validate.py
+          node scripts/test-admin-core.mjs
           npm test
 
       - uses: actions/configure-pages@v5

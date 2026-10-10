@@ -117,7 +117,7 @@ export function validateDataset(ds, ctx = {}) {
         for (const [k, v] of Object.entries(c.en_content)) {
           if (!EN_CELL_FIELDS.includes(k)) err('enContentField', who, `en_content.${k}`, { field: k });
           else if (typeof v !== 'string' || !v.trim()) err('enContentEmpty', who, `en_content.${k}`, { field: k });
-          else if (/[฀-๿]/.test(v)) warn('enContentThai', who, `en_content.${k}`, { field: k });
+          else if (/[\u0E00-\u0E7F]/.test(v)) warn('enContentThai', who, `en_content.${k}`, { field: k });
         }
       }
     }

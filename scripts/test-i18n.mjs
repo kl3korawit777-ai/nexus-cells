@@ -98,6 +98,26 @@ for (const [k, v] of Object.entries(th)) {
   if (en[k] != null && pe !== pt) { failed++; console.log(`✗ พารามิเตอร์ไม่ตรงกัน ${k}: th{${pe}} en{${pt}}`); }
 }
 
+
+// หน้าแอดมิน (site/admin): ไม่มีอักษรไทยในโค้ด และทุก at('key') มีใน th.json
+{
+  const adminDir = join(root, 'site', 'admin');
+  if (existsSync(adminDir)) {
+    const adminTh = JSON.parse(readFileSync(join(adminDir, 'th.json'), 'utf8'));
+    const files = readdirSync(adminDir).filter((f) => f.endsWith('.js'));
+    for (const f of files) {
+      const code = stripComments(readFileSync(join(adminDir, f), 'utf8'));
+      code.split(String.fromCharCode(10)).forEach((line, idx) => { if (THAI.test(line)) { failed++; console.log(`✗ admin/${f}:${idx + 1} มีอักษรไทยในโค้ด: ${line.trim().slice(0, 100)}`); } });
+      for (const m of code.matchAll(/at\(\s*(['"`])([^'"`]+)/g)) {
+        const k = m[2];
+        if (k.endsWith('.')) { if (!Object.keys(adminTh).some((x) => x.startsWith(k))) { failed++; console.log(`✗ admin/${f}: ไม่มีคีย์ขึ้นต้น ${k}`); } }
+        else if (!(k in adminTh)) { failed++; console.log(`✗ admin/${f}: ไม่มีคีย์ ${k}`); }
+      }
+    }
+    console.log(`admin: ตรวจ ${files.length} ไฟล์ .js, ${Object.keys(adminTh).length} คีย์`);
+  }
+}
+
 // HTML ตายตัว
 for (const f of ['index.html', '404.html']) {
   const p = join(root, 'site', f);
