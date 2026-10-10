@@ -12,8 +12,10 @@
     "tissue_subtype": "hematopoietic",
     "function": "กลุ่มเซลล์ที่สร้างจากเซลล์ต้นกำเนิดเม็ดเลือด ได้แก่ เม็ดเลือดแดง เกล็ดเลือด และเม็ดเลือดขาวชนิดต่าง ๆ",
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "function": "Cells derived from the hematopoietic stem cell: red cells, platelets and the white blood cells"
     }
@@ -31,8 +33,10 @@
     "tissue_subtype": "blood",
     "function": "เซลล์เม็ดเลือดที่มีนิวเคลียส ทำหน้าที่ป้องกันร่างกายจากเชื้อโรคและสิ่งแปลกปลอม",
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "function": "Nucleated blood cells that defend the body against pathogens and foreign material"
     }
@@ -50,8 +54,10 @@
     "tissue_subtype": "blood",
     "function": "เม็ดเลือดขาวที่ไซโทพลาซึมมีแกรนูลเฉพาะ ได้แก่ นิวโทรฟิล อีโอซิโนฟิล และเบโซฟิล",
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "function": "Leukocytes with specific cytoplasmic granules: neutrophils, eosinophils and basophils"
     }
@@ -69,8 +75,10 @@
     "tissue_subtype": "lymphoid",
     "function": "เม็ดเลือดขาวที่เป็นหลักของภูมิคุ้มกันจำเพาะ ได้แก่ เซลล์ที เซลล์บี และเซลล์เอ็นเค",
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "function": "Leukocytes central to adaptive immunity: T cells, B cells and NK cells"
     }
@@ -88,8 +96,10 @@
     "tissue_subtype": null,
     "function": "เซลล์ที่มี MHC class II และนำเสนอแอนติเจนให้เซลล์ทีช่วย ได้แก่ เดนไดรต์เซลล์ แมโครฟาจ และบีเซลล์",
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "function": "Cells with MHC class II that present antigen to helper T cells: dendritic cells, macrophages and B cells"
     }
@@ -120,8 +130,10 @@
     ],
     "confused_with": [],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bone marrow (a few in peripheral blood and cord blood)",
       "morphology": "Small cell with a round nucleus and scant cytoplasm, resembling a small lymphocyte",
@@ -154,8 +166,10 @@
       "CL:0000051"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bone marrow",
       "function": "Progenitor of the myeloid lineage; differentiates into progenitors of the red cell/platelet and granulocyte/monocyte lineages",
@@ -187,8 +201,10 @@
       "CL:0000049"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bone marrow",
       "function": "Progenitor of lymphocytes; differentiates into T cells, B cells and NK cells",
@@ -218,8 +234,10 @@
       "CL:0000557"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bone marrow",
       "function": "Differentiates into the erythroid or the megakaryocyte (platelet) lineage",
@@ -249,8 +267,10 @@
       "CL:0000050"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bone marrow",
       "function": "Differentiates into neutrophils, eosinophils, basophils, monocytes and mast cells"
@@ -282,8 +302,10 @@
       "CL:0000558"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bone marrow",
       "morphology": "Still nucleated; the nucleus shrinks and the chromatin condenses as the cell matures",
@@ -316,8 +338,10 @@
       "CL:0000232"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bone marrow, then the bloodstream",
       "morphology": "No nucleus, but residual ribosomes and RNA remain; supravital staining shows a blue reticular network",
@@ -355,8 +379,10 @@
       "CL:0000558"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bloodstream",
       "morphology": "Biconcave disc without a nucleus or organelles, about 7-8 µm in diameter",
@@ -390,8 +416,10 @@
       "CL:0000233"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bone marrow",
       "morphology": "Very large cell with a multilobed, polyploid nucleus",
@@ -428,8 +456,10 @@
       "CL:0000556"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bloodstream",
       "morphology": "Small anucleate cytoplasmic fragment, about 2-3 µm",
@@ -468,8 +498,10 @@
       "CL:0000767"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bloodstream; migrates into inflamed tissue",
       "morphology": "Nucleus with 3-5 lobes and fine, pale-staining granules; about 10-12 µm",
@@ -506,8 +538,10 @@
       "CL:0000775"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bloodstream and tissue beneath epithelia",
       "morphology": "Bilobed nucleus with large granules that stain red-orange with eosin",
@@ -547,8 +581,10 @@
       "CL:0000097"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bloodstream",
       "morphology": "Large dark blue granules that often obscure the nucleus",
@@ -590,8 +626,10 @@
       "CL:0000767"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Connective tissue near vessels, skin, and the linings of the respiratory and digestive tracts",
       "morphology": "Round to oval cell packed with large granules that stain blue-purple with basic dyes",
@@ -624,8 +662,10 @@
       "CL:0000235"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bloodstream",
       "morphology": "Largest leukocyte, with a kidney- or horseshoe-shaped nucleus and grey-blue cytoplasm",
@@ -661,8 +701,10 @@
       "CL:0000451"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Connective tissue throughout the body, spleen, lymph nodes",
       "morphology": "Large cell of irregular shape with many lysosomes and phagosomes",
@@ -704,8 +746,10 @@
       "CL:0000235"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bone surface, in resorption pits called Howship's lacunae",
       "morphology": "Large multinucleated cell with a ruffled border facing the bone",
@@ -739,8 +783,10 @@
       "CL:0000235"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Wall of the liver sinusoids",
       "function": "Resident liver macrophage that removes aged red cells, bacteria and debris from the blood passing through the liver",
@@ -773,8 +819,10 @@
       "CL:0000235"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Lumen and lining of the lung alveoli",
       "function": "Engulfs dust, bacteria and debris that reach the alveoli",
@@ -809,8 +857,10 @@
       "CL:0000235"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Brain and spinal cord",
       "morphology": "Small cell with an elongated or oval nucleus and short processes",
@@ -844,8 +894,10 @@
       "CL:0000235"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Skin, mucosa and lymphoid organs",
       "morphology": "Cell with long, branch-like processes",
@@ -879,8 +931,10 @@
       "CL:0000236"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Blood, lymph nodes, spleen and thymus",
       "morphology": "Small lymphocyte with a large round nucleus and scant cytoplasm",
@@ -920,8 +974,10 @@
       "CL:0000815"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Lymph nodes, spleen and blood",
       "function": "Recognises antigen presented on MHC class II and secretes cytokines that activate B cells, cytotoxic T cells and macrophages",
@@ -958,8 +1014,10 @@
       "CL:0000623"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Lymph nodes, spleen and blood",
       "function": "Kills virus-infected cells and tumour cells by releasing perforin and granzymes",
@@ -996,8 +1054,10 @@
       "CL:0000912"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Lymph nodes, spleen and blood",
       "function": "Suppresses other immune cells to maintain tolerance to self",
@@ -1029,8 +1089,10 @@
       "CL:0000787"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Lymph nodes, spleen, blood and tissues",
       "function": "Remembers antigens met before and responds faster and more strongly on re-exposure",
@@ -1067,8 +1129,10 @@
       "CL:0000786"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bone marrow, lymph nodes, spleen and blood",
       "morphology": "Small lymphocyte that looks like a T cell under ordinary light microscopy",
@@ -1106,8 +1170,10 @@
       "CL:0000236"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Bone marrow, lymph nodes and mucosa-associated tissue",
       "morphology": "Eccentric round nucleus with clock-face chromatin; basophilic cytoplasm rich in rough ER and a prominent Golgi apparatus",
@@ -1142,8 +1208,10 @@
       "CL:0000786"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Lymph nodes, spleen and blood",
       "function": "Remembers antigens met before and makes more antibody, faster, on re-exposure",
@@ -1179,8 +1247,10 @@
       "CL:0000910"
     ],
     "images": [],
-    "verified": false,
-    "refs": [],
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ],
     "en_content": {
       "location": "Blood, spleen and liver",
       "morphology": "Large lymphocyte with cytoplasmic granules",
@@ -1216,8 +1286,10 @@
       "CL:0000765"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000835",
@@ -1248,8 +1320,10 @@
       "CL:0000836"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000836",
@@ -1279,8 +1353,10 @@
       "CL:0000835"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000560",
@@ -1308,8 +1384,10 @@
       "CL:0000775"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000814",
@@ -1342,8 +1420,10 @@
       "CL:0000084"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000798",
@@ -1371,8 +1451,10 @@
       "CL:0000084"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0001065",
@@ -1404,8 +1486,10 @@
       "CL:0000084"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000442",
@@ -1434,8 +1518,10 @@
       "CL:0000451"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000784",
@@ -1466,8 +1552,10 @@
       "CL:0000786"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000553",
@@ -1495,8 +1583,10 @@
     ],
     "confused_with": [],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0002193",
@@ -1524,8 +1614,10 @@
       "CL:0000836"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0002192",
@@ -1553,8 +1645,10 @@
       "CL:0000560"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000040",
@@ -1583,8 +1677,10 @@
       "CL:0000835"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000874",
@@ -1615,8 +1711,10 @@
       "CL:0000091"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000990",
@@ -1647,8 +1745,10 @@
       "CL:0000784"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000898",
@@ -1678,8 +1778,10 @@
       "CL:0000813"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000545",
@@ -1714,8 +1816,10 @@
       "CL:0000899"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000546",
@@ -1751,8 +1855,10 @@
       "CL:0000899"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000899",
@@ -1787,8 +1893,10 @@
       "CL:0000546"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0002038",
@@ -1821,8 +1929,10 @@
       "CL:0000912"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000788",
@@ -1853,8 +1963,10 @@
       "CL:0000786"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0000845",
@@ -1887,8 +1999,10 @@
       "CL:0000788"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0002293",
@@ -1920,8 +2034,10 @@
     ],
     "confused_with": [],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0009101",
@@ -1951,8 +2067,10 @@
     "diseases": [],
     "confused_with": [],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   },
   {
     "id": "CL:0002652",
@@ -1982,7 +2100,9 @@
       "CL:0000115"
     ],
     "images": [],
-    "verified": false,
-    "refs": []
+    "verified": true,
+    "refs": [
+      "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+    ]
   }
 ]

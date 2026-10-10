@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "831e93bf1f52",
-  "generated_at": "2026-10-10T04:32:23+00:00",
+  "data_version": "7cd518f669b6",
+  "generated_at": "2026-10-10T04:42:04+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "stats": {
    "images": 0
@@ -418,8 +418,10 @@
    "tissue_subtype": "hematopoietic",
    "function": "กลุ่มเซลล์ที่สร้างจากเซลล์ต้นกำเนิดเม็ดเลือด ได้แก่ เม็ดเลือดแดง เกล็ดเลือด และเม็ดเลือดขาวชนิดต่าง ๆ",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "function": "Cells derived from the hematopoietic stem cell: red cells, platelets and the white blood cells"
    },
@@ -448,8 +450,10 @@
    "tissue_subtype": "blood",
    "function": "เซลล์เม็ดเลือดที่มีนิวเคลียส ทำหน้าที่ป้องกันร่างกายจากเชื้อโรคและสิ่งแปลกปลอม",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "function": "Nucleated blood cells that defend the body against pathogens and foreign material"
    },
@@ -479,8 +483,10 @@
    "tissue_subtype": "blood",
    "function": "เม็ดเลือดขาวที่ไซโทพลาซึมมีแกรนูลเฉพาะ ได้แก่ นิวโทรฟิล อีโอซิโนฟิล และเบโซฟิล",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "function": "Leukocytes with specific cytoplasmic granules: neutrophils, eosinophils and basophils"
    },
@@ -509,8 +515,10 @@
    "tissue_subtype": "lymphoid",
    "function": "เม็ดเลือดขาวที่เป็นหลักของภูมิคุ้มกันจำเพาะ ได้แก่ เซลล์ที เซลล์บี และเซลล์เอ็นเค",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "function": "Leukocytes central to adaptive immunity: T cells, B cells and NK cells"
    },
@@ -535,8 +543,10 @@
    "tissue_subtype": null,
    "function": "เซลล์ที่มี MHC class II และนำเสนอแอนติเจนให้เซลล์ทีช่วย ได้แก่ เดนไดรต์เซลล์ แมโครฟาจ และบีเซลล์",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "function": "Cells with MHC class II that present antigen to helper T cells: dendritic cells, macrophages and B cells"
    },
@@ -576,8 +586,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bone marrow (a few in peripheral blood and cord blood)",
     "morphology": "Small cell with a round nucleus and scant cytoplasm, resembling a small lymphocyte",
@@ -622,8 +634,10 @@
     "CL:0000051"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bone marrow",
     "function": "Progenitor of the myeloid lineage; differentiates into progenitors of the red cell/platelet and granulocyte/monocyte lineages",
@@ -671,8 +685,10 @@
     "CL:0000049"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bone marrow",
     "function": "Progenitor of lymphocytes; differentiates into T cells, B cells and NK cells",
@@ -719,8 +735,10 @@
     "CL:0000557"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bone marrow",
     "function": "Differentiates into the erythroid or the megakaryocyte (platelet) lineage",
@@ -765,8 +783,10 @@
     "CL:0000050"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bone marrow",
     "function": "Differentiates into neutrophils, eosinophils, basophils, monocytes and mast cells"
@@ -813,8 +833,10 @@
     "CL:0000558"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bone marrow",
     "morphology": "Still nucleated; the nucleus shrinks and the chromatin condenses as the cell matures",
@@ -856,8 +878,10 @@
     "CL:0000232"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bone marrow, then the bloodstream",
     "morphology": "No nucleus, but residual ribosomes and RNA remain; supravital staining shows a blue reticular network",
@@ -902,8 +926,10 @@
     "CL:0000558"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bloodstream",
     "morphology": "Biconcave disc without a nucleus or organelles, about 7-8 µm in diameter",
@@ -947,8 +973,10 @@
     "CL:0000233"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bone marrow",
     "morphology": "Very large cell with a multilobed, polyploid nucleus",
@@ -996,8 +1024,10 @@
     "CL:0000556"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bloodstream",
     "morphology": "Small anucleate cytoplasmic fragment, about 2-3 µm",
@@ -1047,8 +1077,10 @@
     "CL:0000767"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bloodstream; migrates into inflamed tissue",
     "morphology": "Nucleus with 3-5 lobes and fine, pale-staining granules; about 10-12 µm",
@@ -1105,8 +1137,10 @@
     "CL:0000775"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bloodstream and tissue beneath epithelia",
     "morphology": "Bilobed nucleus with large granules that stain red-orange with eosin",
@@ -1160,8 +1194,10 @@
     "CL:0000097"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bloodstream",
     "morphology": "Large dark blue granules that often obscure the nucleus",
@@ -1215,8 +1251,10 @@
     "CL:0000767"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Connective tissue near vessels, skin, and the linings of the respiratory and digestive tracts",
     "morphology": "Round to oval cell packed with large granules that stain blue-purple with basic dyes",
@@ -1261,8 +1299,10 @@
     "CL:0000235"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bloodstream",
     "morphology": "Largest leukocyte, with a kidney- or horseshoe-shaped nucleus and grey-blue cytoplasm",
@@ -1305,8 +1345,10 @@
     "CL:0000451"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Connective tissue throughout the body, spleen, lymph nodes",
     "morphology": "Large cell of irregular shape with many lysosomes and phagosomes",
@@ -1357,8 +1399,10 @@
     "CL:0000235"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bone surface, in resorption pits called Howship's lacunae",
     "morphology": "Large multinucleated cell with a ruffled border facing the bone",
@@ -1401,8 +1445,10 @@
     "CL:0000235"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Wall of the liver sinusoids",
     "function": "Resident liver macrophage that removes aged red cells, bacteria and debris from the blood passing through the liver",
@@ -1449,8 +1495,10 @@
     "CL:0000235"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Lumen and lining of the lung alveoli",
     "function": "Engulfs dust, bacteria and debris that reach the alveoli",
@@ -1495,8 +1543,10 @@
     "CL:0000235"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Brain and spinal cord",
     "morphology": "Small cell with an elongated or oval nucleus and short processes",
@@ -1544,8 +1594,10 @@
     "CL:0000235"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Skin, mucosa and lymphoid organs",
     "morphology": "Cell with long, branch-like processes",
@@ -1589,8 +1641,10 @@
     "CL:0000236"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Blood, lymph nodes, spleen and thymus",
     "morphology": "Small lymphocyte with a large round nucleus and scant cytoplasm",
@@ -1643,8 +1697,10 @@
     "CL:0000815"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Lymph nodes, spleen and blood",
     "function": "Recognises antigen presented on MHC class II and secretes cytokines that activate B cells, cytotoxic T cells and macrophages",
@@ -1693,8 +1749,10 @@
     "CL:0000623"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Lymph nodes, spleen and blood",
     "function": "Kills virus-infected cells and tumour cells by releasing perforin and granzymes",
@@ -1742,8 +1800,10 @@
     "CL:0000912"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Lymph nodes, spleen and blood",
     "function": "Suppresses other immune cells to maintain tolerance to self",
@@ -1791,8 +1851,10 @@
     "CL:0000787"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Lymph nodes, spleen, blood and tissues",
     "function": "Remembers antigens met before and responds faster and more strongly on re-exposure",
@@ -1840,8 +1902,10 @@
     "CL:0000786"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bone marrow, lymph nodes, spleen and blood",
     "morphology": "Small lymphocyte that looks like a T cell under ordinary light microscopy",
@@ -1890,8 +1954,10 @@
     "CL:0000236"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Bone marrow, lymph nodes and mucosa-associated tissue",
     "morphology": "Eccentric round nucleus with clock-face chromatin; basophilic cytoplasm rich in rough ER and a prominent Golgi apparatus",
@@ -1940,8 +2006,10 @@
     "CL:0000786"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Lymph nodes, spleen and blood",
     "function": "Remembers antigens met before and makes more antibody, faster, on re-exposure",
@@ -1988,8 +2056,10 @@
     "CL:0000910"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "en_content": {
     "location": "Blood, spleen and liver",
     "morphology": "Large lymphocyte with cytoplasmic granules",
@@ -2036,8 +2106,10 @@
     "CL:0000765"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000547",
    "cl": {
     "label": "proerythroblast",
@@ -2078,8 +2150,10 @@
     "CL:0000836"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000835",
    "cl": {
     "label": "myeloblast",
@@ -2116,8 +2190,10 @@
     "CL:0000835"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000836",
    "cl": {
     "label": "promyelocyte",
@@ -2152,8 +2228,10 @@
     "CL:0000775"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000560",
    "cl": {
     "label": "band form neutrophil",
@@ -2199,8 +2277,10 @@
     "CL:0000084"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000814",
    "cl": {
     "label": "mature NK T cell",
@@ -2244,8 +2324,10 @@
     "CL:0000084"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000798",
    "cl": {
     "label": "gamma-delta T cell",
@@ -2290,8 +2372,10 @@
     "CL:0000084"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0001065",
    "cl": {
     "label": "innate lymphoid cell",
@@ -2327,8 +2411,10 @@
     "CL:0000451"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000442",
    "cl": {
     "label": "follicular dendritic cell",
@@ -2366,8 +2452,10 @@
     "CL:0000786"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000784",
    "cl": {
     "label": "plasmacytoid dendritic cell",
@@ -2412,8 +2500,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000553",
    "cl": {
     "label": "megakaryocyte progenitor cell",
@@ -2459,8 +2549,10 @@
     "CL:0000836"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002193",
    "cl": {
     "label": "myelocyte",
@@ -2495,8 +2587,10 @@
     "CL:0000560"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002192",
    "cl": {
     "label": "metamyelocyte",
@@ -2532,8 +2626,10 @@
     "CL:0000835"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000040",
    "cl": {
     "label": "monoblast",
@@ -2576,8 +2672,10 @@
     "CL:0000091"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000874",
    "cl": {
     "label": "splenic red pulp macrophage",
@@ -2615,8 +2713,10 @@
     "CL:0000784"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000990",
    "cl": {
     "label": "conventional dendritic cell",
@@ -2660,8 +2760,10 @@
     "CL:0000813"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000898",
    "cl": {
     "label": "naive T cell",
@@ -2707,8 +2809,10 @@
     "CL:0000899"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000545",
    "cl": {
     "label": "T-helper 1 cell",
@@ -2761,8 +2865,10 @@
     "CL:0000899"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000546",
    "cl": {
     "label": "T-helper 2 cell",
@@ -2813,8 +2919,10 @@
     "CL:0000546"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000899",
    "cl": {
     "label": "T-helper 17 cell",
@@ -2865,8 +2973,10 @@
     "CL:0000912"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002038",
    "cl": {
     "label": "T follicular helper cell",
@@ -2913,8 +3023,10 @@
     "CL:0000786"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000788",
    "cl": {
     "label": "naive B cell",
@@ -2958,8 +3070,10 @@
     "CL:0000788"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000845",
    "cl": {
     "label": "marginal zone B cell of spleen",
@@ -3009,8 +3123,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002293",
    "cl": {
     "label": "epithelial cell of thymus",
@@ -3052,8 +3168,10 @@
    "diseases": [],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0009101",
    "cl": {
     "label": "fibroblastic reticular cell",
@@ -3092,8 +3210,10 @@
     "CL:0000115"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002652",
    "cl": {
     "label": "endothelial cell of high endothelial venule",
@@ -3136,8 +3256,10 @@
     "CL:0000192"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000746",
    "cl": {
     "label": "cardiac muscle cell",
@@ -3179,8 +3301,10 @@
     "CL:0002068"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1000477",
    "cl": {
     "label": "cardiac pacemaker cell of sinoatrial node",
@@ -3217,8 +3341,10 @@
     "CL:1000477"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002068",
    "cl": {
     "label": "Purkinje myocyte",
@@ -3264,8 +3390,10 @@
     "CL:0002350"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000115",
    "cl": {
     "label": "endothelial cell",
@@ -3301,8 +3429,10 @@
     "CL:0000115"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002350",
    "cl": {
     "label": "endocardial cell",
@@ -3344,8 +3474,10 @@
     "CL:0000192"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000359",
    "cl": {
     "label": "vascular associated smooth muscle cell",
@@ -3383,8 +3515,10 @@
     "CL:0000359"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000669",
    "cl": {
     "label": "pericyte",
@@ -3428,8 +3562,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002548",
    "cl": {
     "label": "fibroblast of cardiac tissue",
@@ -3472,8 +3608,10 @@
     "CL:2000046"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002129",
    "cl": {
     "label": "regular atrial cardiac myocyte",
@@ -3521,8 +3659,10 @@
     "CL:0002068"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_2000046",
    "cl": {
     "label": "ventricular cardiac muscle cell",
@@ -3559,8 +3699,10 @@
     "CL:0002350"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0011019",
    "cl": {
     "label": "mesothelial cell of epicardium",
@@ -3603,8 +3745,10 @@
     "CL:0002144"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1000413",
    "cl": {
     "label": "endothelial cell of artery",
@@ -3648,8 +3792,10 @@
     "CL:0002144"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002543",
    "cl": {
     "label": "vein endothelial cell",
@@ -3688,8 +3834,10 @@
     "CL:0000669"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002144",
    "cl": {
     "label": "capillary endothelial cell",
@@ -3731,8 +3879,10 @@
     "CL:0002543"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002138",
    "cl": {
     "label": "endothelial cell of lymphatic vessel",
@@ -3757,8 +3907,10 @@
    "tissue_subtype": "simple-columnar",
    "function": "กลุ่มเซลล์ที่เรียงตัวเป็นเยื่อบุผิวชั้นเดียวของลำไส้ ได้แก่ เซลล์ต้นกำเนิด เซลล์ดูดซึม เซลล์หลั่ง และเซลล์ M",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002563",
    "cl": {
     "label": "intestinal epithelial cell",
@@ -3780,8 +3932,10 @@
    "tissue_subtype": "simple-columnar",
    "function": "กลุ่มเซลล์เยื่อบุผิวของกระเพาะอาหาร ทั้งเซลล์ผิวและเซลล์ในต่อมกระเพาะ",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002178",
    "cl": {
     "label": "epithelial cell of stomach",
@@ -3803,8 +3957,10 @@
    "tissue_subtype": "glandular",
    "function": "กลุ่มเซลล์ของตับอ่อนส่วนที่หลั่งสารผ่านท่อเข้าลำไส้เล็ก ได้แก่ เซลล์อะซินาร์และเซลล์ท่อ",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1001433",
    "cl": {
     "label": "epithelial cell of exocrine pancreas",
@@ -3843,8 +3999,10 @@
     "CL:4052066"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_4052065",
    "cl": {
     "label": "serous acinar cell of salivary gland",
@@ -3878,8 +4036,10 @@
     "CL:4052065"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_4052066",
    "cl": {
     "label": "mucous acinar cell of salivary gland",
@@ -3919,8 +4079,10 @@
     "CL:0000155"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000162",
    "cl": {
     "label": "parietal cell",
@@ -3958,8 +4120,10 @@
     "CL:0000162"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000155",
    "cl": {
     "label": "peptic cell",
@@ -3998,8 +4162,10 @@
     "CL:0002179"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002181",
    "cl": {
     "label": "mucous neck cell of gastric gland",
@@ -4040,8 +4206,10 @@
     "CL:0002181"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002179",
    "cl": {
     "label": "foveolar cell of stomach",
@@ -4077,8 +4245,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000509",
    "cl": {
     "label": "gastrin secreting cell",
@@ -4116,8 +4286,10 @@
     "CL:0000160"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000584",
    "cl": {
     "label": "enterocyte",
@@ -4157,8 +4329,10 @@
     "CL:0000584"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000160",
    "cl": {
     "label": "goblet cell",
@@ -4197,8 +4371,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000510",
    "cl": {
     "label": "paneth cell",
@@ -4240,8 +4416,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000164",
    "cl": {
     "label": "enteroendocrine cell",
@@ -4275,8 +4453,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002250",
    "cl": {
     "label": "intestinal crypt stem cell",
@@ -4308,8 +4488,10 @@
    "diseases": [],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000682",
    "cl": {
     "label": "M cell of gut",
@@ -4345,8 +4527,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002088",
    "cl": {
     "label": "interstitial cell of Cajal",
@@ -4389,8 +4573,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000182",
    "cl": {
     "label": "hepatocyte",
@@ -4429,8 +4615,10 @@
     "CL:0000091"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000632",
    "cl": {
     "label": "hepatic stellate cell",
@@ -4476,8 +4664,10 @@
     "CL:0000182"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1000488",
    "cl": {
     "label": "cholangiocyte",
@@ -4518,8 +4708,10 @@
     "CL:0002079"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002064",
    "cl": {
     "label": "pancreatic acinar cell",
@@ -4559,8 +4751,10 @@
     "CL:0002064"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002079",
    "cl": {
     "label": "pancreatic ductal cell",
@@ -4600,8 +4794,10 @@
     "CL:0000059"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000060",
    "cl": {
     "label": "odontoblast",
@@ -4642,8 +4838,10 @@
     "CL:0000060"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000059",
    "cl": {
     "label": "ameloblast",
@@ -4683,8 +4881,10 @@
     "CL:0000632"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1000398",
    "cl": {
     "label": "endothelial cell of hepatic sinusoid",
@@ -4727,8 +4927,10 @@
     "CL:0000059"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000061",
    "cl": {
     "label": "cementoblast",
@@ -4767,8 +4969,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0009096",
    "cl": {
     "label": "esophagus non-keratinized squamous epithelial cell",
@@ -4817,8 +5021,10 @@
     "CL:0000509"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000504",
    "cl": {
     "label": "enterochromaffin-like cell",
@@ -4857,8 +5063,10 @@
     "CL:0002275"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002267",
    "cl": {
     "label": "type D cell of stomach",
@@ -4900,8 +5108,10 @@
     "CL:0000682"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002204",
    "cl": {
     "label": "tuft cell",
@@ -4944,8 +5154,10 @@
     "CL:0000584"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1000347",
    "cl": {
     "label": "colonocyte",
@@ -4984,8 +5196,10 @@
     "CL:0002281"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002277",
    "cl": {
     "label": "type I enteroendocrine cell",
@@ -5023,8 +5237,10 @@
     "CL:0002277"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002281",
    "cl": {
     "label": "type S enteroendocrine cell",
@@ -5060,8 +5276,10 @@
     "CL:0002279"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002278",
    "cl": {
     "label": "GIP cell",
@@ -5103,8 +5321,10 @@
     "CL:0002278"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002279",
    "cl": {
     "label": "type L enteroendocrine cell",
@@ -5144,8 +5364,10 @@
     "CL:0000504"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000577",
    "cl": {
     "label": "type EC enteroendocrine cell",
@@ -5186,8 +5408,10 @@
     "CL:0002079"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002080",
    "cl": {
     "label": "pancreatic centro-acinar cell",
@@ -5230,8 +5454,10 @@
     "CL:1000488"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1000415",
    "cl": {
     "label": "epithelial cell of gallbladder",
@@ -5253,8 +5479,10 @@
    "tissue_subtype": "glandular",
    "function": "กลุ่มเซลล์ต่อมไร้ท่อที่สร้างฮอร์โมนชนิดเปปไทด์หรือโปรตีน เก็บในแกรนูลแล้วหลั่งออกเมื่อถูกกระตุ้น",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000167",
    "cl": {
     "label": "peptide hormone secreting cell",
@@ -5276,8 +5504,10 @@
    "tissue_subtype": "glandular",
    "function": "กลุ่มเซลล์ที่สร้างฮอร์โมนสเตียรอยด์จากคอเลสเตอรอล มีร่างแหเอนโดพลาซึมชนิดเรียบและไมโทคอนเดรียมาก",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000174",
    "cl": {
     "label": "steroid hormone secreting cell",
@@ -5299,8 +5529,10 @@
    "tissue_subtype": "glandular",
    "function": "กลุ่มเซลล์ของต่อมหมวกไตส่วนนอก แบ่งเป็นสามชั้น (zona glomerulosa, fasciculata, reticularis) ที่หลั่งฮอร์โมนสเตียรอยด์ต่างชนิดกัน",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002097",
    "cl": {
     "label": "cortical cell of adrenal gland",
@@ -5339,8 +5571,10 @@
     "CL:0000169"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000171",
    "cl": {
     "label": "pancreatic A cell",
@@ -5385,8 +5619,10 @@
     "CL:0000171"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000169",
    "cl": {
     "label": "type B pancreatic cell",
@@ -5431,8 +5667,10 @@
    "diseases": [],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000173",
    "cl": {
     "label": "pancreatic D cell",
@@ -5471,8 +5709,10 @@
    "diseases": [],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002275",
    "cl": {
     "label": "pancreatic PP cell",
@@ -5519,8 +5759,10 @@
     "CL:0000570"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002258",
    "cl": {
     "label": "thyroid follicular cell",
@@ -5563,8 +5805,10 @@
     "CL:0002258"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000570",
    "cl": {
     "label": "parafollicular cell",
@@ -5607,8 +5851,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000446",
    "cl": {
     "label": "chief cell of parathyroid gland",
@@ -5650,8 +5896,10 @@
     "CL:0002137"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002099",
    "cl": {
     "label": "type I cell of adrenal cortex",
@@ -5691,8 +5939,10 @@
     "CL:0002137"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002136",
    "cl": {
     "label": "type II cell of adrenal cortex",
@@ -5730,8 +5980,10 @@
     "CL:0002136"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002137",
    "cl": {
     "label": "type III cell of adrenal cortex",
@@ -5768,8 +6020,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000336",
    "cl": {
     "label": "adrenal medulla chromaffin cell",
@@ -5811,8 +6065,10 @@
     "CL:0002311"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002312",
    "cl": {
     "label": "somatotroph",
@@ -5854,8 +6110,10 @@
     "CL:0002312"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002311",
    "cl": {
     "label": "mammotroph",
@@ -5899,8 +6157,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002309",
    "cl": {
     "label": "corticotroph",
@@ -5934,8 +6194,10 @@
    "diseases": [],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000476",
    "cl": {
     "label": "thyrotroph",
@@ -5975,8 +6237,10 @@
    "diseases": [],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000437",
    "cl": {
     "label": "gonadtroph",
@@ -6016,8 +6280,10 @@
    "diseases": [],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000652",
    "cl": {
     "label": "pinealocyte",
@@ -6048,8 +6314,10 @@
    "diseases": [],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000645",
    "cl": {
     "label": "pituicyte",
@@ -6083,8 +6351,10 @@
     "CL:0000446"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002199",
    "cl": {
     "label": "oxyphil cell of parathyroid gland",
@@ -6121,8 +6391,10 @@
     "CL:0000645"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000642",
    "cl": {
     "label": "folliculostellate cell",
@@ -6167,8 +6439,10 @@
     "CL:0000148"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002187",
    "cl": {
     "label": "basal cell of epidermis",
@@ -6210,8 +6484,10 @@
     "CL:0002153"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000312",
    "cl": {
     "label": "keratinocyte",
@@ -6250,8 +6526,10 @@
     "CL:0000312"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002153",
    "cl": {
     "label": "corneocyte",
@@ -6294,8 +6572,10 @@
     "CL:0002187"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000148",
    "cl": {
     "label": "melanocyte",
@@ -6335,8 +6615,10 @@
     "CL:0000451"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000453",
    "cl": {
     "label": "Langerhans cell",
@@ -6375,8 +6657,10 @@
     "CL:0000148"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000242",
    "cl": {
     "label": "Merkel cell",
@@ -6415,8 +6699,10 @@
     "CL:1000448"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000317",
    "cl": {
     "label": "sebocyte",
@@ -6455,8 +6741,10 @@
     "CL:0000317"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1000448",
    "cl": {
     "label": "epithelial cell of sweat gland",
@@ -6492,8 +6780,10 @@
     "CL:0000192"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1000417",
    "cl": {
     "label": "myoepithelial cell of sweat gland",
@@ -6534,8 +6824,10 @@
     "CL:0000388"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002551",
    "cl": {
     "label": "fibroblast of dermis",
@@ -6575,8 +6867,10 @@
     "CL:1000417"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002146",
    "cl": {
     "label": "clear cell of eccrine sweat gland",
@@ -6611,8 +6905,10 @@
     "CL:1000417"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002142",
    "cl": {
     "label": "dark cell of eccrine sweat gland",
@@ -6650,8 +6946,10 @@
     "CL:0000312"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002562",
    "cl": {
     "label": "hair germinal matrix cell",
@@ -6692,8 +6990,10 @@
     "CL:0000746"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0008002",
    "cl": {
     "label": "skeletal muscle fiber",
@@ -6727,8 +7027,10 @@
     "CL:0000056"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000594",
    "cl": {
     "label": "skeletal muscle satellite cell",
@@ -6763,8 +7065,10 @@
     "CL:0000594"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000056",
    "cl": {
     "label": "myoblast",
@@ -6803,8 +7107,10 @@
     "CL:0000186"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000192",
    "cl": {
     "label": "smooth muscle cell",
@@ -6846,8 +7152,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000388",
    "cl": {
     "label": "tendon cell",
@@ -6885,8 +7193,10 @@
     "CL:0000190"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000189",
    "cl": {
     "label": "slow muscle cell",
@@ -6923,8 +7233,10 @@
     "CL:0000189"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000190",
    "cl": {
     "label": "fast muscle cell",
@@ -6968,8 +7280,10 @@
     "CL:0000192"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000186",
    "cl": {
     "label": "myofibroblast cell",
@@ -6993,8 +7307,10 @@
    "tissue_subtype": "neuron",
    "function": "เซลล์ที่รับ นำ และส่งสัญญาณไฟฟ้าและเคมี ประกอบด้วยตัวเซลล์ เดนไดรต์ และแอกซอน",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000540",
    "cl": {
     "label": "neuron",
@@ -7018,8 +7334,10 @@
    "tissue_subtype": "glia",
    "function": "กลุ่มเซลล์ที่ไม่ใช่เซลล์ประสาทในเนื้อเยื่อประสาท ทำหน้าที่ค้ำจุน ให้สารอาหาร สร้างไมอีลิน และป้องกัน",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000125",
    "cl": {
     "label": "glial cell",
@@ -7044,8 +7362,10 @@
    "tissue_subtype": "neuron",
    "function": "กลุ่มเซลล์ประสาทรับความรู้สึกของจอประสาทตาที่เปลี่ยนแสงเป็นสัญญาณไฟฟ้า ได้แก่ เซลล์รูปแท่งและเซลล์รูปกรวย",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000210",
    "cl": {
     "label": "photoreceptor cell",
@@ -7068,8 +7388,10 @@
    "tissue_subtype": "neuron",
    "function": "กลุ่มเซลล์ที่รับสัญญาณจากระบบประสาทและหลั่งฮอร์โมนเข้ากระแสเลือด",
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000165",
    "cl": {
     "label": "neuroendocrine cell",
@@ -7106,8 +7428,10 @@
     "CL:0000100"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000101",
    "cl": {
     "label": "sensory neuron",
@@ -7147,8 +7471,10 @@
     "CL:0000099"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000100",
    "cl": {
     "label": "motor neuron",
@@ -7182,8 +7508,10 @@
     "CL:0000100"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000099",
    "cl": {
     "label": "interneuron",
@@ -7219,8 +7547,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000598",
    "cl": {
     "label": "pyramidal neuron",
@@ -7261,8 +7591,10 @@
     "CL:0002068"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000121",
    "cl": {
     "label": "Purkinje cell",
@@ -7305,8 +7637,10 @@
     "CL:1001505"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0011003",
    "cl": {
     "label": "magnocellular neurosecretory cell",
@@ -7348,8 +7682,10 @@
     "CL:0011003"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1001505",
    "cl": {
     "label": "parvocellular neurosecretory cell",
@@ -7388,8 +7724,10 @@
     "CL:0000128"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000127",
    "cl": {
     "label": "astrocyte",
@@ -7427,8 +7765,10 @@
     "CL:0002573"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000128",
    "cl": {
     "label": "oligodendrocyte",
@@ -7469,8 +7809,10 @@
     "CL:0000128"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002573",
    "cl": {
     "label": "Schwann cell",
@@ -7505,8 +7847,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000065",
    "cl": {
     "label": "ependymal cell",
@@ -7547,8 +7891,10 @@
     "CL:0000573"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000604",
    "cl": {
     "label": "retinal rod cell",
@@ -7588,8 +7934,10 @@
     "CL:0000604"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000573",
    "cl": {
     "label": "retinal cone cell",
@@ -7623,8 +7971,10 @@
    "diseases": [],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000748",
    "cl": {
     "label": "retinal bipolar neuron",
@@ -7660,8 +8010,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000740",
    "cl": {
     "label": "retinal ganglion cell",
@@ -7699,8 +8051,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002586",
    "cl": {
     "label": "retinal pigment epithelial cell",
@@ -7738,8 +8092,10 @@
     "CL:0000601"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000589",
    "cl": {
     "label": "cochlear inner hair cell",
@@ -7777,8 +8133,10 @@
     "CL:0000589"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000601",
    "cl": {
     "label": "cochlear outer hair cell",
@@ -7810,8 +8168,10 @@
    ],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000207",
    "cl": {
     "label": "olfactory receptor cell",
@@ -7846,8 +8206,10 @@
    "diseases": [],
    "confused_with": [],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000209",
    "cl": {
     "label": "taste receptor cell",
@@ -7888,8 +8250,10 @@
     "CL:0000108"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000700",
    "cl": {
     "label": "dopaminergic neuron",
@@ -7932,8 +8296,10 @@
     "CL:0000100"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000108",
    "cl": {
     "label": "cholinergic neuron",
@@ -7969,8 +8335,10 @@
     "CL:0000127"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000047",
    "cl": {
     "label": "neural stem cell",
@@ -8008,8 +8376,10 @@
     "CL:0000127"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000636",
    "cl": {
     "label": "Mueller cell",
@@ -8052,8 +8422,10 @@
     "CL:0000121"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0001031",
    "cl": {
     "label": "cerebellar granule cell",
@@ -8095,8 +8467,10 @@
     "CL:0000679"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000617",
    "cl": {
     "label": "GABAergic neuron",
@@ -8138,8 +8512,10 @@
     "CL:0000617"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000679",
    "cl": {
     "label": "glutamatergic neuron",
@@ -8179,8 +8555,10 @@
     "CL:0000577"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000850",
    "cl": {
     "label": "serotonergic neuron",
@@ -8223,8 +8601,10 @@
     "CL:0000127"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002453",
    "cl": {
     "label": "oligodendrocyte precursor cell",
@@ -8264,8 +8644,10 @@
     "CL:0000065"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002085",
    "cl": {
     "label": "tanycyte",
@@ -8308,8 +8690,10 @@
     "CL:0000065"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000706",
    "cl": {
     "label": "choroid plexus epithelial cell",
@@ -8349,8 +8733,10 @@
     "CL:0000127"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0011028",
    "cl": {
     "label": "olfactory ensheathing cell",
@@ -8391,8 +8777,10 @@
     "CL:0000127"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000681",
    "cl": {
     "label": "radial glial cell",
@@ -8428,8 +8816,10 @@
     "CL:0000561"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000745",
    "cl": {
     "label": "retina horizontal cell",
@@ -8470,8 +8860,10 @@
     "CL:0000745"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000561",
    "cl": {
     "label": "amacrine cell",
@@ -8515,8 +8907,10 @@
     "CL:0000601"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000609",
    "cl": {
     "label": "vestibular hair cell",
@@ -8556,8 +8950,10 @@
     "CL:0000601"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002490",
    "cl": {
     "label": "organ of Corti supporting cell",
@@ -8589,8 +8985,10 @@
     "CL:0000656"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000020",
    "cl": {
     "label": "spermatogonium",
@@ -8624,8 +9022,10 @@
     "CL:0000657"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000656",
    "cl": {
     "label": "primary spermatocyte",
@@ -8657,8 +9057,10 @@
     "CL:0000656"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000657",
    "cl": {
     "label": "secondary spermatocyte",
@@ -8690,8 +9092,10 @@
     "CL:0000019"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000018",
    "cl": {
     "label": "spermatid",
@@ -8727,8 +9131,10 @@
     "CL:0000018"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000019",
    "cl": {
     "label": "sperm",
@@ -8773,8 +9179,10 @@
     "CL:0000178"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000216",
    "cl": {
     "label": "Sertoli cell",
@@ -8815,8 +9223,10 @@
     "CL:0000216"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000178",
    "cl": {
     "label": "Leydig cell",
@@ -8851,8 +9261,10 @@
     "CL:0000654"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000024",
    "cl": {
     "label": "oogonial cell",
@@ -8884,8 +9296,10 @@
     "CL:0000655"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000654",
    "cl": {
     "label": "primary oocyte",
@@ -8921,8 +9335,10 @@
     "CL:0000654"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000655",
    "cl": {
     "label": "secondary oocyte",
@@ -8967,8 +9383,10 @@
     "CL:0000503"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000501",
    "cl": {
     "label": "granulosa cell",
@@ -9010,8 +9428,10 @@
     "CL:0000501"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000503",
    "cl": {
     "label": "theca cell",
@@ -9051,8 +9471,10 @@
     "CL:0000501"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000175",
    "cl": {
     "label": "luteal cell",
@@ -9092,8 +9514,10 @@
     "CL:0000501"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002255",
    "cl": {
     "label": "stromal cell of endometrium",
@@ -9134,8 +9558,10 @@
     "CL:0000525"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000523",
    "cl": {
     "label": "mononuclear cytotrophoblast cell",
@@ -9176,8 +9602,10 @@
     "CL:0000523"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000525",
    "cl": {
     "label": "syncytiotrophoblast cell",
@@ -9227,8 +9655,10 @@
     "CL:0000216"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002340",
    "cl": {
     "label": "luminal cell of prostate epithelium",
@@ -9267,8 +9697,10 @@
     "CL:0002145"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_4030007",
    "cl": {
     "label": "fallopian tube multiciliated epithelial cell",
@@ -9313,8 +9745,10 @@
     "CL:0002255"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_4052050",
    "cl": {
     "label": "luminal epithelial cell of endometrium",
@@ -9357,8 +9791,10 @@
     "CL:4052050"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0009084",
    "cl": {
     "label": "glandular epithelial cell of endometrium",
@@ -9402,8 +9838,10 @@
     "CL:0000523"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_2000002",
    "cl": {
     "label": "decidual cell",
@@ -9447,8 +9885,10 @@
     "CL:0000192"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002366",
    "cl": {
     "label": "myometrial cell",
@@ -9492,8 +9932,10 @@
     "CL:0002324"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002326",
    "cl": {
     "label": "luminal epithelial cell of mammary gland",
@@ -9532,8 +9974,10 @@
     "CL:1000417"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002324",
    "cl": {
     "label": "basal-myoepithelial cell of mammary gland",
@@ -9581,8 +10025,10 @@
     "CL:0000134"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002322",
    "cl": {
     "label": "embryonic stem cell",
@@ -9624,8 +10070,10 @@
     "CL:0000024"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000670",
    "cl": {
     "label": "primordial germ cell",
@@ -9665,8 +10113,10 @@
     "CL:0002063"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002062",
    "cl": {
     "label": "pulmonary alveolar type 1 cell",
@@ -9719,8 +10169,10 @@
     "CL:0002062"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002063",
    "cl": {
     "label": "pulmonary alveolar type 2 cell",
@@ -9774,8 +10226,10 @@
     "CL:0000160"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000158",
    "cl": {
     "label": "club cell",
@@ -9816,8 +10270,10 @@
     "CL:0000160"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002145",
    "cl": {
     "label": "multiciliated columnar cell of tracheobronchial tree",
@@ -9856,8 +10312,10 @@
     "CL:0002145"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002329",
    "cl": {
     "label": "basal epithelial cell of tracheobronchial tree",
@@ -9900,8 +10358,10 @@
     "CL:0000164"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1000223",
    "cl": {
     "label": "pulmonary neuroendocrine cell",
@@ -9943,8 +10403,10 @@
     "CL:0000160"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0017000",
    "cl": {
     "label": "pulmonary ionocyte",
@@ -9986,8 +10448,10 @@
     "CL:0000160"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0019001",
    "cl": {
     "label": "tracheobronchial serous cell",
@@ -10023,8 +10487,10 @@
     "CL:0000062"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0007010",
    "cl": {
     "label": "preosteoblast",
@@ -10071,8 +10537,10 @@
     "CL:0000137"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000062",
    "cl": {
     "label": "osteoblast",
@@ -10109,8 +10577,10 @@
     "CL:0000062"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000137",
    "cl": {
     "label": "osteocyte",
@@ -10149,8 +10619,10 @@
     "CL:0000138"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000058",
    "cl": {
     "label": "chondroblast",
@@ -10192,8 +10664,10 @@
     "CL:0000058"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000138",
    "cl": {
     "label": "chondrocyte",
@@ -10231,8 +10705,10 @@
     "CL:0000037"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000134",
    "cl": {
     "label": "mesenchymal stem cell",
@@ -10281,8 +10757,10 @@
     "CL:0002301"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002302",
    "cl": {
     "label": "type A synovial cell",
@@ -10321,8 +10799,10 @@
     "CL:0002302"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002301",
    "cl": {
     "label": "type B synovial cell",
@@ -10367,8 +10847,10 @@
     "CL:0000057"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_4072104",
    "cl": {
     "label": "fibrochondrocyte",
@@ -10417,8 +10899,10 @@
     "CL:0000186"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000057",
    "cl": {
     "label": "fibroblast",
@@ -10460,8 +10944,10 @@
     "CL:0000449"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000448",
    "cl": {
     "label": "white adipocyte",
@@ -10502,8 +10988,10 @@
     "CL:0001070"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000449",
    "cl": {
     "label": "brown adipocyte",
@@ -10543,8 +11031,10 @@
     "CL:0000448"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0001070",
    "cl": {
     "label": "beige adipocyte",
@@ -10596,8 +11086,10 @@
     "CL:0000115"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000077",
    "cl": {
     "label": "mesothelial cell",
@@ -10640,8 +11132,10 @@
     "CL:1000742"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000653",
    "cl": {
     "label": "podocyte",
@@ -10684,8 +11178,10 @@
     "CL:0000653"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002188",
    "cl": {
     "label": "glomerular endothelial cell",
@@ -10721,8 +11217,10 @@
     "CL:0000653"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1000742",
    "cl": {
     "label": "glomerular mesangial cell",
@@ -10763,8 +11261,10 @@
     "CL:0002305"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002306",
    "cl": {
     "label": "epithelial cell of proximal tubule",
@@ -10804,8 +11304,10 @@
     "CL:0002305"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1000909",
    "cl": {
     "label": "kidney loop of Henle epithelial cell",
@@ -10843,8 +11345,10 @@
     "CL:1000909"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002305",
    "cl": {
     "label": "epithelial cell of distal tubule",
@@ -10881,8 +11385,10 @@
     "CL:0000648"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1000850",
    "cl": {
     "label": "macula densa epithelial cell",
@@ -10922,8 +11428,10 @@
     "CL:1000850"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000648",
    "cl": {
     "label": "kidney granular cell",
@@ -10964,8 +11472,10 @@
     "CL:0005010"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1001431",
    "cl": {
     "label": "kidney collecting duct principal cell",
@@ -11002,8 +11512,10 @@
     "CL:1001431"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0005010",
    "cl": {
     "label": "renal intercalated cell",
@@ -11042,8 +11554,10 @@
     "CL:4030056"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0000731",
    "cl": {
     "label": "urothelial cell",
@@ -11081,8 +11595,10 @@
     "CL:0000731"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_4030056",
    "cl": {
     "label": "umbrella cell of urothelium",
@@ -11122,8 +11638,10 @@
     "CL:0000653"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1000452",
    "cl": {
     "label": "parietal epithelial cell",
@@ -11161,8 +11679,10 @@
     "CL:1001106"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1001111",
    "cl": {
     "label": "kidney loop of Henle thin descending limb epithelial cell",
@@ -11197,8 +11717,10 @@
     "CL:1001106"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1001107",
    "cl": {
     "label": "kidney loop of Henle thin ascending limb epithelial cell",
@@ -11238,8 +11760,10 @@
     "CL:0002305"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1001106",
    "cl": {
     "label": "kidney loop of Henle thick ascending limb epithelial cell",
@@ -11278,8 +11802,10 @@
     "CL:1001431"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0005011",
    "cl": {
     "label": "renal alpha-intercalated cell",
@@ -11318,8 +11844,10 @@
     "CL:1001431"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_0002201",
    "cl": {
     "label": "renal beta-intercalated cell",
@@ -11360,8 +11888,10 @@
     "CL:4030056"
    ],
    "images": [],
-   "verified": false,
-   "refs": [],
+   "verified": true,
+   "refs": [
+    "ทบทวนเนื้อหาโดย Claude เมื่อ 2026-10-10 จากความรู้ด้านเนื้อเยื่อวิทยาและสรีรวิทยา (ไม่ได้เทียบกับตำราเล่มใดโดยตรง ควรอ่านเทียบตำราซ้ำ)"
+   ],
    "purl": "http://purl.obolibrary.org/obo/CL_1000486",
    "cl": {
     "label": "basal cell of urothelium",
