@@ -2,3 +2,7 @@ data/generated/cache/
 __pycache__/
 node_modules/
 site/images/_originals/
+
+# สร้างโดย build (GitHub Actions สร้างให้ตอน deploy) ไม่ commit
+site/data/
+site/precache.json

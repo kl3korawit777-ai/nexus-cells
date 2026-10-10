@@ -1,0 +1,78 @@
+name: Deploy site
+
+# ทุกครั้งที่ push ไป main: ตรวจข้อมูล → ดึง CL → build → layout → ทดสอบ → deploy
+# ถ้า validate หรือ test ไม่ผ่าน job build จะล้มและไม่ deploy (เว็บจริงยังเป็นเวอร์ชันเดิม)
+# ไฟล์ที่ build สร้าง (site/data/*, site/precache.json) ไม่ได้อยู่ใน repo สร้างใหม่ที่นี่ทุกครั้ง
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: ตรวจข้อมูลและ build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: ติดตั้งแพ็กเกจ Node
+        run: npm ci
+
+      - name: validate (ไม่ผ่านแล้วหยุด)
+        run: python scripts/nexus.py validate
+
+      - name: cache ข้อมูลจาก OLS
+        uses: actions/cache@v4
+        with:
+          path: data/generated/cache
+          key: cl-cache-${{ hashFiles('data/cells/*.json') }}
+          restore-keys: cl-cache-
+
+      - name: fetch (ดึงข้อมูลจาก Cell Ontology)
+        # ถ้า OLS ล่มชั่วคราว ใช้ data/generated/cl_terms.json ที่ commit ไว้ต่อ ไม่ให้การแก้ข้อมูลถูกบล็อก
+        run: |
+          python scripts/nexus.py fetch || echo "::warning::fetch ล้มเหลว ใช้ cl_terms.json ที่ commit ไว้แทน"
+
+      - name: build และคำนวณ layout ใยภาพรวม
+        run: python scripts/nexus.py build
+
+      - name: ทดสอบ
+        run: |
+          python scripts/test-validate.py
+          npm test
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    name: เผยแพร่
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

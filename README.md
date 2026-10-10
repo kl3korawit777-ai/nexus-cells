@@ -23,8 +23,8 @@ site/                     หน้าเว็บ (โฟลเดอร์น�
   index.html
   css/style.css
   js/                     main, router, views, overview, tissue, card, graph, ui, data, util ... (ES modules)
-  data/nexus.json         ข้อมูลรวมสำหรับหน้าเว็บ (สร้างจาก build ห้ามแก้เอง)
-  data/layout-overview.json  ตำแหน่งของใยภาพรวม (สร้างจาก build ต้อง commit ไปด้วย)
+  data/nexus.json         ข้อมูลรวมสำหรับหน้าเว็บ (สร้างจาก build ห้ามแก้เอง ไม่อยู่ใน repo)
+  data/layout-overview.json  ตำแหน่งของใยภาพรวม (สร้างจาก build ไม่อยู่ใน repo)
   images/<slug>/          รูปของเซลล์ (หลายรูปได้) ส่วนเนื้อเยื่อใช้ images/tissues/<id>/
   images/_originals/      ต้นฉบับก่อนย่อรูป (ไม่ขึ้น GitHub)
 ```
@@ -313,7 +313,7 @@ node scripts/test-quiz.mjs
   - ไฟล์เว็บ (html, js, css, i18n) ลองเครือข่ายก่อน ถ้าไม่มีเน็ตใช้ที่เก็บไว้ จึงได้โค้ดใหม่เสมอเมื่อออนไลน์
   - ข้อมูล (`nexus.json`, `layout-overview.json`) รูป ฟอนต์ และไลบรารี CDN ใช้ที่เก็บไว้ก่อน
 - **เวอร์ชันข้อมูล:** `build` คำนวณ hash ของเนื้อหาใน `nexus.json` (ไม่รวมเวลาสร้าง) ใส่ใน `meta.data_version` และ `site/data/version.json` เว็บตรวจ `version.json` ทุกครั้งที่เปิด ถ้าต่างจากที่โหลดอยู่ จะแสดงแถบ "มีข้อมูลใหม่ กดเพื่ออัปเดต" กดแล้ว service worker ดึงข้อมูลใหม่ลงที่เก็บและโหลดหน้าใหม่
-- ต้อง commit `site/precache.json` และ `site/data/version.json` ที่ `build` สร้างไว้ด้วย
+- `site/precache.json` และ `site/data/version.json` สร้างโดย `build` ไม่ต้อง commit (GitHub Actions สร้างให้ตอน deploy)
 - ทดสอบด้วย Chrome/Edge จริงแบบ headless: เปิดเว็บ ปิดเซิร์ฟเวอร์ โหลดใหม่ เปิดทุกหน้า สลับภาษา ทำโหมดทดสอบ และตรวจแถบอัปเดต
 
 ```bash
@@ -340,8 +340,8 @@ node scripts/layout.mjs          # หรือรันเฉพาะ layout (
   ถ้า fcose แบบ `randomize: false` ให้ผลเสียรูป (ยุบเป็นเส้นทแยง ซึ่งเกิดกับการจัดกลุ่มตามเนื้อเยื่อ) สคริปต์จะคืนตำแหน่งเริ่มต้นแล้วรันแบบ `randomize: true` ด้วยตัวสุ่มมีเมล็ดแทน ซึ่งยังเหมือนเดิมทุกครั้ง
 - ไฟล์เก็บแฮชของรายการจุด (พร้อมระบบหลักและเนื้อเยื่อของแต่ละจุด) และรายการเส้น หน้าเว็บตรวจแฮชนี้ ถ้าไฟล์ไม่มีหรือไม่ตรงกับข้อมูล
   เว็บจะคำนวณในเบราว์เซอร์แทน (ช้ากว่า) และเตือนใน console
-- ถ้าไม่มี Node: `build` จะแจ้งเตือนและข้ามขั้นนี้ เว็บยังใช้ได้ แต่ต้อง commit `layout-overview.json` ที่เพิ่งสร้างจากเครื่องที่มี Node ไว้ก่อน deploy เพื่อให้เปิดเร็ว
-- ต้อง **commit `site/data/layout-overview.json`** ทุกครั้งที่ข้อมูลเปลี่ยน (`node_modules/` ไม่ต้อง commit)
+- ถ้าไม่มี Node: `build` จะแจ้งเตือนและข้ามขั้นนี้ (เว็บยังใช้ได้ แต่คำนวณตำแหน่งในเบราว์เซอร์ ช้ากว่า) บน GitHub Actions มี Node เสมอ
+- `layout-overview.json` ไม่ต้อง commit: GitHub Actions สร้างให้ทุกครั้งที่ deploy
 
 **การจัดกลุ่ม:** ตามระบบใช้ระบบหลัก (`systems[0]`) ของเซลล์ ตามเนื้อเยื่อใช้ `tissue` (ไม่มี `tissue` ไปกลุ่ม `other`)
 **ซูมสองระดับ:** ซูมออกเห็นเฉพาะกลุ่มและเส้นรวมระหว่างกลุ่ม (ความหนาตามจำนวนเส้น) ซูมเข้าเห็นชื่อเซลล์และเส้นจริง
@@ -362,38 +362,18 @@ node scripts/layout.mjs          # หรือรันเฉพาะ layout (
 
 ## Deploy บน GitHub Pages
 
-`site/data/nexus.json` ถูกสร้างจาก `build` และต้อง commit ไปด้วย (GitHub Pages ไม่รัน Python ให้) มีสองวิธี:
+Deploy ด้วย GitHub Actions ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)) ตั้งค่าครั้งเดียว: Settings → Pages → Source เลือก **GitHub Actions**
 
-**วิธี 1: GitHub Actions (แนะนำ เพราะรองรับโฟลเดอร์ `site/`)**
-1. ไปที่ Settings → Pages → Source เลือก **GitHub Actions**
-2. สร้างไฟล์ `.github/workflows/pages.yml`:
+ทุกครั้งที่ push ไป `main` workflow จะรันตามลำดับ และหยุดทันทีที่ขั้นใดล้ม (เว็บจริงยังเป็นเวอร์ชันเดิม):
 
-```yaml
-name: Deploy site
-on:
-  push:
-    branches: [main]
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-      - id: deployment
-        uses: actions/deploy-pages@v4
-```
+1. `npm ci`
+2. `python scripts/nexus.py validate` (ไม่ผ่านแล้วหยุด)
+3. `fetch` (มี cache ของ `data/generated/cache`; ถ้า OLS ล่มชั่วคราวจะเตือนแล้วใช้ `data/generated/cl_terms.json` ที่ commit ไว้)
+4. `build` (รวมข้อมูล + คำนวณ layout ใยภาพรวม + สร้าง `precache.json`/`version.json`)
+5. `python scripts/test-validate.py` และ `npm test`
+6. อัปโหลดโฟลเดอร์ `site/` แล้ว deploy
 
-**วิธี 2: เลือกโฟลเดอร์โดยตรง** GitHub Pages เลือกโฟลเดอร์ได้เฉพาะ `/ (root)` หรือ `/docs` ดังนั้นถ้าไม่ใช้ Actions ให้ย้ายหรือคัดลอกเนื้อหาใน `site/` ไปไว้ที่ `docs/`
+**ไฟล์ที่ build สร้างไม่อยู่ใน repo** (`site/data/nexus.json`, `layout-overview.json`, `version.json`, `site/precache.json` อยู่ใน `.gitignore`) Actions สร้างใหม่ทุกครั้ง ดังนั้นแก้ข้อมูลแล้ว commit แค่ไฟล์ใน `data/` และ `site/images/` พอ ถ้าจะเปิดเว็บดูบนเครื่อง ต้องรัน `python scripts/nexus.py build` เองก่อน
 
 เว็บใช้ path แบบ relative และ routing ด้วย hash จึงทำงานได้ทั้งที่ `https://<user>.github.io/<repo>/` และโดเมนของตัวเอง
 
