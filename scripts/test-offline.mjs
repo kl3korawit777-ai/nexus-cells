@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer-core';
 
 const site = join(dirname(fileURLToPath(import.meta.url)), '..', 'site');
-const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml' };
+const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.jpg': 'image/jpeg' };
 const CHROME = process.env.CHROME_PATH || [
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
   'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
@@ -82,6 +82,9 @@ try {
     await new Promise((ok) => setTimeout(ok, 900));
     const info = await page.evaluate(() => ({ h1: (document.querySelector('#page-title') || document.querySelector('h1') || {}).textContent, nf: !!document.querySelector('.notfound'), len: document.getElementById('app').textContent.trim().length }));
     check(info.h1 && !info.nf && info.len > 40, `${r} → "${(info.h1 || '').slice(0, 40)}"`);
+    // ถ้าหน้านี้มีแกลเลอรี รูปหลักที่เคยเปิดออนไลน์ต้องโหลดได้จากที่เก็บ (รวมโครงสร้างโฟลเดอร์ images/<slug>/)
+    const galleryImg = await page.evaluate(() => { const i = document.querySelector('.gallery .gal-frame img'); return i ? i.complete && i.naturalWidth > 0 : null; });
+    if (galleryImg !== null) check(galleryImg, `${r} รูปในแกลเลอรีโหลดจากที่เก็บได้ตอนออฟไลน์`);
   }
   // สลับภาษาออฟไลน์
   await page.evaluate(() => document.querySelector('[data-lang-btn="en"]').click());

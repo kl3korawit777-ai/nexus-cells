@@ -170,9 +170,8 @@ export function renderGallery(allImages, { alt, hint }) {
     if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
     if (document.querySelector('dialog[open]')) return;
     const a = document.activeElement;
-    const inside = root.contains(a);
-    const typing = a && (a.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName));
-    if (typing || (!inside && a && a !== document.body)) return;
+    // โฟกัสอยู่ที่ตัวควบคุมอื่นนอกแกลเลอรี (ช่องกรอก ปุ่ม ลิงก์) ปล่อยให้ตัวนั้นจัดการเอง
+    if (a && !root.contains(a) && a.matches && a.matches('input, textarea, select, button, a[href], summary, [contenteditable], [tabindex="0"]')) return;
     if (filterBar && filterBar.contains(a)) return;
     e.preventDefault();
     go(e.key === 'ArrowRight' ? 1 : -1);

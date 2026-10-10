@@ -173,7 +173,7 @@ function imagesPanel(A, B) {
     const fig = (c) => {
       const img = pickByType(c, cmpType);
       const empty = cmpType && !img && imagesOf(c).length ? t('cmp.noImageOfType', { type: t('img.type.' + cmpType) }) : null;
-      return h('figure', {}, imageFigure(img, cellName(c), `images/${c.slug}/`, { emptyText: empty }), h('figcaption', { text: cellName(c) }));
+      return h('div', { class: 'cmp-item' }, h('p', { class: 'cmp-name', text: cellName(c) }), imageFigure(img, cellName(c), `images/${c.slug}/`, { emptyText: empty }));
     };
     const mk = (ty) => h('button', { type: 'button', class: 'gal-chip', 'aria-pressed': String(cmpType === ty),
       onclick: () => { cmpType = ty; draw(); } }, ty ? t('img.type.' + ty) : t('cmp.mainImage'));
