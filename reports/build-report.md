@@ -1,10 +1,10 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-10 11:28
+สร้างเมื่อ: 2026-10-10 11:29
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 131 เส้น
+- ตรงกัน: 133 เส้น
 - คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 8 เส้น
 - คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 11 เส้น
 - CL มี แต่ไม่ได้คัดไว้: 68 เส้น
@@ -114,7 +114,7 @@
 - CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 4 เส้น
 - CL ชี้ไปเซลล์นอกชุดข้อมูล: 61 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 449 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 452 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
@@ -253,7 +253,7 @@
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 - CL:4072104 fibrochondrocyte ← CL:0020021 fibrochondrocyte progenitor cell
 
-## คำเตือนจาก validate (252)
+## คำเตือนจาก validate (255)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -401,6 +401,9 @@
 - CL:1000448 (epithelial cell of sweat gland): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
 - CL:1000417 (myoepithelial cell of sweat gland): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0002551 (fibroblast of dermis): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002146 (clear cell of eccrine sweat gland): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002142 (dark cell of eccrine sweat gland): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
+- CL:0002562 (hair germinal matrix cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0008002 (skeletal muscle fiber): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0000594 (skeletal muscle satellite cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0000056 (myoblast): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป

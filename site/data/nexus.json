@@ -1,7 +1,7 @@
 {
  "meta": {
-  "data_version": "6f172a5b1b17",
-  "generated_at": "2026-10-10T04:28:48+00:00",
+  "data_version": "8cc73cdb8bb2",
+  "generated_at": "2026-10-10T04:29:50+00:00",
   "ontology": "Cell Ontology (CL), CC BY 4.0",
   "stats": {
    "images": 0
@@ -6545,6 +6545,124 @@
    }
   },
   {
+   "id": "CL:0002146",
+   "slug": "eccrine-clear-cell",
+   "kind": "cell",
+   "en": "clear cell of eccrine sweat gland",
+   "th": "เซลล์ใสของต่อมเหงื่อ eccrine (clear cell)",
+   "systems": [
+    "integumentary"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-cuboidal",
+   "location": "ส่วนขดสร้างเหงื่อ (secretory coil) ของต่อมเหงื่อแบบ eccrine ในหนังแท้",
+   "morphology": "เซลล์ลูกบาศก์ถึงทรงสูง ไซโทพลาซึมติดสีจาง (ใส) เพราะมีไกลโคเจนมาก ผิวด้านฐานมีรอยพับและไมโทคอนเดรียมาก",
+   "function": "ผลิตเหงื่อส่วนที่เป็นน้ำและเกลือแร่ (ของเหลวตั้งต้นที่มีความเข้มข้นใกล้พลาสมา) ถูกกระตุ้นโดยเส้นประสาทซิมพาเทติกโคลีเนอร์จิก (acetylcholine ผ่านตัวรับมัสคารินิก) ต่อมาท่อเหงื่อดูดกลับ NaCl บางส่วน",
+   "secretes": [
+    "เหงื่อ (น้ำและเกลือแร่)"
+   ],
+   "markers": [
+    "Na-K-2Cl cotransporter (NKCC1)",
+    "aquaporin 5"
+   ],
+   "lifespan": "",
+   "exam": "ต่อมเหงื่อ eccrine ถูกควบคุมโดยเส้นประสาทซิมพาเทติกที่ใช้ acetylcholine (ไม่ใช่ norepinephrine) กระจายทั่วตัว ต่างจากต่อมเหงื่อ apocrine ที่รักแร้และอวัยวะเพศ",
+   "diseases": [
+    "hyperhidrosis (เหงื่อออกมาก)"
+   ],
+   "confused_with": [
+    "CL:0002142",
+    "CL:1000417"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002146",
+   "cl": {
+    "label": "clear cell of eccrine sweat gland",
+    "definition": "A sweat producing cell of eccrine sweat glands. Pyramidal in shape, with its base resting on the basal lamina or myoepitheliocytes, and its microvillus-covered apical plasma membrane line up the intercellular canaliculi. Cell is not stained by hematoxylin or eosin.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002142",
+   "slug": "eccrine-dark-cell",
+   "kind": "cell",
+   "en": "dark cell of eccrine sweat gland",
+   "th": "เซลล์ทึบของต่อมเหงื่อ eccrine (dark cell)",
+   "systems": [
+    "integumentary"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "simple-cuboidal",
+   "location": "ส่วนขดสร้างเหงื่อของต่อมเหงื่อแบบ eccrine บริเวณใกล้ lumen",
+   "morphology": "เซลล์รูปพีระมิด ไซโทพลาซึมติดสีเข้ม มีแกรนูลสารคัดหลั่งที่ปลายเซลล์ด้าน lumen",
+   "function": "หลั่งไกลโคโปรตีนในแกรนูลและโปรตีนบางชนิดสู่เหงื่อ",
+   "secretes": [
+    "ไกลโคโปรตีน"
+   ],
+   "markers": [],
+   "lifespan": "",
+   "exam": "ส่วนขดสร้างเหงื่อ eccrine มีเซลล์ใส (clear cell) หลั่งน้ำและเกลือแร่ และเซลล์ทึบ (dark cell) หลั่งไกลโคโปรตีน โดยมี myoepithelial cell ล้อมรอบ",
+   "diseases": [],
+   "confused_with": [
+    "CL:0002146",
+    "CL:1000417"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002142",
+   "cl": {
+    "label": "dark cell of eccrine sweat gland",
+    "definition": "A cell pyramidal in shape, with their broad ends facing and forming the greater extent of the lining of the main lumen. Secretes glycoproteins associated with mucus.",
+    "synonyms": [],
+    "obsolete": false
+   }
+  },
+  {
+   "id": "CL:0002562",
+   "slug": "hair-matrix-cell",
+   "kind": "cell",
+   "en": "hair germinal matrix cell",
+   "th": "เซลล์แมทริกซ์ของรากผม (hair matrix cell)",
+   "systems": [
+    "integumentary"
+   ],
+   "tissue": "epithelial",
+   "tissue_subtype": "stratified-squamous",
+   "location": "hair bulb ที่ฐานรูขุมขน ล้อมรอบ dermal papilla",
+   "morphology": "เซลล์ขนาดเล็ก ไซโทพลาซึมติดสีเบส เรียงตัวหนาแน่นที่ฐานของ hair bulb",
+   "function": "เป็นเซลล์ที่แบ่งตัวเร็วมาก เจริญเป็นเซลล์ที่สร้างเส้นผมและชั้นปลอกรากผมด้านใน (inner root sheath) เมื่อเคลื่อนขึ้นจะสร้างเคราตินและตาย เซลล์เม็ดสีจาก melanocyte ถ่ายโอนมาให้สีผม",
+   "secretes": [],
+   "markers": [
+    "LEF1",
+    "hair keratins"
+   ],
+   "lifespan": "",
+   "exam": "เซลล์ matrix แบ่งตัวเร็ว ยาเคมีบำบัดจึงทำให้ผมร่วง ส่วนสีผมเกิดจากเมลาโนไซต์ที่ hair bulb ถ่ายโอนเมลานินให้เซลล์ matrix",
+   "diseases": [
+    "ผมร่วงจากยาเคมีบำบัด (anagen effluvium)",
+    "alopecia areata"
+   ],
+   "confused_with": [
+    "CL:0000312"
+   ],
+   "images": [],
+   "verified": false,
+   "refs": [],
+   "purl": "http://purl.obolibrary.org/obo/CL_0002562",
+   "cl": {
+    "label": "hair germinal matrix cell",
+    "definition": "An epidermal cell that is part of the germinal matrix.",
+    "synonyms": [
+     "trichocyte"
+    ],
+    "obsolete": false
+   }
+  },
+  {
    "id": "CL:0008002",
    "slug": "skeletal-muscle-fiber",
    "kind": "cell",
@@ -12345,6 +12463,20 @@
    "file": "integumentary"
   },
   {
+   "type": "is_a",
+   "from": "CL:0002146",
+   "to": "CL:1000448",
+   "source": "curated",
+   "file": "integumentary"
+  },
+  {
+   "type": "is_a",
+   "from": "CL:0002142",
+   "to": "CL:1000448",
+   "source": "curated",
+   "file": "integumentary"
+  },
+  {
    "type": "interacts_with",
    "from": "CL:0000148",
    "to": "CL:0000312",
@@ -12359,6 +12491,42 @@
    "to": "CL:0000912",
    "th": "Langerhans cell นำเสนอแอนติเจนจากผิวหนังให้ helper T cell ในต่อมน้ำเหลือง",
    "mode": "immune",
+   "source": "curated",
+   "file": "integumentary"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000108",
+   "to": "CL:0002146",
+   "th": "เส้นประสาทซิมพาเทติกโคลีเนอร์จิกกระตุ้นต่อมเหงื่อ eccrine ให้หลั่งเหงื่อ",
+   "mode": "synapse",
+   "source": "curated",
+   "file": "integumentary"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:1000417",
+   "to": "CL:0002146",
+   "th": "myoepithelial cell บีบตัวช่วยดันเหงื่อออกจากส่วนขด",
+   "mode": "support",
+   "source": "curated",
+   "file": "integumentary"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0000148",
+   "to": "CL:0002562",
+   "th": "เมลาโนไซต์ที่ hair bulb ถ่ายโอนเม็ดสีให้เซลล์ matrix กำหนดสีผม",
+   "mode": "paracrine",
+   "source": "curated",
+   "file": "integumentary"
+  },
+  {
+   "type": "interacts_with",
+   "from": "CL:0002551",
+   "to": "CL:0002562",
+   "th": "เซลล์หนังแท้ที่ dermal papilla ส่งสัญญาณควบคุมการแบ่งตัวของ matrix cell",
+   "mode": "paracrine",
    "source": "curated",
    "file": "integumentary"
   },

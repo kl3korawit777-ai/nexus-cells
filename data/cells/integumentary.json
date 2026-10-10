@@ -323,5 +323,100 @@
     "images": [],
     "verified": false,
     "refs": []
+  },
+  {
+    "id": "CL:0002146",
+    "slug": "eccrine-clear-cell",
+    "kind": "cell",
+    "en": "clear cell of eccrine sweat gland",
+    "th": "เซลล์ใสของต่อมเหงื่อ eccrine (clear cell)",
+    "systems": [
+      "integumentary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-cuboidal",
+    "location": "ส่วนขดสร้างเหงื่อ (secretory coil) ของต่อมเหงื่อแบบ eccrine ในหนังแท้",
+    "morphology": "เซลล์ลูกบาศก์ถึงทรงสูง ไซโทพลาซึมติดสีจาง (ใส) เพราะมีไกลโคเจนมาก ผิวด้านฐานมีรอยพับและไมโทคอนเดรียมาก",
+    "function": "ผลิตเหงื่อส่วนที่เป็นน้ำและเกลือแร่ (ของเหลวตั้งต้นที่มีความเข้มข้นใกล้พลาสมา) ถูกกระตุ้นโดยเส้นประสาทซิมพาเทติกโคลีเนอร์จิก (acetylcholine ผ่านตัวรับมัสคารินิก) ต่อมาท่อเหงื่อดูดกลับ NaCl บางส่วน",
+    "secretes": [
+      "เหงื่อ (น้ำและเกลือแร่)"
+    ],
+    "markers": [
+      "Na-K-2Cl cotransporter (NKCC1)",
+      "aquaporin 5"
+    ],
+    "lifespan": "",
+    "exam": "ต่อมเหงื่อ eccrine ถูกควบคุมโดยเส้นประสาทซิมพาเทติกที่ใช้ acetylcholine (ไม่ใช่ norepinephrine) กระจายทั่วตัว ต่างจากต่อมเหงื่อ apocrine ที่รักแร้และอวัยวะเพศ",
+    "diseases": [
+      "hyperhidrosis (เหงื่อออกมาก)"
+    ],
+    "confused_with": [
+      "CL:0002142",
+      "CL:1000417"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002142",
+    "slug": "eccrine-dark-cell",
+    "kind": "cell",
+    "en": "dark cell of eccrine sweat gland",
+    "th": "เซลล์ทึบของต่อมเหงื่อ eccrine (dark cell)",
+    "systems": [
+      "integumentary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-cuboidal",
+    "location": "ส่วนขดสร้างเหงื่อของต่อมเหงื่อแบบ eccrine บริเวณใกล้ lumen",
+    "morphology": "เซลล์รูปพีระมิด ไซโทพลาซึมติดสีเข้ม มีแกรนูลสารคัดหลั่งที่ปลายเซลล์ด้าน lumen",
+    "function": "หลั่งไกลโคโปรตีนในแกรนูลและโปรตีนบางชนิดสู่เหงื่อ",
+    "secretes": [
+      "ไกลโคโปรตีน"
+    ],
+    "markers": [],
+    "lifespan": "",
+    "exam": "ส่วนขดสร้างเหงื่อ eccrine มีเซลล์ใส (clear cell) หลั่งน้ำและเกลือแร่ และเซลล์ทึบ (dark cell) หลั่งไกลโคโปรตีน โดยมี myoepithelial cell ล้อมรอบ",
+    "diseases": [],
+    "confused_with": [
+      "CL:0002146",
+      "CL:1000417"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002562",
+    "slug": "hair-matrix-cell",
+    "kind": "cell",
+    "en": "hair germinal matrix cell",
+    "th": "เซลล์แมทริกซ์ของรากผม (hair matrix cell)",
+    "systems": [
+      "integumentary"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "stratified-squamous",
+    "location": "hair bulb ที่ฐานรูขุมขน ล้อมรอบ dermal papilla",
+    "morphology": "เซลล์ขนาดเล็ก ไซโทพลาซึมติดสีเบส เรียงตัวหนาแน่นที่ฐานของ hair bulb",
+    "function": "เป็นเซลล์ที่แบ่งตัวเร็วมาก เจริญเป็นเซลล์ที่สร้างเส้นผมและชั้นปลอกรากผมด้านใน (inner root sheath) เมื่อเคลื่อนขึ้นจะสร้างเคราตินและตาย เซลล์เม็ดสีจาก melanocyte ถ่ายโอนมาให้สีผม",
+    "secretes": [],
+    "markers": [
+      "LEF1",
+      "hair keratins"
+    ],
+    "lifespan": "",
+    "exam": "เซลล์ matrix แบ่งตัวเร็ว ยาเคมีบำบัดจึงทำให้ผมร่วง ส่วนสีผมเกิดจากเมลาโนไซต์ที่ hair bulb ถ่ายโอนเมลานินให้เซลล์ matrix",
+    "diseases": [
+      "ผมร่วงจากยาเคมีบำบัด (anagen effluvium)",
+      "alopecia areata"
+    ],
+    "confused_with": [
+      "CL:0000312"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
   }
 ]

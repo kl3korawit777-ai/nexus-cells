@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-10T04:28:48+00:00",
+  "fetched_at": "2026-10-10T04:29:49+00:00",
   "source": "OLS4 / Cell Ontology",
   "terms": {
     "CL:0000988": {
@@ -15295,6 +15295,320 @@
         {
           "id": "UBERON:0002067",
           "label": "dermis"
+        }
+      ]
+    },
+    "CL:0002146": {
+      "id": "CL:0002146",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002146",
+      "label": "clear cell of eccrine sweat gland",
+      "definition": "A sweat producing cell of eccrine sweat glands. Pyramidal in shape, with its base resting on the basal lamina or myoepitheliocytes, and its microvillus-covered apical plasma membrane line up the intercellular canaliculi. Cell is not stained by hematoxylin or eosin.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0000318",
+          "label": "sweat secreting cell"
+        },
+        {
+          "id": "CL:0000434",
+          "label": "eccrine cell"
+        },
+        {
+          "id": "CL:1000448",
+          "label": "epithelial cell of sweat gland"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000318",
+          "label": "sweat secreting cell"
+        },
+        {
+          "id": "CL:0000362",
+          "label": "epidermal cell"
+        },
+        {
+          "id": "CL:0000434",
+          "label": "eccrine cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002159",
+          "label": "general ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002308",
+          "label": "epithelial cell of skin gland"
+        },
+        {
+          "id": "CL:1000448",
+          "label": "epithelial cell of sweat gland"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0000423",
+          "label": "eccrine sweat gland"
+        }
+      ]
+    },
+    "CL:0002142": {
+      "id": "CL:0002142",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002142",
+      "label": "dark cell of eccrine sweat gland",
+      "definition": "A cell pyramidal in shape, with their broad ends facing and forming the greater extent of the lining of the main lumen. Secretes glycoproteins associated with mucus.",
+      "synonyms": [],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0000318",
+          "label": "sweat secreting cell"
+        },
+        {
+          "id": "CL:0000434",
+          "label": "eccrine cell"
+        },
+        {
+          "id": "CL:1000448",
+          "label": "epithelial cell of sweat gland"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000150",
+          "label": "glandular secretory epithelial cell"
+        },
+        {
+          "id": "CL:0000151",
+          "label": "secretory cell"
+        },
+        {
+          "id": "CL:0000152",
+          "label": "exocrine cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000318",
+          "label": "sweat secreting cell"
+        },
+        {
+          "id": "CL:0000362",
+          "label": "epidermal cell"
+        },
+        {
+          "id": "CL:0000434",
+          "label": "eccrine cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002159",
+          "label": "general ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002308",
+          "label": "epithelial cell of skin gland"
+        },
+        {
+          "id": "CL:1000448",
+          "label": "epithelial cell of sweat gland"
+        },
+        {
+          "id": "CL:1100001",
+          "label": "secretory epithelial cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0000423",
+          "label": "eccrine sweat gland"
+        }
+      ]
+    },
+    "CL:0002562": {
+      "id": "CL:0002562",
+      "found": true,
+      "iri": "http://purl.obolibrary.org/obo/CL_0002562",
+      "label": "hair germinal matrix cell",
+      "definition": "An epidermal cell that is part of the germinal matrix.",
+      "synonyms": [
+        "trichocyte"
+      ],
+      "obsolete": false,
+      "replaced_by": null,
+      "parents": [
+        {
+          "id": "CL:0000362",
+          "label": "epidermal cell"
+        },
+        {
+          "id": "CL:0002559",
+          "label": "hair follicle cell"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "BFO:0000002",
+          "label": "BFO_0000002"
+        },
+        {
+          "id": "BFO:0000004",
+          "label": "BFO_0000004"
+        },
+        {
+          "id": "BFO:0000040",
+          "label": "BFO_0000040"
+        },
+        {
+          "id": "CL:0000000",
+          "label": "cell"
+        },
+        {
+          "id": "CL:0000066",
+          "label": "epithelial cell"
+        },
+        {
+          "id": "CL:0000255",
+          "label": "eukaryotic cell"
+        },
+        {
+          "id": "CL:0000362",
+          "label": "epidermal cell"
+        },
+        {
+          "id": "CL:0002077",
+          "label": "ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002159",
+          "label": "general ecto-epithelial cell"
+        },
+        {
+          "id": "CL:0002559",
+          "label": "hair follicle cell"
+        },
+        {
+          "id": "UBERON:0000061",
+          "label": "anatomical structure"
+        },
+        {
+          "id": "UBERON:0000465",
+          "label": "material anatomical entity"
+        },
+        {
+          "id": "UBERON:0001062",
+          "label": "anatomical entity"
+        }
+      ],
+      "develops_from": [
+        {
+          "id": "UBERON:0006004",
+          "label": "hair follicle matrix region"
         }
       ]
     },
