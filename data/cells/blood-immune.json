@@ -1468,5 +1468,521 @@
     "images": [],
     "verified": false,
     "refs": []
+  },
+  {
+    "id": "CL:0000553",
+    "slug": "megakaryoblast",
+    "kind": "cell",
+    "en": "megakaryoblast",
+    "th": "เมกะคารีโอบลาสต์ (megakaryoblast)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "hematopoietic",
+    "location": "ไขกระดูก",
+    "morphology": "เซลล์ขนาดใหญ่ นิวเคลียสกลมถึงรูปไต โครมาตินละเอียด ไซโทพลาซึมติดสีเบสและไม่มีแกรนูล",
+    "function": "เป็นระยะแรกของสายเกล็ดเลือด แบ่งตัวแล้วเจริญเป็นเมกะคารีโอไซต์ ซึ่งเพิ่ม DNA โดยไม่แบ่งเซลล์ (endomitosis) ตอบสนองต่อ thrombopoietin (TPO)",
+    "secretes": [],
+    "markers": [
+      "CD41 (GPIIb)",
+      "CD61 (GPIIIa)"
+    ],
+    "lifespan": "",
+    "exam": "ลำดับของสายเกล็ดเลือดคือ MEP, megakaryoblast, megakaryocyte, platelet เกล็ดเลือดเป็นเศษไซโทพลาซึมของเมกะคารีโอไซต์ ไม่ใช่เซลล์ที่แบ่งตัวเอง",
+    "diseases": [
+      "acute megakaryoblastic leukemia"
+    ],
+    "confused_with": [],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002193",
+    "slug": "myelocyte",
+    "kind": "cell",
+    "en": "myelocyte",
+    "th": "ไมอีโลไซต์ (myelocyte)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "hematopoietic",
+    "location": "ไขกระดูก",
+    "morphology": "นิวเคลียสกลมถึงรูปไตตื้น ๆ เริ่มมีแกรนูลจำเพาะ (specific granule) ร่วมกับแกรนูลปฐมภูมิ",
+    "function": "เป็นระยะที่เริ่มสร้างแกรนูลจำเพาะที่บอกชนิดของแกรนูโลไซต์ (neutrophilic, eosinophilic, basophilic) และเป็นระยะสุดท้ายของสายนี้ที่ยังแบ่งตัวได้",
+    "secretes": [],
+    "markers": [],
+    "lifespan": "",
+    "exam": "ต่อจากโพรไมอีโลไซต์ ระยะ myelocyte เป็นระยะสุดท้ายที่แบ่งตัวได้ ส่วน metamyelocyte ขึ้นไปแบ่งตัวไม่ได้แล้ว",
+    "diseases": [
+      "มะเร็งเม็ดเลือดขาวชนิดไมอีลอยด์เรื้อรัง (CML) ซึ่งพบ myelocyte และ metamyelocyte ในเลือดส่วนปลายมาก"
+    ],
+    "confused_with": [
+      "CL:0002192",
+      "CL:0000836"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002192",
+    "slug": "metamyelocyte",
+    "kind": "cell",
+    "en": "metamyelocyte",
+    "th": "เมทาไมอีโลไซต์ (metamyelocyte)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "hematopoietic",
+    "location": "ไขกระดูก",
+    "morphology": "นิวเคลียสรูปไต (เว้าเป็นรอยบุ๋ม) โครมาตินเริ่มจับตัวหนา มีแกรนูลจำเพาะมาก",
+    "function": "ระยะที่ไม่แบ่งตัวแล้ว กำลังเจริญเต็มวัย ต่อไปเป็น band cell ก่อนเป็นแกรนูโลไซต์เต็มวัย",
+    "secretes": [],
+    "markers": [],
+    "lifespan": "",
+    "exam": "ลำดับของนิวโทรฟิลคือ myeloblast, promyelocyte, myelocyte, metamyelocyte, band, neutrophil นิวเคลียสค่อย ๆ เว้ามากขึ้นจนแบ่งเป็นพู",
+    "diseases": [
+      "มะเร็งเม็ดเลือดขาวชนิดไมอีลอยด์เรื้อรัง (CML)"
+    ],
+    "confused_with": [
+      "CL:0002193",
+      "CL:0000560"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000040",
+    "slug": "monoblast",
+    "kind": "cell",
+    "en": "monoblast",
+    "th": "โมโนบลาสต์ (monoblast)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "hematopoietic",
+    "location": "ไขกระดูก",
+    "morphology": "เซลล์ขนาดใหญ่ นิวเคลียสกลมหรือรูปไต เห็นนิวคลีโอลัสชัด ไซโทพลาซึมติดสีเบส",
+    "function": "เป็นระยะตั้งต้นของสายโมโนไซต์ แบ่งตัวและเจริญเป็นโมโนไซต์ ซึ่งออกสู่เลือดแล้วเปลี่ยนเป็นแมโครฟาจเมื่อเข้าสู่เนื้อเยื่อ",
+    "secretes": [],
+    "markers": [
+      "CD33"
+    ],
+    "lifespan": "",
+    "exam": "ลำดับของสายโมโนไซต์ คือ GMP, monoblast, monocyte (ในเลือด), macrophage (ในเนื้อเยื่อ)",
+    "diseases": [
+      "acute monoblastic leukemia"
+    ],
+    "confused_with": [
+      "CL:0000835"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000874",
+    "slug": "red-pulp-macrophage",
+    "kind": "cell",
+    "en": "splenic red pulp macrophage",
+    "th": "แมโครฟาจในเรดพัลป์ของม้าม (red pulp macrophage)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "เรดพัลป์ (red pulp) ของม้าม ในพื้นที่ cord ของ Billroth และรอบไซนูซอยด์",
+    "morphology": "แมโครฟาจขนาดใหญ่ ไซโทพลาซึมมีแวคิวโอลและเม็ดเหล็กจากการย่อยเฮโมโกลบิน",
+    "function": "กินเม็ดเลือดแดงที่แก่หรือเสียรูป (erythrophagocytosis) ย่อยฮีม แล้วเก็บธาตุเหล็กหรือส่งกลับไปใช้สร้างเม็ดเลือดแดงใหม่",
+    "secretes": [],
+    "markers": [
+      "CD163",
+      "SPIC",
+      "heme oxygenase-1"
+    ],
+    "lifespan": "",
+    "exam": "เม็ดเลือดแดงมีอายุประมาณ 120 วัน ถูกกำจัดที่ม้ามเป็นหลัก (และตับ ไขกระดูก) ฮีมถูกเปลี่ยนเป็นบิลิรูบินและธาตุเหล็ก ต่างจาก Kupffer cell ซึ่งเป็นแมโครฟาจของตับ",
+    "diseases": [
+      "hereditary spherocytosis"
+    ],
+    "confused_with": [
+      "CL:0000091"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000990",
+    "slug": "conventional-dendritic-cell",
+    "kind": "cell",
+    "en": "conventional dendritic cell",
+    "th": "เดนไดรต์เซลล์ชนิดดั้งเดิม (conventional dendritic cell)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "hematopoietic",
+    "location": "เนื้อเยื่อทั่วร่างกายและอวัยวะน้ำเหลืองทุติยภูมิ (ต่อมน้ำเหลือง ม้าม)",
+    "morphology": "เซลล์มีแขนงยื่นคล้ายกิ่งไม้ (dendrite)",
+    "function": "จับและย่อยแอนติเจนในเนื้อเยื่อ เคลื่อนที่ไปยังต่อมน้ำเหลือง แล้วนำเสนอแอนติเจนผ่าน MHC ให้ naive T cell พร้อมสัญญาณร่วมกระตุ้น (co-stimulation) เพื่อเริ่มการตอบสนองจำเพาะ",
+    "secretes": [
+      "IL-12"
+    ],
+    "markers": [
+      "CD11c",
+      "MHC class II",
+      "CD80/CD86"
+    ],
+    "lifespan": "",
+    "exam": "dendritic cell เป็นเซลล์นำเสนอแอนติเจนที่กระตุ้น naive T cell ได้ดีที่สุด ส่วน plasmacytoid dendritic cell เด่นเรื่องการสร้าง interferon ชนิด I ต้านไวรัส",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000784"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000898",
+    "slug": "naive-t-cell",
+    "kind": "cell",
+    "en": "naive T cell",
+    "th": "ทีเซลล์ที่ยังไม่เคยพบแอนติเจน (naive T cell)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "เลือด ต่อมน้ำเหลือง และม้าม (ออกจากไทมัสแล้ว)",
+    "morphology": "ลิมโฟไซต์ขนาดเล็ก นิวเคลียสกลมเข้ม ไซโทพลาซึมน้อย",
+    "function": "T cell ที่พัฒนาครบในไทมัสแต่ยังไม่เคยพบแอนติเจน หมุนเวียนระหว่างเลือดกับอวัยวะน้ำเหลืองเพื่อรอ dendritic cell นำเสนอแอนติเจน เมื่อถูกกระตุ้นจะเปลี่ยนเป็น effector หรือ memory T cell",
+    "secretes": [],
+    "markers": [
+      "CD3",
+      "CD45RA",
+      "CCR7",
+      "CD62L"
+    ],
+    "lifespan": "",
+    "exam": "naive T cell มี CD45RA และ CCR7 ส่วน memory T cell มี CD45RO ถ้าพบแอนติเจนครั้งแรกจะเกิด effector cell และ memory cell",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000813"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000545",
+    "slug": "th1-cell",
+    "kind": "cell",
+    "en": "T-helper 1 cell",
+    "th": "ทีเฮลเปอร์ 1 (Th1 cell)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "ต่อมน้ำเหลือง และบริเวณที่มีการอักเสบ",
+    "morphology": "ลิมโฟไซต์ขนาดเล็กถึงกลาง",
+    "function": "T helper ที่หลั่ง IFN-γ กระตุ้นแมโครฟาจให้ทำลายเชื้อโรคที่อยู่ในเซลล์ (เช่น Mycobacterium) และช่วยการตอบสนองแบบ cell-mediated",
+    "secretes": [
+      "IFN-γ",
+      "IL-2"
+    ],
+    "markers": [
+      "T-bet (TBX21)",
+      "CXCR3"
+    ],
+    "lifespan": "",
+    "exam": "การเปลี่ยนเป็น Th1 ถูกชักนำด้วย IL-12 จาก dendritic cell และแมโครฟาจ Th1 หลั่ง IFN-γ ส่วน Th2 หลั่ง IL-4 IL-5 IL-13",
+    "diseases": [
+      "วัณโรค (tuberculosis)",
+      "delayed-type hypersensitivity"
+    ],
+    "confused_with": [
+      "CL:0000546",
+      "CL:0000899"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000546",
+    "slug": "th2-cell",
+    "kind": "cell",
+    "en": "T-helper 2 cell",
+    "th": "ทีเฮลเปอร์ 2 (Th2 cell)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "เนื้อเยื่อเยื่อบุผิว (ปอด ลำไส้) และต่อมน้ำเหลือง",
+    "morphology": "ลิมโฟไซต์ขนาดเล็กถึงกลาง",
+    "function": "T helper ที่หลั่ง IL-4, IL-5, IL-13 IL-4 ทำให้ B cell เปลี่ยนชนิดแอนติบอดีเป็น IgE IL-5 กระตุ้นอีโอซิโนฟิล ต้านปรสิตพวกหนอนพยาธิ และเกี่ยวข้องกับภูมิแพ้",
+    "secretes": [
+      "IL-4",
+      "IL-5",
+      "IL-13"
+    ],
+    "markers": [
+      "GATA3",
+      "CCR4"
+    ],
+    "lifespan": "",
+    "exam": "จำคู่: IL-4 กับ IgE, IL-5 กับอีโอซิโนฟิล Th2 เป็นตัวหลักของภูมิแพ้และการต้านหนอนพยาธิ",
+    "diseases": [
+      "โรคหืด (asthma)",
+      "ภูมิแพ้ (allergy)"
+    ],
+    "confused_with": [
+      "CL:0000545",
+      "CL:0000899"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000899",
+    "slug": "th17-cell",
+    "kind": "cell",
+    "en": "T-helper 17 cell",
+    "th": "ทีเฮลเปอร์ 17 (Th17 cell)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "เยื่อบุผิวผิวหนังและลำไส้ รวมทั้งบริเวณที่มีการอักเสบ",
+    "morphology": "ลิมโฟไซต์ขนาดเล็กถึงกลาง",
+    "function": "T helper ที่หลั่ง IL-17 และ IL-22 ดึงนิวโทรฟิลมายังบริเวณติดเชื้อ ป้องกันแบคทีเรียนอกเซลล์และเชื้อรา และมีบทบาทในโรคแพ้ภูมิตัวเองบางชนิด",
+    "secretes": [
+      "IL-17",
+      "IL-22"
+    ],
+    "markers": [
+      "RORγt",
+      "IL-23 receptor"
+    ],
+    "lifespan": "",
+    "exam": "Th17 ถูกชักนำด้วย TGF-β ร่วมกับ IL-6 และคงสภาพด้วย IL-23 IL-17 ดึงนิวโทรฟิล",
+    "diseases": [
+      "สะเก็ดเงิน (psoriasis)",
+      "โรคลำไส้อักเสบ (inflammatory bowel disease)"
+    ],
+    "confused_with": [
+      "CL:0000545",
+      "CL:0000546"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002038",
+    "slug": "tfh-cell",
+    "kind": "cell",
+    "en": "T follicular helper cell",
+    "th": "ทีฟอลลิคูลาร์เฮลเปอร์เซลล์ (Tfh cell)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "ฟอลลิเคิลของ B cell (germinal center) ในต่อมน้ำเหลือง ม้าม และทอนซิล",
+    "morphology": "ลิมโฟไซต์ขนาดเล็กถึงกลาง",
+    "function": "T helper ที่ช่วย B cell ใน germinal center ผ่าน CD40L และ IL-21 ทำให้เกิดการเปลี่ยนชนิดแอนติบอดี (class switching) การปรับแอนติบอดีให้จับดีขึ้น (affinity maturation) และการเปลี่ยนเป็น plasma cell หรือ memory B cell",
+    "secretes": [
+      "IL-21"
+    ],
+    "markers": [
+      "CXCR5",
+      "PD-1",
+      "BCL6"
+    ],
+    "lifespan": "",
+    "exam": "Tfh มีตัวรับ CXCR5 เพื่อเข้าไปใน follicle ผู้ป่วยที่ขาด CD40L (hyper-IgM syndrome) ไม่สามารถ class switching ได้",
+    "diseases": [
+      "hyper-IgM syndrome (ขาด CD40L)"
+    ],
+    "confused_with": [
+      "CL:0000912"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000788",
+    "slug": "naive-b-cell",
+    "kind": "cell",
+    "en": "naive B cell",
+    "th": "บีเซลล์ที่ยังไม่เคยพบแอนติเจน (naive B cell)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "เลือด ม้าม และ follicle ของต่อมน้ำเหลือง",
+    "morphology": "ลิมโฟไซต์ขนาดเล็ก นิวเคลียสกลมเข้ม ไซโทพลาซึมน้อย",
+    "function": "B cell ที่ออกจากไขกระดูกแล้วแต่ยังไม่เคยพบแอนติเจน มีแอนติบอดี IgM และ IgD บนผิวเซลล์ เมื่อพบแอนติเจนและได้รับความช่วยเหลือจาก T helper จะเปลี่ยนเป็น plasma cell หรือ memory B cell",
+    "secretes": [],
+    "markers": [
+      "IgM",
+      "IgD",
+      "CD19",
+      "CD20"
+    ],
+    "lifespan": "",
+    "exam": "naive B cell แสดง IgM และ IgD พร้อมกันบนผิว เมื่อทำ class switching จะเปลี่ยนเป็น IgG IgA หรือ IgE",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000787",
+      "CL:0000786"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0000845",
+    "slug": "marginal-zone-b-cell",
+    "kind": "cell",
+    "en": "marginal zone B cell of spleen",
+    "th": "บีเซลล์ในมาร์จินัลโซนของม้าม (marginal zone B cell)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "marginal zone ของม้าม (ระหว่าง white pulp และ red pulp)",
+    "morphology": "ลิมโฟไซต์ขนาดกลาง ไซโทพลาซึมค่อนข้างมาก",
+    "function": "ตอบสนองอย่างรวดเร็วต่อแอนติเจนในเลือด โดยเฉพาะแอนติเจนชนิดไม่ต้องพึ่ง T cell (T-independent) เช่น polysaccharide ของแคปซูลแบคทีเรีย และสร้างแอนติบอดี IgM",
+    "secretes": [
+      "IgM"
+    ],
+    "markers": [
+      "CD21 (สูง)",
+      "CD1d",
+      "IgM"
+    ],
+    "lifespan": "",
+    "exam": "ผู้ที่ถูกตัดม้ามเสี่ยงติดเชื้อรุนแรงจากแบคทีเรียมีแคปซูล เช่น Streptococcus pneumoniae, Haemophilus influenzae, Neisseria meningitidis",
+    "diseases": [
+      "การติดเชื้อรุนแรงหลังตัดม้าม"
+    ],
+    "confused_with": [
+      "CL:0000788"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002293",
+    "slug": "thymic-epithelial-cell",
+    "kind": "cell",
+    "en": "epithelial cell of thymus",
+    "th": "เซลล์เยื่อบุผิวของไทมัส (thymic epithelial cell)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": null,
+    "location": "ไทมัส (ชั้นคอร์เทกซ์และเมดัลลา)",
+    "morphology": "เซลล์เยื่อบุผิวรูปดาวมีแขนงเชื่อมกันเป็นร่างแหภายในไทมัส",
+    "function": "สร้างสภาพแวดล้อมให้ T cell เจริญ เซลล์ที่คอร์เทกซ์ช่วยเลือก T cell ที่จับ MHC ได้ (positive selection) เซลล์ที่เมดัลลาแสดงแอนติเจนของร่างกายโดยใช้ AIRE เพื่อกำจัด T cell ที่ทำลายเนื้อเยื่อตนเอง (negative selection)",
+    "secretes": [
+      "IL-7"
+    ],
+    "markers": [
+      "cytokeratin",
+      "AIRE (ที่เมดัลลา)",
+      "MHC class II"
+    ],
+    "lifespan": "",
+    "exam": "positive selection ที่คอร์เทกซ์ และ negative selection ที่เมดัลลา ผ่านโปรตีน AIRE ซึ่งพบกลายพันธุ์ในโรค APECED",
+    "diseases": [
+      "DiGeorge syndrome (ไทมัสไม่เจริญ)",
+      "APECED (autoimmune polyendocrinopathy) จากกลายพันธุ์ AIRE"
+    ],
+    "confused_with": [],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0009101",
+    "slug": "fibroblastic-reticular-cell",
+    "kind": "cell",
+    "en": "fibroblastic reticular cell",
+    "th": "เซลล์เรติคูลาร์ไฟโบรบลาสต์ (fibroblastic reticular cell)",
+    "systems": [
+      "blood-immune"
+    ],
+    "tissue": "connective",
+    "tissue_subtype": "lymphoid",
+    "location": "ต่อมน้ำเหลือง ม้าม และเนื้อเยื่อน้ำเหลืองอื่น โดยเฉพาะบริเวณ T cell zone",
+    "morphology": "เซลล์สโตรมามีแขนงยาว หุ้มเส้นใยเรติคูลาร์ (reticular fiber, คอลลาเจนชนิด III) เป็นท่อ (conduit) ในต่อมน้ำเหลือง",
+    "function": "สร้างโครงตาข่ายค้ำจุนอวัยวะน้ำเหลือง และหลั่งคีโมไคน์ CCL19 และ CCL21 เพื่อรวม naive T cell กับ dendritic cell ไว้ด้วยกัน ท่อของมันนำน้ำเหลืองและโมเลกุลขนาดเล็กไปยังเซลล์ภายใน",
+    "secretes": [
+      "CCL19",
+      "CCL21"
+    ],
+    "markers": [
+      "podoplanin (PDPN)",
+      "CCL19",
+      "CCL21"
+    ],
+    "lifespan": "",
+    "exam": "เซลล์โครงสร้างของอวัยวะน้ำเหลืองสร้างเส้นใยเรติคูลาร์ ไม่ใช่เซลล์ภูมิคุ้มกันเอง",
+    "diseases": [],
+    "confused_with": [],
+    "images": [],
+    "verified": false,
+    "refs": []
+  },
+  {
+    "id": "CL:0002652",
+    "slug": "hev-cell",
+    "kind": "cell",
+    "en": "endothelial cell of high endothelial venule",
+    "th": "เซลล์บุผนังหลอดเลือดดำเอนโดทีเลียมสูง (HEV cell)",
+    "systems": [
+      "blood-immune",
+      "cardiovascular"
+    ],
+    "tissue": "epithelial",
+    "tissue_subtype": "simple-cuboidal",
+    "location": "หลอดเลือดดำขนาดเล็กใน paracortex ของต่อมน้ำเหลือง และใน Peyer's patch ทอนซิล",
+    "morphology": "เซลล์บุผนังรูปลูกบาศก์ถึงทรงสูง ต่างจากเซลล์บุผนังหลอดเลือดแบนทั่วไป",
+    "function": "เป็นทางเข้าของลิมโฟไซต์จากเลือดสู่ต่อมน้ำเหลือง โดยใช้โมเลกุลยึดเกาะ เช่น PNAd ที่จับกับ L-selectin บน naive T cell แล้วลิมโฟไซต์ผ่านผนังออกไป",
+    "secretes": [],
+    "markers": [
+      "PNAd",
+      "MAdCAM-1 (ใน Peyer's patch)",
+      "CCL21"
+    ],
+    "lifespan": "",
+    "exam": "ลิมโฟไซต์เข้าต่อมน้ำเหลืองได้สองทาง คือ ผ่านหลอดน้ำเหลืองขาเข้า (afferent) และผ่าน HEV จากกระแสเลือด",
+    "diseases": [],
+    "confused_with": [
+      "CL:0000115"
+    ],
+    "images": [],
+    "verified": false,
+    "refs": []
   }
 ]

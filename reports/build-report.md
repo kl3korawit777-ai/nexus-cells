@@ -1,13 +1,13 @@
 # รายงานการรวมข้อมูล (build)
 
-สร้างเมื่อ: 2026-10-10 10:58
+สร้างเมื่อ: 2026-10-10 11:15
 
 ## is_a: เส้นที่คัดเอง เทียบกับ CL (หลัง transitive reduction ภายในชุดข้อมูล)
 
-- ตรงกัน: 86 เส้น
-- คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 5 เส้น
-- คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 4 เส้น
-- CL มี แต่ไม่ได้คัดไว้: 38 เส้น
+- ตรงกัน: 96 เส้น
+- คัดเองมี และเป็นบรรพบุรุษใน CL แต่ข้ามขั้น: 6 เส้น
+- คัดเองมี แต่ CL ไม่มีความสัมพันธ์นี้เลย: 7 เส้น
+- CL มี แต่ไม่ได้คัดไว้: 44 เส้น
 
 ### is_a ที่คัดเองข้ามขั้น
 ถูกตามความหมาย แต่ใน CL มีตัวกลางอยู่ระหว่างสองรหัสนี้ในชุดข้อมูล
@@ -15,6 +15,7 @@
 - CL:0000207 olfactory receptor cell → CL:0000540 neuron
 - CL:0000210 photoreceptor cell → CL:0000540 neuron
 - CL:0000235 macrophage → CL:0000738 leukocyte
+- CL:0000453 Langerhans cell → CL:0000451 dendritic cell
 - CL:0000623 natural killer cell → CL:0000542 lymphocyte
 - CL:0000645 pituicyte → CL:0000125 glial cell
 
@@ -24,7 +25,10 @@
 - CL:0000236 B cell → CL:0000145 professional antigen presenting cell
 - CL:0000446 chief cell of parathyroid gland → CL:0000167 peptide hormone secreting cell
 - CL:0000509 gastrin secreting cell → CL:0002178 epithelial cell of stomach
+- CL:0000545 T-helper 1 cell → CL:0000912 helper T cell
+- CL:0000546 T-helper 2 cell → CL:0000912 helper T cell
 - CL:0000815 regulatory T cell → CL:0000912 helper T cell
+- CL:0000899 T-helper 17 cell → CL:0000912 helper T cell
 
 ### is_a ที่ CL มีแต่ไม่ได้คัดไว้
 
@@ -44,9 +48,12 @@
 - CL:0000233 platelet → CL:0000988 hematopoietic cell
 - CL:0000336 adrenal medulla chromaffin cell → CL:0000165 neuroendocrine cell
 - CL:0000437 gonadotroph → CL:0000165 neuroendocrine cell
+- CL:0000453 Langerhans cell → CL:0000990 conventional dendritic cell
 - CL:0000476 thyrotroph → CL:0000165 neuroendocrine cell
 - CL:0000509 gastrin secreting cell → CL:0000167 peptide hormone secreting cell
 - CL:0000510 paneth cell → CL:0002563 intestinal epithelial cell
+- CL:0000545 T-helper 1 cell → CL:0000084 T cell
+- CL:0000546 T-helper 2 cell → CL:0000084 T cell
 - CL:0000556 megakaryocyte → CL:0000988 hematopoietic cell
 - CL:0000557 granulocyte monocyte progenitor cell → CL:0000988 hematopoietic cell
 - CL:0000558 reticulocyte → CL:0000988 hematopoietic cell
@@ -58,8 +65,11 @@
 - CL:0000786 plasma cell → CL:0000542 lymphocyte
 - CL:0000787 memory B cell → CL:0000145 professional antigen presenting cell
 - CL:0000787 memory B cell → CL:0000236 B cell
+- CL:0000788 naive B cell → CL:0000145 professional antigen presenting cell
 - CL:0000813 memory T cell → CL:0000084 T cell
 - CL:0000815 regulatory T cell → CL:0000084 T cell
+- CL:0000845 marginal zone B cell of spleen → CL:0000145 professional antigen presenting cell
+- CL:0000899 T-helper 17 cell → CL:0000084 T cell
 - CL:0002258 thyroid follicular cell → CL:0000167 peptide hormone secreting cell
 - CL:0002275 pancreatic PP cell → CL:0000164 enteroendocrine cell
 - CL:0002309 corticotroph → CL:0000165 neuroendocrine cell
@@ -69,15 +79,16 @@
 
 ## develops_from: เส้นที่คัดเอง เทียบกับ CL
 
-- ตรงกัน: 14 เส้น
-- คัดเองมี แต่ CL ไม่มี: 37 เส้น
-- CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 3 เส้น
-- CL ชี้ไปเซลล์นอกชุดข้อมูล: 51 เส้น
+- ตรงกัน: 19 เส้น
+- คัดเองมี แต่ CL ไม่มี: 44 เส้น
+- CL มี (ในชุดข้อมูล) แต่ไม่ได้คัดไว้: 2 เส้น
+- CL ชี้ไปเซลล์นอกชุดข้อมูล: 52 เส้น
 
-หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 347 รายการ ไม่นับในการเทียบ
+หมายเหตุ: OLS คืนเทอมที่ไม่ใช่เซลล์ (GO, PR, PATO ฯลฯ) มาด้วย รวม 408 รายการ ไม่นับในการเทียบ
 
 ### develops_from ที่คัดเองแต่ CL ไม่มี
 
+- CL:0000040 monoblast → CL:0000557 granulocyte monocyte progenitor cell
 - CL:0000049 common myeloid progenitor → CL:0000037 hematopoietic stem cell
 - CL:0000050 megakaryocyte-erythroid progenitor cell → CL:0000049 common myeloid progenitor
 - CL:0000051 common lymphoid progenitor → CL:0000037 hematopoietic stem cell
@@ -94,23 +105,29 @@
 - CL:0000451 dendritic cell → CL:0000049 common myeloid progenitor
 - CL:0000510 paneth cell → CL:0002250 intestinal crypt stem cell
 - CL:0000525 syncytiotrophoblast cell → CL:0000523 mononuclear cytotrophoblast cell
+- CL:0000545 T-helper 1 cell → CL:0000898 naive T cell
+- CL:0000546 T-helper 2 cell → CL:0000898 naive T cell
 - CL:0000547 proerythroblast → CL:0000050 megakaryocyte-erythroid progenitor cell
-- CL:0000556 megakaryocyte → CL:0000050 megakaryocyte-erythroid progenitor cell
 - CL:0000557 granulocyte monocyte progenitor cell → CL:0000049 common myeloid progenitor
 - CL:0000558 reticulocyte → CL:0000765 erythroblast
-- CL:0000576 monocyte → CL:0000557 granulocyte monocyte progenitor cell
+- CL:0000560 band form neutrophil → CL:0002192 metamyelocyte
+- CL:0000576 monocyte → CL:0000040 monoblast
 - CL:0000584 enterocyte → CL:0002250 intestinal crypt stem cell
 - CL:0000623 natural killer cell → CL:0000051 common lymphoid progenitor
 - CL:0000656 primary spermatocyte → CL:0000020 spermatogonium
 - CL:0000682 M cell of gut → CL:0002250 intestinal crypt stem cell
-- CL:0000765 erythroblast → CL:0000050 megakaryocyte-erythroid progenitor cell
-- CL:0000767 basophil → CL:0000557 granulocyte monocyte progenitor cell
-- CL:0000771 eosinophil → CL:0000557 granulocyte monocyte progenitor cell
-- CL:0000775 neutrophil → CL:0000557 granulocyte monocyte progenitor cell
-- CL:0000786 plasma cell → CL:0000236 B cell
-- CL:0000787 memory B cell → CL:0000236 B cell
+- CL:0000767 basophil → CL:0002192 metamyelocyte
+- CL:0000771 eosinophil → CL:0002192 metamyelocyte
+- CL:0000775 neutrophil → CL:0000560 band form neutrophil
+- CL:0000786 plasma cell → CL:0000788 naive B cell
+- CL:0000787 memory B cell → CL:0000788 naive B cell
 - CL:0000813 memory T cell → CL:0000084 T cell
+- CL:0000899 T-helper 17 cell → CL:0000898 naive T cell
+- CL:0000910 cytotoxic T cell → CL:0000898 naive T cell
+- CL:0000912 helper T cell → CL:0000898 naive T cell
+- CL:0000990 conventional dendritic cell → CL:0000049 common myeloid progenitor
 - CL:0001065 innate lymphoid cell → CL:0000051 common lymphoid progenitor
+- CL:0002038 T follicular helper cell → CL:0000898 naive T cell
 - CL:0002062 pulmonary alveolar type 1 cell → CL:0002063 pulmonary alveolar type 2 cell
 - CL:0002145 multiciliated columnar cell of tracheobronchial tree → CL:0002329 basal epithelial cell of tracheobronchial tree
 - CL:0007010 osteoprogenitor cell → CL:0000134 mesenchymal stem cell
@@ -120,12 +137,13 @@
 
 - CL:0000542 lymphocyte → CL:0000051 common lymphoid progenitor
 - CL:0000738 leukocyte → CL:0000037 hematopoietic stem cell
-- CL:0000765 erythroblast → CL:0000547 proerythroblast
 
 ### develops_from ที่ CL ชี้ไปเซลล์นอกชุดข้อมูล
 
 - CL:0000024 oogonial cell ← CL:0000670 primordial germ cell
 - CL:0000037 hematopoietic stem cell ← CL:0000566 angioblastic mesenchymal cell
+- CL:0000040 monoblast ← CL:0002009 macrophage dendritic cell progenitor
+- CL:0000040 monoblast ← CL:0017503 basophilic cytoplasm
 - CL:0000047 neural stem cell ← CL:0000133 neurectodermal cell
 - CL:0000058 chondroblast ← CL:0007009 prechondroblast
 - CL:0000059 ameloblast ← CL:0007000 preameloblast
@@ -152,7 +170,6 @@
 - CL:0000542 lymphocyte ← CL:0017500 neutrophillic cytoplasm
 - CL:0000547 proerythroblast ← CL:0000038 erythroid progenitor cell
 - CL:0000547 proerythroblast ← CL:0017503 basophilic cytoplasm
-- CL:0000556 megakaryocyte ← CL:0000553 megakaryocyte progenitor cell
 - CL:0000558 reticulocyte ← CL:0000552 orthochromatic erythroblast
 - CL:0000560 band form neutrophil ← CL:0000582 neutrophilic metamyelocyte
 - CL:0000560 band form neutrophil ← CL:0017506 banded nucleus
@@ -176,7 +193,7 @@
 - CL:0008002 skeletal muscle fiber ← CL:0000515 skeletal muscle myoblast
 - CL:1000488 cholangiocyte ← CL:0005026 hepatoblast
 
-## คำเตือนจาก validate (184)
+## คำเตือนจาก validate (200)
 
 - CL:0000988 (hematopoietic cell): ยังไม่มีรูป
 - CL:0000738 (leukocyte): ยังไม่มีรูป
@@ -222,6 +239,22 @@
 - CL:0001065 (innate lymphoid cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0000442 (follicular dendritic cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0000784 (plasmacytoid dendritic cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000553 (megakaryoblast): ช่องว่าง: lifespan, confused_with; ยังไม่มีรูป
+- CL:0002193 (myelocyte): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
+- CL:0002192 (metamyelocyte): ช่องว่าง: markers, lifespan; ยังไม่มีรูป
+- CL:0000040 (monoblast): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000874 (splenic red pulp macrophage): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000990 (conventional dendritic cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000898 (naive T cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000545 (T-helper 1 cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000546 (T-helper 2 cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000899 (T-helper 17 cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002038 (T follicular helper cell): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0000788 (naive B cell): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
+- CL:0000845 (marginal zone B cell of spleen): ช่องว่าง: lifespan; ยังไม่มีรูป
+- CL:0002293 (epithelial cell of thymus): ช่องว่าง: lifespan, confused_with, tissue_subtype; ยังไม่มีรูป
+- CL:0009101 (fibroblastic reticular cell): ช่องว่าง: lifespan, diseases, confused_with; ยังไม่มีรูป
+- CL:0002652 (endothelial cell of high endothelial venule): ช่องว่าง: lifespan, diseases; ยังไม่มีรูป
 - CL:0000746 (cardiac muscle cell): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:1000477 (cardiac pacemaker cell of sinoatrial node): ช่องว่าง: lifespan; ยังไม่มีรูป
 - CL:0002068 (Purkinje myocyte): ช่องว่าง: markers, lifespan, diseases; ยังไม่มีรูป
